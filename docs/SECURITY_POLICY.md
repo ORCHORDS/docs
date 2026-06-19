@@ -24,6 +24,8 @@
 
 ## Overview
 
+This policy defines the security standards, vulnerability handling procedures, and compliance requirements for Beetle Studio. It applies to all team members, contributors, and third-party integrations.
+
 ## Contents
 
 - [Security Objectives](#security-objectives)
@@ -48,15 +50,6 @@
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
-
----
-
-
----
-
-
----
-
 
 ---
 
@@ -243,6 +236,21 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 *Grounded in: ISO/IEC 27001:2022 — Information Security Management Systems*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -251,8 +259,8 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Kirk Beka | Initial version |
+| 1.0.1 | June 2026 | Kirk Beka | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
