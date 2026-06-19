@@ -1,7 +1,8 @@
 # Performance Benchmarks
 
 **Project:** Beetle Studio  
-**Owners:** James Park (Graphics — GPU), Sophie Williams (Codec — encode/decode), Lisa Martinez (QA — measurement)  
+
+**Owner:** James Park (Graphics Engineer), Lisa Martinez (QA Lead), Sophie Williams (Codec Specialist)**Owners:** James Park (Graphics — GPU), Sophie Williams (Codec — encode/decode), Lisa Martinez (QA — measurement)  
 **Reviewers:** Kirk Beka (CTO)  
 **ISO Standards:** ISO/IEC 25010:2023 (performance efficiency, time behavior, resource utilization)  
 **Version:** 1.0.0  
@@ -23,8 +24,6 @@
 ---
 
 ## Overview
-
-This document defines Beetle Studio's performance targets, measurement methodology, and benchmarks. Per **ISO/IEC 25010:2023**, performance efficiency -- specifically **time behavior** and **resource utilization** -- is a primary software product quality characteristic that must be measured and tracked.
 
 This document defines Beetle Studio's performance targets, measurement methodology, and benchmarks. Per **ISO/IEC 25010:2023**, performance efficiency — specifically **time behavior** (response and processing times) and **resource utilization** — is a primary software product quality characteristic that must be measured and tracked.
 
@@ -213,6 +212,21 @@ For accessibility, browser compatibility, and visual regression testing of the w
 *Grounded in: ISO/IEC 25010:2023 — Performance Efficiency (Time Behavior, Resource Utilization)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](././ACCESSIBILITY_COMPLIANCE.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -221,8 +235,8 @@ For accessibility, browser compatibility, and visual regression testing of the w
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | James Park, Lisa Martinez, Sophie Williams | Initial version |
+| 1.0.1 | June 2026 | James Park, Lisa Martinez, Sophie Williams | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
