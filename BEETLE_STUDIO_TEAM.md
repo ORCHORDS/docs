@@ -81,7 +81,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 - Performance optimization and memory management
 - Final decision-maker on technical direction
 
-**Skills:** C++17/20, DirectX 12, Vulkan, FFmpeg, CUDA/OpenCL, Multi-threading, SIMD optimization
+**Skills:** C++20, DirectX 12, Vulkan, FFmpeg, CUDA/OpenCL, Multi-threading, SIMD optimization
 
 ---
 
@@ -99,7 +99,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 - Security and licensing systems
 - Team technical mentorship
 
-**Skills:** C++17/20, Qt6, CMake, System Architecture, CI/CD, Cloud Infrastructure
+**Skills:** C++20, Qt6, CMake, System Architecture, CI/CD, Cloud Infrastructure
 
 ---
 
