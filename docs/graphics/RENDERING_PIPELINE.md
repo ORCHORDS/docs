@@ -198,6 +198,21 @@ Per **ISO/IEC 25010:2023**, functional suitability includes correct color repres
 *Grounded in: ISO/IEC 12207:2017 §6.1.3 (Design), ISO/IEC 25010:2023 (Performance Efficiency, Functional Suitability)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -206,8 +221,8 @@ Per **ISO/IEC 25010:2023**, functional suitability includes correct color repres
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | James Park | Initial version |
+| 1.0.1 | June 2026 | James Park | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
