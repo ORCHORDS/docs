@@ -7,6 +7,8 @@ on:
 jobs:
   auto-assign:
     runs-on: ubuntu-latest
+    container:
+      image: curlimages/curl:latest
     steps:
       - name: Assign by content
         env:
@@ -14,7 +16,7 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUM: ${{ github.event.issue.number }}
           API_TOKEN: ${{ secrets.ADMIN_TOKEN }}
-          API_URL: https://dev.mooned.dev/api/v1
+          API_URL: ${{ github.server_url }}/api/v1
         run: |
           TEXT="$(echo "$ISSUE_TITLE $ISSUE_BODY" | tr '[:upper:]' '[:lower:]')"
           ASSIGNEES=""
@@ -44,11 +46,23 @@ jobs:
 
           ASSIGNEES="$(echo $ASSIGNEES | xargs)"
           if [ -n "$ASSIGNEES" ]; then
-            JSON=$(echo "$ASSIGNEES" | tr ' ' '\n' | sort -u | jq -R . | jq -s '{assignees: .}')
+            JSON="{\"assignees\":["
+            FIRST=true
+            for A in $(echo "$ASSIGNEES" | tr ' ' '\n' | sort -u); do
+              if [ "$FIRST" = "true" ]; then
+                JSON="$JSON\"$A\""
+                FIRST=false
+              else
+                JSON="$JSON,\"$A\""
+              fi
+            done
+            JSON="$JSON]}"
+            echo "Posting: $JSON"
             curl -s -X POST "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees" \
               -H "Authorization: token $API_TOKEN" \
               -H "Content-Type: application/json" \
               -d "$JSON"
+            echo ""
             echo "Assigned: $ASSIGNEES"
           else
             echo "No matching rules found"
