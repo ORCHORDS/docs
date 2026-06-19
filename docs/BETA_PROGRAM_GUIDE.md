@@ -2,7 +2,7 @@
 
 **Project:** Beetle Studio  
 
-**Owner:** Lisa Martinez (QA Lead), Rachel Green (Community Manager)**Owners:** Lisa Martinez (QA Lead — testing program), Rachel Green (Community Manager — beta community)  
+**Owner:** Lisa Martinez (QA Lead — testing program), Rachel Green (Community Manager — beta community)  
 **Reviewers:** Kirk Beka (CTO), Chris Taylor (Product Manager)  
 **ISO Standards:** ISO/IEC 12207:2017 (validation), ISO/IEC 25010:2023 (reliability, usability)  
 **Version:** 1.0.0  
