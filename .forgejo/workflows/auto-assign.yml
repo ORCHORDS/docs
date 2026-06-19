@@ -60,7 +60,7 @@ jobs:
               fi
             done
             JSON="$JSON]}"
-            curl -s -X POST "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees" \
+            curl -s -X PATCH "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM" \
               -H "Authorization: token $API_TOKEN" \
               -H "Content-Type: application/json" \
               -d "$JSON"
