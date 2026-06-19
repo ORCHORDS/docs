@@ -2,7 +2,7 @@
 
 **Project:** Beetle Studio  
 
-**Owner:** James Park (Graphics Engineer), Lisa Martinez (QA Lead), Sophie Williams (Codec Specialist)**Owners:** James Park (Graphics — GPU), Sophie Williams (Codec — encode/decode), Lisa Martinez (QA — measurement)  
+**Owner:** James Park (Graphics Engineer — GPU), Sophie Williams (Codec Specialist — encode/decode), Lisa Martinez (QA Lead — measurement)  
 **Reviewers:** Kirk Beka (CTO)  
 **ISO Standards:** ISO/IEC 25010:2023 (performance efficiency, time behavior, resource utilization)  
 **Version:** 1.0.0  
