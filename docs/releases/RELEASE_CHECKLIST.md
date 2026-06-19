@@ -76,7 +76,7 @@ Complete all items below before creating a release tag.
 ### 2. Build & Artifacts
 
 - [ ] CI pipeline green on the target commit (`main` or release branch)
-- [ ] Version number correctly incremented per [`software-versioning-guide.md`](../software-versioning-guide.md)
+- [ ] Version number correctly incremented per [`VERSIONING_POLICY.md`](./VERSIONING_POLICY.md)
 - [ ] SWID tag data generated with correct product ID, version, and vendor (see [`SWID_TAG_SPEC.md`](./SWID_TAG_SPEC.md))
 - [ ] Installer built successfully (Inno Setup or WiX)
 - [ ] All target platforms built (Windows x64 minimum; future: macOS, Linux)
@@ -215,6 +215,25 @@ If a release causes critical issues within 48 hours:
 *Grounded in: ISO/IEC 12207:2017 §6.4 (Transition Process), ISO/IEC 19770-2:2015, ISO/IEC 25010:2023*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../ACCESSIBILITY_COMPLIANCE.md)
+- [$title](./../PERFORMANCE_BENCHMARKS.md)
+- [$title](././CHANGELOG_POLICY.md)
+- [$title](././SWID_TAG_SPEC.md)
+- [$title](././WINDOWS_STORE_SUBMISSION.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -223,8 +242,8 @@ If a release causes critical issues within 48 hours:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Sarah Miller | Initial version |
+| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
