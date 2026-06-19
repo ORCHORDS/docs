@@ -2,7 +2,7 @@
 
 **Project:** Beetle Studio  
 
-**Owner:** Daniel Kim (Effects Lead), Tom Anderson (Technical Writer)**Owners:** Daniel Kim (Effects & Compositing Engineer — SDK), Tom Anderson (Technical Writer — user guide)  
+**Owner:** Daniel Kim (Effects & Compositing Engineer — SDK), Tom Anderson (Technical Writer — user guide)  
 **Reviewers:** Kirk Beka (CTO)  
 **ISO Standards:** ISO/IEC 12207:2017 (development — API documentation), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
