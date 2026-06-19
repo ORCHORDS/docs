@@ -7,18 +7,21 @@ on:
 jobs:
   auto-assign:
     runs-on: ubuntu-latest
-    container:
-      image: curlimages/curl:latest
     steps:
+      - name: Install curl
+        run: apt-get update -qq && apt-get install -y -qq curl > /dev/null 2>&1
+
       - name: Assign by content
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUM: ${{ github.event.issue.number }}
           API_TOKEN: ${{ secrets.ADMIN_TOKEN }}
-          API_URL: ${{ github.server_url }}/api/v1
+          SERVER_URL: ${{ github.server_url }}
         run: |
+          echo "Server URL: $SERVER_URL"
           TEXT="$(echo "$ISSUE_TITLE $ISSUE_BODY" | tr '[:upper:]' '[:lower:]')"
+          echo "Matching text: $TEXT"
           ASSIGNEES=""
           add() { echo "$ASSIGNEES" | grep -q "$1" || ASSIGNEES="$ASSIGNEES $1"; }
 
@@ -45,6 +48,7 @@ jobs:
           echo "$TEXT" | grep -qiE "performance|benchmark" && add james.park
 
           ASSIGNEES="$(echo $ASSIGNEES | xargs)"
+          echo "Matched assignees: $ASSIGNEES"
           if [ -n "$ASSIGNEES" ]; then
             JSON="{\"assignees\":["
             FIRST=true
@@ -57,13 +61,13 @@ jobs:
               fi
             done
             JSON="$JSON]}"
-            echo "Posting: $JSON"
-            curl -s -X POST "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees" \
+            echo "API call: POST $SERVER_URL/api/v1/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees"
+            echo "Payload: $JSON"
+            RESPONSE=$(curl -sv -X POST "$SERVER_URL/api/v1/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees" \
               -H "Authorization: token $API_TOKEN" \
               -H "Content-Type: application/json" \
-              -d "$JSON"
-            echo ""
-            echo "Assigned: $ASSIGNEES"
+              -d "$JSON" 2>&1)
+            echo "Response: $RESPONSE"
           else
             echo "No matching rules found"
           fi
