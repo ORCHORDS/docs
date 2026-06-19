@@ -2,7 +2,7 @@
 
 **Project:** Beetle Studio  
 
-**Owner:** Alex Chen (UI/UX Lead), Nina Patel (UX Designer)**Owners:** Alex Chen (UI implementation), Nina Patel (UX design audit)  
+**Owner:** Alex Chen (UI/UX Lead — implementation), Nina Patel (UX Designer — design audit)  
 **Reviewers:** Kirk Beka (CTO), Nina Patel (UX Designer)  
 **ISO Standards:** ISO 9241-171 (ergonomic requirements for office work with visual display terminals), ISO/IEC 25010:2023 (usability — accessibility subcharacteristic)  
 **Version:** 1.0.0  
