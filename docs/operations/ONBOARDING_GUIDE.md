@@ -24,6 +24,8 @@
 
 ## Overview
 
+This guide walks new team members through their first two weeks at Beetle Studio, covering environment setup, tool access, and team introductions.
+
 ## Contents
 
 - [Before Day One (HR — Amanda Clark)](#before-day-one-hr-amanda-clark)
@@ -222,6 +224,33 @@ Before a new hire's first day, the following must be complete:
 *Grounded in: ISO/IEC 12207:2017 §6.3 (Human Resources), ISO/IEC 25010:2023 (Maintainability)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../../BEETLE_STUDIO_TEAM.md)
+- [$title](./../../docs/BETA_PROGRAM_GUIDE.md)
+- [$title](./../../docs/engineering/ARCHITECTURE_OVERVIEW.md)
+- [$title](./../../docs/engineering/BACKUP_DISASTER_RECOVERY.md)
+- [$title](./../../docs/engineering/BRANCHING_STRATEGY.md)
+- [$title](./../../docs/engineering/BUILD_SYSTEM.md)
+- [$title](./../../docs/engineering/CI_CD_PIPELINE.md)
+- [$title](./../../docs/engineering/TECHNICAL_STANDARDS.md)
+- [$title](./../../docs/engineering/TEST_STRATEGY.md)
+- [$title](./../../docs/PERFORMANCE_BENCHMARKS.md)
+- [$title](./../../docs/product/ROADMAP.md)
+- [$title](./../../docs/README.md)
+- [$title](./../../docs/user/USER_GUIDE.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -230,8 +259,8 @@ Before a new hire's first day, the following must be complete:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Amanda Clark | Initial version |
+| 1.0.1 | June 2026 | Amanda Clark | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
