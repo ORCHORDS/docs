@@ -216,7 +216,7 @@ Mooned Dev serves as the visionary leader and technical driving force behind Bee
 #### REQUIRED SKILLS & QUALIFICATIONS
 
 **Technical Skills:**
-- Expert-level C++17/20 programming
+- Expert-level C++20 programming
 - Advanced DirectX 12 expertise
 - Vulkan API proficiency
 - HLSL and GLSL shader programming
@@ -336,7 +336,7 @@ Kirk Beka serves as the Chief Technology Officer, bridging the gap between Moone
 #### REQUIRED SKILLS & QUALIFICATIONS
 
 **Technical Skills:**
-- Expert C++17/20 programming
+- Expert C++20 programming
 - Qt6 framework expertise
 - CMake build system mastery
 - Cloud infrastructure (Azure)
