@@ -8,4 +8,4 @@ jobs:
           Write-Output "Windows runner operational"
           Write-Output "OS: $([System.Environment]::OSVersion)"
           Write-Output "Host: $env:COMPUTERNAME"
-        shell: pwsh
+        shell: powershell
