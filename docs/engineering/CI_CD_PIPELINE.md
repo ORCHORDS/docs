@@ -50,15 +50,6 @@
 
 ---
 
-
----
-
-
----
-
-
----
-
 ## Pipeline Architecture
 
 ```
@@ -276,6 +267,22 @@ Waivers are tracked in `docs/security/WAIVERS.md` (managed by `Maya Rodriguez (B
 *Grounded in: ISO/IEC 12207:2017 §6.3 (Development Process), ISO/IEC 25010:2023 (Reliability subcharacteristic)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../releases/RELEASE_CHECKLIST.md)
+- [$title](./../SECURITY_POLICY.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -284,8 +291,8 @@ Waivers are tracked in `docs/security/WAIVERS.md` (managed by `Maya Rodriguez (B
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mike Johnson | Initial version |
+| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
