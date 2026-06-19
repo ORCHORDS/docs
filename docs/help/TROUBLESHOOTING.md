@@ -2,6 +2,7 @@
 
 **Project:** Beetle Studio  
 **Owner:** Tom Anderson (Technical Writer) — with Lisa Martinez (QA)  
+**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)
 **ISO Standards:** ISO/IEC 25010:2023 (reliability, usability), ISO/IEC 14764:2022 (maintenance)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -160,17 +161,6 @@ GPU and CPU at the OS level, which will cause preview playback to drop frames.
 3. The splash's WARP row will switch to "installed, connected" the next time you start Beetle Studio
 
 
-**Try in order:**
-
-1. **Reset user settings** (rename the settings folder):
-   ```powershell
-   # Rename settings folder — Beetle Studio will recreate defaults
-   Rename-Item "$env:APPDATA\Mooned Dev\Beetle Studio\config" "config.bak"
-   ```
-2. **Check GPU drivers are up to date** — outdated NVIDIA/AMD drivers cause DX12 crashes
-3. **Disable hardware acceleration** — run Beetle Studio with: `BeetleStudio.exe --no-gpu-accel`
-4. **Submit a crash report** when prompted — this helps our team fix the issue
-
 ### Beetle Studio runs but viewport is black
 
 **Cause:** GPU rendering failed; software fallback not triggered.  
@@ -280,6 +270,21 @@ When reporting a bug, include:
 *Grounded in: ISO/IEC 25010:2023 (Reliability, Recoverability), ISO/IEC 14764:2022 (Maintenance)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -288,8 +293,8 @@ When reporting a bug, include:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Tom Anderson | Initial version |
+| 1.0.1 | June 2026 | Tom Anderson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
