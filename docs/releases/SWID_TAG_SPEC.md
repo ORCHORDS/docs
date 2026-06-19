@@ -24,8 +24,6 @@
 
 ## Overview
 
-Per **ISO/IEC 19770-2:2015**, software products should carry a Software Identification (SWID) tag to enable enterprise IT asset management tools (SCCM, Intune, LANDESK, ServiceNow) to correctly identify, track, and manage Beetle Studio on managed devices. SWID tags are XML files embedded in the installer and registered with Windows during installation.
-
 Per **ISO/IEC 19770-2:2015**, software products should carry a Software Identification (SWID) tag to enable enterprise IT asset management tools (SCCM, Intune, LANDESK, ServiceNow) to correctly identify, track, and manage Beetle Studio on managed devices.
 ## Contents
 
@@ -205,6 +203,21 @@ def generate_swid_tag(version: str) -> str:
 *Grounded in: ISO/IEC 19770-2:2015 — Information technology — IT asset management — Part 2: Software identification tag*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -213,8 +226,8 @@ def generate_swid_tag(version: str) -> str:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Sarah Miller | Initial version |
+| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
