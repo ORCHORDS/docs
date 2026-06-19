@@ -2,6 +2,7 @@
 
 **Project:** Beetle Studio  
 **Owner:** Sarah Miller (Build & Release Engineer) — format enforcement; Tom Anderson (Technical Writer) — content authorship  
+**Reviewers:** Mike Johnson (DevOps Lead), Kirk Beka (CTO)
 **Reviewer:** Kirk Beka (CTO), Chris Taylor (Product Manager)  
 **ISO Standards:** ISO/IEC 12207:2017, ISO/IEC 14764:2022 (maintenance documentation), Keep a Changelog standard  
 **Version:** 1.0.0  
@@ -47,20 +48,10 @@ Every meaningful change to Beetle Studio must be recorded in the changelog. The 
   - [Breaking Change Entry (requires special flag)](#breaking-change-entry-requires-special-flag)
   - [Removed](#removed)
 - [Version Sections](#version-sections)
-- [[2.3.0] — 2026-06-15](#230-2026-06-15)
-  - [Added](#added)
-  - [Fixed](#fixed)
-- [[2.2.0] — 2026-05-01](#220-2026-05-01)
-  - [Added](#added)
 - [Who Writes What](#who-writes-what)
 - [Automation](#automation)
   - [Conventional Commit Format](#conventional-commit-format)
 - [GitHub Releases](#github-releases)
-- [What's New](#whats-new)
-- [Bug Fixes](#bug-fixes)
-- [Performance](#performance)
-- [Known Issues](#known-issues)
-- [Upgrading](#upgrading)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
@@ -260,6 +251,21 @@ Release description template:
 *Grounded in: ISO/IEC 12207:2017 §6.4 (Transition), ISO/IEC 14764:2022 §6 (Maintenance Documentation), Keep a Changelog 1.1.0*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -268,8 +274,8 @@ Release description template:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Sarah Miller | Initial version |
+| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
