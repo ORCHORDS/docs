@@ -24,6 +24,8 @@
 
 ## Overview
 
+This document describes the build system configuration, toolchain requirements, and build processes for Beetle Studio.
+
 ## Contents
 
 - [Technology Stack](#technology-stack)
@@ -232,6 +234,21 @@ After any build system change:
 *Grounded in: ISO/IEC 12207:2017 §6.3 (Development Process), ISO/IEC 25010:2023 (Maintainability, Portability subcharacteristics)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](././CI_CD_PIPELINE.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -240,8 +257,8 @@ After any build system change:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mike Johnson | Initial version |
+| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
