@@ -83,12 +83,6 @@ This document defines Beetle Studio's testing strategy -- the types of testing w
 
 ---
 
-
----
-
-
----
-
 ## Testing Principles
 
 1. **Test early and often** — bugs found in development cost 10× less than bugs found after release
@@ -607,6 +601,7 @@ scripts/
 ├── run_unit_tests.ps1    ← Run unit + integration tests
 ├── run_smoke_tests.ps1   ← Run smoke test harness
 └── run_perf_tests.ps1    ← Run performance benchmarks
+```
 
 ---
 
@@ -767,6 +762,23 @@ pyautogui.hotkey('ctrl', 'shift', 'e')  # Export
 *Grounded in: ISO/IEC 12207:2017 §6.3 (Verification and Validation), ISO/IEC 25010:2023 (Reliability: Maturity, Availability, Recoverability, Fault Tolerance), ISO/IEC 14764:2022 (Maintenance Testing)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../ACCESSIBILITY_COMPLIANCE.md)
+- [$title](./../BETA_PROGRAM_GUIDE.md)
+- [$title](./../PERFORMANCE_BENCHMARKS.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -775,8 +787,8 @@ pyautogui.hotkey('ctrl', 'shift', 'e')  # Export
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Lisa Martinez | Initial version |
+| 1.0.1 | June 2026 | Lisa Martinez | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
