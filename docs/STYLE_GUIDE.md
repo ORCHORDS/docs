@@ -24,6 +24,7 @@ This guide itself is governed by the same review cadence as any other document a
 | Aspect | Definition |
 |---|---|
 | **Scope** | All Markdown documents under `docs/` in the Beetle Studio project |
+| **Diátaxis form** | Reference |
 | **Primary audience** | Internal team members (engineering, product, operations, marketing, leadership) |
 | **Secondary audience** | External users reading user-facing docs (User Guide, Quick Start, FAQ, etc.) and third-party developers reading the OpenFX and VST plugin guides |
 | **Out of scope** | Marketing web copy on `mooned.dev`, support tickets, internal chat, code comments — those have their own conventions |
@@ -142,6 +143,7 @@ characteristics, naming them explicitly.]
 | Aspect | Definition |
 |---|---|
 | **Scope** | [what this document covers; one sentence] |
+| **Diátaxis form** | Reference |
 | **Diátaxis form** | [Tutorial / How-to / Reference / Explanation] |
 | **Primary audience** | [who reads this] |
 | **Secondary audience** | [who else might read it, if any] |
