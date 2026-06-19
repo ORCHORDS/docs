@@ -1,6 +1,61 @@
 # BEETLE STUDIO
-## Project Schedule & Timeline
 
+**Project:** Beetle Studio
+**Owner:** Chris Taylor (Product Manager)
+**Reviewers:** Mooned Dev (CEO), Kirk Beka (CTO)
+**ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
+**Version:** 1.0.0
+**Last Updated:** June 2026
+
+---
+
+## Overview
+
+This document provides the canonical reference for the Beetle Studio team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
+
+---
+
+## Scope & Audience
+
+| Aspect | Definition |
+|---|---|
+| **Scope** | This document covers beetle studio for the Beetle Studio team. |
+| **Diátaxis form** | Reference |
+| **Primary audience** | All team members, leadership |
+| **Secondary audience** | External stakeholders, investors |
+
+---
+
+## Contents
+
+- [Project Schedule & Timeline](#project-schedule-timeline)
+- [PHASE 1: CORE ENGINE (Months 1-6)](#phase-1-core-engine-months-16)
+  - [Month 1: INFRASTRUCTURE & SETUP](#month-1-infrastructure-setup)
+  - [Month 2: RENDERING FOUNDATION](#month-2-rendering-foundation)
+  - [Month 3: TIMELINE & CORE EDITING](#month-3-timeline-core-editing)
+  - [Month 4: CODEC & EFFECTS BASE](#month-4-codec-effects-base)
+  - [Month 5: ADVANCED FEATURES](#month-5-advanced-features)
+  - [Month 6: POLISH & OPTIMIZATION](#month-6-polish-optimization)
+- [PHASE 2: FEATURES (Months 7-12)](#phase-2-features-months-712)
+  - [Month 7: ADVANCED EFFECTS](#month-7-advanced-effects)
+  - [Month 8: AUDIO PROFESSIONAL](#month-8-audio-professional)
+  - [Month 9: PLUGIN SYSTEM](#month-9-plugin-system)
+  - [Month 10: EXPORT & RENDER](#month-10-export-render)
+  - [Month 11: BACKEND & SYNC](#month-11-backend-sync)
+  - [Month 12: BETA RELEASE](#month-12-beta-release)
+- [PHASE 3: RELEASE (Months 13-15)](#phase-3-release-months-1315)
+  - [Month 13: STORE SUBMISSION](#month-13-store-submission)
+  - [Month 14: FINAL POLISH](#month-14-final-polish)
+  - [Month 15: LAUNCH (Target: September 2027)](#month-15-launch-target-september-2027)
+- [ENGINEERING TEAM DAILY SCHEDULE](#engineering-team-daily-schedule)
+- [LEADERSHIP DAILY SCHEDULE](#leadership-daily-schedule)
+- [SPRINT TEMPLATE](#sprint-template)
+- [SPRINT CALENDAR (Example: Q1)](#sprint-calendar-example-q1)
+- [Key Milestones](#key-milestones)
+- [September 2027 - LAUNCH WEEK](#september-2027-launch-week)
+- [Q4 2027 Priorities](#q4-2027-priorities)
+
+---
 **Company:** Mooned Dev  
 **Website:** www.mooned.dev  
 **Version:** 1.0  
@@ -588,3 +643,35 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 **Created:** June 2026  
 **Next Review:** Monthly  
 **Approved By:** Mooned Dev (CEO), Kirk Beka (CTO)
+
+---
+
+## References
+
+### Internal Documents
+
+- [BEETLE_STUDIO_TEAM.md](./BEETLE_STUDIO_TEAM.md) â€” Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [docs/STYLE_GUIDE.md](./docs/STYLE_GUIDE.md) for the full standards catalog
+
+---
+
+## Document Maintenance
+
+### Change Log
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 1.0.0 | June 2026 | Chris Taylor | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
+
+### Review Cadence
+
+- **Next review:** September 2026
+- **Reviewer:** Mooned Dev (CEO), Kirk Beka (CTO)
+- **Cadence:** Quarterly
