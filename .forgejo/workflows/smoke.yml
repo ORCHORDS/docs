@@ -1,7 +1,0 @@
-name: Smoke Test
-on: [push]
-jobs:
-  smoke:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "All runners operational"
