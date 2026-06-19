@@ -2,6 +2,7 @@
 
 **Project:** Beetle Studio  
 **Owner:** Sarah Miller (Build & Release Engineer) — primary; Mike Johnson (DevOps) — CI integration  
+**Reviewers:** Mike Johnson (DevOps Lead), Kirk Beka (CTO)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle processes), ISO/IEC 19770-2:2015 (software identification), ISO/IEC 25010:2023 (quality model)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -76,7 +77,7 @@ Particularly **ISO/IEC 19770-2** (Software Identification Tag / SWID tags). This
 - Version info is parseable by enterprise IT tools (Intune, SCCM, etc.)
 - This is required for Windows Store and enterprise distribution
 
-See [`releases/SWID_TAG_SPEC.md`](./releases/SWID_TAG_SPEC.md) for the full specification.
+See [`SWID_TAG_SPEC.md`](./SWID_TAG_SPEC.md) for the full specification.
 
 ### ISO/IEC 25010:2023 — Software Product Quality Model
 
@@ -191,7 +192,7 @@ v2.2.0  ← previous stable release tag
 - Version bump in same PR as the feature/fix — no separate "version bump PRs"
 - Hotfix branches: `hotfix/<description>` → PR → squash merge to `main` → tag immediately
 
-See [`engineering/BRANCHING_STRATEGY.md`](./engineering/BRANCHING_STRATEGY.md) for the full branching model.
+See [`engineering/BRANCHING_STRATEGY.md`](../engineering/BRANCHING_STRATEGY.md) for the full branching model.
 
 ---
 
@@ -246,6 +247,21 @@ Per ISO/IEC 19770-2, each release should carry:
 *Grounded in: ISO/IEC 12207:2017, ISO/IEC 19770-2:2015, ISO/IEC 25010:2023, Semantic Versioning 2.0.0*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -254,8 +270,8 @@ Per ISO/IEC 19770-2, each release should carry:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Sarah Miller | Initial version |
+| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
