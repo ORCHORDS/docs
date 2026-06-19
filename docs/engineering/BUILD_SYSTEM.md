@@ -1,7 +1,7 @@
 # Build System
 
 **Project:** Beetle Studio  
-**Owner:** Mike Johnson (DevOps Lead)  
+**Owner:** Sarah Miller (Build & Release Engineer)  
 **Reviewers:** Kirk Beka (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (development process), ISO/IEC 25010:2023 (maintainability, portability)  
 **Version:** 1.0.0  
