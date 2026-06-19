@@ -1,0 +1,76 @@
+# Beetle Studio â€” Code Owners
+# Each file/path is owned by the listed GitHub/Fogejo users.
+# PRs touching these paths require review from the owner.
+# Format: pattern<space>owners
+
+# Default owner
+*                                               @kirk.beka @mooned
+
+# Meta / Documentation / Style / Help / User docs
+/STYLE_GUIDE.md                                 @tom.anderson
+/README.md                                      @tom.anderson
+/help/                                          @tom.anderson
+/user/                                          @tom.anderson
+
+# Releases
+/releases/                                      @sarah.miller
+
+# Engineering
+/engineering/BUILD_SYSTEM.md                    @mike.johnson
+/engineering/CI_CD_PIPELINE.md                  @mike.johnson
+/engineering/BRANCHING_STRATEGY.md              @mike.johnson
+/engineering/TEST_STRATEGY.md                   @mike.johnson
+/operations/INFRASTRUCTURE_OVERVIEW.md          @mike.johnson
+/engineering/TECHNICAL_STANDARDS.md             @kirk.beka
+/engineering/ARCHITECTURE_OVERVIEW.md           @kirk.beka
+/engineering/BACKUP_DISASTER_RECOVERY.md        @kirk.beka
+
+# UI/UX
+/ui/COMPONENT_LIBRARY.md                        @alex.chen
+/ACCESSIBILITY_COMPLIANCE.md                    @alex.chen
+
+# Graphics
+/graphics/                                      @james.park
+/PERFORMANCE_BENCHMARKS.md                      @james.park
+
+# Codecs
+/codecs/                                        @sophie.williams
+
+# Backend
+/backend/                                       @maya.rodriguez
+
+# Effects
+/effects/                                       @daniel.kim
+/OPENFX_PLUGIN_GUIDE.md                         @daniel.kim
+
+# Timeline
+/timeline/                                      @emma.thompson
+
+# Audio
+/audio/                                         @ryan.foster
+
+# Product
+/product/                                       @chris.taylor
+/PROJECT_SCHEDULE.md                            @chris.taylor
+
+# Operations
+/operations/ONBOARDING_GUIDE.md                 @amanda.clark
+
+# Community
+/community/                                     @rachel.green
+
+# Marketing
+/marketing/                                     @jason.wong
+
+# Business
+/business/                                      @kevin.brown
+
+# QA
+/BETA_PROGRAM_GUIDE.md                          @lisa.martinez
+
+# Security
+/SECURITY_POLICY.md                             @kirk.beka
+
+# Operations manual
+/TEAM_OPERATIONS_MANUAL.md                      @kirk.beka
+/BEETLE_STUDIO_TEAM.md                          @mooned
