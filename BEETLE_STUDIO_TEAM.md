@@ -1,8 +1,66 @@
 # Beetle Studio Team
 
+**Project:** Beetle Studio
+**Owner:** Mooned Dev (CEO)
+**Reviewers:** Kirk Beka (CTO)
+**ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
+**Version:** 1.0.0
+**Last Updated:** June 2026
+
+---
+
+## Overview
+
+This document provides the canonical reference for the Beetle Studio team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
+
+---
+
+## Scope & Audience
+
+| Aspect | Definition |
+|---|---|
+| **Scope** | This document covers beetle studio team for the Beetle Studio team. |
+| **Diátaxis form** | Reference |
+| **Primary audience** | All team members |
+| **Secondary audience** | External partners and recruiters |
+
+---
+
+## Contents
+
+- [Leadership](#leadership)
+  - [1. Mooned Dev — Founder & CEO](#1-mooned-dev-founder-ceo)
+  - [2. Kirk Beka — Co-Founder & CTO](#2-kirk-beka-cofounder-cto)
+- [Engineering Department](#engineering-department)
+  - [3. Alex Chen — Lead UI/UX Engineer](#3-alex-chen-lead-uiux-engineer)
+  - [4. Maya Rodriguez — Senior Backend Developer](#4-maya-rodriguez-senior-backend-developer)
+  - [5. James Park — Senior Graphics Engineer](#5-james-park-senior-graphics-engineer)
+  - [6. Sophie Williams — Video Codec Engineer](#6-sophie-williams-video-codec-engineer)
+  - [7. Daniel Kim — Effects & Compositing Engineer](#7-daniel-kim-effects-compositing-engineer)
+  - [8. Emma Thompson — Timeline Engineer](#8-emma-thompson-timeline-engineer)
+  - [9. Ryan Foster — Audio Engineer](#9-ryan-foster-audio-engineer)
+  - [10. Lisa Martinez — Quality Assurance Lead](#10-lisa-martinez-quality-assurance-lead)
+- [Product & Design](#product-design)
+  - [11. Chris Taylor — Product Manager](#11-chris-taylor-product-manager)
+  - [12. Nina Patel — UX Designer](#12-nina-patel-ux-designer)
+  - [13. David Lee — Motion Graphics Designer](#13-david-lee-motion-graphics-designer)
+- [DevOps & Infrastructure](#devops-infrastructure)
+  - [14. Mike Johnson — DevOps Engineer](#14-mike-johnson-devops-engineer)
+  - [15. Sarah Miller — Build & Release Engineer](#15-sarah-miller-build-release-engineer)
+- [Marketing & Community](#marketing-community)
+  - [16. Jason Wong — Marketing Manager](#16-jason-wong-marketing-manager)
+  - [17. Rachel Green — Community Manager](#17-rachel-green-community-manager)
+  - [18. Tom Anderson — Technical Writer](#18-tom-anderson-technical-writer)
+- [Business & Operations](#business-operations)
+  - [19. Amanda Clark — Operations Manager](#19-amanda-clark-operations-manager)
+  - [20. Kevin Brown — Business Development](#20-kevin-brown-business-development)
+- [Team Structure Overview](#team-structure-overview)
+- [Hiring Priorities (In Order)](#hiring-priorities-in-order)
+
+---
 **Company:** Mooned Dev  
 **Product:** Beetle Studio (Professional Video Editor)  
-**Website:** www.mooneddev.com  
+**Website:** www.mooned.dev  
 **Founded:** 2025  
 
 ---
@@ -423,3 +481,35 @@ Mooned Dev (CEO)
 
 **Last Updated:** June 2025  
 **Version:** 1.0
+
+---
+
+## References
+
+### Internal Documents
+
+- [BEETLE_STUDIO_TEAM.md](./BEETLE_STUDIO_TEAM.md) â€” Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [docs/STYLE_GUIDE.md](./docs/STYLE_GUIDE.md) for the full standards catalog
+
+---
+
+## Document Maintenance
+
+### Change Log
+
+| Version | Date | Author | Change |
+|---|---|---|---|
+| 1.0.0 | June 2026 | Mooned Dev | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
+
+### Review Cadence
+
+- **Next review:** September 2026
+- **Reviewer:** Kirk Beka (CTO)
+- **Cadence:** Quarterly
