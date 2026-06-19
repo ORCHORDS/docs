@@ -189,7 +189,7 @@ OfxStatus describe(OfxImageEffectHandle effect) {
 |---|---|---|
 | API compliance | Plugin loads and responds to all OfxHost calls | Beetle Studio plugin test harness |
 | Parameter animation | Keyframes persist and interpolate correctly | Visual inspection + regression test |
-| Render performance | No memory leaks, acceptable frame time | Instruments / RenderDoc |
+| Render performance | No memory leaks, acceptable frame time | PIX / RenderDoc |
 | Cross-platform | Same effect works on all supported platforms | CI plugin test matrix |
 
 ---
@@ -211,6 +211,21 @@ Plugin SDK docs and publishing guidelines: see [`OPENFX_PLUGIN_GUIDE.md`](../OPE
 *Grounded in: ISO/IEC 12207:2017 §6.1 (Design), ISO/IEC 25010:2023 (Functional Suitability, Maintainability)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../OPENFX_PLUGIN_GUIDE.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -219,8 +234,8 @@ Plugin SDK docs and publishing guidelines: see [`OPENFX_PLUGIN_GUIDE.md`](../OPE
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Daniel Kim | Initial version |
+| 1.0.1 | June 2026 | Daniel Kim | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
