@@ -55,15 +55,6 @@ This document defines the API contract between the Beetle Studio desktop applica
 
 ---
 
-
----
-
-
----
-
-
----
-
 ## Technology Stack
 
 | Component | Technology | Notes |
@@ -308,7 +299,7 @@ match /projects/{projectId} {
 | **Auth required** | Every callable function starts with `if (!context.auth) throw ...` |
 | **Input validation** | Zod schema validation at function entry |
 | **Secrets** | Google Secret Manager, never in env vars |
-| **CORS** | Restricted to `mooned.dev` and `app.mooned.dev` |
+| **CORS** | Restricted to `mooned.dev` and `www.mooned.dev` |
 | **Rate limiting** | Firebase App Check + per-user counter in Firestore |
 | **App Check** | Required for all production traffic (blocks unauthenticated API access) |
 
@@ -325,6 +316,21 @@ match /projects/{projectId} {
 *Grounded in: ISO/IEC 12207:2017 §6.1 (Design), ISO/IEC 27001:2022 Annex A, ISO/IEC 25010:2023*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+- [$title](./../engineering/CI_CD_PIPELINE.md)
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -333,8 +339,8 @@ match /projects/{projectId} {
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Maya Rodriguez | Initial version |
+| 1.0.1 | June 2026 | Maya Rodriguez | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
