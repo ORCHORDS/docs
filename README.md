@@ -1,3 +1,0 @@
-# docs
-
-Beetle Studio documentation
