@@ -1,0 +1,3 @@
+# docs
+
+Beetle Studio documentation
