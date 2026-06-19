@@ -1,7 +1,8 @@
 # OpenFX Plugin Guide (Third-Party)
 
 **Project:** Beetle Studio  
-**Owners:** Daniel Kim (Effects & Compositing Engineer — SDK), Tom Anderson (Technical Writer — user guide)  
+
+**Owner:** Daniel Kim (Effects Lead), Tom Anderson (Technical Writer)**Owners:** Daniel Kim (Effects & Compositing Engineer — SDK), Tom Anderson (Technical Writer — user guide)  
 **Reviewers:** Kirk Beka (CTO)  
 **ISO Standards:** ISO/IEC 12207:2017 (development — API documentation), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
@@ -23,8 +24,6 @@
 ---
 
 ## Overview
-
-This guide helps third-party plugin developers build effects compatible with Beetle Studio, and helps users install and manage third-party effects. Per **ISO/IEC 12207:2017 section 6.1**, API documentation must be clear, accurate, and versioned so developers can build compatible plugins. Beetle Studio supports **OpenFX 1.4** plugins.
 
 This guide helps third-party plugin developers build effects compatible with Beetle Studio, and helps users install and manage third-party effects. Per **ISO/IEC 12207:2017 §6.1**, API documentation must be clear, accurate, and versioned so developers can build compatible plugins.
 ## Contents
@@ -89,7 +88,7 @@ To build an OpenFX plugin for Beetle Studio, you'll need:
 
 | Tool | Version | Notes |
 |---|---|---|
-| C++ compiler | MSVC 2022, GCC 12+ | C++17 minimum |
+| C++ compiler | MSVC 2022, GCC 12+ | C++20 minimum |
 | CMake | 3.20+ | Build system |
 | OpenFX SDK | 1.4 | [Download from openfx.org](https://openfx.org) |
 | Beetle Studio | Latest beta | For testing |
@@ -190,6 +189,21 @@ cmake --build . --config Release
 *Grounded in: ISO/IEC 12207:2017 §6.1 (Design), ISO/IEC 25010:2023 (Functional Suitability, Maintainability)*
 
 
+
+---
+
+## References
+
+### Internal Documents
+
+_No internal documents referenced._
+
+### Standards & Frameworks
+
+- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
+
 ---
 
 ## Document Maintenance
@@ -198,8 +212,8 @@ cmake --build . --config Release
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Unknown owner | Initial version |
-| 1.0.1 | June 2026 | Unknown owner | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Daniel Kim | Initial version |
+| 1.0.1 | June 2026 | Daniel Kim | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
