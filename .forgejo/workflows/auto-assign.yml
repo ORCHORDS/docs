@@ -1,0 +1,55 @@
+name: Auto-assign issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign by content
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+          API_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+          API_URL: https://dev.mooned.dev/api/v1
+        run: |
+          TEXT="$(echo "$ISSUE_TITLE $ISSUE_BODY" | tr '[:upper:]' '[:lower:]')"
+          ASSIGNEES=""
+          add() { echo "$ASSIGNEES" | grep -q "$1" || ASSIGNEES="$ASSIGNEES $1"; }
+
+          echo "$TEXT" | grep -qiE "releases/|installer|code.signing|versioning|changelog|swid|windows.store" && add sarah.miller
+          echo "$TEXT" | grep -qiE "ci_cd|ci/cd|backup|disaster|branching|devops|cloudflare" && add mike.johnson
+          echo "$TEXT" | grep -qiE "engineering/" && add mike.johnson
+          echo "$TEXT" | grep -qiE "graphics/|rendering|shader|gpu|directx|vulkan" && add james.park
+          echo "$TEXT" | grep -qiE "effects/|openfx" && add daniel.kim
+          echo "$TEXT" | grep -qiE "timeline/" && add emma.thompson
+          echo "$TEXT" | grep -qiE "audio/|vst" && add ryan.foster
+          echo "$TEXT" | grep -qiE "codecs/|codec|format.support|ffmpeg" && add sophie.williams
+          echo "$TEXT" | grep -qiE "ui/|component.library" && add alex.chen
+          echo "$TEXT" | grep -qiE "backend/|api.contract|cors" && add maya.rodriguez
+          echo "$TEXT" | grep -qiE "user/|user.guide|quick.start|keyboard.shortcuts|faq|troubleshooting|help/" && add tom.anderson
+          echo "$TEXT" | grep -qiE "product/|roadmap|priority.framework|project.schedule" && add chris.taylor
+          echo "$TEXT" | grep -qiE "operations/|onboarding|org.chart|slack.channel" && add amanda.clark
+          echo "$TEXT" | grep -qiE "community/" && add rachel.green
+          echo "$TEXT" | grep -qiE "marketing/|launch.playbook" && add jason.wong
+          echo "$TEXT" | grep -qiE "business/|licensing|pricing" && add kevin.brown
+          echo "$TEXT" | grep -qiE "test|qa|winappdriver|flaui|beta" && add lisa.martinez
+          echo "$TEXT" | grep -qiE "security|waiver" && add maya.rodriguez
+          echo "$TEXT" | grep -qiE "architecture|technical.standard|c\+\+" && add kirk.beka
+          echo "$TEXT" | grep -qiE "accessibility|wcag" && add alex.chen
+          echo "$TEXT" | grep -qiE "performance|benchmark" && add james.park
+
+          ASSIGNEES="$(echo $ASSIGNEES | xargs)"
+          if [ -n "$ASSIGNEES" ]; then
+            JSON=$(echo "$ASSIGNEES" | tr ' ' '\n' | sort -u | jq -R . | jq -s '{assignees: .}')
+            curl -s -X POST "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM/assignees" \
+              -H "Authorization: token $API_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "$JSON"
+            echo "Assigned: $ASSIGNEES"
+          else
+            echo "No matching rules found"
+          fi
