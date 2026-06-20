@@ -170,7 +170,7 @@ az signing certificate sign --file BeetleStudio.msix --output BeetleStudio_signe
 4. Complete age rating questionnaire
 5. Complete privacy policy declaration
 6. Set pricing and distribution:
-   - **Pricing:** $XX.XX USD (set per Chris Taylor + Kevin Brown)
+   - **Pricing:** $49.99 USD (set per Chris Taylor + Kevin Brown)
    - **Countries:** All markets (or select specific markets)
    - **Distribution:** Public / Private (beta)
 7. Submit for certification
