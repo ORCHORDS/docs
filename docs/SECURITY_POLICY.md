@@ -1,11 +1,11 @@
 # Security Policy
 
 **Project:** Beetle Studio  
-**Owner:** Kirk Beka (CTO) — architectural security; Maya Rodriguez (Backend) — backend security; Sarah Miller (Build) — signing and distribution  
+**Owner:** Kirk Beka (CTO) - architectural security; Maya Rodriguez (Backend) - backend security; Sarah Miller (Build) - signing and distribution  
 **Reviewers:** Mooned Dev (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (information security management)  
-**Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Version:** 1.0.1  
+**Last Updated:** 2026-06-20  
 
 ---
 
@@ -49,7 +49,7 @@ This policy defines the security standards, vulnerability handling procedures, a
   - [Vulnerability Disclosure](#vulnerability-disclosure)
 - [Version History](#version-history)
   - [Change Log](#change-log)
-  - [Review Cadence](#review-cadence)
+  - [Review Cadence](#review-cadre)
 
 ---
 
@@ -113,17 +113,17 @@ See: [`releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](../releases/CODE_SIGNIN
 
 | Data Type | Stored | Encryption | Retention |
 |---|---|---|---|
-| Email / name (Firebase Auth) | ✅ | At rest (Firestore) + TLS in transit | Until account deletion |
-| Projects / media | ✅ (if cloud sync on) | At rest + TLS | Until account deletion |
-| Analytics (opt-in) | ✅ | TLS only | 12 months |
-| Crash reports (with consent) | ✅ | TLS only | 6 months |
-| Payment info | ❌ | Handled by Microsoft Store | N/A |
+| Email / name (Firebase Auth) | Firestore `users/{uid}` | TLS in transit; AES-256 at rest (Firestore default) | Until account deletion; soft-delete 30 days |
+| Projects / media (cloud sync, opt-in) | Firebase Storage | TLS in transit; AES-256 at rest | Until account deletion |
+| Analytics (opt-in) | BigQuery (anonymized) | TLS in transit; CMEK encryption at rest | 12 months, then auto-purge |
+| Crash reports (opt-in) | Firebase Crashlytics | TLS in transit; encrypted at rest | 6 months, then auto-purge |
+| Payment info | **Not stored locally** — handled by Microsoft Store (PCI-DSS scope delegated) | TLS via Microsoft Store payment SDK | N/A (Microsoft retains per their ToS) |
 
 ### Local Data
 
 | Data Type | Storage Location | Encryption |
 |---|---|---|
-| Project files | User Documents / AppData | Per user file permissions |
+| Project files | User Documents / AppData | Per-user NTFS ACLs |
 | Settings | %APPDATA% | OS file permissions |
 | Cache | %LOCALAPPDATA% | Not encrypted (not sensitive) |
 
@@ -133,7 +133,7 @@ See: [`releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](../releases/CODE_SIGNIN
 
 - Firebase Authentication for all user accounts
 - OAuth 2.0 / OpenID Connect for Google sign-in
-- Session tokens stored in Windows Credential Manager (encrypted)
+- Session tokens stored in Windows Credential Manager (encrypted with DPAPI)
 - No passwords stored in plain text anywhere
 
 ---
@@ -145,7 +145,7 @@ OpenFX plugins run in the same process as Beetle Studio. Security controls:
 - Plugins are code-signed by third-party developers (required for Store distribution)
 - Plugins run with the same permissions as Beetle Studio (no sandbox)
 - Users can disable plugin loading: **Edit → Preferences → Plugins → Disable Plugin Loading**
-- Plugin API exposes limited interfaces — no arbitrary code execution from plugin host
+- Plugin API exposes limited interfaces - no arbitrary code execution from plugin host
 
 ---
 
@@ -165,10 +165,10 @@ We follow a **coordinated vulnerability disclosure** process:
 
 | Rating | CVSS Score | Response Time | Example |
 |---|---|---|---|
-| **Critical** | 9.0–10.0 | 24 hours | Remote code execution |
-| **High** | 7.0–8.9 | 7 days | Privilege escalation |
-| **Medium** | 4.0–6.9 | Next release | Denial of service |
-| **Low** | 0.1–3.9 | Next release | Information disclosure |
+| **Critical** | 9.0-10.0 | 24 hours | Remote code execution |
+| **High** | 7.0-8.9 | 7 days | Privilege escalation |
+| **Medium** | 4.0-6.9 | Next release | Denial of service |
+| **Low** | 0.1-3.9 | Next release | Information disclosure |
 
 ---
 
@@ -204,9 +204,9 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 | Level | Scope | Required for |
 |---|---|---|
-| **ASVS L1** | Baseline — blocks the OWASP Top 10 | All releases |
-| **ASVS L2** | Standard — defense in depth, threat-modeled | All releases |
-| **ASVS L3** | High-assurance — verified penetration testing | Auth, payment, license enforcement, cloud sync |
+| **ASVS L1** | Baseline - blocks the OWASP Top 10 | All releases |
+| **ASVS L2** | Standard - defense in depth, threat-modeled | All releases |
+| **ASVS L3** | High-assurance - verified penetration testing | Auth, payment, license enforcement, cloud sync |
 
 ### Penetration Testing
 
@@ -229,11 +229,12 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial policy — fully aligned with ISO/IEC 27001:2022 |
+| 1.0.0 | June 2026 | Initial policy - fully aligned with ISO/IEC 27001:2022 |
+| 1.0.1 | 2026-06-20 | Kirk Beka - Replaced `?` placeholders in User Data table with concrete encryption + retention details; payment info row now references Microsoft Store delegation (PCI-DSS scope) |
 
 ---
 
-*Grounded in: ISO/IEC 27001:2022 — Information Security Management Systems*
+*Grounded in: ISO/IEC 27001:2022 - Information Security Management Systems*
 
 
 
@@ -243,12 +244,15 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 ### Internal Documents
 
-_No internal documents referenced._
+- [`../engineering/TECHNICAL_STANDARDS.md`](../engineering/TECHNICAL_STANDARDS.md) - Secure coding standards
+- [`../releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](../releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md) - Signing infrastructure
+- [`../backend/API_CONTRACT.md`](../backend/API_CONTRACT.md) - API security controls
+- [`../operations/INFRASTRUCTURE_OVERVIEW.md`](../operations/INFRASTRUCTURE_OVERVIEW.md) - Infra controls
 
 ### Standards & Frameworks
 
-- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
-- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- ISO/IEC 12207:2017 (Systems and software engineering - Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering - Quality requirements and evaluation)
 - See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
 
 ---
@@ -260,10 +264,10 @@ _No internal documents referenced._
 | Version | Date | Author | Change |
 |---|---|---|---|
 | 1.0.0 | June 2026 | Kirk Beka | Initial version |
-| 1.0.1 | June 2026 | Kirk Beka | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.1 | 2026-06-20 | Kirk Beka | Replaced `?` placeholders in User Data table with concrete encryption + retention details |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Kirk Beka (CTO) — architectural security
+- **Reviewer:** Kirk Beka (CTO) - architectural security
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
