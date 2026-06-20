@@ -90,7 +90,7 @@ Beetle Studio uses a **render graph** to manage GPU resources and dependencies. 
 | **ColorCorrection** | Decoded frame | Color-managed frame | Applies LUT, color space conversion |
 | **EffectChain** | Previous pass output | Composite frame | Each effect is a sub-pass |
 | **ViewportComposite** | Timeline composite | Final frame | Adds safe-area guides, rulers |
-| **UIRender** | N/A | UI texture | Qt6 renders to offscreen texture |
+| **UIRender** | Qt6 surface tree | UI texture (R8G8B8A8_UNorm or B8G8R8A8_UNorm) | Qt6 `QQuickRenderControl` renders the widget tree into an offscreen `VkImage` / `ID3D12Resource`. UIRender is a sub-pass of `Present`: the UI texture is composited on top of the timeline frame in a fullscreen triangle. This keeps Qt's hit-testing and accessibility model intact while letting the renderer own the final composite. DPI scale = `DPI / 96`, capped at 2.0x. |
 | **Present** | Composite | Screen | Frame pacing + vsync |
 
 ---
