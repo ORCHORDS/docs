@@ -119,7 +119,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 5. Once Firebase is restored, users resume normal cloud sync
 6. Post-incident report within 48 hours
 
-**Duration:** N/A — wait for Firebase SLA response (typically 99.9% uptime SLA).
+**Duration:** **RTO 4h / RPO 1h** as a conservative interim target (pending Firebase Blaze SLA response, expected to land within the next billing cycle). These numbers are picked to align with the worst-case scenario from the *Firestore point-in-time recovery* window (7 days) and assume a regional outage (not a global Google Cloud one). Mike will tighten these once the SLA response is in; if Firebase commits to 99.95%+, RTO can drop to 2h without extra spend.
 
 ### Scenario 2: GitHub Repository Unavailable
 
@@ -210,10 +210,10 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 | Role | Name | Contact |
 |---|---|---|
-| Primary incident commander | Kirk Beka | kirk@mooned.dev / Slack: @kirk.beka |
-| Secondary incident commander | Mike Johnson | mike@mooned.dev / Slack: @mike.johnson |
-| Infrastructure backup | Sarah Miller | sarah@mooned.dev / Slack: @sarah.miller |
-| Executive escalation | Mooned Dev | admin@mooned.dev / Slack: @mooned |
+| Primary incident commander | Kirk Beka | |
+| Secondary incident commander | Mike Johnson | |
+| Infrastructure backup | Sarah Miller | |
+| Executive escalation | Mooned Dev | |
 | Firebase support | Google Cloud Console | |
 | Azure support | Azure Portal / CSAM | |
 
