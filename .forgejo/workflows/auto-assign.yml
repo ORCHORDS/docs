@@ -24,85 +24,45 @@ jobs:
           ASSIGNEES=""
           add() { echo "$ASSIGNEES" | grep -q "$1" || ASSIGNEES="$ASSIGNEES $1"; }
 
-          # mooned (CEO / Lead Graphics Engineer)
-          # core engine, GPU rendering architecture, DirectX, Vulkan, CUDA, SIMD, memory
           echo "$TEXT" | grep -qE "core engine|graphics engine|vulkan render|directx render|cuda|opencl|simd|memory manage|gpu render|rendering engine" && add "mooned"
 
-          # kirk.beka (CTO)
-          # architecture, cross-platform, security, licensing, standards, org structure, code review, C++ standards
-          echo "$TEXT" | grep -qE "architect|cross.?platform|security|licens|code review|infrastructure|org chart|reporting line|c\+\+|technical standard|code standard|system design" && add "kirk.beka"
+          echo "$TEXT" | grep -qE "architect|cross.?platform|security|licens|code review|infrastructure|org chart|reporting line|c\+\+|technical standard|code standard|system design|branch.?protect|branch.?strateg|disaster.?recover" && add "kirk.beka"
 
-          # alex.chen (UI/UX Lead)
-          # Qt6, UI components, panels, accessibility, interface, widgets, themes
-          echo "$TEXT" | grep -qE "qt6|qml|panel|interface|accessibility|widget|toolbar|menu.?bar|dark.?mode|theme|ui.?framework|ui.?component|dpi.?scal|docking|winappdriver|ui.?test|ui.?bug|ui.?design|ui/ux" && add "alex.chen"
+          echo "$TEXT" | grep -qE "qt6|qml|panel|interface|accessibility|wcag|widget|toolbar|menu.?bar|dark.?mode|theme|ui.?framework|ui.?component|dpi.?scal|docking|winappdriver|ui.?test|ui.?bug|ui.?design|ui/ux|screen.?reader|high.?contrast" && add "alex.chen"
 
-          # maya.rodriguez (Backend Lead)
-          # Firebase, cloud, auth, API, database, Firestore, sync, backend, SSO
-          echo "$TEXT" | grep -qE "firebase|cloud func|authenticat|api endpoint|database|firestore|sync|backend|server.?side|rest.?api|oauth|sso|cloud.?sync|waiver|security.?policy" && add "maya.rodriguez"
+          echo "$TEXT" | grep -qE "firebase|cloud func|authenticat|api endpoint|database|firestore|sync|backend|server.?side|rest.?api|oauth|sso|cloud.?sync|waiver|security.?policy|activation.?system|license.?server" && add "maya.rodriguez"
 
-          # james.park (Graphics Engineer)
-          # DirectX 12, Vulkan, shaders, color management, HDR, LUT, GPU, preview viewport
-          echo "$TEXT" | grep -qE "directx|dx12|vulkan|shader|hlsl|glsl|hdr|lut|color.?manage|preview.?viewport|gpu.?profil|renderdoc|render.?pipeline|gpu.?memory|color.?space|color.?science" && add "james.park"
+          echo "$TEXT" | grep -qE "directx|dx12|vulkan|shader|hlsl|glsl|hdr|lut|color.?manage|preview.?viewport|gpu.?profil|renderdoc|render.?pipeline|gpu.?memory|color.?space|color.?science|shader.?compil" && add "james.park"
 
-          # sophie.williams (Codec Engineer)
-          # FFmpeg, encoding, decoding, codecs, formats, hardware encoding
           echo "$TEXT" | grep -qE "ffmpeg|codec|encod|decod|h\.264|h264|hevc|h\.265|av1|prores|nvenc|quicksync|transcode|mux|demux|container.?format|frame.?accurat|scrub|video.?format|bitrate|pixel.?format" && add "sophie.williams"
 
-          # daniel.kim (Effects & Compositing Engineer)
-          # effects, compositing, color correction, OpenFX, plugins, blur, keying
           echo "$TEXT" | grep -qE "effect|composit|color.?correct|color.?grad|blur|sharpen|noise.?reduc|openfx|plugin.?sdk|lut.?apply|layer.?blend|keying|chroma.?key|vignette|grain|mask|rotoscop" && add "daniel.kim"
 
-          # emma.thompson (Timeline Engineer)
-          # timeline, clips, trimming, undo/redo, multi-track, playhead, markers, keyboard shortcuts
           echo "$TEXT" | grep -qE "timeline|clip.?trim|split.?clip|undo|redo|multi.?track|ripple|razor|playhead|marker|nest.?sequence|keyboard.?shortcut|edit.?point|slip|slide|sequence|track.?lock" && add "emma.thompson"
 
-          # ryan.foster (Audio Engineer)
-          # audio, mixing, VST, waveform, ASIO, WASAPI, loudness, EQ, reverb
           echo "$TEXT" | grep -qE "audio|sound.?design|mix.?down|equaliz|compressor|reverb|vst.?plugin|waveform|asio|wasapi|loudness|meter|fade.?in|fade.?out|sample.?rate|audio.?sync|audio.?latency" && add "ryan.foster"
 
-          # lisa.martinez (QA Lead)
-          # testing, bugs, benchmarks, quality, regression, beta, crash, smoke test
-          echo "$TEXT" | grep -qE "test.?suite|test.?case|test.?plan|qa |bug.?report|regression|benchmark|beta.?test|quality.?assur|smoke.?test|automat.?test|flaky|crash.?report|test.?coverage|test.?strateg" && add "lisa.martinez"
+          echo "$TEXT" | grep -qE "test.?suite|test.?case|test.?plan|qa |bug.?report|regression|benchmark|beta.?test|quality.?assur|smoke.?test|automat.?test|flaky|crash.?report|test.?coverage|test.?strateg|beta.?program|beta.?infra" && add "lisa.martinez"
 
-          # chris.taylor (Product Manager)
-          # roadmap, features, sprints, user research, backlog, schedule, milestones, priorities
-          echo "$TEXT" | grep -qE "roadmap|feature.?request|sprint|user.?research|competitor|product.?manage|backlog|priorit|user.?stor|requirement|milestone|schedule|project.?plan|release.?plan|scope" && add "chris.taylor"
+          echo "$TEXT" | grep -qE "roadmap|feature.?request|sprint|user.?research|competitor|product.?manage|backlog|priorit|user.?stor|requirement|milestone|schedule|project.?plan|release.?plan|scope|release.?checklist|beta.?program" && add "chris.taylor"
 
-          # nina.patel (UX Designer)
-          # wireframes, prototypes, user flows, design system, Figma, mockups, usability
-          echo "$TEXT" | grep -qE "wireframe|prototype|user.?flow|design.?system|figma|mockup|usability|ux.?design|interaction.?design|layout.?design|user.?journey|persona|heuristic" && add "nina.patel"
+          echo "$TEXT" | grep -qE "wireframe|prototype|user.?flow|design.?system|figma|mockup|usability|ux.?design|interaction.?design|layout.?design|user.?journey|persona|heuristic|accessibility|wcag|screen.?reader|high.?contrast" && add "nina.patel"
 
-          # david.lee (Motion Graphics Designer)
-          # titles, motion graphics, transitions, animation presets, templates, lower thirds
           echo "$TEXT" | grep -qE "title.?template|motion.?graphic|transition.?effect|animation.?preset|default.?template|lower.?third|intro.?template|outro|motion.?design|text.?anim" && add "david.lee"
 
-          # mike.johnson (DevOps Engineer)
-          # CI/CD, pipeline, Docker, Azure, monitoring, deployment, Cloudflare, runners, alerts, infrastructure
-          echo "$TEXT" | grep -qE "ci/cd|ci.?cd|pipeline|docker|azure|deploy|monitor|alert|github.?action|forgejo.?action|runner|container|devops|cloudflare|dns|ssl|cert.?renew|uptime|incident|disaster|business.?continu|backup|ci.?alert|slack.?channel" && add "mike.johnson"
+          echo "$TEXT" | grep -qE "ci/cd|ci.?cd|pipeline|docker|azure|deploy|monitor|alert|github.?action|forgejo.?action|runner|container|devops|cloudflare|dns|ssl|cert.?renew|uptime|incident|disaster|business.?continu|backup|ci.?alert|slack.?channel|branch.?protect|branch.?strateg" && add "mike.johnson"
 
-          # sarah.miller (Build & Release Engineer)
-          # installer, build system, packaging, code signing, Windows Store, release, cmake, versioning
-          echo "$TEXT" | grep -qE "installer|build.?system|packag|code.?sign|windows.?store|msix|inno.?setup|wix|release.?build|version.?bump|cmake|certificate.?expir|signing.?cert|store.?submission|artifact" && add "sarah.miller"
+          echo "$TEXT" | grep -qE "installer|build.?system|packag|code.?sign|windows.?store|msix|inno.?setup|wix|release.?build|version.?bump|cmake|certificate.?expir|signing.?cert|store.?submission|artifact|swid|release.?check|changelog" && add "sarah.miller"
 
-          # jason.wong (Marketing Manager)
-          # marketing, SEO, social media, press, brand, campaigns, newsletters
           echo "$TEXT" | grep -qE "marketing|seo|social.?media|press.?release|brand|campaign|newsletter|advertis|content.?market|analytics|landing.?page|launch.?event" && add "jason.wong"
 
-          # rachel.green (Community Manager)
-          # community, Discord, forum, user feedback, support, beta program
-          echo "$TEXT" | grep -qE "community|discord|forum|user.?feedback|support.?ticket|beta.?program|advocate|tutorial.?request|moderati|community.?event" && add "rachel.green"
+          echo "$TEXT" | grep -qE "community|discord|forum|user.?feedback|support.?ticket|beta.?program|advocate|tutorial.?request|moderati|community.?event|beta.?infra|feedback.?collect" && add "rachel.green"
 
-          # tom.anderson (Technical Writer)
-          # documentation, tutorials, help center, guides, README, changelogs, troubleshooting
           echo "$TEXT" | grep -qE "document|tutorial|help.?center|knowledge.?base|user.?guide|api.?doc|changelog|release.?note|readme|tech.?writ|troubleshoot|style.?guide|doc.?review|doc.?update|onboarding.?guide" && add "tom.anderson"
 
-          # amanda.clark (Operations Manager)
-          # HR, recruitment, legal, contracts, onboarding, compliance, vendor, finance, org chart
           echo "$TEXT" | grep -qE "recruit|vendor|legal|contract|finance|onboard|compliance|office|hiring|payroll|org.?chart|reporting.?line|team.?structure|employee|benefits|policy.?manual|operations" && add "amanda.clark"
 
-          # kevin.brown (Business Development)
-          # partnerships, OEM, enterprise, sales, licensing deals, marketplace, pricing, revenue
-          echo "$TEXT" | grep -qE "partner|oem|enterprise.?sales|licensing.?deal|marketplace|business.?develop|revenue|pricing|subscription|monetiz|bundle|reseller|wholesale" && add "kevin.brown"
+          echo "$TEXT" | grep -qE "partner|oem|enterprise.?sales|licensing.?deal|marketplace|business.?develop|revenue|pricing|subscription|monetiz|bundle|reseller|wholesale|license.?key|activation.?system|volume.?licens|trial.?period|enterprise.?licens" && add "kevin.brown"
 
           ASSIGNEES="$(echo $ASSIGNEES | xargs)"
           if [ -n "$ASSIGNEES" ]; then
