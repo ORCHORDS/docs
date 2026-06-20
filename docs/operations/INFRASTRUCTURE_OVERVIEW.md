@@ -208,7 +208,7 @@ The marketing site (`mooned.dev`) and any user-facing web apps are fronted by **
 
 | Setting | Value | Why |
 |---|---|---|
-| **Plan** | Pro or Business (TBD at launch) | Need WAF + rate limiting |
+| **Plan** | Pro | Need WAF + rate limiting |
 | **SSL/TLS mode** | Full (strict) | Origin pulls must be authenticated |
 | **HSTS** | Enabled, max-age 1 year, includeSubDomains, preload | HSTS header sent to all clients |
 | **Minimum TLS version** | 1.2 (target: 1.3 only) | Block legacy clients |
