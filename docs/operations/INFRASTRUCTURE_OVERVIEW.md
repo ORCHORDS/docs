@@ -208,7 +208,7 @@ The marketing site (`mooned.dev`) and any user-facing web apps are fronted by **
 
 | Setting | Value | Why |
 |---|---|---|
-| **Plan** | Pro | Need WAF + rate limiting |
+| **Plan** | **Business** | Need WAF + advanced rate limiting (managed ruleset), Workers Unbound for the auth pre-check, and 100% uptime SLA. Pro is cheaper but lacks the WAF custom ruleset tier and the Bot Management add-on; Business covers everything in the launch spec. Locked 2026-06-20 by Mooned Dev (CEO) - confirm with Mike Johnson before next billing cycle. |
 | **SSL/TLS mode** | Full (strict) | Origin pulls must be authenticated |
 | **HSTS** | Enabled, max-age 1 year, includeSubDomains, preload | HSTS header sent to all clients |
 | **Minimum TLS version** | 1.2 (target: 1.3 only) | Block legacy clients |
