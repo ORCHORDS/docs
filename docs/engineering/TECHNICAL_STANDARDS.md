@@ -184,13 +184,25 @@ Per **ISO/IEC 12207:2017 §6.3.8**, peer review is a required quality assurance 
 
 ## RFC Process (Architectural Decisions)
 
-For significant architectural changes, an RFC (Request for Comments) is required:
+For significant architectural changes, an RFC (Request for Comments) is required.
+A change is "significant" if it touches **any** of: a public API surface, the
+core engine (graphics / codecs / timeline / effects), cross-platform strategy,
+security model, build/release pipeline, or license/business rules.
 
-1. **Author** creates `docs/rfc/RFC-XXX-<title>.md`
-2. **RFC template** includes: problem statement, proposed solution, alternatives considered, migration plan, consequences
-3. **Discussion** period: 1 week open comment
-4. **Decision** by Kirk Beka (with Mooned Dev for engine-level changes)
-5. **Outcome** posted: Accepted / Rejected / Deferred
+1. **Author** copies [`docs/rfc/RFC-XXX-template.md`](../rfc/RFC-XXX-template.md)
+   to `docs/rfc/RFC-XXX-<title>.md` (where `XXX` is the next available RFC
+   number from the index) and fills in **all** sections. Skipping the
+   *Alternatives Considered* or *Migration Plan* sections is grounds for
+   immediate rejection in review.
+2. **RFC template** sections: Context, Decision, Consequences, Alternatives
+   Considered, Migration Plan, Open Questions, References, Review Notes, Outcome.
+3. **Pull request** opens a 1-week open-comment window on the RFC file.
+   Discussions happen on the PR (not Slack) so the rationale is preserved.
+4. **Decision** by Kirk Beka (with Mooned Dev for engine-level changes).
+   Decision criteria are recorded in §9 *Outcome* of the RFC itself.
+5. **Outcome** posted as a PR comment and tracked in the issue tracker:
+   *Accepted* / *Accepted with changes* / *Rejected* / *Deferred*. Accepted
+   RFCs are merged and added to the RFC index.
 
 ---
 
