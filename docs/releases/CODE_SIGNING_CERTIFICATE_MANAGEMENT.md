@@ -78,7 +78,7 @@ All executable code shipped by Mooned Dev -- installers, DLLs, executables, and 
 
 | Certificate | Expiry | Renewal Deadline | Owner |
 |---|---|---|---|
-| Windows Code Signing | TBD | 60 days before expiry | Sarah Miller |
+| Windows Code Signing | June 2027 | April 2027 | Sarah Miller |
 
 ---
 
