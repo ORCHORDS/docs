@@ -10,68 +10,62 @@ jobs:
   audit:
     name: Markdown audit
     runs-on: ubuntu-latest
-    container:
-      image: alpine:3.20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Install deps
-        run: |
-          apk add --no-cache bash grep findutils coreutils
-
       - name: Run markdown audit
-        env:
-          SKIP_TESTS_UI: '1'
-          SKIP_TOOLS_DISCORD: '1'
         run: |
           set +e
           echo "=== Beetle Studio docs audit ==="
           echo ""
-          total_issues=0
+
           files_ok=0
           files_warn=0
+          total_issues=0
 
           for md in $(find . -name '*.md' \
               -not -path './.git/*' \
               -not -path './_backup_*' \
               -not -path '*/profile_avatars/*' \
-              -not -path '*/_scripts/*' ); do
+              -not -path '*/_scripts/*'); do
             issues=""
-            # Header fields
+
             for field in Project Owner Reviewers "ISO Standards" Version "Last Updated"; do
               if ! grep -qE "^\*\*${field}(\s*\(.*\))?:\*\*" "$md"; then
-                issues+="missing-header:${field} "
+                issues="${issues}missing-header:${field} "
               fi
             done
-            # Required sections
+
             for section in "## Overview" "## Scope & Audience" "## Document Maintenance" "## References"; do
-              if ! grep -qE "^${section// /\\ }\$" "$md"; then
-                issues+="missing-section:${section} "
+              if ! grep -qE "^${section// /\\\\ }" "$md"; then
+                issues="${issues}missing-section:${section} "
               fi
             done
-            # Diataxis row
-            if grep -qE '^## Scope\s*&\s*Audience' "$md"; then
-              if ! awk '/^## Scope & Audience/,/^## /' "$md" | grep -qiE 'Di.taxis'; then
-                issues+="missing-diataxis "
+
+            if grep -qE '^## Scope *& *Audience' "$md"; then
+              if ! awk '/^## Scope *& *Audience/{f=1} f && /Di.taxis/ {print; exit} f && /^## /{exit}' "$md" | grep -q .; then
+                issues="${issues}missing-diataxis "
               fi
             fi
-            # Maintenance subsections
+
             if grep -qE '^## Document Maintenance' "$md"; then
-              if ! awk '/^## Document Maintenance/,0' "$md" | grep -qE '^### Change Log'; then
-                issues+="missing-changelog "
+              if ! awk '/^## Document Maintenance/{f=1} f && /^### Change Log/{print; exit}' "$md" | grep -q .; then
+                issues="${issues}missing-changelog "
               fi
-              if ! awk '/^## Document Maintenance/,0' "$md" | grep -qE '(### Review Cadence|## Review Cadence|Review Cadence)'; then
-                issues+="missing-review-cadence "
+              if ! awk '/^## Document Maintenance/{f=1} f && /Review Cadence/{print; exit}' "$md" | grep -q .; then
+                issues="${issues}missing-review-cadence "
               fi
             fi
+
             if [ -z "$issues" ]; then
               files_ok=$((files_ok + 1))
             else
               files_warn=$((files_warn + 1))
-              total_issues=$((total_issues + $(echo $issues | wc -w)))
+              count=$(echo $issues | wc -w)
+              total_issues=$((total_issues + count))
               echo "WARN: $md -- $issues"
             fi
           done
@@ -81,10 +75,5 @@ jobs:
           echo "files_ok:      $files_ok"
           echo "files_warn:    $files_warn"
           echo "total_issues:  $total_issues"
-
-          # Treat missing overview / changelog / diataxis as fail; missing references as warn
-          if [ "$files_warn" -gt 0 ]; then
-            echo "::warning::Audit found $total_issues issue(s) across $files_warn file(s)"
-          fi
-          # Always exit 0 so the workflow can be used as a soft gate; flip to 1 to enforce.
+          echo "::notice::Audit: ${files_ok} files OK, ${files_warn} files with warnings, ${total_issues} total issues"
           exit 0
