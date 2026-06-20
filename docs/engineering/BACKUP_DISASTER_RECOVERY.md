@@ -210,10 +210,10 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 | Role | Name | Contact |
 |---|---|---|
-| Primary incident commander | Kirk Beka | |
-| Secondary incident commander | Mike Johnson | |
-| Infrastructure backup | Sarah Miller | |
-| Executive escalation | Mooned Dev | |
+| Primary incident commander | Kirk Beka | kirk@mooned.dev / Slack: @kirk.beka |
+| Secondary incident commander | Mike Johnson | mike@mooned.dev / Slack: @mike.johnson |
+| Infrastructure backup | Sarah Miller | sarah@mooned.dev / Slack: @sarah.miller |
+| Executive escalation | Mooned Dev | admin@mooned.dev / Slack: @mooned |
 | Firebase support | Google Cloud Console | |
 | Azure support | Azure Portal / CSAM | |
 
