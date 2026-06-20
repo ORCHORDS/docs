@@ -86,7 +86,7 @@ This document is the complete reference for every keyboard shortcut in Beetle St
 | Action | Windows | Notes |
 |---|---|---|
 | **Split Clip** | `S` | Cut at playhead |
-| **Ripple Delete** | `Shift+Delete` | Delete and close gap |
+| **Ripple Delete** | `Shift+Delete` | Delete and close gap — auto-ripples all downstream clips left to fill the gap (no `Ctrl+Z` undo needed if you change your mind) |
 | **Toggle Snap** | `N` | Toggle magnetic snapping |
 | **Zoom In** | `=` or `Num+` | |
 | **Zoom Out** | `-` or `Num-` | |
@@ -107,8 +107,8 @@ This document is the complete reference for every keyboard shortcut in Beetle St
 | **Trim Out** | `O` | Set out-point |
 | **Go to In** | `Q` | |
 | **Go to Out** | `W` | |
-| **Lift** | `Alt+X` | Extract without closing gap |
-| **Splice** | `Alt+C` | Insert and close gap |
+| **Lift** | `Alt+X` | Extract without closing gap — removes the selected clip and leaves a black gap in its place; downstream clips are **not** moved |
+| **Splice** | `Alt+C` | Insert and close gap — pastes the clipboard clip at the playhead and ripple-shifts everything downstream to make room |
 | **Rate Stretch** | `R` | Stretch clip to fit |
 | **Slip** | `Y` | Move in/out points together |
 | **Slide** | `U` | Move clip on track |
