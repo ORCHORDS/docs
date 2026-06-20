@@ -1,5 +1,4 @@
-name: Auto-assign issues
-
+name: Auto-assign issues by role
 on:
   issues:
     types: [opened]
@@ -11,61 +10,94 @@ jobs:
       - name: Install curl
         run: |
           apt-get update -qq && apt-get install -y -qq curl > /dev/null 2>&1 || true
-          which curl && echo "curl installed" || echo "curl not found"
 
-      - name: Assign by content
+      - name: Assign by team role
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUM: ${{ github.event.issue.number }}
           API_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
           API_URL="http://host.docker.internal:3000/api/v1"
           TEXT="$(echo "$ISSUE_TITLE $ISSUE_BODY" | tr '[:upper:]' '[:lower:]')"
           ASSIGNEES=""
           add() { echo "$ASSIGNEES" | grep -q "$1" || ASSIGNEES="$ASSIGNEES $1"; }
 
-          echo "$TEXT" | grep -qiE "releases/|installer|code.signing|versioning|changelog|swid|windows.store" && add sarah.miller
-          echo "$TEXT" | grep -qiE "ci_cd|ci/cd|backup|disaster|branching|devops|cloudflare" && add mike.johnson
-          echo "$TEXT" | grep -qiE "engineering/" && add mike.johnson
-          echo "$TEXT" | grep -qiE "graphics/|rendering|shader|gpu|directx|vulkan" && add james.park
-          echo "$TEXT" | grep -qiE "effects/|openfx" && add daniel.kim
-          echo "$TEXT" | grep -qiE "timeline/" && add emma.thompson
-          echo "$TEXT" | grep -qiE "audio/|vst" && add ryan.foster
-          echo "$TEXT" | grep -qiE "codecs/|codec|format.support|ffmpeg" && add sophie.williams
-          echo "$TEXT" | grep -qiE "ui/|component.library" && add alex.chen
-          echo "$TEXT" | grep -qiE "backend/|api.contract|cors" && add maya.rodriguez
-          echo "$TEXT" | grep -qiE "user/|user.guide|quick.start|keyboard.shortcuts|faq|troubleshooting|help/" && add tom.anderson
-          echo "$TEXT" | grep -qiE "product/|roadmap|priority.framework|project.schedule" && add chris.taylor
-          echo "$TEXT" | grep -qiE "operations/|onboarding|org.chart|slack.channel" && add amanda.clark
-          echo "$TEXT" | grep -qiE "community/" && add rachel.green
-          echo "$TEXT" | grep -qiE "marketing/|launch.playbook" && add jason.wong
-          echo "$TEXT" | grep -qiE "business/|licensing|pricing" && add kevin.brown
-          echo "$TEXT" | grep -qiE "test|qa|winappdriver|flaui|beta" && add lisa.martinez
-          echo "$TEXT" | grep -qiE "security|waiver" && add maya.rodriguez
-          echo "$TEXT" | grep -qiE "architecture|technical.standard|c\+\+" && add kirk.beka
-          echo "$TEXT" | grep -qiE "accessibility|wcag" && add alex.chen
-          echo "$TEXT" | grep -qiE "performance|benchmark" && add james.park
+          # CEO / Lead Graphics Engineer - core engine, rendering, GPU architecture
+          echo "$TEXT" | grep -qE "core engine|graphics engine|vulkan|directx|cuda|opencl|simd|memory manage|gpu render" && add "mooned"
+
+          # CTO - architecture, cross-platform, security, licensing
+          echo "$TEXT" | grep -qE "architect|cross.?platform|security|licens|code review|infrastructure" && add "kirk.beka"
+
+          # UI/UX Lead - Qt6, interface, panels, accessibility
+          echo "$TEXT" | grep -qE "ui |ui/ux|qt6|qml|panel|interface|accessibility|widget|toolbar|menu bar|dark mode|theme" && add "alex.chen"
+
+          # Backend Lead - Firebase, cloud, auth, API, database
+          echo "$TEXT" | grep -qE "firebase|cloud|auth|api |database|firestore|sync|backend|server|rest api|oauth|sso" && add "maya.rodriguez"
+
+          # Graphics Engineer - DirectX, Vulkan, shaders, color, HDR, preview
+          echo "$TEXT" | grep -qE "directx|dx12|vulkan|shader|hlsl|glsl|hdr|lut|color manage|preview viewport|gpu profil|renderdoc" && add "james.park"
+
+          # Codec Engineer - FFmpeg, encoding, decoding, formats
+          echo "$TEXT" | grep -qE "ffmpeg|codec|encod|decod|h\.264|h264|hevc|h\.265|av1|prores|nvenc|quicksync|transcode|mux|demux|container format|frame.?accurat|scrub" && add "sophie.williams"
+
+          # Effects Engineer - effects, compositing, color correction, OpenFX
+          echo "$TEXT" | grep -qE "effect|composit|color correct|color grad|blur|sharpen|noise reduc|openfx|plugin|lut apply|layer blend|keying|chroma" && add "daniel.kim"
+
+          # Timeline Engineer - timeline, clips, trimming, undo, multi-track
+          echo "$TEXT" | grep -qE "timeline|clip|trim|split|undo|redo|multi.?track|ripple|razor|playhead|marker|nest|sequence|keyboard shortcut" && add "emma.thompson"
+
+          # Audio Engineer - audio, mixing, VST, waveform
+          echo "$TEXT" | grep -qE "audio|sound|mix|eq |equaliz|compressor|reverb|vst|waveform|asio|wasapi|loudness|meter|fade" && add "ryan.foster"
+
+          # QA Lead - testing, bugs, benchmarks, quality
+          echo "$TEXT" | grep -qE "test|qa |bug|regression|benchmark|beta test|quality|smoke test|automation test|flaky|crash report" && add "lisa.martinez"
+
+          # Product Manager - roadmap, features, sprints, user research
+          echo "$TEXT" | grep -qE "roadmap|feature request|sprint|user research|competitor|product|backlog|priorit|user stor|requirement" && add "chris.taylor"
+
+          # UX Designer - wireframes, prototypes, user flows, design system
+          echo "$TEXT" | grep -qE "wireframe|prototype|user flow|design system|figma|mockup|usability|ux design|interaction design|layout" && add "nina.patel"
+
+          # Motion Graphics Designer - titles, motion graphics, transitions, templates
+          echo "$TEXT" | grep -qE "title template|motion graphic|transition|animation preset|default template|lower third|intro|outro" && add "david.lee"
+
+          # DevOps Engineer - CI/CD, pipeline, Docker, Azure, monitoring
+          echo "$TEXT" | grep -qE "ci/cd|ci cd|pipeline|docker|azure|deploy|monitor|alert|github action|forgejo action|runner|container|devops" && add "mike.johnson"
+
+          # Build Engineer - installer, packaging, code signing, Windows Store, release
+          echo "$TEXT" | grep -qE "installer|build system|packag|code sign|windows store|msix|inno setup|wix|release|version bump|cmake" && add "sarah.miller"
+
+          # Marketing Manager - marketing, SEO, social media, press, brand
+          echo "$TEXT" | grep -qE "marketing|seo|social media|press|brand|campaign|newsletter|advertis|content market|analytics" && add "jason.wong"
+
+          # Community Manager - community, Discord, forum, feedback, support
+          echo "$TEXT" | grep -qE "community|discord|forum|user feedback|support ticket|beta program|advocate|tutorial request" && add "rachel.green"
+
+          # Technical Writer - documentation, tutorials, help center
+          echo "$TEXT" | grep -qE "document|docs|tutorial|help center|knowledge base|user guide|api doc|changelog|release note|readme|writing" && add "tom.anderson"
+
+          # Operations Manager - HR, recruitment, legal, contracts, onboarding
+          echo "$TEXT" | grep -qE "hr |recruit|vendor|legal|contract|finance|onboard|compliance|office|admin|hiring|payroll" && add "amanda.clark"
+
+          # Business Development - partnerships, enterprise, sales, licensing deals
+          echo "$TEXT" | grep -qE "partner|oem|enterprise|sales|licensing deal|marketplace|business develop|revenue|pricing strateg" && add "kevin.brown"
 
           ASSIGNEES="$(echo $ASSIGNEES | xargs)"
           if [ -n "$ASSIGNEES" ]; then
             JSON="{\"assignees\":["
             FIRST=true
             for A in $(echo "$ASSIGNEES" | tr ' ' '\n' | sort -u); do
-              if [ "$FIRST" = "true" ]; then
-                JSON="$JSON\"$A\""
-                FIRST=false
-              else
-                JSON="$JSON,\"$A\""
-              fi
+              if [ "$FIRST" = "true" ]; then JSON="$JSON\"$A\""; FIRST=false
+              else JSON="$JSON,\"$A\""; fi
             done
             JSON="$JSON]}"
-            curl -s -X PATCH "$API_URL/repos/beetle-studio/docs/issues/$ISSUE_NUM" \
+            echo "Assigning: $ASSIGNEES"
+            curl -s -X PATCH "$API_URL/repos/$REPO/issues/$ISSUE_NUM" \
               -H "Authorization: token $API_TOKEN" \
               -H "Content-Type: application/json" \
               -d "$JSON"
-            echo ""
-            echo "Assigned: $ASSIGNEES"
           else
-            echo "No matching rules found"
+            echo "No role match found"
           fi
