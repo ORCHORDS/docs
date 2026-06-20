@@ -259,7 +259,7 @@ Beta testing is our primary validation activity before stable releases. See [`BE
 | Effects pipeline | ≥ 70% | ✅ Effect chain execution, parameter updates |
 | Project save/load | ≥ 80% | ✅ Full roundtrip, backwards compatibility |
 | UI state management | ≥ 60% | ✅ Panel state save/restore |
-| Cloud sync | N/A (tested manually) | ✅ Conflict resolution |
+| Cloud sync | Automated + manual | Firestore conflict-resolution harness covers: (1) last-write-wins on independent field edits, (2) manual merge prompt on concurrent edits to the same field, (3) offline queue flush on reconnect. Manual exploratory tests cover weird edge cases (clock skew > 1 min, mid-merge crash). Harness entry: `tests/cloud/sync_conflict_test.cpp`; run via `ctest -R SyncConflict`. |
 
 ### Overall
 
