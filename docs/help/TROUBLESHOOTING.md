@@ -125,6 +125,26 @@ to the main window — but a **WARN** row will be visible until you fix the unde
    The splash's **Drivers** row shows the last successful Windows Update check date.
 3. **Install the Visual C++ 2015–2022 Redistributable (x64)** — the splash's **VC++** row
    will say `missing vcruntime140` if it isn't present.
+
+   **Diagnosis one-liner** (run from an admin PowerShell):
+   ```powershell
+   Test-Path "$env:SystemRoot\System32\vcruntime140.dll" -and
+     (Get-AuthenticodeSignature "$env:SystemRoot\System32\vcruntime140.dll").Status -eq "Valid"
+   ```
+   If the file is missing or the signature is invalid, the VC++ runtime is broken.
+
+   **Silent install** (no UI prompt):
+   ```powershell
+   $url = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+   $out = "$env:TEMP\vc_redist.x64.exe"
+   Invoke-WebRequest -Uri $url -OutFile $out -UseBasicParsing
+   & $out /install /passive /norestart | Out-Null
+   ```
+   After install, restart Beetle Studio. The splash **VC++** row should turn green.
+
+   **Reference:** the official download page is <https://aka.ms/vs/17/release/vc_redist.x64.exe>.
+   For offline / air-gapped installs, use the `vc_redist.x64.exe` from the Visual Studio
+   installer bundle or copy it from another working machine.
 4. **Disable hardware acceleration** — run Beetle Studio with: `BeetleStudio.exe --no-gpu-accel`
 5. **Submit a crash report** when prompted — this helps our team fix issues
 
