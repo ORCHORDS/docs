@@ -2,11 +2,11 @@
 
 **Project:** Beetle Studio  
 
-**Owner:** Alex Chen (UI/UX Lead — implementation), Nina Patel (UX Designer — design audit)  
+**Owner:** Alex Chen (UI/UX Lead - implementation), Nina Patel (UX Designer - design audit)  
 **Reviewers:** Kirk Beka (CTO), Nina Patel (UX Designer)  
-**ISO Standards:** ISO 9241-171 (ergonomic requirements for office work with visual display terminals), ISO/IEC 25010:2023 (usability — accessibility subcharacteristic)  
-**Version:** 1.0.0  
-**Last Updated:** June 2026  
+**ISO Standards:** ISO 9241-171 (ergonomic requirements for office work with visual display terminals), ISO/IEC 25010:2023 (usability - accessibility subcharacteristic)  
+**Version:** 1.1.0  
+**Last Updated:** 2026-06-20  
 
 ---
 
@@ -34,6 +34,7 @@ This document defines the accessibility standards and compliance requirements fo
   - [Keyboard Navigation](#keyboard-navigation)
   - [Color & Contrast](#color-contrast)
   - [Screen Reader Support](#screen-reader-support)
+  - [Timeline Waveform Alt Text](#timeline-waveform-alt-text)
 - [Reducing Motion](#reducing-motion)
 - [Audit Schedule](#audit-schedule)
 - [Known Accessibility Limitations](#known-accessibility-limitations)
@@ -84,11 +85,11 @@ This document defines the accessibility standards and compliance requirements fo
 
 | Element | Foreground | Background | Contrast Ratio |
 |---|---|---|---|
-| Primary text | #CCCCCC | #252526 | 8.9:1 ✅ |
-| Secondary text | #969696 | #1E1E1E | 5.8:1 ✅ |
-| Button label | #FFFFFF | #0E639C | 7.2:1 ✅ |
-| Warning text | #FFCC00 | #1E1E1E | 11.2:1 ✅ |
-| Error text | #F14C4C | #1E1E1E | 5.9:1 ✅ |
+| Primary text | #CCCCCC | #252526 | 8.9:1 ✓ |
+| Secondary text | #969696 | #1E1E1E | 5.8:1 ✓ |
+| Button label | #FFFFFF | #0E639C | 7.2:1 ✓ |
+| Warning text | #FFCC00 | #1E1E1E | 11.2:1 ✓ |
+| Error text | #F14C4C | #1E1E1E | 5.9:1 ✓ |
 
 ### Screen Reader Support
 
@@ -97,11 +98,47 @@ Qt6 provides accessibility APIs. Key implementations:
 | Component | ARIA Role | Keyboard Interaction |
 |---|---|---|
 | Timeline clip | `img` + `aria-label` | Arrow keys to navigate |
+| Timeline waveform | `img` + `aria-label` (see Waveform Alt Text below) | Arrow keys to scrub |
 | Playhead | `slider` | Arrow keys to scrub |
 | Effect parameter | `slider` | Tab + Arrow keys |
 | Menu item | `menuitem` | Standard menu navigation |
 | Toolbar button | `button` | Space/Enter to activate |
 | Panel | `region` | Focus enters region |
+
+### Timeline Waveform Alt Text
+
+The audio waveform is rendered as a non-text image (`QPainter` paths) and therefore
+requires a text alternative per **WCAG 2.1 1.1.1 (Non-text Content)**.
+
+**Implementation in `src/timeline/WaveformView.{h,cpp}`:**
+
+1. Each `CClip` carries an accessibility description string (`m_a11yDescription`)
+   built at media-import time from these signals:
+   - Filename (e.g. `"interview_take_03.wav"`)
+   - Duration (e.g. `"2 minutes 14 seconds"`)
+   - Channel layout (e.g. `"stereo"`, `"mono"`)
+   - Peak amplitude (loudness band: quiet / normal / loud / clipped)
+   - Number of detected speech vs music segments (from silence detection)
+
+2. The waveform `QWidget` exposes `accessibleName` and `accessibleDescription`
+   via `QAccessibleObject` so screen readers (NVDA, Narrator, JAWS) read a
+   summary like:
+
+   > *"Interview take 3, stereo, 2 minutes 14 seconds, normal loudness,
+   > 4 speech segments and 1 silence gap."*
+
+3. When the user focuses a clip, NVDA reads the description; arrow keys
+   step through clips and re-announce.
+
+4. Custom screen-reader verbosity is provided via
+   **Edit → Preferences → Accessibility → Waveform Verbosity** with four
+   levels: Off, Brief (filename + duration), Normal (+ loudness),
+   Detailed (+ segment breakdown).
+
+**Test coverage:**
+- `tests/accessibility/test_waveform_alt_text.cpp` — verifies each clip's
+  `accessibleDescription` is non-empty, fits the contract, and updates
+  when the source media changes.
 
 ---
 
@@ -140,9 +177,11 @@ if (reduceMotion) {
 
 | Limitation | Severity | Mitigation |
 |---|---|---|
-| Timeline waveform alt text | Not yet implemented | Roadmap item |
 | Color blindness simulation | Not available in-app | Suggest OS-level tools |
 | Eye-tracking input | Not supported | Future consideration |
+
+> Note: Timeline waveform alt text (previously listed here) has been
+> implemented in v1.1.0 — see [Timeline Waveform Alt Text](#timeline-waveform-alt-text).
 
 ---
 
@@ -248,7 +287,8 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial compliance spec — aligned with WCAG 2.1 AA, ISO 9241-171, ISO/IEC 25010:2023 |
+| 1.0.0 | June 2026 | Initial compliance spec - aligned with WCAG 2.1 AA, ISO 9241-171, ISO/IEC 25010:2023 |
+| 1.1.0 | 2026-06-20 | Alex Chen - Implemented Timeline waveform alt text (WCAG 1.1.1); removed from Known Limitations; added `WaveformView` accessibility contract and verbosity preference |
 
 ---
 
@@ -262,12 +302,13 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 
 ### Internal Documents
 
-- [$title](././PERFORMANCE_BENCHMARKS.md)
+- [`./PERFORMANCE_BENCHMARKS.md`](./PERFORMANCE_BENCHMARKS.md) - Desktop performance targets
+- [`../timeline/DATA_MODEL.md`](../timeline/DATA_MODEL.md) - Clip metadata used for waveform alt text
 
 ### Standards & Frameworks
 
-- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
-- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
+- ISO/IEC 12207:2017 (Systems and software engineering - Software life cycle processes)
+- ISO/IEC 25010:2023 (Systems and software engineering - Quality requirements and evaluation)
 - See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
 
 ---
@@ -280,6 +321,7 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 |---|---|---|---|
 | 1.0.0 | June 2026 | Alex Chen, Nina Patel | Initial version |
 | 1.0.1 | June 2026 | Alex Chen, Nina Patel | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.1.0 | 2026-06-20 | Alex Chen | Implemented Timeline waveform alt text per WCAG 1.1.1; spec for WaveformView accessible description contract |
 
 ### Review Cadence
 
