@@ -61,7 +61,7 @@ Before a new hire's first day, the following must be complete:
 
 - [ ] Laptop ordered and configured (or existing machine re-imaged)
 - [ ] Microsoft email account created (`name@mooned.dev`)
-- [ ] GitHub organization invite sent (`github.com/mooneddev`)
+- [ ] Forgejo organization invite sent (`dev.mooned.dev/beetle-studio`)
 - [ ] Azure DevOps / GitHub Actions access provisioned
 - [ ] Firebase project access granted (if backend or cloud role)
 - [ ] Slack workspace invite sent
