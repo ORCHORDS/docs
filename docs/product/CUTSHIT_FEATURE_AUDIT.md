@@ -63,7 +63,7 @@ Audited from cutshit.net on 2026-06-20.
 
 | Feature | CutShit Has | Beetle Studio Status | Work Needed |
 |---------|-------------|---------------------|-------------|
-| Auto-captions (local Whisper) | Yes — 40+ styles, per-word highlighting | No | Bundle whisper.cpp, add caption track type, style editor |
+| Auto-captions (local Whisper) | Yes — 40+ styles, per-word highlighting | No | Integrate TranscriberPipeline.py (Demucs + Whisper + chapters + JSONL), add caption track type, style editor |
 | AI noise reduction | Yes | No | Integrate RNNoise or similar, add to audio pipeline |
 | Voice-over recording | Yes — push-to-talk, -14 LUFS auto-loudness | No | Add WASAPI recording, loudness normalization |
 | Screen recording | Yes — with webcam PiP | No | Add DXGI Desktop Duplication capture |
@@ -103,7 +103,7 @@ Based on this audit, these are the features Beetle Studio MUST ship in V1 to be 
 
 1. **Real frame-accurate timeline editing** — trim, split, magnetic snap, multi-track
 2. **Hardware-accelerated export** — NVENC/QSV/AMF with platform presets (YouTube, TikTok, Shorts, Reels)
-3. **Local AI captions** — whisper.cpp integration, styled caption overlays
+3. **Local AI captions** — transcriber pipeline integration (v1.3.0: chapter detection, JSONL streaming, diarization), styled caption overlays
 4. **Audio engine** — real mixer, voice-over recording, noise reduction
 5. **Screen + webcam capture** — DXGI duplication + DirectShow, PiP compositing
 6. **No watermark policy** — already planned
