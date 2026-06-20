@@ -252,7 +252,7 @@ GPU and CPU at the OS level, which will cause preview playback to drop frames.
 | **In-app report** | Crashes and technical bugs | Monitored daily |
 | **community.mooned.dev** | How-to questions, workflow tips | Community + team |
 | **support@mooned.dev** | Account, licensing, billing issues | 1–2 business days |
-| **Bug tracker** | Known issues and workarounds | Public list |
+| **Bug tracker** | Known issues and workarounds | [dev.mooned.dev/beetle-studio/beetle-studio/issues](https://dev.mooned.dev/beetle-studio/beetle-studio/issues) |
 
 ---
 
