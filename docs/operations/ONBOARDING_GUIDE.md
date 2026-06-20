@@ -138,7 +138,7 @@ Before a new hire's first day, the following must be complete:
 
 - [ ] Read [`docs/engineering/TEST_STRATEGY.md`](../../docs/engineering/TEST_STRATEGY.md)
 - [ ] Read [`docs/PERFORMANCE_BENCHMARKS.md`](../../docs/PERFORMANCE_BENCHMARKS.md)
-- [ ] Access bug tracker (Linear) and understand issue lifecycle
+- [ ] Access bug tracker at [dev.mooned.dev](https://dev.mooned.dev) and understand issue lifecycle
 - [ ] Run the smoke test suite on the latest build
 - [ ] Understand the severity scale (S0–S3)
 
@@ -205,8 +205,8 @@ Before a new hire's first day, the following must be complete:
 |---|---|
 | Company handbook | Shared in onboarding email |
 | Team roster | [`BEETLE_STUDIO_TEAM.md`](../../BEETLE_STUDIO_TEAM.md) |
-| Bug tracker (Linear) | link in Slack |
-| GitHub repos | github.com/mooneddev |
+| Bug tracker | [dev.mooned.dev](https://dev.mooned.dev) |
+| Git repos (Forgejo) | [dev.mooned.dev](https://dev.mooned.dev) |
 | Documentation index | [`docs/README.md`](../../docs/README.md) |
 | Beetle Studio beta builds | Shared link in onboarding email |
 | Slack workspace | mooneddev.slack.com |
