@@ -80,10 +80,10 @@ Features that are prioritized and planned, but not yet in development.
 
 | Feature | Type | Estimated Quarter | Dependencies |
 |---|---|---|---|
-| Cloud collaborative editing | Feature | Q3 2026 | Backend sync (v1) |
-| Plugin marketplace | Feature | Q3 2026 | Plugin SDK v1 |
-| AV1 hardware encoding (AMD) | Performance | Q3 2026 | AMD SDK update |
-| macOS support | Platform | Q4 2026 | Cross-platform engine work |
+| Cloud collaborative editing | Feature | Q2 2027 | Backend sync (v1) |
+| Plugin marketplace | Feature | Q1 2027 | Plugin SDK v1 |
+| AV1 hardware encoding (AMD) | Performance | Q4 2026 | AMD SDK update |
+| macOS support | Platform | Q3 2027 | Cross-platform engine work |
 
 ### Later (Future Planning)
 
