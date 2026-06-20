@@ -74,9 +74,9 @@ This document provides the canonical reference for the Beetle Studio team's stru
 - [WEEK 1](#week-1)
 - [WEEK 2](#week-2)
 - [PHASE 1: CORE ENGINE (Months 1-6)](#phase-1-core-engine-months-16)
-  - [Month 1-2: Foundation](#month-12-foundation)
-  - [Month 3-4: Rendering Pipeline](#month-34-rendering-pipeline)
-  - [Month 5-6: Codec & Effects Base](#month-56-codec-effects-base)
+  - [Month 1-2: Infrastructure & Rendering Foundation](#month-12-infrastructure--rendering-foundation)
+  - [Month 3-4: Timeline, Codec & Effects](#month-34-timeline-codec--effects)
+  - [Month 5-6: Advanced Features & Polish](#month-56-advanced-features--polish)
 - [PHASE 2: FEATURES (Months 7-12)](#phase-2-features-months-712)
   - [Month 7-8: Advanced Editing](#month-78-advanced-editing)
   - [Month 9-10: Effects & Audio](#month-910-effects-audio)
@@ -2254,7 +2254,7 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 
 ## PHASE 1: CORE ENGINE (Months 1-6)
 
-### Month 1-2: Foundation
+### Month 1-2: Infrastructure & Rendering Foundation
 **Goals:**
 - Set up development infrastructure
 - Create core window and rendering context
@@ -2267,7 +2267,7 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 - Video file loading capability
 - Project architecture documented
 
-### Month 3-4: Rendering Pipeline
+### Month 3-4: Timeline, Codec & Effects
 **Goals:**
 - DirectX 12 rendering pipeline
 - Video preview playback
@@ -2280,7 +2280,7 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 - Basic timeline component
 - Performance profiling tools
 
-### Month 5-6: Codec & Effects Base
+### Month 5-6: Advanced Features & Polish
 **Goals:**
 - Full codec support (H.264, HEVC)
 - Hardware acceleration
