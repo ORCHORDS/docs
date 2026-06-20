@@ -84,6 +84,9 @@ This guide helps you diagnose and fix the most common issues with Beetle Studio.
 When Beetle Studio starts, the splash screen runs **17 real system checks in order** before
 the main window opens. Each check is a genuine OS API call — not a stub — and the splash
 will not close until every check has either populated its result line or explicitly timed
+out. Per-check timeout is **5 seconds** and the overall splash-verify timeout is **30 seconds**;
+if either elapses the check is reported as `TIMEOUT` (not `OK`/`FAIL`) so the runbook is fully
+deterministic for SREs triaging support tickets.
 out. The full list:
 
 | # | Check | What it verifies | Why it matters |
@@ -252,7 +255,7 @@ GPU and CPU at the OS level, which will cause preview playback to drop frames.
 | **In-app report** | Crashes and technical bugs | Monitored daily |
 | **community.mooned.dev** | How-to questions, workflow tips | Community + team |
 | **support@mooned.dev** | Account, licensing, billing issues | 1–2 business days |
-| **Bug tracker** | Known issues and workarounds | [dev.mooned.dev/beetle-studio/beetle-studio/issues](https://dev.mooned.dev/beetle-studio/beetle-studio/issues) |
+| **Bug tracker** | Known issues and workarounds | Public list |
 
 ---
 
