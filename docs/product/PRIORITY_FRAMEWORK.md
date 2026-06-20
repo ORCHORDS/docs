@@ -55,7 +55,7 @@ We use a hybrid approach: **MoSCoW** for categorization + **RICE** for scoring w
 | **Must have** | Core functionality without which the product doesn't work as advertised | Sprint capacity |
 | **Should have** | Important but not critical; workaround exists | Fill remaining capacity |
 | **Could have** | Desirable improvements; no workaround but limited impact | Pick if capacity allows |
-| **Won't have** (this release) | Explicitly deprioritized; documented why | N/A — parked |
+| **Won't have** (this release) | Explicitly deprioritized; documented why | VR/360° video editing, AI auto-color (auto white-balance / LUT suggestion), built-in stock music library, collaborative multi-user editing (Cloud co-edit) |
 
 ### Step 2: RICE — Score Within Categories
 
