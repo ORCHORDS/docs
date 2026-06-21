@@ -1,3 +1,10 @@
+---
+title: "RFC Index"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # RFC Index
 
 > Companion to [`RFC-XXX-template.md`](./RFC-XXX-template.md). Each RFC is a copy

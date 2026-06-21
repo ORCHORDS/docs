@@ -1,3 +1,10 @@
+---
+title: "BetaTesterDashboard Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # BetaTesterDashboard Feature Spec
 
 **Resolves:** #286, #287

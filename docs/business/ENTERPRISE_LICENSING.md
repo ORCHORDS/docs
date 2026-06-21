@@ -1,3 +1,10 @@
+---
+title: "Enterprise Licensing"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Enterprise Licensing
 
 **Project:** Beetle Studio  

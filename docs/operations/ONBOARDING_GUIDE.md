@@ -1,3 +1,10 @@
+---
+title: "Team Onboarding Guide"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Team Onboarding Guide
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (human resources, development process), ISO/IEC 25010:2023 (maintainability)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -62,7 +69,7 @@ Before a new hire's first day, the following must be complete:
 - [ ] Laptop ordered and configured (or existing machine re-imaged)
 - [ ] Microsoft email account created (`name@mooned.dev`)
 - [ ] Forgejo organization invite sent (`dev.mooned.dev/beetle-studio`)
-- [ ] Azure DevOps / GitHub Actions access provisioned
+- [ ] Forgejo Actions + repository access provisioned
 - [ ] Firebase project access granted (if backend or cloud role)
 - [ ] Slack workspace invite sent
 - [ ] 1Password team account provisioned
@@ -147,7 +154,7 @@ Before a new hire's first day, the following must be complete:
 - [ ] Read [`docs/engineering/CI_CD_PIPELINE.md`](../../docs/engineering/CI_CD_PIPELINE.md)
 - [ ] Read [`docs/engineering/BACKUP_DISASTER_RECOVERY.md`](../../docs/engineering/BACKUP_DISASTER_RECOVERY.md)
 - [ ] Access Azure portal and understand current infrastructure
-- [ ] Review GitHub Actions workflows
+- [ ] Review Forgejo Actions workflows (per the workflows/ index)
 - [ ] Meet with Sarah Miller to understand build pipeline
 
 ### Marketing & Community Team

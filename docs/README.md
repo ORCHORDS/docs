@@ -1,3 +1,10 @@
+---
+title: "Beetle Studio — Documentation Index"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Beetle Studio — Documentation Index
 
 **Project:** Beetle Studio
@@ -5,7 +12,7 @@
 **Reviewers:** Mooned Dev (CEO), all domain leads
 **ISO Standards:** ISO/IEC 12207:2017, ISO/IEC 19770-2:2015, ISO/IEC 25010:2023, ISO/IEC 14764:2022, ISO/IEC 27001:2022, ISO/IEC 27002:2022, ISO/IEC 27034-1:2011, ISO 9241, ISO/IEC/IEEE 82079-1:2019, OWASP ASVS 4.0.3, OWASP Top 10 2021, NIST SP 800-218 (SSDF), CWE Top 25
 **Version:** 3.4.0
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -84,7 +91,7 @@ All documents in this directory follow the conventions defined in [`STYLE_GUIDE.
 | Document | Purpose |
 |---|---|
 | [`engineering/BUILD_SYSTEM.md`](./engineering/BUILD_SYSTEM.md) | CMake configuration, build targets, artifacts |
-| [`engineering/CI_CD_PIPELINE.md`](./engineering/CI_CD_PIPELINE.md) | GitHub Actions workflows, automation, rollbacks |
+| [`engineering/CI_CD_PIPELINE.md`](./engineering/CI_CD_PIPELINE.md) | Forgejo Actions workflows (GitHub Actions–compatible syntax), automation, rollbacks |
 | [`engineering/BRANCHING_STRATEGY.md`](./engineering/BRANCHING_STRATEGY.md) | Git branching model and merge policy |
 | [`engineering/TECHNICAL_STANDARDS.md`](./engineering/TECHNICAL_STANDARDS.md) | C++ coding standards, API design, RFC process |
 | [`engineering/ARCHITECTURE_OVERVIEW.md`](./engineering/ARCHITECTURE_OVERVIEW.md) | System architecture, module boundaries, data flow |
@@ -298,7 +305,7 @@ Each document follows [SemVer](./releases/VERSIONING_POLICY.md). Document versio
 | `3.1.0` | Added security + web design testing sections: `## Security Checks & Verification` in `SECURITY_POLICY.md` (ISO/IEC 27001/27002/27034 + OWASP ASVS 4.0.3 + OWASP Top 10 + NIST SSDF + CWE Top 25), `## Web Security & Cloudflare` in `INFRASTRUCTURE_OVERVIEW.md`, `## Firebase Security Rules` in `API_CONTRACT.md`, `## Security Scans in CI/CD` in `CI_CD_PIPELINE.md`, `## Website Design Testing` in `ACCESSIBILITY_COMPLIANCE.md` (WCAG 2.1 AA + Core Web Vitals + browser compat + visual regression), `## Web Performance (Core Web Vitals)` in `PERFORMANCE_BENCHMARKS.md` |
 | `3.2.0` | Added UI test tools section to `TEST_STRATEGY.md`: WinAppDriver (Microsoft UI automation for our C++/Win32/Qt6 desktop app), FlaUI (.NET UIA wrapper for fine-grained in-process UI assertions), PyAutoGUI (cross-platform, for ad-hoc repro and engineer-local visual smoke scripts). Each tool has when-to-use, when-NOT-to-use, code sample, and CI integration notes. |
 | `3.3.0` | Added `## Bug Investigation: Expected vs Actual + Before/After Loop` to `TEST_STRATEGY.md`. Defines the 5-question self-investigation loop, the full 8-section bug report template, before/after image file conventions, image-aware bug review process for engineers, self-question checklist, anti-patterns, and tracking metrics. Also added a Required subsection to `BETA_PROGRAM_GUIDE.md` Bug Reporting Requirements mandating the template + a quick-template for casual Discord reports. |
-| `3.4.0` | Created `tests/ui/` repository scaffolding: WinAppDriver project (C# / .NET 8, NUnit, Appium.WebDriver) with AppDriver session helper, Locators (single source of truth for UIA AutomationIds), BugReport helper, Smoke_NewProjectFlow example, and start-winappdriver.ps1. FlaUI project (C# / .NET 8, FlaUI.Core + FlaUI.UIA3) with AppSession + BugEvidence helpers and Regression_TimelinePanel example. PyAutoGUI smoke + repro_template scripts in Python with requirements.txt. `_ci/ui-tests.yml` GitHub Actions workflow wiring both into the CI pipeline. `.gitignore` + per-bug folder layout under `tests/ui/bugs/BUG-XXXX/`. `tests/ui/README.md` ties it all together with the tool selection matrix. |
+| `3.4.0` | Created `tests/ui/` repository scaffolding: WinAppDriver project (C# / .NET 8, NUnit, Appium.WebDriver) with AppDriver session helper, Locators (single source of truth for UIA AutomationIds), BugReport helper, Smoke_NewProjectFlow example, and start-winappdriver.ps1. FlaUI project (C# / .NET 8, FlaUI.Core + FlaUI.UIA3) with AppSession + BugEvidence helpers and Regression_TimelinePanel example. PyAutoGUI smoke + repro_template scripts in Python with requirements.txt. `_ci/ui-tests.yml` Forgejo Actions workflow (GitHub Actions–compatible) wiring both into the CI pipeline. `.gitignore` + per-bug folder layout under `tests/ui/bugs/BUG-XXXX/`. `tests/ui/README.md` ties it all together with the tool selection matrix. |
 
 ---
 

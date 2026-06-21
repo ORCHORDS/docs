@@ -1,3 +1,10 @@
+---
+title: "CutShit v2.0 Feature Audit — Beetle Studio V1 Gap Analysis"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # CutShit v2.0 Feature Audit — Beetle Studio V1 Gap Analysis
 
 Audited from cutshit.net on 2026-06-20.

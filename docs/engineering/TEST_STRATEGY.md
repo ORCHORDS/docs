@@ -1,3 +1,10 @@
+---
+title: "Test Strategy"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Test Strategy
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (validation, verification), ISO/IEC 25010:2023 (reliability, functional suitability), ISO/IEC 14764:2022 (maintenance testing)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -652,7 +659,7 @@ Assert.IsNotNull(driver.FindElementByName("Timeline")));
 
 **Test file location:** `tests/ui/winappdriver/`
 
-**CI integration:** runs on `windows-2022` GitHub Actions runner with WinAppDriver preinstalled; nightly on a real Windows 11 VM (BrowserStack or local).
+**CI integration:** runs on `windows-2022` self-hosted runner (Forgejo Actions-compatible with GitHub Actions syntax) with WinAppDriver preinstalled; nightly on a real Windows 11 VM (BrowserStack or local).
 
 ### FlaUI
 

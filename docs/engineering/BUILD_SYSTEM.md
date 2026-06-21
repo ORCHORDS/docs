@@ -1,3 +1,10 @@
+---
+title: "Build System"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Build System
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (development process), ISO/IEC 25010:2023 (maintainability, portability)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -59,7 +66,7 @@ This document describes the build system configuration, toolchain requirements, 
 | **Vulkan SDK** | LunarG Vulkan SDK | Latest |
 | **FFmpeg** | Static build (LGPL) | 7.x |
 | **UI Framework** | Qt6 (static or shared, per config) | 6.7+ |
-| **CI/CD** | GitHub Actions | Latest |
+| **CI/CD** | Forgejo Actions (GitHub Actions–compatible YAML) | v15.0 |
 | **Installer** | Inno Setup | 6.x |
 
 ---
@@ -108,7 +115,7 @@ cmake --list-presets
 #     "release"       "Release (optimized, no debug symbols)"
 #     "relwithdebinfo""Release with debug info"
 #     "minimal"      "Minimal (core engine only, fast iteration)"
-#     "ci"           "CI (for GitHub Actions pipeline)"
+#     "ci"           "CI (for Forgejo Actions pipeline, GitHub Actions–compatible)"
 ```
 
 ### Build Targets
@@ -157,7 +164,7 @@ cmake --build --preset release --target installer
 
 ## CI/CD Build Pipeline
 
-See [`CI_CD_PIPELINE.md`](./CI_CD_PIPELINE.md) for the full GitHub Actions workflow. The build system produces these artifacts per CI run:
+See [`CI_CD_PIPELINE.md`](./CI_CD_PIPELINE.md) for the full Forgejo Actions workflow (GitHub Actions–compatible). The build system produces these artifacts per CI run:
 
 | Artifact | Retention | Contents |
 |---|---|---|
