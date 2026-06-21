@@ -1,3 +1,10 @@
+---
+title: "EffectChain Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # EffectChain Feature Spec
 
 **Resolves:** #300, #301

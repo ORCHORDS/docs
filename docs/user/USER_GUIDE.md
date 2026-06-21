@@ -1,3 +1,10 @@
+---
+title: "Beetle Studio — User Guide"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Beetle Studio — User Guide
 
 **Project:** Beetle Studio  

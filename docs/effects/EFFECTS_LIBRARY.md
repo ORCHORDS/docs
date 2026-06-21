@@ -1,3 +1,10 @@
+---
+title: "Effects Library"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Effects Library
 
 **Project:** Beetle Studio  

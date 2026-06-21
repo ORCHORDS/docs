@@ -1,3 +1,10 @@
+---
+title: "BEETLE STUDIO"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # BEETLE STUDIO
 
 **Project:** Beetle Studio
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), Mike Johnson (DevOps Lead)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
 **Version:** 1.0.0
-**Last Updated:** June 2026
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -1186,7 +1193,7 @@ Mike Johnson leads the DevOps team, responsible for build systems, CI/CD pipelin
 #### DETAILED RESPONSIBILITIES
 
 **CI/CD Pipeline:**
-- Design and maintain GitHub Actions workflows
+- Design and maintain Forgejo Actions workflows (GitHub Actions–compatible syntax)
 - Implement multi-platform build automation
 - Create automated testing pipelines
 - Build deployment automation
@@ -1260,7 +1267,7 @@ Mike Johnson leads the DevOps team, responsible for build systems, CI/CD pipelin
 #### REQUIRED SKILLS & QUALIFICATIONS
 
 **Technical Skills:**
-- GitHub Actions and CI/CD
+- Forgejo Actions and CI/CD (GitHub Actions–compatible syntax)
 - Azure cloud services
 - Infrastructure as Code
 - CMake build system

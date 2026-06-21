@@ -1,3 +1,10 @@
+---
+title: "`.bsp` - Beetle Studio Project File Format (v0.1)"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # `.bsp` - Beetle Studio Project File Format (v0.1)
 
 > **Status:** Draft v0.1. Subject to change before v1.0.

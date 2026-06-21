@@ -1,3 +1,10 @@
+---
+title: "AuthManager Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # AuthManager Feature Spec
 
 **Resolves:** #269, #270

@@ -1,3 +1,10 @@
+---
+title: "Beetle Studio Team"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Beetle Studio Team
 
 **Project:** Beetle Studio
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
 **Version:** 1.0.0
-**Last Updated:** June 2026
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -314,14 +321,14 @@ This document provides the canonical reference for the Beetle Studio team's stru
 **Bio:** Keeps the build pipeline running smoothly and deployments seamless.
 
 **Responsibilities:**
-- CI/CD pipeline management (GitHub Actions)
+- CI/CD pipeline management (Forgejo Actions, GitHub Actions–compatible syntax)
 - Build system optimization
 - Docker/containerization
 - Cloud infrastructure (Azure)
 - Release management
 - Monitoring and alerting
 
-**Skills:** GitHub Actions, Azure, Docker, CMake, Release Engineering, Monitoring
+**Skills:** Forgejo Actions (GitHub Actions–compatible YAML), Azure, Docker, CMake, Release Engineering, Monitoring
 
 ---
 
