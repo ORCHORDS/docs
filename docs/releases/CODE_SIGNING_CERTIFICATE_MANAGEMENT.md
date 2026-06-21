@@ -1,3 +1,10 @@
+---
+title: "Code Signing & Certificate Management"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Code Signing & Certificate Management
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), Maya Rodriguez (Backend — for API signing)  
 **ISO Standards:** ISO/IEC 27001:2022 Annex A (cryptographic controls), ISO/IEC 19770-2:2015 (software identification), ISO/IEC 12207:2017 (transition security)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -32,7 +39,7 @@ All executable code shipped by Mooned Dev -- installers, DLLs, executables, and 
   - [Windows Code Signing Certificate](#windows-code-signing-certificate)
   - [Certificate Renewal Calendar](#certificate-renewal-calendar)
 - [Signing Process](#signing-process)
-  - [Build Pipeline Integration (GitHub Actions)](#build-pipeline-integration-github-actions)
+  - [Build Pipeline Integration (Forgejo Actions, GitHub Actions–compatible)](#build-pipeline-integration-github-actions)
   - [Manual Signing (Emergency)](#manual-signing-emergency)
   - [Firebase Cloud Function Signing](#firebase-cloud-function-signing)
 - [Verification](#verification)
@@ -84,10 +91,10 @@ All executable code shipped by Mooned Dev -- installers, DLLs, executables, and 
 
 ## Signing Process
 
-### Build Pipeline Integration (GitHub Actions)
+### Build Pipeline Integration (Forgejo Actions, GitHub Actions–compatible)
 
 ```yaml
-# Simplified GitHub Actions signing step
+# Simplified Forgejo Actions signing step (GitHub Actions–compatible syntax)
 - name: Sign executables
   uses: azure/code-signing-action@v1
   with:
@@ -154,7 +161,7 @@ Per **ISO/IEC 27001:2022 Annex A**, cryptographic keys must be protected:
 |---|---|
 | **Key storage** | Azure Key Vault — hardware security module (HSM) backed |
 | **Access control** | RBAC — only Sarah Miller and Kirk Beka have signing permissions |
-| **CI/CD access** | GitHub Actions OIDC token — no static secrets stored |
+| **CI/CD access** | Forgejo Actions OIDC token (per the `enable-openid-connect` key — see Forgejo docs) — no static secrets stored |
 | **Audit log** | Azure Key Vault logs all access (90-day retention) |
 | **Emergency access** | Kirk Beka holds backup access; Mooned Dev as ultimate owner |
 

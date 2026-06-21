@@ -1,3 +1,10 @@
+---
+title: "FirebaseAuth Feature Spec (supplementary)"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # FirebaseAuth Feature Spec (supplementary)
 
 **Resolves:** #278

@@ -1,3 +1,10 @@
+---
+title: "Beetle Studio — Documentation Style Guide"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Beetle Studio — Documentation Style Guide
 
 **Project:** Beetle Studio

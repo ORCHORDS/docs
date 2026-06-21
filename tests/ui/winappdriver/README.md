@@ -1,3 +1,10 @@
+---
+title: "WinAppDriver UI Test Suite"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # WinAppDriver UI Test Suite
 
 **Project:** Beetle Studio

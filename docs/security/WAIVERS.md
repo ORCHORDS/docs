@@ -1,3 +1,10 @@
+---
+title: "Security Waivers"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Security Waivers
 
 **Project:** Beetle Studio

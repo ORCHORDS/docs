@@ -1,3 +1,10 @@
+---
+title: "Software Versioning & Progression — Team Reference Guide"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Software Versioning & Progression — Team Reference Guide
 
 **Project:** Beetle Studio  

@@ -1,3 +1,10 @@
+---
+title: "EffectsPipeline Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # EffectsPipeline Feature Spec
 
 **Resolves:** #78

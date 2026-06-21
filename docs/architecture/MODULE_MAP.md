@@ -1,3 +1,10 @@
+---
+title: "Module Map - Issue to Files"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Module Map - Issue to Files
 
 This document maps each open issue to the source files it expects to land in.

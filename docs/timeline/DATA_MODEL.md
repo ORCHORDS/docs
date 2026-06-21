@@ -1,3 +1,10 @@
+---
+title: "Timeline Data Model"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Timeline Data Model
 
 **Project:** Beetle Studio  

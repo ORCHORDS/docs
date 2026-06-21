@@ -1,3 +1,10 @@
+---
+title: "Architecture Overview"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Architecture Overview
 
 **Project:** Beetle Studio  

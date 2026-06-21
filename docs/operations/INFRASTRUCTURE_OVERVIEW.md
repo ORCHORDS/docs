@@ -1,3 +1,10 @@
+---
+title: "Infrastructure Overview"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Infrastructure Overview
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (Annex A: Operational Security), ISO/IEC 12207:2017 (development infrastructure)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -71,8 +78,8 @@ This document describes Mooned Dev's cloud and development infrastructure -- the
 | **Azure Blob Storage** | Standard | CI artifacts, release builds, backups | Restricted |
 | **Azure Key Vault** | Standard | Secrets, signing certificates | Admin only |
 | **Azure Monitor / Log Analytics** | — | Infrastructure monitoring and alerting | Mike Johnson + Kirk Beka |
-| **GitHub Actions** | SaaS | CI/CD pipelines | All engineers |
-| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted GitHub Actions runners | Mike Johnson |
+| **Forgejo Actions (self-hosted)** | On-prem | CI/CD pipelines | All engineers |
+| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted Forgejo Actions runners (GitHub Actions–compatible) | Mike Johnson |
 
 ### Azure Blob Storage Containers
 
@@ -167,7 +174,7 @@ infrastructure/
 | What | Tool | Who Gets Alerted |
 |---|---|---|
 | Azure resource health | Azure Monitor + email | Mike Johnson |
-| GitHub Actions failures | GitHub notification → Slack #ci-alerts | Mike Johnson |
+| Forgejo Actions failures | Forgejo notification → project chat channel | Mike Johnson |
 | Firebase function errors | Firebase Console + email | Maya Rodriguez |
 | Firebase function latency | Firebase Performance + PagerDuty | Maya Rodriguez |
 | Release crash rate (first 24h) | Crashlytics → Slack #releases | Lisa Martinez |
