@@ -1,3 +1,10 @@
+---
+title: "Branching Strategy"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Branching Strategy
 
 **Project:** Beetle Studio  

@@ -1,3 +1,10 @@
+---
+title: "Whisper Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Whisper Feature Spec
 
 **Resolves:** #273, #274

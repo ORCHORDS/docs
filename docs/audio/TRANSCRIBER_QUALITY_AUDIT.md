@@ -1,3 +1,10 @@
+---
+title: "Transcriber Quality Audit"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Transcriber Quality Audit
 
 **Project:** Beetle Studio  

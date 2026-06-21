@@ -1,3 +1,10 @@
+---
+title: "Backup & Disaster Recovery"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Backup & Disaster Recovery
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (Annex A: Business Continuity, Operational Security), ISO/IEC 12207:2017 (transition, operations)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -76,7 +83,7 @@ Firebase provides built-in replication across availability zones. No additional 
 | Data | Backup Method | Frequency | Retention |
 |---|---|---|---|
 | GitHub repository | GitHub geo-replication + Azure Blob Storage | On every push | Permanent |
-| GitHub Actions artifacts | Azure Blob Storage | After every release build | 90 days |
+| Forgejo Actions artifacts (workflow run artifacts) | Azure Blob Storage | After every release build | 90 days |
 | Build outputs | Azure Blob Storage | After every release | 2 years |
 
 ### Infrastructure Configuration
@@ -141,12 +148,12 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 **Impact:** No release builds possible.
 
 **Recovery Procedure:**
-1. Identify failing GitHub Actions runner (logs in GitHub Actions UI)
+1. Identify failing Forgejo Actions runner (logs in the Actions UI)
 2. Restart runner: `cd actions-runner && ./run.sh --reset`
 3. If runner is corrupted, provision new runner:
    ```bash
    # Register new runner
-   ./config.sh --url https://github.com/mooneddev/beetle-studio --token <token>
+   ./config.sh --url https://dev.mooned.dev/beetle-studio/beetle-studio --token <token>
    ./run.sh
    ```
 4. Re-trigger failed workflow runs

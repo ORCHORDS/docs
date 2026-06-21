@@ -1,3 +1,10 @@
+---
+title: "OpenFXPlugin Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # OpenFXPlugin Feature Spec
 
 **Resolves:** #261, #262

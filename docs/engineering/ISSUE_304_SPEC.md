@@ -1,3 +1,10 @@
+---
+title: "ViewportCompositor Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # ViewportCompositor Feature Spec
 
 **Resolves:** #304

@@ -1,3 +1,10 @@
+---
+title: "Release Checklist"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Release Checklist
 
 **Project:** Beetle Studio  
@@ -5,7 +12,7 @@
 **Reviewers:** Kirk Beka (CTO), Mike Johnson (DevOps), Lisa Martinez (QA Lead)  
 **ISO Standards:** ISO/IEC 12207:2017 (release process), ISO/IEC 19770-2:2015 (SWID tags), ISO/IEC 25010:2023 (quality)  
 **Version:** 1.0.0  
-**Last Updated:** June 2026  
+**Last Updated:** 2026-06-21
 
 ---
 
@@ -142,7 +149,7 @@ Sarah Miller executes the following:
    git push origin vX.Y.Z
    ```
 
-2. **Trigger CI release pipeline** — GitHub Actions auto-builds on tag push
+2. **Trigger CI release pipeline** — Forgejo Actions auto-builds on `v*` tag push
 
 3. **Verify build artifacts** — confirm all platform builds exist in CI artifacts
 
@@ -159,7 +166,7 @@ Sarah Miller executes the following:
 
 8. **Publish release notes** to the website and in-app
 
-9. **Update changelog** on GitHub Releases page
+9. **Update changelog** on the Forgejo Releases page
 
 10. **Notify team** — post to #releases Slack channel with version, download links, known issues
 

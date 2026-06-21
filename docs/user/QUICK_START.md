@@ -1,3 +1,10 @@
+---
+title: "Quick Start Guide"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Quick Start Guide
 
 **Project:** Beetle Studio  

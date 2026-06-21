@@ -1,3 +1,10 @@
+---
+title: "TokenManager Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # TokenManager Feature Spec
 
 **Resolves:** #271, #272, #279, #280

@@ -1,3 +1,10 @@
+---
+title: "Rendering Pipeline"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # Rendering Pipeline
 
 **Project:** Beetle Studio  

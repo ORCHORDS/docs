@@ -1,3 +1,10 @@
+---
+title: "UIOverlayRenderer Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # UIOverlayRenderer Feature Spec
 
 **Resolves:** #306

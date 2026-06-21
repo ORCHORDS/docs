@@ -1,3 +1,10 @@
+---
+title: "RFC-XXX — <Title>"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # RFC-XXX — <Title>
 
 | Field | Value |

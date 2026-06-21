@@ -1,3 +1,10 @@
+---
+title: "PresetManager Feature Spec"
+version: "1.0.0"
+last-updated: "2026-06-21"
+status: "review"
+---
+
 # PresetManager Feature Spec
 
 **Resolves:** #275, #276
