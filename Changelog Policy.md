@@ -1,3 +1,5 @@
+> Auto-generated from `Changelog Policy.md` in the docs repo.
+
 > Auto-generated from `releases/CHANGELOG_POLICY.md` in the docs repo.
 
 > Auto-generated from `docs/releases/CHANGELOG_POLICY.md` in the docs repo.
