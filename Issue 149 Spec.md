@@ -1,3 +1,5 @@
+> Auto-generated from `Issue 149 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_149_SPEC.md` in the docs repo.
 
 ---
