@@ -1,3 +1,5 @@
+> Auto-generated from `Shader Spec.md` in the docs repo.
+
 > Auto-generated from `docs/graphics/SHADER_SPEC.md` in the docs repo.
 
 ---
