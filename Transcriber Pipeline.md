@@ -4,6 +4,8 @@
 
 > Auto-generated from `Transcriber Pipeline.md` in the docs repo.
 
+> Auto-generated from `Transcriber Pipeline.md` in the docs repo.
+
 > Auto-generated from `docs/audio/TRANSCRIBER_PIPELINE.md` in the docs repo.
 
 ---
