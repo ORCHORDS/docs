@@ -8,6 +8,8 @@
 
 > Auto-generated from `Iso 19770 Swid Tags.md` in the docs repo.
 
+> Auto-generated from `Iso 19770 Swid Tags.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_19770_SWID_TAGS.md` in the docs repo.
 
 ---
