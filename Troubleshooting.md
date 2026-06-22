@@ -1,3 +1,5 @@
+> Auto-generated from `Troubleshooting.md` in the docs repo.
+
 > Auto-generated from `help/TROUBLESHOOTING.md` in the docs repo.
 
 > Auto-generated from `docs/help/TROUBLESHOOTING.md` in the docs repo.
