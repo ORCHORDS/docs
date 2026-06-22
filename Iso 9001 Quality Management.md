@@ -1,5 +1,7 @@
 > Auto-generated from `Iso 9001 Quality Management.md` in the docs repo.
 
+> Auto-generated from `Iso 9001 Quality Management.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_9001_QUALITY_MANAGEMENT.md` in the docs repo.
 
 ---
