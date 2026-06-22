@@ -12,6 +12,8 @@
 
 > Auto-generated from `Bsp Format.md` in the docs repo.
 
+> Auto-generated from `Bsp Format.md` in the docs repo.
+
 > Auto-generated from `docs/architecture/BSP_FORMAT.md` in the docs repo.
 
 ---
