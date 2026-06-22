@@ -1,3 +1,7 @@
+> Auto-generated from `Team Operations Manual.md` in the docs repo.
+
+> Auto-generated from `Team Operations Manual.md` in the docs repo.
+
 > Auto-generated from `TEAM_OPERATIONS_MANUAL.md` in the docs repo.
 
 ---
