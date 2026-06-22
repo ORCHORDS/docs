@@ -6,6 +6,8 @@
 
 > Auto-generated from `Issue 79 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 79 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_79_SPEC.md` in the docs repo.
 
 ---
