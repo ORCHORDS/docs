@@ -2,6 +2,8 @@
 
 > Auto-generated from `Faq.md` in the docs repo.
 
+> Auto-generated from `Faq.md` in the docs repo.
+
 > Auto-generated from `help/FAQ.md` in the docs repo.
 
 > Auto-generated from `docs/help/FAQ.md` in the docs repo.
