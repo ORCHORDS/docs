@@ -1,5 +1,3 @@
-> Auto-generated from `Style Guide.md` in the docs repo.
-
 > Auto-generated from `STYLE_GUIDE.md` in the docs repo.
 
 > Auto-generated from `docs/STYLE_GUIDE.md` in the docs repo.
