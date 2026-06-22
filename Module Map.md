@@ -1,5 +1,7 @@
 > Auto-generated from `Module Map.md` in the docs repo.
 
+> Auto-generated from `Module Map.md` in the docs repo.
+
 > Auto-generated from `docs/architecture/MODULE_MAP.md` in the docs repo.
 
 ---
