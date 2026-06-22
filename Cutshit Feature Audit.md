@@ -6,6 +6,8 @@
 
 > Auto-generated from `Cutshit Feature Audit.md` in the docs repo.
 
+> Auto-generated from `Cutshit Feature Audit.md` in the docs repo.
+
 > Auto-generated from `docs/product/CUTSHIT_FEATURE_AUDIT.md` in the docs repo.
 
 ---
