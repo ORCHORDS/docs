@@ -1,5 +1,3 @@
-> Auto-generated from `Security Policy.md` in the docs repo.
-
 > Auto-generated from `SECURITY_POLICY.md` in the docs repo.
 
 > Auto-generated from `docs/SECURITY_POLICY.md` in the docs repo.
