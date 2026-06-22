@@ -2,6 +2,8 @@
 
 > Auto-generated from `Enterprise Licensing.md` in the docs repo.
 
+> Auto-generated from `Enterprise Licensing.md` in the docs repo.
+
 > Auto-generated from `docs/business/ENTERPRISE_LICENSING.md` in the docs repo.
 
 ---
