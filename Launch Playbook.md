@@ -10,6 +10,8 @@
 
 > Auto-generated from `Launch Playbook.md` in the docs repo.
 
+> Auto-generated from `Launch Playbook.md` in the docs repo.
+
 > Auto-generated from `docs/marketing/LAUNCH_PLAYBOOK.md` in the docs repo.
 
 ---
