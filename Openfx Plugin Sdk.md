@@ -1,5 +1,7 @@
 > Auto-generated from `Openfx Plugin Sdk.md` in the docs repo.
 
+> Auto-generated from `Openfx Plugin Sdk.md` in the docs repo.
+
 > Auto-generated from `effects/OPENFX_PLUGIN_SDK.md` in the docs repo.
 
 > Auto-generated from `docs/effects/OPENFX_PLUGIN_SDK.md` in the docs repo.
