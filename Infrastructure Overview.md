@@ -1,3 +1,5 @@
+> Auto-generated from `Infrastructure Overview.md` in the docs repo.
+
 > Auto-generated from `operations/INFRASTRUCTURE_OVERVIEW.md` in the docs repo.
 
 > Auto-generated from `docs/operations/INFRASTRUCTURE_OVERVIEW.md` in the docs repo.
