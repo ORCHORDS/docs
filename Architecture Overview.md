@@ -1,5 +1,7 @@
 > Auto-generated from `Architecture Overview.md` in the docs repo.
 
+> Auto-generated from `Architecture Overview.md` in the docs repo.
+
 > Auto-generated from `engineering/ARCHITECTURE_OVERVIEW.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/ARCHITECTURE_OVERVIEW.md` in the docs repo.
