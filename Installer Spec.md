@@ -1,3 +1,5 @@
+> Auto-generated from `Installer Spec.md` in the docs repo.
+
 > Auto-generated from `releases/INSTALLER_SPEC.md` in the docs repo.
 
 > Auto-generated from `docs/releases/INSTALLER_SPEC.md` in the docs repo.
