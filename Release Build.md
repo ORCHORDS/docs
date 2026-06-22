@@ -1,3 +1,5 @@
+> Auto-generated from `Release Build.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/RELEASE_BUILD.md` in the docs repo.
 
 ---
