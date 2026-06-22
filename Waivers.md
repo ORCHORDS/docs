@@ -2,6 +2,8 @@
 
 > Auto-generated from `Waivers.md` in the docs repo.
 
+> Auto-generated from `Waivers.md` in the docs repo.
+
 > Auto-generated from `docs/security/WAIVERS.md` in the docs repo.
 
 ---
