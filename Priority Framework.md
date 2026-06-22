@@ -1,9 +1,3 @@
-> Auto-generated from `Priority Framework.md` in the docs repo.
-
-> Auto-generated from `Priority Framework.md` in the docs repo.
-
-> Auto-generated from `Priority Framework.md` in the docs repo.
-
 > Auto-generated from `product/PRIORITY_FRAMEWORK.md` in the docs repo.
 
 > Auto-generated from `docs/product/PRIORITY_FRAMEWORK.md` in the docs repo.
