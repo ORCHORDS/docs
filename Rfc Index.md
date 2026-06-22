@@ -6,6 +6,8 @@
 
 > Auto-generated from `Rfc Index.md` in the docs repo.
 
+> Auto-generated from `Rfc Index.md` in the docs repo.
+
 > Auto-generated from `docs/rfc/RFC-INDEX.md` in the docs repo.
 
 ---
