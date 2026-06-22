@@ -6,6 +6,8 @@
 
 > Auto-generated from `Rfc Xxx Template.md` in the docs repo.
 
+> Auto-generated from `Rfc Xxx Template.md` in the docs repo.
+
 > Auto-generated from `docs/rfc/RFC-XXX-template.md` in the docs repo.
 
 ---
