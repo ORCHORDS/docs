@@ -2,6 +2,8 @@
 
 > Auto-generated from `Onboarding Guide.md` in the docs repo.
 
+> Auto-generated from `Onboarding Guide.md` in the docs repo.
+
 > Auto-generated from `operations/ONBOARDING_GUIDE.md` in the docs repo.
 
 > Auto-generated from `docs/operations/ONBOARDING_GUIDE.md` in the docs repo.
