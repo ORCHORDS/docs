@@ -4,6 +4,8 @@
 
 > Auto-generated from `Iso 26531 Content Management.md` in the docs repo.
 
+> Auto-generated from `Iso 26531 Content Management.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_26531_CONTENT_MANAGEMENT.md` in the docs repo.
 
 ---
