@@ -6,6 +6,8 @@
 
 > Auto-generated from `Iso 25010 Software Quality.md` in the docs repo.
 
+> Auto-generated from `Iso 25010 Software Quality.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_25010_SOFTWARE_QUALITY.md` in the docs repo.
 
 ---
