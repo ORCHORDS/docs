@@ -4,6 +4,8 @@
 
 > Auto-generated from `Security Scan.md` in the docs repo.
 
+> Auto-generated from `Security Scan.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/SECURITY_SCAN.md` in the docs repo.
 
 ---
