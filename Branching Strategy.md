@@ -2,6 +2,8 @@
 
 > Auto-generated from `Branching Strategy.md` in the docs repo.
 
+> Auto-generated from `Branching Strategy.md` in the docs repo.
+
 > Auto-generated from `engineering/BRANCHING_STRATEGY.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/BRANCHING_STRATEGY.md` in the docs repo.
