@@ -12,6 +12,8 @@
 
 > Auto-generated from `Iso 12207 Software Lifecycle.md` in the docs repo.
 
+> Auto-generated from `Iso 12207 Software Lifecycle.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_12207_SOFTWARE_LIFECYCLE.md` in the docs repo.
 
 ---
