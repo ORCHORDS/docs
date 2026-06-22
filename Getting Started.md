@@ -2,6 +2,8 @@
 
 > Auto-generated from `Getting Started.md` in the docs repo.
 
+> Auto-generated from `Getting Started.md` in the docs repo.
+
 > Auto-generated from `user/GETTING_STARTED.md` in the docs repo.
 
 > Auto-generated from `docs/user/GETTING_STARTED.md` in the docs repo.
