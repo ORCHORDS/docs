@@ -1,3 +1,5 @@
+> Auto-generated from `Branch Naming.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/BRANCH_NAMING.md` in the docs repo.
 
 ---
