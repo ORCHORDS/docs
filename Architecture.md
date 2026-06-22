@@ -1,5 +1,3 @@
-> Auto-generated from `Architecture.md` in the docs repo.
-
 # Source Code Architecture
 
 Auto-generated overview of the `src/` directory structure.
@@ -8,10 +6,14 @@ Auto-generated overview of the `src/` directory structure.
 
 - `AIProcessor.cpp`
 - `AIProcessor.h`
+- `BetaAINoiseReduction.cpp`
+- `BetaAINoiseReduction.h`
 - `NoiseReduction.cpp`
 - `NoiseReduction.h`
 - `NoiseReductionModule.cpp`
 - `NoiseReductionModule.h`
+- `Testing.cpp`
+- `Testing.h`
 - `TranscriberPipeline.h`
 - `TranscriberPipeline.py`
 - `Whisper.cpp`
@@ -27,6 +29,8 @@ Auto-generated overview of the `src/` directory structure.
 
 ## src/App/
 
+- `AccessibilitySettings.cpp`
+- `AccessibilitySettings.h`
 - `AppController.cpp`
 - `AppController.h`
 - `AppLifecycle.cpp`
@@ -42,6 +46,14 @@ Auto-generated overview of the `src/` directory structure.
 - `ApplicationManager.h`
 - `ApplicationServices.cpp`
 - `ApplicationServices.h`
+- `BackupScheduler.cpp`
+- `BackupScheduler.h`
+- `BetaAppServices.cpp`
+- `BetaAppServices.h`
+- `DisasterRecoveryManager.cpp`
+- `DisasterRecoveryManager.h`
+- `GitIntegration.cpp`
+- `GitIntegration.h`
 - `LocalProjectStorage.cpp`
 - `LocalProjectStorage.h`
 - `MainApplication.cpp`
@@ -61,6 +73,8 @@ Auto-generated overview of the `src/` directory structure.
 - `ServiceManager.h`
 - `SettingsManager.cpp`
 - `SettingsManager.h`
+- `Testing.cpp`
+- `Testing.h`
 - `UndoManager.cpp`
 - `UndoManager.h`
 - `UpdateChecker.cpp`
@@ -104,6 +118,8 @@ Auto-generated overview of the `src/` directory structure.
 
 - `APIDesign.cpp`
 - `APIDesign.h`
+- `AccessibilityComplianceChecker.cpp`
+- `AccessibilityComplianceChecker.h`
 - `AdvancedAuthSystem.cpp`
 - `AdvancedAuthSystem.h`
 - `AuthManager.cpp`
@@ -118,8 +134,12 @@ Auto-generated overview of the `src/` directory structure.
 - `AuthenticationManager.h`
 - `AuthenticationModule.cpp`
 - `AuthenticationModule.h`
+- `AzureBlobStorage.cpp`
+- `AzureBlobStorage.h`
 - `BackendService.cpp`
 - `BackendService.h`
+- `BetaProgram.cpp`
+- `BetaProgram.h`
 - `CloudFunctions.cpp`
 - `CloudFunctions.h`
 - `CloudSync.cpp`
@@ -142,7 +162,12 @@ Auto-generated overview of the `src/` directory structure.
 - `FirebaseSync.h`
 - `FirestoreDatabase.cpp`
 - `FirestoreDatabase.h`
+- `GitIntegration.cpp`
 - `GitIntegration.h`
+- `GitService.cpp`
+- `GitService.h`
+- `GoogleCloudIntegration.cpp`
+- `GoogleCloudIntegration.h`
 - `ProjectSync.cpp`
 - `ProjectSync.h`
 - `PurchaseManager.cpp`
@@ -151,6 +176,10 @@ Auto-generated overview of the `src/` directory structure.
 - `Security.h`
 - `SyncSystem.cpp`
 - `SyncSystem.h`
+- `TerraformConfig.cpp`
+- `TerraformConfig.h`
+- `Testing.cpp`
+- `Testing.h`
 - `TokenAuth.cpp`
 - `TokenAuth.h`
 - `TokenManagement.cpp`
@@ -170,6 +199,8 @@ Auto-generated overview of the `src/` directory structure.
 
 - `AdvancedCaptureEngine.cpp`
 - `AdvancedCaptureEngine.h`
+- `BetaCaptureFeatures.cpp`
+- `BetaCaptureFeatures.h`
 - `CaptureEngine.cpp`
 - `CaptureEngine.h`
 - `CaptureManager.cpp`
@@ -177,13 +208,21 @@ Auto-generated overview of the `src/` directory structure.
 - `PiPCompositor.h`
 - `ScreenCapture.cpp`
 - `ScreenCapture.h`
+- `ScreenCaptureBackup.cpp`
+- `ScreenCaptureBackup.h`
 - `ScreenCaptureEngine.cpp`
 - `ScreenCaptureEngine.h`
 - `Testing.cpp`
+- `Testing.h`
 - `WebcamCapture.cpp`
 - `WebcamCapture.h`
 - `WebcamCaptureEngine.cpp`
 - `WebcamCaptureEngine.h`
+
+## src/ColorManagement/
+
+- `ColorManager.cpp`
+- `ColorManager.h`
 
 ## src/Core/
 
@@ -264,6 +303,10 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectsPipeline.h`
 - `Exporter.cpp`
 - `Exporter.h`
+- `FirebaseAuth.cpp`
+- `FirebaseAuth.h`
+- `FirestoreSync.cpp`
+- `FirestoreSync.h`
 - `FrameBufferManager.cpp`
 - `FrameBufferManager.h`
 - `FramePacing.cpp`
@@ -351,6 +394,8 @@ Auto-generated overview of the `src/` directory structure.
 - `SharpenEffect.h`
 - `SwapChain.cpp`
 - `SwapChain.h`
+- `Testing.cpp`
+- `Testing.h`
 - `Timeline.cpp`
 - `Timeline.h`
 - `TimelineRenderer.cpp`
@@ -359,6 +404,8 @@ Auto-generated overview of the `src/` directory structure.
 - `UIOverlayRenderer.cpp`
 - `UIOverlayRenderer.h`
 - `UndoManager.cpp`
+- `Validation.cpp`
+- `Validation.h`
 - `VideoCodec.cpp`
 - `VideoCodec.h`
 - `VideoCodecEngine.cpp`
@@ -376,13 +423,22 @@ Auto-generated overview of the `src/` directory structure.
 - `VulkanBackend.h`
 - `VulkanRenderer.cpp`
 - `VulkanRenderer.h`
+- `Window.cpp`
 - `WindowManager.cpp`
 - `WindowManager.h`
 
 ## src/Export/
 
+- `AccessibilityExporter.cpp`
+- `AccessibilityExporter.h`
 - `AdvancedExporter.cpp`
 - `AdvancedExporter.h`
+- `BackupExporter.cpp`
+- `BackupExporter.h`
+- `BetaExportPresets.cpp`
+- `BetaExportPresets.h`
+- `BranchExportHandler.cpp`
+- `BranchExportHandler.h`
 - `Encoder.cpp`
 - `Encoder.h`
 - `ExportManager.cpp`
@@ -405,15 +461,26 @@ Auto-generated overview of the `src/` directory structure.
 - `RenderPreset.h`
 - `RenderPresets.cpp`
 - `RenderPresets.h`
+- `RestoreManager.cpp`
 - `Testing.cpp`
 - `Testing.h`
 - `VideoExporter.cpp`
 - `VideoExporter.h`
 
+## src/FramePacing/
+
+- `FramePacer.cpp`
+- `FramePacer.h`
+
 ## src/IO/
 
 - `DragDropImporter.h`
 - `FileOperations.h`
+
+## src/Performance/
+
+- `PerformanceMetrics.cpp`
+- `PerformanceMetrics.h`
 
 ## src/Playback/
 
@@ -422,6 +489,8 @@ Auto-generated overview of the `src/` directory structure.
 ## src/Plugins/
 
 - `.gitkeep`
+- `BetaPluginHosting.cpp`
+- `BetaPluginHosting.h`
 - `OpenFX.cpp`
 - `OpenFXHost.cpp`
 - `OpenFXHost.h`
@@ -438,20 +507,34 @@ Auto-generated overview of the `src/` directory structure.
 - `OpenFXSupport.cpp`
 - `OpenFXWrapper.cpp`
 - `OpenFXWrapper.h`
+- `PluginBackup.cpp`
+- `PluginBackup.h`
 - `PluginHost.cpp`
 - `PluginHost.h`
 - `PluginHosting.cpp`
 - `PluginHosting.h`
 - `PluginManager.cpp`
 - `PluginManager.h`
+- `PluginSDK.cpp`
 - `PluginSystem.cpp`
 - `PluginSystem.h`
+- `Testing.cpp`
+- `Testing.h`
+
+## src/RenderGraph/
+
+- `RenderGraph.cpp`
+- `RenderGraph.h`
 
 ## src/Timeline/
 
 - `AdvancedTimeline.cpp`
 - `AdvancedTimeline.h`
+- `BetaTimelineFeatures.cpp`
+- `BetaTimelineFeatures.h`
+- `BranchTimeline.h`
 - `BranchTimelineManager.cpp`
+- `BranchTimelineManager.h`
 - `Clip.cpp`
 - `Clip.h`
 - `ClipController.cpp`
@@ -472,6 +555,8 @@ Auto-generated overview of the `src/` directory structure.
 - `ClipRepresentation.h`
 - `MagneticSnap.cpp`
 - `MagneticSnap.h`
+- `ProjectBackup.cpp`
+- `ProjectBackup.h`
 - `Testing.cpp`
 - `Testing.h`
 - `TimelineController.cpp`
@@ -519,11 +604,14 @@ Auto-generated overview of the `src/` directory structure.
 - `AnimationSystem.h`
 - `AudioEffectsPanel.cpp`
 - `AudioEffectsPanel.h`
+- `AudioMixer.cpp`
+- `AudioMixer.h`
 - `AudioPanel.cpp`
 - `AudioPanel.h`
 - `AudioUI.cpp`
 - `AudioUI.h`
 - `BranchingStrategyPanel.cpp`
+- `BranchingStrategyPanel.h`
 - `ClipRendering.cpp`
 - `ClipRendering.h`
 - `ColorPicker.cpp`
@@ -538,6 +626,7 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectsPanel.h`
 - `EffectsUI.cpp`
 - `EffectsUI.h`
+- `ExportDialog.cpp`
 - `ExportDialog.h`
 - `MainWindow.cpp`
 - `MainWindow.h`
@@ -548,6 +637,10 @@ Auto-generated overview of the `src/` directory structure.
 - `PlaybackControls.cpp`
 - `PlaybackControls.h`
 - `PreviewPanel.h`
+- `PreviewViewport.cpp`
+- `PreviewViewport.h`
+- `ProjectBrowser.cpp`
+- `ProjectBrowser.h`
 - `PropertiesPanel.cpp`
 - `PropertiesPanel.h`
 - `PropertyControl.cpp`
@@ -555,6 +648,7 @@ Auto-generated overview of the `src/` directory structure.
 - `PurchaseDialog.cpp`
 - `PurchaseDialog.h`
 - `Testing.cpp`
+- `Testing.h`
 - `TimelineComponent.cpp`
 - `TimelineComponent.h`
 - `TimelinePanel.cpp`
