@@ -1,3 +1,5 @@
+> Auto-generated from `Project Schedule.md` in the docs repo.
+
 > Auto-generated from `PROJECT_SCHEDULE.md` in the docs repo.
 
 ---
