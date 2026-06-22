@@ -1,3 +1,5 @@
+> Auto-generated from `Build System.md` in the docs repo.
+
 > Auto-generated from `engineering/BUILD_SYSTEM.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/BUILD_SYSTEM.md` in the docs repo.
