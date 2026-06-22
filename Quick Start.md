@@ -1,5 +1,7 @@
 > Auto-generated from `Quick Start.md` in the docs repo.
 
+> Auto-generated from `Quick Start.md` in the docs repo.
+
 > Auto-generated from `user/QUICK_START.md` in the docs repo.
 
 #pragma once
