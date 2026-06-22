@@ -1,5 +1,7 @@
 > Auto-generated from `Api Reference.md` in the docs repo.
 
+> Auto-generated from `Api Reference.md` in the docs repo.
+
 > Auto-generated from `docs/dev/API_REFERENCE.md` in the docs repo.
 
 ---
