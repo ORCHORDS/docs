@@ -10,6 +10,8 @@
 
 > Auto-generated from `Issue 139 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 139 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_139_SPEC.md` in the docs repo.
 
 ---
