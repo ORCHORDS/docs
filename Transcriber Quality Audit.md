@@ -4,6 +4,8 @@
 
 > Auto-generated from `Transcriber Quality Audit.md` in the docs repo.
 
+> Auto-generated from `Transcriber Quality Audit.md` in the docs repo.
+
 > Auto-generated from `docs/audio/TRANSCRIBER_QUALITY_AUDIT.md` in the docs repo.
 
 ---
