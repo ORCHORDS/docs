@@ -10,6 +10,8 @@
 
 > Auto-generated from `Index.md` in the docs repo.
 
+> Auto-generated from `Index.md` in the docs repo.
+
 > Auto-generated from `docs/INDEX.md` in the docs repo.
 
 ---
