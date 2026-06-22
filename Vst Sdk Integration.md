@@ -2,6 +2,8 @@
 
 > Auto-generated from `Vst Sdk Integration.md` in the docs repo.
 
+> Auto-generated from `Vst Sdk Integration.md` in the docs repo.
+
 > Auto-generated from `docs/audio/VST_SDK_INTEGRATION.md` in the docs repo.
 
 ---
