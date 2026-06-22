@@ -1,17 +1,28 @@
-> Auto-generated from `Home.md` in the docs repo.
-
-> Auto-generated from `Home.md` in the docs repo.
-
-> Auto-generated from `Home.md` in the docs repo.
-
 # Beetle Studio Wiki
 
 Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project's documentation.
 
 ## Documentation Index
 
+### Effects
+
+- [[Effects Library]]
+- [[Migration]]
+- [[Openfx Plugin Sdk]]
+
+### Engineering
+
+- [[Architecture Overview]]
+- [[Backup Disaster Recovery]]
+- [[Branching Strategy]]
+- [[Build System]]
+- [[Ci Cd Pipeline]]
+- [[Technical Standards]]
+- [[Test Strategy]]
+
 ### General
 
+- [[Accessibility Compliance]]
 - [[Accessibility Compliance]]
 - [[Api Contract]]
 - [[Api Reference]]
@@ -23,6 +34,7 @@ Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project'
 - [[Beetle Studio Team]]
 - [[Beetle Studio Team]]
 - [[Benchmarks]]
+- [[Beta Program Guide]]
 - [[Beta Program Guide]]
 - [[Branch Naming]]
 - [[Branching Strategy]]
@@ -108,13 +120,14 @@ Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project'
 - [[Module Map]]
 - [[Onboarding Guide]]
 - [[Openfx Plugin Guide]]
+- [[Openfx Plugin Guide]]
 - [[Openfx Plugin Sdk]]
+- [[Performance Benchmarks]]
 - [[Performance Benchmarks]]
 - [[Pr Build]]
 - [[Priority Framework]]
 - [[Project Schedule]]
 - [[Project Schedule]]
-- [[Quick Start]]
 - [[Quick Start]]
 - [[Release Build]]
 - [[Release Checklist]]
@@ -123,10 +136,11 @@ Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project'
 - [[Rfc Xxx Template]]
 - [[Roadmap]]
 - [[Security Policy]]
+- [[Security Policy]]
 - [[Security Scan]]
 - [[Semantic Versioning]]
 - [[Shader Spec]]
-- [[Shader Spec]]
+- [[Style Guide]]
 - [[Style Guide]]
 - [[Swid Tag Spec]]
 - [[Team Operations Manual]]
@@ -138,12 +152,48 @@ Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project'
 - [[Transcriber Quality Audit]]
 - [[Troubleshooting]]
 - [[User Guide]]
-- [[User Guide]]
 - [[Versioning Policy]]
 - [[Vst Sdk Integration]]
 - [[Vulnerability Disclosure]]
 - [[Waivers]]
 - [[Windows Store Submission]]
+
+### Graphics
+
+- [[Rendering Pipeline]]
+- [[Shader Spec]]
+
+### Help
+
+- [[Faq]]
+- [[Troubleshooting]]
+
+### Operations
+
+- [[Infrastructure Overview]]
+- [[Onboarding Guide]]
+
+### Product
+
+- [[Priority Framework]]
+- [[Roadmap]]
+
+### Releases
+
+- [[Changelog Policy]]
+- [[Code Signing Certificate Management]]
+- [[Installer Spec]]
+- [[Release Checklist]]
+- [[Swid Tag Spec]]
+- [[Versioning Policy]]
+- [[Windows Store Submission]]
+
+### User
+
+- [[Getting Started]]
+- [[Keyboard Shortcuts]]
+- [[Quick Start]]
+- [[User Guide]]
 
 ## Code Architecture
 
