@@ -1,3 +1,5 @@
+> Auto-generated from `Openfx Plugin Guide.md` in the docs repo.
+
 > Auto-generated from `OPENFX_PLUGIN_GUIDE.md` in the docs repo.
 
 > Auto-generated from `docs/OPENFX_PLUGIN_GUIDE.md` in the docs repo.
