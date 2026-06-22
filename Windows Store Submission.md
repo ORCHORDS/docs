@@ -1,5 +1,3 @@
-> Auto-generated from `Windows Store Submission.md` in the docs repo.
-
 > Auto-generated from `releases/WINDOWS_STORE_SUBMISSION.md` in the docs repo.
 
 > Auto-generated from `docs/releases/WINDOWS_STORE_SUBMISSION.md` in the docs repo.
