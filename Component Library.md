@@ -10,6 +10,8 @@
 
 > Auto-generated from `Component Library.md` in the docs repo.
 
+> Auto-generated from `Component Library.md` in the docs repo.
+
 > Auto-generated from `docs/ui/COMPONENT_LIBRARY.md` in the docs repo.
 
 ---
