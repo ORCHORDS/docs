@@ -8,6 +8,8 @@
 
 > Auto-generated from `Auto Assign.md` in the docs repo.
 
+> Auto-generated from `Auto Assign.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/AUTO_ASSIGN.md` in the docs repo.
 
 ---
