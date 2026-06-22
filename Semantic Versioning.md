@@ -1,5 +1,7 @@
 > Auto-generated from `Semantic Versioning.md` in the docs repo.
 
+> Auto-generated from `Semantic Versioning.md` in the docs repo.
+
 > Auto-generated from `docs/standards/SEMANTIC_VERSIONING.md` in the docs repo.
 
 ---
