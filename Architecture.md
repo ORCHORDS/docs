@@ -1,15 +1,3 @@
-> Auto-generated from `Architecture.md` in the docs repo.
-
-> Auto-generated from `Architecture.md` in the docs repo.
-
-> Auto-generated from `Architecture.md` in the docs repo.
-
-> Auto-generated from `Architecture.md` in the docs repo.
-
-> Auto-generated from `Architecture.md` in the docs repo.
-
-> Auto-generated from `Architecture.md` in the docs repo.
-
 # Source Code Architecture
 
 Auto-generated overview of the `src/` directory structure.
@@ -74,6 +62,9 @@ Auto-generated overview of the `src/` directory structure.
 - `UndoManager.cpp`
 - `UndoManager.h`
 - `UpdateChecker.cpp`
+- `VersionControlService.cpp`
+- `VersionControlService.h`
+- `Window.cpp`
 
 ## src/Audio/
 
@@ -147,7 +138,9 @@ Auto-generated overview of the `src/` directory structure.
 - `FirebaseService.h`
 - `FirebaseSync.cpp`
 - `FirebaseSync.h`
+- `FirestoreDatabase.cpp`
 - `FirestoreDatabase.h`
+- `GitIntegration.h`
 - `ProjectSync.cpp`
 - `ProjectSync.h`
 - `PurchaseManager.cpp`
@@ -184,6 +177,7 @@ Auto-generated overview of the `src/` directory structure.
 - `ScreenCapture.h`
 - `ScreenCaptureEngine.cpp`
 - `ScreenCaptureEngine.h`
+- `Testing.cpp`
 - `WebcamCapture.cpp`
 - `WebcamCapture.h`
 - `WebcamCaptureEngine.cpp`
@@ -207,6 +201,8 @@ Auto-generated overview of the `src/` directory structure.
 ## src/Engine/
 
 - `.gitkeep`
+- `APIFramework.cpp`
+- `APIFramework.h`
 - `Accessibility.cpp`
 - `Accessibility.h`
 - `AdvancedRendering.cpp`
@@ -216,6 +212,8 @@ Auto-generated overview of the `src/` directory structure.
 - `Analytics.cpp`
 - `Analytics.h`
 - `AudioMixer.cpp`
+- `AuthenticationModule.cpp`
+- `AuthenticationModule.h`
 - `BeetleCodec.cpp`
 - `BeetleCodec.h`
 - `BeetleEffects.cpp`
@@ -224,9 +222,13 @@ Auto-generated overview of the `src/` directory structure.
 - `BeetleEngine.h`
 - `BlendModeEffect.cpp`
 - `BlendModeEffect.h`
+- `BranchingStrategy.cpp`
+- `BranchingStrategy.h`
 - `ChromaKeyEffect.cpp`
 - `ChromaKeyEffect.h`
 - `ClipRendering.cpp`
+- `CloudSync.cpp`
+- `CloudSync.h`
 - `CodecManager.cpp`
 - `CodecManager.h`
 - `CodecPipeline.cpp`
@@ -236,14 +238,18 @@ Auto-generated overview of the `src/` directory structure.
 - `ColorManagement.h`
 - `ColorPipeline.cpp`
 - `CommandQueue.cpp`
+- `CommandQueue.h`
 - `CompositingEngine.cpp`
 - `CompositingEngine.h`
 - `CompositingModule.cpp`
 - `CompositingModule.h`
 - `Compositor.cpp`
 - `Compositor.h`
+- `CrossPlatformSupport.cpp`
+- `CrossPlatformSupport.h`
 - `DX12Renderer.cpp`
 - `DX12Renderer.h`
+- `DatabaseArchitecture.cpp`
 - `DatabaseArchitecture.h`
 - `EffectChain.cpp`
 - `EffectChain.h`
@@ -251,6 +257,7 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectProcessor.cpp`
 - `EffectRegistry.cpp`
 - `EffectRegistry.h`
+- `EffectsCompositingEngine.cpp`
 - `EffectsCompositingEngine.h`
 - `EffectsPipeline.h`
 - `Exporter.cpp`
@@ -273,6 +280,7 @@ Auto-generated overview of the `src/` directory structure.
 - `GraphicsFoundation.h`
 - `LensDistortionEffect.cpp`
 - `LensDistortionEffect.h`
+- `LicensingSystem.cpp`
 - `LicensingSystem.h`
 - `Localization.cpp`
 - `Localization.h`
@@ -309,6 +317,7 @@ Auto-generated overview of the `src/` directory structure.
 - `ProxyGenerator.cpp`
 - `ProxyGenerator.h`
 - `RateLimiting.cpp`
+- `RateLimiting.h`
 - `RenderGraph.cpp`
 - `RenderGraph.h`
 - `RenderPass.cpp`
@@ -328,7 +337,10 @@ Auto-generated overview of the `src/` directory structure.
 - `SIMDOptimization.h`
 - `SIMDOptimizations.cpp`
 - `SIMDOptimizations.h`
+- `SecurityModule.cpp`
 - `SecurityModule.h`
+- `SecurityProtocols.cpp`
+- `SecurityProtocols.h`
 - `ShaderCompiler.cpp`
 - `ShaderCompiler.h`
 - `ShaderManager.cpp`
@@ -340,6 +352,7 @@ Auto-generated overview of the `src/` directory structure.
 - `Timeline.cpp`
 - `Timeline.h`
 - `TimelineRenderer.cpp`
+- `TokenSystem.cpp`
 - `UIFramework.cpp`
 - `UIOverlayRenderer.cpp`
 - `UIOverlayRenderer.h`
@@ -350,7 +363,10 @@ Auto-generated overview of the `src/` directory structure.
 - `VideoCodecEngine.h`
 - `VideoDecoder.cpp`
 - `VideoDecoder.h`
+- `VideoPlayback.cpp`
+- `VideoPlayback.h`
 - `VideoPreview.cpp`
+- `VideoPreview.h`
 - `ViewportCompositor.cpp`
 - `ViewportCompositor.h`
 - `ViewportWidget.cpp`
@@ -383,8 +399,12 @@ Auto-generated overview of the `src/` directory structure.
 - `Presets.h`
 - `RenderPipeline.cpp`
 - `RenderPipeline.h`
+- `RenderPreset.cpp`
+- `RenderPreset.h`
 - `RenderPresets.cpp`
 - `RenderPresets.h`
+- `Testing.cpp`
+- `Testing.h`
 - `VideoExporter.cpp`
 - `VideoExporter.h`
 
@@ -400,6 +420,7 @@ Auto-generated overview of the `src/` directory structure.
 ## src/Plugins/
 
 - `.gitkeep`
+- `OpenFX.cpp`
 - `OpenFXHost.cpp`
 - `OpenFXHost.h`
 - `OpenFXHosting.cpp`
@@ -417,6 +438,7 @@ Auto-generated overview of the `src/` directory structure.
 - `OpenFXWrapper.h`
 - `PluginHost.cpp`
 - `PluginHost.h`
+- `PluginHosting.cpp`
 - `PluginHosting.h`
 - `PluginManager.cpp`
 - `PluginManager.h`
@@ -427,6 +449,7 @@ Auto-generated overview of the `src/` directory structure.
 
 - `AdvancedTimeline.cpp`
 - `AdvancedTimeline.h`
+- `BranchTimelineManager.cpp`
 - `Clip.cpp`
 - `Clip.h`
 - `ClipController.cpp`
@@ -447,6 +470,8 @@ Auto-generated overview of the `src/` directory structure.
 - `ClipRepresentation.h`
 - `MagneticSnap.cpp`
 - `MagneticSnap.h`
+- `Testing.cpp`
+- `Testing.h`
 - `TimelineController.cpp`
 - `TimelineController.h`
 - `TimelineDataStructures.cpp`
@@ -458,6 +483,7 @@ Auto-generated overview of the `src/` directory structure.
 - `TimelineModel.cpp`
 - `TimelineModel.h`
 - `TimelineUI.cpp`
+- `TimelineUI.h`
 - `TimelineUIWidget.cpp`
 - `TimelineUIWidget.h`
 - `Track.cpp`
@@ -466,6 +492,7 @@ Auto-generated overview of the `src/` directory structure.
 - `TrackManager.h`
 - `TrackSystem.cpp`
 - `TrackSystem.h`
+- `Types.cpp`
 - `UndoManager.cpp`
 - `UndoManager.h`
 - `UndoRedoManager.cpp`
@@ -494,6 +521,7 @@ Auto-generated overview of the `src/` directory structure.
 - `AudioPanel.h`
 - `AudioUI.cpp`
 - `AudioUI.h`
+- `BranchingStrategyPanel.cpp`
 - `ClipRendering.cpp`
 - `ClipRendering.h`
 - `ColorPicker.cpp`
@@ -524,6 +552,7 @@ Auto-generated overview of the `src/` directory structure.
 - `PropertyControl.h`
 - `PurchaseDialog.cpp`
 - `PurchaseDialog.h`
+- `Testing.cpp`
 - `TimelineComponent.cpp`
 - `TimelineComponent.h`
 - `TimelinePanel.cpp`
