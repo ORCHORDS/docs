@@ -8,6 +8,8 @@
 
 > Auto-generated from `Issue 261 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 261 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_261_SPEC.md` in the docs repo.
 
 ---
