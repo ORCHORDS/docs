@@ -1,3 +1,5 @@
+> Auto-generated from `Beetle Studio Team.md` in the docs repo.
+
 > Auto-generated from `BEETLE_STUDIO_TEAM.md` in the docs repo.
 
 ---
