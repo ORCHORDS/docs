@@ -1,7 +1,3 @@
-> Auto-generated from `Shader Spec.md` in the docs repo.
-
-> Auto-generated from `Shader Spec.md` in the docs repo.
-
 > Auto-generated from `graphics/SHADER_SPEC.md` in the docs repo.
 
 # Color Correction Effect Shader Specification
