@@ -1,3 +1,5 @@
+> Auto-generated from `Test Strategy.md` in the docs repo.
+
 > Auto-generated from `engineering/TEST_STRATEGY.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/TEST_STRATEGY.md` in the docs repo.
