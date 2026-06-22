@@ -1,3 +1,5 @@
+> Auto-generated from `Threat Model.md` in the docs repo.
+
 > Auto-generated from `docs/security/THREAT_MODEL.md` in the docs repo.
 
 ---
