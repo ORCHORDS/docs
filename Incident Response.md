@@ -4,6 +4,8 @@
 
 > Auto-generated from `Incident Response.md` in the docs repo.
 
+> Auto-generated from `Incident Response.md` in the docs repo.
+
 > Auto-generated from `docs/operations/INCIDENT_RESPONSE.md` in the docs repo.
 
 ---
