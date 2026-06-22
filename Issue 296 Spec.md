@@ -14,6 +14,8 @@
 
 > Auto-generated from `Issue 296 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 296 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_296_SPEC.md` in the docs repo.
 
 ---
