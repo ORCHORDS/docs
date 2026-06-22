@@ -1,3 +1,5 @@
+> Auto-generated from `Rendering Pipeline.md` in the docs repo.
+
 > Auto-generated from `graphics/RENDERING_PIPELINE.md` in the docs repo.
 
 > Auto-generated from `docs/graphics/RENDERING_PIPELINE.md` in the docs repo.
