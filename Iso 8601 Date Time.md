@@ -2,6 +2,8 @@
 
 > Auto-generated from `Iso 8601 Date Time.md` in the docs repo.
 
+> Auto-generated from `Iso 8601 Date Time.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_8601_DATE_TIME.md` in the docs repo.
 
 ---
