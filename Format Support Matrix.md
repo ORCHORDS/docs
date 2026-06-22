@@ -12,6 +12,8 @@
 
 > Auto-generated from `Format Support Matrix.md` in the docs repo.
 
+> Auto-generated from `Format Support Matrix.md` in the docs repo.
+
 > Auto-generated from `docs/codecs/FORMAT_SUPPORT_MATRIX.md` in the docs repo.
 
 ---
