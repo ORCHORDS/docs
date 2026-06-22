@@ -12,6 +12,8 @@
 
 > Auto-generated from `Issue 78 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 78 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_78_SPEC.md` in the docs repo.
 
 ---
