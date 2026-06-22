@@ -2,6 +2,8 @@
 
 > Auto-generated from `Architecture.md` in the docs repo.
 
+> Auto-generated from `Architecture.md` in the docs repo.
+
 # Source Code Architecture
 
 Auto-generated overview of the `src/` directory structure.
