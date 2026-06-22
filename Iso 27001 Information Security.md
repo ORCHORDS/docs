@@ -1,3 +1,5 @@
+> Auto-generated from `Iso 27001 Information Security.md` in the docs repo.
+
 > Auto-generated from `docs/standards/ISO_27001_INFORMATION_SECURITY.md` in the docs repo.
 
 ---
