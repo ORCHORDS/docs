@@ -1,5 +1,3 @@
-> Auto-generated from `Architecture.md` in the docs repo.
-
 # Source Code Architecture
 
 Auto-generated overview of the `src/` directory structure.
@@ -10,14 +8,20 @@ Auto-generated overview of the `src/` directory structure.
 - `AIProcessor.h`
 - `BetaAINoiseReduction.cpp`
 - `BetaAINoiseReduction.h`
+- `BranchAnalysis.cpp`
+- `BranchAnalysis.h`
 - `NoiseReduction.cpp`
 - `NoiseReduction.h`
+- `NoiseReductionFilter.cpp`
+- `NoiseReductionFilter.h`
 - `NoiseReductionModule.cpp`
 - `NoiseReductionModule.h`
 - `Testing.cpp`
 - `Testing.h`
 - `TranscriberPipeline.h`
 - `TranscriberPipeline.py`
+- `Versioning.cpp`
+- `Versioning.h`
 - `Whisper.cpp`
 - `Whisper.h`
 - `WhisperIntegration.cpp`
@@ -82,6 +86,8 @@ Auto-generated overview of the `src/` directory structure.
 - `UpdateChecker.cpp`
 - `VersionControlService.cpp`
 - `VersionControlService.h`
+- `Versioning.cpp`
+- `Versioning.h`
 - `Window.cpp`
 
 ## src/Audio/
@@ -104,10 +110,14 @@ Auto-generated overview of the `src/` directory structure.
 - `BeetleAudio.h`
 - `Mixer.cpp`
 - `Mixer.h`
+- `Mixing.cpp`
+- `Mixing.h`
 - `MixingConsole.cpp`
 - `MixingConsole.h`
 - `MixingEngine.cpp`
 - `MixingEngine.h`
+- `VST.cpp`
+- `VST.h`
 - `VSTHost.cpp`
 - `VSTHost.h`
 - `VSTIntegration.cpp`
@@ -115,6 +125,8 @@ Auto-generated overview of the `src/` directory structure.
 - `VSTInterface.cpp`
 - `VSTInterface.h`
 - `VSTPluginHost.cpp`
+- `Versioning.cpp`
+- `Versioning.h`
 
 ## src/Backend/
 
@@ -124,6 +136,8 @@ Auto-generated overview of the `src/` directory structure.
 - `AccessibilityComplianceChecker.h`
 - `AdvancedAuthSystem.cpp`
 - `AdvancedAuthSystem.h`
+- `Auth.cpp`
+- `Auth.h`
 - `AuthManager.cpp`
 - `AuthManager.h`
 - `AuthService.cpp`
@@ -148,6 +162,8 @@ Auto-generated overview of the `src/` directory structure.
 - `CloudSync.h`
 - `DatabaseManager.cpp`
 - `DatabaseManager.h`
+- `Firebase.cpp`
+- `Firebase.h`
 - `FirebaseAuth.cpp`
 - `FirebaseAuth.h`
 - `FirebaseDatabase.cpp`
@@ -190,6 +206,10 @@ Auto-generated overview of the `src/` directory structure.
 - `TokenManager.h`
 - `TokenSystem.cpp`
 - `TokenSystem.h`
+- `Tokens.cpp`
+- `Tokens.h`
+- `Versioning.cpp`
+- `Versioning.h`
 
 ## src/BeetleStudio/
 
@@ -216,6 +236,8 @@ Auto-generated overview of the `src/` directory structure.
 - `ScreenCaptureEngine.h`
 - `Testing.cpp`
 - `Testing.h`
+- `Versioning.cpp`
+- `Versioning.h`
 - `WebcamCapture.cpp`
 - `WebcamCapture.h`
 - `WebcamCaptureEngine.cpp`
@@ -265,6 +287,7 @@ Auto-generated overview of the `src/` directory structure.
 - `BeetleEngine.h`
 - `BlendModeEffect.cpp`
 - `BlendModeEffect.h`
+- `BlurEffect.cpp`
 - `BranchingStrategy.cpp`
 - `BranchingStrategy.h`
 - `ChromaKeyEffect.cpp`
@@ -276,12 +299,19 @@ Auto-generated overview of the `src/` directory structure.
 - `CodecManager.h`
 - `CodecPipeline.cpp`
 - `CodecPipeline.h`
+- `Codecs.cpp`
+- `Codecs.h`
 - `ColorCorrectionEffect.cpp`
+- `ColorCorrectionEffect.h`
+- `ColorCorrectionShader.cpp`
+- `ColorCorrectionShader.h`
 - `ColorManagement.cpp`
 - `ColorManagement.h`
 - `ColorPipeline.cpp`
 - `CommandQueue.cpp`
 - `CommandQueue.h`
+- `Compositing.cpp`
+- `Compositing.h`
 - `CompositingEngine.cpp`
 - `CompositingEngine.h`
 - `CompositingModule.cpp`
@@ -297,6 +327,7 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectChain.cpp`
 - `EffectChain.h`
 - `EffectEntry.h`
+- `EffectGraph.cpp`
 - `EffectProcessor.cpp`
 - `EffectRegistry.cpp`
 - `EffectRegistry.h`
@@ -305,6 +336,7 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectsPipeline.h`
 - `Exporter.cpp`
 - `Exporter.h`
+- `FFmpegDecoder.cpp`
 - `FirebaseAuth.cpp`
 - `FirebaseAuth.h`
 - `FirestoreSync.cpp`
@@ -325,6 +357,7 @@ Auto-generated overview of the `src/` directory structure.
 - `GraphicsEngine.h`
 - `GraphicsFoundation.cpp`
 - `GraphicsFoundation.h`
+- `IUndoableCommand.cpp`
 - `LensDistortionEffect.cpp`
 - `LensDistortionEffect.h`
 - `LicensingSystem.cpp`
@@ -369,7 +402,10 @@ Auto-generated overview of the `src/` directory structure.
 - `RenderGraph.h`
 - `RenderPass.cpp`
 - `RenderPass.h`
+- `Renderer.cpp`
 - `Renderer.h`
+- `Rendering.cpp`
+- `Rendering.h`
 - `RenderingEngine.cpp`
 - `RenderingEngine.h`
 - `RenderingFoundation.cpp`
@@ -408,6 +444,8 @@ Auto-generated overview of the `src/` directory structure.
 - `UndoManager.cpp`
 - `Validation.cpp`
 - `Validation.h`
+- `Versioning.cpp`
+- `Versioning.h`
 - `VideoCodec.cpp`
 - `VideoCodec.h`
 - `VideoCodecEngine.cpp`
@@ -437,6 +475,8 @@ Auto-generated overview of the `src/` directory structure.
 - `AdvancedExporter.h`
 - `BackupExporter.cpp`
 - `BackupExporter.h`
+- `BeetleStudioExporter.cpp`
+- `BeetleStudioExporter.h`
 - `BetaExportPresets.cpp`
 - `BetaExportPresets.h`
 - `BranchExportHandler.cpp`
@@ -466,6 +506,8 @@ Auto-generated overview of the `src/` directory structure.
 - `RestoreManager.cpp`
 - `Testing.cpp`
 - `Testing.h`
+- `Versioning.cpp`
+- `Versioning.h`
 - `VideoExporter.cpp`
 - `VideoExporter.h`
 
@@ -494,6 +536,7 @@ Auto-generated overview of the `src/` directory structure.
 - `BetaPluginHosting.cpp`
 - `BetaPluginHosting.h`
 - `OpenFX.cpp`
+- `OpenFX.h`
 - `OpenFXHost.cpp`
 - `OpenFXHost.h`
 - `OpenFXHosting.cpp`
@@ -522,11 +565,38 @@ Auto-generated overview of the `src/` directory structure.
 - `PluginSystem.h`
 - `Testing.cpp`
 - `Testing.h`
+- `Versioning.cpp`
+- `Versioning.h`
 
 ## src/RenderGraph/
 
 - `RenderGraph.cpp`
 - `RenderGraph.h`
+
+## src/RenderPasses/
+
+- `ColorCorrectionPass.cpp`
+- `ColorCorrectionPass.h`
+- `EffectChainPass.cpp`
+- `EffectChainPass.h`
+- `PresentPass.cpp`
+- `PresentPass.h`
+- `UIRenderPass.cpp`
+- `UIRenderPass.h`
+- `ViewportCompositePass.cpp`
+- `ViewportCompositePass.h`
+
+## src/Rendering/
+
+- `ShaderConstants.h`
+- `ShaderManager.h`
+
+## src/ShaderSystem/
+
+- `ShaderCompiler.cpp`
+- `ShaderCompiler.h`
+- `ShaderHotReload.cpp`
+- `ShaderHotReload.h`
 
 ## src/Timeline/
 
@@ -534,6 +604,7 @@ Auto-generated overview of the `src/` directory structure.
 - `AdvancedTimeline.h`
 - `BetaTimelineFeatures.cpp`
 - `BetaTimelineFeatures.h`
+- `BranchTimeline.cpp`
 - `BranchTimeline.h`
 - `BranchTimelineManager.cpp`
 - `BranchTimelineManager.h`
@@ -555,12 +626,16 @@ Auto-generated overview of the `src/` directory structure.
 - `ClipRendering.h`
 - `ClipRepresentation.cpp`
 - `ClipRepresentation.h`
+- `Clips.cpp`
+- `Clips.h`
 - `MagneticSnap.cpp`
 - `MagneticSnap.h`
 - `ProjectBackup.cpp`
 - `ProjectBackup.h`
 - `Testing.cpp`
 - `Testing.h`
+- `Timeline.cpp`
+- `Timeline.h`
 - `TimelineController.cpp`
 - `TimelineController.h`
 - `TimelineDataStructures.cpp`
@@ -581,6 +656,8 @@ Auto-generated overview of the `src/` directory structure.
 - `TrackManager.h`
 - `TrackSystem.cpp`
 - `TrackSystem.h`
+- `Tracks.cpp`
+- `Tracks.h`
 - `Types.cpp`
 - `UndoManager.cpp`
 - `UndoManager.h`
@@ -588,6 +665,8 @@ Auto-generated overview of the `src/` directory structure.
 - `UndoRedoManager.h`
 - `UndoableCommand.cpp`
 - `UndoableCommand.h`
+- `Versioning.cpp`
+- `Versioning.h`
 
 ## src/UI/
 
@@ -618,6 +697,8 @@ Auto-generated overview of the `src/` directory structure.
 - `ClipRendering.h`
 - `ColorPicker.cpp`
 - `ColorPicker.h`
+- `Dialogs.cpp`
+- `Dialogs.h`
 - `EffectControls.cpp`
 - `EffectControls.h`
 - `EffectPanel.cpp`
@@ -630,12 +711,16 @@ Auto-generated overview of the `src/` directory structure.
 - `EffectsUI.h`
 - `ExportDialog.cpp`
 - `ExportDialog.h`
+- `GitOperationsDialog.cpp`
+- `GitOperationsDialog.h`
 - `MainWindow.cpp`
 - `MainWindow.h`
 - `MultiMonitorSupport.cpp`
 - `MultiMonitorSupport.h`
 - `PanelSystem.cpp`
 - `PanelSystem.h`
+- `Panels.cpp`
+- `Panels.h`
 - `PlaybackControls.cpp`
 - `PlaybackControls.h`
 - `PreviewPanel.h`
@@ -664,6 +749,8 @@ Auto-generated overview of the `src/` directory structure.
 - `TimelineWidget.h`
 - `UIFramework.cpp`
 - `UIFramework.h`
+- `Versioning.cpp`
+- `Versioning.h`
 - `VideoPreviewPanel.cpp`
 - `VideoPreviewPanel.h`
 - `ViewportWidget.cpp`
@@ -672,6 +759,8 @@ Auto-generated overview of the `src/` directory structure.
 - `WidgetLibrary.h`
 - `WidgetManager.cpp`
 - `WidgetManager.h`
+- `Widgets.cpp`
+- `Widgets.h`
 
 ## src/Updates/
 
@@ -706,6 +795,7 @@ Auto-generated overview of the `src/` directory structure.
 
 ## src/core/
 
+- `IUndoableCommand.cpp`
 - `UndoStack.cpp`
 - `UndoStack.h`
 
@@ -714,6 +804,7 @@ Auto-generated overview of the `src/` directory structure.
 - `ColorCorrectEffect.cpp`
 - `EffectGraph.cpp`
 - `GaussianBlurEffect.cpp`
+- `IEffect.cpp`
 
 ## src/licensing/
 
@@ -744,6 +835,7 @@ Auto-generated overview of the `src/` directory structure.
 - `TimelineModel.h`
 - `Track.cpp`
 - `Track.h`
+- `Types.cpp`
 
 ## src/ui/
 
