@@ -10,6 +10,8 @@
 
 > Auto-generated from `Community Management.md` in the docs repo.
 
+> Auto-generated from `Community Management.md` in the docs repo.
+
 > Auto-generated from `docs/community/COMMUNITY_MANAGEMENT.md` in the docs repo.
 
 ---
