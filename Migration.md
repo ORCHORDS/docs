@@ -2,6 +2,8 @@
 
 > Auto-generated from `Migration.md` in the docs repo.
 
+> Auto-generated from `Migration.md` in the docs repo.
+
 > Auto-generated from `effects/MIGRATION.md` in the docs repo.
 
 > Auto-generated from `docs/effects/MIGRATION.md` in the docs repo.
