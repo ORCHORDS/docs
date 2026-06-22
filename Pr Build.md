@@ -1,3 +1,5 @@
+> Auto-generated from `Pr Build.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/PR_BUILD.md` in the docs repo.
 
 ---
