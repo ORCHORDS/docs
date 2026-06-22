@@ -1,3 +1,5 @@
+> Auto-generated from `Benchmarks.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/workflows/BENCHMARKS.md` in the docs repo.
 
 ---
