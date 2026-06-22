@@ -1,5 +1,7 @@
 > Auto-generated from `Data Model.md` in the docs repo.
 
+> Auto-generated from `Data Model.md` in the docs repo.
+
 > Auto-generated from `docs/timeline/DATA_MODEL.md` in the docs repo.
 
 ---
