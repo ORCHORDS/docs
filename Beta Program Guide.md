@@ -1,5 +1,3 @@
-> Auto-generated from `Beta Program Guide.md` in the docs repo.
-
 > Auto-generated from `BETA_PROGRAM_GUIDE.md` in the docs repo.
 
 > Auto-generated from `docs/BETA_PROGRAM_GUIDE.md` in the docs repo.
