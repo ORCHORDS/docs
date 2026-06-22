@@ -1,279 +1,154 @@
-> Auto-generated from `Shader Spec.md` in the docs repo.
+> Auto-generated from `graphics/SHADER_SPEC.md` in the docs repo.
 
-> Auto-generated from `docs/graphics/SHADER_SPEC.md` in the docs repo.
-
----
-title: "Shader Specification"
-version: "1.0.0"
-last-updated: "2026-06-21"
-status: "review"
----
-
-# Shader Specification
-
-**Project:** Beetle Studio  
-**Owner:** James Park (Graphics Engineer)  
-**Reviewers:** Mooned Dev (CEO), Daniel Kim (Effects)  
-**ISO Standards:** ISO/IEC 12207:2017 (development — design), ISO/IEC 25010:2023 (functional suitability, performance efficiency)  
-**Version:** 1.0.0  
-**Last Updated:** June 2026  
-
----
-
-
-## Scope & Audience
-
-| Aspect | Definition |
-|---|---|
-| **Scope** | HLSL shader interface, parameters, and how to add new shaders |
-| **Diátaxis form** | Reference |
-| **Primary audience** | James Park, Mooned Dev, Daniel Kim |
-| **Secondary audience** | Future maintainers and reviewers of this document |
-
-
----
+# Color Correction Effect Shader Specification
 
 ## Overview
+The Color Correction Effect allows users to adjust the color balance, contrast, brightness, and saturation of video clips in real-time. This effect leverages GPU shaders to ensure high performance and smooth playback.
 
-This document specifies the shader system in Beetle Studio — how shaders are organized, what parameters they expose, and how to add a new shader to the rendering pipeline. Per **ISO/IEC 12207:2017 §6.1**, internal interfaces must be precisely specified so that subsystems (effects, rendering, color) can be developed and modified independently without breaking the whole.
+## Shader Stages
 
-Shaders are the execution layer of Beetle Studio's GPU-accelerated effects pipeline.
-
-## Contents
-
-- [Shader Organization](#shader-organization)
-- [Shader Types](#shader-types)
-  - [1. Compute Shaders](#1-compute-shaders)
-  - [2. Vertex + Pixel Shaders](#2-vertex-pixel-shaders)
-- [Common Shader Interface](#common-shader-interface)
-- [Parameter Contracts](#parameter-contracts)
-- [Adding a New Shader](#adding-a-new-shader)
-  - [Step 1: Write the shader](#step-1-write-the-shader)
-  - [Step 2: Register with the effects system](#step-2-register-with-the-effects-system)
-  - [Step 3: Add to the effects panel](#step-3-add-to-the-effects-panel)
-  - [Step 4: Test](#step-4-test)
-- [Shader Compilation](#shader-compilation)
-  - [Compile Command](#compile-command)
-- [Performance Guidelines](#performance-guidelines)
-- [Version History](#version-history)
-  - [Change Log](#change-log)
-  - [Review Cadence](#review-cadence)
-
----
-
-## Shader Organization
-
-All shaders live in `third_party/shaders/`:
-
-```
-third_party/shaders/
-├── color/
-│   ├── ColorCorrection.hlsl       ← color wheels, exposure, contrast
-│   ├── ColorCurves.hlsl          ← RGB curves
-│   └── LutApply.hlsl            ← 3D LUT application
-├── blur/
-│   ├── GaussianBlur.hlsl         ← separable blur
-│   └── DirectionalBlur.hlsl      ← motion blur
-├── stylize/
-│   ├── Sharpen.hlsl              ← unsharp mask
-│   └── NoiseReduction.hlsl       ← temporal noise reduction
-├── distortion/
-│   ├── LensDistortion.hlsl       ← barrel/pincushion distortion
-│   └── Warp.hlsl                ← perspective warp
-├── composite/
-│   ├── BlendMode.hlsl            ← all blend modes
-│   └── ChromaKey.hlsl           ← green/blue screen keying
-└── output/
-    └── OutputTransform.hlsl      ← color space → display output
-```
-
----
-
-## Shader Types
-
-### 1. Compute Shaders
-
-Used for: blur, sharpen, noise reduction, color correction, LUT application.
-
-Input: `StructuredBuffer<HDRPixel>` (RGBA32_float)  
-Output: `RWStructuredBuffer<HDRPixel>`  
-Thread group: 16×16 threads
-
-### 2. Vertex + Pixel Shaders
-
-Used for: full-screen passes, compositing, UI overlay rendering.
-
-Full-screen quad, pixel shader writes directly to render target.
-
----
-
-## Common Shader Interface
-
-Every effect shader follows a common interface:
+### Vertex Shader
+The vertex shader is responsible for transforming the vertex positions and passing the texture coordinates to the fragment shader.
 
 ```hlsl
-// Shared include: shaders/common.hlsl
-
-struct ShaderParams {
-    float intensity;    // 0.0 = original, 1.0 = full effect
-    float2 resolution;   // viewport resolution
-    float time;         // for animated effects
-};
-
-// All shaders implement:
-void ApplyEffect(
-    in HDRPixel input,
-    in ShaderParams params,
-    out HDRPixel output
-);
-```
-
----
-
-## Parameter Contracts
-
-Each shader exposes parameters that the UI binds to. Parameters must be declared with metadata:
-
-```hlsl
-// Parameter declaration in shader
-// [[note: "name=Radius|min=0|max=100|default=5|step=1"]]
-cbuffer BlurParams {
-    [[note("name=Radius|min=0|max=200|default=5|step=1")]]
-    float radius;           // Blur radius in pixels
-    
-    [[note("name=Intensity|min=0|max=1|default=1.0")]]
-    float intensity;         // Blend with original
-    
-    [[note("name=Quality|min=1|max=3|default=2")]]
-    int quality;            // 1=fast, 2=normal, 3=high
-};
-```
-
-The UI reads this metadata to auto-generate parameter controls.
-
----
-
-## Adding a New Shader
-
-### Step 1: Write the shader
-
-1. Create `third_party/shaders/<category>/MyEffect.hlsl`
-2. Implement the shader using the common interface
-3. Add parameter metadata for UI binding
-4. Add to `CMakeLists.txt` in the shaders folder
-
-### Step 2: Register with the effects system
-
-```cpp
-// Register in EffectRegistry
-EffectRegistry::registerEffect<MyEffect>(
-    "builtin.my-effect",
-    "My Effect",
-    "My custom GPU effect",
-    EffectCategory::Stylize
-);
-```
-
-### Step 3: Add to the effects panel
-
-```json
-// resources/effects/builtin-effects.json
+cbuffer ConstantBuffer : register(b0)
 {
-  "id": "builtin.my-effect",
-  "name": "My Effect",
-  "category": "stylize",
-  "parameters": [
-    { "name": "radius", "type": "float", "default": 5.0 }
-  ]
+    float4x4 projectionMatrix;
+    float2 textureSize;
+}
+
+struct VS_INPUT
+{
+    float3 position : POSITION;
+    float2 texCoord : TEXCOORD;
+};
+
+struct VS_OUTPUT
+{
+    float4 position : SV_POSITION;
+    float2 texCoord : TEXCOORD;
+};
+
+VS_OUTPUT main(VS_INPUT input)
+{
+    VS_OUTPUT output;
+    output.position = mul(projectionMatrix, float4(input.position, 1.0f));
+    output.texCoord = input.texCoord;
+    return output;
 }
 ```
 
-### Step 4: Test
+### Fragment Shader
+The fragment shader applies the color correction adjustments to each pixel. It uses the following parameters:
+- **Brightness**: Adjusts the overall brightness of the image.
+- **Contrast**: Adjusts the difference between the darkest and lightest parts of the image.
+- **Saturation**: Adjusts the intensity of colors.
+- **Temperature**: Adjusts the color temperature to make the image warmer or cooler.
+- **Tint**: Adjusts the green-magenta balance.
 
-- [ ] Shader compiles without errors
-- [ ] Parameters are reflected in the UI Properties Panel
-- [ ] Effect renders correctly at all resolutions
-- [ ] Effect renders correctly in the export pipeline (not just preview)
-- [ ] No memory leaks under RenderDoc
-- [ ] Thread-safe (no race conditions in multi-threaded rendering)
+```hlsl
+Texture2D shaderTexture : register(t0);
+SamplerState samplerState : register(s0);
 
----
+cbuffer ColorCorrectionBuffer : register(b0)
+{
+    float brightness;
+    float contrast;
+    float saturation;
+    float temperature;
+    float tint;
+}
 
-## Shader Compilation
+struct PS_INPUT
+{
+    float4 position : SV_POSITION;
+    float2 texCoord : TEXCOORD;
+};
 
-| Stage | When | Tool |
-|---|---|---|
-| Compile HLSL → DXIL | Build time | DXC (`dxcompiler.dll`) |
-| Load at runtime | App launch | DirectX 12 shader reflection |
-| Hot reload (dev) | File save | Monitor file changes → recompile |
+float3 AdjustColor(float3 color, float brightness, float contrast, float saturation, float temperature, float tint)
+{
+    // Apply brightness
+    color += brightness;
 
-### Compile Command
+    // Apply contrast
+    color = (color - 0.5f) * contrast + 0.5f;
 
-```powershell
-# Compile HLSL to DXIL for DirectX 12
-dxc -T cs_6_2 `
-    -E ApplyEffect `
-    -Fo MyEffect.dxil `
-    MyEffect.hlsl `
-    -Qstrip_debug `
-    -Qstrip_reflect
+    // Convert to HSV
+    float3 hsv = RGBtoHSV(color);
+
+    // Apply saturation
+    hsv.y *= saturation;
+
+    // Convert back to RGB
+    color = HSVtoRGB(hsv);
+
+    // Apply temperature and tint
+    float3x3 temperatureMatrix = float3x3(
+        1.0f, 0.0f, 0.0f,
+        0.0f, 1.0f, 0.0f,
+        temperature, tint, 1.0f
+    );
+    color = mul(temperatureMatrix, color);
+
+    return color;
+}
+
+float3 RGBtoHSV(float3 c)
+{
+    float4 K = float4(0.0f, -1.0f / 3.0f, 2.0f / 3.0f, -1.0f);
+    float4 p = lerp(float4(c.bg, K.wz), float4(c.gb, K.xy), step(c.b, c.g));
+    float4 q = lerp(float4(p.xyw, c.r), float4(c.r, p.yzx), step(p.x, c.r));
+
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10f;
+    return float3(abs(q.z + (q.w - q.y) / (6.0f * d + e)), d / (q.x + e), q.x);
+}
+
+float3 HSVtoRGB(float3 c)
+{
+    float4 K = float4(1.0f, 2.0f / 3.0f, 1.0f / 3.0f, 3.0f);
+    float3 p = abs(frac(c.xxx + K.xyz) * 6.0f - K.www);
+    return c.z * lerp(K.xxx, clamp(p - K.xxx, 0.0f, 1.0f), c.y);
+}
+
+float4 main(PS_INPUT input) : SV_TARGET
+{
+    float4 color = shaderTexture.Sample(samplerState, input.texCoord);
+    float3 correctedColor = AdjustColor(color.rgb, brightness, contrast, saturation, temperature, tint);
+    return float4(correctedColor, color.a);
+}
 ```
 
----
+## Parameters
+- **Brightness**: Range [-1.0, 1.0]
+- **Contrast**: Range [0.0, 2.0]
+- **Saturation**: Range [0.0, 2.0]
+- **Temperature**: Range [-1.0, 1.0]
+- **Tint**: Range [-1.0, 1.0]
 
-## Performance Guidelines
+## Integration
+The shader is integrated into the rendering pipeline as follows:
+1. **Initialization**: Load the shader files and compile them during application startup.
+2. **Parameter Binding**: Bind the color correction parameters to the shader constant buffer each frame.
+3. **Rendering**: Apply the shader during the rendering of each video frame.
 
-Per **ISO/IEC 25010:2023** (performance efficiency):
+## Performance Considerations
+- **GPU Utilization**: The shader is designed to be lightweight to ensure it does not become a bottleneck in the rendering pipeline.
+- **Caching**: Reuse shader resources and avoid unnecessary shader compilations at runtime.
+- **Threading**: Ensure that parameter updates are thread-safe and do not interfere with rendering operations.
 
-| Guideline | Reason |
-|---|---|
-| Use `groupshared` memory for blur kernels | Reduces global memory reads |
-| Prefer separable filters (horizontal + vertical passes) | O(n) vs O(n²) cost |
-| Avoid `discard` in pixel shaders | Causes divergent threads |
-| Use 16-bit floats (half) where precision allows | Faster on most GPUs |
-| Minimize texture samples per pixel | Bound by texture bandwidth |
+## Example Usage
+```cpp
+ColorCorrectionEffect colorCorrection;
+colorCorrection.SetBrightness(0.1f);
+colorCorrection.SetContrast(1.2f);
+colorCorrection.SetSaturation(1.1f);
+colorCorrection.SetTemperature(0.05f);
+colorCorrection.SetTint(-0.05f);
 
----
+// During rendering
+colorCorrection.ApplyEffect(videoFrame);
+```
 
-## Version History
-
-| Version | Date | Changes |
-|---|---|---|
-| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 12207:2017 §6.1 and ISO/IEC 25010:2023 |
-
----
-
-*Grounded in: ISO/IEC 12207:2017 §6.1 (Design), ISO/IEC 25010:2023 (Functional Suitability, Performance Efficiency)*
-
-
-
----
-
-## References
-
-### Internal Documents
-
-_No internal documents referenced._
-
-### Standards & Frameworks
-
-- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
-- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
-- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
-
----
-
-## Document Maintenance
-
-### Change Log
-
-| Version | Date | Author | Change |
-|---|---|---|---|
-| 1.0.0 | June 2026 | James Park | Initial version |
-| 1.0.1 | June 2026 | James Park | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
-
-### Review Cadence
-
-- **Next review:** On shader system change
-- **Reviewer:** James Park (Graphics Engineer)
-- **Cadence:** Per STYLE_GUIDE.md defaults for this document type
+## Conclusion
+The Color Correction Effect provides a powerful tool for adjusting the visual characteristics of video content. By leveraging GPU shaders, it ensures that these adjustments are applied efficiently and in real-time, enhancing the overall user experience.
