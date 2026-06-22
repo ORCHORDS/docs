@@ -1,3 +1,5 @@
+> Auto-generated from `Home.md` in the docs repo.
+
 # Beetle Studio Wiki
 
 Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project's documentation.
