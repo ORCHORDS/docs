@@ -1,3 +1,5 @@
+> Auto-generated from `User Guide.md` in the docs repo.
+
 > Auto-generated from `user/USER_GUIDE.md` in the docs repo.
 
 #pragma once
