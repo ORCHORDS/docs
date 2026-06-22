@@ -1,3 +1,5 @@
+> Auto-generated from `Accessibility Compliance.md` in the docs repo.
+
 > Auto-generated from `ACCESSIBILITY_COMPLIANCE.md` in the docs repo.
 
 > Auto-generated from `docs/ACCESSIBILITY_COMPLIANCE.md` in the docs repo.
