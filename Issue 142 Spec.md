@@ -2,6 +2,8 @@
 
 > Auto-generated from `Issue 142 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 142 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_142_SPEC.md` in the docs repo.
 
 ---
