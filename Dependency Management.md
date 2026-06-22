@@ -14,6 +14,8 @@
 
 > Auto-generated from `Dependency Management.md` in the docs repo.
 
+> Auto-generated from `Dependency Management.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/DEPENDENCY_MANAGEMENT.md` in the docs repo.
 
 ---
