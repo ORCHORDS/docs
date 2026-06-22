@@ -1,5 +1,3 @@
-> Auto-generated from `Architecture.md` in the docs repo.
-
 # Source Code Architecture
 
 Auto-generated overview of the `src/` directory structure.
@@ -234,6 +232,7 @@ Auto-generated overview of the `src/` directory structure.
 - `Compositor.h`
 - `DX12Renderer.cpp`
 - `DX12Renderer.h`
+- `DatabaseArchitecture.h`
 - `EffectChain.cpp`
 - `EffectChain.h`
 - `EffectEntry.h`
@@ -297,6 +296,7 @@ Auto-generated overview of the `src/` directory structure.
 - `ProjectSerializer.cpp`
 - `ProxyGenerator.cpp`
 - `ProxyGenerator.h`
+- `RateLimiting.cpp`
 - `RenderGraph.cpp`
 - `RenderGraph.h`
 - `RenderPass.cpp`
@@ -324,6 +324,7 @@ Auto-generated overview of the `src/` directory structure.
 - `SharpenEffect.cpp`
 - `SharpenEffect.h`
 - `SwapChain.cpp`
+- `SwapChain.h`
 - `Timeline.cpp`
 - `Timeline.h`
 - `TimelineRenderer.cpp`
@@ -337,6 +338,7 @@ Auto-generated overview of the `src/` directory structure.
 - `VideoCodecEngine.h`
 - `VideoDecoder.cpp`
 - `VideoDecoder.h`
+- `VideoPreview.cpp`
 - `ViewportCompositor.cpp`
 - `ViewportCompositor.h`
 - `ViewportWidget.cpp`
@@ -391,6 +393,7 @@ Auto-generated overview of the `src/` directory structure.
 - `OpenFXHosting.cpp`
 - `OpenFXHosting.h`
 - `OpenFXIntegration.cpp`
+- `OpenFXIntegration.h`
 - `OpenFXInterface.cpp`
 - `OpenFXInterface.h`
 - `OpenFXPlugin.cpp`
@@ -402,6 +405,7 @@ Auto-generated overview of the `src/` directory structure.
 - `OpenFXWrapper.h`
 - `PluginHost.cpp`
 - `PluginHost.h`
+- `PluginHosting.h`
 - `PluginManager.cpp`
 - `PluginManager.h`
 - `PluginSystem.cpp`
