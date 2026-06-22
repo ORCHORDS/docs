@@ -1,5 +1,3 @@
-> Auto-generated from `Code Signing Certificate Management.md` in the docs repo.
-
 > Auto-generated from `releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md` in the docs repo.
 
 > Auto-generated from `docs/releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md` in the docs repo.
