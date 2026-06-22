@@ -1,5 +1,3 @@
-> Auto-generated from `Versioning Policy.md` in the docs repo.
-
 > Auto-generated from `releases/VERSIONING_POLICY.md` in the docs repo.
 
 > Auto-generated from `docs/releases/VERSIONING_POLICY.md` in the docs repo.
