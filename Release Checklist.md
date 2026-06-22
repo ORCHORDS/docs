@@ -1,3 +1,5 @@
+> Auto-generated from `Release Checklist.md` in the docs repo.
+
 > Auto-generated from `releases/RELEASE_CHECKLIST.md` in the docs repo.
 
 > Auto-generated from `docs/releases/RELEASE_CHECKLIST.md` in the docs repo.
