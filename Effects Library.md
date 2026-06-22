@@ -1,3 +1,5 @@
+> Auto-generated from `Effects Library.md` in the docs repo.
+
 > Auto-generated from `effects/EFFECTS_LIBRARY.md` in the docs repo.
 
 > Auto-generated from `docs/effects/EFFECTS_LIBRARY.md` in the docs repo.
