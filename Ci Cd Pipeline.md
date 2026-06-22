@@ -1,5 +1,3 @@
-> Auto-generated from `Ci Cd Pipeline.md` in the docs repo.
-
 > Auto-generated from `engineering/CI_CD_PIPELINE.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/CI_CD_PIPELINE.md` in the docs repo.
