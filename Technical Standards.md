@@ -1,5 +1,3 @@
-> Auto-generated from `Technical Standards.md` in the docs repo.
-
 > Auto-generated from `engineering/TECHNICAL_STANDARDS.md` in the docs repo.
 
 > Auto-generated from `docs/engineering/TECHNICAL_STANDARDS.md` in the docs repo.
