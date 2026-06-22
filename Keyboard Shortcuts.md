@@ -2,6 +2,8 @@
 
 > Auto-generated from `Keyboard Shortcuts.md` in the docs repo.
 
+> Auto-generated from `Keyboard Shortcuts.md` in the docs repo.
+
 > Auto-generated from `user/KEYBOARD_SHORTCUTS.md` in the docs repo.
 
 > Auto-generated from `docs/user/KEYBOARD_SHORTCUTS.md` in the docs repo.
