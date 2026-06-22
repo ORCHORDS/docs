@@ -4,6 +4,8 @@
 
 > Auto-generated from `Issue 148 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 148 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_148_SPEC.md` in the docs repo.
 
 ---
