@@ -4,6 +4,8 @@
 
 > Auto-generated from `Api Contract.md` in the docs repo.
 
+> Auto-generated from `Api Contract.md` in the docs repo.
+
 > Auto-generated from `docs/backend/API_CONTRACT.md` in the docs repo.
 
 ---
