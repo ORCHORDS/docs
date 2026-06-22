@@ -6,6 +6,8 @@
 
 > Auto-generated from `Issue 302 Spec.md` in the docs repo.
 
+> Auto-generated from `Issue 302 Spec.md` in the docs repo.
+
 > Auto-generated from `docs/engineering/ISSUE_302_SPEC.md` in the docs repo.
 
 ---
