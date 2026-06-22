@@ -1,223 +1,227 @@
-> Auto-generated from `User Guide.md` in the docs repo.
-
-> Auto-generated from `docs/user/USER_GUIDE.md` in the docs repo.
-
----
-title: "Beetle Studio — User Guide"
-version: "1.0.0"
-last-updated: "2026-06-21"
-status: "review"
----
-
-# Beetle Studio — User Guide
-
-**Project:** Beetle Studio  
-**Owner:** Tom Anderson (Technical Writer)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)
-**ISO Standards:** ISO/IEC 25010:2023 (usability, functional suitability), ISO 9241 (ergonomics)  
-**Version:** 1.0.0  
-**Last Updated:** June 2026  
-
----
-
-
-## Scope & Audience
-
-| Aspect | Definition |
-|---|---|
-| **Scope** | Comprehensive application manual for end users |
-| **Diátaxis form** | Tutorial |
-| **Primary audience** | All Beetle Studio users |
-| **Secondary audience** | Future maintainers and reviewers of this document |
-
----
-
-## Overview
-
-This guide covers all features and workflows in Beetle Studio, from basic editing to advanced compositing and effects.
-
-## Contents
-
-- [Getting Started](#getting-started)
-  - [System Requirements](#system-requirements)
-- [The Workspace](#the-workspace)
-  - [Default Layout](#default-layout)
-- [Workflow](#workflow)
-  - [1. Create a New Project](#1-create-a-new-project)
-  - [2. Import Media](#2-import-media)
-  - [3. Build Your Timeline](#3-build-your-timeline)
-  - [4. Apply Effects](#4-apply-effects)
-  - [5. Color Grade](#5-color-grade)
-  - [6. Export](#6-export)
-- [Key Panels](#key-panels)
-  - [Timeline](#timeline)
-  - [Preview Viewport](#preview-viewport)
-  - [Effects Panel](#effects-panel)
-  - [Properties Panel](#properties-panel)
-- [Cloud Features](#cloud-features)
-- [Help & Support](#help-support)
-  - [Change Log](#change-log)
-  - [Review Cadence](#review-cadence)
-
----
-
-## Getting Started
-
-### System Requirements
-
-| Component | Minimum | Recommended |
-|---|---|---|
-| **OS** | Windows 10 (1903) | Windows 11 |
-| **CPU** | Intel Core i5 / AMD Ryzen 5 | Intel Core i7 / AMD Ryzen 7 |
-| **RAM** | 8 GB | 32 GB |
-| **GPU** | DirectX 12 capable | NVIDIA RTX 3060 or better |
-| **Storage** | 2 GB free | SSD, 10 GB free |
-| **Display** | 1920×1080 | 2560×1440 or 4K |
-
----
-
-## The Workspace
-
-### Default Layout
-
-```
-┌────────────────────────────────────────────────────────┐
-│  Menu Bar  │ File  Edit  View  Effects  Export  Help│
-├──────────┬───────────────────────────────┬────────────┤
-│          │                               │            │
-│ Project  │                               │  Effects   │
-│ Browser  │     Preview Viewport          │  Panel     │
-│          │                               │            │
-│          │                               ├────────────┤
-│          │                               │            │
-│          │                               │ Properties │
-│          │                               │  Panel     │
-├──────────┴───────────────────────────────┴────────────┤
-│  ▶ Timeline                                          │
-│  │ V1 ▸ Clip A  ▸ Clip B                            │
-│  │ V2 ▸ Overlay                                       │
-│  │ A1 ▸ Audio clip                                   │
-└──────────────────────────────────────────────────────┘
-```
-
----
-
-## Workflow
-
-### 1. Create a New Project
-
-1. **File → New Project** (or `Ctrl+N`)
-2. Enter a project name
-3. Set your project settings (resolution, frame rate, color space)
-4. Click **Create**
-
-### 2. Import Media
-
-1. Open the **Project Browser** panel
-2. Click **Import Media** or drag files from Explorer
-3. Beetle Studio supports: MP4, MOV, MKV, AVI, ProRes, R3D, WAV, MP3, AAC, and more
-
-### 3. Build Your Timeline
-
-1. Drag media from the Project Browser to the Timeline
-2. Video clips snap to the playhead or other clips
-3. Drag clip edges to trim
-4. Press **S** to split a clip at the playhead
-
-### 4. Apply Effects
-
-1. Select a clip on the Timeline
-2. Browse effects in the **Effects Panel**
-3. Double-click an effect to apply it
-4. Adjust parameters in the **Properties Panel**
-
-### 5. Color Grade
-
-1. Open **Effects → Color Correction**
-2. Use **Color Wheels** for quick adjustments
-3. Use **Color Curves** for precision control
-4. Apply **LUT** files for film looks
-
-### 6. Export
-
-1. **Export → Export Settings** (or `Ctrl+Shift+E`)
-2. Choose your format (MP4, MOV, MKV, GIF)
-3. Choose your codec (H.264, HEVC, AV1, ProRes)
-4. Set resolution and quality
-5. Click **Export**
-
----
-
-## Key Panels
-
-### Timeline
-The heart of your edit. Drag clips, trim edges, add transitions, and arrange your story.
-
-### Preview Viewport
-See your project in real time. Press **Space** to play/pause. Drag the playhead to scrub.
-
-### Effects Panel
-Browse and search effects. Effects are organized by category: Color, Blur, Distortion, Stylize, Audio.
-
-### Properties Panel
-When a clip or effect is selected, the Properties Panel shows all available parameters.
-
----
-
-## Cloud Features
-
-With a Beetle Studio account, your projects sync automatically:
-
-- Sign in via **File → Sign In** (Google or email)
-- Projects save to the cloud automatically
-- Work offline — changes sync when you're back online
-- Access your projects from any Windows device
-
----
-
-## Help & Support
-
-| Resource | Access |
-|---|---|
-| Keyboard shortcuts | **Help → Keyboard Shortcuts** |
-| Tutorials | [www.mooned.dev/tutorials](https://www.mooned.dev/tutorials) |
-| Community forum | [community.mooned.dev](https://community.mooned.dev) |
-| Support ticket | **Help → Contact Support** |
-| Bug report | **Help → Report a Bug** |
-
----
-
-*Grounded in: ISO/IEC 25010:2023 (Usability, Functional Suitability), ISO 9241 (Ergonomics)*
-
-
-
----
-
-## References
-
-### Internal Documents
-
-_No internal documents referenced._
-
-### Standards & Frameworks
-
-- ISO/IEC 12207:2017 (Systems and software engineering — Software life cycle processes)
-- ISO/IEC 25010:2023 (Systems and software engineering — Quality requirements and evaluation)
-- See [STYLE_GUIDE.md](./STYLE_GUIDE.md) for the full standards catalog
-
----
-
-## Document Maintenance
-
-### Change Log
-
-| Version | Date | Author | Change |
-|---|---|---|---|
-| 1.0.0 | June 2026 | Tom Anderson | Initial version |
-| 1.0.1 | June 2026 | Tom Anderson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
-
-### Review Cadence
-
-- **Next review:** Monthly
-- **Reviewer:** Tom Anderson (Technical Writer)
-- **Cadence:** Per STYLE_GUIDE.md defaults for this document type
+> Auto-generated from `user/USER_GUIDE.md` in the docs repo.
+
+#pragma once
+
+#include <string>
+#include <unordered_map>
+#include <functional>
+
+namespace beetle {
+
+class KeyboardShortcuts {
+public:
+    KeyboardShortcuts() {
+        // Initialize default shortcuts
+        m_shortcuts = {
+            { "Ctrl+N", std::bind(&KeyboardShortcuts::NewProject, this) },
+            { "Ctrl+O", std::bind(&KeyboardShortcuts::OpenProject, this) },
+            { "Ctrl+S", std::bind(&KeyboardShortcuts::SaveProject, this) },
+            { "Ctrl+Shift+E", std::bind(&KeyboardShortcuts::ExportProject, this) },
+            { "Space", std::bind(&KeyboardShortcuts::PlayPause, this) },
+            { "Ctrl+Z", std::bind(&KeyboardShortcuts::Undo, this) },
+            { "Ctrl+Y", std::bind(&KeyboardShortcuts::Redo, this) },
+            { "Ctrl+C", std::bind(&KeyboardShortcuts::Copy, this) },
+            { "Ctrl+V", std::bind(&KeyboardShortcuts::Paste, this) },
+            { "Delete", std::bind(&KeyboardShortcuts::DeleteSelected, this) },
+            { "Ctrl+F", std::bind(&KeyboardShortcuts::Find, this) },
+            { "F1", std::bind(&KeyboardShortcuts::OpenHelp, this) },
+            { "F5", std::bind(&KeyboardShortcuts::Refresh, this) },
+            { "Ctrl+Shift+S", std::bind(&KeyboardShortcuts::SaveProjectAs, this) },
+            { "Ctrl+I", std::bind(&KeyboardShortcuts::ImportMedia, this) },
+            { "Ctrl+M", std::bind(&KeyboardShortcuts::MuteSelected, this) },
+            { "Ctrl+U", std::bind(&KeyboardShortcuts::UnmuteSelected, this) },
+            { "Ctrl+R", std::bind(&KeyboardShortcuts::RenderPreview, this) },
+            { "Ctrl+Alt+S", std::bind(&KeyboardShortcuts::SaveSnapshot, this) },
+            { "Ctrl+Shift+Z", std::bind(&KeyboardShortcuts::RedoRedo, this) },
+            { "Ctrl+Shift+C", std::bind(&KeyboardShortcuts::CopyWithEffects, this) },
+            { "Ctrl+Shift+V", std::bind(&KeyboardShortcuts::PasteWithEffects, this) },
+            { "Ctrl+Shift+F", std::bind(&KeyboardShortcuts::FindAndReplace, this) },
+            { "F2", std::bind(&KeyboardShortcuts::RenameSelected, this) },
+            { "F3", std::bind(&KeyboardShortcuts::FindNext, this) },
+            { "F4", std::bind(&KeyboardShortcuts::FindPrevious, this) },
+            { "Ctrl+Shift+I", std::bind(&KeyboardShortcuts::ImportProject, this) },
+            { "Ctrl+Shift+O", std::bind(&KeyboardShortcuts::OpenRecentProject, this) },
+            { "Ctrl+Shift+P", std::bind(&KeyboardShortcuts::ProjectSettings, this) },
+            { "Ctrl+Shift+M", std::bind(&KeyboardShortcuts::MuteAll, this) },
+            { "Ctrl+Shift+U", std::bind(&KeyboardShortcuts::UnmuteAll, this) },
+            { "Ctrl+Shift+R", std::bind(&KeyboardShortcuts::RenderAll, this) },
+            { "F6", std::bind(&KeyboardShortcuts::ToggleFullscreen, this) },
+            { "F7", std::bind(&KeyboardShortcuts::TogglePreview, this) },
+            { "F8", std::bind(&KeyboardShortcuts::ToggleTimeline, this) },
+            { "F9", std::bind(&KeyboardShortcuts::ToggleEffectsPanel, this) },
+            { "F10", std::bind(&KeyboardShortcuts::TogglePropertiesPanel, this) },
+            { "F11", std::bind(&KeyboardShortcuts::ToggleAudioPanel, this) },
+            { "F12", std::bind(&KeyboardShortcuts::ToggleConsolePanel, this) }
+        };
+    }
+
+    void RegisterShortcut(const std::string& shortcut, const std::function<void()>& handler) {
+        m_shortcuts[shortcut] = handler;
+    }
+
+    void HandleKeyPress(const std::string& key) {
+        auto it = m_shortcuts.find(key);
+        if (it != m_shortcuts.end()) {
+            it->second();
+        }
+    }
+
+private:
+    std::unordered_map<std::string, std::function<void()>> m_shortcuts;
+
+    void NewProject() {
+        // Implementation for creating a new project
+    }
+
+    void OpenProject() {
+        // Implementation for opening an existing project
+    }
+
+    void SaveProject() {
+        // Implementation for saving the current project
+    }
+
+    void ExportProject() {
+        // Implementation for exporting the project
+    }
+
+    void PlayPause() {
+        // Implementation for toggling play/pause
+    }
+
+    void Undo() {
+        // Implementation for undoing the last action
+    }
+
+    void Redo() {
+        // Implementation for redoing the last undone action
+    }
+
+    void Copy() {
+        // Implementation for copying selected items
+    }
+
+    void Paste() {
+        // Implementation for pasting copied items
+    }
+
+    void DeleteSelected() {
+        // Implementation for deleting selected items
+    }
+
+    void Find() {
+        // Implementation for opening the find dialog
+    }
+
+    void OpenHelp() {
+        // Implementation for opening the help documentation
+    }
+
+    void Refresh() {
+        // Implementation for refreshing the current view
+    }
+
+    void SaveProjectAs() {
+        // Implementation for saving the project with a new name
+    }
+
+    void ImportMedia() {
+        // Implementation for importing media files
+    }
+
+    void MuteSelected() {
+        // Implementation for muting selected audio clips
+    }
+
+    void UnmuteSelected() {
+        // Implementation for unmuting selected audio clips
+    }
+
+    void RenderPreview() {
+        // Implementation for rendering the preview
+    }
+
+    void SaveSnapshot() {
+        // Implementation for saving a snapshot of the current project state
+    }
+
+    void RedoRedo() {
+        // Implementation for redoing the last action again
+    }
+
+    void CopyWithEffects() {
+        // Implementation for copying with effects applied
+    }
+
+    void PasteWithEffects() {
+        // Implementation for pasting with effects applied
+    }
+
+    void FindAndReplace() {
+        // Implementation for opening the find and replace dialog
+    }
+
+    void RenameSelected() {
+        // Implementation for renaming the selected item
+    }
+
+    void FindNext() {
+        // Implementation for finding the next occurrence
+    }
+
+    void FindPrevious() {
+        // Implementation for finding the previous occurrence
+    }
+
+    void ImportProject() {
+        // Implementation for importing a project file
+    }
+
+    void OpenRecentProject() {
+        // Implementation for opening a recently used project
+    }
+
+    void ProjectSettings() {
+        // Implementation for opening the project settings dialog
+    }
+
+    void MuteAll() {
+        // Implementation for muting all audio clips
+    }
+
+    void UnmuteAll() {
+        // Implementation for unmuting all audio clips
+    }
+
+    void RenderAll() {
+        // Implementation for rendering the entire project
+    }
+
+    void ToggleFullscreen() {
+        // Implementation for toggling fullscreen mode
+    }
+
+    void TogglePreview() {
+        // Implementation for toggling the preview panel
+    }
+
+    void ToggleTimeline() {
+        // Implementation for toggling the timeline panel
+    }
+
+    void ToggleEffectsPanel() {
+        // Implementation for toggling the effects panel
+    }
+
+    void TogglePropertiesPanel() {
+        // Implementation for toggling the properties panel
+    }
+
+    void ToggleAudioPanel() {
+        // Implementation for toggling the audio panel
+    }
+
+    void ToggleConsolePanel() {
+        // Implementation for toggling the console panel
+    }
+};
