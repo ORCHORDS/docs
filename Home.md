@@ -1,60 +1,52 @@
-> Auto-generated from `Home.md` in the docs repo.
-
 # Beetle Studio Wiki
 
 Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project's documentation.
 
 ## Documentation Index
 
-### Architecture
+### General
 
-- [[Bsp Format]]
-- [[Module Map]]
-
-### Audio
-
-- [[Transcriber Pipeline]]
-- [[Transcriber Quality Audit]]
-- [[Vst Sdk Integration]]
-
-### Backend
-
+- [[Accessibility Compliance]]
 - [[Api Contract]]
-
-### Business
-
-- [[Enterprise Licensing]]
-
-### Codecs
-
-- [[Format Support Matrix]]
-
-### Community
-
-- [[Community Management]]
-
-### Dev
-
 - [[Api Reference]]
-
-### Effects
-
-- [[Effects Library]]
-- [[Migration]]
-- [[Openfx Plugin Sdk]]
-
-### Engineering
-
+- [[Architecture]]
 - [[Architecture Overview]]
 - [[Auto Assign]]
 - [[Auto Merge Md]]
 - [[Backup Disaster Recovery]]
+- [[Beetle Studio Team]]
+- [[Beetle Studio Team]]
 - [[Benchmarks]]
+- [[Beta Program Guide]]
 - [[Branch Naming]]
 - [[Branching Strategy]]
+- [[Bsp Format]]
 - [[Build System]]
+- [[Changelog Policy]]
 - [[Ci Cd Pipeline]]
+- [[Code Signing Certificate Management]]
+- [[Community Management]]
+- [[Component Library]]
+- [[Cutshit Feature Audit]]
+- [[Data Model]]
 - [[Dependency Management]]
+- [[Effects Library]]
+- [[Enterprise Licensing]]
+- [[Faq]]
+- [[Format Support Matrix]]
+- [[Getting Started]]
+- [[Home]]
+- [[Incident Response]]
+- [[Index]]
+- [[Infrastructure Overview]]
+- [[Installer Spec]]
+- [[Iso 12207 Software Lifecycle]]
+- [[Iso 19770 Swid Tags]]
+- [[Iso 25010 Software Quality]]
+- [[Iso 26531 Content Management]]
+- [[Iso 27001 Information Security]]
+- [[Iso 8601 Date Time]]
+- [[Iso 9001 Quality Management]]
 - [[Issue 123 Spec]]
 - [[Issue 139 Spec]]
 - [[Issue 140 Spec]]
@@ -103,96 +95,49 @@ Welcome to the Beetle Studio wiki. This wiki is auto-generated from the project'
 - [[Issue 82 Spec]]
 - [[Issue 83 Spec]]
 - [[Issue 84 Spec]]
-- [[Main Build]]
-- [[Pr Build]]
-- [[Release Build]]
-- [[Security Scan]]
-- [[Technical Standards]]
-- [[Test Strategy]]
-
-### General
-
-- [[Accessibility Compliance]]
-- [[Beta Program Guide]]
-- [[Index]]
-- [[Openfx Plugin Guide]]
-- [[Performance Benchmarks]]
-- [[Security Policy]]
-- [[Style Guide]]
-
-### Graphics
-
-- [[Rendering Pipeline]]
-- [[Shader Spec]]
-
-### Help
-
-- [[Faq]]
-- [[Troubleshooting]]
-
-### Marketing
-
+- [[Keyboard Shortcuts]]
 - [[Launch Playbook]]
-
-### Operations
-
-- [[Incident Response]]
-- [[Infrastructure Overview]]
+- [[Main Build]]
+- [[Migration]]
+- [[Module Map]]
 - [[Onboarding Guide]]
-
-### Product
-
-- [[Cutshit Feature Audit]]
+- [[Openfx Plugin Guide]]
+- [[Openfx Plugin Sdk]]
+- [[Performance Benchmarks]]
+- [[Pr Build]]
 - [[Priority Framework]]
-- [[Roadmap]]
-
-### Releases
-
-- [[Changelog Policy]]
-- [[Code Signing Certificate Management]]
-- [[Installer Spec]]
+- [[Project Schedule]]
+- [[Project Schedule]]
+- [[Quick Start]]
+- [[Quick Start]]
+- [[Release Build]]
 - [[Release Checklist]]
-- [[Swid Tag Spec]]
-- [[Versioning Policy]]
-- [[Windows Store Submission]]
-
-### Rfc
-
+- [[Rendering Pipeline]]
 - [[Rfc Index]]
 - [[Rfc Xxx Template]]
-
-### Security
-
+- [[Roadmap]]
+- [[Security Policy]]
+- [[Security Scan]]
+- [[Semantic Versioning]]
+- [[Shader Spec]]
+- [[Shader Spec]]
+- [[Style Guide]]
+- [[Swid Tag Spec]]
+- [[Team Operations Manual]]
+- [[Team Operations Manual]]
+- [[Technical Standards]]
+- [[Test Strategy]]
 - [[Threat Model]]
+- [[Transcriber Pipeline]]
+- [[Transcriber Quality Audit]]
+- [[Troubleshooting]]
+- [[User Guide]]
+- [[User Guide]]
+- [[Versioning Policy]]
+- [[Vst Sdk Integration]]
 - [[Vulnerability Disclosure]]
 - [[Waivers]]
-
-### Standards
-
-- [[Index]]
-- [[Iso 12207 Software Lifecycle]]
-- [[Iso 19770 Swid Tags]]
-- [[Iso 25010 Software Quality]]
-- [[Iso 26531 Content Management]]
-- [[Iso 27001 Information Security]]
-- [[Iso 8601 Date Time]]
-- [[Iso 9001 Quality Management]]
-- [[Semantic Versioning]]
-
-### Timeline
-
-- [[Data Model]]
-
-### Ui
-
-- [[Component Library]]
-
-### User
-
-- [[Getting Started]]
-- [[Keyboard Shortcuts]]
-- [[Quick Start]]
-- [[User Guide]]
+- [[Windows Store Submission]]
 
 ## Code Architecture
 
