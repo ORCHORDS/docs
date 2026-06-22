@@ -1,5 +1,7 @@
 > Auto-generated from `Swid Tag Spec.md` in the docs repo.
 
+> Auto-generated from `Swid Tag Spec.md` in the docs repo.
+
 > Auto-generated from `releases/SWID_TAG_SPEC.md` in the docs repo.
 
 > Auto-generated from `docs/releases/SWID_TAG_SPEC.md` in the docs repo.
