@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/TEST_STRATEGY.md` in the docs repo.
-
 ---
 title: "Test Strategy"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Test Strategy
 
-**Project:** Beetle Studio  
-**Owner:** Lisa Martinez (QA Lead)  
-**Reviewers:** Kirk Beka (CTO), all engineering leads  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (QA Lead)  
+**Reviewers:** Mr.Orchords (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (validation, verification), ISO/IEC 25010:2023 (reliability, functional suitability), ISO/IEC 14764:2022 (maintenance testing)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-06-21
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | Test pyramid, coverage targets, severity levels, and release test gates |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Lisa Martinez, all engineers, QA team |
+| **Primary audience** | Mr.Orchords, all engineers, QA team |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document defines Beetle Studio's testing strategy -- the types of testing we do, how we do them, who owns them, and what quality gates must pass before any release. Per **ISO/IEC 12207:2017 section 6.3**, verification and validation are required activities throughout the software lifecycle. Testing is our primary verification mechanism, and this strategy ensures we test the right things, at the right level, with the right coverage. Testing is also a key input to post-release maintenance -- per **ISO/IEC 14764:2022**, regression testing prevents defects from reappearing as the product evolves.
+This document defines Mr.Orchords's testing strategy -- the types of testing we do, how we do them, who owns them, and what quality gates must pass before any release. Per **ISO/IEC 12207:2017 section 6.3**, verification and validation are required activities throughout the software lifecycle. Testing is our primary verification mechanism, and this strategy ensures we test the right things, at the right level, with the right coverage. Testing is also a key input to post-release maintenance -- per **ISO/IEC 14764:2022**, regression testing prevents defects from reappearing as the product evolves.
 
 ## Contents
 
@@ -137,7 +135,7 @@ We follow a test pyramid model. Each layer is broader than the one above it.
 | **Speed** | < 5ms per test; full suite < 30 seconds |
 | **When** | Every PR and push to `main` |
 | **Coverage gate** | ≥ 80% line coverage per module; ≥ 90% for critical modules |
-| **Owner** | Feature engineer writes tests; Lisa Martinez reviews |
+| **Owner** | Feature engineer writes tests; Mr.Orchords reviews |
 
 **Critical modules (≥ 90% coverage required):**
 - Timeline data model (`timeline/DATA_MODEL.md`)
@@ -181,7 +179,7 @@ We follow a test pyramid model. Each layer is broader than the one above it.
 | **Framework** | Automated via Playwright or custom C++ harness |
 | **Speed** | < 2 minutes per run |
 | **When** | Every CI build (main + release); post-install on fresh system |
-| **Owner** | Lisa Martinez |
+| **Owner** | Mr.Orchords |
 
 **Smoke test checklist (automated):**
 
@@ -203,7 +201,7 @@ We follow a test pyramid model. Each layer is broader than the one above it.
 | **Scope** | All known bugs that have been fixed |
 | **Framework** | Automated test harness + manual checklist |
 | **When** | Before every release (automated); before every beta (manual) |
-| **Owner** | Lisa Martinez maintains suite; engineers add regression tests when fixing bugs |
+| **Owner** | Mr.Orchords maintains suite; engineers add regression tests when fixing bugs |
 
 **Rule:** Every confirmed bug that becomes a fix must have a regression test. If a bug doesn't have a reproducible test, it isn't fully closed.
 
@@ -216,7 +214,7 @@ We follow a test pyramid model. Each layer is broader than the one above it.
 | **Scope** | Benchmarks defined in [`PERFORMANCE_BENCHMARKS.md`](../PERFORMANCE_BENCHMARKS.md) |
 | **Framework** | Custom C++ benchmark harness + RenderDoc/PIX for GPU profiling |
 | **When** | Every CI build (fast checks); alpha and beta releases (full suite) |
-| **Owner** | Lisa Martinez measures; James Park + Sophie Williams analyze |
+| **Owner** | Mr.Orchords measures; Mr.Orchords + Mr.Orchords analyze |
 | **Regression threshold** | ≥ 20% miss on any target → release blocker |
 
 See [`PERFORMANCE_BENCHMARKS.md`](../PERFORMANCE_BENCHMARKS.md) for the full benchmark suite.
@@ -227,7 +225,7 @@ See [`PERFORMANCE_BENCHMARKS.md`](../PERFORMANCE_BENCHMARKS.md) for the full ben
 |---|---|
 | **Scope** | Unscripted; tester uses the application as a user would |
 | **When** | Every sprint; before every beta release |
-| **Owner** | Lisa Martinez + beta testers |
+| **Owner** | Mr.Orchords + beta testers |
 | **Documentation** | Session report in bug tracker per session |
 
 Exploratory testing is where we find the bugs that scripted tests miss — unexpected interactions, UI inconsistencies, and edge cases that only appear under real-world usage.
@@ -239,7 +237,7 @@ Exploratory testing is where we find the bugs that scripted tests miss — unexp
 | **Scope** | WCAG 2.1 AA compliance |
 | **Framework** | Automated (axe-core) + manual (NVDA, Windows Narrator) |
 | **When** | Every release |
-| **Owner** | Lisa Martinez automates; Alex Chen + QA team manually |
+| **Owner** | Mr.Orchords automates; Mr.Orchords + QA team manually |
 
 See [`ACCESSIBILITY_COMPLIANCE.md`](../ACCESSIBILITY_COMPLIANCE.md) for the full compliance checklist.
 
@@ -249,7 +247,7 @@ See [`ACCESSIBILITY_COMPLIANCE.md`](../ACCESSIBILITY_COMPLIANCE.md) for the full
 |---|---|
 | **Scope** | Real-world usage by selected external users |
 | **When** | Per beta program cycle (see [`BETA_PROGRAM_GUIDE.md`](../BETA_PROGRAM_GUIDE.md)) |
-| **Owner** | Lisa Martinez coordinates; Rachel Green manages community |
+| **Owner** | Mr.Orchords coordinates; Mr.Orchords manages community |
 
 Beta testing is our primary validation activity before stable releases. See [`BETA_PROGRAM_GUIDE.md`](../BETA_PROGRAM_GUIDE.md).
 
@@ -382,7 +380,7 @@ Every bug — internal, beta, or user — must include these fields. Copy-paste 
 **Severity:** S0 / S1 / S2 / S3
 **Reporter:** [name]
 **Date:** [YYYY-MM-DD]
-**Version:** [Beetle Studio version + commit hash if known]
+**Version:** [Mr.Orchords version + commit hash if known]
 
 ---
 
@@ -413,9 +411,9 @@ If you can point to a doc section or a spec line, do.]
 ### 6. Environment
 
 - **OS:** [Windows 11 23H2]
-- **Build:** [Beetle Studio 1.0.0-beta.3 (commit abc123)]
+- **Build:** [Mr.Orchords 1.0.0-beta.3 (commit abc123)]
 - **GPU:** [NVIDIA RTX 3060]
-- **Project file:** [attach .beetle file or describe]
+- **Project file:** [attach .mrorchords file or describe]
 - **Media files:** [attach or describe source clip]
 
 ### 7. Visual Evidence
@@ -562,7 +560,7 @@ If any box is unchecked, the report is not ready.
 
 ## Release Test Pass
 
-Before any release, Lisa Martinez signs off on:
+Before any release, Mr.Orchords signs off on:
 
 | Test Type | Alpha | Beta | Stable Release |
 |---|---|---|---|
@@ -616,14 +614,14 @@ scripts/
 
 ## UI Test Tools
 
-Beetle Studio is a C++/Qt6 Windows desktop app. Our test pyramid already covers unit, integration, smoke, and regression tests. For **UI-level testing** (driving the real Windows app, clicking through the UI, verifying real Win32 behavior), we use the following tools. Each fills a different gap.
+Mr.Orchords is a C++/Qt6 Windows desktop app. Our test pyramid already covers unit, integration, smoke, and regression tests. For **UI-level testing** (driving the real Windows app, clicking through the UI, verifying real Win32 behavior), we use the following tools. Each fills a different gap.
 
 ### Tool Selection Matrix
 
 | Tool | Stack | What it tests | When to use | Owner |
 |---|---|---|---|---|
-| **WinAppDriver** | C#/WinAppDriver server + JSON Wire Protocol | Real Windows UI (Win32, WinForms, WPF, UWP — and Qt via MSAA/UIA) | End-to-end UI flows on real Windows VMs; cross-app scenarios (File Explorer, Windows Store, drag-and-drop) | Lisa Martinez (QA) |
-| **FlaUI** | .NET library wrapping UIAutomation | Real Windows UI with .NET-native assertions | When you want C# test code that's cheaper to write than WinAppDriver; custom Qt UIA providers | Lisa Martinez (QA) |
+| **WinAppDriver** | C#/WinAppDriver server + JSON Wire Protocol | Real Windows UI (Win32, WinForms, WPF, UWP — and Qt via MSAA/UIA) | End-to-end UI flows on real Windows VMs; cross-app scenarios (File Explorer, Windows Store, drag-and-drop) | Mr.Orchords (QA) |
+| **FlaUI** | .NET library wrapping UIAutomation | Real Windows UI with .NET-native assertions | When you want C# test code that's cheaper to write than WinAppDriver; custom Qt UIA providers | Mr.Orchords (QA) |
 | **PyAutoGUI** | Python, cross-platform | Real OS-level mouse/keyboard, screenshots, image recognition | Quick smoke scripts; visual smoke checks; ad-hoc repro scripts; not for CI | Engineers + QA |
 | **Qt Test (QTest)** | C++ Qt-native | Widgets, signals/slots, model/view | Already in our stack for unit-level widget tests | Engineers |
 | **Playwright** | Node.js | Web UI (marketing site, user portal) | Web E2E (see [ACCESSIBILITY_COMPLIANCE.md Website Design Testing](../../ACCESSIBILITY_COMPLIANCE.md#website-design-testing)) | Web team |
@@ -647,7 +645,7 @@ Beetle Studio is a C++/Qt6 Windows desktop app. Our test pyramid already covers 
 ```csharp
 // C# example using WinAppDriver + Appium.WebDriver
 var options = new AppiumOptions();
-options.AddAdditionalCapability("app", "C:\\Program Files\\Mooned Dev\\Beetle Studio\\BeetleStudio.exe");
+options.AddAdditionalCapability("app", "C:\\Program Files\\Mr.Orchords\\Mr.Orchords\\MrOrchords.exe");
 options.AddAdditionalCapability("deviceName", "WindowsPC");
 var driver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723"), options);
 
@@ -680,7 +678,7 @@ using FlaUI.UIA3;
 
 var app = FlaUI.Core.Application.AttachOrLaunch(new ApplicationOptions
 {
-    Path = @"C:\Program Files\Mooned Dev\Beetle Studio\BeetleStudio.exe"
+    Path = @"C:\Program Files\Mr.Orchords\Mr.Orchords\MrOrchords.exe"
 });
 using (var automation = new UIA3Automation())
 {
@@ -796,11 +794,11 @@ pyautogui.hotkey('ctrl', 'shift', 'e')  # Export
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Lisa Martinez | Initial version |
-| 1.0.1 | June 2026 | Lisa Martinez | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Lisa Martinez (QA Lead)
+- **Reviewer:** Mr.Orchords (QA Lead)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
