@@ -1,5 +1,3 @@
-> Auto-generated from `docs/ACCESSIBILITY_COMPLIANCE.md` in the docs repo.
-
 ---
 title: "Accessibility Compliance"
 version: "1.0.0"
@@ -9,10 +7,10 @@ status: "review"
 
 # Accessibility Compliance
 
-**Project:** Beetle Studio  
+**Project:** Mr.Orchords  
 
-**Owner:** Alex Chen (UI/UX Lead - implementation), Nina Patel (UX Designer - design audit)  
-**Reviewers:** Kirk Beka (CTO), Nina Patel (UX Designer)  
+**Owner:** Mr.Orchords (UI/UX Lead - implementation), Mr.Orchords (UX Designer - design audit)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (UX Designer)  
 **ISO Standards:** ISO 9241-171 (ergonomic requirements for office work with visual display terminals), ISO/IEC 25010:2023 (usability - accessibility subcharacteristic)  
 **Version:** 1.1.0  
 **Last Updated:** 2026-06-20  
@@ -26,7 +24,7 @@ status: "review"
 |---|---|
 | **Scope** | WCAG 2.1 AA compliance targets and accessibility audit checklist |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Alex Chen, Nina Patel, Kirk Beka, all UI contributors |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, all UI contributors |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -34,7 +32,7 @@ status: "review"
 
 ## Overview
 
-This document defines the accessibility standards and compliance requirements for Beetle Studio's user interface. All UI components must meet WCAG 2.1 Level AA conformance.
+This document defines the accessibility standards and compliance requirements for Mr.Orchords's user interface. All UI components must meet WCAG 2.1 Level AA conformance.
 
 ## Contents
 
@@ -62,7 +60,7 @@ This document defines the accessibility standards and compliance requirements fo
 
 ## WCAG 2.1 AA Compliance Targets
 
-| WCAG Criterion | Description | Beetle Studio Target |
+| WCAG Criterion | Description | Mr.Orchords Target |
 |---|---|---|
 | 1.1.1 | Non-text content (images, icons) | All icons labeled; meaningful alt text |
 | 1.3.1 | Info and relationships | Semantic structure; correct ARIA roles |
@@ -153,7 +151,7 @@ requires a text alternative per **WCAG 2.1 1.1.1 (Non-text Content)**.
 
 ## Reducing Motion
 
-Per **WCAG 2.1 2.3.3**, Beetle Studio respects OS-level motion reduction:
+Per **WCAG 2.1 2.3.3**, Mr.Orchords respects OS-level motion reduction:
 
 ```cpp
 // Respect OS-level "Show animations in Windows" setting
@@ -174,10 +172,10 @@ if (reduceMotion) {
 
 | Audit Type | Frequency | Owner |
 |---|---|---|
-| Automated accessibility scan | Every release | Lisa Martinez (QA) |
-| Manual keyboard navigation test | Every release | Alex Chen + QA |
+| Automated accessibility scan | Every release | Mr.Orchords (QA) |
+| Manual keyboard navigation test | Every release | Mr.Orchords + QA |
 | Screen reader test (NVDA, Narrator) | Every major version | QA + external volunteer |
-| Color contrast audit | Every release | Nina Patel |
+| Color contrast audit | Every release | Mr.Orchords |
 | Full WCAG audit | Annually | External accessibility consultant |
 
 ---
@@ -196,7 +194,7 @@ if (reduceMotion) {
 
 ## Website Design Testing
 
-This section covers accessibility, performance, browser compatibility, and visual regression testing for the marketing website (`mooned.dev`) and any user-facing web app. The desktop app has its own checks in the sections above; this section is **web-only**.
+This section covers accessibility, performance, browser compatibility, and visual regression testing for the marketing website (`orchords.com`) and any user-facing web app. The desktop app has its own checks in the sections above; this section is **web-only**.
 
 ### Accessibility (WCAG 2.1 AA + axe-core)
 
@@ -265,7 +263,7 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 
 - Home (above fold + full)
 - Pricing
-- Features / Why Beetle Studio
+- Features / Why Mr.Orchords
 - Download / Get Started
 - Login
 - Docs landing
@@ -297,7 +295,7 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 | Version | Date | Changes |
 |---|---|---|
 | 1.0.0 | June 2026 | Initial compliance spec - aligned with WCAG 2.1 AA, ISO 9241-171, ISO/IEC 25010:2023 |
-| 1.1.0 | 2026-06-20 | Alex Chen - Implemented Timeline waveform alt text (WCAG 1.1.1); removed from Known Limitations; added `WaveformView` accessibility contract and verbosity preference |
+| 1.1.0 | 2026-06-20 | Mr.Orchords - Implemented Timeline waveform alt text (WCAG 1.1.1); removed from Known Limitations; added `WaveformView` accessibility contract and verbosity preference |
 
 ---
 
@@ -328,12 +326,12 @@ For desktop-app performance (playback, export), see [PERFORMANCE_BENCHMARKS.md](
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Alex Chen, Nina Patel | Initial version |
-| 1.0.1 | June 2026 | Alex Chen, Nina Patel | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
-| 1.1.0 | 2026-06-20 | Alex Chen | Implemented Timeline waveform alt text per WCAG 1.1.1; spec for WaveformView accessible description contract |
+| 1.0.0 | June 2026 | Mr.Orchords, Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords, Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.1.0 | 2026-06-20 | Mr.Orchords | Implemented Timeline waveform alt text per WCAG 1.1.1; spec for WaveformView accessible description contract |
 
 ### Review Cadence
 
 - **Next review:** On WCAG major revision
-- **Reviewer:** Alex Chen (UI implementation)
+- **Reviewer:** Mr.Orchords (UI implementation)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
