@@ -1,5 +1,3 @@
-> Auto-generated from `docs/product/ROADMAP.md` in the docs repo.
-
 ---
 title: "Product Roadmap"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Product Roadmap
 
-**Project:** Beetle Studio  
-**Owner:** Chris Taylor (Product Manager)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Product Manager)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (CEO)  
 **ISO Standards:** ISO/IEC 12207:2017 (requirements definition, planning), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | Living product roadmap, feature lifecycle, and priority tiers |
 | **Diátaxis form** | Explanation |
-| **Primary audience** | Chris Taylor, Kirk Beka, Mooned Dev, all leads |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, all leads |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,9 +31,9 @@ status: "review"
 
 ## Overview
 
-This document defines Beetle Studio's living product roadmap -- the prioritized list of features, improvements, and infrastructure work that drives the product forward. Per **ISO/IEC 12207:2017 section 6.1**, the product roadmap is the bridge between user needs and engineering work. The roadmap is **not** a commitment -- it is a living plan updated quarterly.
+This document defines Mr.Orchords's living product roadmap -- the prioritized list of features, improvements, and infrastructure work that drives the product forward. Per **ISO/IEC 12207:2017 section 6.1**, the product roadmap is the bridge between user needs and engineering work. The roadmap is **not** a commitment -- it is a living plan updated quarterly.
 
-This document defines Beetle Studio's living product roadmap — the prioritized list of features, improvements, and infrastructure work that drives the product forward. Per **ISO/IEC 12207:2017 §6.1**, the product roadmap is the bridge between user needs (captured through research and feedback) and the engineering work planned for future releases.
+This document defines Mr.Orchords's living product roadmap — the prioritized list of features, improvements, and infrastructure work that drives the product forward. Per **ISO/IEC 12207:2017 §6.1**, the product roadmap is the bridge between user needs (captured through research and feedback) and the engineering work planned for future releases.
 ## Contents
 
 - [Roadmap Philosophy](#roadmap-philosophy)
@@ -79,9 +77,9 @@ Features actively being designed or built. High confidence they will ship.
 
 | Feature | Type | Status | Owner |
 |---|---|---|---|
-| Multi-camera track support | Feature | In development | Emma Thompson |
-| GPU-accelerated color wheels | Performance | In development | James Park |
-| VST3 plugin support | Feature | In development | Ryan Foster |
+| Multi-camera track support | Feature | In development | Mr.Orchords |
+| GPU-accelerated color wheels | Performance | In development | Mr.Orchords |
+| VST3 plugin support | Feature | In development | Mr.Orchords |
 
 ### Next (Next 1–2 Quarters)
 
@@ -120,34 +118,34 @@ Discovery ──► Definition ──► Design ──► Build ──► Test �
 
 ### Discovery
 - User feedback, competitive analysis, or strategic need identified
-- Chris Taylor captures problem statement
+- Mr.Orchords captures problem statement
 - Estimated business value documented
 
 ### Definition
 - Product Requirements Document (PRD) written
 - Priority assigned using the [`PRIORITY_FRAMEWORK.md`](./PRIORITY_FRAMEWORK.md)
-- Kirk Beka reviews for technical feasibility and scope
+- Mr.Orchords reviews for technical feasibility and scope
 - Acceptance criteria defined
 
 ### Design
-- Nina Patel (UX) designs interaction model
-- Alex Chen (UI) implements UI components
-- Daniel Kim (Effects) specs plugin API changes if applicable
+- Mr.Orchords (UX) designs interaction model
+- Mr.Orchords (UI) implements UI components
+- Mr.Orchords (Effects) specs plugin API changes if applicable
 
 ### Build
 - Work estimated and added to sprint backlog
 - Engineers implement in sprint
-- Lisa Martinez plans test coverage
+- Mr.Orchords plans test coverage
 
 ### Test
-- Lisa Martinez runs regression tests
+- Mr.Orchords runs regression tests
 - Beta testers validate feature end-to-end
 - Bug fixes resolved before ship
 
 ### Ship
-- Release notes written by Tom Anderson
-- Changelog updated by Sarah Miller
-- Announcement by Jason Wong (marketing)
+- Release notes written by Mr.Orchords
+- Changelog updated by Mr.Orchords
+- Announcement by Mr.Orchords (marketing)
 - Post-launch monitoring for 2 weeks
 
 ---
@@ -156,11 +154,11 @@ Discovery ──► Definition ──► Design ──► Build ──► Test �
 
 | Audience | Format | Frequency | Owner |
 |---|---|---|---|
-| Engineering team | Detailed roadmap in Linear (backlog) | Sprint planning | Chris Taylor |
-| Leadership | Roadmap review presentation | Monthly | Chris Taylor |
-| Beta testers | Feature preview newsletter | Per feature | Rachel Green |
-| Public | High-level roadmap on website | Quarterly | Chris Taylor + Jason Wong |
-| Investors | Strategic roadmap | Quarterly | Mooned Dev |
+| Engineering team | Detailed roadmap in Linear (backlog) | Sprint planning | Mr.Orchords |
+| Leadership | Roadmap review presentation | Monthly | Mr.Orchords |
+| Beta testers | Feature preview newsletter | Per feature | Mr.Orchords |
+| Public | High-level roadmap on website | Quarterly | Mr.Orchords + Mr.Orchords |
+| Investors | Strategic roadmap | Quarterly | Mr.Orchords |
 
 ---
 
@@ -170,9 +168,9 @@ The roadmap is reviewed and updated:
 
 | Review Type | Frequency | Attendees | Output |
 |---|---|---|---|
-| **Sprint planning** | Every 2 weeks | Chris Taylor + engineering leads | Sprint backlog confirmed |
+| **Sprint planning** | Every 2 weeks | Mr.Orchords + engineering leads | Sprint backlog confirmed |
 | **Quarterly roadmap review** | Every quarter | Full leadership team | Roadmap updated for next quarter |
-| **Ad-hoc** | As needed | Chris Taylor + Kirk Beka | Roadmap adjusted if priorities change |
+| **Ad-hoc** | As needed | Mr.Orchords + Mr.Orchords | Roadmap adjusted if priorities change |
 
 Quarterly reviews assess:
 - What shipped and what was the impact?
@@ -229,11 +227,11 @@ Features are prioritized using MoSCoW + RICE scoring. See [`PRIORITY_FRAMEWORK.m
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Chris Taylor | Initial version |
-| 1.0.1 | June 2026 | Chris Taylor | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Chris Taylor (Product Manager)
+- **Reviewer:** Mr.Orchords (Product Manager)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

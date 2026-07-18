@@ -1,5 +1,3 @@
-> Auto-generated from `docs/operations/INFRASTRUCTURE_OVERVIEW.md` in the docs repo.
-
 ---
 title: "Infrastructure Overview"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Infrastructure Overview
 
-**Project:** Beetle Studio  
-**Owner:** Mike Johnson (DevOps Lead)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (DevOps Lead)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (Annex A: Operational Security), ISO/IEC 12207:2017 (development infrastructure)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-06-21
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | Azure and Firebase services, access control, costs, and monitoring |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Mike Johnson, Kirk Beka, Mooned Dev |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document describes Mooned Dev's cloud and development infrastructure -- the Azure services, Firebase services, and internal tooling that power Beetle Studio. Per **ISO/IEC 27001:2022 Annex A**, operational security requires that infrastructure be documented, access-controlled, and monitored.
+This document describes Mr.Orchords's cloud and development infrastructure -- the Azure services, Firebase services, and internal tooling that power Mr.Orchords. Per **ISO/IEC 27001:2022 Annex A**, operational security requires that infrastructure be documented, access-controlled, and monitored.
 ## Contents
 
 - [Cloud Infrastructure — Azure](#cloud-infrastructure-azure)
@@ -68,29 +66,29 @@ This document describes Mooned Dev's cloud and development infrastructure -- the
 
 | Resource Group | Purpose | Environment |
 |---|---|---|
-| `beetle-studio-prod` | Production Beetle Studio services | Production |
-| `beetle-studio-staging` | Staging / pre-production | Non-production |
-| `beetle-studio-shared` | Shared infra (CI runners, monitoring) | Shared |
+| `mr-orchords-prod` | Production Mr.Orchords services | Production |
+| `mr-orchords-staging` | Staging / pre-production | Non-production |
+| `mr-orchords-shared` | Shared infra (CI runners, monitoring) | Shared |
 
 ### Azure Services
 
 | Service | Tier | Purpose | Access |
 |---|---|---|---|
-| **Azure App Service** | S1 | Static website hosting (mooned.dev) | Public |
+| **Azure App Service** | S1 | Static website hosting (orchords.com) | Public |
 | **Azure Blob Storage** | Standard | CI artifacts, release builds, backups | Restricted |
 | **Azure Key Vault** | Standard | Secrets, signing certificates | Admin only |
-| **Azure Monitor / Log Analytics** | — | Infrastructure monitoring and alerting | Mike Johnson + Kirk Beka |
+| **Azure Monitor / Log Analytics** | — | Infrastructure monitoring and alerting | Mr.Orchords + Mr.Orchords |
 | **Forgejo Actions (self-hosted)** | On-prem | CI/CD pipelines | All engineers |
-| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted Forgejo Actions runners (GitHub Actions–compatible) | Mike Johnson |
+| **Azure VM (CI Runners)** | D2s_v3 | Self-hosted Forgejo Actions runners (GitHub Actions–compatible) | Mr.Orchords |
 
 ### Azure Blob Storage Containers
 
 | Container | Access | Contents |
 |---|---|---|
-| `beetle-releases` | Private (signed URLs) | Release installers, portable builds |
-| `beetle-builds` | Private | CI artifacts (90-day retention) |
-| `beetle-backups` | Private | Source code mirrors, Firestore exports |
-| `beetle-website` | Public | Static website assets |
+| `mrorchords-releases` | Private (signed URLs) | Release installers, portable builds |
+| `mrorchords-builds` | Private | CI artifacts (90-day retention) |
+| `mrorchords-backups` | Private | Source code mirrors, Firestore exports |
+| `mrorchords-website` | Public | Static website assets |
 
 ---
 
@@ -98,18 +96,18 @@ This document describes Mooned Dev's cloud and development infrastructure -- the
 
 | Service | Plan | Purpose | Access |
 |---|---|---|---|
-| **Firebase Authentication** | Blaze (pay-as-you-go) | User authentication (email, Google OAuth) | All engineers (read); Maya Rodriguez (admin) |
-| **Firestore** | Blaze | User data, project metadata | All engineers (read); Maya Rodriguez (admin) |
-| **Firebase Storage** | Blaze | Cloud sync of project assets | All engineers (read); Maya Rodriguez (admin) |
-| **Firebase Cloud Functions** | Blaze | Backend business logic, API endpoints | Maya Rodriguez (deploy); Mike Johnson (monitoring) |
-| **Firebase Hosting** | Spark (free) | Landing pages | Jason Wong (manage) |
-| **Firebase Crashlytics** | Free | Crash reporting | Lisa Martinez (admin); all engineers (read) |
-| **Firebase Performance** | Free | Performance monitoring | Lisa Martinez (admin) |
+| **Firebase Authentication** | Blaze (pay-as-you-go) | User authentication (email, Google OAuth) | All engineers (read); Mr.Orchords (admin) |
+| **Firestore** | Blaze | User data, project metadata | All engineers (read); Mr.Orchords (admin) |
+| **Firebase Storage** | Blaze | Cloud sync of project assets | All engineers (read); Mr.Orchords (admin) |
+| **Firebase Cloud Functions** | Blaze | Backend business logic, API endpoints | Mr.Orchords (deploy); Mr.Orchords (monitoring) |
+| **Firebase Hosting** | Spark (free) | Landing pages | Mr.Orchords (manage) |
+| **Firebase Crashlytics** | Free | Crash reporting | Mr.Orchords (admin); all engineers (read) |
+| **Firebase Performance** | Free | Performance monitoring | Mr.Orchords (admin) |
 
 ### Firebase Project Structure
 
 ```
-beetle-studio-prod (Firebase project)
+mr-orchords-prod (Firebase project)
 ├── Authentication
 │   ├── Email/password
 │   └── Google OAuth
@@ -142,7 +140,7 @@ infrastructure/
     └── backup_firestore.sh   ← nightly backup
 ```
 
-- Changes require a PR reviewed by Mike Johnson or Kirk Beka
+- Changes require a PR reviewed by Mr.Orchords or Mr.Orchords
 - Terraform state is stored in Azure Blob Storage with versioning enabled
 - No manual changes to production infrastructure — all changes go through Terraform
 
@@ -154,9 +152,9 @@ infrastructure/
 
 | Role | Who | Access Level |
 |---|---|---|
-| **Owner** | Mooned Dev | Full access to all resources |
-| **Contributor** | Mike Johnson, Kirk Beka | Full deploy and config access |
-| **DevOps Engineer** | Mike Johnson | Deploy, monitor, configure |
+| **Owner** | Mr.Orchords | Full access to all resources |
+| **Contributor** | Mr.Orchords, Mr.Orchords | Full deploy and config access |
+| **DevOps Engineer** | Mr.Orchords | Deploy, monitor, configure |
 | **Read-Only** | All engineers | View only; no deploy |
 | **No Access** | Default | No Azure portal access |
 
@@ -164,10 +162,10 @@ infrastructure/
 
 | Role | Who | Access Level |
 |---|---|---|
-| **Owner** | Mooned Dev | Full Firebase console |
-| **Admin** | Maya Rodriguez | All Firebase services |
+| **Owner** | Mr.Orchords | Full Firebase console |
+| **Admin** | Mr.Orchords | All Firebase services |
 | **Developer** | All engineers | Read-only Firestore + Auth |
-| **QA** | Lisa Martinez | Crashlytics + Performance only |
+| **QA** | Mr.Orchords | Crashlytics + Performance only |
 
 ---
 
@@ -175,12 +173,12 @@ infrastructure/
 
 | What | Tool | Who Gets Alerted |
 |---|---|---|
-| Azure resource health | Azure Monitor + email | Mike Johnson |
-| Forgejo Actions failures | Forgejo notification → project chat channel | Mike Johnson |
-| Firebase function errors | Firebase Console + email | Maya Rodriguez |
-| Firebase function latency | Firebase Performance + PagerDuty | Maya Rodriguez |
-| Release crash rate (first 24h) | Crashlytics → Slack #releases | Lisa Martinez |
-| Cloud storage quota | Azure Monitor | Mike Johnson |
+| Azure resource health | Azure Monitor + email | Mr.Orchords |
+| Forgejo Actions failures | Forgejo notification → project chat channel | Mr.Orchords |
+| Firebase function errors | Firebase Console + email | Mr.Orchords |
+| Firebase function latency | Firebase Performance + PagerDuty | Mr.Orchords |
+| Release crash rate (first 24h) | Crashlytics → Slack #releases | Mr.Orchords |
+| Cloud storage quota | Azure Monitor | Mr.Orchords |
 
 ---
 
@@ -199,7 +197,7 @@ infrastructure/
 
 ## Web Security & Cloudflare
 
-The marketing site (`mooned.dev`) and any user-facing web apps are fronted by **Cloudflare** for DDoS protection, WAF, and edge caching. This section documents the Cloudflare configuration and the security controls we apply at the edge.
+The marketing site (`orchords.com`) and any user-facing web apps are fronted by **Cloudflare** for DDoS protection, WAF, and edge caching. This section documents the Cloudflare configuration and the security controls we apply at the edge.
 
 ### Why Cloudflare
 
@@ -217,7 +215,7 @@ The marketing site (`mooned.dev`) and any user-facing web apps are fronted by **
 
 | Setting | Value | Why |
 |---|---|---|
-| **Plan** | **Business** | Need WAF + advanced rate limiting (managed ruleset), Workers Unbound for the auth pre-check, and 100% uptime SLA. Pro is cheaper but lacks the WAF custom ruleset tier and the Bot Management add-on; Business covers everything in the launch spec. Locked 2026-06-20 by Mooned Dev (CEO) - confirm with Mike Johnson before next billing cycle. |
+| **Plan** | **Business** | Need WAF + advanced rate limiting (managed ruleset), Workers Unbound for the auth pre-check, and 100% uptime SLA. Pro is cheaper but lacks the WAF custom ruleset tier and the Bot Management add-on; Business covers everything in the launch spec. Locked 2026-06-20 by Mr.Orchords (CEO) - confirm with Mr.Orchords before next billing cycle. |
 | **SSL/TLS mode** | Full (strict) | Origin pulls must be authenticated |
 | **HSTS** | Enabled, max-age 1 year, includeSubDomains, preload | HSTS header sent to all clients |
 | **Minimum TLS version** | 1.2 (target: 1.3 only) | Block legacy clients |
@@ -305,11 +303,11 @@ Edge logic for:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Mike Johnson | Initial version |
-| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Mike Johnson (DevOps Lead)
+- **Reviewer:** Mr.Orchords (DevOps Lead)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
