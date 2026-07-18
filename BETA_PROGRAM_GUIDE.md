@@ -1,5 +1,3 @@
-> Auto-generated from `docs/BETA_PROGRAM_GUIDE.md` in the docs repo.
-
 ---
 title: "Beta Program Guide"
 version: "1.0.0"
@@ -9,10 +7,10 @@ status: "review"
 
 # Beta Program Guide
 
-**Project:** Beetle Studio  
+**Project:** Mr.Orchords  
 
-**Owner:** Lisa Martinez (QA Lead — testing program), Rachel Green (Community Manager — beta community)  
-**Reviewers:** Kirk Beka (CTO), Chris Taylor (Product Manager)  
+**Owner:** Mr.Orchords (QA Lead — testing program), Mr.Orchords (Community Manager — beta community)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (Product Manager)  
 **ISO Standards:** ISO/IEC 12207:2017 (validation), ISO/IEC 25010:2023 (reliability, usability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -26,7 +24,7 @@ status: "review"
 |---|---|
 | **Scope** | Beta testing program structure, tiers, and feedback process |
 | **Diátaxis form** | How-to guide |
-| **Primary audience** | Lisa Martinez, Rachel Green, Chris Taylor, beta testers |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, beta testers |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -34,7 +32,7 @@ status: "review"
 
 ## Overview
 
-The Beetle Studio Beta Program gives selected users early access to pre-release builds for real-world testing. Per **ISO/IEC 12207:2017 section 6.4**, validation is required to confirm the software meets intended use -- beta testing is our primary validation activity before each stable release.
+The Mr.Orchords Beta Program gives selected users early access to pre-release builds for real-world testing. Per **ISO/IEC 12207:2017 section 6.4**, validation is required to confirm the software meets intended use -- beta testing is our primary validation activity before each stable release.
 ## Contents
 
 - [Beta Program Tiers](#beta-program-tiers)
@@ -76,7 +74,7 @@ The Beetle Studio Beta Program gives selected users early access to pre-release 
 Users must meet **at least 3** of these:
 
 - [ ] Regular user of professional video editing software (Premiere, DaVinci, After Effects)
-- [ ] Owns hardware meeting Beetle Studio recommended specs
+- [ ] Owns hardware meeting Mr.Orchords recommended specs
 - [ ] Has participated in at least one previous beta program
 - [ ] Active on community forum or Discord
 - [ ] Can commit to weekly testing sessions during beta period
@@ -97,10 +95,10 @@ Recruit → Select → Onboard → Test → Report → Retrospective → Graduat
 
 ### Phase 1: Recruitment
 
-Rachel Green manages recruitment:
+Mr.Orchords manages recruitment:
 - Community posts on Discord and forum
 - Application form (name, hardware, experience, availability)
-- Lisa Martinez reviews and selects
+- Mr.Orchords reviews and selects
 
 ### Phase 2: Onboarding
 
@@ -123,13 +121,13 @@ Each beta tester receives:
 
 ### Phase 4: Feedback Collection
 
-Lisa Martinez collects and triages feedback:
+Mr.Orchords collects and triages feedback:
 
 | Feedback Type | Channel | Triage SLA |
 |---|---|---|
 | Bug reports | In-app report tool + Discord | Within 48 hours |
 | Feature feedback | Beta forum thread | Within 1 week |
-| Usability observations | Rachel Green → Lisa Martinez | Weekly review |
+| Usability observations | Mr.Orchords → Mr.Orchords | Weekly review |
 
 ---
 
@@ -144,7 +142,7 @@ A good bug report includes:
 3. **Expected behavior** — what should happen
 4. **Actual behavior** — what actually happened
 5. **Environment:**
-   - Beetle Studio version
+   - Mr.Orchords version
    - Windows version
    - GPU model
    - Project file (if shareable)
@@ -183,7 +181,7 @@ For casual reports in the beta Discord, the minimum viable is:
 **Hypothesis:** [optional, one line]
 **Before image:** [attach screenshot]
 **Repro:** [1-2-3]
-**Build / OS / GPU:** [Beetle Studio vX / Win 11 / RTX 3060]
+**Build / OS / GPU:** [Mr.Orchords vX / Win 11 / RTX 3060]
 ```
 
 Anything less than this is not actionable and will be deprioritized.
@@ -198,7 +196,7 @@ Anything less than this is not actionable and will be deprioritized.
 | **Direct influence** | Feedback directly shapes the product |
 | **Beta badge** | Special badge on community profile |
 | **Free Pro license** | Full Pro access during beta period |
-| **Credit** | Listed in the Beetle Studio credits (opt-in) |
+| **Credit** | Listed in the Mr.Orchords credits (opt-in) |
 | **Invitation to v1.0 launch** | Beta alumni event |
 
 ---
@@ -208,7 +206,7 @@ Anything less than this is not actionable and will be deprioritized.
 Top-performing beta testers are:
 
 - Offered spots in future beta programs
-- Invited to the **Beetle Studio Insiders** group (long-term advisory)
+- Invited to the **Mr.Orchords Insiders** group (long-term advisory)
 - Given priority access to new features
 - Compensated for extended testing engagement
 
@@ -248,11 +246,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Lisa Martinez, Rachel Green | Initial version |
-| 1.0.1 | June 2026 | Lisa Martinez, Rachel Green | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords, Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords, Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On each beta cycle
-- **Reviewer:** Lisa Martinez (QA Lead — testing program)
+- **Reviewer:** Mr.Orchords (QA Lead — testing program)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

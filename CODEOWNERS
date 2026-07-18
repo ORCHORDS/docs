@@ -1,76 +1,76 @@
-# Beetle Studio â€” Code Owners
-# Each file/path is owned by the listed GitHub/Fogejo users.
+# Mr.Orchords — Code Owners
+# Each file/path is owned by the listed GitHub/Forgejo users.
 # PRs touching these paths require review from the owner.
 # Format: pattern<space>owners
 
 # Default owner
-*                                               @kirk.beka @mooned
+*                                               @Mr.Orchords @Mr.Orchords
 
 # Meta / Documentation / Style / Help / User docs
-/STYLE_GUIDE.md                                 @tom.anderson
-/README.md                                      @tom.anderson
-/help/                                          @tom.anderson
-/user/                                          @tom.anderson
+/STYLE_GUIDE.md                                 @Mr.Orchords
+/README.md                                      @Mr.Orchords
+/help/                                          @Mr.Orchords
+/user/                                          @Mr.Orchords
 
 # Releases
-/releases/                                      @sarah.miller
+/releases/                                      @Mr.Orchords
 
 # Engineering
-/engineering/BUILD_SYSTEM.md                    @mike.johnson
-/engineering/CI_CD_PIPELINE.md                  @mike.johnson
-/engineering/BRANCHING_STRATEGY.md              @mike.johnson
-/engineering/TEST_STRATEGY.md                   @mike.johnson
-/operations/INFRASTRUCTURE_OVERVIEW.md          @mike.johnson
-/engineering/TECHNICAL_STANDARDS.md             @kirk.beka
-/engineering/ARCHITECTURE_OVERVIEW.md           @kirk.beka
-/engineering/BACKUP_DISASTER_RECOVERY.md        @kirk.beka
+/engineering/BUILD_SYSTEM.md                    @Mr.Orchords
+/engineering/CI_CD_PIPELINE.md                  @Mr.Orchords
+/engineering/BRANCHING_STRATEGY.md              @Mr.Orchords
+/engineering/TEST_STRATEGY.md                   @Mr.Orchords
+/operations/INFRASTRUCTURE_OVERVIEW.md          @Mr.Orchords
+/engineering/TECHNICAL_STANDARDS.md             @Mr.Orchords
+/engineering/ARCHITECTURE_OVERVIEW.md           @Mr.Orchords
+/engineering/BACKUP_DISASTER_RECOVERY.md        @Mr.Orchords
 
 # UI/UX
-/ui/COMPONENT_LIBRARY.md                        @alex.chen
-/ACCESSIBILITY_COMPLIANCE.md                    @alex.chen
+/ui/COMPONENT_LIBRARY.md                        @Mr.Orchords
+/ACCESSIBILITY_COMPLIANCE.md                    @Mr.Orchords
 
 # Graphics
-/graphics/                                      @james.park
-/PERFORMANCE_BENCHMARKS.md                      @james.park
+/graphics/                                      @Mr.Orchords
+/PERFORMANCE_BENCHMARKS.md                      @Mr.Orchords
 
 # Codecs
-/codecs/                                        @sophie.williams
+/codecs/                                        @Mr.Orchords
 
 # Backend
-/backend/                                       @maya.rodriguez
+/backend/                                       @Mr.Orchords
 
 # Effects
-/effects/                                       @daniel.kim
-/OPENFX_PLUGIN_GUIDE.md                         @daniel.kim
+/effects/                                       @Mr.Orchords
+/OPENFX_PLUGIN_GUIDE.md                         @Mr.Orchords
 
 # Timeline
-/timeline/                                      @emma.thompson
+/timeline/                                      @Mr.Orchords
 
 # Audio
-/audio/                                         @ryan.foster
+/audio/                                         @Mr.Orchords
 
 # Product
-/product/                                       @chris.taylor
-/PROJECT_SCHEDULE.md                            @chris.taylor
+/product/                                       @Mr.Orchords
+/PROJECT_SCHEDULE.md                            @Mr.Orchords
 
 # Operations
-/operations/ONBOARDING_GUIDE.md                 @amanda.clark
+/operations/ONBOARDING_GUIDE.md                 @Mr.Orchords
 
 # Community
-/community/                                     @rachel.green
+/community/                                     @Mr.Orchords
 
 # Marketing
-/marketing/                                     @jason.wong
+/marketing/                                     @Mr.Orchords
 
 # Business
-/business/                                      @kevin.brown
+/business/                                      @Mr.Orchords
 
 # QA
-/BETA_PROGRAM_GUIDE.md                          @lisa.martinez
+/BETA_PROGRAM_GUIDE.md                          @Mr.Orchords
 
 # Security
-/SECURITY_POLICY.md                             @kirk.beka
+/SECURITY_POLICY.md                             @Mr.Orchords
 
 # Operations manual
-/TEAM_OPERATIONS_MANUAL.md                      @kirk.beka
-/BEETLE_STUDIO_TEAM.md                          @mooned
+/TEAM_OPERATIONS_MANUAL.md                      @Mr.Orchords
+/MR_ORCHORDS_TEAM.md                          @Mr.Orchords

@@ -1,5 +1,3 @@
-> Auto-generated from `docs/PERFORMANCE_BENCHMARKS.md` in the docs repo.
-
 ---
 title: "Performance Benchmarks"
 version: "1.0.0"
@@ -9,10 +7,10 @@ status: "review"
 
 # Performance Benchmarks
 
-**Project:** Beetle Studio  
+**Project:** Mr.Orchords  
 
-**Owner:** James Park (Graphics Engineer — GPU), Sophie Williams (Codec Specialist — encode/decode), Lisa Martinez (QA Lead — measurement)  
-**Reviewers:** Kirk Beka (CTO)  
+**Owner:** Mr.Orchords (Graphics Engineer — GPU), Mr.Orchords (Codec Specialist — encode/decode), Mr.Orchords (QA Lead — measurement)  
+**Reviewers:** Mr.Orchords (CTO)  
 **ISO Standards:** ISO/IEC 25010:2023 (performance efficiency, time behavior, resource utilization)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -26,7 +24,7 @@ status: "review"
 |---|---|
 | **Scope** | Performance targets, measurement methodology, and benchmark results |
 | **Diátaxis form** | Reference |
-| **Primary audience** | James Park, Sophie Williams, Lisa Martinez, Kirk Beka |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -34,9 +32,9 @@ status: "review"
 
 ## Overview
 
-This document defines Beetle Studio's performance targets, measurement methodology, and benchmarks. Per **ISO/IEC 25010:2023**, performance efficiency — specifically **time behavior** (response and processing times) and **resource utilization** — is a primary software product quality characteristic that must be measured and tracked.
+This document defines Mr.Orchords's performance targets, measurement methodology, and benchmarks. Per **ISO/IEC 25010:2023**, performance efficiency — specifically **time behavior** (response and processing times) and **resource utilization** — is a primary software product quality characteristic that must be measured and tracked.
 
-Benchmarks are measured by **Lisa Martinez (QA Lead)** at every alpha and beta release, and reviewed by **James Park** and **Kirk Beka**.
+Benchmarks are measured by **Mr.Orchords (QA Lead)** at every alpha and beta release, and reviewed by **Mr.Orchords** and **Mr.Orchords**.
 
 ## Contents
 
@@ -133,10 +131,10 @@ Standard test clips for reproducibility:
 
 | Metric | Tool |
 |---|---|
-| FPS | Internal Beetle Studio frame timing (logged to `performance.log`) |
+| FPS | Internal Mr.Orchords frame timing (logged to `performance.log`) |
 | Encode speed | FFmpeg benchmark + custom timer |
-| Memory | Windows Task Manager + Beetle Studio internal profiling |
-| GPU profiling | RenderDoc (James Park) / PIX (Microsoft GDK) |
+| Memory | Windows Task Manager + Mr.Orchords internal profiling |
+| GPU profiling | RenderDoc (Mr.Orchords) / PIX (Microsoft GDK) |
 | Latency | Custom instrumentation logging in milliseconds |
 
 ---
@@ -155,7 +153,7 @@ Per **ISO/IEC 25010:2023**, performance regression is a quality defect.
 
 ## Web Performance (Core Web Vitals)
 
-Performance targets for the marketing website (`mooned.dev`) and user-facing web apps. Measured via **Lighthouse CI** in the web pipeline and **CrUX** (Chrome User Experience Report) for real-user data.
+Performance targets for the marketing website (`orchords.com`) and user-facing web apps. Measured via **Lighthouse CI** in the web pipeline and **CrUX** (Chrome User Experience Report) for real-user data.
 
 ### Targets (Google "Good" thresholds)
 
@@ -244,11 +242,11 @@ For accessibility, browser compatibility, and visual regression testing of the w
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | James Park, Lisa Martinez, Sophie Williams | Initial version |
-| 1.0.1 | June 2026 | James Park, Lisa Martinez, Sophie Williams | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords, Mr.Orchords, Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords, Mr.Orchords, Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On each alpha/beta release
-- **Reviewer:** James Park (Graphics — GPU)
+- **Reviewer:** Mr.Orchords (Graphics — GPU)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
