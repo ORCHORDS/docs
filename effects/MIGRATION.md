@@ -1,5 +1,3 @@
-> Auto-generated from `docs/effects/MIGRATION.md` in the docs repo.
-
 ---
 title: "Effects Plugin Migration Guide"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Effects Plugin Migration Guide
 
-**Project:** Beetle Studio
-**Owner:** Daniel Kim (Effects & Compositing Engineer)
-**Reviewers:** Kirk Beka (CTO), Alex Chen (UI)
+**Project:** Mr.Orchords
+**Owner:** Mr.Orchords (Effects & Compositing Engineer)
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (UI)
 **Version:** 1.0.0
 **Last Updated:** June 2026
 
@@ -19,7 +17,7 @@ status: "review"
 
 ## Overview
 
-This guide covers migrating effects plugins from the v1 API to the v2 API introduced in Beetle Studio 2.0. The v2 API adds GPU-accelerated processing, improved parameter types, and OpenFX compatibility.
+This guide covers migrating effects plugins from the v1 API to the v2 API introduced in Mr.Orchords 2.0. The v2 API adds GPU-accelerated processing, improved parameter types, and OpenFX compatibility.
 
 ---
 
@@ -29,7 +27,7 @@ This guide covers migrating effects plugins from the v1 API to the v2 API introd
 
 | Area | v1 (Deprecated) | v2 (Current) |
 |---|---|---|
-| Entry point | EffectPlugin_Init() | BeetleEffect_Register() |
+| Entry point | EffectPlugin_Init() | MrOrchordsEffect_Register() |
 | Processing | CPU-only Process(frame*) | GPU+CPU ProcessFrame(context*) |
 | Parameters | AddParam(name, type, default) | DefineParam(ParamDescriptor) |
 | Color space | sRGB only | Linear + sRGB + ACEScg |
@@ -58,11 +56,11 @@ This guide covers migrating effects plugins from the v1 API to the v2 API introd
 extern "C" void EffectPlugin_Init(PluginHost* host) { ... }
 
 // v2 (replace with)
-extern "C" BeetleStatus BeetleEffect_Register(BeetleEffectHost* host) {
+extern "C" MrOrchordsStatus MrOrchordsEffect_Register(MrOrchordsEffectHost* host) {
     host->setName("MyEffect");
     host->setVersion(2, 0, 0);
     host->setCategory("Color");
-    return BEETLE_OK;
+    return MR_ORCHORDS_OK;
 }
 `
 
@@ -73,11 +71,11 @@ extern "C" BeetleStatus BeetleEffect_Register(BeetleEffectHost* host) {
 void Process(FrameBuffer* input, FrameBuffer* output) { ... }
 
 // v2 (replace with)
-BeetleStatus ProcessFrame(BeetleProcessContext* ctx) {
+MrOrchordsStatus ProcessFrame(MrOrchordsProcessContext* ctx) {
     auto input = ctx->getInput(0);
     auto output = ctx->getOutput();
     // GPU path available via ctx->getGPUContext()
-    return BEETLE_OK;
+    return MR_ORCHORDS_OK;
 }
 `
 
@@ -101,7 +99,7 @@ host->defineParam(desc);
 
 ## Migration Checklist
 
-- [ ] Replace EffectPlugin_Init with BeetleEffect_Register
+- [ ] Replace EffectPlugin_Init with MrOrchordsEffect_Register
 - [ ] Replace Process with ProcessFrame
 - [ ] Update all parameter definitions to ParamDescriptor
 - [ ] Add thread-safety (no global mutable state)
@@ -119,4 +117,4 @@ host->defineParam(desc);
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Daniel Kim | Initial migration guide |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial migration guide |

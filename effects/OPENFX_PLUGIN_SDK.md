@@ -1,5 +1,3 @@
-> Auto-generated from `docs/effects/OPENFX_PLUGIN_SDK.md` in the docs repo.
-
 ---
 title: "OpenFX Plugin SDK"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # OpenFX Plugin SDK
 
-**Project:** Beetle Studio  
-**Owner:** Daniel Kim (Effects & Compositing Engineer)  
-**Reviewers:** Kirk Beka (CTO), Alex Chen (UI)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Effects & Compositing Engineer)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (UI)  
 **ISO Standards:** ISO/IEC 12207:2017 (development, API design), ISO/IEC 25010:2023 (maintainability, functional suitability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | OpenFX plugin API, parameter format, and SDK developer guide |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Daniel Kim, third-party plugin developers, Alex Chen |
+| **Primary audience** | Mr.Orchords, third-party plugin developers, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document describes the OpenFX plugin system in Beetle Studio. Per **ISO/IEC 12207:2017 section 6.1**, software design must define interfaces that allow extensibility. The OpenFX SDK enables third-party developers to build visual effects compatible with Beetle Studio. Per **ISO/IEC 25010:2023**, this extensibility supports functional suitability and maintainability.
+This document describes the OpenFX plugin system in Mr.Orchords. Per **ISO/IEC 12207:2017 section 6.1**, software design must define interfaces that allow extensibility. The OpenFX SDK enables third-party developers to build visual effects compatible with Mr.Orchords. Per **ISO/IEC 25010:2023**, this extensibility supports functional suitability and maintainability.
 ## Contents
 
 - [OpenFX Version](#openfx-version)
@@ -56,7 +54,7 @@ This document describes the OpenFX plugin system in Beetle Studio. Per **ISO/IEC
 
 ## OpenFX Version
 
-Beetle Studio implements **OpenFX 1.4** (the most widely supported version).
+Mr.Orchords implements **OpenFX 1.4** (the most widely supported version).
 
 Reference: [OpenFX 1.4 Specification](https://openfx.org/doc/1.4/)
 
@@ -66,7 +64,7 @@ Reference: [OpenFX 1.4 Specification](https://openfx.org/doc/1.4/)
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│              Beetle Studio (Plugin Host)                 │
+│              Mr.Orchords (Plugin Host)                 │
 │                                                          │
 │  ┌──────────────────┐                                   │
 │  │  Plugin Host API  │                                   │
@@ -196,7 +194,7 @@ OfxStatus describe(OfxImageEffectHandle effect) {
 
 | Test | Scope | Tool |
 |---|---|---|
-| API compliance | Plugin loads and responds to all OfxHost calls | Beetle Studio plugin test harness |
+| API compliance | Plugin loads and responds to all OfxHost calls | Mr.Orchords plugin test harness |
 | Parameter animation | Keyframes persist and interpolate correctly | Visual inspection + regression test |
 | Render performance | No memory leaks, acceptable frame time | PIX / RenderDoc |
 | Cross-platform | Same effect works on all supported platforms | CI plugin test matrix |
@@ -243,11 +241,11 @@ Plugin SDK docs and publishing guidelines: see [`OPENFX_PLUGIN_GUIDE.md`](../OPE
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Daniel Kim | Initial version |
-| 1.0.1 | June 2026 | Daniel Kim | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On OpenFX major version
-- **Reviewer:** Daniel Kim (Effects & Compositing Engineer)
+- **Reviewer:** Mr.Orchords (Effects & Compositing Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

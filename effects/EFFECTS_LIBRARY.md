@@ -1,5 +1,3 @@
-> Auto-generated from `docs/effects/EFFECTS_LIBRARY.md` in the docs repo.
-
 ---
 title: "Effects Library"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Effects Library
 
-**Project:** Beetle Studio  
-**Owner:** Daniel Kim (Effects & Compositing Engineer)  
-**Reviewers:** James Park (Graphics), Lisa Martinez (QA)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Effects & Compositing Engineer)  
+**Reviewers:** Mr.Orchords (Graphics), Mr.Orchords (QA)  
 **ISO Standards:** ISO/IEC 12207:2017 (development), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | Catalog of all built-in effects, parameters, and GPU cost |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Daniel Kim, James Park, Lisa Martinez, Tom Anderson |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,11 +31,11 @@ status: "review"
 
 ## Overview
 
-This document catalogs all built-in effects in Beetle Studio — what each does, what parameters it exposes, what GPU resources it consumes, and what the expected output should be. Per **ISO/IEC 12207:2017 §6.1**, software components must be documented so that the team, QA, and technical writers can work from a single authoritative source.
+This document catalogs all built-in effects in Mr.Orchords — what each does, what parameters it exposes, what GPU resources it consumes, and what the expected output should be. Per **ISO/IEC 12207:2017 §6.1**, software components must be documented so that the team, QA, and technical writers can work from a single authoritative source.
 
 This library is the reference for:
 - **QA** — writing regression tests and expected output specifications
-- **Tom Anderson** — writing user-facing documentation
+- **Mr.Orchords** — writing user-facing documentation
 - **Plugin developers** — understanding how built-in effects work as a reference for OpenFX plugins
 - **Engineering** — understanding effect dependencies and resource costs
 
@@ -199,7 +197,7 @@ This library is the reference for:
 
 #### Blend Modes
 
-Beetle Studio supports all standard blend modes as a compositing effect:
+Mr.Orchords supports all standard blend modes as a compositing effect:
 
 | Supported | Notes |
 |---|---|
@@ -302,11 +300,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Daniel Kim | Initial version |
-| 1.0.1 | June 2026 | Daniel Kim | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On each new effect release
-- **Reviewer:** Daniel Kim (Effects & Compositing Engineer)
+- **Reviewer:** Mr.Orchords (Effects & Compositing Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
