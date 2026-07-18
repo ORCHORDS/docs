@@ -1,5 +1,3 @@
-> Auto-generated from `docs/SECURITY_POLICY.md` in the docs repo.
-
 ---
 title: "Security Policy"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Security Policy
 
-**Project:** Beetle Studio  
-**Owner:** Kirk Beka (CTO) - architectural security; Maya Rodriguez (Backend) - backend security; Sarah Miller (Build) - signing and distribution  
-**Reviewers:** Mooned Dev (CEO)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (CTO) - architectural security; Mr.Orchords (Backend) - backend security; Mr.Orchords (Build) - signing and distribution  
+**Reviewers:** Mr.Orchords (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (information security management)  
 **Version:** 1.0.1  
 **Last Updated:** 2026-06-20  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | Information security objectives, controls, and incident response |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Kirk Beka, Maya Rodriguez, Sarah Miller, Mooned Dev |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This policy defines the security standards, vulnerability handling procedures, and compliance requirements for Beetle Studio. It applies to all team members, contributors, and third-party integrations.
+This policy defines the security standards, vulnerability handling procedures, and compliance requirements for Mr.Orchords. It applies to all team members, contributors, and third-party integrations.
 
 ## Contents
 
@@ -85,7 +83,7 @@ Per **ISO/IEC 27001:2022 Annex A**, security must be built into the software dev
 |---|---|
 | **Secure coding standards** | See [`engineering/TECHNICAL_STANDARDS.md`](../engineering/TECHNICAL_STANDARDS.md) |
 | **No hardcoded secrets** | CI checks for credential patterns; secrets in environment variables only |
-| **Code review for security** | All security-sensitive changes require Kirk Beka + Maya Rodriguez review |
+| **Code review for security** | All security-sensitive changes require Mr.Orchords + Mr.Orchords review |
 | **Dependency scanning** | GitHub Dependabot + OWASP dependency check in CI |
 | **Static analysis** | Coverity Scan or CodeQL on every PR |
 | **Penetration testing** | Annual external pen test before v1.0 launch |
@@ -94,7 +92,7 @@ Per **ISO/IEC 27001:2022 Annex A**, security must be built into the software dev
 
 Changes to these areas require mandatory security review:
 
-- Authentication and authorization (Maya Rodriguez)
+- Authentication and authorization (Mr.Orchords)
 - Session/token management
 - File I/O and path handling
 - Plugin loading and sandboxing
@@ -109,7 +107,7 @@ Per **ISO/IEC 27001:2022 Annex A** (cryptographic controls):
 
 - All executable code must be signed before distribution
 - Signing keys stored in Azure Key Vault (HSM-backed)
-- Signing access limited to Sarah Miller and Kirk Beka
+- Signing access limited to Mr.Orchords and Mr.Orchords
 - Certificate renewal at least 60 days before expiry
 
 See: [`releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](../releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md)
@@ -149,10 +147,10 @@ See: [`releases/CODE_SIGNING_CERTIFICATE_MANAGEMENT.md`](../releases/CODE_SIGNIN
 
 ## Plugin Security
 
-OpenFX plugins run in the same process as Beetle Studio. Security controls:
+OpenFX plugins run in the same process as Mr.Orchords. Security controls:
 
 - Plugins are code-signed by third-party developers (required for Store distribution)
-- Plugins run with the same permissions as Beetle Studio (no sandbox)
+- Plugins run with the same permissions as Mr.Orchords (no sandbox)
 - Users can disable plugin loading: **Edit → Preferences → Plugins → Disable Plugin Loading**
 - Plugin API exposes limited interfaces - no arbitrary code execution from plugin host
 
@@ -164,8 +162,8 @@ OpenFX plugins run in the same process as Beetle Studio. Security controls:
 
 We follow a **coordinated vulnerability disclosure** process:
 
-1. **Report:** Security researcher contacts `security@mooned.dev`
-2. **Triage:** Kirk Beka triages within 7 days
+1. **Report:** Security researcher contacts `security@orchords.com`
+2. **Triage:** Mr.Orchords triages within 7 days
 3. **Fix:** Development team prioritizes fix based on severity
 4. **Release:** Fix shipped in next patch or hotfix
 5. **Credit:** Researcher credited in release notes (unless anonymous)
@@ -183,7 +181,7 @@ We follow a **coordinated vulnerability disclosure** process:
 
 ## Security Checks & Verification
 
-This section enumerates the security checks we run against Beetle Studio, the marketing website (mooned.dev), and the Firebase backend. Each check is anchored to a specific control in one of the standards we follow.
+This section enumerates the security checks we run against Mr.Orchords, the marketing website (orchords.com), and the Firebase backend. Each check is anchored to a specific control in one of the standards we follow.
 
 ### Standards We Verify Against
 
@@ -221,13 +219,13 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 | Type | Scope | Frequency | Owner |
 |---|---|---|---|
-| **External pen test** | Public web (mooned.dev) + cloud APIs | Annual + on major auth change | Third-party firm |
+| **External pen test** | Public web (orchords.com) + cloud APIs | Annual + on major auth change | Third-party firm |
 | **Internal pen test** | All infrastructure + internal tools | Annual | Third-party firm |
 | **Bug bounty** | Public web + app | Continuous via HackerOne | Community |
 
 ### Vulnerability Disclosure
 
-- **Reporting channel:** `security@mooned.dev` + HackerOne program
+- **Reporting channel:** `security@orchords.com` + HackerOne program
 - **Acknowledgment:** within 48 hours
 - **Triage:** within 7 days
 - **Public disclosure:** coordinated with reporter, minimum 90 days from report to fix-or-disclose
@@ -239,7 +237,7 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 | Version | Date | Changes |
 |---|---|---|
 | 1.0.0 | June 2026 | Initial policy - fully aligned with ISO/IEC 27001:2022 |
-| 1.0.1 | 2026-06-20 | Kirk Beka - Replaced `?` placeholders in User Data table with concrete encryption + retention details; payment info row now references Microsoft Store delegation (PCI-DSS scope) |
+| 1.0.1 | 2026-06-20 | Mr.Orchords - Replaced `?` placeholders in User Data table with concrete encryption + retention details; payment info row now references Microsoft Store delegation (PCI-DSS scope) |
 
 ---
 
@@ -272,11 +270,11 @@ This section enumerates the security checks we run against Beetle Studio, the ma
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Kirk Beka | Initial version |
-| 1.0.1 | 2026-06-20 | Kirk Beka | Replaced `?` placeholders in User Data table with concrete encryption + retention details |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | 2026-06-20 | Mr.Orchords | Replaced `?` placeholders in User Data table with concrete encryption + retention details |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Kirk Beka (CTO) - architectural security
+- **Reviewer:** Mr.Orchords (CTO) - architectural security
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
