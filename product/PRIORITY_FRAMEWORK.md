@@ -1,5 +1,3 @@
-> Auto-generated from `docs/product/PRIORITY_FRAMEWORK.md` in the docs repo.
-
 ---
 title: "Feature Prioritization Framework"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Feature Prioritization Framework
 
-**Project:** Beetle Studio  
-**Owner:** Chris Taylor (Product Manager)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Product Manager)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (CEO)  
 **ISO Standards:** ISO/IEC 12207:2017 (requirements definition), ISO/IEC 25010:2023 (functional suitability, value)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | MoSCoW + RICE prioritization methodology |
 | **Diátaxis form** | Explanation |
-| **Primary audience** | Chris Taylor, all leads, Mooned Dev |
+| **Primary audience** | Mr.Orchords, all leads, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document defines how Chris Taylor prioritizes features and work items for the Beetle Studio roadmap. Per **ISO/IEC 12207:2017 section 6.1**, requirements must be evaluated and prioritized. This framework makes prioritization explicit, repeatable, and transparent.
+This document defines how Mr.Orchords prioritizes features and work items for the Mr.Orchords roadmap. Per **ISO/IEC 12207:2017 section 6.1**, requirements must be evaluated and prioritized. This framework makes prioritization explicit, repeatable, and transparent.
 ## Contents
 
 - [The Framework](#the-framework)
@@ -115,17 +113,17 @@ Could-haves get picked if:
 
 ## Inputs to Prioritization
 
-Chris Taylor considers these inputs when evaluating features:
+Mr.Orchords considers these inputs when evaluating features:
 
 | Input | Source | Weight |
 |---|---|---|
 | User feedback | Beta program, community forum, support tickets | High |
 | Competitive analysis | What After Effects / DaVinci / Premiere ship | Medium |
-| Sales feedback | Kevin Brown — what prospects ask about | Medium |
-| Technical constraints | Kirk Beka — what's feasible this quarter | High |
-| Business strategy | Mooned Dev — strategic direction | High |
-| Technical debt | Kirk Beka — infrastructure work needed | Medium |
-| Performance issues | Lisa Martinez — bugs that block features | High |
+| Sales feedback | Mr.Orchords — what prospects ask about | Medium |
+| Technical constraints | Mr.Orchords — what's feasible this quarter | High |
+| Business strategy | Mr.Orchords — strategic direction | High |
+| Technical debt | Mr.Orchords — infrastructure work needed | Medium |
+| Performance issues | Mr.Orchords — bugs that block features | High |
 
 ---
 
@@ -177,7 +175,7 @@ Features get parked. This is normal. Reasons are documented, not hidden:
 - **Duplicate** — similar feature already in progress or shipped
 - **Strategic fit** — important feature but conflicts with current product direction
 
-When parking a feature, Chris Taylor records:
+When parking a feature, Mr.Orchords records:
 1. The reason it was parked
 2. What would need to change for it to be a higher priority
 3. A date to re-evaluate
@@ -188,11 +186,11 @@ When parking a feature, Chris Taylor records:
 
 | Stakeholder | How They Influence Priority |
 |---|---|
-| **Mooned Dev** | Sets strategic direction and hard constraints (e.g., "must ship Windows Store before Q4") |
-| **Kirk Beka** | Flags technical feasibility, flags technical debt that must be addressed |
+| **Mr.Orchords** | Sets strategic direction and hard constraints (e.g., "must ship Windows Store before Q4") |
+| **Mr.Orchords** | Flags technical feasibility, flags technical debt that must be addressed |
 | **Beta users** | Vote with feedback — features with repeated requests get priority |
-| **Sales (Kevin Brown)** | Flags what enterprise customers are asking for |
-| **Lisa Martinez** | Flags quality issues that need to be addressed before new features |
+| **Sales (Mr.Orchords)** | Flags what enterprise customers are asking for |
+| **Mr.Orchords** | Flags quality issues that need to be addressed before new features |
 | **Team** | Engineers can flag dependencies and complexity |
 
 ---
@@ -231,11 +229,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Chris Taylor | Initial version |
-| 1.0.1 | June 2026 | Chris Taylor | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Chris Taylor (Product Manager)
+- **Reviewer:** Mr.Orchords (Product Manager)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

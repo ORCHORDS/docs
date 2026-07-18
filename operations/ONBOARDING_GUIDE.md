@@ -1,5 +1,3 @@
-> Auto-generated from `docs/operations/ONBOARDING_GUIDE.md` in the docs repo.
-
 ---
 title: "Team Onboarding Guide"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Team Onboarding Guide
 
-**Project:** Beetle Studio  
-**Owner:** Amanda Clark (Operations Manager)  
-**Reviewers:** Kirk Beka (CTO), all engineering leads  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Operations Manager)  
+**Reviewers:** Mr.Orchords (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (human resources, development process), ISO/IEC 25010:2023 (maintainability)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-06-21
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | First-day, first-week, first-month checklist for new hires |
 | **Diátaxis form** | How-to guide |
-| **Primary audience** | All new hires, Amanda Clark, all engineering leads |
+| **Primary audience** | All new hires, Mr.Orchords, all engineering leads |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,11 +31,11 @@ status: "review"
 
 ## Overview
 
-This guide walks new team members through their first two weeks at Beetle Studio, covering environment setup, tool access, and team introductions.
+This guide walks new team members through their first two weeks at Mr.Orchords, covering environment setup, tool access, and team introductions.
 
 ## Contents
 
-- [Before Day One (HR — Amanda Clark)](#before-day-one-hr-amanda-clark)
+- [Before Day One (HR — Mr.Orchords)](#before-day-one-hr-mrorchords)
   - [Access & Accounts](#access-accounts)
   - [Welcome Package](#welcome-package)
 - [Day One](#day-one)
@@ -62,24 +60,24 @@ This guide walks new team members through their first two weeks at Beetle Studio
 
 ---
 
-## Before Day One (HR — Amanda Clark)
+## Before Day One (HR — Mr.Orchords)
 
 Before a new hire's first day, the following must be complete:
 
 ### Access & Accounts
 
 - [ ] Laptop ordered and configured (or existing machine re-imaged)
-- [ ] Microsoft email account created (`name@mooned.dev`)
-- [ ] Forgejo organization invite sent (`dev.mooned.dev/beetle-studio`)
+- [ ] Microsoft email account created (`name@orchords.com`)
+- [ ] Forgejo organization invite sent (`dev.orchords.com/mr-orchords`)
 - [ ] Forgejo Actions + repository access provisioned
 - [ ] Firebase project access granted (if backend or cloud role)
 - [ ] Slack workspace invite sent
 - [ ] 1Password team account provisioned
 - [ ] Jira / Linear project access provisioned
 - [ ] Windows installation key assigned
-- [ ] Mooned Dev code signing certificate (for engineering) — access request via Kirk Beka
-- [ ] Beetle Studio internal beta build access (if applicable)
-- [ ] NDA signed (Amanda Clark)
+- [ ] Mr.Orchords code signing certificate (for engineering) — access request via Mr.Orchords
+- [ ] Mr.Orchords internal beta build access (if applicable)
+- [ ] NDA signed (Mr.Orchords)
 
 ### Welcome Package
 
@@ -95,9 +93,9 @@ Before a new hire's first day, the following must be complete:
 
 | Time | Activity | Owner |
 |---|---|---|
-| 9:00 AM | Welcome + office tour | Amanda Clark |
+| 9:00 AM | Welcome + office tour | Mr.Orchords |
 | 9:30 AM | Accounts setup session (laptop, email, Slack, GitHub) | IT buddy |
-| 10:30 AM | Meet the CTO — role overview, Q&A | Kirk Beka |
+| 10:30 AM | Meet the CTO — role overview, Q&A | Mr.Orchords |
 | 11:30 AM | Meet direct manager — team-specific intro | Direct manager |
 | 12:00 PM | Team lunch | Team |
 
@@ -109,7 +107,7 @@ Before a new hire's first day, the following must be complete:
 | Read the role's relevant docs | Manager assigns 3–5 key documents |
 | Set up dev environment | See [`docs/engineering/BUILD_SYSTEM.md`](../../docs/engineering/BUILD_SYSTEM.md) |
 | Join relevant Slack channels | `#engineering`, `#team-[name]`, `#releases` |
-| Read [`BEETLE_STUDIO_TEAM.md`](../../BEETLE_STUDIO_TEAM.md) | Company and team structure |
+| Read [`MR_ORCHORDS_TEAM.md`](../../MR_ORCHORDS_TEAM.md) | Company and team structure |
 
 ---
 
@@ -118,9 +116,9 @@ Before a new hire's first day, the following must be complete:
 ### All Team Members
 
 - [ ] Slack profile complete (photo, title, timezone)
-- [ ] GitHub profile complete with Mooned Dev affiliation
+- [ ] GitHub profile complete with Mr.Orchords affiliation
 - [ ] Read company handbook (if exists)
-- [ ] Read role description in [`BEETLE_STUDIO_TEAM.md`](../../BEETLE_STUDIO_TEAM.md)
+- [ ] Read role description in [`MR_ORCHORDS_TEAM.md`](../../MR_ORCHORDS_TEAM.md)
 - [ ] Attend all daily standups for the first week
 - [ ] 1:1 meeting with direct manager scheduled
 
@@ -139,15 +137,15 @@ Before a new hire's first day, the following must be complete:
 
 - [ ] Read [`docs/user/USER_GUIDE.md`](../../docs/user/USER_GUIDE.md)
 - [ ] Read [`docs/product/ROADMAP.md`](../../docs/product/ROADMAP.md)
-- [ ] Download and use Beetle Studio (latest beta)
-- [ ] Complete a small project in Beetle Studio (basic edit → export)
+- [ ] Download and use Mr.Orchords (latest beta)
+- [ ] Complete a small project in Mr.Orchords (basic edit → export)
 - [ ] Explore Linear project (roadmap, current sprint, backlog)
 
 ### QA Team
 
 - [ ] Read [`docs/engineering/TEST_STRATEGY.md`](../../docs/engineering/TEST_STRATEGY.md)
 - [ ] Read [`docs/PERFORMANCE_BENCHMARKS.md`](../../docs/PERFORMANCE_BENCHMARKS.md)
-- [ ] Access bug tracker at [dev.mooned.dev](https://dev.mooned.dev) and understand issue lifecycle
+- [ ] Access bug tracker at [dev.orchords.com](https://dev.orchords.com) and understand issue lifecycle
 - [ ] Run the smoke test suite on the latest build
 - [ ] Understand the severity scale (S0–S3)
 
@@ -157,7 +155,7 @@ Before a new hire's first day, the following must be complete:
 - [ ] Read [`docs/engineering/BACKUP_DISASTER_RECOVERY.md`](../../docs/engineering/BACKUP_DISASTER_RECOVERY.md)
 - [ ] Access Azure portal and understand current infrastructure
 - [ ] Review Forgejo Actions workflows (per the workflows/ index)
-- [ ] Meet with Sarah Miller to understand build pipeline
+- [ ] Meet with Mr.Orchords to understand build pipeline
 
 ### Marketing & Community Team
 
@@ -189,7 +187,7 @@ Before a new hire's first day, the following must be complete:
 - 1-month check-in with manager — what's going well, what's unclear
 - Complete first full feature or deliverable (size depends on role)
 - Review [`docs/README.md`](../../docs/README.md) — identify docs that are unclear or missing
-- Share feedback on the onboarding experience with Amanda Clark
+- Share feedback on the onboarding experience with Mr.Orchords
 
 ---
 
@@ -197,13 +195,13 @@ Before a new hire's first day, the following must be complete:
 
 | Need Help With | Who to Ask |
 |---|---|
-| Dev environment setup | Mike Johnson (DevOps) |
-| Git / GitHub workflow | Mike Johnson (DevOps) |
-| Product questions | Chris Taylor (PM) |
-| Design questions | Nina Patel (UX Designer) |
-| Bug tracking / testing | Lisa Martinez (QA) |
-| Company operations | Amanda Clark (Operations) |
-| Technical architecture | Kirk Beka (CTO) |
+| Dev environment setup | Mr.Orchords (DevOps) |
+| Git / GitHub workflow | Mr.Orchords (DevOps) |
+| Product questions | Mr.Orchords (PM) |
+| Design questions | Mr.Orchords (UX Designer) |
+| Bug tracking / testing | Mr.Orchords (QA) |
+| Company operations | Mr.Orchords (Operations) |
+| Technical architecture | Mr.Orchords (CTO) |
 | Role-specific questions | Your direct manager |
 
 ---
@@ -213,12 +211,12 @@ Before a new hire's first day, the following must be complete:
 | Resource | URL / Location |
 |---|---|
 | Company handbook | Shared in onboarding email |
-| Team roster | [`BEETLE_STUDIO_TEAM.md`](../../BEETLE_STUDIO_TEAM.md) |
-| Bug tracker | [dev.mooned.dev](https://dev.mooned.dev) |
-| Git repos (Forgejo) | [dev.mooned.dev](https://dev.mooned.dev) |
+| Team roster | [`MR_ORCHORDS_TEAM.md`](../../MR_ORCHORDS_TEAM.md) |
+| Bug tracker | [dev.orchords.com](https://dev.orchords.com) |
+| Git repos (Forgejo) | [dev.orchords.com](https://dev.orchords.com) |
 | Documentation index | [`docs/README.md`](../../docs/README.md) |
-| Beetle Studio beta builds | Shared link in onboarding email |
-| Slack workspace | mooneddev.slack.com |
+| Mr.Orchords beta builds | Shared link in onboarding email |
+| Slack workspace | orchords.slack.com |
 
 ---
 
@@ -240,7 +238,7 @@ Before a new hire's first day, the following must be complete:
 
 ### Internal Documents
 
-- [$title](./../../BEETLE_STUDIO_TEAM.md)
+- [$title](./../../MR_ORCHORDS_TEAM.md)
 - [$title](./../../docs/BETA_PROGRAM_GUIDE.md)
 - [$title](./../../docs/engineering/ARCHITECTURE_OVERVIEW.md)
 - [$title](./../../docs/engineering/BACKUP_DISASTER_RECOVERY.md)
@@ -268,11 +266,11 @@ Before a new hire's first day, the following must be complete:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Amanda Clark | Initial version |
-| 1.0.1 | June 2026 | Amanda Clark | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Amanda Clark (Operations Manager)
+- **Reviewer:** Mr.Orchords (Operations Manager)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
