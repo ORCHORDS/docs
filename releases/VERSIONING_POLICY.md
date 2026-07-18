@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/VERSIONING_POLICY.md` in the docs repo.
-
 ---
 title: "Software Versioning & Progression — Team Reference Guide"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Software Versioning & Progression — Team Reference Guide
 
-**Project:** Beetle Studio  
-**Owner:** Sarah Miller (Build & Release Engineer) — primary; Mike Johnson (DevOps) — CI integration  
-**Reviewers:** Mike Johnson (DevOps Lead), Kirk Beka (CTO)
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Build & Release Engineer) — primary; Mr.Orchords (DevOps) — CI integration  
+**Reviewers:** Mr.Orchords (DevOps Lead), Mr.Orchords (CTO)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle processes), ISO/IEC 19770-2:2015 (software identification), ISO/IEC 25010:2023 (quality model)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -32,7 +30,7 @@ status: "review"
 
 ## Overview
 
-Version numbers aren't just labels -- they communicate *meaning*. When a user sees `v2.3.1`, they should immediately know the product is mature, what changed since the last version, and whether it's a feature release or a bug-fix patch. This document defines the SemVer scheme Beetle Studio follows.
+Version numbers aren't just labels -- they communicate *meaning*. When a user sees `v2.3.1`, they should immediately know the product is mature, what changed since the last version, and whether it's a feature release or a bug-fix patch. This document defines the SemVer scheme Mr.Orchords follows.
 
 ## Contents
 
@@ -81,7 +79,7 @@ The foundational standard for how software progresses through its lifecycle. Key
 
 ### ISO/IEC 19770-2:2015 — IT Asset Management (SWID Tags)
 
-Particularly **ISO/IEC 19770-2** (Software Identification Tag / SWID tags). This standard defines how software identifies itself to enterprise IT asset management systems. When Beetle Studio ships:
+Particularly **ISO/IEC 19770-2** (Software Identification Tag / SWID tags). This standard defines how software identifies itself to enterprise IT asset management systems. When Mr.Orchords ships:
 - SWID tag data is embedded in our installer metadata
 - Version info is parseable by enterprise IT tools (Intune, SCCM, etc.)
 - This is required for Windows Store and enterprise distribution
@@ -279,11 +277,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Sarah Miller | Initial version |
-| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On SemVer major revision
-- **Reviewer:** Sarah Miller (Build & Release Engineer) — primary
+- **Reviewer:** Mr.Orchords (Build & Release Engineer) — primary
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

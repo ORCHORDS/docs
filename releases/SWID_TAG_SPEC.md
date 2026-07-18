@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/SWID_TAG_SPEC.md` in the docs repo.
-
 ---
 title: "SWID Tag Specification"
 version: "1.0.0"
@@ -9,10 +7,10 @@ status: "review"
 
 # SWID Tag Specification
 
-**Project:** Beetle Studio  
-**Owner:** Sarah Miller (Build & Release Engineer)  
-**Reviewers:** Kirk Beka (CTO), Maya Rodriguez (Backend)  
-**ISO Standards:** ISO/IEC 19770-2:2015 (Software Identification Tag)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Build & Release Engineer)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (DevOps)  
+**ISO Standards:** ISO/IEC 19770-2:2015 (software identification tags), ISO/IEC 12207:2017 (transition)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
 
@@ -23,9 +21,9 @@ status: "review"
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | ISO/IEC 19770-2 SWID tag implementation for Beetle Studio |
+| **Scope** | ISO/IEC 19770-2 SWID tag structure and generation |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Sarah Miller, Kirk Beka, Maya Rodriguez, enterprise IT customers |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, enterprise IT administrators |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,171 +31,241 @@ status: "review"
 
 ## Overview
 
-Per **ISO/IEC 19770-2:2015**, software products should carry a Software Identification (SWID) tag to enable enterprise IT asset management tools (SCCM, Intune, LANDESK, ServiceNow) to correctly identify, track, and manage Beetle Studio on managed devices.
+This document defines the Software Identification (SWID) tag for Mr.Orchords. Per **ISO/IEC 19770-2:2015**, SWID tags provide authoritative identification of software products for IT asset management (ITAM) systems. Enterprise customers use SWID tags to track software inventory, license compliance, and patch management.
 ## Contents
 
-- [SWID Tag Format](#swid-tag-format)
-  - [Example Tag (installed Beetle Studio v2.3.0)](#example-tag-installed-beetle-studio-v230)
-  - [File Naming](#file-naming)
-- [Tag Fields Reference](#tag-fields-reference)
-  - [Required Fields (ISO/IEC 19770-2:2015 §6.2)](#required-fields-isoiec-19770-22015-62)
-  - [Optional but Recommended Fields](#optional-but-recommended-fields)
-- [Windows Registration](#windows-registration)
-  - [Registry Path](#registry-path)
-  - [Enterprise Discovery](#enterprise-discovery)
-- [Version-Specific Tags](#version-specific-tags)
-- [Installer Integration](#installer-integration)
-  - [Inno Setup Integration](#inno-setup-integration)
-  - [Auto-Generation in CI](#auto-generation-in-ci)
-- [Compliance Checklist](#compliance-checklist)
+- [What Is a SWID Tag?](#what-is-a-swid-tag)
+- [SWID Tag Structure](#swid-tag-structure)
+  - [Required Elements](#required-elements)
+  - [Optional Elements](#optional-elements)
+- [SWID Tag Schema](#swid-tag-schema)
+  - [Tag ID](#tag-id)
+  - [Entity](#entity)
+  - [Link](#link)
+  - [Meta](#meta)
+  - [Payload](#payload)
+  - [Evidence](#evidence)
+- [Example Tag: Installed Mr.Orchords v2.3.0](#example-tag-installed-mrorchords-v230)
+- [Validation Rules](#validation-rules)
+  - [Schema Validation](#schema-validation)
+  - [Required Value Rules](#required-value-rules)
+- [Generation](#generation)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
 
 ---
 
-## SWID Tag Format
+## What Is a SWID Tag?
 
-We use the **Corpus SWID tag** format (for installed software), per ISO/IEC 19770-2:2015 §5.3.
+A SWID tag is an XML file that identifies a software product. When Mr.Orchords is installed, the SWID tag:
+- Identifies the product (name, version, edition)
+- Identifies the publisher (Mr.Orchords)
+- Links to the installation media (installer file hash)
+- Records the installation directory
 
-### Example Tag (installed Beetle Studio v2.3.0)
+Enterprise IT tools (Microsoft Intune, SCCM, BigFix, etc.) scan installed SWID tags to build software inventories.
+
+---
+
+## SWID Tag Structure
+
+### Required Elements
+
+| Element | Purpose | Example |
+|---|---|---|
+| `<SoftwareIdentity>` | Root element | — |
+| `@name` | Product name | `Mr.Orchords` |
+| `@tagId` | Unique tag identifier | `Mr.Orchords-v2.3.0` |
+| `@version` | Product version | `2.3.0` |
+| `@versionScheme` | Version scheme | `semver` |
+| `<Entity>` | Publisher information | Mr.Orchords (see below) |
+
+### Optional Elements
+
+| Element | Purpose |
+|---|---|
+| `<Link>` | Related resources (installer URL, docs) |
+| `<Meta>` | Additional product metadata |
+| `<Payload>` | Files installed by this product |
+| `<Evidence>` | How the software was detected |
+
+---
+
+## SWID Tag Schema
+
+### Tag ID
+
+Format: `{regid}_{product}_{version}`
+
+| Field | Rule | Example |
+|---|---|---|
+| `regid` | Reverse DNS of publisher | `com.orchords` |
+| `product` | Product short name | `mr-orchords` |
+| `version` | Full version string | `2.3.0` |
+
+**Full example:** `com.orchords_mr-orchords_2.3.0`
+
+### Entity
+
+Identifies the software publisher:
+
+```xml
+<Entity
+  name="Mr.Orchords"
+  regid="regid.orchords.com"
+  role="softwareCreator" />
+```
+
+### Link
+
+Links to related resources:
+
+```xml
+<Link
+  rel="installationmedia"
+  href="https://www.orchords.com/download/MrOrchords-2.3.0-Setup.exe"
+  type="application/octet-stream" />
+<Link
+  rel="homepage"
+  href="https://www.orchords.com" />
+```
+
+### Meta
+
+Additional metadata for ITAM tools:
+
+```xml
+<Meta
+  product="Mr.Orchords"
+  colloquialVersion="2026"
+  edition="Professional"
+  revision="2.3.0" />
+```
+
+### Payload
+
+Files installed by this product:
+
+```xml
+<Payload>
+  <File name="MrOrchords.exe" size="125829120" />
+  <File name="MrOrchordsEngine.dll" size="52428800" />
+</Payload>
+```
+
+### Evidence
+
+How the software was detected (for ITAM scanning):
+
+```xml
+<Evidence>
+  <File name="MrOrchords.exe" path="C:\Program Files\Mr.Orchords\MrOrchords.exe" />
+</Evidence>
+```
+
+---
+
+## Example Tag: Installed Mr.Orchords v2.3.0
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<SoftwareIdentificationTag
-  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema"
-  schemaVersion="2.0">
+<SoftwareIdentity
+  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://standards.iso.org/iso/19770/-2/2015/schema.xsd swid.xsd"
+  xml:lang="en-US"
+  name="Mr.Orchords"
+  tagId="com.orchords_mr-orchords_2.3.0"
+  version="2.3.0"
+  versionScheme="semver">
 
-  <ProductID>beetle-studio-2.3.0</ProductID>
-  <ProductName>Beetle Studio</ProductName>
-  <ProductVersion>
-    <VersionScheme>alphanumeric</VersionScheme>
-    <Version>2.3.0</Version>
-  </ProductVersion>
-  <SoftwareCreator>
-    <Name>Mooned Dev</Name>
-    <Regid>regid.mooned.dev</Regid>
-  </SoftwareCreator>
-  <LicensePrivacyURL>https://www.mooned.dev/privacy</LicensePrivacyURL>
-  <Summary>Professional video editing software</Summary>
-  <Description>Beetle Studio is a professional-grade video editor with GPU-accelerated rendering, multi-track timeline, and FFmpeg-based codec support.</Description>
+  <!-- Publisher -->
+  <Entity
+    name="Mr.Orchords"
+    regid="regid.orchords.com"
+    role="softwareCreator" />
 
-</SoftwareIdentificationTag>
+  <!-- Links -->
+  <Link
+    rel="installationmedia"
+    href="https://www.orchords.com/download/MrOrchords-2.3.0-Setup.exe" />
+  <Link
+    rel="homepage"
+    href="https://www.orchords.com" />
+
+  <!-- Product metadata -->
+  <Meta
+    product="Mr.Orchords"
+    colloquialVersion="2026"
+    edition="Professional"
+    revision="2.3.0" />
+
+  <!-- Installed files -->
+  <Payload>
+    <File name="MrOrchords.exe" size="125829120" />
+    <File name="MrOrchordsEngine.dll" size="52428800" />
+    <File name="MrOrchordsSetup.exe" size="150994944" />
+  </Payload>
+
+  <!-- Detection evidence -->
+  <Evidence>
+    <File name="MrOrchords.exe" path="C:\Program Files\Mr.Orchords\MrOrchords.exe" />
+  </Evidence>
+
+</SoftwareIdentity>
 ```
-
-### File Naming
-
-| Tag Type | Filename | Location |
-|---|---|---|
-| **Corpus tag** (installer) | `BeetleStudio_2.3.0.swidtag` | Bundled in installer payload |
-| **Installed tag** (post-install) | `BeetleStudio_2.3.0.swidtag` | `%ProgramData%\Mooned Dev\Beetle Studio\` |
 
 ---
 
-## Tag Fields Reference
+## Validation Rules
 
-### Required Fields (ISO/IEC 19770-2:2015 §6.2)
+### Schema Validation
 
-| Field | Value for Beetle Studio | Notes |
-|---|---|---|
-| `schemaVersion` | `2.0` | ISO/IEC 19770-2:2015 schema |
-| `ProductID` | `beetle-studio-{MAJOR}.{MINOR}.{PATCH}` | Unique per version |
-| `ProductName` | `Beetle Studio` | Display name |
-| `Version` | `{MAJOR}.{MINOR}.{PATCH}` | Must match SemVer exactly |
-| `VersionScheme` | `alphanumeric` | Matches SemVer format |
-| `Name` (SoftwareCreator) | `Mooned Dev` | Legal entity name |
-| `Regid` (SoftwareCreator) | `regid.mooned.dev` | Reverse domain identifier |
+The tag must validate against the ISO/IEC 19770-2:2015 schema:
+- `swid.xsd` — available from ISO
+- Validated at build time by the installer build script
 
-### Optional but Recommended Fields
+### Required Value Rules
 
-| Field | Value | Notes |
-|---|---|---|
-| `LicensePrivacyURL` | `https://www.mooned.dev/privacy` | Links to privacy policy |
-| `Summary` | Short product description | One line |
-| `Description` | Full description | One paragraph |
-| `ProductSuite` | Not used | Reserved for product families |
-| `TagCreator` | Same as SoftwareCreator | Self-signed tag |
+| Rule | Requirement |
+|---|---|
+| `tagId` | Must match `com.orchords_mr-orchords_{version}` |
+| `version` | Must match the installer version |
+| `Entity@regid` | Must be `regid.orchords.com` |
+| `Meta@product` | Must be `Mr.Orchords` |
 
 ---
 
-## Windows Registration
+## Generation
 
-During installation, the SWID tag must be registered with Windows via the `swiupdate` service or directly to the registry:
-
-### Registry Path
-
-```
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{ProductID}
-```
-
-Or using the SWID directory (preferred):
-
-```
-%ProgramData%\Mooned Dev\Beetle Studio\*.swidtag
-```
-
-### Enterprise Discovery
-
-Enterprise IT tools discover SWID tags in this order:
-1. `%ProgramData%\swidtag\<regid>\*.swidtag`
-2. `%ProgramFiles%\Mooned Dev\Beetle Studio\*.swidtag`
-3. Windows Registry Uninstall key
-
----
-
-## Version-Specific Tags
-
-Each Beetle Studio version gets a new SWID tag. Old tags must NOT be deleted on upgrade — each installed version should be individually trackable:
-
-| Installed Version | SWID Tag Filename | Tag Version Field |
-|---|---|---|
-| 2.2.0 | `BeetleStudio_2.2.0.swidtag` | `2.2.0` |
-| 2.3.0 | `BeetleStudio_2.3.0.swidtag` | `2.3.0` |
-| 2.3.2 | `BeetleStudio_2.3.2.swidtag` | `2.3.2` |
-
-When upgrading, install the new tag alongside the old one. When uninstalling, remove the uninstalled version's tag only (not all version tags).
-
----
-
-## Installer Integration
-
-### Inno Setup Integration
-
-The SWID tag file is bundled in the installer payload:
-
-```iss
-[Files]
-Source: "BeetleStudio_{#Version}.swidtag"; DestDir: "{app}"; Flags: ignoreversion
-Source: "BeetleStudio_{#Version}.swidtag"; DestDir: "{commonappdata}\Mooned Dev\Beetle Studio"; Flags: ignoreversion
-```
-
-### Auto-Generation in CI
-
-Sarah Miller's CI pipeline generates the SWID tag file dynamically using the version number from the git tag:
+The SWID tag is generated during the build:
 
 ```python
-# scripts/generate_swid_tag.py (called in CI before installer build)
-import xml.etree.ElementTree as ET
+# scripts/generate_swid_tag.py
+# Called by CMake during release build
 
-def generate_swid_tag(version: str) -> str:
-    tag = ET.Element("SoftwareIdentificationTag", xmlns="http://standards.iso.org/iso/19770/-2/2015/schema")
-    tag.set("schemaVersion", "2.0")
-    # ... populate fields
-    return ET.tostring(tag, encoding="unicode")
+def generate_swid_tag(version: str, output_path: str):
+    tag = f'''<?xml version="1.0" encoding="UTF-8"?>
+<SoftwareIdentity
+  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xml:lang="en-US"
+  name="Mr.Orchords"
+  tagId="com.orchords_mr-orchords_{version}"
+  version="{version}"
+  versionScheme="semver">
+  <Entity name="Mr.Orchords" regid="regid.orchords.com" role="softwareCreator" />
+  <Meta product="Mr.Orchords" colloquialVersion="2026" edition="Professional" revision="{version}" />
+</SoftwareIdentity>'''
+    
+    with open(output_path, 'w') as f:
+        f.write(tag)
 ```
 
----
-
-## Compliance Checklist
-
-- [ ] SWID tag generated for every release (including hotfixes)
-- [ ] `ProductID` uniquely identifies each version
-- [ ] `Version` field matches SemVer exactly
-- [ ] `Regid` uses `regid.mooned.dev` format
-- [ ] Tag bundled in installer payload
-- [ ] Tag registered to `%ProgramData%\swidtag\regid.mooned.dev\`
-- [ ] Tag discoverable by SCCM/Intune (validate with IT test environment)
-- [ ] Store submission includes SWID data in package manifest
+The generated `.swidtag` file is:
+1. Embedded in the installer
+2. Installed to `%PROGRAMDATA%\Mr.Orchords\Mr.Orchords.swidtag`
+3. Registered with Windows (optional, for WMI query)
 
 ---
 
@@ -205,11 +273,11 @@ def generate_swid_tag(version: str) -> str:
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial spec — fully aligned with ISO/IEC 19770-2:2015 |
+| 1.0.0 | June 2026 | Initial spec — aligned with ISO/IEC 19770-2:2015 and ISO/IEC 12207:2017 |
 
 ---
 
-*Grounded in: ISO/IEC 19770-2:2015 — Information technology — IT asset management — Part 2: Software identification tag*
+*Grounded in: ISO/IEC 19770-2:2015 (Software Identification Tags), ISO/IEC 12207:2017 §6.4 (Transition)*
 
 
 
@@ -235,11 +303,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Sarah Miller | Initial version |
-| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
-- **Next review:** On ISO/IEC 19770 revision
-- **Reviewer:** Sarah Miller (Build & Release Engineer)
+- **Next review:** On ISO standard update
+- **Reviewer:** Mr.Orchords (Build & Release Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
