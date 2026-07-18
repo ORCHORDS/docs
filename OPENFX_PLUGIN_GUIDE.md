@@ -1,5 +1,3 @@
-> Auto-generated from `docs/OPENFX_PLUGIN_GUIDE.md` in the docs repo.
-
 ---
 title: "OpenFX Plugin Guide (Third-Party)"
 version: "1.0.0"
@@ -9,10 +7,10 @@ status: "review"
 
 # OpenFX Plugin Guide (Third-Party)
 
-**Project:** Beetle Studio  
+**Project:** Mr.Orchords  
 
-**Owner:** Daniel Kim (Effects & Compositing Engineer — SDK), Tom Anderson (Technical Writer — user guide)  
-**Reviewers:** Kirk Beka (CTO)  
+**Owner:** Mr.Orchords (Effects & Compositing Engineer — SDK), Mr.Orchords (Technical Writer — user guide)  
+**Reviewers:** Mr.Orchords (CTO)  
 **ISO Standards:** ISO/IEC 12207:2017 (development — API documentation), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -26,7 +24,7 @@ status: "review"
 |---|---|
 | **Scope** | Third-party OpenFX plugin user guide and developer getting-started |
 | **Diátaxis form** | Tutorial |
-| **Primary audience** | Plugin users, third-party plugin developers, Daniel Kim, Tom Anderson |
+| **Primary audience** | Plugin users, third-party plugin developers, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -34,7 +32,7 @@ status: "review"
 
 ## Overview
 
-This guide helps third-party plugin developers build effects compatible with Beetle Studio, and helps users install and manage third-party effects. Per **ISO/IEC 12207:2017 §6.1**, API documentation must be clear, accurate, and versioned so developers can build compatible plugins.
+This guide helps third-party plugin developers build effects compatible with Mr.Orchords, and helps users install and manage third-party effects. Per **ISO/IEC 12207:2017 §6.1**, API documentation must be clear, accurate, and versioned so developers can build compatible plugins.
 ## Contents
 
 - [For Plugin Users](#for-plugin-users)
@@ -76,9 +74,9 @@ The best sources for OpenFX plugins:
 2. Extract — you should get a folder with a `.ofx` or `.vst3` file
 3. Copy the `.ofx` or `.vst3` file to your plugin directory:
    ```
-   %PROGRAMFILES%\Beetle Studio\OpenFX\
+   %PROGRAMFILES%\Mr.Orchords\OpenFX\
    ```
-4. Launch Beetle Studio — the plugin appears in the Effects Panel
+4. Launch Mr.Orchords — the plugin appears in the Effects Panel
 
 ### Managing Plugins
 
@@ -93,14 +91,14 @@ The best sources for OpenFX plugins:
 
 ### Getting Started
 
-To build an OpenFX plugin for Beetle Studio, you'll need:
+To build an OpenFX plugin for Mr.Orchords, you'll need:
 
 | Tool | Version | Notes |
 |---|---|---|
 | C++ compiler | MSVC 2022, GCC 12+ | C++20 minimum |
 | CMake | 3.20+ | Build system |
 | OpenFX SDK | 1.4 | [Download from openfx.org](https://openfx.org) |
-| Beetle Studio | Latest beta | For testing |
+| Mr.Orchords | Latest beta | For testing |
 
 ### Your First Plugin
 
@@ -163,13 +161,13 @@ cmake --build . --config Release
 
 ### Testing Your Plugin
 
-1. Copy `MyFirstEffect.ofx` to `%PROGRAMFILES%\Beetle Studio\OpenFX\`
-2. Launch Beetle Studio
+1. Copy `MyFirstEffect.ofx` to `%PROGRAMFILES%\Mr.Orchords\OpenFX\`
+2. Launch Mr.Orchords
 3. Apply the effect to a clip and verify:
    - [ ] Effect appears in Effects Panel
    - [ ] Parameters render correctly
    - [ ] No memory leaks (check with RenderDoc/PIX)
-   - [ ] Thread-safe (Beetle Studio calls render from multiple threads)
+   - [ ] Thread-safe (Mr.Orchords calls render from multiple threads)
 
 ---
 
@@ -221,11 +219,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Daniel Kim | Initial version |
-| 1.0.1 | June 2026 | Daniel Kim | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Daniel Kim (Effects & Compositing Engineer — SDK)
+- **Reviewer:** Mr.Orchords (Effects & Compositing Engineer — SDK)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
