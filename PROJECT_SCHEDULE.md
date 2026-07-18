@@ -1,15 +1,15 @@
 ---
-title: "BEETLE STUDIO"
+title: "MR.ORCHORDS"
 version: "1.0.0"
 last-updated: "2026-06-21"
 status: "review"
 ---
 
-# BEETLE STUDIO
+# MR.ORCHORDS
 
-**Project:** Beetle Studio
-**Owner:** Chris Taylor (Product Manager)
-**Reviewers:** Mooned Dev (CEO), Kirk Beka (CTO)
+**Project:** Mr.Orchords
+**Owner:** Mr.Orchords (Product Manager)
+**Reviewers:** Mr.Orchords (CEO), Mr.Orchords (CTO)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
 **Version:** 1.0.0
 **Last Updated:** June 2026
@@ -18,7 +18,7 @@ status: "review"
 
 ## Overview
 
-This document provides the canonical reference for the Beetle Studio team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
+This document provides the canonical reference for the Mr.Orchords team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
 
 ---
 
@@ -26,7 +26,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | This document covers beetle studio for the Beetle Studio team. |
+| **Scope** | This document covers mrorchords studio for the Mr.Orchords team. |
 | **Diátaxis form** | Reference |
 | **Primary audience** | All team members, leadership |
 | **Secondary audience** | External stakeholders, investors |
@@ -63,8 +63,8 @@ This document provides the canonical reference for the Beetle Studio team's stru
 - [Q4 2027 Priorities](#q4-2027-priorities)
 
 ---
-**Company:** Mooned Dev  
-**Website:** www.mooned.dev  
+**Company:** Mr.Orchords  
+**Website:** www.orchords.com  
 **Version:** 1.0  
 **Last Updated:** June 2026  
 
@@ -72,7 +72,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 
 # EXECUTIVE SUMMARY
 
-This document outlines the complete project schedule, milestone timeline, and operational calendar for Beetle Studio development. The project is divided into three major phases spanning 15 months from kickoff to public launch.
+This document outlines the complete project schedule, milestone timeline, and operational calendar for Mr.Orchords development. The project is divided into three major phases spanning 15 months from kickoff to public launch.
 
 **Total Duration:** 15 Months  
 **Target Launch:** September 2027  
@@ -109,14 +109,14 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 2-4: Core Foundation
 | Task | Owner | Deadline | Status |
 |------|-------|----------|--------|
-| Window system | Alex Chen | Week 2 | |
-| DirectX 12 context | Mooned Dev | Week 3 | |
-| FFmpeg integration | Sophie Williams | Week 3 | |
-| Qt6 setup | Alex Chen | Week 2 | |
-| Logging system | Kirk Beka | Week 2 | |
-| Error handling | Kirk Beka | Week 3 | |
-| Memory management | Mooned Dev | Week 4 | |
-| Build system | Mike Johnson | Week 4 | |
+| Window system | Mr.Orchords | Week 2 | |
+| DirectX 12 context | Mr.Orchords | Week 3 | |
+| FFmpeg integration | Mr.Orchords | Week 3 | |
+| Qt6 setup | Mr.Orchords | Week 2 | |
+| Logging system | Mr.Orchords | Week 2 | |
+| Error handling | Mr.Orchords | Week 3 | |
+| Memory management | Mr.Orchords | Week 4 | |
+| Build system | Mr.Orchords | Week 4 | |
 
 #### Month 1 Deliverables:
 - [ ] Development environment complete
@@ -131,20 +131,20 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 5-6: Rendering Pipeline
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| DirectX 12 device creation | Mooned Dev | Week 5 | Window system |
-| Command queue implementation | James Park | Week 5 | Device |
-| Swap chain setup | James Park | Week 6 | Command queue |
-| Render pass architecture | Mooned Dev | Week 6 | Swap chain |
-| Frame pacing | James Park | Week 6 | Render pass |
+| DirectX 12 device creation | Mr.Orchords | Week 5 | Window system |
+| Command queue implementation | Mr.Orchords | Week 5 | Device |
+| Swap chain setup | Mr.Orchords | Week 6 | Command queue |
+| Render pass architecture | Mr.Orchords | Week 6 | Swap chain |
+| Frame pacing | Mr.Orchords | Week 6 | Render pass |
 
 #### Week 7-8: Video Preview
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| FFmpeg video decode | Sophie Williams | Week 7 | FFmpeg integration |
-| Frame buffer management | James Park | Week 7 | Render pass |
-| Preview texture upload | James Park | Week 8 | Decode |
-| Viewport widget | Alex Chen | Week 8 | Frame buffer |
-| Playback controls | Emma Thompson | Week 8 | Viewport |
+| FFmpeg video decode | Mr.Orchords | Week 7 | FFmpeg integration |
+| Frame buffer management | Mr.Orchords | Week 7 | Render pass |
+| Preview texture upload | Mr.Orchords | Week 8 | Decode |
+| Viewport widget | Mr.Orchords | Week 8 | Frame buffer |
+| Playback controls | Mr.Orchords | Week 8 | Viewport |
 
 #### Month 2 Deliverables:
 - [ ] DirectX 12 pipeline operational
@@ -159,20 +159,20 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 9-10: Timeline Foundation
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Timeline data structures | Emma Thompson | Week 9 | Playback controls |
-| Track system | Emma Thompson | Week 9 | Data structures |
-| Clip representation | Emma Thompson | Week 10 | Track system |
-| Timeline UI widget | Alex Chen | Week 10 | Clip data |
-| Clip rendering | James Park | Week 10 | Timeline UI |
+| Timeline data structures | Mr.Orchords | Week 9 | Playback controls |
+| Track system | Mr.Orchords | Week 9 | Data structures |
+| Clip representation | Mr.Orchords | Week 10 | Track system |
+| Timeline UI widget | Mr.Orchords | Week 10 | Clip data |
+| Clip rendering | Mr.Orchords | Week 10 | Timeline UI |
 
 #### Week 11-12: Basic Editing
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Clip selection | Emma Thompson | Week 11 | Timeline UI |
-| Clip dragging | Alex Chen | Week 11 | Selection |
-| Basic trimming | Emma Thompson | Week 12 | Dragging |
-| Undo system | Emma Thompson | Week 12 | Trimming |
-| Playhead navigation | Alex Chen | Week 12 | Playback |
+| Clip selection | Mr.Orchords | Week 11 | Timeline UI |
+| Clip dragging | Mr.Orchords | Week 11 | Selection |
+| Basic trimming | Mr.Orchords | Week 12 | Dragging |
+| Undo system | Mr.Orchords | Week 12 | Trimming |
+| Playhead navigation | Mr.Orchords | Week 12 | Playback |
 
 #### Month 3 Deliverables:
 - [ ] Timeline component functional
@@ -187,20 +187,20 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 13-14: Full Codec Support
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| H.264 decode/encode | Sophie Williams | Week 13 | FFmpeg |
-| HEVC support | Sophie Williams | Week 13 | H.264 work |
-| ProRes support | Sophie Williams | Week 14 | HEVC work |
-| Hardware encoding | Sophie Williams | Week 14 | Codec base |
-| Format detection | Sophie Williams | Week 14 | ProRes |
+| H.264 decode/encode | Mr.Orchords | Week 13 | FFmpeg |
+| HEVC support | Mr.Orchords | Week 13 | H.264 work |
+| ProRes support | Mr.Orchords | Week 14 | HEVC work |
+| Hardware encoding | Mr.Orchords | Week 14 | Codec base |
+| Format detection | Mr.Orchords | Week 14 | ProRes |
 
 #### Week 15-16: Effects Foundation
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Effect framework | Daniel Kim | Week 15 | Render pipeline |
-| Blur effect | Daniel Kim | Week 15 | Framework |
-| Color correction | Daniel Kim | Week 16 | Blur |
-| Layer compositing | Daniel Kim | Week 16 | Color |
-| Blend modes | Daniel Kim | Week 16 | Compositing |
+| Effect framework | Mr.Orchords | Week 15 | Render pipeline |
+| Blur effect | Mr.Orchords | Week 15 | Framework |
+| Color correction | Mr.Orchords | Week 16 | Blur |
+| Layer compositing | Mr.Orchords | Week 16 | Color |
+| Blend modes | Mr.Orchords | Week 16 | Compositing |
 
 #### Month 4 Deliverables:
 - [ ] All major formats supported
@@ -215,20 +215,20 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 17-18: Multi-track & Audio
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Multi-track support | Emma Thompson | Week 17 | Layer system |
-| Audio tracks | Ryan Foster | Week 17 | Tracks |
-| Audio playback | Ryan Foster | Week 18 | Audio tracks |
-| Audio/video sync | Ryan Foster | Week 18 | Playback |
-| Audio waveforms | Emma Thompson | Week 18 | Audio |
+| Multi-track support | Mr.Orchords | Week 17 | Layer system |
+| Audio tracks | Mr.Orchords | Week 17 | Tracks |
+| Audio playback | Mr.Orchords | Week 18 | Audio tracks |
+| Audio/video sync | Mr.Orchords | Week 18 | Playback |
+| Audio waveforms | Mr.Orchords | Week 18 | Audio |
 
 #### Week 19-20: Transitions & Advanced Editing
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Transition system | Daniel Kim | Week 19 | Effects |
-| Cross-dissolve | Daniel Kim | Week 19 | Transitions |
-| Wipe transitions | Daniel Kim | Week 20 | Cross-dissolve |
-| Ripple edit | Emma Thompson | Week 20 | Trimming |
-| Roll edit | Emma Thompson | Week 20 | Ripple |
+| Transition system | Mr.Orchords | Week 19 | Effects |
+| Cross-dissolve | Mr.Orchords | Week 19 | Transitions |
+| Wipe transitions | Mr.Orchords | Week 20 | Cross-dissolve |
+| Ripple edit | Mr.Orchords | Week 20 | Trimming |
+| Roll edit | Mr.Orchords | Week 20 | Ripple |
 
 #### Month 5 Deliverables:
 - [ ] Multi-track timeline
@@ -243,20 +243,20 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 21-22: Performance
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Performance profiling | James Park | Week 21 | All |
-| GPU optimization | Mooned Dev | Week 21 | Profiling |
-| Memory optimization | Sophie Williams | Week 22 | Profiling |
-| Cache optimization | Emma Thompson | Week 22 | Memory |
-| Thread optimization | Kirk Beka | Week 22 | Memory |
+| Performance profiling | Mr.Orchords | Week 21 | All |
+| GPU optimization | Mr.Orchords | Week 21 | Profiling |
+| Memory optimization | Mr.Orchords | Week 22 | Profiling |
+| Cache optimization | Mr.Orchords | Week 22 | Memory |
+| Thread optimization | Mr.Orchords | Week 22 | Memory |
 
 #### Week 23-24: Alpha Release Prep
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Bug fixing | Lisa Martinez | Week 23 | QA |
-| Alpha build | Mike Johnson | Week 23 | All fixes |
-| Alpha testing | Lisa Martinez | Week 24 | Build |
-| Documentation | Tom Anderson | Week 24 | Features |
-| Code signing setup | Sarah Miller | Week 24 | Alpha |
+| Bug fixing | Mr.Orchords | Week 23 | QA |
+| Alpha build | Mr.Orchords | Week 23 | All fixes |
+| Alpha testing | Mr.Orchords | Week 24 | Build |
+| Documentation | Mr.Orchords | Week 24 | Features |
+| Code signing setup | Mr.Orchords | Week 24 | Alpha |
 
 #### Month 6 Deliverables:
 - [ ] Alpha release
@@ -273,13 +273,13 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 25-28: Effects System
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Advanced blur | Daniel Kim | Week 25 | Phase 1 |
-| Sharpen effects | Daniel Kim | Week 25 | Blur |
-| Distortion effects | Daniel Kim | Week 26 | Sharpen |
-| Noise reduction | Daniel Kim | Week 26 | Distortion |
-| Color curves | Daniel Kim | Week 27 | Noise |
-| LUT support | Daniel Kim | Week 27 | Curves |
-| HDR pipeline | James Park | Week 28 | LUT |
+| Advanced blur | Mr.Orchords | Week 25 | Phase 1 |
+| Sharpen effects | Mr.Orchords | Week 25 | Blur |
+| Distortion effects | Mr.Orchords | Week 26 | Sharpen |
+| Noise reduction | Mr.Orchords | Week 26 | Distortion |
+| Color curves | Mr.Orchords | Week 27 | Noise |
+| LUT support | Mr.Orchords | Week 27 | Curves |
+| HDR pipeline | Mr.Orchords | Week 28 | LUT |
 
 #### Month 7 Deliverables:
 - [ ] 20+ effects total
@@ -294,13 +294,13 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 29-32: Audio System
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Audio mixer UI | Alex Chen | Week 29 | Phase 1 |
-| EQ effects | Ryan Foster | Week 29 | Mixer UI |
-| Compressor | Ryan Foster | Week 30 | EQ |
-| Reverb | Ryan Foster | Week 30 | Compressor |
-| VST hosting | Ryan Foster | Week 31 | Effects |
-| Audio normalization | Ryan Foster | Week 32 | Reverb |
-| Audio keyframes | Emma Thompson | Week 32 | Mixer |
+| Audio mixer UI | Mr.Orchords | Week 29 | Phase 1 |
+| EQ effects | Mr.Orchords | Week 29 | Mixer UI |
+| Compressor | Mr.Orchords | Week 30 | EQ |
+| Reverb | Mr.Orchords | Week 30 | Compressor |
+| VST hosting | Mr.Orchords | Week 31 | Effects |
+| Audio normalization | Mr.Orchords | Week 32 | Reverb |
+| Audio keyframes | Mr.Orchords | Week 32 | Mixer |
 
 #### Month 8 Deliverables:
 - [ ] Full audio mixer
@@ -315,12 +315,12 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 33-36: Plugin Architecture
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Plugin SDK | Daniel Kim | Week 33 | Effects base |
-| Plugin hosting | Daniel Kim | Week 34 | SDK |
-| OpenFX wrapper | Daniel Kim | Week 35 | Hosting |
-| Plugin manager UI | Alex Chen | Week 35 | Wrapper |
-| Plugin testing | Lisa Martinez | Week 36 | Manager |
-| Plugin documentation | Tom Anderson | Week 36 | Testing |
+| Plugin SDK | Mr.Orchords | Week 33 | Effects base |
+| Plugin hosting | Mr.Orchords | Week 34 | SDK |
+| OpenFX wrapper | Mr.Orchords | Week 35 | Hosting |
+| Plugin manager UI | Mr.Orchords | Week 35 | Wrapper |
+| Plugin testing | Mr.Orchords | Week 36 | Manager |
+| Plugin documentation | Mr.Orchords | Week 36 | Testing |
 
 #### Month 9 Deliverables:
 - [ ] Plugin SDK released
@@ -335,12 +335,12 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 37-40: Export System
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Export settings UI | Alex Chen | Week 37 | UI |
-| Render queue | Sophie Williams | Week 37 | Settings |
-| Batch export | Sophie Williams | Week 38 | Queue |
-| Network rendering | Sophie Williams | Week 39 | Batch |
-| Cloud export | Maya Rodriguez | Week 40 | Network |
-| Export presets | David Lee | Week 40 | Settings |
+| Export settings UI | Mr.Orchords | Week 37 | UI |
+| Render queue | Mr.Orchords | Week 37 | Settings |
+| Batch export | Mr.Orchords | Week 38 | Queue |
+| Network rendering | Mr.Orchords | Week 39 | Batch |
+| Cloud export | Mr.Orchords | Week 40 | Network |
+| Export presets | Mr.Orchords | Week 40 | Settings |
 
 #### Month 10 Deliverables:
 - [ ] Full export system
@@ -355,12 +355,12 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 41-44: Cloud Integration
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Firebase auth | Maya Rodriguez | Week 41 | Backend |
-| User profiles | Maya Rodriguez | Week 41 | Auth |
-| Project sync | Maya Rodriguez | Week 42 | Profiles |
-| Asset library | Maya Rodriguez | Week 43 | Sync |
-| Collaborative features | Maya Rodriguez | Week 44 | Library |
-| Offline mode | Maya Rodriguez | Week 44 | Sync |
+| Firebase auth | Mr.Orchords | Week 41 | Backend |
+| User profiles | Mr.Orchords | Week 41 | Auth |
+| Project sync | Mr.Orchords | Week 42 | Profiles |
+| Asset library | Mr.Orchords | Week 43 | Sync |
+| Collaborative features | Mr.Orchords | Week 44 | Library |
+| Offline mode | Mr.Orchords | Week 44 | Sync |
 
 #### Month 11 Deliverables:
 - [ ] User authentication
@@ -375,13 +375,13 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 45-48: Beta Preparation
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Beta build | Mike Johnson | Week 45 | All features |
-| Installer polish | Sarah Miller | Week 45 | Build |
-| Code signing | Sarah Miller | Week 46 | Installer |
-| Beta testing | Lisa Martinez | Week 46 | Build |
+| Beta build | Mr.Orchords | Week 45 | All features |
+| Installer polish | Mr.Orchords | Week 45 | Build |
+| Code signing | Mr.Orchords | Week 46 | Installer |
+| Beta testing | Mr.Orchords | Week 46 | Build |
 | Bug fixes | All | Week 47 | Testing |
-| Beta program | Rachel Green | Week 48 | Build |
-| Marketing prep | Jason Wong | Week 48 | Beta |
+| Beta program | Mr.Orchords | Week 48 | Build |
+| Marketing prep | Mr.Orchords | Week 48 | Beta |
 
 #### Month 12 Deliverables:
 - [ ] Beta release
@@ -398,12 +398,12 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 49-52: Store Preparation
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
-| Store assets | Nina Patel | Week 49 | Marketing |
-| Store listing | Jason Wong | Week 49 | Assets |
-| Pricing setup | Kevin Brown | Week 50 | Listing |
-| Legal review | Amanda Clark | Week 50 | Pricing |
-| Store submission | Sarah Miller | Week 51 | Review |
-| Store certification | Sarah Miller | Week 52 | Submission |
+| Store assets | Mr.Orchords | Week 49 | Marketing |
+| Store listing | Mr.Orchords | Week 49 | Assets |
+| Pricing setup | Mr.Orchords | Week 50 | Listing |
+| Legal review | Mr.Orchords | Week 50 | Pricing |
+| Store submission | Mr.Orchords | Week 51 | Review |
+| Store certification | Mr.Orchords | Week 52 | Submission |
 
 #### Month 13 Deliverables:
 - [ ] Store listing complete
@@ -419,11 +419,11 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 | Task | Owner | Deadline | Dependencies |
 |------|-------|----------|--------------|
 | Final bug fixes | All | Week 53 | Store feedback |
-| Performance final | James Park | Week 53 | Bugs |
-| Documentation complete | Tom Anderson | Week 54 | Features |
-| Tutorial videos | David Lee | Week 54 | Docs |
-| Support system | Rachel Green | Week 55 | Videos |
-| Launch build | Mike Johnson | Week 56 | Support |
+| Performance final | Mr.Orchords | Week 53 | Bugs |
+| Documentation complete | Mr.Orchords | Week 54 | Features |
+| Tutorial videos | Mr.Orchords | Week 54 | Docs |
+| Support system | Mr.Orchords | Week 55 | Videos |
+| Launch build | Mr.Orchords | Week 56 | Support |
 
 #### Month 14 Deliverables:
 - [ ] All critical bugs resolved
@@ -438,30 +438,30 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 #### Week 57: Pre-Launch
 | Day | Activity | Owner |
 |-----|----------|-------|
-| Mon | Final build verification | Mike Johnson |
-| Tue | Marketing blitz | Jason Wong |
-| Wed | Pre-launch announcement | Rachel Green |
-| Thu | Press kit release | Jason Wong |
-| Fri | Final checks | Kirk Beka |
+| Mon | Final build verification | Mr.Orchords |
+| Tue | Marketing blitz | Mr.Orchords |
+| Wed | Pre-launch announcement | Mr.Orchords |
+| Thu | Press kit release | Mr.Orchords |
+| Fri | Final checks | Mr.Orchords |
 
 #### Week 58: LAUNCH WEEK
 | Day | Activity | Owner | Milestone |
 |-----|----------|-------|----------|
 | Mon | Launch day | All | **VERSION 1.0 RELEASE** |
 | Tue | Launch monitoring | All | Support surge |
-| Wed | First update ready | Lisa Martinez | Hotfix standby |
-| Thu | Community engagement | Rachel Green | User feedback |
-| Fri | Launch analysis | Jason Wong | Initial metrics |
+| Wed | First update ready | Mr.Orchords | Hotfix standby |
+| Thu | Community engagement | Mr.Orchords | User feedback |
+| Fri | Launch analysis | Mr.Orchords | Initial metrics |
 
 #### Week 59-60: Post-Launch
 | Task | Owner | Timeline |
 |------|-------|----------|
-| Monitor metrics | Jason Wong | Ongoing |
-| Bug triage | Lisa Martinez | Daily |
-| Support tickets | Rachel Green | Daily |
-| First patch | Kirk Beka | Week 59 |
-| User feedback | Chris Taylor | Week 59 |
-| Update planning | Chris Taylor | Week 60 |
+| Monitor metrics | Mr.Orchords | Ongoing |
+| Bug triage | Mr.Orchords | Daily |
+| Support tickets | Mr.Orchords | Daily |
+| First patch | Mr.Orchords | Week 59 |
+| User feedback | Mr.Orchords | Week 59 |
+| Update planning | Mr.Orchords | Week 60 |
 
 #### Month 15 Deliverables:
 - [ ] Version 1.0 live
@@ -649,7 +649,7 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 **Document Version:** 1.0  
 **Created:** June 2026  
 **Next Review:** Monthly  
-**Approved By:** Mooned Dev (CEO), Kirk Beka (CTO)
+**Approved By:** Mr.Orchords (CEO), Mr.Orchords (CTO)
 
 ---
 
@@ -657,9 +657,9 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 
 ### Internal Documents
 
-- [BEETLE_STUDIO_TEAM.md](./BEETLE_STUDIO_TEAM.md) â€” Team roster and roles
-- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
-- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+- [MR_ORCHORDS_TEAM.md](./MR_ORCHORDS_TEAM.md) — Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) — Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) — Day-to-day team operations
 
 ### Standards & Frameworks
 
@@ -675,10 +675,10 @@ PHASE 3: RELEASE              ░░░░░░░░░░░░░░░░�
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Chris Taylor | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
 
 ### Review Cadence
 
 - **Next review:** September 2026
-- **Reviewer:** Mooned Dev (CEO), Kirk Beka (CTO)
+- **Reviewer:** Mr.Orchords (CEO), Mr.Orchords (CTO)
 - **Cadence:** Quarterly

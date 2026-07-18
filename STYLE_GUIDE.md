@@ -1,17 +1,15 @@
-> Auto-generated from `docs/STYLE_GUIDE.md` in the docs repo.
-
 ---
-title: "Beetle Studio — Documentation Style Guide"
+title: "Mr.Orchords — Documentation Style Guide"
 version: "1.0.0"
 last-updated: "2026-06-21"
 status: "review"
 ---
 
-# Beetle Studio — Documentation Style Guide
+# Mr.Orchords — Documentation Style Guide
 
-**Project:** Beetle Studio
-**Owner:** Tom Anderson (Technical Writer) — content; Kirk Beka (CTO) — technical authority
-**Reviewers:** Mooned Dev (CEO), all domain leads
+**Project:** Mr.Orchords
+**Owner:** Mr.Orchords (Technical Writer) — content; Mr.Orchords (CTO) — technical authority
+**Reviewers:** Mr.Orchords (CEO), all domain leads
 **ISO Standards:** ISO/IEC/IEEE 82079-1:2019 (preparation of information for use), ISO/IEC Directives Part 2 (document structure), ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality), ISO/IEC 27001:2022, ISO/IEC 27002:2022, ISO/IEC 27034-1:2011
 **Version:** 1.0.0
 **Last Updated:** June 2026
@@ -32,11 +30,11 @@ This guide itself is governed by the same review cadence as any other document a
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | All Markdown documents under `docs/` in the Beetle Studio project |
+| **Scope** | All Markdown documents under `docs/` in the Mr.Orchords project |
 | **Diátaxis form** | Reference |
 | **Primary audience** | Internal team members (engineering, product, operations, marketing, leadership) |
 | **Secondary audience** | External users reading user-facing docs (User Guide, Quick Start, FAQ, etc.) and third-party developers reading the OpenFX and VST plugin guides |
-| **Out of scope** | Marketing web copy on `mooned.dev`, support tickets, internal chat, code comments — those have their own conventions |
+| **Out of scope** | Marketing web copy on `orchords.com`, support tickets, internal chat, code comments — those have their own conventions |
 
 ---
 
@@ -58,7 +56,7 @@ Key principles we adopt from 82079-1:
 
 ### ISO/IEC Directives, Part 2:2021 — Principles and rules for the structure and drafting of ISO and IEC documents
 
-Defines the canonical structure for normative technical documents. The header block convention used in every Beetle Studio doc (`Project`, `Owner`, `Reviewers`, `ISO Standards`, `Version`, `Last Updated`) mirrors the ISO/IEC Directives front matter, and the body structure (Scope → Normative References → Terms → Overview → Body) is its standard.
+Defines the canonical structure for normative technical documents. The header block convention used in every Mr.Orchords doc (`Project`, `Owner`, `Reviewers`, `ISO Standards`, `Version`, `Last Updated`) mirrors the ISO/IEC Directives front matter, and the body structure (Scope → Normative References → Terms → Overview → Body) is its standard.
 
 ### ISO/IEC 12207:2017 — Systems and software engineering — Software life cycle processes
 
@@ -130,7 +128,7 @@ Every document begins with this exact front matter block, in this order:
 ```markdown
 # [Document Title]
 
-**Project:** Beetle Studio
+**Project:** Mr.Orchords
 **Owner:** [Name] ([Role]) — [sub-area if multiple owners]
 **Reviewers:** [Name] ([Role]), [Name] ([Role])
 **ISO Standards:** [ISO/IEC 12207:2017 (area)], [ISO/IEC 25010:2023 (characteristic)]
@@ -182,9 +180,9 @@ characteristics, naming them explicitly.]
 
 | Field | Required | Format | Example |
 |---|---|---|---|
-| `Project` | Yes | Fixed string | `Beetle Studio` |
-| `Owner` | Yes | `Name (Role)` or `Name (Role) — sub-area` | `Sarah Miller (Build & Release Engineer)` |
-| `Reviewers` | Yes | Comma-separated `Name (Role)` | `Kirk Beka (CTO), Mike Johnson (DevOps)` |
+| `Project` | Yes | Fixed string | `Mr.Orchords` |
+| `Owner` | Yes | `Name (Role)` or `Name (Role) — sub-area` | `Mr.Orchords (Build & Release Engineer)` |
+| `Reviewers` | Yes | Comma-separated `Name (Role)` | `Mr.Orchords (CTO), Mr.Orchords (DevOps)` |
 | `ISO Standards` | Yes | Comma-separated `ISO/IEC XXX:YYYY (area)` | `ISO/IEC 12207:2017 (lifecycle)` |
 | `Version` | Yes | SemVer | `1.0.0` |
 | `Last Updated` | Yes | `Month YYYY` | `June 2026` |
@@ -287,7 +285,7 @@ Use lowercase kebab-case in anchors. GitHub-flavored Markdown auto-generates anc
 
 ## Tone & Voice
 
-Beetle Studio documentation is **professional, precise, and direct**. We explain complex things clearly without dumbing them down.
+Mr.Orchords documentation is **professional, precise, and direct**. We explain complex things clearly without dumbing them down.
 
 - **Professional** — no slang, no jokes in the body, no emoji (except in release notes when explicitly relevant)
 - **Precise** — use exact numbers, exact filenames, exact version numbers; no "and so on", no "etc." in technical content
@@ -373,12 +371,12 @@ Owners may set a stricter cadence in their document's maintenance block.
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Tom Anderson | Initial style guide. Codifies the conventions already followed by all 41 docs. Adds Scope & Audience block, Table of Contents rule for long docs, and explicit ISO/IEC/IEEE 82079-1:2019 reference. |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial style guide. Codifies the conventions already followed by all 41 docs. Adds Scope & Audience block, Table of Contents rule for long docs, and explicit ISO/IEC/IEEE 82079-1:2019 reference. |
 
 ### Review Cadence
 
 - **Next review:** June 2027
-- **Reviewer:** Tom Anderson (Technical Writer), Kirk Beka (CTO)
+- **Reviewer:** Mr.Orchords (Technical Writer), Mr.Orchords (CTO)
 - **Cadence:** Annual, or on adoption of a new ISO standard that affects documentation
 
 ---
