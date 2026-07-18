@@ -1,5 +1,3 @@
-> Auto-generated from `docs/graphics/RENDERING_PIPELINE.md` in the docs repo.
-
 ---
 title: "Rendering Pipeline"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Rendering Pipeline
 
-**Project:** Beetle Studio  
-**Owner:** James Park (Graphics Engineer) — with Mooned Dev (CEO) on core architecture  
-**Reviewers:** Mooned Dev, Daniel Kim (Effects), Sophie Williams (Codec)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Graphics Engineer) — with Mr.Orchords (CEO) on core architecture  
+**Reviewers:** Mr.Orchords, Mr.Orchords (Effects), Mr.Orchords (Codec)  
 **ISO Standards:** ISO/IEC 12207:2017 (development), ISO/IEC 25010:2023 (functional suitability, performance efficiency)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | DX12/Vulkan render graph and shader pipeline overview |
 | **Diátaxis form** | Explanation |
-| **Primary audience** | James Park, Mooned Dev, Daniel Kim, Sophie Williams |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document describes the Beetle Studio rendering pipeline. Per **ISO/IEC 12207:2017**, the software design must define internal interfaces between subsystems. The rendering pipeline is the interface between the codec output (decoded frames) and the preview viewport. It must satisfy **ISO/IEC 25010:2023**'s performance efficiency requirements.
+This document describes the Mr.Orchords rendering pipeline. Per **ISO/IEC 12207:2017**, the software design must define internal interfaces between subsystems. The rendering pipeline is the interface between the codec output (decoded frames) and the preview viewport. It must satisfy **ISO/IEC 25010:2023**'s performance efficiency requirements.
 ## Contents
 
 - [Pipeline Architecture](#pipeline-architecture)
@@ -86,7 +84,7 @@ This document describes the Beetle Studio rendering pipeline. Per **ISO/IEC 1220
 
 ## Render Graph
 
-Beetle Studio uses a **render graph** to manage GPU resources and dependencies. The graph:
+Mr.Orchords uses a **render graph** to manage GPU resources and dependencies. The graph:
 
 - **Nodes** = render passes (color correction, effects, UI overlay, viewport)
 - **Edges** = data dependencies (pass A outputs → pass B inputs)
@@ -230,11 +228,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | James Park | Initial version |
-| 1.0.1 | June 2026 | James Park | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On rendering architecture change
-- **Reviewer:** James Park (Graphics Engineer) — with Mooned Dev (CEO) on core architecture
+- **Reviewer:** Mr.Orchords (Graphics Engineer) — with Mr.Orchords (CEO) on core architecture
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
