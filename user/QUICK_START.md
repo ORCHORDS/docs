@@ -5,7 +5,7 @@
 #include <memory>
 #include "Clip.h"
 
-namespace beetle {
+namespace mrorchords {
     class TimelineModel {
     public:
         TimelineModel();
@@ -72,7 +72,7 @@ namespace beetle {
 #include "TimelineModel.h"
 #include <algorithm>
 
-namespace beetle {
+namespace mrorchords {
 
     TimelineModel::TimelineModel() {}
 

@@ -1,63 +1,41 @@
-> Auto-generated from `docs/user/GETTING_STARTED.md` in the docs repo.
+# Getting Started
 
----
-title: "Getting Started with Beetle Studio"
-version: "1.0.0"
-last-updated: "2026-06-21"
-status: "review"
----
+## First Launch
 
-# Getting Started with Beetle Studio
+When you first launch the application, you'll see the welcome screen with options to create a new project or open an existing one.
 
-## System Requirements
+## Creating Your First Project
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| OS | Windows 10 (64-bit) | Windows 11 |
-| CPU | Intel i5-9400 / AMD Ryzen 5 3600 | Intel i7-12700K / AMD Ryzen 7 5800X |
-| RAM | 8 GB | 32 GB |
-| GPU | NVIDIA GTX 1660 / AMD RX 580 | NVIDIA RTX 3060 / AMD RX 6700 XT |
-| Storage | 500 MB + project space | NVMe SSD recommended |
-| Display | 1920x1080 | Dual monitor setup |
+1. Click **New Project**
+2. Enter a project name
+3. Choose your project settings (resolution, frame rate)
+4. Click **Create**
 
-## Installation
+## Importing Media
 
-1. Download `BeetleStudio-Setup.exe` from [mooned.dev](https://www.mooned.dev)
-2. Run the installer and follow the wizard
-3. Launch Beetle Studio from the Start menu or desktop shortcut
+Drag and drop video files into the Project Browser, or use **File > Import Media**.
 
-## Quick Start
+## Basic Editing
 
-### Create a New Project
-1. **File > New Project** (Ctrl+N)
-2. Choose project name and location
-3. Set timeline resolution (1080p default) and frame rate (30fps default)
+- **Drag clips** to the Timeline
+- **Trim clips** by dragging their edges
+- **Add effects** from the Effects Panel
+- **Preview** your work in the Viewport
 
-### Import Media
-1. **File > Import** (Ctrl+I) or drag files into the Project panel
-2. Supported formats: MP4, MOV, AVI, MKV, WAV, MP3, PNG, JPG, TIFF
+## Saving Your Work
 
-### Basic Editing
-1. Drag clips from Project panel to the Timeline
-2. Use **I** and **O** keys to set in/out points
-3. **C** to cut at playhead, **Delete** to remove selected clip
-4. Drag clip edges to trim
+Press `Ctrl+S` to save. Projects are auto-saved every 5 minutes.
 
-### Export
-1. **File > Export** (Ctrl+E)
-2. Choose codec, resolution, and quality
-3. Click **Start Export**
+## Next Steps
 
-## Keyboard Shortcuts
+- See the User Guide for detailed feature documentation
+- Check the Keyboard Shortcuts reference for faster editing
+- Watch tutorial videos on our website
+
+## Timeline Zoom Shortcuts
 
 | Action | Shortcut |
-|--------|----------|
-| Play/Pause | Space |
-| Cut | C |
-| Undo | Ctrl+Z |
-| Redo | Ctrl+Shift+Z |
-| Import | Ctrl+I |
-| Export | Ctrl+E |
-| Zoom In | Ctrl++ |
+|---|---|
+| Zoom In | Ctrl+= |
 | Zoom Out | Ctrl+- |
 | Fit Timeline | Ctrl+0 |

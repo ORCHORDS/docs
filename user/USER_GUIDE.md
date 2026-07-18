@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <functional>
 
-namespace beetle {
+namespace mrorchords {
 
 class KeyboardShortcuts {
 public:
