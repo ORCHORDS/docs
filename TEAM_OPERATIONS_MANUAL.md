@@ -1,15 +1,15 @@
 ---
-title: "BEETLE STUDIO"
+title: "MR.ORCHORDS"
 version: "1.0.0"
 last-updated: "2026-06-21"
 status: "review"
 ---
 
-# BEETLE STUDIO
+# MR.ORCHORDS
 
-**Project:** Beetle Studio
-**Owner:** Amanda Clark (Operations Lead)
-**Reviewers:** Kirk Beka (CTO), Mike Johnson (DevOps Lead)
+**Project:** Mr.Orchords
+**Owner:** Mr.Orchords (Operations Lead)
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (DevOps Lead)
 **ISO Standards:** ISO/IEC 12207:2017 (lifecycle), ISO/IEC 25010:2023 (quality model)
 **Version:** 1.0.0
 **Last Updated:** 2026-06-21
@@ -18,7 +18,7 @@ status: "review"
 
 ## Overview
 
-This document provides the canonical reference for the Beetle Studio team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
+This document provides the canonical reference for the Mr.Orchords team's structure, schedule, and operations. It is grounded in ISO/IEC 12207:2017 (Software life cycle processes) and ISO/IEC 25010:2023 (Quality model).
 
 ---
 
@@ -26,7 +26,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | This document covers beetle studio for the Beetle Studio team. |
+| **Scope** | This document covers mrorchords studio for the Mr.Orchords team. |
 | **Diátaxis form** | Reference |
 | **Primary audience** | All team members |
 | **Secondary audience** | New hires, contractors |
@@ -36,45 +36,45 @@ This document provides the canonical reference for the Beetle Studio team's stru
 ## Contents
 
 - [Comprehensive Team Operations Manual](#comprehensive-team-operations-manual)
-- [1. MOONED DEV](#1-mooned-dev)
+- [1. MR.ORCHORDS](#1-mrorchords)
   - [Founder & CEO / Lead Graphics Engineer](#founder-ceo-lead-graphics-engineer)
-- [2. KIRK BEKA](#2-kirk-beka)
+- [2. MR.ORCHORDS](#2-mrorchords)
   - [Co-Founder & CTO](#cofounder-cto)
-- [3. ALEX CHEN](#3-alex-chen)
+- [3. MR.ORCHORDS](#3-mrorchords)
   - [Lead UI/UX Engineer](#lead-uiux-engineer)
-- [4. MAYA RODRIGUEZ](#4-maya-rodriguez)
+- [4. MR.ORCHORDS](#4-mrorchords)
   - [Senior Backend Developer (Backend Lead)](#senior-backend-developer-backend-lead)
-- [5. JAMES PARK](#5-james-park)
+- [5. MR.ORCHORDS](#5-mrorchords)
   - [Senior Graphics Engineer](#senior-graphics-engineer)
-- [6. SOPHIE WILLIAMS](#6-sophie-williams)
+- [6. MR.ORCHORDS](#6-mrorchords)
   - [Video Codec Engineer](#video-codec-engineer)
-- [7. DANIEL KIM](#7-daniel-kim)
+- [7. MR.ORCHORDS](#7-mrorchords)
   - [Effects & Compositing Engineer](#effects-compositing-engineer)
-- [8. EMMA THOMPSON](#8-emma-thompson)
+- [8. MR.ORCHORDS](#8-mrorchords)
   - [Timeline Engineer](#timeline-engineer)
-- [9. RYAN FOSTER](#9-ryan-foster)
+- [9. MR.ORCHORDS](#9-mrorchords)
   - [Audio Engineer](#audio-engineer)
-- [10. LISA MARTINEZ](#10-lisa-martinez)
+- [10. MR.ORCHORDS](#10-mrorchords)
   - [QA Lead](#qa-lead)
-- [11. MIKE JOHNSON](#11-mike-johnson)
+- [11. MR.ORCHORDS](#11-mrorchords)
   - [DevOps Lead](#devops-lead)
-- [12. SARAH MILLER](#12-sarah-miller)
+- [12. MR.ORCHORDS](#12-mrorchords)
   - [Build & Release Engineer](#build-release-engineer)
-- [13. CHRIS TAYLOR](#13-chris-taylor)
+- [13. MR.ORCHORDS](#13-mrorchords)
   - [Product Manager](#product-manager)
-- [14. NINA PATEL](#14-nina-patel)
+- [14. MR.ORCHORDS](#14-mrorchords)
   - [UX Designer](#ux-designer)
-- [15. DAVID LEE](#15-david-lee)
+- [15. MR.ORCHORDS](#15-mrorchords)
   - [Motion Graphics Designer](#motion-graphics-designer)
-- [16. TOM ANDERSON](#16-tom-anderson)
+- [16. MR.ORCHORDS](#16-mrorchords)
   - [Technical Writer](#technical-writer)
-- [17. JASON WONG](#17-jason-wong)
+- [17. MR.ORCHORDS](#17-mrorchords)
   - [Marketing Manager](#marketing-manager)
-- [18. RACHEL GREEN](#18-rachel-green)
+- [18. MR.ORCHORDS](#18-mrorchords)
   - [Community Manager](#community-manager)
-- [19. AMANDA CLARK](#19-amanda-clark)
+- [19. MR.ORCHORDS](#19-mrorchords)
   - [Operations Manager](#operations-manager)
-- [20. KEVIN BROWN](#20-kevin-brown)
+- [20. MR.ORCHORDS](#20-mrorchords)
   - [Business Development](#business-development)
 - [MONDAY - THURSDAY](#monday-thursday)
 - [FRIDAY](#friday)
@@ -97,9 +97,9 @@ This document provides the canonical reference for the Beetle Studio team's stru
 - [Required Technical Skills by Role](#required-technical-skills-by-role)
 
 ---
-**Company:** Mooned Dev  
-**Product:** Beetle Studio - Professional Video Editor  
-**Website:** www.mooned.dev  
+**Company:** Mr.Orchords  
+**Product:** Mr.Orchords - Professional Video Editor  
+**Website:** www.orchords.com  
 **Version:** 1.0  
 **Last Updated:** June 2026  
 
@@ -122,7 +122,7 @@ This document provides the canonical reference for the Beetle Studio team's stru
 
 # COMPANY OVERVIEW
 
-Mooned Dev is a software company dedicated to building professional-grade video editing software. Our flagship product, Beetle Studio, aims to provide After Effects-level capabilities in an accessible, modern package. We believe that powerful video editing tools should be available to creators worldwide, and we are building the technology to make that possible.
+Mr.Orchords is a software company dedicated to building professional-grade video editing software. Our flagship product, Mr.Orchords, aims to provide After Effects-level capabilities in an accessible, modern package. We believe that powerful video editing tools should be available to creators worldwide, and we are building the technology to make that possible.
 
 Our team of 20 professionals combines deep technical expertise with creative vision to deliver a world-class video editing experience. We operate with a commitment to excellence, continuous improvement, and user-focused development.
 
@@ -139,7 +139,7 @@ Our team of 20 professionals combines deep technical expertise with creative vis
 
 ---
 
-## 1. MOONED DEV
+## 1. MR.ORCHORDS
 ### Founder & CEO / Lead Graphics Engineer
 
 **Department:** Executive / Engineering  
@@ -154,15 +154,15 @@ Our team of 20 professionals combines deep technical expertise with creative vis
 
 #### ROLE OVERVIEW
 
-Mooned Dev serves as the visionary leader and technical driving force behind Beetle Studio. As Founder and CEO, they set the strategic direction of the company while simultaneously leading the most critical technical component—the graphics and rendering engine that forms the foundation of the video editor.
+Mr.Orchords serves as the visionary leader and technical driving force behind Mr.Orchords. As Founder and CEO, they set the strategic direction of the company while simultaneously leading the most critical technical component—the graphics and rendering engine that forms the foundation of the video editor.
 
 #### DETAILED RESPONSIBILITIES
 
 **Strategic Leadership:**
 - Define and communicate the company's mission, vision, and values
-- Set long-term strategic goals for Beetle Studio
+- Set long-term strategic goals for Mr.Orchords
 - Make final decisions on product direction and feature priorities
-- Represent Mooned Dev in all external communications
+- Represent Mr.Orchords in all external communications
 - Build and maintain partnerships with key technology providers
 - Oversee all departmental heads and ensure alignment with company goals
 - Approve major expenditures and resource allocations
@@ -191,7 +191,7 @@ Mooned Dev serves as the visionary leader and technical driving force behind Bee
 - Review overnight build reports and CI/CD status
 - Check and respond to critical Slack messages from engineering leads
 - Review code commits and pull requests for graphics engine
-- Conduct brief 15-minute standup with CTO (Kirk Beka)
+- Conduct brief 15-minute standup with CTO (Mr.Orchords)
 - Work on graphics engine code (2-3 hours of focused coding time)
 - Review technical designs and architectural decisions
 - Handle any urgent engineering escalations
@@ -246,18 +246,18 @@ Mooned Dev serves as the visionary leader and technical driving force behind Bee
 
 **Reports To:** Board of Directors (if applicable)  
 **Collaborates With:**
-- Kirk Beka (CTO) - Daily technical coordination
+- Mr.Orchords (CTO) - Daily technical coordination
 - All department heads - Strategic alignment
 - Investors/Partners - Business relationships
 - External technology vendors - Technical partnerships
 
 ---
 
-## 2. KIRK BEKA
+## 2. MR.ORCHORDS
 ### Co-Founder & CTO
 
 **Department:** Engineering  
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Manages:** Engineering Department  
 
 #### COMPENSATION & EMPLOYMENT
@@ -268,12 +268,12 @@ Mooned Dev serves as the visionary leader and technical driving force behind Bee
 
 #### ROLE OVERVIEW
 
-Kirk Beka serves as the Chief Technology Officer, bridging the gap between Mooned Dev's vision and technical implementation. As CTO, Kirk oversees all technical operations, ensures architectural consistency across teams, and manages the engineering department's day-to-day operations. Kirk represents the second technical pillar of the leadership team, handling system architecture, code quality, security, and infrastructure decisions.
+Mr.Orchords serves as the Chief Technology Officer, bridging the gap between Mr.Orchords's vision and technical implementation. As CTO, Mr.Orchords oversees all technical operations, ensures architectural consistency across teams, and manages the engineering department's day-to-day operations. Mr.Orchords represents the second technical pillar of the leadership team, handling system architecture, code quality, security, and infrastructure decisions.
 
 #### DETAILED RESPONSIBILITIES
 
 **Technical Architecture:**
-- Design and maintain the overall system architecture of Beetle Studio
+- Design and maintain the overall system architecture of Mr.Orchords
 - Create and enforce technical standards across all engineering teams
 - Review and approve major architectural decisions
 - Define the technology stack and toolchain
@@ -365,13 +365,13 @@ Kirk Beka serves as the Chief Technology Officer, bridging the gap between Moone
 
 #### STAKEHOLDER RELATIONSHIPS
 
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Collaborates With:**
-- Mooned Dev - Daily coordination on technical strategy
+- Mr.Orchords - Daily coordination on technical strategy
 - All Engineering Leads - Technical guidance
-- Mike Johnson (DevOps) - Infrastructure coordination
-- Maya Rodriguez (Backend) - System integration
-- Lisa Martinez (QA) - Quality assurance oversight
+- Mr.Orchords (DevOps) - Infrastructure coordination
+- Mr.Orchords (Backend) - System integration
+- Mr.Orchords (QA) - Quality assurance oversight
 
 ---
 
@@ -379,16 +379,16 @@ Kirk Beka serves as the Chief Technology Officer, bridging the gap between Moone
 
 ---
 
-## 3. ALEX CHEN
+## 3. MR.ORCHORDS
 ### Lead UI/UX Engineer
 
 **Department:** Engineering  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** UI/UX Engineering Team  
 
 #### ROLE OVERVIEW
 
-Alex Chen leads the user interface and user experience development for Beetle Studio. As the UI/UX Lead, Alex is responsible for building the visual and interactive components that users interact with daily. This includes the main application window, timeline, effect panels, preview viewport, and all user-facing controls. Alex ensures that Beetle Studio's interface is not only beautiful but also intuitive, responsive, and optimized for professional workflows.
+Mr.Orchords leads the user interface and user experience development for Mr.Orchords. As the UI/UX Lead, Mr.Orchords is responsible for building the visual and interactive components that users interact with daily. This includes the main application window, timeline, effect panels, preview viewport, and all user-facing controls. Mr.Orchords ensures that Mr.Orchords's interface is not only beautiful but also intuitive, responsive, and optimized for professional workflows.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -480,16 +480,16 @@ Alex Chen leads the user interface and user experience development for Beetle St
 
 ---
 
-## 4. MAYA RODRIGUEZ
+## 4. MR.ORCHORDS
 ### Senior Backend Developer (Backend Lead)
 
 **Department:** Engineering  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** Backend Team  
 
 #### ROLE OVERVIEW
 
-Maya Rodriguez leads all backend and cloud services for Beetle Studio. This includes Firebase authentication, Firestore database architecture, cloud functions, and the integration between desktop application and cloud services. Maya ensures that users have a seamless experience when logging in, syncing projects, and accessing cloud features.
+Mr.Orchords leads all backend and cloud services for Mr.Orchords. This includes Firebase authentication, Firestore database architecture, cloud functions, and the integration between desktop application and cloud services. Mr.Orchords ensures that users have a seamless experience when logging in, syncing projects, and accessing cloud features.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -579,16 +579,16 @@ Maya Rodriguez leads all backend and cloud services for Beetle Studio. This incl
 
 ---
 
-## 5. JAMES PARK
+## 5. MR.ORCHORDS
 ### Senior Graphics Engineer
 
 **Department:** Engineering  
-**Reports To:** Mooned Dev (CEO) / Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CEO) / Mr.Orchords (CTO)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-James Park is a senior graphics engineer focused on the rendering pipeline of Beetle Studio. Working alongside Mooned Dev, James is responsible for implementing the DirectX 12 rendering backend, developing shaders, and ensuring the preview viewport delivers professional-quality visuals. James brings deep expertise in GPU programming and real-time rendering techniques.
+Mr.Orchords is a senior graphics engineer focused on the rendering pipeline of Mr.Orchords. Working alongside Mr.Orchords, Mr.Orchords is responsible for implementing the DirectX 12 rendering backend, developing shaders, and ensuring the preview viewport delivers professional-quality visuals. Mr.Orchords brings deep expertise in GPU programming and real-time rendering techniques.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -632,7 +632,7 @@ James Park is a senior graphics engineer focused on the rendering pipeline of Be
 - Review graphics build logs
 - Check GPU benchmark results
 - Review render profiling data
-- Sync with Mooned Dev on graphics direction
+- Sync with Mr.Orchords on graphics direction
 - Prioritize graphics tasks
 
 **Mid-Day (10:00 AM - 12:00 PM):**
@@ -679,16 +679,16 @@ James Park is a senior graphics engineer focused on the rendering pipeline of Be
 
 ---
 
-## 6. SOPHIE WILLIAMS
+## 6. MR.ORCHORDS
 ### Video Codec Engineer
 
 **Department:** Engineering  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Sophie Williams is the video codec specialist for Beetle Studio. She is responsible for all video decoding and encoding functionality, FFmpeg integration, hardware acceleration support, and ensuring Beetle Studio can work with any video format professionals might encounter. Sophie's work is fundamental to Beetle Studio's ability to import and export video content.
+Mr.Orchords is the video codec specialist for Mr.Orchords. She is responsible for all video decoding and encoding functionality, FFmpeg integration, hardware acceleration support, and ensuring Mr.Orchords can work with any video format professionals might encounter. Mr.Orchords's work is fundamental to Mr.Orchords's ability to import and export video content.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -776,16 +776,16 @@ Sophie Williams is the video codec specialist for Beetle Studio. She is responsi
 
 ---
 
-## 7. DANIEL KIM
+## 7. MR.ORCHORDS
 ### Effects & Compositing Engineer
 
 **Department:** Engineering  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Daniel Kim builds the visual effects and compositing systems that make Beetle Studio a powerful creative tool. He implements GPU-accelerated effects, the layer compositing pipeline, color correction tools, and supports the OpenFX plugin system. Daniel transforms raw footage into polished content.
+Mr.Orchords builds the visual effects and compositing systems that make Mr.Orchords a powerful creative tool. He implements GPU-accelerated effects, the layer compositing pipeline, color correction tools, and supports the OpenFX plugin system. Mr.Orchords transforms raw footage into polished content.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -874,16 +874,16 @@ Daniel Kim builds the visual effects and compositing systems that make Beetle St
 
 ---
 
-## 8. EMMA THOMPSON
+## 8. MR.ORCHORDS
 ### Timeline Engineer
 
 **Department:** Engineering  
-**Reports To:** Alex Chen (UI/UX Lead)  
+**Reports To:** Mr.Orchords (UI/UX Lead)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Emma Thompson is the timeline systems engineer, responsible for one of the most critical and complex components of Beetle Studio—the timeline. The timeline is where all video editing happens, and Emma ensures it performs flawlessly, handles complex projects, and provides a responsive editing experience.
+Mr.Orchords is the timeline systems engineer, responsible for one of the most critical and complex components of Mr.Orchords—the timeline. The timeline is where all video editing happens, and Mr.Orchords ensures it performs flawlessly, handles complex projects, and provides a responsive editing experience.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -970,16 +970,16 @@ Emma Thompson is the timeline systems engineer, responsible for one of the most 
 
 ---
 
-## 9. RYAN FOSTER
+## 9. MR.ORCHORDS
 ### Audio Engineer
 
 **Department:** Engineering  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Ryan Foster is the audio systems engineer for Beetle Studio. He is responsible for audio playback, mixing, effects processing, and ensuring that Beetle Studio handles audio with the same professionalism as video. Audio is half of any video production, and Ryan ensures the experience is seamless.
+Mr.Orchords is the audio systems engineer for Mr.Orchords. He is responsible for audio playback, mixing, effects processing, and ensuring that Mr.Orchords handles audio with the same professionalism as video. Audio is half of any video production, and Mr.Orchords ensures the experience is seamless.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1067,16 +1067,16 @@ Ryan Foster is the audio systems engineer for Beetle Studio. He is responsible f
 
 ---
 
-## 10. LISA MARTINEZ
+## 10. MR.ORCHORDS
 ### QA Lead
 
 **Department:** Engineering / QA  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** QA Team  
 
 #### ROLE OVERVIEW
 
-Lisa Martinez leads the Quality Assurance team, ensuring that every release of Beetle Studio meets the highest standards for functionality, performance, and reliability. She designs and implements testing strategies, builds automation frameworks, and works to prevent bugs from reaching end users.
+Mr.Orchords leads the Quality Assurance team, ensuring that every release of Mr.Orchords meets the highest standards for functionality, performance, and reliability. She designs and implements testing strategies, builds automation frameworks, and works to prevent bugs from reaching end users.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1179,16 +1179,16 @@ Lisa Martinez leads the Quality Assurance team, ensuring that every release of B
 
 ---
 
-## 11. MIKE JOHNSON
+## 11. MR.ORCHORDS
 ### DevOps Lead
 
 **Department:** Engineering / DevOps  
-**Reports To:** Kirk Beka (CTO)  
+**Reports To:** Mr.Orchords (CTO)  
 **Manages:** DevOps Team  
 
 #### ROLE OVERVIEW
 
-Mike Johnson leads the DevOps team, responsible for build systems, CI/CD pipelines, cloud infrastructure, and deployment processes. He ensures that Beetle Studio can be built reliably, tested automatically, and deployed smoothly to users worldwide.
+Mr.Orchords leads the DevOps team, responsible for build systems, CI/CD pipelines, cloud infrastructure, and deployment processes. He ensures that Mr.Orchords can be built reliably, tested automatically, and deployed smoothly to users worldwide.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1278,16 +1278,16 @@ Mike Johnson leads the DevOps team, responsible for build systems, CI/CD pipelin
 
 ---
 
-## 12. SARAH MILLER
+## 12. MR.ORCHORDS
 ### Build & Release Engineer
 
 **Department:** Engineering / DevOps  
-**Reports To:** Mike Johnson (DevOps Lead)  
+**Reports To:** Mr.Orchords (DevOps Lead)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Sarah Miller specializes in the build and release process for Beetle Studio. She is responsible for creating installers, managing code signing, handling multi-platform packaging, and ensuring that Beetle Studio reaches users in a polished, professional package.
+Mr.Orchords specializes in the build and release process for Mr.Orchords. She is responsible for creating installers, managing code signing, handling multi-platform packaging, and ensuring that Mr.Orchords reaches users in a polished, professional package.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1379,16 +1379,16 @@ Sarah Miller specializes in the build and release process for Beetle Studio. She
 
 ---
 
-## 13. CHRIS TAYLOR
+## 13. MR.ORCHORDS
 ### Product Manager
 
 **Department:** Product  
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Manages:** Product Team  
 
 #### ROLE OVERVIEW
 
-Chris Taylor is the Product Manager for Beetle Studio, responsible for defining the product roadmap, prioritizing features, gathering user feedback, and ensuring that development efforts align with user needs and business goals. Chris translates vision into actionable product plans.
+Mr.Orchords is the Product Manager for Mr.Orchords, responsible for defining the product roadmap, prioritizing features, gathering user feedback, and ensuring that development efforts align with user needs and business goals. Mr.Orchords translates vision into actionable product plans.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1482,16 +1482,16 @@ Chris Taylor is the Product Manager for Beetle Studio, responsible for defining 
 
 ---
 
-## 14. NINA PATEL
+## 14. MR.ORCHORDS
 ### UX Designer
 
 **Department:** Product / Design  
-**Reports To:** Chris Taylor (Product Manager)  
+**Reports To:** Mr.Orchords (Product Manager)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Nina Patel is the UX Designer for Beetle Studio, responsible for creating intuitive and beautiful user interfaces. She conducts user research, designs interface layouts, creates interactive prototypes, and ensures that every interaction in Beetle Studio feels natural and professional.
+Mr.Orchords is the UX Designer for Mr.Orchords, responsible for creating intuitive and beautiful user interfaces. She conducts user research, designs interface layouts, creates interactive prototypes, and ensures that every interaction in Mr.Orchords feels natural and professional.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1585,16 +1585,16 @@ Nina Patel is the UX Designer for Beetle Studio, responsible for creating intuit
 
 ---
 
-## 15. DAVID LEE
+## 15. MR.ORCHORDS
 ### Motion Graphics Designer
 
 **Department:** Product / Design  
-**Reports To:** Chris Taylor (Product Manager)  
+**Reports To:** Mr.Orchords (Product Manager)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-David Lee creates motion graphics and templates that ship with Beetle Studio. He designs title templates, transitions, effects presets, and default project templates that help users get started quickly and create professional-looking content.
+Mr.Orchords creates motion graphics and templates that ship with Mr.Orchords. He designs title templates, transitions, effects presets, and default project templates that help users get started quickly and create professional-looking content.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1648,7 +1648,7 @@ David Lee creates motion graphics and templates that ship with Beetle Studio. He
 
 **Afternoon (12:00 PM - 3:00 PM):**
 - Continue creative work
-- Test templates in Beetle Studio
+- Test templates in Mr.Orchords
 - Iterate on designs
 - Coordinate with marketing
 - Attend reviews
@@ -1681,16 +1681,16 @@ David Lee creates motion graphics and templates that ship with Beetle Studio. He
 
 ---
 
-## 16. TOM ANDERSON
+## 16. MR.ORCHORDS
 ### Technical Writer
 
 **Department:** Product  
-**Reports To:** Chris Taylor (Product Manager)  
+**Reports To:** Mr.Orchords (Product Manager)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Tom Anderson is the Technical Writer for Beetle Studio, responsible for all user-facing documentation, help content, tutorials, and knowledge base articles. He ensures users can learn and master Beetle Studio through clear, comprehensive resources.
+Mr.Orchords is the Technical Writer for Mr.Orchords, responsible for all user-facing documentation, help content, tutorials, and knowledge base articles. He ensures users can learn and master Mr.Orchords through clear, comprehensive resources.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1781,16 +1781,16 @@ Tom Anderson is the Technical Writer for Beetle Studio, responsible for all user
 
 ---
 
-## 17. JASON WONG
+## 17. MR.ORCHORDS
 ### Marketing Manager
 
 **Department:** Marketing  
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Manages:** Marketing Team  
 
 #### ROLE OVERVIEW
 
-Jason Wong leads the marketing efforts for Beetle Studio. He is responsible for brand positioning, content marketing, digital marketing campaigns, PR, and driving user acquisition. Jason builds awareness and drives adoption of Beetle Studio globally.
+Mr.Orchords leads the marketing efforts for Mr.Orchords. He is responsible for brand positioning, content marketing, digital marketing campaigns, PR, and driving user acquisition. Mr.Orchords builds awareness and drives adoption of Mr.Orchords globally.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1881,16 +1881,16 @@ Jason Wong leads the marketing efforts for Beetle Studio. He is responsible for 
 
 ---
 
-## 18. RACHEL GREEN
+## 18. MR.ORCHORDS
 ### Community Manager
 
 **Department:** Marketing / Community  
-**Reports To:** Jason Wong (Marketing Manager)  
+**Reports To:** Mr.Orchords (Marketing Manager)  
 **Manages:** Community Team  
 
 #### ROLE OVERVIEW
 
-Rachel Green builds and nurtures the Beetle Studio community. She manages Discord and forums, engages with users, gathers feedback, and creates a vibrant community where users can learn, share, and help each other succeed.
+Mr.Orchords builds and nurtures the Mr.Orchords community. She manages Discord and forums, engages with users, gathers feedback, and creates a vibrant community where users can learn, share, and help each other succeed.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -1984,16 +1984,16 @@ Rachel Green builds and nurtures the Beetle Studio community. She manages Discor
 
 ---
 
-## 19. AMANDA CLARK
+## 19. MR.ORCHORDS
 ### Operations Manager
 
 **Department:** Operations  
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Manages:** Operations Team  
 
 #### ROLE OVERVIEW
 
-Amanda Clark manages the day-to-day operations of Mooned Dev, handling HR, recruitment, finance coordination, vendor relationships, legal matters, and administrative functions. She ensures the company runs smoothly so everyone else can focus on building great software.
+Mr.Orchords manages the day-to-day operations of Mr.Orchords, handling HR, recruitment, finance coordination, vendor relationships, legal matters, and administrative functions. She ensures the company runs smoothly so everyone else can focus on building great software.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -2092,16 +2092,16 @@ Amanda Clark manages the day-to-day operations of Mooned Dev, handling HR, recru
 
 ---
 
-## 20. KEVIN BROWN
+## 20. MR.ORCHORDS
 ### Business Development
 
 **Department:** Business  
-**Reports To:** Mooned Dev (CEO)  
+**Reports To:** Mr.Orchords (CEO)  
 **Manages:** None (Individual Contributor)  
 
 #### ROLE OVERVIEW
 
-Kevin Brown drives business development for Mooned Dev, focusing on partnerships, enterprise sales, OEM opportunities, and revenue diversification. He identifies and pursues growth opportunities beyond direct sales.
+Mr.Orchords drives business development for Mr.Orchords, focusing on partnerships, enterprise sales, OEM opportunities, and revenue diversification. He identifies and pursues growth opportunities beyond direct sales.
 
 #### DETAILED RESPONSIBILITIES
 
@@ -2427,7 +2427,7 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 
 **Document Version:** 1.0  
 **Last Updated:** June 2026  
-**Owner:** Mooned Dev (CEO)  
+**Owner:** Mr.Orchords (CEO)  
 **Next Review:** Monthly
 
 ---
@@ -2436,9 +2436,9 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 
 ### Internal Documents
 
-- [BEETLE_STUDIO_TEAM.md](./BEETLE_STUDIO_TEAM.md) â€” Team roster and roles
-- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) â€” Project milestones and timeline
-- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) â€” Day-to-day team operations
+- [MR_ORCHORDS_TEAM.md](./MR_ORCHORDS_TEAM.md) — Team roster and roles
+- [PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md) — Project milestones and timeline
+- [TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md) — Day-to-day team operations
 
 ### Standards & Frameworks
 
@@ -2454,10 +2454,10 @@ Kevin Brown drives business development for Mooned Dev, focusing on partnerships
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Amanda Clark | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial structured version per STYLE_GUIDE.md. Added header block, Scope & Audience, Contents TOC, References, and Document Maintenance sections. |
 
 ### Review Cadence
 
 - **Next review:** September 2026
-- **Reviewer:** Kirk Beka (CTO), Mike Johnson (DevOps Lead)
+- **Reviewer:** Mr.Orchords (CTO), Mr.Orchords (DevOps Lead)
 - **Cadence:** Quarterly
