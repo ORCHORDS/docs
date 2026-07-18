@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BACKUP_DISASTER_RECOVERY.md` in the docs repo.
-
 ---
 title: "Backup & Disaster Recovery"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Backup & Disaster Recovery
 
-**Project:** Beetle Studio  
-**Owner:** Mike Johnson (DevOps Lead)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (DevOps Lead)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (CEO)  
 **ISO Standards:** ISO/IEC 27001:2022 (Annex A: Business Continuity, Operational Security), ISO/IEC 12207:2017 (transition, operations)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-06-21
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | RTO/RPO targets, backup strategy, and disaster recovery playbooks |
 | **Diátaxis form** | Reference |
-| **Primary audience** | Mike Johnson, Kirk Beka, Mooned Dev, Amanda Clark |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document defines Beetle Studio's backup strategy and disaster recovery procedures. Per **ISO/IEC 27001:2022 Annex A**, the organization must have business continuity controls that protect information assets and enable rapid recovery from disruptions.
+This document defines Mr.Orchords's backup strategy and disaster recovery procedures. Per **ISO/IEC 27001:2022 Annex A**, the organization must have business continuity controls that protect information assets and enable rapid recovery from disruptions.
 ## Contents
 
 - [Recovery Objectives](#recovery-objectives)
@@ -61,9 +59,9 @@ This document defines Beetle Studio's backup strategy and disaster recovery proc
 
 | Objective | Target | Defined By |
 |---|---|---|
-| **RTO — Recovery Time Objective** | 4 hours for critical services | Mooned Dev + Kirk Beka |
-| **RPO — Recovery Point Objective** | 1 hour for user data | Mooned Dev + Kirk Beka |
-| **Recovery Scope** | Core app deployment + cloud services | Kirk Beka |
+| **RTO — Recovery Time Objective** | 4 hours for critical services | Mr.Orchords + Mr.Orchords |
+| **RPO — Recovery Point Objective** | 1 hour for user data | Mr.Orchords + Mr.Orchords |
+| **Recovery Scope** | Core app deployment + cloud services | Mr.Orchords |
 
 ---
 
@@ -76,7 +74,7 @@ This document defines Beetle Studio's backup strategy and disaster recovery proc
 | Firestore user data | Firebase automatic replication | Continuous | Managed by Firebase | Google Cloud SLA |
 | Firebase Auth | Firebase automatic replication | Continuous | Managed by Firebase | Google Cloud SLA |
 | Firebase Storage (assets) | Firebase automatic replication | Continuous | Managed by Firebase | Google Cloud SLA |
-| Beetle Studio source code | GitHub repo mirroring | On every push | Permanent | Mike Johnson |
+| Mr.Orchords source code | GitHub repo mirroring | On every push | Permanent | Mr.Orchords |
 
 Firebase provides built-in replication across availability zones. No additional backup needed for Firestore. However, we maintain a manual monthly export of Firestore data to Azure Blob Storage as a secondary backup.
 
@@ -105,10 +103,10 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 | Backup Type | Verification Frequency | Method | Owner |
 |---|---|---|---|
-| Firestore export | Monthly | Restore to test project and verify data | Mike Johnson |
-| GitHub mirroring | Weekly | Automated integrity check | Mike Johnson |
-| Infrastructure IaC | On every PR | Terraform validate + plan | Mike Johnson |
-| Release artifacts | Every release | Smoke test on restored artifacts | Sarah Miller |
+| Firestore export | Monthly | Restore to test project and verify data | Mr.Orchords |
+| GitHub mirroring | Weekly | Automated integrity check | Mr.Orchords |
+| Infrastructure IaC | On every PR | Terraform validate + plan | Mr.Orchords |
+| Release artifacts | Every release | Smoke test on restored artifacts | Mr.Orchords |
 
 ---
 
@@ -118,17 +116,17 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 **Impact:** Users cannot authenticate or sync projects.
 
-**Detection:** Azure Monitor alert + Mike Johnson notification.
+**Detection:** Azure Monitor alert + Mr.Orchords notification.
 
 **Recovery Procedure:**
 1. Confirm Firebase status at `status.firebase.google.com`
 2. If outage confirmed, notify team in #engineering Slack channel
-3. Enable **offline mode** in Beetle Studio (users can continue working locally)
+3. Enable **offline mode** in Mr.Orchords (users can continue working locally)
 4. Monitor for Firebase recovery
 5. Once Firebase is restored, users resume normal cloud sync
 6. Post-incident report within 48 hours
 
-**Duration:** **RTO 4h / RPO 1h** as a conservative interim target (pending Firebase Blaze SLA response, expected to land within the next billing cycle). These numbers are picked to align with the worst-case scenario from the *Firestore point-in-time recovery* window (7 days) and assume a regional outage (not a global Google Cloud one). Mike will tighten these once the SLA response is in; if Firebase commits to 99.95%+, RTO can drop to 2h without extra spend.
+**Duration:** **RTO 4h / RPO 1h** as a conservative interim target (pending Firebase Blaze SLA response, expected to land within the next billing cycle). These numbers are picked to align with the worst-case scenario from the *Firestore point-in-time recovery* window (7 days) and assume a regional outage (not a global Google Cloud one). Mr.Orchords will tighten these once the SLA response is in; if Firebase commits to 99.95%+, RTO can drop to 2h without extra spend.
 
 ### Scenario 2: GitHub Repository Unavailable
 
@@ -139,7 +137,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. If GitHub down, activate Azure Blob Storage backup:
    ```bash
    # Clone from Azure Blob Storage backup
-   git clone https://azure_storage.blob.core.windows.net/backups/beetle-studio.git
+   git clone https://azure_storage.blob.core.windows.net/backups/mr-orchords.git
    ```
 3. Developers work from local clones
 4. Resume normal operations once GitHub is restored
@@ -155,7 +153,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 3. If runner is corrupted, provision new runner:
    ```bash
    # Register new runner
-   ./config.sh --url https://dev.mooned.dev/beetle-studio/beetle-studio --token <token>
+   ./config.sh --url https://dev.orchords.com/mr-orchords/mr-orchords --token <token>
    ./run.sh
    ```
 4. Re-trigger failed workflow runs
@@ -170,7 +168,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. Activate Azure geo-redundancy — fail over to secondary region:
    ```bash
    # Fail over storage account
-   az storage account failover --name beetlesa --resource-group beetle-studio-rg
+   az storage account failover --name mrorchordssa --resource-group mr-orchords-rg
    ```
 3. Update DNS if App Service fails over
 4. Verify all endpoints respond in secondary region
@@ -187,7 +185,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 2. Restore from last known good backup:
    ```bash
    # Restore Firestore from monthly export
-   firestore-cli restore gs://beetle-backup/export_YYYYMMDD
+   firestore-cli restore gs://mrorchords-backup/export_YYYYMMDD
    ```
 3. Notify affected users
 4. Validate restored data
@@ -206,7 +204,7 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
    # Rotate Azure credentials
    az ad credential reset --id <app-id>
    # Revoke GitHub OIDC tokens
-   gh api /admin/orgs/mooned-dev/actions/oidc-custom-template -X DELETE
+   gh api /admin/orgs/ORCHORDS/actions/oidc-custom-template -X DELETE
    ```
 3. Regenerate new signing certificates if compromised
 4. Re-sign all release artifacts if signing keys were compromised
@@ -219,10 +217,10 @@ Per **ISO/IEC 27001:2022**, backups must be tested regularly.
 
 | Role | Name | Contact |
 |---|---|---|
-| Primary incident commander | Kirk Beka | |
-| Secondary incident commander | Mike Johnson | |
-| Infrastructure backup | Sarah Miller | |
-| Executive escalation | Mooned Dev | |
+| Primary incident commander | Mr.Orchords | |
+| Secondary incident commander | Mr.Orchords | |
+| Infrastructure backup | Mr.Orchords | |
+| Executive escalation | Mr.Orchords | |
 | Firebase support | Google Cloud Console | |
 | Azure support | Azure Portal / CSAM | |
 
@@ -275,11 +273,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Mike Johnson | Initial version |
-| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Mike Johnson (DevOps Lead)
+- **Reviewer:** Mr.Orchords (DevOps Lead)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

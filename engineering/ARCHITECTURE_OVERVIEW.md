@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/ARCHITECTURE_OVERVIEW.md` in the docs repo.
-
 ---
 title: "Architecture Overview"
 version: "1.0.0"
@@ -9,8 +7,8 @@ status: "review"
 
 # Architecture Overview
 
-**Project:** Beetle Studio  
-**Owner:** Kirk Beka (CTO) — system design; Mooned Dev — engine architecture  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (CTO) — system design; Mr.Orchords — engine architecture  
 **Reviewers:** All engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (system design), ISO/IEC 25010:2023 (compatibility, maintainability)  
 **Version:** 1.0.0  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | High-level system architecture, module boundaries, data flow |
 | **Diátaxis form** | Explanation |
-| **Primary audience** | All engineers, Kirk Beka, Mooned Dev, new hires |
+| **Primary audience** | All engineers, Mr.Orchords, Mr.Orchords, new hires |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,15 +31,15 @@ status: "review"
 
 ## Overview
 
-This document describes the high-level system architecture of Beetle Studio. Per **ISO/IEC 12207:2017 section 6.1.3**, the software design process must produce a system architecture that satisfies system requirements while supporting maintainability and evolvability -- both central to **ISO/IEC 25010:2023**.
+This document describes the high-level system architecture of Mr.Orchords. Per **ISO/IEC 12207:2017 section 6.1.3**, the software design process must produce a system architecture that satisfies system requirements while supporting maintainability and evolvability -- both central to **ISO/IEC 25010:2023**.
 ## Contents
 
 - [Module Architecture](#module-architecture)
 - [Core Modules](#core-modules)
-  - [Engine — Rendering (`BeetleEngine`)](#engine-rendering-beetleengine)
-  - [Engine — Codec (`BeetleCodec`)](#engine-codec-beetlecodec)
-  - [Engine — Effects (`BeetleEffects`)](#engine-effects-beetleeffects)
-  - [Audio Engine (`BeetleAudio`)](#audio-engine-beetleaudio)
+  - [Engine — Rendering (`MrOrchordsEngine`)](#engine-rendering-mrorchordsengine)
+  - [Engine — Codec (`MrOrchordsCodec`)](#engine-codec-mrorchordscodec)
+  - [Engine — Effects (`MrOrchordsEffects`)](#engine-effects-mrorchordseffects)
+  - [Audio Engine (`MrOrchordsAudio`)](#audio-engine-mrorchordsaudio)
 - [Key Abstractions](#key-abstractions)
   - [Frame Buffer Abstraction](#frame-buffer-abstraction)
   - [Timeline Data Model](#timeline-data-model)
@@ -59,7 +57,7 @@ This document describes the high-level system architecture of Beetle Studio. Per
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           BEETLE STUDIO                                 │
+│                               MR.ORCHORDS                               │
 │                                                                         │
 │  ┌─────────────────────────────────────────────────────────────────┐    │
 │  │                         UI LAYER (Qt6)                          │    │
@@ -113,10 +111,10 @@ This document describes the high-level system architecture of Beetle Studio. Per
 
 ## Core Modules
 
-### Engine — Rendering (`BeetleEngine`)
-**Owner:** Mooned Dev, James Park
+### Engine — Rendering (`MrOrchordsEngine`)
+**Owner:** Mr.Orchords, Mr.Orchords
 
-The rendering engine sits at the heart of Beetle Studio. It manages the GPU pipeline, shader compilation, frame pacing, and the viewport compositor.
+The rendering engine sits at the heart of Mr.Orchords. It manages the GPU pipeline, shader compilation, frame pacing, and the viewport compositor.
 
 - **DX12 backend** — primary Windows rendering path
 - **Vulkan backend** — cross-platform future path
@@ -124,8 +122,8 @@ The rendering engine sits at the heart of Beetle Studio. It manages the GPU pipe
 - **Frame pacing** — locked to display refresh rate; triple buffering
 - **Render graph** — dependency-ordered render passes with automatic resource management
 
-### Engine — Codec (`BeetleCodec`)
-**Owner:** Sophie Williams
+### Engine — Codec (`MrOrchordsCodec`)
+**Owner:** Mr.Orchords
 
 Handles all video and audio decoding and encoding via FFmpeg.
 
@@ -135,8 +133,8 @@ Handles all video and audio decoding and encoding via FFmpeg.
 - **Hardware encoding** — NVENC, QSV, VCE
 - **Audio decoding** — AAC, MP3, WAV, FLAC, OGG
 
-### Engine — Effects (`BeetleEffects`)
-**Owner:** Daniel Kim
+### Engine — Effects (`MrOrchordsEffects`)
+**Owner:** Mr.Orchords
 
 GPU-accelerated visual effects and compositing.
 
@@ -145,8 +143,8 @@ GPU-accelerated visual effects and compositing.
 - **Color pipeline** — color wheels, curves, LUT application, HDR
 - **Plugin host** — OpenFX v1.4 compatibility layer
 
-### Audio Engine (`BeetleAudio`)
-**Owner:** Ryan Foster
+### Audio Engine (`MrOrchordsAudio`)
+**Owner:** Mr.Orchords
 
 Multi-track audio playback, mixing, and effects.
 
@@ -289,11 +287,11 @@ To keep modules clean and testable:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Kirk Beka | Initial version |
-| 1.0.1 | June 2026 | Kirk Beka | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On architecture change
-- **Reviewer:** Kirk Beka (CTO) — system design
+- **Reviewer:** Mr.Orchords (CTO) — system design
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

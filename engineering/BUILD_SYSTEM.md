@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BUILD_SYSTEM.md` in the docs repo.
-
 ---
 title: "Build System"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Build System
 
-**Project:** Beetle Studio  
-**Owner:** Sarah Miller (Build & Release Engineer)  
-**Reviewers:** Kirk Beka (CTO), all engineering leads  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Build & Release Engineer)  
+**Reviewers:** Mr.Orchords (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (development process), ISO/IEC 25010:2023 (maintainability, portability)  
 **Version:** 1.0.0  
 **Last Updated:** 2026-06-21
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | CMake build system, targets, artifacts, and reproducibility |
 | **Diátaxis form** | Reference |
-| **Primary audience** | All engineers, Mike Johnson, DevOps |
+| **Primary audience** | All engineers, Mr.Orchords, DevOps |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document describes the build system configuration, toolchain requirements, and build processes for Beetle Studio.
+This document describes the build system configuration, toolchain requirements, and build processes for Mr.Orchords.
 
 ## Contents
 
@@ -76,7 +74,7 @@ This document describes the build system configuration, toolchain requirements, 
 ## Repository Structure
 
 ```
-BEETLE_STUDIO/
+MR_ORCHORDS/
 ├── CMakeLists.txt              ← root build configuration
 ├── cmake/
 │   ├── CompilerFlags.cmake     ← compiler-specific flags
@@ -84,7 +82,7 @@ BEETLE_STUDIO/
 │   ├── InstallRules.cmake      ← installation rules
 │   └── Platform.cmake          ← platform-specific configuration
 ├── src/
-│   ├── BeetleStudio/           ← main application
+│   ├── MrOrchords/           ← main application
 │   ├── Engine/                 ← rendering, codec, effects core
 │   ├── UI/                     ← Qt6 UI components
 │   ├── Audio/                  ← audio engine
@@ -124,11 +122,11 @@ cmake --list-presets
 
 | Target | Description | Output |
 |---|---|---|
-| `BeetleStudio` | Main application executable | `BeetleStudio.exe` |
-| `BeetleEngine` | Core engine library | `BeetleEngine.dll` |
-| `BeetleUI` | UI library | `BeetleUI.dll` |
-| `BeetleAudio` | Audio engine library | `BeetleAudio.dll` |
-| `BeetlePlugins` | Plugin host library | `BeetlePlugins.dll` |
+| `MrOrchords` | Main application executable | `MrOrchords.exe` |
+| `MrOrchordsEngine` | Core engine library | `MrOrchordsEngine.dll` |
+| `MrOrchordsUI` | UI library | `MrOrchordsUI.dll` |
+| `MrOrchordsAudio` | Audio engine library | `MrOrchordsAudio.dll` |
+| `MrOrchordsPlugins` | Plugin host library | `MrOrchordsPlugins.dll` |
 | `ShaderCompiler` | HLSL → DXIL shader compiler tool | `ShaderCompiler.exe` |
 | `tests` | All unit and integration tests | `test_runner.exe` |
 
@@ -156,7 +154,7 @@ cmake --preset release
 cmake --build --preset release
 
 # Rebuild a single target
-cmake --build --preset dev --target BeetleStudio --clean-first
+cmake --build --preset dev --target MrOrchords --clean-first
 
 # Build installer (after release preset)
 cmake --build --preset release --target installer
@@ -170,9 +168,9 @@ See [`CI_CD_PIPELINE.md`](./CI_CD_PIPELINE.md) for the full Forgejo Actions work
 
 | Artifact | Retention | Contents |
 |---|---|---|
-| `BeetleStudio-Setup.exe` | 90 days | Signed installer |
-| `BeetleStudio.zip` | 90 days | Portable build (no install) |
-| `BeetleStudio.pdb` | Permanent | Debug symbols for crash dumps |
+| `MrOrchords-Setup.exe` | 90 days | Signed installer |
+| `MrOrchords.zip` | 90 days | Portable build (no install) |
+| `MrOrchords.pdb` | Permanent | Debug symbols for crash dumps |
 | `build-logs.zip` | 30 days | CMake + compiler output |
 
 ---
@@ -183,7 +181,7 @@ See [`CI_CD_PIPELINE.md`](./CI_CD_PIPELINE.md) for the full Forgejo Actions work
 |---|---|---|
 | Clean build time (Release, 16-core) | < 20 minutes | Parallel build maxed |
 | Incremental build time (single module) | < 30 seconds | After a single-file change |
-| Link time (BeetleStudio.exe) | < 5 minutes | Incremental linking enabled |
+| Link time (MrOrchords.exe) | < 5 minutes | Incremental linking enabled |
 | CI total time (Release) | < 30 minutes | From commit to artifact |
 
 ---
@@ -227,7 +225,7 @@ After any build system change:
 
 1. Run `cmake --preset dev && cmake --build --preset dev`
 2. Run `./build/dev/tests/test_runner.exe`
-3. Run `./build/dev/BeetleStudio.exe` and verify it launches
+3. Run `./build/dev/MrOrchords.exe` and verify it launches
 4. Verify all CI pipelines green
 
 ---
@@ -266,11 +264,11 @@ After any build system change:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Mike Johnson | Initial version |
-| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On build system major change
-- **Reviewer:** Mike Johnson (DevOps Lead)
+- **Reviewer:** Mr.Orchords (DevOps Lead)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
