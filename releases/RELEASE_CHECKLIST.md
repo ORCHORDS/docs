@@ -1,5 +1,3 @@
-> Auto-generated from `docs/releases/RELEASE_CHECKLIST.md` in the docs repo.
-
 ---
 title: "Release Checklist"
 version: "1.0.0"
@@ -9,12 +7,12 @@ status: "review"
 
 # Release Checklist
 
-**Project:** Beetle Studio  
-**Owner:** Sarah Miller (Build & Release Engineer)  
-**Reviewers:** Kirk Beka (CTO), Mike Johnson (DevOps), Lisa Martinez (QA Lead)  
-**ISO Standards:** ISO/IEC 12207:2017 (release process), ISO/IEC 19770-2:2015 (SWID tags), ISO/IEC 25010:2023 (quality)  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Build & Release Engineer)  
+**Reviewers:** Mr.Orchords (DevOps Lead), Mr.Orchords (QA Lead)  
+**ISO Standards:** ISO/IEC 12207:2017 (transition), ISO/IEC 25010:2023 (functional suitability)  
 **Version:** 1.0.0  
-**Last Updated:** 2026-06-21
+**Last Updated:** June 2026  
 
 ---
 
@@ -23,9 +21,9 @@ status: "review"
 
 | Aspect | Definition |
 |---|---|
-| **Scope** | Step-by-step release gates for all Beetle Studio releases |
+| **Scope** | Pre-release, release-day, and post-release checklists |
 | **Diátaxis form** | How-to guide |
-| **Primary audience** | Sarah Miller, Kirk Beka, Mike Johnson, Lisa Martinez |
+| **Primary audience** | Mr.Orchords, Mr.Orchords, Mr.Orchords, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,183 +31,124 @@ status: "review"
 
 ## Overview
 
-This checklist governs every release of Beetle Studio -- from internal builds to public stable releases. Per **ISO/IEC 12207:2017**, the release process is a formal transition activity that moves software from the development environment into an operational state. Every release must pass all gates before the installer is published. No exceptions.
+This checklist defines every step required to ship a Mr.Orchords release. Per **ISO/IEC 12207:2017 section 6.4**, transition is a controlled process -- skipping a step is not acceptable for any release, no matter how small.
 ## Contents
 
-- [Release Types & Cadence](#release-types-cadence)
-- [Pre-Release Gates](#pre-release-gates)
-  - [1. Code & Engineering](#1-code-engineering)
-  - [2. Build & Artifacts](#2-build-artifacts)
-  - [3. Code Signing](#3-code-signing)
-  - [4. Quality Assurance](#4-quality-assurance)
-  - [5. Localization & Accessibility](#5-localization-accessibility)
-  - [6. Documentation](#6-documentation)
-  - [7. Legal & Compliance](#7-legal-compliance)
-  - [8. Windows Store (if applicable)](#8-windows-store-if-applicable)
-- [Release Execution](#release-execution)
-  - [Day-of Release Steps](#day-of-release-steps)
-- [Post-Release Validation](#post-release-validation)
-- [Hotfix Procedure](#hotfix-procedure)
-- [Rollback Procedure](#rollback-procedure)
+- [Pre-Release (1 Week Before)](#pre-release-1-week-before)
+  - [Feature Freeze](#feature-freeze)
+  - [QA Sign-Off](#qa-sign-off)
+  - [Build Preparation](#build-preparation)
+- [Release Day](#release-day)
+  - [Build Release Candidate](#build-release-candidate)
+  - [Sign Artifacts](#sign-artifacts)
+  - [Final Smoke Test](#final-smoke-test)
+  - [Publish](#publish)
+- [Post-Release (Within 48 Hours)](#post-release-within-48-hours)
+  - [Monitoring](#monitoring)
+  - [Communication](#communication)
+- [Hotfix Checklist](#hotfix-checklist)
 - [Version History](#version-history)
   - [Change Log](#change-log)
   - [Review Cadence](#review-cadence)
 
 ---
 
-## Release Types & Cadence
+## Pre-Release (1 Week Before)
 
-| Release Type | Trigger | Cadence | Approver |
-|---|---|---|---|
-| **Internal Build** | Any merge to `main` | Every CI run | CI (automated) |
-| **Alpha** | End of development phase | Per phase milestone | Kirk Beka |
-| **Beta** | Feature complete + QA pass | Monthly or per milestone | Kirk Beka |
-| **Release Candidate (RC)** | Beta feedback resolved | Per release target | Kirk Beka + Chris Taylor |
-| **Stable / Public** | RC sign-off | Per roadmap milestone | Kirk Beka + Mooned Dev |
+### Feature Freeze
 
----
+- [ ] **Mr.Orchords confirms** all features for this release are complete and merged
+- [ ] No new feature PRs merged after freeze (only bug fixes)
+- [ ] `main` branch is at the feature-complete commit
+- [ ] Feature freeze announced in #engineering Slack
 
-## Pre-Release Gates
+### QA Sign-Off
 
-Complete all items below before creating a release tag.
+- [ ] **Mr.Orchords runs** the full test suite (unit + integration + smoke + regression)
+- [ ] All tests pass on the feature-complete commit
+- [ ] Performance benchmarks meet targets in [`PERFORMANCE_BENCHMARKS.md`](../PERFORMANCE_BENCHMARKS.md)
+- [ ] Accessibility audit passes (WCAG 2.1 AA) per [`ACCESSIBILITY_COMPLIANCE.md`](../ACCESSIBILITY_COMPLIANCE.md)
+- [ ] Beta testers validated the release candidate (if applicable)
+- [ ] Known issues documented in release notes
 
-### 1. Code & Engineering
+### Build Preparation
 
-- [ ] All planned features for this release are merged to `main`
-- [ ] No open critical or high-severity bugs tagged for this release
-- [ ] All PRs for this release have at least one approval from a domain lead
-- [ ] `CHANGELOG.md` updated with all changes since last release (see [`CHANGELOG_POLICY.md`](./CHANGELOG_POLICY.md))
-- [ ] Public API / SDK documentation updated if any API surface changed
-- [ ] Plugin SDK documentation updated if OpenFX/plugin API changed
-
-### 2. Build & Artifacts
-
-- [ ] CI pipeline green on the target commit (`main` or release branch)
-- [ ] Version number correctly incremented per [`VERSIONING_POLICY.md`](./VERSIONING_POLICY.md)
-- [ ] SWID tag data generated with correct product ID, version, and vendor (see [`SWID_TAG_SPEC.md`](./SWID_TAG_SPEC.md))
-- [ ] Installer built successfully (Inno Setup or WiX)
-- [ ] All target platforms built (Windows x64 minimum; future: macOS, Linux)
-- [ ] Build artifacts archived in CI (artifact retention: 90 days for internal, permanent for stable)
-
-### 3. Code Signing
-
-- [ ] All EXE, DLL, and installer files signed with Azure Artifact Signing
-- [ ] Signing certificate is valid and not within 30 days of expiry
-- [ ] SmartScreen reputation check passes (Windows Defender SmartScreen filter)
-- [ ] Signed artifacts verified with `signtool verify /pa`
-
-### 4. Quality Assurance
-
-- [ ] Lisa Martinez (QA Lead) has signed off on the release candidate
-- [ ] Automated regression test suite passes (100%)
-- [ ] Smoke tests pass on clean install (first-run experience)
-- [ ] Smoke tests pass on upgrade install (from previous version)
-- [ ] Performance benchmarks within acceptable thresholds (see [`PERFORMANCE_BENCHMARKS.md`](../PERFORMANCE_BENCHMARKS.md))
-- [ ] Memory usage under acceptable limits for target project sizes
-- [ ] No new critical security vulnerabilities introduced (CVSS ≥ 7.0)
-
-### 5. Localization & Accessibility
-
-- [ ] UI strings extracted and sent for translation (if applicable)
-- [ ] Accessibility audit passed (see [`ACCESSIBILITY_COMPLIANCE.md`](../ACCESSIBILITY_COMPLIANCE.md))
-- [ ] Keyboard navigation verified for all primary workflows
-
-### 6. Documentation
-
-- [ ] Release notes drafted (human-readable summary for users)
-- [ ] Changelog updated and reviewed by Tom Anderson
-- [ ] API docs published if SDK/API changed
-- [ ] User guide updated for new features
-- [ ] Known issues list current
-
-### 7. Legal & Compliance
-
-- [ ] License file updated (current year, correct edition)
-- [ ] Privacy policy URL in installer matches current policy
-- [ ] Third-party licenses (FFmpeg, Qt6, etc.) correctly attributed
-- [ ] Terms of service in-app are current
-
-### 8. Windows Store (if applicable)
-
-- [ ] Store listing assets updated (screenshots, description, keywords)
-- [ ] Store submission package built per [`WINDOWS_STORE_SUBMISSION.md`](./WINDOWS_STORE_SUBMISSION.md)
-- [ ] Age rating verification completed
-- [ ] In-app purchase integration tested in sandbox
-- [ ] Privacy manifest uploaded
+- [ ] **Mr.Orchords updates** `CMakeLists.txt` version to `X.Y.Z`
+- [ ] **Mr.Orchords updates** `CHANGELOG.md` with all changes since last release
+- [ ] **Mr.Orchords writes** release notes (see [`CHANGELOG_POLICY.md`](./CHANGELOG_POLICY.md))
+- [ ] **Mr.Orchords prepares** Store screenshots and descriptions
+- [ ] **Mr.Orchords verifies** code signing certificate is not expiring within 30 days
+- [ ] **Mr.Orchords updates** SWID tag data (see [`SWID_TAG_SPEC.md`](./SWID_TAG_SPEC.md))
 
 ---
 
-## Release Execution
+## Release Day
 
-### Day-of Release Steps
+### Build Release Candidate
 
-Sarah Miller executes the following:
+- [ ] **Mr.Orchords creates** release tag on the frozen `main` commit:
+  ```bash
+  git tag vX.Y.Z
+  git push origin vX.Y.Z
+  ```
+- [ ] Forgejo Actions release workflow runs (GitHub Actions–compatible); builds complete on all platforms
+- [ ] Artifacts verified: `MrOrchordsSetup.exe`, `MrOrchords.zip`, `MrOrchords.pdb`, `MrOrchords.swidtag`
 
-1. **Create git tag** on the approved commit:
-   ```
-   git tag -a vX.Y.Z -m "Release vX.Y.Z: <short summary>"
-   git push origin vX.Y.Z
-   ```
+### Sign Artifacts
 
-2. **Trigger CI release pipeline** — Forgejo Actions auto-builds on `v*` tag push
+- [ ] **Mr.Orchords signs** all executables and installer (Azure Artifact Signing)
+- [ ] Signature verified: `signtool verify /pa MrOrchordsSetup.exe`
+- [ ] SmartScreen reputation check on signed installer (if new certificate)
 
-3. **Verify build artifacts** — confirm all platform builds exist in CI artifacts
+### Final Smoke Test
 
-4. **Sign all artifacts** — run signing job against all outputs
+- [ ] **Mr.Orchords tests** on clean Windows 10 VM:
+  - [ ] Fresh install from `MrOrchordsSetup.exe`
+  - [ ] Application launches
+  - [ ] New project → import media → export → verify output file
+- [ ] **Mr.Orchords tests** on clean Windows 11 VM (same steps)
+- [ ] **Mr.Orchords tests** upgrade install from previous version
+- [ ] All smoke tests pass
 
-5. **Verify signatures** — `signtool verify /pa /v` on all outputs
+### Publish
 
-6. **Run smoke tests** on the signed installer (clean + upgrade)
-
-7. **Upload to distribution channel:**
-   - Stable: website download + Windows Store
-   - Beta: direct download link + beta program page
-   - RC: internal distribution only
-
-8. **Publish release notes** to the website and in-app
-
-9. **Update changelog** on the Forgejo Releases page
-
-10. **Notify team** — post to #releases Slack channel with version, download links, known issues
-
----
-
-## Post-Release Validation
-
-| Check | Window | Owner |
-|---|---|---|
-| Installation rate monitoring | 24 hours | Sarah Miller |
-| Crash rate monitoring | 24 hours | Lisa Martinez |
-| SmartScreen reputation check | 48 hours | Sarah Miller |
-| Store submission status (if applicable) | 48 hours | Sarah Miller |
-| User feedback triage | 48 hours | Rachel Green |
-| Hotfix standby | 48 hours | Kirk Beka |
+- [ ] **Mr.Orchords uploads** signed artifacts to GitHub Releases with release notes
+- [ ] **Mr.Orchords submits** to Microsoft Store (if this release goes to Store)
+- [ ] **Mr.Orchords publishes** announcement to community channels
+- [ ] **Mr.Orchords updates** download page on website
+- [ ] **Mr.Orchords sends** email to beta testers
+- [ ] **Mr.Orchords updates** social media
+- [ ] **Mr.Orchords closes** the release in Linear
 
 ---
 
-## Hotfix Procedure
+## Post-Release (Within 48 Hours)
 
-For critical bugs in a stable release:
+### Monitoring
 
-1. **Create hotfix branch:** `hotfix/<description>` from the release tag
-2. **Apply fix + test** — Lisa Martinez validates
-3. **Version bump:** increment PATCH (e.g., `2.3.1` → `2.3.2`)
-4. **Tag and build** — same process as stable release, accelerated timeline
-5. **Release notes** — note this is a hotfix for `[Critical Bug]`
-6. **Communicate** — notify users via in-app update notification
+- [ ] **Mr.Orchords monitors** crash reports in Firebase Crashlytics
+- [ ] **Mr.Orchords monitors** Store submission status (if applicable)
+- [ ] **Mr.Orchords monitors** community feedback for critical issues
+- [ ] **Mr.Orchords monitors** download/install metrics
+
+### Communication
+
+- [ ] **Mr.Orchords writes** launch summary for team (what shipped, metrics so far)
+- [ ] **Mr.Orchords schedules** post-release retrospective (within 2 weeks)
 
 ---
 
-## Rollback Procedure
+## Hotfix Checklist
 
-If a release causes critical issues within 48 hours:
+For a critical bug (S0 severity) that requires an immediate patch release:
 
-1. **Assess severity** — determine if rollback is necessary
-2. **Communicate** — post to website and social media; disable distribution link
-3. **Revert CI artifact** — remove from download page and CI artifacts
-4. **Tag removal** — remove the broken tag from git (if not yet publicly distributed)
-5. **Begin hotfix** — follow hotfix procedure above
-6. **Post-mortem** — document root cause; update release checklist if gaps found
+- [ ] Hotfix branch created from the release tag (`hotfix/description`)
+- [ ] Fix implemented and tested
+- [ ] Mr.Orchords signs off on hotfix
+- [ ] Mr.Orchords builds, signs, and tests hotfix installer
+- [ ] Hotfix tagged and released
+- [ ] Incident report filed (see [`engineering/BACKUP_DISASTER_RECOVERY.md`](../engineering/BACKUP_DISASTER_RECOVERY.md))
+- [ ] Post-incident review scheduled
 
 ---
 
@@ -217,11 +156,11 @@ If a release causes critical issues within 48 hours:
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.0.0 | June 2026 | Initial checklist — aligned with ISO/IEC 12207:2017 release process |
+| 1.0.0 | June 2026 | Initial checklist — aligned with ISO/IEC 12207:2017 §6.4 |
 
 ---
 
-*Grounded in: ISO/IEC 12207:2017 §6.4 (Transition Process), ISO/IEC 19770-2:2015, ISO/IEC 25010:2023*
+*Grounded in: ISO/IEC 12207:2017 §6.4 (Transition Process), ISO/IEC 25010:2023 (Functional Suitability)*
 
 
 
@@ -231,11 +170,10 @@ If a release causes critical issues within 48 hours:
 
 ### Internal Documents
 
-- [$title](./../ACCESSIBILITY_COMPLIANCE.md)
 - [$title](./../PERFORMANCE_BENCHMARKS.md)
 - [$title](././CHANGELOG_POLICY.md)
 - [$title](././SWID_TAG_SPEC.md)
-- [$title](././WINDOWS_STORE_SUBMISSION.md)
+- [$title](./../ACCESSIBILITY_COMPLIANCE.md)
 
 ### Standards & Frameworks
 
@@ -251,11 +189,11 @@ If a release causes critical issues within 48 hours:
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Sarah Miller | Initial version |
-| 1.0.1 | June 2026 | Sarah Miller | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
-- **Next review:** After every release
-- **Reviewer:** Sarah Miller (Build & Release Engineer)
+- **Next review:** On each release
+- **Reviewer:** Mr.Orchords (Build & Release Engineer)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
