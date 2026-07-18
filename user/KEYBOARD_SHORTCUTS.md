@@ -1,5 +1,3 @@
-> Auto-generated from `docs/user/KEYBOARD_SHORTCUTS.md` in the docs repo.
-
 ---
 title: "Keyboard Shortcuts"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Keyboard Shortcuts
 
-**Project:** Beetle Studio  
-**Owner:** Tom Anderson (Technical Writer) — maintained with Alex Chen (UI)  
-**Reviewers:** Kirk Beka (CTO), Mooned Dev (CEO)
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (Technical Writer) — maintained with Mr.Orchords (UI)  
+**Reviewers:** Mr.Orchords (CTO), Mr.Orchords (CEO)
 **ISO Standards:** ISO/IEC 25010:2023 (usability), ISO 9241-12 (navigation)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,14 +23,14 @@ status: "review"
 |---|---|
 | **Scope** | Complete keyboard shortcut reference |
 | **Diátaxis form** | Reference |
-| **Primary audience** | All Beetle Studio users |
+| **Primary audience** | All Mr.Orchords users |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 ---
 
 ## Overview
 
-This document is the complete reference for every keyboard shortcut in Beetle Studio on Windows. Shortcuts are grouped by functional area. Use this document to speed up your editing workflow and to look up the key binding for any action.
+This document is the complete reference for every keyboard shortcut in Mr.Orchords on Windows. Shortcuts are grouped by functional area. Use this document to speed up your editing workflow and to look up the key binding for any action.
 
 ## Contents
 
@@ -214,11 +212,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Tom Anderson | Initial version |
-| 1.0.1 | June 2026 | Tom Anderson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** On shortcut changes
-- **Reviewer:** Tom Anderson (Technical Writer) — maintained with Alex Chen (UI)
+- **Reviewer:** Mr.Orchords (Technical Writer) — maintained with Mr.Orchords (UI)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
