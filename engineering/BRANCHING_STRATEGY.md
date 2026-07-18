@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/BRANCHING_STRATEGY.md` in the docs repo.
-
 ---
 title: "Branching Strategy"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Branching Strategy
 
-**Project:** Beetle Studio  
-**Owner:** Mike Johnson (DevOps Lead)  
-**Reviewers:** Kirk Beka (CTO), all engineering leads  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (DevOps Lead)  
+**Reviewers:** Mr.Orchords (CTO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (configuration management), ISO/IEC 25010:2023 (maintainability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-This document defines Beetle Studio's Git branching model. Per **ISO/IEC 12207:2017**, configuration management -- including branch control -- is a required process that ensures the integrity of configuration items throughout the software lifecycle.
+This document defines Mr.Orchords's Git branching model. Per **ISO/IEC 12207:2017**, configuration management -- including branch control -- is a required process that ensures the integrity of configuration items throughout the software lifecycle.
 ## Contents
 
 - [Branch Types](#branch-types)
@@ -154,7 +152,7 @@ This document defines Beetle Studio's Git branching model. Per **ISO/IEC 12207:2
    git checkout -b release/v2.3.x main
    ```
 2. **Freeze:** No new features; only bug fixes and release work
-3. **QA:** Lisa Martinez (QA Lead) tests the release branch
+3. **QA:** Mr.Orchords (QA Lead) tests the release branch
 4. **Fix in release:** Bug fixes land on `release/v2.3.x` and are merged to `main`
 5. **Tag:** When ready, tag the release:
    ```bash
@@ -240,11 +238,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Mike Johnson | Initial version |
-| 1.0.1 | June 2026 | Mike Johnson | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Mike Johnson (DevOps Lead)
+- **Reviewer:** Mr.Orchords (DevOps Lead)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type

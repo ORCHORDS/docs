@@ -1,5 +1,3 @@
-> Auto-generated from `docs/engineering/TECHNICAL_STANDARDS.md` in the docs repo.
-
 ---
 title: "Technical Standards"
 version: "1.0.0"
@@ -9,9 +7,9 @@ status: "review"
 
 # Technical Standards
 
-**Project:** Beetle Studio  
-**Owner:** Kirk Beka (CTO)  
-**Reviewers:** Mooned Dev (CEO), all engineering leads  
+**Project:** Mr.Orchords  
+**Owner:** Mr.Orchords (CTO)  
+**Reviewers:** Mr.Orchords (CEO), all engineering leads  
 **ISO Standards:** ISO/IEC 12207:2017 (development process), ISO/IEC 25010:2023 (maintainability)  
 **Version:** 1.0.0  
 **Last Updated:** June 2026  
@@ -25,7 +23,7 @@ status: "review"
 |---|---|
 | **Scope** | C++ coding standards, API design rules, and RFC process |
 | **Diátaxis form** | Reference |
-| **Primary audience** | All engineers, Kirk Beka |
+| **Primary audience** | All engineers, Mr.Orchords |
 | **Secondary audience** | Future maintainers and reviewers of this document |
 
 
@@ -33,7 +31,7 @@ status: "review"
 
 ## Overview
 
-These standards govern how Beetle Studio code is written, reviewed, and maintained. Per **ISO/IEC 12207:2017 section 6.3**, the development process includes defining coding standards that ensure software quality and maintainability. These standards support **ISO/IEC 25010:2023**'s maintainability characteristic.
+These standards govern how Mr.Orchords code is written, reviewed, and maintained. Per **ISO/IEC 12207:2017 section 6.3**, the development process includes defining coding standards that ensure software quality and maintainability. These standards support **ISO/IEC 25010:2023**'s maintainability characteristic.
 ## Contents
 
 - [C++ Coding Standards](#c-coding-standards)
@@ -76,7 +74,7 @@ These standards govern how Beetle Studio code is written, reviewed, and maintain
 
 | Element | Convention | Example |
 |---|---|---|
-| Class/Struct | PascalCase | `BeetleTimeline`, `AudioMixer` |
+| Class/Struct | PascalCase | `MrOrchordsTimeline`, `AudioMixer` |
 | Function | PascalCase | `LoadProject()`, `RenderFrame()` |
 | Member variable | `m_` prefix + PascalCase | `m_projectPath`, `m_frameRate` |
 | Static variable | `s_` prefix + PascalCase | `s_instanceCount` |
@@ -84,7 +82,7 @@ These standards govern how Beetle Studio code is written, reviewed, and maintain
 | Local variable | camelCase | `frameIndex`, `isReady` |
 | Enum value | PascalCase | `TrackType::VideoTrack` |
 | Macro / constant | SCREAMING_SNAKE | `MAX_TRACKS`, `DEFAULT_FPS` |
-| Header guard | `BEETLE_<MODULE>_<FILENAME>_H` | `BEETLE_TIMELINE_TRACK_H` |
+| Header guard | `MR_ORCHORDS_<MODULE>_<FILENAME>_H` | `MR_ORCHORDS_TIMELINE_TRACK_H` |
 
 ### Memory Management
 
@@ -106,7 +104,7 @@ delete[] buffer;
 |---|---|
 | Expected recoverable errors | `std::optional<T>` or `std::expected<T, E>` |
 | Unexpected/programming errors | `assert()` in debug; crash with logged context in release |
-| External system errors (file I/O, GPU) | Custom exception with context (`BeetleException`) |
+| External system errors (file I/O, GPU) | Custom exception with context (`MrOrchordsException`) |
 | Never silently swallow errors | Always log or propagate |
 
 ### No-Except Guidelines
@@ -185,9 +183,9 @@ Per **ISO/IEC 12207:2017 §6.3.8**, peer review is a required quality assurance 
 |---|---|---|
 | Bug fix / refactor (single module) | 1 | Any engineer on the team |
 | New feature | 1 | Domain lead for the feature area |
-| Public API change | 2 | Domain lead + Kirk Beka |
-| Cross-cutting concern | 2 | Domain leads affected + Kirk Beka |
-| Security-sensitive change | 2 | Kirk Beka + Maya Rodriguez |
+| Public API change | 2 | Domain lead + Mr.Orchords |
+| Cross-cutting concern | 2 | Domain leads affected + Mr.Orchords |
+| Security-sensitive change | 2 | Mr.Orchords + Mr.Orchords |
 
 ---
 
@@ -207,7 +205,7 @@ security model, build/release pipeline, or license/business rules.
    Considered, Migration Plan, Open Questions, References, Review Notes, Outcome.
 3. **Pull request** opens a 1-week open-comment window on the RFC file.
    Discussions happen on the PR (not Slack) so the rationale is preserved.
-4. **Decision** by Kirk Beka (with Mooned Dev for engine-level changes).
+4. **Decision** by Mr.Orchords (with Mr.Orchords for engine-level changes).
    Decision criteria are recorded in §9 *Outcome* of the RFC itself.
 5. **Outcome** posted as a PR comment and tracked in the issue tracker:
    *Accepted* / *Accepted with changes* / *Rejected* / *Deferred*. Accepted
@@ -249,11 +247,11 @@ _No internal documents referenced._
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 1.0.0 | June 2026 | Kirk Beka | Initial version |
-| 1.0.1 | June 2026 | Kirk Beka | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
+| 1.0.0 | June 2026 | Mr.Orchords | Initial version |
+| 1.0.1 | June 2026 | Mr.Orchords | Added Scope & Audience block and Document Maintenance section per STYLE_GUIDE.md (ISO/IEC/IEEE 82079-1:2019 compliance) |
 
 ### Review Cadence
 
 - **Next review:** Quarterly
-- **Reviewer:** Kirk Beka (CTO)
+- **Reviewer:** Mr.Orchords (CTO)
 - **Cadence:** Per STYLE_GUIDE.md defaults for this document type
