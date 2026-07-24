@@ -1,0 +1,53 @@
+# GitHub Sponsors / funding configuration for ORCHORDS/docs
+# Docs: https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+#
+# When this file is committed to the default branch, GitHub renders a
+# heart-shaped "Sponsor" button at the top of the repo's right sidebar.
+# Clicking the button opens a dropdown with all the platforms listed below.
+#
+# Conventions:
+#   - Natively-supported platforms (github, ko_fi, buy_me_a_coffee, ...)
+#     get their own icon in the dropdown.
+#   - `custom:` accepts up to 4 plain URLs and renders a generic "Custom"
+#     link. Use this for anything GitHub does not have a key for
+#     (e.g. crypto addresses, NOWPayments pages, Solana Pay URIs, ...).
+
+# --- Natively-supported platforms (uncomment + fill to enable) ---
+
+# GitHub Sponsors — username only. Country restrictions apply; check
+# https://github.com/sponsors for the current supported-country list.
+# github: ORCHORDS
+
+# Ko-fi — https://ko-fi.com/<username>
+# ko_fi: orchords
+
+# Buy Me a Coffee — https://www.buymeacoffee.com/<username>
+# buy_me_a_coffee: orchords
+
+# Patreon — https://www.patreon.com/<username>
+# patreon: orchords
+
+# Open Collective — https://opencollective.com/<project>
+# open_collective: orchords
+
+# Liberapay — https://liberapay.com/<username>
+# liberapay: orchords
+
+# Polar — https://polar.sh/<username>
+# polar: orchords
+
+# thanks.dev — https://thanks.dev/dashboard
+# thanks_dev: u/gh/orchords
+
+# --- Custom URLs (up to 4) ---
+# Anything not natively supported goes here. These render as plain links
+# in the dropdown. Use any URL scheme the browser / wallet handles:
+#   - https://...     (NOWPayments, Coinbase Commerce, Ko-fi alt page, etc.)
+#   - solana:...      (Solana Pay URI; opens in Phantom / Backpack / Solflare)
+#   - ethereum:...    (opens in MetaMask / Rabby / Frame)
+#   - bitcoin:...     (opens in any BTC on-chain wallet)
+
+custom:
+  - "solana:DxQRGWyCF9hqvrJExSxiaac1ZFf8NiUmpRcZFPRU4xaq"
+  - "ethereum:0x9aE64EFEf05E0ac980843FE3c7C03D9C0C8D1BC3"
+  - "bitcoin:bc1qp3pran7r2tw2s6x95p3lfr8zw34u74tpxttu3r"
