@@ -1,0 +1,26 @@
+name: Documentation issue
+description: Report something wrong, outdated, or missing in the docs
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      description: Path or URL of the affected page (e.g. engineering/ARCHITECTURE_OVERVIEW.md)
+      placeholder: engineering/ARCHITECTURE_OVERVIEW.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: What is incorrect, outdated, or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: What should it say instead? (optional)
+    validations:
+      required: false
