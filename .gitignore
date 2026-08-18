@@ -1,0 +1,26 @@
+# Local AI / agent scratch
+.orchestrator/
+.agent/
+.tmp/
+tmp/
+.worktrees/
+
+# Generated reports / caches
+playwright-report/
+test-results/
+coverage/
+.cache/
+*.log
+*.tmp
+*.bak
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local secrets
+.env
+.env.*
+!.env.example
