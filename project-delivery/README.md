@@ -10,7 +10,7 @@ next-review: "2026-11-20"
 
 # Project and Delivery Governance
 
-Company-wide governance for initiating, steering, changing, handing over, and closing projects.
+Company-wide governance for initiating, steering, changing, handing over, closing, and validating the benefits of projects.
 
 ## Documents
 
@@ -19,5 +19,6 @@ Company-wide governance for initiating, steering, changing, handing over, and cl
 - [Stage Gate Governance](./STAGE_GATE_GOVERNANCE.md)
 - [Project Risk, Issue, and Change](./PROJECT_RISK_ISSUE_CHANGE.md)
 - [Project Handover and Closure](./PROJECT_HANDOVER_CLOSURE.md)
+- [Benefits Realization](./BENEFITS_REALIZATION.md)
 
 Guidance is compatible with predictive, iterative, adaptive, and hybrid delivery approaches.

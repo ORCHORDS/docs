@@ -10,7 +10,7 @@ next-review: "2026-11-20"
 
 # Quality Management
 
-Company-wide governance for quality objectives, nonconformities, corrective action, root-cause analysis, measurement integrity, and management review.
+Company-wide governance for quality objectives, nonconformities, corrective action, root-cause analysis, measurement integrity, supplier quality, and management review.
 
 ## Documents
 
@@ -19,4 +19,5 @@ Company-wide governance for quality objectives, nonconformities, corrective acti
 - [Nonconformity and Defect Management](./NONCONFORMITY_DEFECT_MANAGEMENT.md)
 - [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS.md)
 - [Measurement Validation](./MEASUREMENT_VALIDATION.md)
+- [Supplier Quality Management](./SUPPLIER_QUALITY_MANAGEMENT.md)
 - [Quality Review Governance](./QUALITY_REVIEW_GOVERNANCE.md)

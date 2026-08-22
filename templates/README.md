@@ -20,6 +20,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Policy Review](./POLICY_REVIEW_TEMPLATE.md)
 - [CAPA](./CAPA_TEMPLATE.md)
 - [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS_TEMPLATE.md)
+- [Supplier Quality Review](./SUPPLIER_QUALITY_REVIEW_TEMPLATE.md)
 - [Audit Plan](./AUDIT_PLAN_TEMPLATE.md)
 - [Audit Finding](./AUDIT_FINDING_TEMPLATE.md)
 - [Legal Request](./LEGAL_REQUEST_TEMPLATE.md)
@@ -38,19 +39,23 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 
 ## Commercial, project delivery, knowledge, research, and customer success
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_TEMPLATE.md)
+- [Commercial Forecast Review](./COMMERCIAL_FORECAST_REVIEW_TEMPLATE.md)
 - [Pilot Review](./PILOT_REVIEW_TEMPLATE.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_TEMPLATE.md)
 - [Project Charter](./PROJECT_CHARTER_TEMPLATE.md)
 - [Stage Gate Review](./STAGE_GATE_TEMPLATE.md)
 - [Project Handover](./PROJECT_HANDOVER_TEMPLATE.md)
+- [Benefits Review](./BENEFITS_REVIEW_TEMPLATE.md)
 - [Knowledge Transfer](./KNOWLEDGE_TRANSFER_TEMPLATE.md)
 - [Research Plan](./RESEARCH_PLAN_TEMPLATE.md)
 - [Participant Consent Record](./PARTICIPANT_CONSENT_RECORD_TEMPLATE.md)
 - [Customer Onboarding](./CUSTOMER_ONBOARDING_TEMPLATE.md)
 - [Customer Success Plan](./CUSTOMER_SUCCESS_PLAN_TEMPLATE.md)
 
-## Security, operations, physical security, and support
+## Security, engineering, operations, physical security, and support
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
+- [Vulnerability Exception](./VULNERABILITY_EXCEPTION_TEMPLATE.md)
+- [Emergency Access Record](./EMERGENCY_ACCESS_TEMPLATE.md)
 - [Threat Model](./THREAT_MODEL_TEMPLATE.md)
 - [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_TEMPLATE.md)
 - [Vulnerability Triage](./VULNERABILITY_TRIAGE_TEMPLATE.md)
@@ -59,11 +64,14 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Media Sanitization Record](./MEDIA_SANITIZATION_RECORD_TEMPLATE.md)
 - [Access Review](./ACCESS_REVIEW_TEMPLATE.md)
 - [Privileged Access Request](./PRIVILEGED_ACCESS_REQUEST_TEMPLATE.md)
+- [Technical Debt Register](./TECHNICAL_DEBT_REGISTER_TEMPLATE.md)
 - [Service Ownership](./SERVICE_OWNERSHIP_TEMPLATE.md)
+- [Service Decommissioning](./SERVICE_DECOMMISSIONING_TEMPLATE.md)
 - [Alert Review](./ALERT_REVIEW_TEMPLATE.md)
 - [Visitor Access](./VISITOR_ACCESS_TEMPLATE.md)
 - [Lost or Stolen Asset](./LOST_ASSET_TEMPLATE.md)
 - [Support Identity Verification](./SUPPORT_IDENTITY_VERIFICATION_TEMPLATE.md)
+- [Account Recovery](./ACCOUNT_RECOVERY_TEMPLATE.md)
 - [Complaint Review](./COMPLAINT_REVIEW_TEMPLATE.md)
 
 ## Resilience and incidents
@@ -74,11 +82,13 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 
 ## Data, privacy, AI, product, accessibility, and suppliers
 - [Data Inventory Entry](./DATA_INVENTORY_ENTRY_TEMPLATE.md)
+- [Data Access Review](./DATA_ACCESS_REVIEW_TEMPLATE.md)
 - [Retention Schedule](./RETENTION_SCHEDULE_TEMPLATE.md)
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_TEMPLATE.md)
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_TEMPLATE.md)
 - [AI Risk Review](./AI_RISK_REVIEW_TEMPLATE.md)
 - [AI Change Review](./AI_CHANGE_REVIEW_TEMPLATE.md)
+- [AI Monitoring Review](./AI_MONITORING_REVIEW_TEMPLATE.md)
 - [AI Red Team](./AI_RED_TEAM_TEMPLATE.md)
 - [Experiment Review](./EXPERIMENT_REVIEW_TEMPLATE.md)
 - [Launch Readiness](./LAUNCH_READINESS_TEMPLATE.md)
