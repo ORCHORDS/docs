@@ -3,9 +3,9 @@ title: "Security"
 owner: "Security Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-23"
 review-cycle: "90 days"
-next-review: "2026-11-20"
+next-review: "2026-11-21"
 ---
 
 # Security
@@ -18,6 +18,7 @@ Company-wide security requirements without publishing private architecture or cr
 - [Security Architecture Principles](./SECURITY_ARCHITECTURE_PRINCIPLES.md)
 - [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW.md)
 - [Identity and Authentication](./IDENTITY_AUTHENTICATION_POLICY.md)
+- [Session Security Governance](./SESSION_SECURITY_GOVERNANCE.md)
 - [Privileged Access Management](./PRIVILEGED_ACCESS_MANAGEMENT.md)
 - [Emergency Access Governance](./EMERGENCY_ACCESS_GOVERNANCE.md)
 - [Secure Remote Access](./SECURE_REMOTE_ACCESS.md)
@@ -27,11 +28,14 @@ Company-wide security requirements without publishing private architecture or cr
 - [Cryptography and Key Management](./CRYPTOGRAPHY_KEY_MANAGEMENT.md)
 - [Security Baseline Configuration](./SECURITY_BASELINE_CONFIGURATION.md)
 - [Patch and Vulnerability Remediation](./PATCH_VULNERABILITY_REMEDIATION_POLICY.md)
-- [Vulnerability Exception Management](./VULNERABILITY_EXCEPTION_MANAGEMENT.md)
+- [Vulnerability Severity Governance](./VULNERABILITY_SEVERITY_GOVERNANCE.md)
+- [Vulnerability Exception Governance](./VULNERABILITY_EXCEPTION_MANAGEMENT.md)
 - [Threat Intelligence](./THREAT_INTELLIGENCE.md)
 - [Continuous Security Monitoring](./CONTINUOUS_SECURITY_MONITORING.md)
-- [Security Metrics and Reporting](./SECURITY_METRICS_REPORTING.md)
+- [Security Telemetry Quality](./SECURITY_TELEMETRY_QUALITY.md)
 - [Security Testing](./SECURITY_TESTING_POLICY.md)
+- [Security Test Coverage Governance](./SECURITY_TEST_COVERAGE.md)
+- [Security Metrics Reporting](./SECURITY_METRICS_REPORTING.md)
 - [Security Event Escalation](./SECURITY_EVENT_ESCALATION.md)
 - [Media Sanitization and Secure Disposal](./MEDIA_SANITIZATION.md)
 - [Vulnerability Disclosure](./VULNERABILITY_DISCLOSURE_POLICY.md)
