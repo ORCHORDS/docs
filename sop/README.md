@@ -12,7 +12,7 @@ next-review: "2026-11-20"
 
 SOPs turn policy into repeatable, evidence-producing operational steps.
 
-## Governance, assurance, and legal
+## Governance, assurance, legal, and ethics
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
@@ -22,8 +22,11 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Legal Request](./LEGAL_REQUEST_SOP.md)
 - [Legal Hold](./LEGAL_HOLD_SOP.md)
 - [Contract Review](./CONTRACT_REVIEW_SOP.md)
+- [Conflict Disclosure](./CONFLICT_DISCLOSURE_SOP.md)
+- [Gift and Hospitality Review](./GIFT_HOSPITALITY_REVIEW_SOP.md)
+- [Speak-Up Report](./SPEAK_UP_REPORT_SOP.md)
 
-## Security and access
+## Security, communications, and access
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
 - [Patch Management](./PATCH_MANAGEMENT_SOP.md)
 - [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_SOP.md)
@@ -33,12 +36,16 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Access Provisioning](./ACCESS_PROVISIONING_SOP.md)
 - [Privileged Access](./PRIVILEGED_ACCESS_SOP.md)
 - [Access Review](./ACCESS_REVIEW_SOP.md)
+- [Public Statement Review](./PUBLIC_STATEMENT_REVIEW_SOP.md)
+- [Social Account Recovery](./SOCIAL_ACCOUNT_RECOVERY_SOP.md)
 
-## Engineering, operations, physical, and finance
+## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
 - [On-Call Handoff](./ON_CALL_HANDOFF_SOP.md)
+- [Procurement Review](./PROCUREMENT_REVIEW_SOP.md)
+- [Software and Service Acquisition](./SOFTWARE_SERVICE_ACQUISITION_SOP.md)
 - [Visitor Access](./VISITOR_ACCESS_SOP.md)
 - [Lost or Stolen Asset](./LOST_STOLEN_ASSET_SOP.md)
 - [Payment Change Verification](./PAYMENT_CHANGE_VERIFICATION_SOP.md)

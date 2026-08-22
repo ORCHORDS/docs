@@ -13,9 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTROLLED_DIRS = {
     "accessibility",
     "ai",
+    "communications",
     "compliance",
     "data",
     "engineering",
+    "ethics",
     "finance",
     "governance",
     "legal",
@@ -23,6 +25,7 @@ CONTROLLED_DIRS = {
     "people",
     "physical-security",
     "privacy",
+    "procurement",
     "product",
     "releases",
     "resilience",
@@ -104,7 +107,6 @@ def check_links(path: Path, text: str) -> list[str]:
 def main() -> int:
     errors: list[str] = []
     markdown = sorted(ROOT.rglob("*.md"))
-
     root_md = {p.name for p in ROOT.glob("*.md")}
     allowed_root_md = {"README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md"}
     unexpected_root = sorted(root_md - allowed_root_md)
