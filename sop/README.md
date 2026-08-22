@@ -58,13 +58,21 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Sensitive Support Action](./SENSITIVE_SUPPORT_ACTION_SOP.md)
 - [Support Escalation](./SUPPORT_ESCALATION_SOP.md)
 - [Complaint Handling](./COMPLAINT_HANDLING_SOP.md)
+- [Trust Content Review](./TRUST_CONTENT_REVIEW_SOP.md)
+- [Customer Due Diligence Response](./CUSTOMER_DUE_DILIGENCE_RESPONSE_SOP.md)
+- [Trust Correction](./TRUST_CORRECTION_SOP.md)
 
-## Commercial, project delivery, knowledge, research, and customer success
+## Commercial, marketing, partnerships, project delivery, knowledge, research, and customer success
+- [Marketing Campaign Review](./MARKETING_CAMPAIGN_REVIEW_SOP.md)
+- [Marketing Incident](./MARKETING_INCIDENT_SOP.md)
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_REVIEW_SOP.md)
 - [Pricing and Discount Review](./PRICING_DISCOUNT_SOP.md)
 - [Commercial Forecast Review](./COMMERCIAL_FORECAST_REVIEW_SOP.md)
 - [Pilot Review](./PILOT_REVIEW_SOP.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_SOP.md)
+- [Partner Due Diligence](./PARTNER_DUE_DILIGENCE_SOP.md)
+- [Partner Renewal Review](./PARTNER_RENEWAL_SOP.md)
+- [Partner Exit](./PARTNER_EXIT_SOP.md)
 - [Project Initiation](./PROJECT_INITIATION_SOP.md)
 - [Stage Gate Review](./STAGE_GATE_SOP.md)
 - [Project Dependency Review](./PROJECT_DEPENDENCY_REVIEW_SOP.md)
@@ -76,7 +84,7 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Customer Onboarding](./CUSTOMER_ONBOARDING_SOP.md)
 - [Customer Success Review](./CUSTOMER_SUCCESS_REVIEW_SOP.md)
 
-## Engineering, procurement, operations, physical, and finance
+## Engineering, procurement, operations, physical, finance, and records
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
 - [CI Failure Trend Review](./CI_FAILURE_TREND_SOP.md)
@@ -94,6 +102,8 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Visitor Access](./VISITOR_ACCESS_SOP.md)
 - [Lost or Stolen Asset](./LOST_STOLEN_ASSET_SOP.md)
 - [Payment Change Verification](./PAYMENT_CHANGE_VERIFICATION_SOP.md)
+- [Record Retention and Disposition](./RECORD_RETENTION_DISPOSITION_SOP.md)
+- [Record Migration](./RECORD_MIGRATION_SOP.md)
 - [Release](./RELEASE_SOP.md)
 - [Emergency Release](./EMERGENCY_RELEASE_SOP.md)
 

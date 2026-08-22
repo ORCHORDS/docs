@@ -40,12 +40,17 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Strategy Review](./STRATEGY_REVIEW_TEMPLATE.md)
 - [Investment Review](./INVESTMENT_REVIEW_TEMPLATE.md)
 
-## Commercial, project delivery, knowledge, research, and customer success
+## Commercial, marketing, partnerships, project delivery, knowledge, research, and customer success
+- [Marketing Campaign Review](./MARKETING_CAMPAIGN_REVIEW_TEMPLATE.md)
+- [Marketing Incident](./MARKETING_INCIDENT_TEMPLATE.md)
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_TEMPLATE.md)
 - [Pricing and Discount Review](./PRICING_DISCOUNT_TEMPLATE.md)
 - [Commercial Forecast Review](./COMMERCIAL_FORECAST_REVIEW_TEMPLATE.md)
 - [Pilot Review](./PILOT_REVIEW_TEMPLATE.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_TEMPLATE.md)
+- [Partner Due Diligence](./PARTNER_DUE_DILIGENCE_TEMPLATE.md)
+- [Partner Renewal Review](./PARTNER_RENEWAL_TEMPLATE.md)
+- [Partner Exit](./PARTNER_EXIT_TEMPLATE.md)
 - [Project Charter](./PROJECT_CHARTER_TEMPLATE.md)
 - [Stage Gate Review](./STAGE_GATE_TEMPLATE.md)
 - [Project Dependency Review](./PROJECT_DEPENDENCY_TEMPLATE.md)
@@ -57,7 +62,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Customer Onboarding](./CUSTOMER_ONBOARDING_TEMPLATE.md)
 - [Customer Success Plan](./CUSTOMER_SUCCESS_PLAN_TEMPLATE.md)
 
-## Security, engineering, operations, physical security, and support
+## Security, engineering, operations, physical security, support, and trust
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
 - [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW_TEMPLATE.md)
 - [Security Drift Review](./SECURITY_DRIFT_REVIEW_TEMPLATE.md)
@@ -88,6 +93,9 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Account Recovery](./ACCOUNT_RECOVERY_TEMPLATE.md)
 - [Sensitive Support Action](./SENSITIVE_SUPPORT_ACTION_TEMPLATE.md)
 - [Complaint Review](./COMPLAINT_REVIEW_TEMPLATE.md)
+- [Trust Content Review](./TRUST_CONTENT_REVIEW_TEMPLATE.md)
+- [Customer Due Diligence Response](./CUSTOMER_DUE_DILIGENCE_RESPONSE_TEMPLATE.md)
+- [Trust Correction](./TRUST_CORRECTION_TEMPLATE.md)
 
 ## Resilience and incidents
 - [Business Impact Analysis](./BUSINESS_IMPACT_ANALYSIS_TEMPLATE.md)
@@ -95,11 +103,13 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Tabletop Exercise](./TABLETOP_EXERCISE_TEMPLATE.md)
 - [Incident Review](./INCIDENT_REVIEW_TEMPLATE.md)
 
-## Data, privacy, AI, product, accessibility, and suppliers
+## Data, records, privacy, AI, product, accessibility, and suppliers
 - [Data Inventory Entry](./DATA_INVENTORY_ENTRY_TEMPLATE.md)
 - [Data Access Review](./DATA_ACCESS_REVIEW_TEMPLATE.md)
 - [Data Owner Review](./DATA_OWNER_REVIEW_TEMPLATE.md)
 - [Retention Schedule](./RETENTION_SCHEDULE_TEMPLATE.md)
+- [Record Retention and Disposition](./RECORD_RETENTION_DISPOSITION_TEMPLATE.md)
+- [Record Migration](./RECORD_MIGRATION_TEMPLATE.md)
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_TEMPLATE.md)
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_TEMPLATE.md)
 - [Privacy Exception Review](./PRIVACY_EXCEPTION_REVIEW_TEMPLATE.md)
