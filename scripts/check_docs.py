@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTROLLED_DIRS = {
     "accessibility",
     "ai",
+    "commercial",
     "communications",
     "compliance",
     "data",
@@ -21,6 +22,7 @@ CONTROLLED_DIRS = {
     "finance",
     "governance",
     "internal-audit",
+    "knowledge",
     "legal",
     "operations",
     "people",
@@ -28,6 +30,7 @@ CONTROLLED_DIRS = {
     "privacy",
     "procurement",
     "product",
+    "project-delivery",
     "quality",
     "releases",
     "resilience",
