@@ -1,29 +1,30 @@
 ---
-title: "Security Documentation"
-owner: "Documentation Maintainer"
+title: "Security"
+owner: "Security Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Security
 
-Company-wide security principles, vulnerability disclosure and cryptographic governance.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement
-  genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets,
-  internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow
-  [Document Control](../governance/DOCUMENT_CONTROL.md).
+Company-wide security policy and control expectations. These documents describe
+requirements without exposing private system topology or credentials.
 
 ## Documents
 
-- [Security Policy](./SECURITY_POLICY.md) — Company-wide security expectations.
-- [Vulnerability Disclosure Policy](./VULNERABILITY_DISCLOSURE_POLICY.md) — Coordinated disclosure and safe-harbor expectations.
-- [Cryptography Key Management](./CRYPTOGRAPHY_KEY_MANAGEMENT.md) — Cryptographic and key-management governance.
+- [Security Policy](./SECURITY_POLICY.md)
+- [Vulnerability Disclosure Policy](./VULNERABILITY_DISCLOSURE_POLICY.md)
+- [Cryptography and Key Management](./CRYPTOGRAPHY_KEY_MANAGEMENT.md)
+- [Identity and Authentication](./IDENTITY_AUTHENTICATION_POLICY.md)
+- [Secrets Management](./SECRETS_MANAGEMENT.md)
+- [Security Testing Policy](./SECURITY_TESTING_POLICY.md)
+- [Security Baseline Configuration](./SECURITY_BASELINE_CONFIGURATION.md)
+
+## Procedures
+
+Operational procedures live in [SOPs](../sop/README.md), including
+vulnerability management, security exceptions, secrets rotation, access
+review, and incident management.

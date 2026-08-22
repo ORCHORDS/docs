@@ -1,9 +1,9 @@
 # ORCHORDS Public Documentation
 
 This repository is the public company-wide knowledge base for ORCHORDS
-governance, security, privacy, data, AI, engineering, operations, supplier
-risk, releases, accessibility, standards, templates, and standard operating
-procedures (SOPs).
+governance, security, privacy, data, AI, engineering, operations, resilience,
+people, supplier risk, compliance/assurance, releases, accessibility,
+standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository.
 Product-specific implementation details, deployment topology, credentials,
@@ -15,14 +15,17 @@ work do not belong here.
 | Category | Purpose |
 |---|---|
 | [Governance](./governance/README.md) | Decision rights, enterprise risk, document control, assurance, retention |
-| [Security](./security/README.md) | Security principles, disclosure, cryptography and control expectations |
-| [Privacy](./privacy/README.md) | Privacy governance, privacy-by-design and rights principles |
-| [Data](./data/README.md) | Classification, handling and lifecycle governance |
-| [AI](./ai/README.md) | Responsible AI governance, acceptable use and risk assessment |
-| [Engineering](./engineering/README.md) | Secure development, source control, CI/CD, testing and dependencies |
-| [Operations](./operations/README.md) | Incidents, access, monitoring, continuity, change and onboarding |
-| [Third-party](./third-party/README.md) | Supplier due diligence, third-party risk and security expectations |
-| [Releases](./releases/README.md) | Release governance, signing and versioning |
+| [Security](./security/README.md) | Security principles, identity, secrets, testing, disclosure and cryptography |
+| [Privacy](./privacy/README.md) | Privacy governance, assessments, rights and incident handling |
+| [Data](./data/README.md) | Classification, lifecycle, retention, sharing, quality and integrity |
+| [AI](./ai/README.md) | Responsible AI governance, evaluation, data, incidents and third-party use |
+| [Engineering](./engineering/README.md) | Secure design, coding, review, source control, CI/CD, testing and dependencies |
+| [Operations](./operations/README.md) | Access, change, configuration, incidents, monitoring, assets and reliability |
+| [Resilience](./resilience/README.md) | Business impact, disaster recovery, crisis communications and exercises |
+| [People](./people/README.md) | Acceptable use, personnel security, awareness and social-engineering resistance |
+| [Third-party](./third-party/README.md) | Supplier due diligence, contracts, monitoring and exit |
+| [Compliance](./compliance/README.md) | Evidence, audit readiness, assurance and public claims |
+| [Releases](./releases/README.md) | Release governance, signing, artifact integrity, versioning and rollback |
 | [Product](./product/README.md) | Company-wide planning and prioritization principles |
 | [Accessibility](./accessibility/README.md) | Accessibility policy and verification expectations |
 | [SOPs](./sop/README.md) | Repeatable procedures that implement policy |

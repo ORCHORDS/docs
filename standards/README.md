@@ -1,26 +1,27 @@
 ---
-title: "Standards Documentation"
+title: "Standards"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Standards
 
-Authoritative references, documentation conventions and control mappings.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets, internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow [Document Control](../governance/DOCUMENT_CONTROL.md).
+This category maintains the external-reference register, documentation style,
+and high-level control mapping used across the public knowledge base.
 
 ## Documents
 
-- [References](./REFERENCES.md) — Current standards and authoritative guidance register.
-- [Style Guide](./STYLE_GUIDE.md) — Documentation writing and evidence conventions.
-- [Control Mapping](./CONTROL_MAPPING.md) — High-level cross-framework mapping.
+- [Standards and Guidance Register](./REFERENCES.md)
+- [High-Level Control Mapping](./CONTROL_MAPPING.md)
+- [Documentation Style Guide](./STYLE_GUIDE.md)
+
+## Rules
+
+Primary authoritative sources take precedence over forum posts, vendor
+marketing, or copied summaries. Draft standards are identified as drafts.
+Framework references do not imply certification, conformance, or control
+implementation.
