@@ -16,6 +16,7 @@ CONTROLLED_DIRS = {
     "commercial",
     "communications",
     "compliance",
+    "corporate-development",
     "customer-success",
     "customer-trust",
     "data",
