@@ -1,31 +1,25 @@
 ---
-title: "Governance Documentation"
-owner: "Documentation Maintainer"
+title: "Governance"
+owner: "Governance Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Governance
 
-Decision rights, enterprise risk, policy control, records and assurance.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement
-  genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets,
-  internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow
-  [Document Control](./DOCUMENT_CONTROL.md).
+Company-wide decision rights, risk governance, policy control, assurance, and records governance.
 
 ## Documents
 
-- [Governance](./GOVERNANCE.md) — Decision rights and policy hierarchy.
-- [Risk Management Policy](./RISK_MANAGEMENT_POLICY.md) — Enterprise risk identification, treatment and acceptance.
-- [Document Control](./DOCUMENT_CONTROL.md) — Public documentation lifecycle and evidence language.
-- [Records Retention Deletion](./RECORDS_RETENTION_DELETION.md) — Retention, legal hold and defensible deletion.
-- [Control Assurance Metrics](./CONTROL_ASSURANCE_METRICS.md) — Evidence and effectiveness measurement.
+- [Governance](./GOVERNANCE.md)
+- [Delegation of Authority](./DELEGATION_OF_AUTHORITY.md)
+- [Risk Management Policy](./RISK_MANAGEMENT_POLICY.md)
+- [Risk Appetite and Tolerance](./RISK_APPETITE_TOLERANCE.md)
+- [Issue Escalation Governance](./ISSUE_ESCALATION_GOVERNANCE.md)
+- [Policy Exception Governance](./POLICY_EXCEPTION_GOVERNANCE.md)
+- [Document Control](./DOCUMENT_CONTROL.md)
+- [Control Assurance Metrics](./CONTROL_ASSURANCE_METRICS.md)
+- [Records Retention and Deletion](./RECORDS_RETENTION_DELETION.md)

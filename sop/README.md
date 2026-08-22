@@ -23,16 +23,19 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 ## Security and access
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
 - [Patch Management](./PATCH_MANAGEMENT_SOP.md)
+- [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_SOP.md)
 - [Security Event Escalation](./SECURITY_EVENT_ESCALATION_SOP.md)
+- [Media Sanitization](./MEDIA_SANITIZATION_SOP.md)
 - [Secrets Rotation](./SECRETS_ROTATION_SOP.md)
 - [Access Provisioning](./ACCESS_PROVISIONING_SOP.md)
 - [Privileged Access](./PRIVILEGED_ACCESS_SOP.md)
 - [Access Review](./ACCESS_REVIEW_SOP.md)
 
-## Engineering and releases
+## Engineering, operations, and releases
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
+- [On-Call Handoff](./ON_CALL_HANDOFF_SOP.md)
 - [Release](./RELEASE_SOP.md)
 - [Emergency Release](./EMERGENCY_RELEASE_SOP.md)
 
@@ -49,9 +52,12 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_SOP.md)
 - [AI Risk Review](./AI_RISK_REVIEW_SOP.md)
 - [AI Change Review](./AI_CHANGE_REVIEW_SOP.md)
+- [AI Red Team](./AI_RED_TEAM_SOP.md)
 - [Accessibility Testing](./ACCESSIBILITY_TESTING_SOP.md)
+- [Experiment Review](./EXPERIMENT_REVIEW_SOP.md)
 - [Launch Readiness](./LAUNCH_READINESS_SOP.md)
 - [Deprecation and Sunset](./DEPRECATION_SUNSET_SOP.md)
+- [Supplier Onboarding](./SUPPLIER_ONBOARDING_SOP.md)
 - [Third-Party Due Diligence](./THIRD_PARTY_DUE_DILIGENCE_SOP.md)
 - [Supplier Incident](./SUPPLIER_INCIDENT_SOP.md)
 - [Supplier Offboarding](./SUPPLIER_OFFBOARDING_SOP.md)

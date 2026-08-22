@@ -10,14 +10,17 @@ next-review: "2026-11-20"
 
 # High-Level Control Mapping
 
-This mapping shows which external references inform policy areas. It does not assert certification, full framework coverage, or control implementation.
+This mapping shows which external references inform policy areas. It does not assert certification, complete framework coverage, or control implementation.
 
 | ORCHORDS area | Primary external references |
 |---|---|
 | Governance and enterprise risk | NIST CSF 2.0; NIST SP 800-53 Rev. 5 |
-| Security controls and assurance | NIST SP 800-53 Rev. 5; CIS Controls v8.1 |
+| Security architecture | NIST SP 800-207; NIST SP 800-160 Vol. 1 Rev. 1 |
 | Identity and authentication | NIST SP 800-63-4; NIST SP 800-53 Rev. 5 |
-| Patch management | NIST SP 800-40 Rev. 4; CIS Controls v8.1 |
+| Threat intelligence | NIST SP 800-150; CISA KEV |
+| Continuous monitoring | NIST SP 800-137; NIST SP 800-53 Rev. 5 |
+| Media sanitization | NIST SP 800-88 Rev. 2 |
+| Patch management | NIST SP 800-40 Rev. 4; CISA KEV; CIS Controls v8.1 |
 | Configuration management | NIST SP 800-128; NIST SP 800-53 Rev. 5 |
 | Incident response | NIST SP 800-61 Rev. 3; CSF 2.0 |
 | Privacy | NIST Privacy Framework 1.0; NIST SP 800-53 Rev. 5 |
@@ -29,7 +32,7 @@ This mapping shows which external references inform policy areas. It does not as
 | Accessibility | WCAG 2.2 |
 
 ## Mapping rules
-- A reference informs design; it does not automatically become a mandatory requirement.
+- References inform design; they do not automatically become mandatory requirements.
 - Controls are implemented only when current evidence supports that claim.
 - Draft sources may inform planning but are not treated as final requirements.
 
