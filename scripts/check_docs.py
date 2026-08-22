@@ -51,6 +51,7 @@ CONTROLLED_DIRS = {
     "tax",
     "templates",
     "third-party",
+    "treasury",
     "workplace-safety",
 }
 
