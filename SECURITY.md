@@ -1,24 +1,37 @@
-# Security policy
+# Security Policy
 
-## Reporting a vulnerability
+## Reporting a security issue
 
-**Do not open a public GitHub issue for security problems.** Email
-[security@orchords.com](mailto:security@orchords.com) with the details.
+Do **not** open a public GitHub issue for a suspected vulnerability, exposed
+secret, private-data disclosure, or other security-sensitive finding.
 
-- **Acknowledgement** within 48 hours
-- **Triage** within 7 days
-- **Disclosure** is coordinated with the reporter; minimum 90 days from
-  report to fix-or-disclose
-- **Credit** is given in the release notes unless you prefer to remain
-  anonymous
+Email **security@orchords.com** with:
 
-## Scope
+- a concise description;
+- affected public resource, if known;
+- reproduction information that is safe to share;
+- potential impact;
+- your preferred contact details.
 
-This repository holds public documentation. In-scope reports include
-credentials, secrets, or sensitive internal details accidentally committed
-to this repo, and security-relevant inaccuracies in the published docs.
-Vulnerabilities in ORCHORDS.COM applications are accepted through the same
-channel.
+Please avoid accessing data that is not yours, degrading service, social
+engineering, or publishing an unresolved issue before coordinated handling.
 
-The full policy — secure development lifecycle, data handling, ISO/IEC
-27001:2022 alignment — is [SECURITY_POLICY.md](./SECURITY_POLICY.md).
+## What to expect
+
+ORCHORDS will make reasonable efforts to acknowledge reports promptly, assess
+severity, preserve relevant evidence, coordinate remediation, and communicate
+with the reporter when appropriate. Response targets are defined in
+[SECURITY_POLICY.md](./SECURITY_POLICY.md) and may vary with severity and
+report quality.
+
+## Scope of this repository
+
+Security-relevant documentation findings include:
+
+- accidentally published secrets or sensitive operational details;
+- instructions that would materially weaken security;
+- false or outdated security claims;
+- broken reporting guidance.
+
+For company-wide security principles, see
+[SECURITY_POLICY.md](./SECURITY_POLICY.md).
