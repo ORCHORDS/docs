@@ -19,5 +19,6 @@ Company-wide governance for user, market, opinion, and exploratory research.
 - [Research Data Handling](./RESEARCH_DATA_HANDLING.md)
 - [Participant Recruitment](./RESEARCH_RECRUITMENT.md)
 - [Research Integrity and Reporting](./RESEARCH_INTEGRITY_REPORTING.md)
+- [Research Bias and Quality Review](./RESEARCH_BIAS_QUALITY_REVIEW.md)
 
 Research must respect participant autonomy, privacy, data minimization, and the limits of the evidence collected.

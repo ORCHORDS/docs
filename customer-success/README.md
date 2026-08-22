@@ -10,13 +10,14 @@ next-review: "2026-11-20"
 
 # Customer Success Governance
 
-Company-wide governance for onboarding, adoption, customer health, success planning, and renewal risk.
+Company-wide governance for onboarding, adoption, customer health, health-data governance, success planning, and renewal risk.
 
 ## Documents
 
 - [Customer Success Governance](./CUSTOMER_SUCCESS_GOVERNANCE.md)
 - [Customer Onboarding](./CUSTOMER_ONBOARDING.md)
 - [Adoption and Health Signals](./ADOPTION_HEALTH.md)
+- [Customer Health Data Governance](./CUSTOMER_HEALTH_DATA_GOVERNANCE.md)
 - [Renewal and Retention Risk](./RENEWAL_RISK.md)
 - [Success Plan Governance](./SUCCESS_PLAN_GOVERNANCE.md)
 

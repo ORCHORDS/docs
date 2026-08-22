@@ -10,13 +10,14 @@ next-review: "2026-11-20"
 
 # Strategy Governance
 
-Company-wide governance for objectives, strategic assumptions, scenario planning, investment choices, and review cadence.
+Company-wide governance for objectives, strategic assumptions, evidence, scenario planning, investment choices, and review cadence.
 
 ## Documents
 
 - [Strategy Governance Policy](./STRATEGY_GOVERNANCE.md)
 - [Objectives and Outcomes](./OBJECTIVES_OUTCOMES.md)
 - [Scenario and Assumption Management](./SCENARIO_ASSUMPTION_MANAGEMENT.md)
+- [Strategy Evidence Review](./STRATEGY_EVIDENCE_REVIEW.md)
 - [Investment Prioritization](./INVESTMENT_PRIORITIZATION.md)
 - [Strategy Review Cadence](./STRATEGY_REVIEW_CADENCE.md)
 
