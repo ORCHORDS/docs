@@ -45,6 +45,7 @@ CONTROLLED_DIRS = {
     "standards",
     "strategy",
     "support",
+    "sustainability",
     "templates",
     "third-party",
 }

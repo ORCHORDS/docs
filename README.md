@@ -1,6 +1,6 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, and unannounced work do not belong here.
 
@@ -38,6 +38,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Strategy](./strategy/README.md) | Objectives, assumptions, scenarios, investment choices and strategic review |
 | [Research](./research/README.md) | Research planning, participant consent, recruitment, data handling and reporting integrity |
 | [Customer success](./customer-success/README.md) | Onboarding, adoption, health, success planning and renewal risk |
+| [Sustainability](./sustainability/README.md) | Environmental governance, climate risk, resource use, supplier expectations, metrics and claims integrity |
 | [Releases](./releases/README.md) | Release governance, evidence, signing, integrity, versioning and rollback |
 | [Product](./product/README.md) | Planning, user safety, experimentation, launch and deprecation governance |
 | [Accessibility](./accessibility/README.md) | Accessibility policy, testing, issue management and content guidance |
