@@ -1,8 +1,8 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, workplace safety, human rights/responsible business conduct, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, corporate development/transactions, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, workplace safety, human rights/responsible business conduct, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, tax governance, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, corporate development/transactions, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
-It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, personal medical information, worker grievance identities, active transaction details, and unannounced work do not belong here.
+It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, tax identifiers or filings, facility security details, personal medical information, worker grievance identities, active transaction details, and unannounced work do not belong here.
 
 ## Categories
 
@@ -25,6 +25,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Legal](./legal/README.md) | Legal requests, holds, contracts and intellectual-property governance |
 | [Physical security](./physical-security/README.md) | Physical access, visitors, workspace protection and lost assets |
 | [Financial controls](./finance/README.md) | Financial approval, payment-change verification, record integrity and fraud resistance |
+| [Tax](./tax/README.md) | Tax risk, filings, payments, data quality, advisors, disputes, transactions and control review |
 | [Ethics and integrity](./ethics/README.md) | Conflicts, anti-bribery, gifts/hospitality, speak-up and fair dealing |
 | [Communications](./communications/README.md) | Public statements, claims, social accounts, change/incident communications and disclosure boundaries |
 | [Marketing](./marketing/README.md) | Campaigns, claims, audiences, consent, brand, channels, measurement and marketing partners |
@@ -60,7 +61,7 @@ Statements about controls use these evidence levels:
 - **Planned** — approved work that is not yet implemented.
 - **Not applicable** — formally assessed as outside scope.
 
-A document must never present a planned control as implemented or imply certification, audit results, service capability, transaction outcome, supply-chain condition, or security guarantee without current evidence.
+A document must never present a planned control as implemented or imply certification, audit results, service capability, transaction outcome, supply-chain condition, tax position, or security guarantee without current evidence.
 
 ## Contribution model
 

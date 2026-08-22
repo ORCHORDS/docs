@@ -48,6 +48,7 @@ CONTROLLED_DIRS = {
     "strategy",
     "support",
     "sustainability",
+    "tax",
     "templates",
     "third-party",
     "workplace-safety",
