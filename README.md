@@ -1,6 +1,6 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, procurement, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, procurement, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, and unannounced work do not belong here.
 
@@ -24,6 +24,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Financial controls](./finance/README.md) | Financial approval, payment-change verification, record integrity and fraud resistance |
 | [Ethics and integrity](./ethics/README.md) | Conflicts, anti-bribery, gifts/hospitality, speak-up and fair dealing |
 | [Communications](./communications/README.md) | Public statements, claims, social accounts, change/incident communications and disclosure boundaries |
+| [Marketing](./marketing/README.md) | Campaigns, claims, audiences, consent, brand, channels, measurement and marketing partners |
 | [Procurement](./procurement/README.md) | Purchasing, software/service acquisition, approvals, renewals and emergency procurement |
 | [Quality](./quality/README.md) | Quality objectives, nonconformities, CAPA, root cause and measurement integrity |
 | [Internal audit](./internal-audit/README.md) | Independent audit planning, evidence, objectivity and finding follow-up |
