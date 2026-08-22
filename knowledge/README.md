@@ -3,22 +3,36 @@ title: "Knowledge Management"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-23"
 review-cycle: "90 days"
-next-review: "2026-11-20"
+next-review: "2026-11-21"
 ---
 
 # Knowledge Management
 
-Company-wide governance for critical knowledge, decision records, transfer, freshness, and content lifecycle.
+Company-wide governance for critical knowledge, authoritative sources, decision records, transfer, discoverability, quality, and content lifecycle.
 
 ## Documents
 
 - [Knowledge Management Policy](./KNOWLEDGE_MANAGEMENT_POLICY.md)
+- [Knowledge Taxonomy Governance](./KNOWLEDGE_TAXONOMY.md)
+- [Authoritative Source Governance](./AUTHORITATIVE_SOURCE_GOVERNANCE.md)
+- [Knowledge Ownership](./KNOWLEDGE_OWNERSHIP.md)
 - [Critical Knowledge](./CRITICAL_KNOWLEDGE.md)
 - [Decision Records](./DECISION_RECORDS.md)
+- [Duplicate Knowledge Control](./DUPLICATE_CONTENT_CONTROL.md)
+- [Knowledge Search and Discoverability](./KNOWLEDGE_DISCOVERABILITY.md)
+- [Knowledge Access and Classification](./KNOWLEDGE_ACCESS_CLASSIFICATION.md)
 - [Knowledge Transfer](./KNOWLEDGE_TRANSFER.md)
-- [Knowledge Freshness and Review](./KNOWLEDGE_FRESHNESS.md)
+- [Operational Knowledge Handoff](./OPERATIONAL_KNOWLEDGE_HANDOFF.md)
+- [Lessons-to-Knowledge Governance](./LESSONS_TO_KNOWLEDGE.md)
+- [Knowledge Gap Management](./KNOWLEDGE_GAP_MANAGEMENT.md)
+- [Knowledge Freshness](./KNOWLEDGE_FRESHNESS.md)
+- [Knowledge Review Cadence](./KNOWLEDGE_REVIEW_CADENCE.md)
+- [External Knowledge Validation](./EXTERNAL_KNOWLEDGE_VALIDATION.md)
+- [AI-Generated Knowledge Review](./AI_GENERATED_KNOWLEDGE_REVIEW.md)
 - [Knowledge Content Lifecycle](./CONTENT_LIFECYCLE.md)
+- [Knowledge Archive and Retirement](./KNOWLEDGE_ARCHIVE_RETIREMENT.md)
+- [Knowledge Management Metrics](./KNOWLEDGE_METRICS.md)
 
 Knowledge must remain usable without turning the public repository into a private system inventory.
