@@ -17,9 +17,12 @@ Company-wide governance for critical knowledge, authoritative sources, decision 
 - [Knowledge Management Policy](./KNOWLEDGE_MANAGEMENT_POLICY.md)
 - [Knowledge Taxonomy Governance](./KNOWLEDGE_TAXONOMY.md)
 - [Authoritative Source Governance](./AUTHORITATIVE_SOURCE_GOVERNANCE.md)
+- [Authoritative Source Recertification](./AUTHORITATIVE_SOURCE_RECERTIFICATION.md)
 - [Knowledge Authority Conflict](./KNOWLEDGE_AUTHORITY_CONFLICT.md)
 - [Knowledge Ownership](./KNOWLEDGE_OWNERSHIP.md)
+- [Knowledge Owner Recertification](./KNOWLEDGE_OWNER_RECERTIFICATION.md)
 - [Critical Knowledge](./CRITICAL_KNOWLEDGE.md)
+- [Critical Knowledge Recertification](./CRITICAL_KNOWLEDGE_RECERTIFICATION.md)
 - [Role Knowledge Baseline](./ROLE_KNOWLEDGE_BASELINE.md)
 - [Knowledge Single-Point-of-Failure Governance](./KNOWLEDGE_SINGLE_POINT_FAILURE.md)
 - [Decision Records](./DECISION_RECORDS.md)
@@ -31,6 +34,7 @@ Company-wide governance for critical knowledge, authoritative sources, decision 
 - [Operational Knowledge Handoff](./OPERATIONAL_KNOWLEDGE_HANDOFF.md)
 - [Lessons-to-Knowledge Governance](./LESSONS_TO_KNOWLEDGE.md)
 - [Knowledge Gap Management](./KNOWLEDGE_GAP_MANAGEMENT.md)
+- [Knowledge Gap Aging](./KNOWLEDGE_GAP_AGING.md)
 - [Knowledge Usage Feedback](./KNOWLEDGE_USAGE_FEEDBACK.md)
 - [Knowledge Freshness](./KNOWLEDGE_FRESHNESS.md)
 - [Knowledge Review Cadence](./KNOWLEDGE_REVIEW_CADENCE.md)
@@ -40,6 +44,7 @@ Company-wide governance for critical knowledge, authoritative sources, decision 
 - [Knowledge Content Lifecycle](./CONTENT_LIFECYCLE.md)
 - [Knowledge Deprecation Notice](./KNOWLEDGE_DEPRECATION_NOTICE.md)
 - [Knowledge Archive and Retirement](./KNOWLEDGE_ARCHIVE_RETIREMENT.md)
+- [Knowledge Exception Aging](./KNOWLEDGE_EXCEPTION_AGING.md)
 - [Knowledge Management Metrics](./KNOWLEDGE_METRICS.md)
 
 Knowledge must remain usable without turning the public repository into a private system inventory.
