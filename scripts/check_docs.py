@@ -24,6 +24,7 @@ CONTROLLED_DIRS = {
     "ethics",
     "finance",
     "governance",
+    "human-rights",
     "internal-audit",
     "knowledge",
     "legal",
