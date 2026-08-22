@@ -12,7 +12,7 @@
 
 ## Checklist
 
-- [ ] Content is company-wide and does not expose product-specific architecture or private operational detail
+- [ ] Content belongs in the selected company-wide category and does not expose product-specific architecture or private operational detail
 - [ ] No secrets, credentials, customer data, private URLs, internal identifiers, or sensitive incident details
 - [ ] Requirements are distinguished from implementation claims
 - [ ] Draft standards are clearly identified as draft

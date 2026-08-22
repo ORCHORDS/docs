@@ -1,14 +1,19 @@
-# Default owner for public documentation
+# Public documentation ownership
 * @ORCHORDS
 
-# Security-sensitive public policy
-/SECURITY.md @ORCHORDS
-/SECURITY_POLICY.md @ORCHORDS
-/sop/SECURITY_EXCEPTION_SOP.md @ORCHORDS
-/sop/VULNERABILITY_MANAGEMENT_SOP.md @ORCHORDS
-
-# Repository governance and automation
+/governance/ @ORCHORDS
+/security/ @ORCHORDS
+/privacy/ @ORCHORDS
+/data/ @ORCHORDS
+/ai/ @ORCHORDS
+/engineering/ @ORCHORDS
+/operations/ @ORCHORDS
+/third-party/ @ORCHORDS
+/releases/ @ORCHORDS
+/product/ @ORCHORDS
+/accessibility/ @ORCHORDS
+/sop/ @ORCHORDS
+/standards/ @ORCHORDS
+/templates/ @ORCHORDS
 /.github/ @ORCHORDS
 /scripts/ @ORCHORDS
-/DOCUMENT_CONTROL.md @ORCHORDS
-/GOVERNANCE.md @ORCHORDS
