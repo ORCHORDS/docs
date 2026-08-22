@@ -10,17 +10,16 @@ next-review: "2026-11-20"
 
 # Privacy
 
-Company-wide privacy risk management, privacy-by-design, rights, assessment,
-incident, and processing-record principles.
+Company-wide privacy risk governance.
 
 ## Documents
 
 - [Privacy Governance](./PRIVACY_GOVERNANCE.md)
 - [Privacy by Design](./PRIVACY_BY_DESIGN.md)
 - [Privacy Rights Principles](./PRIVACY_RIGHTS_PRINCIPLES.md)
+- [Privacy Rights Requests](./DATA_SUBJECT_REQUESTS.md)
+- [Privacy Notice Governance](./PRIVACY_NOTICE_GOVERNANCE.md)
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT.md)
 - [Privacy Incident Response](./PRIVACY_INCIDENT_RESPONSE.md)
 - [Processing Activity Records](./PROCESSING_ACTIVITY_RECORDS.md)
-
-Privacy requirements apply alongside, not instead of, security and data
-governance.
+- [De-identification and Re-identification Risk](./DEIDENTIFICATION_REIDENTIFICATION_RISK.md)

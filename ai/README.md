@@ -10,18 +10,18 @@ next-review: "2026-11-20"
 
 # AI Governance
 
-Company-wide governance for responsible acquisition, development, evaluation,
-and use of AI-enabled capabilities.
+Company-wide governance for responsible AI acquisition, development, evaluation, and use.
 
 ## Documents
 
 - [AI Governance Policy](./AI_GOVERNANCE_POLICY.md)
 - [AI Acceptable Use](./AI_ACCEPTABLE_USE.md)
 - [AI Risk Assessment](./AI_RISK_ASSESSMENT.md)
+- [AI Human Oversight](./HUMAN_OVERSIGHT.md)
+- [AI Transparency](./AI_TRANSPARENCY.md)
+- [AI Security](./AI_SECURITY.md)
 - [AI Evaluation and Assurance](./AI_EVALUATION_ASSURANCE.md)
 - [AI Data Governance](./AI_DATA_GOVERNANCE.md)
 - [Third-Party AI Use](./AI_THIRD_PARTY_USE.md)
+- [AI Change Management](./AI_CHANGE_MANAGEMENT.md)
 - [AI Incident Management](./AI_INCIDENT_MANAGEMENT.md)
-
-NIST AI RMF 1.0 remains a current reference while revision work continues.
-Draft or future framework revisions are not treated as final.

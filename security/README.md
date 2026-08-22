@@ -10,21 +10,20 @@ next-review: "2026-11-20"
 
 # Security
 
-Company-wide security policy and control expectations. These documents describe
-requirements without exposing private system topology or credentials.
+Company-wide security requirements without publishing private topology or credentials.
 
 ## Documents
 
 - [Security Policy](./SECURITY_POLICY.md)
-- [Vulnerability Disclosure Policy](./VULNERABILITY_DISCLOSURE_POLICY.md)
-- [Cryptography and Key Management](./CRYPTOGRAPHY_KEY_MANAGEMENT.md)
 - [Identity and Authentication](./IDENTITY_AUTHENTICATION_POLICY.md)
+- [Privileged Access Management](./PRIVILEGED_ACCESS_MANAGEMENT.md)
+- [Secure Remote Access](./SECURE_REMOTE_ACCESS.md)
 - [Secrets Management](./SECRETS_MANAGEMENT.md)
-- [Security Testing Policy](./SECURITY_TESTING_POLICY.md)
+- [Cryptography and Key Management](./CRYPTOGRAPHY_KEY_MANAGEMENT.md)
 - [Security Baseline Configuration](./SECURITY_BASELINE_CONFIGURATION.md)
+- [Patch and Vulnerability Remediation](./PATCH_VULNERABILITY_REMEDIATION_POLICY.md)
+- [Security Testing](./SECURITY_TESTING_POLICY.md)
+- [Security Event Escalation](./SECURITY_EVENT_ESCALATION.md)
+- [Vulnerability Disclosure](./VULNERABILITY_DISCLOSURE_POLICY.md)
 
-## Procedures
-
-Operational procedures live in [SOPs](../sop/README.md), including
-vulnerability management, security exceptions, secrets rotation, access
-review, and incident management.
+Operational procedures are indexed in [SOPs](../sop/README.md).

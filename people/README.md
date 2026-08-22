@@ -10,15 +10,14 @@ next-review: "2026-11-20"
 
 # People and Security Awareness
 
-This category covers human-side security expectations without publishing
-personnel records, role assignments, or internal access details.
+Human-side security expectations without publishing personnel records or internal access details.
 
 ## Documents
 
 - [Acceptable Use Policy](./ACCEPTABLE_USE_POLICY.md)
-- [Security Awareness and Training](./SECURITY_AWARENESS_TRAINING.md)
 - [Personnel Security](./PERSONNEL_SECURITY.md)
+- [Privileged Role Responsibilities](./PRIVILEGED_ROLE_RESPONSIBILITIES.md)
+- [Remote Work Security](./REMOTE_WORK_SECURITY.md)
+- [Security Awareness and Training](./SECURITY_AWARENESS_TRAINING.md)
 - [Social Engineering Resistance](./SOCIAL_ENGINEERING_RESISTANCE.md)
-
-Related lifecycle controls are in
-[Onboarding and Offboarding](../operations/ONBOARDING_OFFBOARDING.md).
+- [Security Reporting Culture](./SECURITY_REPORTING_CULTURE.md)

@@ -10,15 +10,14 @@ next-review: "2026-11-20"
 
 # Releases
 
-Company-wide release governance, signing, versioning, artifact integrity, and
-rollback expectations.
+Company-wide release governance.
 
 ## Documents
 
 - [Release Management](./RELEASE_MANAGEMENT.md)
+- [Emergency Release Policy](./EMERGENCY_RELEASE_POLICY.md)
+- [Release Evidence](./RELEASE_EVIDENCE.md)
 - [Code Signing](./CODE_SIGNING.md)
-- [Versioning and Changelog](./VERSIONING_CHANGELOG.md)
 - [Release Artifact Integrity](./ARTIFACT_INTEGRITY.md)
+- [Versioning and Changelog](./VERSIONING_CHANGELOG.md)
 - [Release Rollback Policy](./RELEASE_ROLLBACK_POLICY.md)
-
-Use [Release SOP](../sop/RELEASE_SOP.md) for the operational procedure.
