@@ -15,12 +15,16 @@ Public-safe company-wide principles for financial approvals, reconciliations, pe
 ## Documents
 
 - [Financial Control Principles](./FINANCIAL_CONTROL_PRINCIPLES.md)
+- [Cash Control Governance](./CASH_CONTROL_GOVERNANCE.md)
 - [Payment Change Verification](./PAYMENT_CHANGE_VERIFICATION.md)
 - [Financial Reconciliation Governance](./RECONCILIATION_GOVERNANCE.md)
+- [Payment Reconciliation Review](./PAYMENT_RECONCILIATION_REVIEW.md)
 - [Segregation of Financial Duties](./SEGREGATION_OF_DUTIES.md)
 - [Financial Period Close Governance](./PERIOD_CLOSE_GOVERNANCE.md)
+- [Journal and Adjustment Governance](./JOURNAL_ADJUSTMENT_GOVERNANCE.md)
 - [Expense and Reimbursement Governance](./EXPENSE_REIMBURSEMENT_GOVERNANCE.md)
 - [Credit and Refund Governance](./CREDIT_REFUND_GOVERNANCE.md)
 - [Financial Model Governance](./FINANCIAL_MODEL_GOVERNANCE.md)
+- [Financial Exception Aging](./FINANCIAL_EXCEPTION_AGING.md)
 - [Financial Record Integrity](./FINANCIAL_RECORD_INTEGRITY.md)
 - [Fraud and Impersonation Risk](./FRAUD_IMPERSONATION_RISK.md)
