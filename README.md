@@ -1,6 +1,6 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, procurement, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, and unannounced work do not belong here.
 
@@ -9,7 +9,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | Category | Purpose |
 |---|---|
 | [Governance](./governance/README.md) | Decision rights, enterprise risk, document control, assurance, retention |
-| [Security](./security/README.md) | Security architecture, identity, endpoint/network, threats, secrets, testing and disclosure |
+| [Security](./security/README.md) | Architecture principles, identity, endpoints/networks, threats, secrets, testing and disclosure |
 | [Privacy](./privacy/README.md) | Privacy governance, assessments, rights and incident handling |
 | [Data](./data/README.md) | Inventory, classification, lineage, lifecycle, retention, sharing and disposal |
 | [AI](./ai/README.md) | Responsible AI governance, inventory, evaluation, security and agent safeguards |
@@ -17,11 +17,14 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Operations](./operations/README.md) | Service ownership, access, change, incidents, alerts, runbooks, assets and reliability |
 | [Resilience](./resilience/README.md) | Business impact, recovery, dependency resilience, crisis communications and exercises |
 | [People](./people/README.md) | Acceptable use, personnel security, awareness, remote work and reporting culture |
-| [Third-party](./third-party/README.md) | Supplier onboarding, due diligence, contracts, dependency chains, monitoring and exit |
+| [Third-party](./third-party/README.md) | Supplier onboarding, due diligence, dependency chains, monitoring and exit |
 | [Compliance](./compliance/README.md) | Obligations, evidence, control testing, remediation, audit readiness and claims |
 | [Legal](./legal/README.md) | Legal requests, holds, contracts and intellectual-property governance |
 | [Physical security](./physical-security/README.md) | Physical access, visitors, workspace protection and lost assets |
 | [Financial controls](./finance/README.md) | Financial approval, payment-change verification, record integrity and fraud resistance |
+| [Ethics and integrity](./ethics/README.md) | Conflicts, anti-bribery, gifts/hospitality, speak-up and fair dealing |
+| [Communications](./communications/README.md) | Public statements, claims, social accounts, change/incident communications and disclosure boundaries |
+| [Procurement](./procurement/README.md) | Purchasing, software/service acquisition, approvals, renewals and emergency procurement |
 | [Releases](./releases/README.md) | Release governance, evidence, signing, integrity, versioning and rollback |
 | [Product](./product/README.md) | Planning, user safety, experimentation, launch and deprecation governance |
 | [Accessibility](./accessibility/README.md) | Accessibility policy, testing, issue management and content guidance |

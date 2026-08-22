@@ -12,7 +12,7 @@ next-review: "2026-11-20"
 
 Reusable public-safe record structures. Completed records may contain sensitive information and belong in authorized systems, not this public repository.
 
-## Governance, legal, and finance
+## Governance, legal, ethics, communications, procurement, and finance
 - [Risk Assessment](./RISK_ASSESSMENT_TEMPLATE.md)
 - [Control Test](./CONTROL_TEST_TEMPLATE.md)
 - [Regulatory Change](./REGULATORY_CHANGE_TEMPLATE.md)
@@ -21,6 +21,12 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Legal Request](./LEGAL_REQUEST_TEMPLATE.md)
 - [Legal Hold](./LEGAL_HOLD_TEMPLATE.md)
 - [Contract Review](./CONTRACT_REVIEW_TEMPLATE.md)
+- [Conflict Disclosure](./CONFLICT_DISCLOSURE_TEMPLATE.md)
+- [Gift and Hospitality Review](./GIFT_HOSPITALITY_TEMPLATE.md)
+- [Speak-Up Intake](./SPEAK_UP_INTAKE_TEMPLATE.md)
+- [Public Statement Review](./PUBLIC_STATEMENT_REVIEW_TEMPLATE.md)
+- [Procurement Review](./PROCUREMENT_REVIEW_TEMPLATE.md)
+- [Software and Service Acquisition](./SOFTWARE_SERVICE_ACQUISITION_TEMPLATE.md)
 - [Payment Change Verification](./PAYMENT_CHANGE_TEMPLATE.md)
 - [Financial Approval](./FINANCIAL_APPROVAL_TEMPLATE.md)
 
