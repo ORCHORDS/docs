@@ -27,6 +27,7 @@ CONTROLLED_DIRS = {
     "legal",
     "marketing",
     "operations",
+    "partnerships",
     "people",
     "physical-security",
     "privacy",
