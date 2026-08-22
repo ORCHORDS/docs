@@ -25,6 +25,7 @@ CONTROLLED_DIRS = {
     "internal-audit",
     "knowledge",
     "legal",
+    "marketing",
     "operations",
     "people",
     "physical-security",
