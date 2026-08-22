@@ -16,9 +16,12 @@ CONTROLLED_DIRS = {
     "compliance",
     "data",
     "engineering",
+    "finance",
     "governance",
+    "legal",
     "operations",
     "people",
+    "physical-security",
     "privacy",
     "product",
     "releases",
@@ -103,40 +106,28 @@ def main() -> int:
     markdown = sorted(ROOT.rglob("*.md"))
 
     root_md = {p.name for p in ROOT.glob("*.md")}
-    allowed_root_md = {
-        "README.md",
-        "CONTRIBUTING.md",
-        "SECURITY.md",
-        "CODE_OF_CONDUCT.md",
-    }
+    allowed_root_md = {"README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md"}
     unexpected_root = sorted(root_md - allowed_root_md)
     if unexpected_root:
-        errors.append(
-            "root: controlled documentation must live in a category: "
-            + ", ".join(unexpected_root)
-        )
+        errors.append("root: controlled documentation must live in a category: " + ", ".join(unexpected_root))
 
     for path in markdown:
         rel = path.relative_to(ROOT)
         text = path.read_text(encoding="utf-8")
         lower = text.lower()
-
         if "\t" in text:
             errors.append(f"{rel}: tab character found")
         for no, line in enumerate(text.splitlines(), 1):
             if line.rstrip() != line:
                 errors.append(f"{rel}:{no}: trailing whitespace")
-
         for term in FORBIDDEN:
             if term in lower:
                 errors.append(f"{rel}: forbidden project/implementation term: {term}")
-
         if "$title" in lower or "lorem ipsum" in lower:
             errors.append(f"{rel}: unresolved template placeholder")
         for token in ("todo", "tbd"):
             if re.search(rf"\b{token}\b", lower):
                 errors.append(f"{rel}: unresolved placeholder token: {token}")
-
         if is_controlled(path):
             front_matter = parse_front_matter(text)
             if front_matter is None:
@@ -147,14 +138,8 @@ def main() -> int:
                     errors.append(f"{rel}: front matter missing: {', '.join(missing)}")
                 if front_matter.get("classification") != "public":
                     errors.append(f"{rel}: classification must be public")
-                if front_matter.get("status") not in {
-                    "approved",
-                    "review",
-                    "draft",
-                    "deprecated",
-                }:
+                if front_matter.get("status") not in {"approved", "review", "draft", "deprecated"}:
                     errors.append(f"{rel}: invalid status")
-
         errors.extend(check_links(path, text))
 
     if errors:
@@ -162,7 +147,6 @@ def main() -> int:
         for error in errors:
             print(f" - {error}")
         return 1
-
     print(f"Documentation quality checks passed for {len(markdown)} Markdown files.")
     return 0
 

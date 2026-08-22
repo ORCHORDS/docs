@@ -12,13 +12,16 @@ next-review: "2026-11-20"
 
 SOPs turn policy into repeatable, evidence-producing operational steps.
 
-## Governance and assurance
+## Governance, assurance, and legal
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
 - [Control Testing](./CONTROL_TESTING_SOP.md)
 - [Regulatory Change Review](./REGULATORY_CHANGE_REVIEW_SOP.md)
 - [Security Exception](./SECURITY_EXCEPTION_SOP.md)
+- [Legal Request](./LEGAL_REQUEST_SOP.md)
+- [Legal Hold](./LEGAL_HOLD_SOP.md)
+- [Contract Review](./CONTRACT_REVIEW_SOP.md)
 
 ## Security and access
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
@@ -31,11 +34,14 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Privileged Access](./PRIVILEGED_ACCESS_SOP.md)
 - [Access Review](./ACCESS_REVIEW_SOP.md)
 
-## Engineering, operations, and releases
+## Engineering, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
 - [On-Call Handoff](./ON_CALL_HANDOFF_SOP.md)
+- [Visitor Access](./VISITOR_ACCESS_SOP.md)
+- [Lost or Stolen Asset](./LOST_STOLEN_ASSET_SOP.md)
+- [Payment Change Verification](./PAYMENT_CHANGE_VERIFICATION_SOP.md)
 - [Release](./RELEASE_SOP.md)
 - [Emergency Release](./EMERGENCY_RELEASE_SOP.md)
 
