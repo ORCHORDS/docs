@@ -20,6 +20,7 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Regulatory Change Review](./REGULATORY_CHANGE_REVIEW_SOP.md)
 - [Corrective and Preventive Action](./CAPA_SOP.md)
 - [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS_SOP.md)
+- [Supplier Quality Review](./SUPPLIER_QUALITY_REVIEW_SOP.md)
 - [Internal Audit](./INTERNAL_AUDIT_SOP.md)
 - [Audit Finding Follow-up](./AUDIT_FINDING_FOLLOWUP_SOP.md)
 - [Security Exception](./SECURITY_EXCEPTION_SOP.md)
@@ -34,6 +35,7 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 
 ## Security, communications, access, and support
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
+- [Vulnerability Exception](./VULNERABILITY_EXCEPTION_SOP.md)
 - [Patch Management](./PATCH_MANAGEMENT_SOP.md)
 - [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_SOP.md)
 - [Security Event Escalation](./SECURITY_EVENT_ESCALATION_SOP.md)
@@ -41,20 +43,24 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Secrets Rotation](./SECRETS_ROTATION_SOP.md)
 - [Access Provisioning](./ACCESS_PROVISIONING_SOP.md)
 - [Privileged Access](./PRIVILEGED_ACCESS_SOP.md)
+- [Emergency Access](./EMERGENCY_ACCESS_SOP.md)
 - [Access Review](./ACCESS_REVIEW_SOP.md)
 - [Public Statement Review](./PUBLIC_STATEMENT_REVIEW_SOP.md)
 - [Social Account Recovery](./SOCIAL_ACCOUNT_RECOVERY_SOP.md)
 - [Support Identity Verification](./SUPPORT_IDENTITY_VERIFICATION_SOP.md)
+- [Account Recovery](./ACCOUNT_RECOVERY_SOP.md)
 - [Support Escalation](./SUPPORT_ESCALATION_SOP.md)
 - [Complaint Handling](./COMPLAINT_HANDLING_SOP.md)
 
 ## Commercial, project delivery, knowledge, research, and customer success
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_REVIEW_SOP.md)
+- [Commercial Forecast Review](./COMMERCIAL_FORECAST_REVIEW_SOP.md)
 - [Pilot Review](./PILOT_REVIEW_SOP.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_SOP.md)
 - [Project Initiation](./PROJECT_INITIATION_SOP.md)
 - [Stage Gate Review](./STAGE_GATE_SOP.md)
 - [Project Handover and Closure](./PROJECT_HANDOVER_SOP.md)
+- [Benefits Review](./BENEFITS_REVIEW_SOP.md)
 - [Critical Knowledge Transfer](./CRITICAL_KNOWLEDGE_TRANSFER_SOP.md)
 - [Research Review](./RESEARCH_REVIEW_SOP.md)
 - [Participant Consent](./PARTICIPANT_CONSENT_SOP.md)
@@ -64,7 +70,9 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 ## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
+- [Technical Debt Review](./TECHNICAL_DEBT_REVIEW_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
+- [Service Decommissioning](./SERVICE_DECOMMISSIONING_SOP.md)
 - [On-Call Handoff](./ON_CALL_HANDOFF_SOP.md)
 - [Procurement Review](./PROCUREMENT_REVIEW_SOP.md)
 - [Software and Service Acquisition](./SOFTWARE_SERVICE_ACQUISITION_SOP.md)
@@ -82,11 +90,13 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Disaster Recovery Test](./DISASTER_RECOVERY_TEST_SOP.md)
 - [Tabletop Exercise](./TABLETOP_EXERCISE_SOP.md)
 
-## Privacy, AI, accessibility, product, and suppliers
+## Privacy, data, AI, accessibility, product, and suppliers
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_SOP.md)
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_SOP.md)
+- [Data Access Review](./DATA_ACCESS_REVIEW_SOP.md)
 - [AI Risk Review](./AI_RISK_REVIEW_SOP.md)
 - [AI Change Review](./AI_CHANGE_REVIEW_SOP.md)
+- [AI Monitoring Review](./AI_MONITORING_REVIEW_SOP.md)
 - [AI Red Team](./AI_RED_TEAM_SOP.md)
 - [Accessibility Testing](./ACCESSIBILITY_TESTING_SOP.md)
 - [Experiment Review](./EXPERIMENT_REVIEW_SOP.md)

@@ -10,7 +10,7 @@ next-review: "2026-11-20"
 
 # Internal Audit
 
-Company-wide principles for independent assurance, audit planning, evidence, reporting, and finding follow-up.
+Company-wide principles for independent assurance, audit planning, evidence, reporting, follow-up, and audit quality.
 
 ## Documents
 
@@ -19,3 +19,4 @@ Company-wide principles for independent assurance, audit planning, evidence, rep
 - [Audit Planning](./AUDIT_PLANNING.md)
 - [Audit Evidence](./AUDIT_EVIDENCE.md)
 - [Audit Findings and Follow-up](./AUDIT_FINDINGS_FOLLOWUP.md)
+- [Internal Audit Quality Assurance](./AUDIT_QUALITY_ASSURANCE.md)
