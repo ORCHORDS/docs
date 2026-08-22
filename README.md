@@ -1,41 +1,64 @@
-# ORCHORDS.COM — Public Docs
+# ORCHORDS Public Documentation
 
-Public documentation for ORCHORDS.COM projects and the Mr.Orchords product
-family: engineering, product, operations, security, and releases.
-Made by [orchords.com](https://orchords.com/).
+This repository contains ORCHORDS company-wide public governance, engineering,
+security, operations, product, release, and standard operating procedure (SOP)
+documentation.
 
-## What's here
+It is intentionally **not** a system inventory or architecture repository.
+Product-specific implementation details, deployment topology, credentials,
+private endpoints, customer information, internal identifiers, and unannounced
+work do not belong here.
 
-| Path | Contents |
+## Start here
+
+| Area | Purpose |
 |---|---|
-| [`engineering/`](./engineering/) | Architecture, build system, CI/CD, branching, testing, backup/DR |
-| [`operations/`](./operations/) | Infrastructure overview, onboarding |
-| [`product/`](./product/) | Roadmap, priority framework |
-| [`releases/`](./releases/) | Changelog policy, release checklist, installer spec, versioning, code signing |
-| [`user/`](./user/) | Getting started, quick start, user guide, keyboard shortcuts |
-| [`help/`](./help/) | FAQ, troubleshooting |
-| [`effects/`](./effects/) | Effects library, OpenFX plugin SDK |
-| [`graphics/`](./graphics/) | Rendering pipeline, shader spec |
-| [`assets/`](./assets/) | Shared assets (logo) |
+| [Governance](./GOVERNANCE.md) | Decision rights, accountability, policy hierarchy |
+| [Document control](./DOCUMENT_CONTROL.md) | How public documentation is approved, reviewed, and retired |
+| [Security](./SECURITY_POLICY.md) | Company-wide security principles and control expectations |
+| [Engineering](./engineering/ENGINEERING_STANDARDS.md) | Engineering quality and secure-development expectations |
+| [Operations](./operations/OPERATIONS_MANUAL.md) | Operational governance and service-management expectations |
+| [Planning](./product/PLANNING_PRIORITIZATION.md) | Evidence-based prioritization and planning |
+| [Releases](./releases/RELEASE_MANAGEMENT.md) | Release governance and readiness |
+| [SOPs](./sop/README.md) | Repeatable operational procedures |
+| [Standards register](./REFERENCES.md) | External standards and guidance used by this repository |
 
-Root-level guides: [STYLE_GUIDE.md](./STYLE_GUIDE.md),
-[ACCESSIBILITY_COMPLIANCE.md](./ACCESSIBILITY_COMPLIANCE.md),
-[PERFORMANCE_BENCHMARKS.md](./PERFORMANCE_BENCHMARKS.md),
-[PROJECT_SCHEDULE.md](./PROJECT_SCHEDULE.md),
-[BETA_PROGRAM_GUIDE.md](./BETA_PROGRAM_GUIDE.md),
-[TEAM_OPERATIONS_MANUAL.md](./TEAM_OPERATIONS_MANUAL.md).
+## Publication boundary
 
-## Security
+Public documentation may describe **principles, responsibilities, controls,
+decision criteria, and repeatable procedures**. It must not expose operational
+secrets or create false assurance.
 
-Found something security-sensitive in this repo? See
-[SECURITY.md](./SECURITY.md) — the full policy lives in
-[SECURITY_POLICY.md](./SECURITY_POLICY.md).
+Statements about controls use these evidence levels:
 
-## Contributing
+- **Required** — the policy expectation.
+- **Implemented** — supported by current evidence.
+- **Planned** — approved work that is not yet implemented.
+- **Not applicable** — formally assessed as outside scope.
 
-Issues and pull requests are welcome — read
-[CONTRIBUTING.md](./CONTRIBUTING.md) first.
+A document must never present a planned control as implemented or imply a
+certification, audit result, service capability, or security guarantee without
+current evidence.
+
+## Contribution model
+
+Documentation is managed as code:
+
+1. Make changes in a branch.
+2. Open a pull request.
+3. Pass automated documentation checks.
+4. Obtain review from the responsible owner.
+5. Merge only when the content is accurate, public-safe, and supported by
+   evidence where it makes factual claims.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) and
+[DOCUMENT_CONTROL.md](./DOCUMENT_CONTROL.md).
+
+## Security reports
+
+Do not report security-sensitive findings in a public issue. Follow
+[SECURITY.md](./SECURITY.md).
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+See [LICENSE](./LICENSE).

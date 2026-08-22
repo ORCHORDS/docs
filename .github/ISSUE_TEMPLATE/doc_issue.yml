@@ -1,26 +1,47 @@
 name: Documentation issue
-description: Report something wrong, outdated, or missing in the docs
+description: Report public documentation that is wrong, outdated, unclear, or missing
 labels: ["documentation"]
 body:
   - type: input
     id: page
     attributes:
       label: Page or file
-      description: Path or URL of the affected page (e.g. engineering/ARCHITECTURE_OVERVIEW.md)
-      placeholder: engineering/ARCHITECTURE_OVERVIEW.md
+      description: Path or public URL of the affected document
+      placeholder: SECURITY_POLICY.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Incorrect or outdated claim
+        - Broken link or navigation
+        - Unclear procedure
+        - Missing documentation
+        - Public-safety concern
+        - Standards/reference update
+        - Other
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
       label: What is wrong?
-      description: What is incorrect, outdated, or missing?
+      description: Describe the problem without including secrets or sensitive details.
     validations:
       required: true
   - type: textarea
+    id: evidence
+    attributes:
+      label: Source or evidence
+      description: Prefer a primary public source when the issue is factual or standards-based.
+    validations:
+      required: false
+  - type: textarea
     id: suggestion
     attributes:
-      label: Suggested fix
-      description: What should it say instead? (optional)
+      label: Suggested change
+      description: Optional proposed correction.
     validations:
       required: false

@@ -1,76 +1,14 @@
-# Mr.Orchords — Code Owners
-# Each file/path is owned by the listed GitHub/Forgejo users.
-# PRs touching these paths require review from the owner.
-# Format: pattern<space>owners
+# Default owner for public documentation
+* @ORCHORDS
 
-# Default owner
-*                                               @Mr.Orchords @Mr.Orchords
+# Security-sensitive public policy
+/SECURITY.md @ORCHORDS
+/SECURITY_POLICY.md @ORCHORDS
+/sop/SECURITY_EXCEPTION_SOP.md @ORCHORDS
+/sop/VULNERABILITY_MANAGEMENT_SOP.md @ORCHORDS
 
-# Meta / Documentation / Style / Help / User docs
-/STYLE_GUIDE.md                                 @Mr.Orchords
-/README.md                                      @Mr.Orchords
-/help/                                          @Mr.Orchords
-/user/                                          @Mr.Orchords
-
-# Releases
-/releases/                                      @Mr.Orchords
-
-# Engineering
-/engineering/BUILD_SYSTEM.md                    @Mr.Orchords
-/engineering/CI_CD_PIPELINE.md                  @Mr.Orchords
-/engineering/BRANCHING_STRATEGY.md              @Mr.Orchords
-/engineering/TEST_STRATEGY.md                   @Mr.Orchords
-/operations/INFRASTRUCTURE_OVERVIEW.md          @Mr.Orchords
-/engineering/TECHNICAL_STANDARDS.md             @Mr.Orchords
-/engineering/ARCHITECTURE_OVERVIEW.md           @Mr.Orchords
-/engineering/BACKUP_DISASTER_RECOVERY.md        @Mr.Orchords
-
-# UI/UX
-/ui/COMPONENT_LIBRARY.md                        @Mr.Orchords
-/ACCESSIBILITY_COMPLIANCE.md                    @Mr.Orchords
-
-# Graphics
-/graphics/                                      @Mr.Orchords
-/PERFORMANCE_BENCHMARKS.md                      @Mr.Orchords
-
-# Codecs
-/codecs/                                        @Mr.Orchords
-
-# Backend
-/backend/                                       @Mr.Orchords
-
-# Effects
-/effects/                                       @Mr.Orchords
-/OPENFX_PLUGIN_GUIDE.md                         @Mr.Orchords
-
-# Timeline
-/timeline/                                      @Mr.Orchords
-
-# Audio
-/audio/                                         @Mr.Orchords
-
-# Product
-/product/                                       @Mr.Orchords
-/PROJECT_SCHEDULE.md                            @Mr.Orchords
-
-# Operations
-/operations/ONBOARDING_GUIDE.md                 @Mr.Orchords
-
-# Community
-/community/                                     @Mr.Orchords
-
-# Marketing
-/marketing/                                     @Mr.Orchords
-
-# Business
-/business/                                      @Mr.Orchords
-
-# QA
-/BETA_PROGRAM_GUIDE.md                          @Mr.Orchords
-
-# Security
-/SECURITY_POLICY.md                             @Mr.Orchords
-
-# Operations manual
-/TEAM_OPERATIONS_MANUAL.md                      @Mr.Orchords
-/MR_ORCHORDS_TEAM.md                          @Mr.Orchords
+# Repository governance and automation
+/.github/ @ORCHORDS
+/scripts/ @ORCHORDS
+/DOCUMENT_CONTROL.md @ORCHORDS
+/GOVERNANCE.md @ORCHORDS
