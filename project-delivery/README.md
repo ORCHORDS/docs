@@ -21,6 +21,7 @@ Company-wide governance for initiating, planning, steering, changing, accepting,
 - [Project Resource and Capacity Planning](./RESOURCE_CAPACITY_PLANNING.md)
 - [Project Assumption Register](./PROJECT_ASSUMPTION_REGISTER.md)
 - [Project Decision Log Governance](./PROJECT_DECISION_LOG.md)
+- [Project Decision Aging](./PROJECT_DECISION_AGING.md)
 - [Milestone Governance](./MILESTONE_GOVERNANCE.md)
 - [Stage Gate Governance](./STAGE_GATE_GOVERNANCE.md)
 - [Project Risk, Issue, and Change](./PROJECT_RISK_ISSUE_CHANGE.md)
@@ -30,10 +31,13 @@ Company-wide governance for initiating, planning, steering, changing, accepting,
 - [Project Supplier Coordination](./PROJECT_SUPPLIER_COORDINATION.md)
 - [Project Quality Plan Governance](./PROJECT_QUALITY_PLAN.md)
 - [Project Communications Governance](./PROJECT_COMMUNICATIONS.md)
+- [Project Acceptance Criteria](./PROJECT_ACCEPTANCE_CRITERIA.md)
 - [Project Readiness and Acceptance](./PROJECT_READINESS_ACCEPTANCE.md)
 - [Project Handover and Closure](./PROJECT_HANDOVER_CLOSURE.md)
 - [Project Closure Evidence](./PROJECT_CLOSURE_EVIDENCE.md)
+- [Project Exit Criteria](./PROJECT_EXIT_CRITERIA.md)
 - [Project Lessons Learned](./PROJECT_LESSONS_LEARNED.md)
+- [Project Benefit Baseline](./PROJECT_BENEFIT_BASELINE.md)
 - [Benefits Realization](./BENEFITS_REALIZATION.md)
 
 Guidance is compatible with predictive, iterative, adaptive, and hybrid delivery approaches.
