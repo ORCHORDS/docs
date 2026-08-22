@@ -17,6 +17,7 @@ CONTROLLED_DIRS = {
     "communications",
     "compliance",
     "customer-success",
+    "customer-trust",
     "data",
     "engineering",
     "ethics",

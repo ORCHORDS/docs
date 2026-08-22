@@ -1,6 +1,6 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, and unannounced work do not belong here.
 
@@ -19,6 +19,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [People](./people/README.md) | Acceptable use, personnel security, awareness, remote work and reporting culture |
 | [Third-party](./third-party/README.md) | Supplier onboarding, due diligence, dependency chains, monitoring and exit |
 | [Compliance](./compliance/README.md) | Obligations, evidence, control testing, remediation, audit readiness and claims |
+| [Customer trust](./customer-trust/README.md) | Customer-facing assurance, transparency, trust content, due diligence and shared responsibility |
 | [Legal](./legal/README.md) | Legal requests, holds, contracts and intellectual-property governance |
 | [Physical security](./physical-security/README.md) | Physical access, visitors, workspace protection and lost assets |
 | [Financial controls](./finance/README.md) | Financial approval, payment-change verification, record integrity and fraud resistance |

@@ -1,0 +1,13 @@
+---
+title: "Subprocessor Disclosure Governance"
+owner: "Customer Trust Lead"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-23"
+review-cycle: "90 days"
+next-review: "2026-11-21"
+---
+
+# Subprocessor Disclosure Governance
+
+Customer-facing subprocessor information must align with approved supplier and privacy records, defined change processes, applicable notice commitments, and current processing scope.
