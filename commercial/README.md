@@ -15,8 +15,10 @@ Company-wide rules for qualification, proposals, customer commitments, pilots, p
 ## Documents
 
 - [Deal Qualification Governance](./DEAL_QUALIFICATION_GOVERNANCE.md)
+- [Deal Risk Review](./DEAL_RISK_REVIEW.md)
 - [Customer Requirements Validation](./CUSTOMER_REQUIREMENTS_VALIDATION.md)
 - [Commercial Commitments](./COMMERCIAL_COMMITMENTS.md)
+- [Commitment Feasibility Review](./COMMITMENT_FEASIBILITY_REVIEW.md)
 - [Commercial Approval Authority](./COMMERCIAL_APPROVAL_AUTHORITY.md)
 - [Commercial Approval Expiry](./COMMERCIAL_APPROVAL_EXPIRY.md)
 - [Nonstandard Commercial Terms Escalation](./NONSTANDARD_TERMS_ESCALATION.md)
@@ -24,6 +26,8 @@ Company-wide rules for qualification, proposals, customer commitments, pilots, p
 - [Proposal and Claim Accuracy](./PROPOSAL_CLAIM_ACCURACY.md)
 - [Proposal Version Control](./PROPOSAL_VERSION_CONTROL.md)
 - [Customer Commitment Traceability](./CUSTOMER_COMMITMENT_TRACEABILITY.md)
+- [Customer Dependency Disclosure](./CUSTOMER_DEPENDENCY_DISCLOSURE.md)
+- [Contract-to-Delivery Traceability](./CONTRACT_TO_DELIVERY_TRACEABILITY.md)
 - [Trials and Pilots](./TRIAL_PILOT_GOVERNANCE.md)
 - [Trial Conversion Decision Governance](./TRIAL_CONVERSION_DECISION.md)
 - [Pricing and Discount Governance](./PRICING_DISCOUNT_GOVERNANCE.md)
