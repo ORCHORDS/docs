@@ -12,7 +12,7 @@ next-review: "2026-11-20"
 
 SOPs turn policy into repeatable, evidence-producing operational steps.
 
-## Governance, quality, audit, legal, and ethics
+## Governance, quality, audit, legal, ethics, and strategy
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
@@ -29,6 +29,8 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Conflict Disclosure](./CONFLICT_DISCLOSURE_SOP.md)
 - [Gift and Hospitality Review](./GIFT_HOSPITALITY_REVIEW_SOP.md)
 - [Speak-Up Report](./SPEAK_UP_REPORT_SOP.md)
+- [Strategy Review](./STRATEGY_REVIEW_SOP.md)
+- [Investment Review](./INVESTMENT_REVIEW_SOP.md)
 
 ## Security, communications, access, and support
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
@@ -46,7 +48,7 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Support Escalation](./SUPPORT_ESCALATION_SOP.md)
 - [Complaint Handling](./COMPLAINT_HANDLING_SOP.md)
 
-## Commercial, project delivery, and knowledge
+## Commercial, project delivery, knowledge, research, and customer success
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_REVIEW_SOP.md)
 - [Pilot Review](./PILOT_REVIEW_SOP.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_SOP.md)
@@ -54,6 +56,10 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Stage Gate Review](./STAGE_GATE_SOP.md)
 - [Project Handover and Closure](./PROJECT_HANDOVER_SOP.md)
 - [Critical Knowledge Transfer](./CRITICAL_KNOWLEDGE_TRANSFER_SOP.md)
+- [Research Review](./RESEARCH_REVIEW_SOP.md)
+- [Participant Consent](./PARTICIPANT_CONSENT_SOP.md)
+- [Customer Onboarding](./CUSTOMER_ONBOARDING_SOP.md)
+- [Customer Success Review](./CUSTOMER_SUCCESS_REVIEW_SOP.md)
 
 ## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)

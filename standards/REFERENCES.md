@@ -42,9 +42,13 @@ Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
 | [ISO 9001:2015 + Amendment 1:2024](https://www.iso.org/standard/88431.html) | Current published quality-management requirements; 2026 edition under publication | Quality-management design |
 | [ISO 10001:2018](https://www.iso.org/standard/71579.html) | Published and confirmed by ISO | Customer-facing commitments and codes of conduct |
 | [ISO 10002:2018](https://www.iso.org/standard/71580.html) | Current, confirmed by ISO | Customer complaint-handling guidance |
+| [ISO 10004:2018](https://www.iso.org/standard/71582.html) | Published and confirmed by ISO | Customer-satisfaction monitoring and measurement |
 | [ISO 21502:2020](https://www.iso.org/standard/74947.html) | Published; currently under systematic review | Project-management guidance |
 | [ISO 30401:2018 + Amendment 1:2022](https://www.iso.org/standard/68683.html) | Current published knowledge-management requirements | Knowledge-management system design |
 | [ISO/DIS 30401](https://www.iso.org/standard/89436.html) | Draft edition 2 under development | Forward-looking knowledge-management changes; not treated as final |
+| [ISO 56001:2024](https://www.iso.org/standard/79278.html) | Published | Innovation-management system requirements and guidance |
+| [ISO 20252:2019](https://www.iso.org/standard/73671.html) | Current published edition; marked to be revised | Market, opinion and social research, insights and data analytics |
+| [ISO 20252 Edition 4](https://www.iso.org/standard/88881.html) | Under publication for September 2026; not treated as final | Forward-looking research quality changes |
 | [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Continuously maintained catalog | Exploitation-aware vulnerability prioritization |
 | [CIS Critical Security Controls v8.1](https://www.cisecurity.org/controls/v8-1) | Current version | Prioritized practical safeguards |
 | [OWASP ASVS 5.0.0](https://owasp.org/www-project-application-security-verification-standard/) | Stable release | Application-security verification |
