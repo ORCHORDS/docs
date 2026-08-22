@@ -12,12 +12,16 @@ next-review: "2026-11-20"
 
 SOPs turn policy into repeatable, evidence-producing operational steps.
 
-## Governance, assurance, legal, and ethics
+## Governance, quality, audit, legal, and ethics
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
 - [Control Testing](./CONTROL_TESTING_SOP.md)
 - [Regulatory Change Review](./REGULATORY_CHANGE_REVIEW_SOP.md)
+- [Corrective and Preventive Action](./CAPA_SOP.md)
+- [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS_SOP.md)
+- [Internal Audit](./INTERNAL_AUDIT_SOP.md)
+- [Audit Finding Follow-up](./AUDIT_FINDING_FOLLOWUP_SOP.md)
 - [Security Exception](./SECURITY_EXCEPTION_SOP.md)
 - [Legal Request](./LEGAL_REQUEST_SOP.md)
 - [Legal Hold](./LEGAL_HOLD_SOP.md)
@@ -26,7 +30,7 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Gift and Hospitality Review](./GIFT_HOSPITALITY_REVIEW_SOP.md)
 - [Speak-Up Report](./SPEAK_UP_REPORT_SOP.md)
 
-## Security, communications, and access
+## Security, communications, access, and support
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
 - [Patch Management](./PATCH_MANAGEMENT_SOP.md)
 - [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_SOP.md)
@@ -38,6 +42,9 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Access Review](./ACCESS_REVIEW_SOP.md)
 - [Public Statement Review](./PUBLIC_STATEMENT_REVIEW_SOP.md)
 - [Social Account Recovery](./SOCIAL_ACCOUNT_RECOVERY_SOP.md)
+- [Support Identity Verification](./SUPPORT_IDENTITY_VERIFICATION_SOP.md)
+- [Support Escalation](./SUPPORT_ESCALATION_SOP.md)
+- [Complaint Handling](./COMPLAINT_HANDLING_SOP.md)
 
 ## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
