@@ -20,6 +20,7 @@ Company-wide decision rights, risk governance, policy control, assurance, and re
 - [Risk Appetite and Tolerance](./RISK_APPETITE_TOLERANCE.md)
 - [Issue Escalation Governance](./ISSUE_ESCALATION_GOVERNANCE.md)
 - [Policy Exception Governance](./POLICY_EXCEPTION_GOVERNANCE.md)
+- [Control Owner Accountability](./CONTROL_OWNER_ACCOUNTABILITY.md)
 - [Document Control](./DOCUMENT_CONTROL.md)
 - [Control Assurance Metrics](./CONTROL_ASSURANCE_METRICS.md)
 - [Records Retention and Deletion](./RECORDS_RETENTION_DELETION.md)

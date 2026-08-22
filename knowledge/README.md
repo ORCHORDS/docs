@@ -10,7 +10,7 @@ next-review: "2026-11-20"
 
 # Knowledge Management
 
-Company-wide governance for critical knowledge, decision records, transfer, and content lifecycle.
+Company-wide governance for critical knowledge, decision records, transfer, freshness, and content lifecycle.
 
 ## Documents
 
@@ -18,6 +18,7 @@ Company-wide governance for critical knowledge, decision records, transfer, and 
 - [Critical Knowledge](./CRITICAL_KNOWLEDGE.md)
 - [Decision Records](./DECISION_RECORDS.md)
 - [Knowledge Transfer](./KNOWLEDGE_TRANSFER.md)
+- [Knowledge Freshness and Review](./KNOWLEDGE_FRESHNESS.md)
 - [Knowledge Content Lifecycle](./CONTENT_LIFECYCLE.md)
 
 Knowledge must remain usable without turning the public repository into a private system inventory.

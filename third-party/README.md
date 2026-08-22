@@ -17,6 +17,7 @@ Supplier and dependency-chain risk governance.
 - [Supplier Onboarding](./SUPPLIER_ONBOARDING.md)
 - [Third-Party Risk Management](./THIRD_PARTY_RISK_MANAGEMENT.md)
 - [Supplier Security Expectations](./SUPPLIER_SECURITY_EXPECTATIONS.md)
+- [Supplier Evidence Validation](./SUPPLIER_EVIDENCE_VALIDATION.md)
 - [Contract Security Requirements](./CONTRACT_SECURITY_REQUIREMENTS.md)
 - [Subprocessor Governance](./SUBPROCESSOR_GOVERNANCE.md)
 - [Fourth-Party and Dependency Chain Risk](./FOURTH_PARTY_RISK.md)

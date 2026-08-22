@@ -17,6 +17,7 @@ Governance for obligations, evidence, testing, remediation, assessments, and pub
 - [Compliance Assurance Policy](./COMPLIANCE_ASSURANCE_POLICY.md)
 - [Regulatory Change Management](./REGULATORY_CHANGE_MANAGEMENT.md)
 - [Evidence Management](./EVIDENCE_MANAGEMENT.md)
+- [Evidence Freshness and Validity](./EVIDENCE_FRESHNESS_VALIDITY.md)
 - [Control Testing Policy](./CONTROL_TESTING_POLICY.md)
 - [Remediation Management](./REMEDIATION_MANAGEMENT.md)
 - [Assurance Scoping](./ASSURANCE_SCOPING.md)

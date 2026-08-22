@@ -10,7 +10,7 @@ next-review: "2026-11-20"
 
 # AI Governance
 
-Company-wide governance for responsible AI acquisition, development, evaluation, deployment, monitoring, and use.
+Company-wide governance for responsible AI acquisition, development, evaluation, deployment, monitoring, fallback, and use.
 
 ## Documents
 
@@ -25,6 +25,7 @@ Company-wide governance for responsible AI acquisition, development, evaluation,
 - [AI Evaluation and Assurance](./AI_EVALUATION_ASSURANCE.md)
 - [AI Production Monitoring](./AI_PRODUCTION_MONITORING.md)
 - [AI Output Validation](./AI_OUTPUT_VALIDATION.md)
+- [AI Fallback and Degradation](./AI_FALLBACK_DEGRADATION.md)
 - [AI Red Teaming and Adversarial Evaluation](./AI_RED_TEAMING.md)
 - [AI Data Governance](./AI_DATA_GOVERNANCE.md)
 - [Third-Party AI Use](./AI_THIRD_PARTY_USE.md)

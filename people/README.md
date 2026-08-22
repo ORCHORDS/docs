@@ -16,6 +16,7 @@ Human-side security expectations without publishing personnel records or interna
 
 - [Acceptable Use Policy](./ACCEPTABLE_USE_POLICY.md)
 - [Personnel Security](./PERSONNEL_SECURITY.md)
+- [Role Change Governance](./ROLE_CHANGE_GOVERNANCE.md)
 - [Privileged Role Responsibilities](./PRIVILEGED_ROLE_RESPONSIBILITIES.md)
 - [Remote Work Security](./REMOTE_WORK_SECURITY.md)
 - [Security Awareness and Training](./SECURITY_AWARENESS_TRAINING.md)
