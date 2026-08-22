@@ -49,6 +49,7 @@ CONTROLLED_DIRS = {
     "sustainability",
     "templates",
     "third-party",
+    "workplace-safety",
 }
 
 FORBIDDEN = {
