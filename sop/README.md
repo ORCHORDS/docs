@@ -3,9 +3,9 @@ title: "Standard Operating Procedures"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-23"
 review-cycle: "90 days"
-next-review: "2026-11-20"
+next-review: "2026-11-21"
 ---
 
 # Standard Operating Procedures
@@ -15,6 +15,8 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 ## Governance, quality, audit, legal, ethics, and strategy
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
+- [Risk Treatment Verification](./RISK_TREATMENT_VERIFICATION_SOP.md)
+- [Control Owner Attestation](./CONTROL_OWNER_ATTESTATION_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
 - [Control Testing](./CONTROL_TESTING_SOP.md)
 - [Regulatory Change Review](./REGULATORY_CHANGE_REVIEW_SOP.md)
@@ -36,6 +38,8 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 
 ## Security, communications, access, and support
 - [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW_SOP.md)
+- [Security Drift Review](./SECURITY_DRIFT_REVIEW_SOP.md)
+- [Security Finding Aging](./SECURITY_FINDING_AGING_SOP.md)
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
 - [Vulnerability Exception](./VULNERABILITY_EXCEPTION_SOP.md)
 - [Patch Management](./PATCH_MANAGEMENT_SOP.md)
@@ -75,15 +79,18 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 ## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
+- [CI Failure Trend Review](./CI_FAILURE_TREND_SOP.md)
 - [Technical Debt Review](./TECHNICAL_DEBT_REVIEW_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
 - [Operational Readiness Review](./OPERATIONAL_READINESS_SOP.md)
+- [Incident Trend Review](./INCIDENT_TREND_REVIEW_SOP.md)
 - [Service Decommissioning](./SERVICE_DECOMMISSIONING_SOP.md)
 - [On-Call Handoff](./ON_CALL_HANDOFF_SOP.md)
 - [Role Change](./ROLE_CHANGE_SOP.md)
 - [Procurement Review](./PROCUREMENT_REVIEW_SOP.md)
 - [Software and Service Acquisition](./SOFTWARE_SERVICE_ACQUISITION_SOP.md)
 - [Supplier Evidence Review](./SUPPLIER_EVIDENCE_REVIEW_SOP.md)
+- [Supplier Remediation Verification](./SUPPLIER_REMEDIATION_VERIFICATION_SOP.md)
 - [Visitor Access](./VISITOR_ACCESS_SOP.md)
 - [Lost or Stolen Asset](./LOST_STOLEN_ASSET_SOP.md)
 - [Payment Change Verification](./PAYMENT_CHANGE_VERIFICATION_SOP.md)
@@ -101,7 +108,9 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 ## Privacy, data, AI, accessibility, product, and suppliers
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_SOP.md)
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_SOP.md)
+- [Privacy Exception Review](./PRIVACY_EXCEPTION_REVIEW_SOP.md)
 - [Data Access Review](./DATA_ACCESS_REVIEW_SOP.md)
+- [Data Owner Review](./DATA_OWNER_REVIEW_SOP.md)
 - [AI Risk Review](./AI_RISK_REVIEW_SOP.md)
 - [AI Change Review](./AI_CHANGE_REVIEW_SOP.md)
 - [AI Monitoring Review](./AI_MONITORING_REVIEW_SOP.md)

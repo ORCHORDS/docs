@@ -3,9 +3,9 @@ title: "Templates"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-23"
 review-cycle: "90 days"
-next-review: "2026-11-20"
+next-review: "2026-11-21"
 ---
 
 # Templates
@@ -14,6 +14,8 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 
 ## Governance, quality, audit, legal, ethics, communications, procurement, finance, and strategy
 - [Risk Assessment](./RISK_ASSESSMENT_TEMPLATE.md)
+- [Risk Treatment Verification](./RISK_TREATMENT_VERIFICATION_TEMPLATE.md)
+- [Control Owner Attestation](./CONTROL_OWNER_ATTESTATION_TEMPLATE.md)
 - [Control Test](./CONTROL_TEST_TEMPLATE.md)
 - [Regulatory Change](./REGULATORY_CHANGE_TEMPLATE.md)
 - [Evidence Index](./EVIDENCE_INDEX_TEMPLATE.md)
@@ -58,6 +60,8 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 ## Security, engineering, operations, physical security, and support
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
 - [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW_TEMPLATE.md)
+- [Security Drift Review](./SECURITY_DRIFT_REVIEW_TEMPLATE.md)
+- [Security Finding Aging](./SECURITY_FINDING_AGING_TEMPLATE.md)
 - [Vulnerability Exception](./VULNERABILITY_EXCEPTION_TEMPLATE.md)
 - [Emergency Access Record](./EMERGENCY_ACCESS_TEMPLATE.md)
 - [Threat Model](./THREAT_MODEL_TEMPLATE.md)
@@ -68,10 +72,13 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Media Sanitization Record](./MEDIA_SANITIZATION_RECORD_TEMPLATE.md)
 - [Access Review](./ACCESS_REVIEW_TEMPLATE.md)
 - [Privileged Access Request](./PRIVILEGED_ACCESS_REQUEST_TEMPLATE.md)
+- [CI Failure Trend Review](./CI_FAILURE_TREND_TEMPLATE.md)
 - [Technical Debt Register](./TECHNICAL_DEBT_REGISTER_TEMPLATE.md)
 - [Operational Readiness Review](./OPERATIONAL_READINESS_TEMPLATE.md)
+- [Incident Trend Review](./INCIDENT_TREND_REVIEW_TEMPLATE.md)
 - [Role Change Review](./ROLE_CHANGE_TEMPLATE.md)
 - [Supplier Evidence Review](./SUPPLIER_EVIDENCE_REVIEW_TEMPLATE.md)
+- [Supplier Remediation Verification](./SUPPLIER_REMEDIATION_VERIFICATION_TEMPLATE.md)
 - [Service Ownership](./SERVICE_OWNERSHIP_TEMPLATE.md)
 - [Service Decommissioning](./SERVICE_DECOMMISSIONING_TEMPLATE.md)
 - [Alert Review](./ALERT_REVIEW_TEMPLATE.md)
@@ -91,9 +98,11 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 ## Data, privacy, AI, product, accessibility, and suppliers
 - [Data Inventory Entry](./DATA_INVENTORY_ENTRY_TEMPLATE.md)
 - [Data Access Review](./DATA_ACCESS_REVIEW_TEMPLATE.md)
+- [Data Owner Review](./DATA_OWNER_REVIEW_TEMPLATE.md)
 - [Retention Schedule](./RETENTION_SCHEDULE_TEMPLATE.md)
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_TEMPLATE.md)
 - [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_TEMPLATE.md)
+- [Privacy Exception Review](./PRIVACY_EXCEPTION_REVIEW_TEMPLATE.md)
 - [AI Risk Review](./AI_RISK_REVIEW_TEMPLATE.md)
 - [AI Change Review](./AI_CHANGE_REVIEW_TEMPLATE.md)
 - [AI Monitoring Review](./AI_MONITORING_REVIEW_TEMPLATE.md)
