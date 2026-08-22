@@ -35,6 +35,7 @@ CONTROLLED_DIRS = {
     "product",
     "project-delivery",
     "quality",
+    "records",
     "releases",
     "research",
     "resilience",
