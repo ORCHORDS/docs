@@ -1,24 +1,21 @@
 ---
-title: "Product Documentation"
-owner: "Documentation Maintainer"
+title: "Product Governance"
+owner: "Product Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
-# Product
+# Product Governance
 
-Company-wide planning and prioritization principles without product-specific roadmaps.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets, internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow [Document Control](../governance/DOCUMENT_CONTROL.md).
+Company-wide planning and lifecycle governance without publishing individual product roadmaps.
 
 ## Documents
 
-- [Planning Prioritization](./PLANNING_PRIORITIZATION.md) — Evidence-based planning and prioritization.
+- [Planning and Prioritization](./PLANNING_PRIORITIZATION.md)
+- [Product Risk Review](./PRODUCT_RISK_REVIEW.md)
+- [Launch Readiness](./LAUNCH_READINESS.md)
+- [Deprecation and Sunset Policy](./DEPRECATION_SUNSET_POLICY.md)
+- [User Feedback Handling](./USER_FEEDBACK_HANDLING.md)

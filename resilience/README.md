@@ -10,21 +10,16 @@ next-review: "2026-11-20"
 
 # Resilience
 
-This category defines company-wide expectations for continuity, recovery,
-resilience testing, and crisis communication without publishing system
-topology or recovery secrets.
+Continuity, recovery, crisis coordination, and resilience testing.
 
 ## Documents
 
 - [Business Impact Analysis](./BUSINESS_IMPACT_ANALYSIS.md)
 - [Disaster Recovery Policy](./DISASTER_RECOVERY_POLICY.md)
+- [Dependency Resilience](./DEPENDENCY_RESILIENCE.md)
+- [Emergency Operations](./EMERGENCY_OPERATIONS.md)
 - [Crisis Communications](./CRISIS_COMMUNICATIONS.md)
 - [Resilience Testing](./RESILIENCE_TESTING.md)
+- [Tabletop Exercises](./TABLETOP_EXERCISES.md)
 
-## Operating principle
-
-Recovery objectives are risk decisions. They must be justified by business
-impact, dependency criticality, data obligations, and feasible recovery
-capability rather than copied from generic industry targets.
-
-Related operational procedures are in [SOPs](../sop/README.md).
+Recovery objectives are risk decisions and must be supported by business impact and tested capability.

@@ -10,8 +10,7 @@ next-review: "2026-11-20"
 
 # Standards and Guidance Register
 
-Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
-certified against it.
+Inclusion means a source informs policy design; it does **not** mean ORCHORDS is certified against it.
 
 ## Current sources
 
@@ -23,11 +22,14 @@ certified against it.
 | [NIST SP 800-18 Rev. 2](https://csrc.nist.gov/pubs/sp/800/18/r2/final) | Final, June 2026 | Security, privacy and C-SCRM planning |
 | [NIST SP 1326](https://csrc.nist.gov/pubs/sp/1326/final) | Final, July 2026 | Supplier due-diligence assessment |
 | [NIST SP 800-161 Rev. 1 Update 1](https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final) | Final, November 2024 | Cybersecurity supply-chain risk management |
-| [NIST SP 800-57 Part 1 Rev. 5](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final) | Final, May 2020 | Cryptographic key-management principles |
+| [NIST SP 800-63-4](https://csrc.nist.gov/pubs/sp/800/63/4/final) | Final, July 2025 | Digital identity, authentication and federation |
+| [NIST SP 800-40 Rev. 4](https://csrc.nist.gov/pubs/sp/800/40/r4/final) | Final | Enterprise patch-management planning |
+| [NIST SP 800-128](https://csrc.nist.gov/pubs/sp/800/128/final) | Final; updated 2019 | Security-focused configuration management |
+| [NIST SP 800-57 Part 1 Rev. 5](https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final) | Final | Cryptographic key-management principles |
 | [NIST SP 800-218 / SSDF 1.1](https://csrc.nist.gov/pubs/sp/800/218/final) | Final | Secure software development |
 | [NIST SP 800-218 Rev. 1 / SSDF 1.2](https://csrc.nist.gov/pubs/sp/800/218/r1/ipd) | Initial Public Draft | Forward-looking SSDF changes; not treated as final |
 | [NIST Privacy Framework 1.0](https://www.nist.gov/privacy-framework) | Current final framework | Enterprise privacy risk management |
-| [NIST Privacy Framework 1.1](https://www.nist.gov/privacy-framework/new-projects/privacy-framework-version-11) | Initial Public Draft as checked August 2026 | Forward-looking privacy-framework changes; not treated as final |
+| [NIST Privacy Framework 1.1](https://www.nist.gov/privacy-framework/new-projects/privacy-framework-version-11) | Initial Public Draft as checked August 2026 | Forward-looking privacy changes; not treated as final |
 | [NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) | Current framework; revision work underway | AI risk governance |
 | [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) | Published July 2024 | Generative-AI risk profile |
 | [CIS Critical Security Controls v8.1](https://www.cisecurity.org/controls/v8-1) | Current version | Prioritized practical cybersecurity safeguards |
@@ -47,6 +49,5 @@ certified against it.
 - Record drafts as drafts and do not represent them as final.
 - Re-check versioned references at least quarterly.
 - Do not copy large portions of standards; link and summarize intent.
-- Practitioner forums may inform usability and maintenance, but are
-  non-normative.
+- Practitioner forums may inform usability and maintenance, but are non-normative.
 - When a standard materially changes, assess every policy that cites it.
