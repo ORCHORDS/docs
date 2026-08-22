@@ -1,24 +1,22 @@
 ---
-title: "Accessibility Documentation"
-owner: "Documentation Maintainer"
+title: "Accessibility"
+owner: "Accessibility Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Accessibility
 
-Accessibility expectations for public digital content and documentation.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets, internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow [Document Control](../governance/DOCUMENT_CONTROL.md).
+Public accessibility policy, testing, issue management, and content guidance.
 
 ## Documents
 
-- [Accessibility Policy](./ACCESSIBILITY_POLICY.md) — WCAG-informed accessibility expectations.
+- [Accessibility Policy](./ACCESSIBILITY_POLICY.md)
+- [Accessibility Testing](./ACCESSIBILITY_TESTING.md)
+- [Accessibility Issue Management](./ACCESSIBILITY_ISSUE_MANAGEMENT.md)
+- [Accessible Content Guide](./ACCESSIBLE_CONTENT_GUIDE.md)
+
+Accessibility claims require evidence; automated scans alone do not prove conformance.

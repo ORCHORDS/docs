@@ -13,40 +13,45 @@ next-review: "2026-11-20"
 SOPs turn policy into repeatable, evidence-producing operational steps.
 
 ## Governance and assurance
-
 - [Document Review](./DOCUMENT_REVIEW_SOP.md)
 - [Risk Assessment](./RISK_ASSESSMENT_SOP.md)
 - [Evidence Collection](./EVIDENCE_COLLECTION_SOP.md)
+- [Control Testing](./CONTROL_TESTING_SOP.md)
+- [Regulatory Change Review](./REGULATORY_CHANGE_REVIEW_SOP.md)
 - [Security Exception](./SECURITY_EXCEPTION_SOP.md)
 
 ## Security and access
-
 - [Vulnerability Management](./VULNERABILITY_MANAGEMENT_SOP.md)
+- [Patch Management](./PATCH_MANAGEMENT_SOP.md)
+- [Security Event Escalation](./SECURITY_EVENT_ESCALATION_SOP.md)
 - [Secrets Rotation](./SECRETS_ROTATION_SOP.md)
 - [Access Provisioning](./ACCESS_PROVISIONING_SOP.md)
+- [Privileged Access](./PRIVILEGED_ACCESS_SOP.md)
 - [Access Review](./ACCESS_REVIEW_SOP.md)
 
 ## Engineering and releases
-
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)
 - [Change Control](./CHANGE_CONTROL_SOP.md)
 - [Release](./RELEASE_SOP.md)
+- [Emergency Release](./EMERGENCY_RELEASE_SOP.md)
 
 ## Incidents and resilience
-
 - [Incident Management](./INCIDENT_MANAGEMENT_SOP.md)
 - [Post-Incident Review](./POST_INCIDENT_REVIEW_SOP.md)
 - [Business Impact Analysis](./BUSINESS_IMPACT_ANALYSIS_SOP.md)
 - [Backup and Restore](./BACKUP_RESTORE_SOP.md)
 - [Disaster Recovery Test](./DISASTER_RECOVERY_TEST_SOP.md)
+- [Tabletop Exercise](./TABLETOP_EXERCISE_SOP.md)
 
-## Privacy, AI, and suppliers
-
+## Privacy, AI, accessibility, product, and suppliers
 - [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT_SOP.md)
+- [Privacy Rights Request](./PRIVACY_RIGHTS_REQUEST_SOP.md)
 - [AI Risk Review](./AI_RISK_REVIEW_SOP.md)
+- [AI Change Review](./AI_CHANGE_REVIEW_SOP.md)
+- [Accessibility Testing](./ACCESSIBILITY_TESTING_SOP.md)
+- [Launch Readiness](./LAUNCH_READINESS_SOP.md)
+- [Deprecation and Sunset](./DEPRECATION_SUNSET_SOP.md)
 - [Third-Party Due Diligence](./THIRD_PARTY_DUE_DILIGENCE_SOP.md)
+- [Supplier Incident](./SUPPLIER_INCIDENT_SOP.md)
 - [Supplier Offboarding](./SUPPLIER_OFFBOARDING_SOP.md)
-
-Each SOP must identify a trigger, roles, ordered procedure, evidence, and
-completion criteria.
