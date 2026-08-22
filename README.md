@@ -1,8 +1,8 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, workplace safety, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, corporate development/transactions, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, workplace safety, human rights/responsible business conduct, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, corporate development/transactions, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
-It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, personal medical information, active transaction details, and unannounced work do not belong here.
+It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, personal medical information, worker grievance identities, active transaction details, and unannounced work do not belong here.
 
 ## Categories
 
@@ -18,6 +18,7 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Resilience](./resilience/README.md) | Business impact, recovery, dependency resilience, crisis communications and exercises |
 | [People](./people/README.md) | Acceptable use, personnel security, awareness, remote work and reporting culture |
 | [Workplace safety](./workplace-safety/README.md) | Hazard assessment, emergency readiness, ergonomics, travel, contractor safety and incident learning |
+| [Human rights](./human-rights/README.md) | Human-rights due diligence, worker safeguards, responsible sourcing, grievance, remedy and claims integrity |
 | [Third-party](./third-party/README.md) | Supplier onboarding, due diligence, dependency chains, monitoring and exit |
 | [Compliance](./compliance/README.md) | Obligations, evidence, control testing, remediation, audit readiness and claims |
 | [Customer trust](./customer-trust/README.md) | Customer-facing assurance, transparency, trust content, due diligence and shared responsibility |
@@ -59,7 +60,7 @@ Statements about controls use these evidence levels:
 - **Planned** — approved work that is not yet implemented.
 - **Not applicable** — formally assessed as outside scope.
 
-A document must never present a planned control as implemented or imply certification, audit results, service capability, transaction outcome, or security guarantee without current evidence.
+A document must never present a planned control as implemented or imply certification, audit results, service capability, transaction outcome, supply-chain condition, or security guarantee without current evidence.
 
 ## Contribution model
 
