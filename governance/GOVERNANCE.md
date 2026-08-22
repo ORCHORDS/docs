@@ -24,8 +24,7 @@ reliability, compliance, and customer impact.
    by verifiable evidence.
 3. **Least privilege and separation of duties.** Sensitive actions should not
    depend on one person's unchecked authority where practical.
-4. **Reversible change.** Prefer changes with tested rollback or containment
-   paths.
+4. **Reversible change.** Prefer changes with tested rollback or containment paths.
 5. **Risk-based depth.** Controls become stronger as impact, exposure, or
    uncertainty increases.
 6. **No silent exceptions.** Deviations from policy are time-bounded, owned,
@@ -38,12 +37,13 @@ reliability, compliance, and customer impact.
 | Decision | Accountable role | Required consultation |
 |---|---|---|
 | Company policy approval | Executive Leadership | Relevant functional lead |
+| Enterprise risk acceptance | Accountable executive | Risk and functional owner |
 | Security risk acceptance | Security Lead | System/business owner |
 | Production-impacting change policy | Operations Lead | Engineering Lead |
 | Engineering quality policy | Engineering Lead | Security and Operations |
 | Release approval policy | Release Manager | Engineering, Security, Operations |
 | Public documentation approval | Documentation Maintainer | Content owner |
-| Emergency exception | Incident Commander or accountable lead | Security/Operations as relevant |
+| Emergency exception | Incident Commander or accountable lead | Relevant control owner |
 
 ## Policy hierarchy
 
@@ -51,7 +51,7 @@ When requirements conflict, apply the following order unless law or contract
 requires otherwise:
 
 1. Applicable law and contractual obligations
-2. Security and safety requirements
+2. Security, privacy and safety requirements
 3. Approved company policy
 4. Approved SOPs
 5. Team conventions and local guidance
@@ -59,29 +59,17 @@ requires otherwise:
 A lower-level document cannot weaken a higher-level requirement without an
 approved exception.
 
-## Risk decisions
+## Risk governance
 
-Risk decisions must record:
+Material risks use the
+[Risk Management Policy](./RISK_MANAGEMENT_POLICY.md) and
+[Risk Assessment SOP](../sop/RISK_ASSESSMENT_SOP.md).
 
-- the condition or uncertainty;
-- business and technical impact;
-- affected information or users;
-- existing controls;
-- treatment: avoid, reduce, transfer, or accept;
-- accountable owner;
-- expiry or review date;
-- evidence supporting closure.
-
-Use [Security Exception SOP](./sop/SECURITY_EXCEPTION_SOP.md) for deviations
-from security controls.
-
-## Metrics
+## Metrics and assurance
 
 Governance effectiveness is reviewed using trend data, not isolated numbers.
-Useful indicators include overdue policy reviews, unresolved audit findings,
-exception age, change failure rate, incident recurrence, recovery-test results,
-and release rollback frequency.
+See [Control Assurance and Metrics](./CONTROL_ASSURANCE_METRICS.md).
 
 ## References
 
-See [REFERENCES.md](./REFERENCES.md).
+See the [Standards and Guidance Register](../standards/REFERENCES.md).

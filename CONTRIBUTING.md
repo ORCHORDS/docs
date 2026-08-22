@@ -7,9 +7,10 @@ Thank you for helping improve the documentation.
 1. Check whether the change is safe for a public repository.
 2. Prefer primary, current sources for factual or standards-based claims.
 3. Do not add product-specific architecture, infrastructure topology, secrets,
-   customer information, private URLs, internal identifiers, or unannounced
-   work.
+   customer information, private URLs, internal identifiers, or unannounced work.
 4. Distinguish policy requirements from implemented controls.
+5. Place controlled documents in the category that owns the subject rather than
+   adding new root-level policy files.
 
 ## Workflow
 
@@ -32,9 +33,9 @@ Use clear conventional prefixes when practical:
 
 ## Sources
 
-When changing security, accessibility, engineering, or operational guidance,
-prefer the sources in [REFERENCES.md](./REFERENCES.md). If a source is a draft,
-state that explicitly.
+When changing policy or standards-based guidance, prefer the sources in the
+[Standards and Guidance Register](./standards/REFERENCES.md). If a source is a
+draft, state that explicitly.
 
 ## Security reports
 

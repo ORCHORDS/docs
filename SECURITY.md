@@ -1,4 +1,4 @@
-# Security Policy
+# Security reporting
 
 ## Reporting a security issue
 
@@ -16,12 +16,15 @@ Email **security@orchords.com** with:
 Please avoid accessing data that is not yours, degrading service, social
 engineering, or publishing an unresolved issue before coordinated handling.
 
+For authorization and safe-harbor expectations, see the
+[Vulnerability Disclosure Policy](./security/VULNERABILITY_DISCLOSURE_POLICY.md).
+
 ## What to expect
 
 ORCHORDS will make reasonable efforts to acknowledge reports promptly, assess
 severity, preserve relevant evidence, coordinate remediation, and communicate
-with the reporter when appropriate. Response targets are defined in
-[SECURITY_POLICY.md](./SECURITY_POLICY.md) and may vary with severity and
+with the reporter when appropriate. Management targets are defined in the
+[Security Policy](./security/SECURITY_POLICY.md) and may vary with severity and
 report quality.
 
 ## Scope of this repository
@@ -32,6 +35,3 @@ Security-relevant documentation findings include:
 - instructions that would materially weaken security;
 - false or outdated security claims;
 - broken reporting guidance.
-
-For company-wide security principles, see
-[SECURITY_POLICY.md](./SECURITY_POLICY.md).

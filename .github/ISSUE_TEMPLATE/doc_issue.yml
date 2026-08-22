@@ -7,7 +7,7 @@ body:
     attributes:
       label: Page or file
       description: Path or public URL of the affected document
-      placeholder: SECURITY_POLICY.md
+      placeholder: security/SECURITY_POLICY.md
     validations:
       required: true
   - type: dropdown
@@ -36,12 +36,5 @@ body:
     attributes:
       label: Source or evidence
       description: Prefer a primary public source when the issue is factual or standards-based.
-    validations:
-      required: false
-  - type: textarea
-    id: suggestion
-    attributes:
-      label: Suggested change
-      description: Optional proposed correction.
     validations:
       required: false
