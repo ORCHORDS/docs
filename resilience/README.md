@@ -10,7 +10,7 @@ next-review: "2026-11-21"
 
 # Resilience
 
-Continuity, recovery, crisis coordination, dependency mapping, and resilience testing.
+Continuity, recovery, crisis coordination, dependency mapping, workforce resilience, and resilience testing.
 
 ## Documents
 
@@ -19,6 +19,8 @@ Continuity, recovery, crisis coordination, dependency mapping, and resilience te
 - [Dependency Resilience](./DEPENDENCY_RESILIENCE.md)
 - [Recovery Dependency Mapping](./RECOVERY_DEPENDENCY_MAPPING.md)
 - [Alternate Dependency Strategy](./ALTERNATE_DEPENDENCY_STRATEGY.md)
+- [People Dependency Resilience](./PEOPLE_DEPENDENCY_RESILIENCE.md)
+- [Workforce Disruption Continuity](./WORKFORCE_DISRUPTION_CONTINUITY.md)
 - [Emergency Operations](./EMERGENCY_OPERATIONS.md)
 - [Crisis Communications](./CRISIS_COMMUNICATIONS.md)
 - [Crisis Decision Logging](./CRISIS_DECISION_LOGGING.md)
