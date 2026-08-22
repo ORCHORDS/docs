@@ -1,26 +1,24 @@
 ---
-title: "Releases Documentation"
-owner: "Documentation Maintainer"
+title: "Releases"
+owner: "Release Manager"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Releases
 
-Release readiness, signing, versioning and publication governance.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets, internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow [Document Control](../governance/DOCUMENT_CONTROL.md).
+Company-wide release governance, signing, versioning, artifact integrity, and
+rollback expectations.
 
 ## Documents
 
-- [Release Management](./RELEASE_MANAGEMENT.md) — Release readiness and approval.
-- [Code Signing](./CODE_SIGNING.md) — Signing governance.
-- [Versioning Changelog](./VERSIONING_CHANGELOG.md) — Versioning and changelog practices.
+- [Release Management](./RELEASE_MANAGEMENT.md)
+- [Code Signing](./CODE_SIGNING.md)
+- [Versioning and Changelog](./VERSIONING_CHANGELOG.md)
+- [Release Artifact Integrity](./ARTIFACT_INTEGRITY.md)
+- [Release Rollback Policy](./RELEASE_ROLLBACK_POLICY.md)
+
+Use [Release SOP](../sop/RELEASE_SOP.md) for the operational procedure.

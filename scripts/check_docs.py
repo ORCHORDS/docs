@@ -10,7 +10,25 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CONTROLLED_DIRS = {'privacy', 'standards', 'sop', 'product', 'ai', 'releases', 'data', 'templates', 'governance', 'security', 'accessibility', 'operations', 'engineering', 'third-party'}
+CONTROLLED_DIRS = {
+    "accessibility",
+    "ai",
+    "compliance",
+    "data",
+    "engineering",
+    "governance",
+    "operations",
+    "people",
+    "privacy",
+    "product",
+    "releases",
+    "resilience",
+    "security",
+    "sop",
+    "standards",
+    "templates",
+    "third-party",
+}
 
 FORBIDDEN = {
     "mr.orchords",
@@ -93,7 +111,10 @@ def main() -> int:
     }
     unexpected_root = sorted(root_md - allowed_root_md)
     if unexpected_root:
-        errors.append("root: controlled documentation must live in a category: " + ", ".join(unexpected_root))
+        errors.append(
+            "root: controlled documentation must live in a category: "
+            + ", ".join(unexpected_root)
+        )
 
     for path in markdown:
         rel = path.relative_to(ROOT)
@@ -126,7 +147,12 @@ def main() -> int:
                     errors.append(f"{rel}: front matter missing: {', '.join(missing)}")
                 if front_matter.get("classification") != "public":
                     errors.append(f"{rel}: classification must be public")
-                if front_matter.get("status") not in {"approved", "review", "draft", "deprecated"}:
+                if front_matter.get("status") not in {
+                    "approved",
+                    "review",
+                    "draft",
+                    "deprecated",
+                }:
                     errors.append(f"{rel}: invalid status")
 
         errors.extend(check_links(path, text))

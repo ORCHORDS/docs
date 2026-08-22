@@ -1,29 +1,26 @@
 ---
-title: "Privacy Documentation"
-owner: "Documentation Maintainer"
+title: "Privacy"
+owner: "Privacy Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # Privacy
 
-Privacy governance, privacy-by-design and rights-oriented handling principles.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement
-  genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets,
-  internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow
-  [Document Control](../governance/DOCUMENT_CONTROL.md).
+Company-wide privacy risk management, privacy-by-design, rights, assessment,
+incident, and processing-record principles.
 
 ## Documents
 
-- [Privacy Governance](./PRIVACY_GOVERNANCE.md) — Privacy accountability and risk governance.
-- [Privacy By Design](./PRIVACY_BY_DESIGN.md) — Privacy requirements in design and change.
-- [Privacy Rights Principles](./PRIVACY_RIGHTS_PRINCIPLES.md) — Principles for individual privacy rights handling.
+- [Privacy Governance](./PRIVACY_GOVERNANCE.md)
+- [Privacy by Design](./PRIVACY_BY_DESIGN.md)
+- [Privacy Rights Principles](./PRIVACY_RIGHTS_PRINCIPLES.md)
+- [Privacy Impact Assessment](./PRIVACY_IMPACT_ASSESSMENT.md)
+- [Privacy Incident Response](./PRIVACY_INCIDENT_RESPONSE.md)
+- [Processing Activity Records](./PROCESSING_ACTIVITY_RECORDS.md)
+
+Privacy requirements apply alongside, not instead of, security and data
+governance.

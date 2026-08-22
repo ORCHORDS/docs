@@ -1,32 +1,40 @@
 ---
 title: "High-Level Control Mapping"
-owner: "Security and Documentation Leads"
+owner: "Governance Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
 # High-Level Control Mapping
 
-## Purpose
+This mapping helps readers understand which policy areas are informed by major
+frameworks. It does not assert certification, full framework coverage, or
+control implementation.
 
-Show how this public policy corpus relates to major external guidance without claiming certification or one-to-one compliance.
-
-| ORCHORDS category | Primary external references |
+| ORCHORDS area | Primary external references |
 |---|---|
-| Governance and risk | NIST CSF 2.0; NIST SP 800-18 Rev. 2 |
-| Security | NIST CSF 2.0; CISA Secure by Design |
-| Privacy and data | NIST SP 800-18 Rev. 2; applicable privacy obligations |
-| AI | NIST AI RMF 1.0; NIST AI 600-1 |
-| Secure development | NIST SSDF 1.1; OWASP ASVS 5.0.0 |
+| Governance and enterprise risk | NIST CSF 2.0; NIST SP 800-53 Rev. 5 |
+| Security controls and assurance | NIST SP 800-53 Rev. 5; CIS Controls v8.1 |
+| Incident response | NIST SP 800-61 Rev. 3; CSF 2.0 |
+| Privacy | NIST Privacy Framework 1.0; NIST SP 800-53 Rev. 5 |
+| Supply-chain and suppliers | NIST SP 800-161 Rev. 1 Update 1; NIST SP 1326 |
+| Secure software development | NIST SSDF 1.1; OWASP ASVS 5.0.0 |
 | Software supply chain | SLSA 1.2; OpenSSF OSPS Baseline |
-| Supplier risk | NIST SP 1326; NIST C-SCRM guidance |
-| Incident response | NIST SP 800-61 Rev. 3 |
+| Cryptographic key management | NIST SP 800-57 Part 1 Rev. 5 |
+| AI governance | NIST AI RMF 1.0; NIST AI 600-1 |
 | Accessibility | WCAG 2.2 |
-| Vulnerability disclosure | RFC 9116; CISA disclosure guidance |
+| Practical cyber hygiene | CIS Controls v8.1 |
 
-## Interpretation
+## Mapping rules
 
-This table is a navigation aid. It does not mean every control in a referenced framework is implemented, audited, applicable, or satisfied.
+- A reference informs design; it does not automatically become a mandatory
+  requirement.
+- Controls are implemented only when current evidence supports that claim.
+- External obligations may require more specific controls than this public
+  policy corpus.
+- Draft sources may inform planning but are not treated as final requirements.
+
+See [Standards Register](./REFERENCES.md).

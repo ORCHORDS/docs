@@ -1,28 +1,24 @@
 ---
-title: "Data Documentation"
-owner: "Documentation Maintainer"
+title: "Data Governance"
+owner: "Data Governance Lead"
 status: "approved"
 classification: "public"
 last-reviewed: "2026-08-22"
-review-cycle: "180 days"
-next-review: "2027-02-18"
+review-cycle: "90 days"
+next-review: "2026-11-20"
 ---
 
-# Data
+# Data Governance
 
-Classification, handling, minimization, retention and lifecycle governance.
-
-## Rules
-
-- Keep content company-wide and provider-neutral unless a public requirement
-  genuinely depends on a named standard or protocol.
-- Distinguish requirements from implementation evidence.
-- Do not publish private architecture, access details, customer data, secrets,
-  internal identifiers, or unresolved vulnerability detail.
-- Controlled documents in this category follow
-  [Document Control](../governance/DOCUMENT_CONTROL.md).
+Company-wide rules for data classification, handling, lifecycle, retention,
+sharing, quality, and integrity.
 
 ## Documents
 
-- [Data Classification Handling](./DATA_CLASSIFICATION_HANDLING.md) — Classification and handling controls.
-- [Data Lifecycle Governance](./DATA_LIFECYCLE_GOVERNANCE.md) — Collection, minimization, retention and disposal.
+- [Data Classification and Handling](./DATA_CLASSIFICATION_HANDLING.md)
+- [Data Lifecycle Governance](./DATA_LIFECYCLE_GOVERNANCE.md)
+- [Data Retention Schedule Policy](./DATA_RETENTION_SCHEDULE.md)
+- [Data Sharing and Transfer](./DATA_SHARING_TRANSFER.md)
+- [Data Quality and Integrity](./DATA_QUALITY_INTEGRITY.md)
+
+Personal-data processing also follows [Privacy](../privacy/README.md).
