@@ -1,0 +1,13 @@
+---
+title: "Strategy Horizons Governance"
+owner: "Executive Leadership"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-23"
+review-cycle: "90 days"
+next-review: "2026-11-21"
+---
+
+# Strategy Horizons Governance
+
+Strategic planning SHOULD distinguish near-term execution, medium-term capability building, and longer-term options so uncertain future bets are not managed as if they were current delivery commitments.
