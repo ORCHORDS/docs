@@ -1,6 +1,6 @@
 # ORCHORDS Public Documentation
 
-This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, procurement, quality management, internal audit, customer/support governance, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
+This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, supplier risk, compliance/assurance, legal governance, physical security, financial controls, ethics/integrity, public communications, procurement, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
 It is intentionally **not** a system inventory or architecture repository. Product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, facility security details, and unannounced work do not belong here.
 
@@ -28,6 +28,9 @@ It is intentionally **not** a system inventory or architecture repository. Produ
 | [Quality](./quality/README.md) | Quality objectives, nonconformities, CAPA, root cause and measurement integrity |
 | [Internal audit](./internal-audit/README.md) | Independent audit planning, evidence, objectivity and finding follow-up |
 | [Support](./support/README.md) | Support identity verification, sensitive-data handling, escalation and complaints |
+| [Commercial](./commercial/README.md) | Customer commitments, proposals, pilots, assurance responses and delivery handover |
+| [Project delivery](./project-delivery/README.md) | Project initiation, governance, stage gates, risk/change, handover and closure |
+| [Knowledge](./knowledge/README.md) | Critical knowledge, decision records, knowledge transfer and content lifecycle |
 | [Releases](./releases/README.md) | Release governance, evidence, signing, integrity, versioning and rollback |
 | [Product](./product/README.md) | Planning, user safety, experimentation, launch and deprecation governance |
 | [Accessibility](./accessibility/README.md) | Accessibility policy, testing, issue management and content guidance |

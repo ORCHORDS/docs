@@ -34,6 +34,15 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Payment Change Verification](./PAYMENT_CHANGE_TEMPLATE.md)
 - [Financial Approval](./FINANCIAL_APPROVAL_TEMPLATE.md)
 
+## Commercial, project delivery, and knowledge
+- [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_TEMPLATE.md)
+- [Pilot Review](./PILOT_REVIEW_TEMPLATE.md)
+- [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_TEMPLATE.md)
+- [Project Charter](./PROJECT_CHARTER_TEMPLATE.md)
+- [Stage Gate Review](./STAGE_GATE_TEMPLATE.md)
+- [Project Handover](./PROJECT_HANDOVER_TEMPLATE.md)
+- [Knowledge Transfer](./KNOWLEDGE_TRANSFER_TEMPLATE.md)
+
 ## Security, operations, physical security, and support
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
 - [Threat Model](./THREAT_MODEL_TEMPLATE.md)
