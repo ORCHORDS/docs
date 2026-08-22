@@ -12,15 +12,13 @@ next-review: "2026-11-20"
 
 ## Trigger
 
-Use for scheduled review, standards changes, ownership changes, audit/incident
-findings, or material content updates.
+Use for scheduled review, standards changes, ownership changes, audit/incident findings, or material content updates.
 
 ## Roles
 
 - **Document owner:** accountable for accuracy.
 - **Reviewer:** independently checks usability and claims.
-- **Documentation Maintainer:** checks structure, links, metadata, and
-  publication boundary.
+- **Documentation Maintainer:** checks structure, links, metadata, and publication boundary.
 - **Security reviewer:** required for security-sensitive content.
 
 ## Procedure
@@ -31,21 +29,17 @@ findings, or material content updates.
 4. Verify external standards against primary sources.
 5. Mark drafts as drafts; do not silently treat draft standards as final.
 6. Remove obsolete implementation detail and duplicate policy.
-7. Check public-safety boundary in [Document Control](../DOCUMENT_CONTROL.md).
-8. Validate all relative links.
+7. Check the public-safety boundary in [Document Control](../governance/DOCUMENT_CONTROL.md).
+8. Validate relative links.
 9. Run `python scripts/check_docs.py`.
 10. Open a pull request describing sources checked and material changes.
 11. Obtain required review.
-12. Set `last-reviewed` to the approval date and compute `next-review`.
+12. Set review metadata to the approval date and computed next review.
 
 ## Evidence
 
-The pull request is the review record. It should identify major sources checked,
-reviewers, and any unresolved follow-up.
+The pull request is the review record and identifies major sources checked, reviewers, and unresolved follow-up.
 
 ## Completion criteria
 
-- automated checks pass;
-- no unsupported implementation or certification claim remains;
-- review metadata is current;
-- owner approval is recorded.
+Automated checks pass, unsupported assurance claims are removed, review metadata is current, and owner approval is recorded.

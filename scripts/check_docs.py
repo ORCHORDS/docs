@@ -10,15 +10,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CONTROLLED_DIRS = {"engineering", "operations", "product", "releases", "sop"}
-CONTROLLED_ROOT = {
-    "GOVERNANCE.md",
-    "DOCUMENT_CONTROL.md",
-    "REFERENCES.md",
-    "STYLE_GUIDE.md",
-    "ACCESSIBILITY_POLICY.md",
-    "SECURITY_POLICY.md",
-}
+CONTROLLED_DIRS = {'privacy', 'standards', 'sop', 'product', 'ai', 'releases', 'data', 'templates', 'governance', 'security', 'accessibility', 'operations', 'engineering', 'third-party'}
 
 FORBIDDEN = {
     "mr.orchords",
@@ -48,9 +40,7 @@ URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
 
 def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
-    return rel.name in CONTROLLED_ROOT or (
-        len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
-    )
+    return len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
 
 
 def parse_front_matter(text: str) -> dict[str, str] | None:
@@ -93,6 +83,17 @@ def check_links(path: Path, text: str) -> list[str]:
 def main() -> int:
     errors: list[str] = []
     markdown = sorted(ROOT.rglob("*.md"))
+
+    root_md = {p.name for p in ROOT.glob("*.md")}
+    allowed_root_md = {
+        "README.md",
+        "CONTRIBUTING.md",
+        "SECURITY.md",
+        "CODE_OF_CONDUCT.md",
+    }
+    unexpected_root = sorted(root_md - allowed_root_md)
+    if unexpected_root:
+        errors.append("root: controlled documentation must live in a category: " + ", ".join(unexpected_root))
 
     for path in markdown:
         rel = path.relative_to(ROOT)

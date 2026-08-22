@@ -31,16 +31,10 @@ Engineering work MUST:
 
 ## Design quality
 
-Prefer:
-
-- small, cohesive components;
-- explicit interfaces and ownership;
-- least privilege;
-- secure defaults;
-- bounded resource use;
-- idempotent operations where practical;
-- backward-compatible migrations;
-- observability designed with the feature rather than added after failure.
+Prefer small cohesive components, explicit interfaces and ownership, least
+privilege, secure defaults, bounded resource use, idempotent operations where
+practical, backward-compatible migrations, and observability designed with the
+feature.
 
 Important design decisions should record context, options, decision, tradeoffs,
 and consequences.
@@ -48,24 +42,24 @@ and consequences.
 ## Change risk
 
 Classify changes by blast radius, data sensitivity, reversibility, dependency
-risk, and novelty.
-
-Higher-risk changes require stronger review, verification, rollout controls,
-and rollback evidence.
+risk, and novelty. Higher-risk changes require stronger review, verification,
+rollout controls, and rollback evidence.
 
 ## Secure development
 
-Use the [Security Policy](../SECURITY_POLICY.md),
+Use the [Security Policy](../security/SECURITY_POLICY.md),
+[Secure Design and Threat Modeling](./SECURE_DESIGN_THREAT_MODELING.md),
+[Open Source and Dependency Policy](./OPEN_SOURCE_DEPENDENCY_POLICY.md),
 [Source Control Policy](./SOURCE_CONTROL_POLICY.md),
 [CI/CD Policy](./CI_CD_POLICY.md), and
 [Software Supply Chain Policy](./SOFTWARE_SUPPLY_CHAIN.md).
 
-OWASP ASVS 5.0.0 may be used to define application-security verification
-requirements. NIST SSDF 1.1 is the stable secure-development reference; SSDF
-1.2 is monitored as a draft until finalized.
+OWASP ASVS 5.0.0 may define application-security verification requirements.
+NIST SSDF 1.1 is the stable secure-development reference; SSDF 1.2 is monitored
+as a draft until finalized.
 
 ## Definition of done
 
 A change is not done until required tests pass, review is complete, material
-documentation is updated, security implications are addressed, and any
+documentation is updated, security/privacy implications are addressed, and
 operational rollout/rollback needs are understood.
