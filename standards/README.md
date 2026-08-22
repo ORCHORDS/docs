@@ -1,27 +1,35 @@
 ---
-title: "Standards"
-owner: "Documentation Maintainer"
+title: "Standards and Methodology"
+owner: "Governance Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-23"
 review-cycle: "90 days"
-next-review: "2026-11-20"
+next-review: "2026-11-21"
 ---
 
-# Standards
+# Standards and Methodology
 
-This category maintains the external-reference register, documentation style,
-and high-level control mapping used across the public knowledge base.
+Methods for using external standards, mapping controls, making assurance claims, rating risk, citing sources, and keeping the public corpus consistent.
 
 ## Documents
 
-- [Standards and Guidance Register](./REFERENCES.md)
+- [Standards Register](./REFERENCES.md)
+- [Framework Status Policy](./FRAMEWORK_STATUS_POLICY.md)
+- [Standards Change Monitoring](./STANDARDS_CHANGE_MONITORING.md)
+- [External Standard Adoption Decision](./STANDARD_ADOPTION_DECISION.md)
+- [Citation and Source Policy](./CITATION_SOURCE_POLICY.md)
+- [Normative Language Convention](./NORMATIVE_LANGUAGE.md)
+- [Controlled Definition Glossary](./DEFINITION_GLOSSARY.md)
+- [Control Identifier Convention](./CONTROL_ID_CONVENTION.md)
 - [High-Level Control Mapping](./CONTROL_MAPPING.md)
-- [Documentation Style Guide](./STYLE_GUIDE.md)
+- [Standards Crosswalk Method](./CROSSWALK_METHOD.md)
+- [Evidence Level Method](./EVIDENCE_LEVELS.md)
+- [Public Assurance Terminology](./PUBLIC_ASSURANCE_TERMINOLOGY.md)
+- [Risk Rating Method](./RISK_RATING_METHOD.md)
+- [Internal Maturity Scale](./MATURITY_SCALE.md)
+- [Exception Terminology](./EXCEPTION_TERMINOLOGY.md)
+- [Review Calendar Method](./REVIEW_CALENDAR_METHOD.md)
+- [Style Guide](./STYLE_GUIDE.md)
 
-## Rules
-
-Primary authoritative sources take precedence over forum posts, vendor
-marketing, or copied summaries. Draft standards are identified as drafts.
-Framework references do not imply certification, conformance, or control
-implementation.
+External references inform ORCHORDS governance; they do not by themselves establish certification, complete coverage, or implemented controls.
