@@ -10,12 +10,13 @@ next-review: "2026-11-20"
 
 # Data Governance
 
-Company-wide data inventory, access, classification, lifecycle, retention, sharing, quality, lineage, portability, and disposal governance.
+Company-wide data inventory, access, correction, classification, lifecycle, retention, sharing, quality, lineage, portability, and disposal governance.
 
 ## Documents
 
 - [Data Inventory Governance](./DATA_INVENTORY.md)
 - [Data Access Governance](./DATA_ACCESS_GOVERNANCE.md)
+- [Data Correction Governance](./DATA_CORRECTION_GOVERNANCE.md)
 - [Data Classification and Handling](./DATA_CLASSIFICATION_HANDLING.md)
 - [Data Lifecycle Governance](./DATA_LIFECYCLE_GOVERNANCE.md)
 - [Data Retention Schedule](./DATA_RETENTION_SCHEDULE.md)

@@ -17,6 +17,7 @@ Company-wide release governance.
 - [Release Management](./RELEASE_MANAGEMENT.md)
 - [Emergency Release Policy](./EMERGENCY_RELEASE_POLICY.md)
 - [Release Evidence](./RELEASE_EVIDENCE.md)
+- [Release Observability](./RELEASE_OBSERVABILITY.md)
 - [Code Signing](./CODE_SIGNING.md)
 - [Release Artifact Integrity](./ARTIFACT_INTEGRITY.md)
 - [Versioning and Changelog](./VERSIONING_CHANGELOG.md)
