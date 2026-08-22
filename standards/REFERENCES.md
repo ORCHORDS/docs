@@ -18,6 +18,7 @@ Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
 |---|---|---|
 | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Final | Enterprise cybersecurity governance and outcomes |
 | [NIST SP 800-53 Rev. 5 Release 5.2.0](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) | Final control catalog | Security/privacy controls and assurance |
+| [NIST SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) | Final | Security/privacy control assessment methods |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Final, April 2025 | Incident response |
 | [NIST SP 800-18 Rev. 2](https://csrc.nist.gov/pubs/sp/800/18/r2/final) | Final, June 2026 | Security, privacy and supply-chain planning |
 | [NIST SP 1326](https://csrc.nist.gov/pubs/sp/1326/final) | Final, July 2026 | Supplier due diligence |
@@ -37,6 +38,9 @@ Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
 | [NIST Privacy Framework 1.1](https://www.nist.gov/privacy-framework/new-projects/privacy-framework-version-11) | Initial Public Draft | Forward-looking privacy changes; not treated as final |
 | [NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) | Current framework; revision work underway | AI risk governance |
 | [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) | Published July 2024 | Generative-AI risk profile |
+| [IIA Global Internal Audit Standards](https://www.theiia.org/en/standards/) | Effective January 9, 2025 | Professional internal audit governance and quality |
+| [ISO 9001:2015 + Amendment 1:2024](https://www.iso.org/standard/88431.html) | Current published quality-management requirements; 2026 edition under publication | Quality-management design |
+| [ISO 10002:2018](https://www.iso.org/standard/71580.html) | Current, confirmed by ISO | Customer complaint-handling guidance |
 | [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Continuously maintained catalog | Exploitation-aware vulnerability prioritization |
 | [CIS Critical Security Controls v8.1](https://www.cisecurity.org/controls/v8-1) | Current version | Prioritized practical safeguards |
 | [OWASP ASVS 5.0.0](https://owasp.org/www-project-application-security-verification-standard/) | Stable release | Application-security verification |
@@ -51,7 +55,7 @@ Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
 ## Reference-management rules
 
 - Prefer final, primary, authoritative sources.
-- Record drafts as drafts and do not represent them as final.
+- Record drafts and under-publication standards accurately; do not treat them as final.
 - Re-check versioned references at least quarterly.
 - Practitioner forums may inform usability and maintenance, but are non-normative.
 - When a standard materially changes, assess every policy that cites it.

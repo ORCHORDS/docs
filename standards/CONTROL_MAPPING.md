@@ -15,6 +15,10 @@ This mapping shows which external references inform policy areas. It does not as
 | ORCHORDS area | Primary external references |
 |---|---|
 | Governance and enterprise risk | NIST CSF 2.0; NIST SP 800-53 Rev. 5 |
+| Control assessment | NIST SP 800-53A Rev. 5 |
+| Internal audit | IIA Global Internal Audit Standards |
+| Quality management | ISO 9001:2015 + Amendment 1:2024; 2026 edition tracked as under publication |
+| Complaint handling | ISO 10002:2018 |
 | Security architecture | NIST SP 800-207; NIST SP 800-160 Vol. 1 Rev. 1 |
 | Identity and authentication | NIST SP 800-63-4; NIST SP 800-53 Rev. 5 |
 | Threat intelligence | NIST SP 800-150; CISA KEV |
@@ -34,6 +38,6 @@ This mapping shows which external references inform policy areas. It does not as
 ## Mapping rules
 - References inform design; they do not automatically become mandatory requirements.
 - Controls are implemented only when current evidence supports that claim.
-- Draft sources may inform planning but are not treated as final requirements.
+- Draft or under-publication sources may inform planning but are not treated as final requirements.
 
 See [Standards Register](./REFERENCES.md).

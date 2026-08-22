@@ -12,12 +12,16 @@ next-review: "2026-11-20"
 
 Reusable public-safe record structures. Completed records may contain sensitive information and belong in authorized systems, not this public repository.
 
-## Governance, legal, ethics, communications, procurement, and finance
+## Governance, quality, audit, legal, ethics, communications, procurement, and finance
 - [Risk Assessment](./RISK_ASSESSMENT_TEMPLATE.md)
 - [Control Test](./CONTROL_TEST_TEMPLATE.md)
 - [Regulatory Change](./REGULATORY_CHANGE_TEMPLATE.md)
 - [Evidence Index](./EVIDENCE_INDEX_TEMPLATE.md)
 - [Policy Review](./POLICY_REVIEW_TEMPLATE.md)
+- [CAPA](./CAPA_TEMPLATE.md)
+- [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS_TEMPLATE.md)
+- [Audit Plan](./AUDIT_PLAN_TEMPLATE.md)
+- [Audit Finding](./AUDIT_FINDING_TEMPLATE.md)
 - [Legal Request](./LEGAL_REQUEST_TEMPLATE.md)
 - [Legal Hold](./LEGAL_HOLD_TEMPLATE.md)
 - [Contract Review](./CONTRACT_REVIEW_TEMPLATE.md)
@@ -30,7 +34,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Payment Change Verification](./PAYMENT_CHANGE_TEMPLATE.md)
 - [Financial Approval](./FINANCIAL_APPROVAL_TEMPLATE.md)
 
-## Security, operations, and physical security
+## Security, operations, physical security, and support
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
 - [Threat Model](./THREAT_MODEL_TEMPLATE.md)
 - [Threat Intelligence Review](./THREAT_INTELLIGENCE_REVIEW_TEMPLATE.md)
@@ -44,6 +48,8 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Alert Review](./ALERT_REVIEW_TEMPLATE.md)
 - [Visitor Access](./VISITOR_ACCESS_TEMPLATE.md)
 - [Lost or Stolen Asset](./LOST_ASSET_TEMPLATE.md)
+- [Support Identity Verification](./SUPPORT_IDENTITY_VERIFICATION_TEMPLATE.md)
+- [Complaint Review](./COMPLAINT_REVIEW_TEMPLATE.md)
 
 ## Resilience and incidents
 - [Business Impact Analysis](./BUSINESS_IMPACT_ANALYSIS_TEMPLATE.md)
