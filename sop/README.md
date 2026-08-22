@@ -46,6 +46,15 @@ SOPs turn policy into repeatable, evidence-producing operational steps.
 - [Support Escalation](./SUPPORT_ESCALATION_SOP.md)
 - [Complaint Handling](./COMPLAINT_HANDLING_SOP.md)
 
+## Commercial, project delivery, and knowledge
+- [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_REVIEW_SOP.md)
+- [Pilot Review](./PILOT_REVIEW_SOP.md)
+- [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_SOP.md)
+- [Project Initiation](./PROJECT_INITIATION_SOP.md)
+- [Stage Gate Review](./STAGE_GATE_SOP.md)
+- [Project Handover and Closure](./PROJECT_HANDOVER_SOP.md)
+- [Critical Knowledge Transfer](./CRITICAL_KNOWLEDGE_TRANSFER_SOP.md)
+
 ## Engineering, procurement, operations, physical, and finance
 - [Secure Code Review](./SECURE_CODE_REVIEW_SOP.md)
 - [Dependency Update](./DEPENDENCY_UPDATE_SOP.md)

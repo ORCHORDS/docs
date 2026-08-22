@@ -40,7 +40,11 @@ Inclusion means a source informs policy design; it does **not** mean ORCHORDS is
 | [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) | Published July 2024 | Generative-AI risk profile |
 | [IIA Global Internal Audit Standards](https://www.theiia.org/en/standards/) | Effective January 9, 2025 | Professional internal audit governance and quality |
 | [ISO 9001:2015 + Amendment 1:2024](https://www.iso.org/standard/88431.html) | Current published quality-management requirements; 2026 edition under publication | Quality-management design |
+| [ISO 10001:2018](https://www.iso.org/standard/71579.html) | Published and confirmed by ISO | Customer-facing commitments and codes of conduct |
 | [ISO 10002:2018](https://www.iso.org/standard/71580.html) | Current, confirmed by ISO | Customer complaint-handling guidance |
+| [ISO 21502:2020](https://www.iso.org/standard/74947.html) | Published; currently under systematic review | Project-management guidance |
+| [ISO 30401:2018 + Amendment 1:2022](https://www.iso.org/standard/68683.html) | Current published knowledge-management requirements | Knowledge-management system design |
+| [ISO/DIS 30401](https://www.iso.org/standard/89436.html) | Draft edition 2 under development | Forward-looking knowledge-management changes; not treated as final |
 | [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Continuously maintained catalog | Exploitation-aware vulnerability prioritization |
 | [CIS Critical Security Controls v8.1](https://www.cisecurity.org/controls/v8-1) | Current version | Prioritized practical safeguards |
 | [OWASP ASVS 5.0.0](https://owasp.org/www-project-application-security-verification-standard/) | Stable release | Application-security verification |
