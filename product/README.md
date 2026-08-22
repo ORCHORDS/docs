@@ -10,10 +10,11 @@ next-review: "2026-11-20"
 
 # Product Governance
 
-Company-wide planning, experimentation, launch, user-safety, feedback, and lifecycle governance without publishing individual product roadmaps.
+Company-wide discovery, planning, experimentation, launch, user-safety, feedback, and lifecycle governance without publishing individual product roadmaps.
 
 ## Documents
 
+- [Product Discovery Governance](./PRODUCT_DISCOVERY_GOVERNANCE.md)
 - [Planning and Prioritization](./PLANNING_PRIORITIZATION.md)
 - [Product Risk Review](./PRODUCT_RISK_REVIEW.md)
 - [User Safety and Harm Risk](./USER_SAFETY_RISK.md)

@@ -16,6 +16,7 @@ Company-wide security requirements without publishing private architecture or cr
 
 - [Security Policy](./SECURITY_POLICY.md)
 - [Security Architecture Principles](./SECURITY_ARCHITECTURE_PRINCIPLES.md)
+- [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW.md)
 - [Identity and Authentication](./IDENTITY_AUTHENTICATION_POLICY.md)
 - [Privileged Access Management](./PRIVILEGED_ACCESS_MANAGEMENT.md)
 - [Emergency Access Governance](./EMERGENCY_ACCESS_GOVERNANCE.md)

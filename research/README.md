@@ -18,6 +18,7 @@ Company-wide governance for user, market, opinion, and exploratory research.
 - [Participant Consent](./PARTICIPANT_CONSENT.md)
 - [Research Data Handling](./RESEARCH_DATA_HANDLING.md)
 - [Participant Recruitment](./RESEARCH_RECRUITMENT.md)
+- [Research Incentive Governance](./RESEARCH_INCENTIVE_GOVERNANCE.md)
 - [Research Integrity and Reporting](./RESEARCH_INTEGRITY_REPORTING.md)
 - [Research Bias and Quality Review](./RESEARCH_BIAS_QUALITY_REVIEW.md)
 

@@ -20,6 +20,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Policy Review](./POLICY_REVIEW_TEMPLATE.md)
 - [CAPA](./CAPA_TEMPLATE.md)
 - [Root Cause Analysis](./ROOT_CAUSE_ANALYSIS_TEMPLATE.md)
+- [Defect Escape Review](./DEFECT_ESCAPE_REVIEW_TEMPLATE.md)
 - [Supplier Quality Review](./SUPPLIER_QUALITY_REVIEW_TEMPLATE.md)
 - [Audit Plan](./AUDIT_PLAN_TEMPLATE.md)
 - [Audit Finding](./AUDIT_FINDING_TEMPLATE.md)
@@ -39,11 +40,13 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 
 ## Commercial, project delivery, knowledge, research, and customer success
 - [Commercial Commitment Review](./COMMERCIAL_COMMITMENT_TEMPLATE.md)
+- [Pricing and Discount Review](./PRICING_DISCOUNT_TEMPLATE.md)
 - [Commercial Forecast Review](./COMMERCIAL_FORECAST_REVIEW_TEMPLATE.md)
 - [Pilot Review](./PILOT_REVIEW_TEMPLATE.md)
 - [Customer Assurance Response](./CUSTOMER_ASSURANCE_RESPONSE_TEMPLATE.md)
 - [Project Charter](./PROJECT_CHARTER_TEMPLATE.md)
 - [Stage Gate Review](./STAGE_GATE_TEMPLATE.md)
+- [Project Dependency Review](./PROJECT_DEPENDENCY_TEMPLATE.md)
 - [Project Handover](./PROJECT_HANDOVER_TEMPLATE.md)
 - [Benefits Review](./BENEFITS_REVIEW_TEMPLATE.md)
 - [Knowledge Transfer](./KNOWLEDGE_TRANSFER_TEMPLATE.md)
@@ -54,6 +57,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 
 ## Security, engineering, operations, physical security, and support
 - [Security Exception](./SECURITY_EXCEPTION_TEMPLATE.md)
+- [Security Architecture Review](./SECURITY_ARCHITECTURE_REVIEW_TEMPLATE.md)
 - [Vulnerability Exception](./VULNERABILITY_EXCEPTION_TEMPLATE.md)
 - [Emergency Access Record](./EMERGENCY_ACCESS_TEMPLATE.md)
 - [Threat Model](./THREAT_MODEL_TEMPLATE.md)
@@ -65,6 +69,9 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Access Review](./ACCESS_REVIEW_TEMPLATE.md)
 - [Privileged Access Request](./PRIVILEGED_ACCESS_REQUEST_TEMPLATE.md)
 - [Technical Debt Register](./TECHNICAL_DEBT_REGISTER_TEMPLATE.md)
+- [Operational Readiness Review](./OPERATIONAL_READINESS_TEMPLATE.md)
+- [Role Change Review](./ROLE_CHANGE_TEMPLATE.md)
+- [Supplier Evidence Review](./SUPPLIER_EVIDENCE_REVIEW_TEMPLATE.md)
 - [Service Ownership](./SERVICE_OWNERSHIP_TEMPLATE.md)
 - [Service Decommissioning](./SERVICE_DECOMMISSIONING_TEMPLATE.md)
 - [Alert Review](./ALERT_REVIEW_TEMPLATE.md)
@@ -72,6 +79,7 @@ Reusable public-safe record structures. Completed records may contain sensitive 
 - [Lost or Stolen Asset](./LOST_ASSET_TEMPLATE.md)
 - [Support Identity Verification](./SUPPORT_IDENTITY_VERIFICATION_TEMPLATE.md)
 - [Account Recovery](./ACCOUNT_RECOVERY_TEMPLATE.md)
+- [Sensitive Support Action](./SENSITIVE_SUPPORT_ACTION_TEMPLATE.md)
 - [Complaint Review](./COMPLAINT_REVIEW_TEMPLATE.md)
 
 ## Resilience and incidents

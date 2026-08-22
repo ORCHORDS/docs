@@ -16,6 +16,7 @@ Company-wide privacy risk governance.
 
 - [Privacy Governance](./PRIVACY_GOVERNANCE.md)
 - [Privacy by Design](./PRIVACY_BY_DESIGN.md)
+- [Privacy-Protective Defaults](./PRIVACY_DEFAULTS.md)
 - [Privacy Rights Principles](./PRIVACY_RIGHTS_PRINCIPLES.md)
 - [Privacy Rights Requests](./DATA_SUBJECT_REQUESTS.md)
 - [Privacy Notice Governance](./PRIVACY_NOTICE_GOVERNANCE.md)

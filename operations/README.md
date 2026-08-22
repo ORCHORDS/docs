@@ -15,6 +15,7 @@ Company-wide operational governance.
 ## Documents
 
 - [Operations Manual](./OPERATIONS_MANUAL.md)
+- [Operational Readiness Review](./OPERATIONAL_READINESS_REVIEW.md)
 - [Service Ownership](./SERVICE_OWNERSHIP.md)
 - [Service Catalog Governance](./SERVICE_CATALOG_GOVERNANCE.md)
 - [Service Decommissioning](./SERVICE_DECOMMISSIONING.md)
