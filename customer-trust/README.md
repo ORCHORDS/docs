@@ -10,7 +10,7 @@ next-review: "2026-11-21"
 
 # Customer Trust Governance
 
-Company-wide governance for customer-facing trust, assurance, transparency, due-diligence support, shared-responsibility guidance, and consistency of security, privacy, reliability, accessibility, AI, data, and supplier disclosures.
+Company-wide governance for customer-facing trust, assurance, transparency, due-diligence support, shared-responsibility guidance, and consistency of security, privacy, reliability, accessibility, AI, data, supplier, and partner disclosures.
 
 ## Documents
 
@@ -36,8 +36,12 @@ Company-wide governance for customer-facing trust, assurance, transparency, due-
 - [Status Communication Governance](./STATUS_COMMUNICATION_GOVERNANCE.md)
 - [Subprocessor Disclosure Governance](./SUBPROCESSOR_DISCLOSURE.md)
 - [Third-Party Trust Disclosure](./THIRD_PARTY_TRUST_DISCLOSURE.md)
+- [Supplier Trust Evidence](./SUPPLIER_TRUST_EVIDENCE.md)
+- [Partner Trust Disclosure](./PARTNER_TRUST_DISCLOSURE.md)
+- [Trust Dependency Disclosure](./TRUST_DEPENDENCY_DISCLOSURE.md)
 - [Shared Responsibility Guidance](./SHARED_RESPONSIBILITY_GUIDANCE.md)
 - [Assurance Expiry Disclosure](./ASSURANCE_EXPIRY_DISCLOSURE.md)
+- [Trust Change Notification Governance](./TRUST_CHANGE_NOTIFICATION.md)
 - [Trust Content Change Control](./TRUST_CONTENT_CHANGE_CONTROL.md)
 - [Trust Exception Governance](./TRUST_EXCEPTION_GOVERNANCE.md)
 - [Trust Feedback Governance](./TRUST_FEEDBACK_GOVERNANCE.md)
