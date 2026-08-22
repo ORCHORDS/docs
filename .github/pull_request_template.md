@@ -1,10 +1,22 @@
 ## Summary
 
-<!-- What does this PR change, and why? Reference the issue it closes, if any. -->
+<!-- What changed and why? -->
+
+## Sources checked
+
+<!-- List primary sources used for factual or standards-based changes. Mark drafts as drafts. -->
+
+## Evidence / status
+
+<!-- If the PR says a control is implemented, what public-safe evidence supports that claim? -->
 
 ## Checklist
 
-- [ ] Follows the conventions in [STYLE_GUIDE.md](../STYLE_GUIDE.md)
-- [ ] Internal markdown links still resolve
-- [ ] No secrets, credentials, or private URLs introduced
-- [ ] Versioned docs (SECURITY_POLICY.md, schedule) updated if required by [releases/VERSIONING_POLICY.md](../releases/VERSIONING_POLICY.md)
+- [ ] Content is company-wide and does not expose product-specific architecture or private operational detail
+- [ ] No secrets, credentials, customer data, private URLs, internal identifiers, or sensitive incident details
+- [ ] Requirements are distinguished from implementation claims
+- [ ] Draft standards are clearly identified as draft
+- [ ] `last-reviewed` / `next-review` metadata is correct for controlled documents
+- [ ] Relative links resolve
+- [ ] `python scripts/check_docs.py` passes
+- [ ] Relevant document owner reviewed the change
