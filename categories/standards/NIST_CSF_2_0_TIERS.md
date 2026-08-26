@@ -12,32 +12,35 @@ next-review: "2026-11-24"
 
 ## Purpose
 
-Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Tiers to characterize the rigor of cybersecurity risk governance and management practices.
+Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Tiers as a way to characterize the rigor of cybersecurity risk governance and management practices.
 
 ## Standard context
 
-NIST CSF 2.0 describes four Tiers: **Partial, Risk Informed, Repeatable, and Adaptive**. Tiers characterize how an organization views cybersecurity risk and how consistently cybersecurity risk-management practices are applied.
+CSF 2.0 defines four Tiers: **Tier 1 Partial, Tier 2 Risk Informed, Tier 3 Repeatable, and Tier 4 Adaptive**. Tiers provide context about how an organization views cybersecurity risk and the processes used to manage that risk.
 
-Tiers are not maturity scores, certification levels, or universal targets. An organization may use them to understand its current practices, communicate expectations, and determine whether a different level of rigor is appropriate for its context.
+Tiers are not maturity scores, certifications, or a required progression path. NIST does not require every organization to reach Tier 4.
 
-## Tier characteristics
+## Governance guidance
 
-- **Tier 1 — Partial:** cybersecurity risk-management practices are generally ad hoc and reactive.
-- **Tier 2 — Risk Informed:** risk-management practices are approved but may not be established as organization-wide policy.
-- **Tier 3 — Repeatable:** practices are formally approved, expressed as policy, and regularly updated based on changes in requirements, threats, technology, and business conditions.
-- **Tier 4 — Adaptive:** the organization adapts cybersecurity practices based on lessons learned, predictive indicators, and evolving risk conditions.
+When using Tiers:
 
-## Implementation guidance
+- determine the organizational or scoped context being characterized;
+- use evidence of actual practices rather than policy intent alone;
+- consider risk-management practices, integration across the organization, and external participation or dependency management;
+- select a target Tier only when it is justified by risk, mission, requirements, and available resources;
+- avoid presenting a Tier as proof of compliance or control effectiveness.
 
-1. Select or assess Tiers in the context of organizational risk, requirements, resources, and mission needs.
-2. Use evidence from governance, risk, policy, operations, and improvement processes rather than assigning a Tier by opinion alone.
-3. Document the rationale for the selected Tier and any desired change.
-4. Avoid assuming that the highest Tier is automatically necessary or cost-effective for every scope.
-5. Reassess when material risk, regulatory, technology, supplier, or business conditions change.
+## Use with Profiles
+
+Tiers can complement Organizational Profiles by adding context about how cybersecurity outcomes are governed and managed. They should not replace Current and Target Profiles, risk assessments, or control-level evidence.
+
+## Evidence examples
+
+Evidence may include risk-governance records, recurring assessment practices, organization-wide risk integration, supplier-risk activities, lessons-learned processes, and documented decisions supporting the selected Tier.
 
 ## Verification
 
-Confirm that any stated Tier is supported by observable practices and documented rationale. Do not present a Tier as NIST certification, independent assurance, or a substitute for assessing actual CSF outcomes.
+Confirm that the selected Tier reflects current practice within the stated scope and that any target Tier is clearly identified as an objective rather than a present-state claim.
 
 ## Sources
 
