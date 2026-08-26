@@ -5,7 +5,7 @@ Public ORCHORDS documentation is grouped here to keep the repository root compac
 Each category retains its own README and internal structure.
 
 - [Accessibility](./accessibility/)
-- [Ai](./ai/)
+- [AI](./ai/)
 - [Commercial](./commercial/)
 - [Communications](./communications/)
 - [Compliance](./compliance/)
@@ -36,14 +36,14 @@ Each category retains its own README and internal structure.
 - [Research](./research/)
 - [Resilience](./resilience/)
 - [Security](./security/)
-- [Sop](./sop/)
+- [SOPs](./sop/)
 - [Standards](./standards/)
 - [Strategy](./strategy/)
 - [Support](./support/)
 - [Sustainability](./sustainability/)
 - [Tax](./tax/)
 - [Templates](./templates/)
-- [Third Party](./third-party/)
+- [Third-Party](./third-party/)
 - [Treasury](./treasury/)
 - [Workplace Safety](./workplace-safety/)
 

@@ -83,6 +83,8 @@ URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
 
 def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
+    if len(rel.parts) > 2 and rel.parts[0] == "categories" and rel.parts[1] in CONTROLLED_DIRS:
+        return True
     return len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
 
 
@@ -127,7 +129,15 @@ def main() -> int:
     errors: list[str] = []
     markdown = sorted(ROOT.rglob("*.md"))
     root_md = {p.name for p in ROOT.glob("*.md")}
-    allowed_root_md = {"README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md"}
+    allowed_root_md = {
+        "README.md",
+        "CONTRIBUTING.md",
+        "SECURITY.md",
+        "CODE_OF_CONDUCT.md",
+        "SUPPORT.md",
+        "GOVERNANCE.md",
+        "CHANGELOG.md",
+    }
     unexpected_root = sorted(root_md - allowed_root_md)
     if unexpected_root:
         errors.append("root: controlled documentation must live in a category: " + ", ".join(unexpected_root))
