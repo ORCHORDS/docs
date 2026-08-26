@@ -1,26 +1,28 @@
+![ORCHORDS](assets/orchords-logo.svg)
+
 # Contributing to ORCHORDS Public Documentation
 
-Thank you for helping improve the documentation.
+**Independent software studio founded in 2025.**
 
 ## Before changing a document
 
 1. Check whether the change is safe for a public repository.
 2. Prefer primary, current sources for factual or standards-based claims.
-3. Do not add product-specific architecture, infrastructure topology, secrets,
-   customer information, private URLs, internal identifiers, or unannounced work.
-4. Distinguish policy requirements from implemented controls.
-5. Place controlled documents in the category that owns the subject rather than
-   adding new root-level policy files.
+3. Check existing related files first and avoid duplicate or near-duplicate pages.
+4. Do not add product-specific architecture, infrastructure topology, secrets, customer information, private URLs, internal identifiers, or unannounced work.
+5. Distinguish policy requirements from implemented controls.
+6. Place controlled documents in the category that owns the subject rather than adding unnecessary root-level policy files.
 
 ## Workflow
 
-1. Create or use an issue when the change is substantial.
-2. Work on a branch.
-3. Keep the change focused.
-4. Run `python scripts/check_docs.py`.
-5. Open a pull request.
-6. Complete the pull-request evidence checklist.
-7. Obtain review from the document owner.
+Authorized routine documentation maintenance is performed directly on **`main`**.
+
+- Do not create feature branches or pull requests for routine documentation growth or maintenance.
+- Keep each change narrow and evidence-based.
+- Run the repository documentation checks when available.
+- Re-read the affected category README/index after adding a page and keep it synchronized.
+- Recompute numeric inventory claims from repository contents; do not copy stale totals forward.
+- Review every change for credentials, private identifiers, customer/internal data, and other sensitive material before commit.
 
 ## Commit messages
 
@@ -33,11 +35,8 @@ Use clear conventional prefixes when practical:
 
 ## Sources
 
-When changing policy or standards-based guidance, prefer the sources in the
-[Standards and Guidance Register](./standards/REFERENCES.md). If a source is a
-draft, state that explicitly.
+When changing policy or standards-based guidance, prefer the sources in the [Standards and Guidance Register](./standards/REFERENCES.md). If a source is a draft, state that explicitly.
 
 ## Security reports
 
-Do not open a public issue for security-sensitive findings. Follow
-[SECURITY.md](./SECURITY.md).
+Do not open a public issue for security-sensitive findings. Follow [SECURITY.md](./SECURITY.md).
