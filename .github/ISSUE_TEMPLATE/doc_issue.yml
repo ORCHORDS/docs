@@ -7,7 +7,7 @@ body:
     attributes:
       label: Page or file
       description: Path or public URL of the affected document
-      placeholder: security/SECURITY_POLICY.md
+      placeholder: categories/security/SECURITY_POLICY.md
     validations:
       required: true
   - type: dropdown

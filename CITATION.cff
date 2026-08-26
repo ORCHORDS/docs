@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you reference this documentation, please cite it as below. Documents describe public policy expectations, not certified or implemented controls."
+title: ORCHORDS Public Documentation
+type: dataset
+authors:
+  - name: ORCHORDS.COM
+    website: https://orchords.com/
+repository-code: https://github.com/ORCHORDS/docs
+url: https://orchords.com/
+abstract: >-
+  Public company-wide documentation for ORCHORDS: governance, security,
+  privacy, engineering, compliance, standards, and related policy areas,
+  published as public expectations with per-document review metadata.
+keywords:
+  - documentation
+  - governance
+  - security
+  - privacy
+  - compliance
+  - standards
+license: MIT
