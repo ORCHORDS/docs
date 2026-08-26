@@ -1,0 +1,9 @@
+# Default ownership for public documentation and repository configuration.
+* @ORCHORDS
+
+# Security-sensitive repository configuration.
+/.github/ @ORCHORDS
+/scripts/ @ORCHORDS
+
+# Public documentation categories.
+/categories/ @ORCHORDS
