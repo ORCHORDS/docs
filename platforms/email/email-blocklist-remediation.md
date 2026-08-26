@@ -1,0 +1,43 @@
+# email-blocklist-remediation
+
+**Issue:** DNS-based blocklists (DNSBLs/RBLs) are queried in real time by a large share of the world's receiving MTAs; a listing on a major list like Spamhaus causes immediate deferrals or 550 rejections across whole provider pools, silently gutting delivery while dashboards look healthy. Listings can be behavioral (your mail looks like spam), policy-based (your IP range is not supposed to send direct-to-MX), or reputation-fed (botnet/herd lists). Remediation is an engineering discipline: detect early via automated monitoring, triage root cause before requesting removal, use the correct delisting channel per list, and harden so the listing does not recur.
+
+**Date:** 2026-08-15
+**Repo:** example-org/example-repo
+**Author:** ORCHORDS
+**Status:** published
+
+## Blocklist landscape
+
+1. **Spamhaus operates a family of lists with different meanings.** SBL (spam operations, evidence-based tickets), XBL (exploited machines, fed by CBL-style botnet data), PBL (policy list of IP ranges that should not send direct email — residential and dynamic space, not an accusation of spam), CSS (command-and-control/spam-script mass listings from low-reputation senders), and DROP/EDROP (stolen/hijacked ranges). ZEN is the composite zone (SBL+XBL+PBL) that most receivers actually query, so a PBL hit alone will still block you on ZEN-queried servers.
+2. **Beyond Spamhaus, know the lists receivers actually use.** Barracuda, SpamCop (SCBL — dynamic, complaint/spamtrap-driven with fast auto-expiry), plus aggregate private filters inside Gmail/Microsoft that use no public list at all. Public blocklist coverage is necessary but not sufficient: perfect public-list hygiene with a bad spam-trap rate still gets you junk-foldered at the big providers.
+3. **Treat PBL as configuration feedback, not a punishment.** A PBL listing means your IP is in ISP-owned space with a no-direct-mail policy. The fix is architectural, not a delisting request: route outbound through an authenticated smarthost or your ESP rather than direct-to-MX. Repeatedly removing yourself from PBL while continuing direct sends from residential/dynamic space just gets you relisted.
+4. **CSS listings auto-expire — SBL listings need a ticket.** CSS typically clears around 24 hours after spam output stops, which makes it tempting to wait out instead of diagnosing; that is how senders end up with a chronic low-grade listing pattern that escalates to SBL. SBL requires resolving the cited evidence and responding through the Blocklist Removal Center.
+
+## Detection and monitoring
+
+1. **Monitor your IPs and sending domains across dozens of lists on a schedule.** Use automated DNSBL monitoring (MXToolbox, HetrixTools, or in-house scripts that reverse-resolve your IP against each zone's DNS name) with alerting into the same channel as your other delivery alerts. Manual discovery — someone noticing mail bouncing — costs hours to days of blocked mail.
+2. **Parse blocklist evidence out of bounce messages.** Compliant MTAs include the listing in the 550 string (a 550 5.7.1 rejection naming zen.spamhaus.org or the provider's blocklist page). Capture and index these from your event webhooks and bounce ingestion pipeline; the rejection text tells you which list, which receiving network queried it, and often a removal URL. A spike in 5.7.1/5.7.0 rejections at one receiver is a leading indicator even before public-list checks trip.
+3. **Correlate with reputation telemetry.** Google Postmaster Tools domain/IP reputation drops and Microsoft SNDS data (including trap hits and complaint rates SNDS reports) frequently precede or accompany public listings. SNDS showing spam-trap hits means your list hygiene is the root cause regardless of which blocklist fired first.
+4. **Check the domain blocklists too, not just IPs.** Spamhaus DBL (domain), SURBL/URIBL (URL reputation), and the now-sunset-but-still-quoted URI lists key off domains in your From, Reply-To, or message links. A DBL listing on your link-tracking or shortener domain blocks mail even when your IPs are spotless — a classic ESP-migration and rebrand failure mode.
+
+## Root-cause triage before requesting removal
+
+1. **Never request delisting before the spam has stopped.** Blocklist operators check; requesting removal while the compromise is still live gets the request denied, wastes your credibility, and for repeat offenders can convert a temporary listing into an escalated one. Establish that outbound volume, queue patterns, and complaint rates have returned to baseline first.
+2. **Hunt for compromised accounts and web forms.** The dominant cause of sudden listings on otherwise-clean senders: cracked SMTP/VPN credentials sending through your relay, an abused password-reset/contact form, or a marketing platform credential leak. Grep mail queues and submission logs for anomalous from/to patterns, bursts to non-existent domains, and logins from unexpected geographies; rotate credentials as part of the finding, not after.
+3. **Audit list acquisition and aging.** Old, purchased, or scraped lists generate spam-trap hits ( pristine traps are planted exactly for this). If SNDS or FBL data shows traps, run sunset hygiene: suppress 12+ month non-engagers, remove role-account and pattern-generated addresses, and re-verify with bounce-scrubbing. This is slow medicine but the only real cure for trap-driven listings.
+4. **Verify your authentication is intact during the triage.** Confirm SPF (with the 10-lookup limit respected), DKIM (selector keys resolving, body hashes passing on real messages), and DMARC alignment. Authentication failures often co-occur with listings and will keep you filtered at providers even after delisting.
+
+## Delisting procedure
+
+1. **Use the operator's official channel — check.spamhaus.org for Spamhaus.** The Blocklist Removal Center shows which zone listed you, the evidence (for SBL, a ticket with samples), and the removal request flow. Removal is free; never pay a third-party "delisting service," which range from useless to actively harmful (they request removal without fixing cause, attracting escalation).
+2. **Match the removal path to the list type.** PBL: fix routing or file a removal/exception for legitimately static space. CSS: stop the spam, wait for auto-expiry (about 24 hours), and only then request removal if still listed. SBL: resolve the evidence (shut down the spam operation, clean the compromise, secure the hijacked range), then respond on the ticket. SpamCop: expires automatically, typically within 24-48 hours of the last spam report — fix the cause and it clears itself.
+3. **After delisting, ramp volume back instead of bursting.** Some receivers cache negative results and your reputation at their filters did not reset. Resume at a fraction of normal volume, watch bounce/complaint rates per receiver, and scale up over several days. An immediate full-volume blast after delisting is a common trigger for immediate relisting.
+4. **Keep records of every listing.** Log date, list, evidence, root cause, fix, and delisting confirmation. Patterns (same CSS list quarterly, same trap range) direct structural fixes — list hygiene tooling, form rate limits, credential rotation cadence — and the record itself is useful evidence with ESPs and blocklist operators if a listing is ever erroneous or retaliatory.
+
+## Hardening against relisting
+
+1. **Gate every outbound stream through one authenticated path with volume ceilings.** Rate limits per user/template/IP, enforced at submission, turn a compromise from a 2-million-message disaster into a 5,000-message incident that never reaches a blocklist threshold.
+2. **Alert on the earliest deliverability canaries.** Sudden bounce-rate increase, complaint-rate above 0.1 percent (the Gmail/Yahoo bulk-sender threshold), SNDS trap-hit flag flipping on, or any single receiver's deferral rate doubling — each of these precedes public listings by hours to days. Route them to humans who can pause campaigns, not just dashboards.
+3. **Keep reverse DNS, FCrDNS, and HELO/EHLO consistent.** Generic or missing PTR records and mismatched EHLO names are classic triggers for reputation scoring and some listings (and immediate suspicion at receiving MTAs even without a blocklist hit). Every sending IP needs a PTR that resolves forward back to the same name, and that name should match the EHLO the MTA presents.
+4. **Rehearse the runbook.** The remediation steps above should live as a checklist with owners: who pulls logs, who files the removal request, who decides to pause sends. Listings are detected in minutes by good monitoring but mitigated in hours by bad process; the gap is organizational, not technical.

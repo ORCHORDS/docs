@@ -1,0 +1,45 @@
+# auth-flow-testing-strategy
+
+**Issue:** Auth is tested at the extremes — unit tests on the password hash function, one happy-path e2e login — while the states that actually break live in between: access tokens expiring mid-session, refresh-token rotation hitting a reuse-detection tripwire, silent re-auth on app resume, MFA fallback loops, and the logout that leaves a stale token able to call the API for ten more minutes. Auth failures are security incidents, and the flows are state machines (token lifecycles) that happy-path tests never traverse. This article covers a layered testing strategy for authentication and session flows, informed by Auth0's refresh-token rotation and reuse-detection documentation, OWASP WSTG's OAuth/Session guidance, and current practice on token automation in test suites.
+
+**Date:** 2026-08-15
+**Repo:** example-org/example-repo
+**Author:** ORCHORDS
+**Status:** published
+
+## Model the flows as state machines first
+
+1. **Write down the session state machine before writing tests: what states exist and which transitions are legal.** (anonymous → partially-authenticated → authenticated-with-MFA-pending → authenticated → refreshing → expired-refresh → logged-out). Most auth bugs are illegal transitions being accepted (expired-refresh → authenticated) or legal transitions failing (authenticated → refreshing on app resume); an explicit machine gives you the test matrix for free — one test per legal transition, one per illegal transition.
+2. **Token lifecycle is time-based: every state transition test needs clock control.** Access tokens live minutes, refresh tokens live days; tests that wait for real expiry take hours or silently pass with tokens that never expire. Inject the clock (`jest-timer-fakes.md` at unit level, `playwright-clock-controlled-time-tests.md` at e2e) and assert transitions at t=expiry−1s and t=expiry+1s — the boundary discipline of `timezone-dst-boundary-regression-tests.md` applied to token TTLs.
+3. **Treat refresh-token rotation as its own sub-machine with a reuse-detection tripwire.** Auth0's model: each refresh grants a NEW refresh token and invalidates the old; presenting an already-used refresh token signals theft and must revoke the whole family. Tests: refresh once, use the NEW token (ok); refresh once, use the OLD token again (must revoke the family, not grant); concurrent refresh with the same token (one wins, family survives, per the concurrency canon).
+4. **Map the failure paths as deliberately as the happy paths: wrong password, unknown user, locked account, expired code, revoked consent, network failure mid-token-exchange.** OWASP WSTG's OAuth chapter enumerates these as the attacker's checklist; each row needs a functional assertion (correct error to the user) and a security assertion (no token leaks in the error, no oracle distinguishing unknown-user from wrong-password unless intended).
+5. **Cover the "resume" path, not just the "login" path.** Mobile and SPA sessions spend 99% of their life resuming with a stored token; test cold-start-with-valid-token, cold-start-with-expired-access-plus-valid-refresh (silent refresh fires), and cold-start-with-dead-refresh (redirect to login WITHOUT losing in-flight user work).
+
+## Unit layer: verify logic, not identity providers
+
+1. **Unit-test token validation exhaustively: signature, issuer, audience, expiry, not-before, algorithm.** Feed it a signed-token vector set: valid; each claim individually violated; `alg: none` attack token; wrong-key-signed token; expired-by-1ms; not-yet-valid. The validator is a small pure function and the single most security-critical code in the app — this is where exhaustive example-based testing pays (fuzzing per `fuzz-testing-basics.md` finds the malformed-encoding crashes).
+2. **Stub the identity provider at the token endpoint, not the whole auth SDK.** Tests that mock `getToken()` skip all the logic worth testing (error mapping, retry, clock skew handling on the exchange); instead stub the HTTP `/oauth/token` endpoint (MSW — see `mock-server-msw.md`) and let the real client code run against it, including its parsing of error responses.
+3. **Own a local IdP for integration tests when feasible — otherwise stub at the HTTP boundary and test skew.** A containerized OIDC provider gives you real code-exchange, cookies, and redirect chains (fidelity endpoint-stubbing can't reach); if you stub the token endpoint instead (MSW, see `mock-server-msw.md`), let the real client code run against it and include explicit clock-skew cases — validators typically allow ±60s, and "flaky only when the CI runner is behind" is the classic symptom of skew-sensitive validation.
+4. **Unit-test the storage layer against the threat model.** Tokens in localStorage vs httpOnly cookies, refresh tokens in platform secure storage — write the tests that would fail if someone "simplifies" storage to plain localStorage: e.g., an XSS-simulation test asserting scripts cannot read the refresh token (it's not on `window`). These are regression tests for security review findings.
+
+## Integration and e2e layers: traverse real transitions
+
+1. **E2E must exercise the real login UI against a real (test-tenant) IdP, not a seeded session.** Playwright's storageState (`playwright-authentication-state.md`) is a legitimate speed optimization for tests whose subject isn't auth, but the auth suite itself logs in through the real form at least once per run — MFA entry, password manager interference, and redirect loops only exist at that layer.
+2. **Build a token-factory test helper, not manual token copying.** An automated client-credentials/token-endpoint call in test setup (the Postman/Auth0 pattern of programmatic token acquisition) that mint short-lived tokens per suite — never a personal token pasted into env vars, which expires, leaks scope, and tests nobody's actual path. Dedicated test-client credentials, least-privilege scopes, rotated via CI secrets.
+3. **Test session expiry DURING a user flow, not just at rest.** The signature scenario: token expires between page load and a save action → the app must silently refresh and retry the save exactly once, or redirect preserving the draft. Drive it with clock control plus an API call at the moment of expiry; this is where most real-world auth bugs surface.
+4. **Verify logout end-to-end including the dark corners.** After logout: access token must be rejected by the API (test the API actually rejects it — if the gateway caches auth for TTL, the token works until expiry and the test must document that window), refresh token must fail, IdP session must be terminated (front-channel/back-channel logout), and the browser back button must not resurrect an authenticated page. Concurrent-session behavior (two tabs racing the refresh into reuse-detection) deserves its own two-context Playwright test — a shared single-flight refresh lock is the fix and that test is its proof.
+
+## Security assertions woven through every layer
+
+1. **Assert tokens never appear where they shouldn't: URLs, logs, error messages, analytics.** A grep-style test over captured network traffic and log output for the token prefix is cheap and catches the two classic leaks — tokens in redirect URLs and tokens logged by an error handler (dependency of the log-hygiene checks in the AGENTS canon).
+2. **Test privilege boundaries after every auth transition.** Post-logout, post-expiry, post-role-change: the previously-valid token must get 401/403 on every protected route — a compact "unauthorized sweep" test hitting one endpoint per role tier, run after each state transition in the matrix.
+3. **Verify redirect/nonce/state CSRF protections on the OAuth flow.** Authorization-code flow tests must assert: redirect_uri manipulation is rejected, `state` mismatch aborts, and `nonce` appears in the returned ID token — the exact items on OWASP WSTG's OAuth weakness checklist; for PKCE-enabled clients, test that a code intercepted without the verifier is useless.
+4. **Fuzz the auth endpoints with the security battery: malformed tokens, oversized JWTs, unicode passwords, null fields, stripped headers.** Auth parsers face the internet; they get the `fuzz-testing-basics.md` treatment plus explicit cases for the classic JWT `alg` confusion family.
+5. **Include an account-takeover regression suite: password reset, email change, MFA enrollment.** Each of these flows re-establishes identity and is therefore an attack surface; test the full chain (request → token → action) including single-use reset tokens, expiry of reset links, and notification of the old email — every item a real incident post-mortem wishes had been tested.
+
+## Related
+
+- `playwright-authentication-state.md` — storageState mechanics for non-auth e2e suites
+- `mock-server-msw.md` — stubbing the token endpoint at the HTTP layer
+- `security-testing-zap.md` — scanner coverage that complements hand-written auth assertions
+- `contract-timeout-and-cancellation-tests.md` — cancellation mid-token-refresh, a related edge
