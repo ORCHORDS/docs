@@ -9,10 +9,10 @@
 
 **Independent software studio founded in 2025.**
 
-This repository publishes ORCHORDS company-wide documentation — over 1,700
-controlled documents across 42 categories covering governance, security,
-privacy, engineering, compliance, standards, and related policy areas. It is
-useful for customers and partners conducting due diligence, engineers and
+This repository publishes ORCHORDS company-wide documentation — currently
+1,664 Markdown files covering governance, security, privacy, engineering,
+compliance, standards, reusable technical knowledge, and related policy areas.
+It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
 small independent studio documents security and governance expectations.
 
@@ -55,8 +55,8 @@ which edition each claim tracks.
 
 ## Documentation map
 
-All content lives under [`categories/`](./categories/README.md) (42
-categories, ~1,724 documents):
+The established controlled-document collection remains under
+[`categories/`](./categories/README.md), with 42 subject categories spanning:
 
 - **Trust & assurance** — security, privacy, compliance, customer-trust, accessibility
 - **Governance & corporate** — governance, legal, ethics, finance, tax, treasury, internal-audit, records
@@ -64,6 +64,11 @@ categories, ~1,724 documents):
 - **Organization** — people, workplace-safety, human-rights, communications, marketing, knowledge, strategy, research
 - **Commercial & partners** — commercial, partnerships, procurement, third-party, customer-success, support, corporate-development
 - **Working artifacts** — standards, SOPs, templates
+
+Reusable project-neutral knowledge is also organized into top-level domain
+families including `business/`, `data-ai/`, `engineering/`, `operations/`,
+`platforms/`, `security/`, `playbooks/`, `lessons/`, `standards/`,
+`templates/`, `reference/`, and `archive/`.
 
 Tip: for a repository this size, use GitHub's file finder (`t`) or code
 search to jump directly to a document.
@@ -73,6 +78,14 @@ search to jump directly to a document.
 This repository must not expose product-specific implementation details, deployment topology, credentials, private endpoints, customer information, internal identifiers, banking details, tax identifiers or filings, treasury balances, facility-security details, personal medical information, worker grievance identities, active transaction details, or unannounced work.
 
 Public documentation may describe principles, responsibilities, controls, decision criteria, and repeatable procedures. It must not create false assurance or present planned controls as implemented.
+
+Bulk or externally sourced knowledge is accepted only after project-neutral
+sanitization, sensitive-data screening, duplicate and collision checks,
+relative-link validation, manifest/file-count verification, and cryptographic
+checksum verification. A prepared migration snapshot containing 8,006
+Markdown files has passed the public-safety and relative-link gates; it is not
+part of the published corpus until the receiving import and repository checks
+complete successfully.
 
 ## Documentation workflow
 

@@ -19,13 +19,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   citation guidance, and grouped category map.
 - CodeQL and OpenSSF Scorecard workflows for continuous code and supply-chain
   security analysis.
+- Project-neutral top-level knowledge families for reusable business,
+  engineering, platform, data/AI, operations, security, playbook, lessons,
+  standards, template, reference, and archive material.
+- A fail-closed knowledge-import pipeline that verifies sanitization,
+  neutrality, duplicates/collisions, relative links, manifest counts, and
+  cryptographic checksums before publication.
 
 ### Changed
 
-- Repository layout: all documentation categories now live under
-  `categories/`, keeping the repository root compact.
+- Repository layout now supports both the established controlled-document
+  categories and top-level project-neutral knowledge families.
+- Public documentation rules now explicitly require imported or bulk knowledge
+  to be sanitized and validated before it can enter the published corpus.
 - Canonical ORCHORDS banner asset (`assets/1080x360.jpg`) used across README,
   CONTRIBUTING, and SECURITY.
+
+### Migration status
+
+- A prepared public-safe knowledge snapshot contains 8,006 Markdown files.
+- The snapshot passed the sanitization/public-safety gate with zero unresolved
+  findings and the relative-link gate with zero broken links.
+- The snapshot is not recorded as published until the receiving import,
+  deduplication/collision checks, and repository quality checks complete.
 
 ### Fixed
 

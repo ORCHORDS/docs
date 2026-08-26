@@ -3,9 +3,9 @@ title: "Knowledge Management"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-08-26"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-11-24"
 ---
 
 # Knowledge Management
@@ -46,5 +46,29 @@ Company-wide governance for critical knowledge, authoritative sources, decision 
 - [Knowledge Archive and Retirement](KNOWLEDGE_ARCHIVE_RETIREMENT.md)
 - [Knowledge Exception Aging](KNOWLEDGE_EXCEPTION_AGING.md)
 - [Knowledge Management Metrics](KNOWLEDGE_METRICS.md)
+
+## Public knowledge import boundary
+
+Reusable knowledge may be incorporated from other sources only after it has
+been converted to project-neutral public documentation. The receiving
+repository must not depend on private repository names, private paths,
+credentials, internal endpoints, customer data, personal data, deployment
+topology, or other source-specific operational context.
+
+Bulk knowledge imports must fail closed unless all of the following are true:
+
+- the source material has passed sensitive-data and public-neutrality scans;
+- private/source-specific names and paths have been removed or generalized;
+- duplicate and destination-collision checks have been completed;
+- relative Markdown links have been rewritten where necessary and validate;
+- a manifest accounts for the expected exported files;
+- the reconstructed transfer matches its expected cryptographic checksum; and
+- the normal documentation-quality and public-neutrality gates pass after
+  import.
+
+A prepared migration snapshot of 8,006 Markdown files has passed the
+sanitization/public-safety and relative-link gates. Preparation does not equal
+publication: those files become part of the public corpus only after the
+receiving import and repository checks complete successfully.
 
 Knowledge must remain usable without turning the public repository into a private system inventory.
