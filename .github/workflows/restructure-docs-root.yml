@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/restructure-docs-root.yml"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,6 +37,17 @@ jobs:
             rm CODEOWNERS
           fi
 
+      - name: Prevent generated commits from modifying workflows
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path('.github/scripts/restructure_docs.py')
+          text = path.read_text()
+          needle = '    patch_ci(root)\n'
+          assert text.count(needle) == 1, 'expected exactly one patch_ci(root) call'
+          path.write_text(text.replace(needle, ''))
+
       - name: Restructure repository
         run: python .github/scripts/restructure_docs.py
 
@@ -48,8 +60,11 @@ jobs:
           files = sorted(p.name for p in root.iterdir() if p.is_file())
           assert dirs == ['.github', 'assets', 'docs'], dirs
           assert files == ['CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'LICENSE', 'README.md', 'SECURITY.md'], files
+          docs_entries = sorted(p.name for p in Path('docs').iterdir())
+          assert docs_entries == ['README.md', 'knowledge', 'policies', 'reference'], docs_entries
           print('root-directories:', ', '.join(dirs))
           print('root-files:', ', '.join(files))
+          print('docs-entries:', ', '.join(docs_entries))
 
       - name: Validate reorganized documentation
         run: |
