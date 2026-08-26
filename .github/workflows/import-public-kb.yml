@@ -30,7 +30,7 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
-      - name: Reconstruct, verify, and import sanitized Markdown
+      - name: Reconstruct, verify, deduplicate, and import sanitized Markdown
         shell: bash
         run: |
           set -euo pipefail
@@ -40,6 +40,8 @@ jobs:
           import base64
           import hashlib
           import json
+          import posixpath
+          import re
           import shutil
           import tarfile
           from pathlib import Path, PurePosixPath
@@ -108,9 +110,90 @@ jobs:
           if actual_families != expected_families:
               raise SystemExit(f'family set mismatch: expected {sorted(expected_families)}, got {sorted(actual_families)}')
 
+          # Six source articles were manually reviewed and published before the
+          # bulk transfer existed. Preserve those canonical public copies while
+          # still accounting for every source file in the verified archive.
+          substitutions = {
+              PurePosixPath('data-ai/ai-ml/agent-architecture-patterns.md'):
+                  PurePosixPath('data-ai/agents/AGENT_ARCHITECTURE_PATTERNS.md'),
+              PurePosixPath('data-ai/ai-ml/agent-error-recovery.md'):
+                  PurePosixPath('data-ai/agents/AGENT_ERROR_RECOVERY.md'),
+              PurePosixPath('data-ai/ai-ml/agent-evaluation-patterns.md'):
+                  PurePosixPath('data-ai/agents/AGENT_EVALUATION_PATTERNS.md'),
+              PurePosixPath('data-ai/ai-ml/agent-human-in-the-loop.md'):
+                  PurePosixPath('data-ai/agents/HUMAN_APPROVAL_CHECKPOINTS.md'),
+              PurePosixPath('data-ai/ai-ml/agent-memory-short-term.md'):
+                  PurePosixPath('data-ai/agents/SHORT_TERM_MEMORY.md'),
+              PurePosixPath('data-ai/ai-ml/agent-memory-long-term.md'):
+                  PurePosixPath('data-ai/agents/LONG_TERM_MEMORY.md'),
+          }
+
+          staged_rel = {p.relative_to(staged).as_posix() for p in staged_files}
+          for source_rel, canonical_rel in substitutions.items():
+              if source_rel.as_posix() not in staged_rel:
+                  raise SystemExit(f'expected duplicate source is missing from transfer: {source_rel}')
+              canonical = root / canonical_rel
+              if not canonical.is_file():
+                  raise SystemExit(f'canonical reviewed article is missing: {canonical_rel}')
+
+          link_re = re.compile(r'(?<!!)\[([^\]]+)\]\(([^)]+)\)')
+          url_re = re.compile(r'^[a-z][a-z0-9+.-]*://', re.I)
+
+          def rewrite_link(match: re.Match[str], source_rel: PurePosixPath) -> str:
+              label, raw = match.group(1), match.group(2)
+              raw = raw.strip()
+              if not raw or raw.startswith('#') or raw.startswith('mailto:') or url_re.match(raw):
+                  return match.group(0)
+
+              pieces = raw.split(maxsplit=1)
+              first = pieces[0]
+              title_suffix = (' ' + pieces[1]) if len(pieces) == 2 else ''
+              bracketed = first.startswith('<') and first.endswith('>')
+              target = first.strip('<>')
+              path_match = re.match(r'([^?#]*)(.*)', target)
+              if path_match is None or not path_match.group(1):
+                  return match.group(0)
+              target_path, query_fragment = path_match.group(1), path_match.group(2)
+              if target_path.startswith('/'):
+                  return match.group(0)
+
+              normalized = PurePosixPath(posixpath.normpath(
+                  posixpath.join(source_rel.parent.as_posix(), target_path)
+              ))
+              canonical = substitutions.get(normalized)
+              if canonical is None:
+                  return match.group(0)
+
+              base_dir = source_rel.parent.as_posix() or '.'
+              replacement = posixpath.relpath(canonical.as_posix(), base_dir) + query_fragment
+              if bracketed:
+                  replacement = f'<{replacement}>'
+              return f'[{label}]({replacement}{title_suffix})'
+
+          rewritten_links = 0
+          for source in staged_files:
+              source_rel = PurePosixPath(source.relative_to(staged).as_posix())
+              if source_rel in substitutions:
+                  continue
+              text = source.read_text(encoding='utf-8')
+              rewritten, count = link_re.subn(lambda m: rewrite_link(m, source_rel), text)
+              if count and rewritten != text:
+                  # subn counts all regex matches, not only substitutions; count
+                  # actual canonical-path changes separately for the audit log.
+                  changed = sum(1 for old in substitutions if old.as_posix() in text)
+                  rewritten_links += changed
+                  source.write_text(rewritten, encoding='utf-8')
+
+          for source_rel in substitutions:
+              (staged / source_rel).unlink()
+
+          publish_files = sorted(p for p in staged.rglob('*') if p.is_file())
+          if len(publish_files) != expected_files - len(substitutions):
+              raise SystemExit('deduplicated publication count mismatch')
+
           collisions = []
           identical = 0
-          for source in staged_files:
+          for source in publish_files:
               rel = source.relative_to(staged)
               target = root / rel
               if target.exists():
@@ -125,7 +208,7 @@ jobs:
               raise SystemExit('refusing to overwrite existing documentation')
 
           copied = 0
-          for source in staged_files:
+          for source in publish_files:
               rel = source.relative_to(staged)
               target = root / rel
               if target.exists():
@@ -135,9 +218,12 @@ jobs:
               copied += 1
 
           print(f'Verified transfer archive: {digest}')
-          print(f'Validated Markdown files: {len(staged_files)}')
+          print(f'Validated source Markdown files: {len(staged_files)}')
+          print(f'Canonical reviewed substitutions: {len(substitutions)}')
+          print(f'Publishable transferred files after deduplication: {len(publish_files)}')
           print(f'Copied new files: {copied}')
           print(f'Already-identical files: {identical}')
+          print(f'Link-rewrite groups touched: {rewritten_links}')
           print('Families: ' + ', '.join(sorted(actual_families)))
           PY
 
