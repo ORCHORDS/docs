@@ -12,37 +12,41 @@ next-review: "2026-11-24"
 
 ## Purpose
 
-Provide implementation guidance for a control that shows or hides a section of content using the W3C WAI-ARIA Authoring Practices Guide disclosure pattern.
+Provide public implementation guidance for a control that shows or hides associated content using the WAI-ARIA Authoring Practices Guide disclosure pattern.
 
 ## Pattern baseline
 
-A disclosure consists of a button and content whose visibility is controlled by that button. The control communicates whether the associated content is expanded or collapsed.
+A disclosure control is typically a button that toggles visibility of a section of content.
+
+For an accessible implementation:
+
+- use a native button where possible;
+- expose `aria-expanded="true"` when the controlled content is visible and `false` when it is hidden;
+- use `aria-controls` when it usefully identifies the controlled region;
+- keep the accessible state synchronized with the visible state;
+- preserve a logical reading and focus order when content is revealed or hidden.
 
 ## Keyboard interaction
 
-- **Enter** activates the disclosure control.
-- **Space** activates the disclosure control.
+When focus is on the disclosure button:
 
-## Roles, states, and properties
+- `Enter` activates the control;
+- `Space` activates the control.
 
-The control should normally be a native `button` element.
-
-- Use `aria-expanded="true"` when the controlled content is visible.
-- Use `aria-expanded="false"` when it is hidden.
-- Use `aria-controls` when useful to identify the controlled region.
+Additional keyboard behavior should not be added unless the component is implementing a different established pattern.
 
 ## Implementation guidance
 
-- Keep the accessible name of the control stable enough that users understand what is being expanded or collapsed.
-- Do not rely on a visual icon alone to communicate state.
-- Preserve a logical reading and focus order when content is revealed.
-- Avoid moving focus automatically unless the interaction specifically requires it.
-- Ensure the collapsed content is not exposed as interactive content to keyboard users.
+1. Use visible text or an otherwise meaningful accessible name for the control.
+2. Do not rely on icon direction alone to communicate expanded or collapsed state.
+3. Do not move focus automatically merely because content becomes visible unless the interaction requires it.
+4. Ensure hidden content is actually unavailable to interaction when collapsed.
+5. Test state synchronization after mouse, touch, and keyboard activation.
 
 ## Verification
 
-Test activation with keyboard-only interaction and a screen reader. Confirm that the expanded state is announced and that hidden interactive descendants cannot receive focus while collapsed.
+Confirm that the button is keyboard operable, `aria-expanded` always matches the rendered state, revealed content remains in a sensible reading order, and collapsing the disclosure does not leave focus trapped in hidden content.
 
 ## Source
 
-- W3C WAI-ARIA Authoring Practices Guide, **Disclosure Pattern**: https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
+- W3C WAI-ARIA Authoring Practices Guide, **Disclosure (Show/Hide) Pattern**: https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
