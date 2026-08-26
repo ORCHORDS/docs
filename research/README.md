@@ -3,9 +3,9 @@ title: "Research Governance"
 owner: "Research Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-08-26"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-11-24"
 ---
 
 # Research Governance
@@ -31,6 +31,7 @@ Company-wide governance for user, market, opinion, and exploratory research.
 - [Survey Instrument Quality](./SURVEY_INSTRUMENT_QUALITY.md)
 - [Qualitative Coding Governance](./QUALITATIVE_CODING_GOVERNANCE.md)
 - [Research Analysis Reproducibility](./ANALYSIS_REPRODUCIBILITY.md)
+- [AI-Assisted Research Analysis](./RESEARCH_AI_ASSISTED_ANALYSIS.md)
 - [Research Replication Review](./RESEARCH_REPLICATION_REVIEW.md)
 - [Research Bias and Quality Review](./RESEARCH_BIAS_QUALITY_REVIEW.md)
 - [Research Finding Strength](./RESEARCH_FINDING_STRENGTH.md)
@@ -40,4 +41,4 @@ Company-wide governance for user, market, opinion, and exploratory research.
 - [Research Archive and Retention](./RESEARCH_ARCHIVE_RETENTION.md)
 - [Research Publication Review](./RESEARCH_PUBLICATION_REVIEW.md)
 
-Research must respect participant autonomy, privacy, data minimization, and the limits of the evidence collected.
+Research must respect participant autonomy, privacy, data minimization, evidence traceability, and the limits of the methods and tools used.
