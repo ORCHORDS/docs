@@ -12,40 +12,43 @@ next-review: "2026-11-24"
 
 ## Purpose
 
-Provide implementation guidance for a set of tab controls that switch between associated content panels using the W3C WAI-ARIA Authoring Practices Guide.
+Provide public implementation guidance for tabbed interfaces using the WAI-ARIA Authoring Practices Guide tabs pattern.
 
 ## Pattern baseline
 
-A tabs interface contains a `tablist`, one or more `tab` elements, and corresponding `tabpanel` elements. One tab is selected at a time unless the design explicitly supports a different model.
+A tabs component presents a set of tab controls and associated tab panels. One tab is active at a time unless the design explicitly supports multiple active panels.
+
+Accessible implementations should:
+
+- place tab controls in a container with `role="tablist"`;
+- expose each tab with `role="tab"`;
+- expose each associated panel with `role="tabpanel"`;
+- use `aria-selected` to identify the active tab;
+- associate tabs and panels with `aria-controls` and `aria-labelledby` where appropriate;
+- manage focus so keyboard users can navigate predictably.
 
 ## Keyboard interaction
 
-- **Left Arrow** and **Right Arrow** move focus between tabs in a horizontal tab list.
-- **Up Arrow** and **Down Arrow** may be used for vertical tab lists.
-- **Home** may move focus to the first tab.
-- **End** may move focus to the last tab.
-- If activation is manual, **Enter** or **Space** activates the focused tab.
+Common keyboard behavior includes:
 
-Automatic activation is appropriate only when the associated panel can be displayed without noticeable delay.
+- `Left Arrow` and `Right Arrow` to move among horizontal tabs;
+- `Up Arrow` and `Down Arrow` for vertical orientation when implemented;
+- `Home` and `End` optionally move to the first and last tab;
+- `Enter` or `Space` activate a focused tab when manual activation is used.
 
-## Roles, states, and properties
-
-- The container uses role `tablist`.
-- Each control uses role `tab`.
-- The active tab has `aria-selected="true"`; inactive tabs use `false`.
-- Each tab references its panel with `aria-controls`.
-- Each panel uses role `tabpanel` and references its tab with `aria-labelledby`.
+Automatic activation is appropriate only when tab-panel content can be displayed without noticeable delay.
 
 ## Implementation guidance
 
-- Maintain one tab stop within the tab list using managed `tabindex`.
-- Ensure hidden panels do not expose interactive descendants to keyboard users.
-- Keep tab labels concise and descriptive.
-- Do not use tab semantics for ordinary navigation links that lead to separate pages.
+1. Keep only the active tab in the normal tab sequence when using roving focus.
+2. Keep `aria-selected` synchronized with the visible panel.
+3. Ensure inactive panels are not exposed as active content.
+4. Avoid automatic activation when loading or rendering a panel causes perceptible latency.
+5. Test arrow-key movement, tab order, focus visibility, and panel association.
 
 ## Verification
 
-Test arrow-key movement, activation mode, focus order, selected state, and screen-reader relationships between each tab and its panel.
+Confirm that tabs have unique accessible names, keyboard navigation follows the documented orientation, selection state matches the visible panel, and focus remains predictable when activation changes.
 
 ## Source
 
