@@ -1,37 +1,45 @@
+---
+title: "NIST CSF 2.0 Tiers"
+owner: "Governance Lead"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-26"
+review-cycle: "90 days"
+next-review: "2026-11-24"
+---
+
 # NIST CSF 2.0 — Tiers
 
 ## Purpose
 
-Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Tiers to describe characteristics of cybersecurity risk governance and management.
+Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Tiers to characterize the rigor of cybersecurity risk governance and management practices.
 
 ## Standard context
 
-NIST CSF 2.0 defines four Tiers: **Tier 1 — Partial, Tier 2 — Risk Informed, Tier 3 — Repeatable, and Tier 4 — Adaptive**.
+NIST CSF 2.0 describes four Tiers: **Partial, Risk Informed, Repeatable, and Adaptive**. Tiers characterize how an organization views cybersecurity risk and how consistently cybersecurity risk-management practices are applied.
 
-Tiers provide context for how an organization views cybersecurity risk and how formalized and integrated its practices are. They are not certification levels and should not be treated as universal maturity scores.
+Tiers are not maturity scores, certification levels, or universal targets. An organization may use them to understand its current practices, communicate expectations, and determine whether a different level of rigor is appropriate for its context.
 
-## Use of Tiers
+## Tier characteristics
 
-Tiers can help organizations discuss whether cybersecurity risk practices are ad hoc, informed by risk, repeatable, or adaptively improved. An organization may use them when setting expectations, communicating with stakeholders, or considering improvement priorities.
+- **Tier 1 — Partial:** cybersecurity risk-management practices are generally ad hoc and reactive.
+- **Tier 2 — Risk Informed:** risk-management practices are approved but may not be established as organization-wide policy.
+- **Tier 3 — Repeatable:** practices are formally approved, expressed as policy, and regularly updated based on changes in requirements, threats, technology, and business conditions.
+- **Tier 4 — Adaptive:** the organization adapts cybersecurity practices based on lessons learned, predictive indicators, and evolving risk conditions.
 
 ## Implementation guidance
 
-1. Define the scope to which a Tier assessment applies.
-2. Use documented evidence rather than selecting a Tier based on aspiration.
-3. Consider governance, risk-management practices, organizational integration, and external participation together.
-4. Avoid assuming that Tier 4 is automatically required for every organization or activity.
-5. Select improvement targets based on risk, mission needs, stakeholder expectations, legal obligations, resources, and cost-benefit considerations.
-6. Reassess Tier characteristics when material changes occur.
-
-## Evidence examples
-
-Evidence may include governance records, risk-management procedures, repeatable operating processes, metrics, lessons-learned records, supplier-risk practices, and records showing how cybersecurity information informs organizational decisions.
+1. Select or assess Tiers in the context of organizational risk, requirements, resources, and mission needs.
+2. Use evidence from governance, risk, policy, operations, and improvement processes rather than assigning a Tier by opinion alone.
+3. Document the rationale for the selected Tier and any desired change.
+4. Avoid assuming that the highest Tier is automatically necessary or cost-effective for every scope.
+5. Reassess when material risk, regulatory, technology, supplier, or business conditions change.
 
 ## Verification
 
-Confirm that any stated Tier is tied to a defined scope and current evidence. Do not present a Tier as proof of compliance, certification, or implementation of every CSF outcome.
+Confirm that any stated Tier is supported by observable practices and documented rationale. Do not present a Tier as NIST certification, independent assurance, or a substitute for assessing actual CSF outcomes.
 
 ## Sources
 
-- NIST, **CSF 2.0 Quick Start Guides — Tiers**: https://www.nist.gov/cyberframework/quick-start-guides
-- NIST, **The NIST Cybersecurity Framework (CSF) 2.0**, NIST CSWP 29: https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20
+- NIST, **The NIST Cybersecurity Framework (CSF) 2.0**, NIST CSWP 29, February 26, 2024: https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20
+- NIST Cybersecurity Framework Resource Center: https://www.nist.gov/cyberframework
