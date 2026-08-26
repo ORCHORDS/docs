@@ -3,9 +3,9 @@ title: "Corporate Development and Transactions"
 owner: "Corporate Development Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-08-27"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2026-11-25"
 ---
 
 # Corporate Development and Transactions
@@ -37,6 +37,9 @@ Company-wide governance for strategic transactions, investments, acquisitions, d
 - [Definitive Agreement Readiness](DEFINITIVE_AGREEMENT_READINESS.md)
 - [Regulatory Approval Coordination](REGULATORY_APPROVAL_COORDINATION.md)
 - [Antitrust Merger Review Governance](ANTITRUST_MERGER_REVIEW.md)
+- [HSR Premerger Notification Readiness](HSR_PREMERGER_NOTIFICATION_READINESS.md)
+- [Pre-Closing Coordination Controls](PRE_CLOSING_COORDINATION_CONTROLS.md)
+- [Foreign Investment Screening Governance](FOREIGN_INVESTMENT_SCREENING.md)
 - [Closing Readiness](CLOSING_READINESS.md)
 - [Integration Planning](INTEGRATION_PLANNING.md)
 - [Separation and Divestiture Planning](SEPARATION_DIVESTITURE_PLANNING.md)
