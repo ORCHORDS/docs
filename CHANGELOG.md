@@ -17,6 +17,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - This changelog and a `CITATION.cff` for citing the repository.
 - README: "Start here" entry points, reading guide, evidence-policy summary,
   citation guidance, and grouped category map.
+- CodeQL and OpenSSF Scorecard workflows for continuous code and supply-chain
+  security analysis.
 
 ### Changed
 
