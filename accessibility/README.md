@@ -36,5 +36,7 @@ Public accessibility policy, design, testing, issue management, procurement, con
 - [WCAG 2.2 Change Control](./WCAG_2_2_CHANGE_CONTROL.md)
 - [WCAG 2.2 Target Size Governance](./WCAG_2_2_TARGET_SIZE.md)
 - [WCAG 2.2 Accessible Authentication](./WCAG_2_2_ACCESSIBLE_AUTHENTICATION.md)
+- [WCAG 2.2 Redundant Entry](./WCAG_2_2_REDUNDANT_ENTRY.md)
+- [WCAG 2.2 Consistent Help](./WCAG_2_2_CONSISTENT_HELP.md)
 
 Accessibility claims require evidence; automated scans alone do not prove conformance.
