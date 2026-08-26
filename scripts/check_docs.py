@@ -77,7 +77,7 @@ PRIVATE_FORBIDDEN = {
     "w.a.s.p",
     "thewam",
     "searabbit",
-    "retmo.app",
+    "retmo",
     "cutshit",
     "roomtoneoptimiser",
 }
@@ -141,10 +141,12 @@ def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
     if len(rel.parts) > 2 and rel.parts[0] == "categories" and rel.parts[1] in CONTROLLED_DIRS:
         return True
-    # Family landing pages are controlled; imported articles beneath a family
-    # retain the reusable knowledge-base article style.
-    if len(rel.parts) == 2 and rel.parts[0] in ROOT_FAMILIES and rel.parts[1] == "README.md":
-        return True
+    # Root knowledge families intentionally contain ordinary reusable articles.
+    # Only each family's landing README is a controlled document.
+    if rel.parts and rel.parts[0] in ROOT_FAMILIES:
+        return len(rel.parts) == 2 and rel.parts[1] == "README.md"
+    # Retain compatibility with any legacy controlled root directories that are
+    # not one of the reusable knowledge families.
     return len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
 
 
