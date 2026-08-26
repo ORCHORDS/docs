@@ -55,16 +55,44 @@ CONTROLLED_DIRS = {
     "workplace-safety",
 }
 
+ROOT_FAMILIES = {
+    "archive",
+    "business",
+    "data-ai",
+    "engineering",
+    "lessons",
+    "operations",
+    "platforms",
+    "playbooks",
+    "reference",
+    "security",
+    "standards",
+    "templates",
+}
+
 FORBIDDEN = {
     "mr.orchords",
     "mrorchords",
     "w.a.s.p",
     "thewam",
+    "searabbit",
+    "retmo",
+    "cutshit",
+    "roomtoneoptimiser",
     "openfx",
     "directx",
     "ffmpeg",
     "firebase",
     "forgejo",
+}
+
+FORBIDDEN_PATTERNS = {
+    "private organization repository URL": re.compile(r"https?://github\.com/orchords/(?!docs(?:[/?#]|$))", re.I),
+    "private repository API URL": re.compile(r"https?://api\.github\.com/repos/orchords/(?!docs(?:[/?#]|$))", re.I),
+    "private repository SSH URL": re.compile(r"git@github\.com:orchords/(?!docs(?:\.git)?(?:\s|$))", re.I),
+    "private knowledge-base path": re.compile(r"(?:^|[\\/])knowledge_base[\\/]", re.I | re.M),
+    "private fleet path": re.compile(r"(?:^|[\\/])\.fleet[\\/]", re.I | re.M),
+    "absolute user-home path": re.compile(r"(?:/home/[^/\s]+/|/Users/[^/\s]+/|[A-Z]:\\Users\\[^\\\s]+\\)", re.I),
 }
 
 REQUIRED_FRONT_MATTER = {
@@ -84,6 +112,8 @@ URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
 def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
     if len(rel.parts) > 2 and rel.parts[0] == "categories" and rel.parts[1] in CONTROLLED_DIRS:
+        return True
+    if len(rel.parts) > 1 and rel.parts[0] in ROOT_FAMILIES:
         return True
     return len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
 
@@ -154,6 +184,9 @@ def main() -> int:
         for term in FORBIDDEN:
             if term in lower:
                 errors.append(f"{rel}: forbidden project/implementation term: {term}")
+        for label, pattern in FORBIDDEN_PATTERNS.items():
+            if pattern.search(text):
+                errors.append(f"{rel}: forbidden sensitive/private reference: {label}")
         if "$title" in lower or "lorem ipsum" in lower:
             errors.append(f"{rel}: unresolved template placeholder")
         for token in ("todo", "tbd"):
