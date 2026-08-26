@@ -28,6 +28,14 @@ jobs:
           git config user.name "ORCHORDS.COM"
           git config user.email "72497645+ORCHORDS@users.noreply.github.com"
 
+      - name: Consolidate duplicate CODEOWNERS
+        run: |
+          if [ -f CODEOWNERS ] && [ -f .github/CODEOWNERS ]; then
+            printf '\n# Consolidated legacy ownership rules\n' >> .github/CODEOWNERS
+            cat CODEOWNERS >> .github/CODEOWNERS
+            rm CODEOWNERS
+          fi
+
       - name: Restructure repository
         run: python .github/scripts/restructure_docs.py
 
