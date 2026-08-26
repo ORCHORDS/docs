@@ -12,41 +12,37 @@ next-review: "2026-11-24"
 
 ## Purpose
 
-Provide implementation guidance for accessible modal dialogs using the W3C WAI-ARIA Authoring Practices Guide.
+Provide public implementation guidance for modal dialogs using the WAI-ARIA Authoring Practices Guide dialog modal pattern.
 
 ## Pattern baseline
 
-A modal dialog contains content and controls that require interaction before users return to the rest of the page. While open, content outside the dialog is inert from the user’s interaction perspective.
+A modal dialog is a window overlaid on the primary content that requires interaction or dismissal before users continue with content outside the dialog.
+
+Accessible implementations should:
+
+- expose the dialog container with `role="dialog"` or `role="alertdialog"` when the alert-dialog pattern is appropriate;
+- set `aria-modal="true"` only when content outside the dialog is actually unavailable for interaction;
+- provide an accessible name with `aria-labelledby` or `aria-label`;
+- place keyboard focus inside the dialog when it opens;
+- keep keyboard focus within the modal while it remains open;
+- return focus to the invoking control, or another logical location, when it closes.
 
 ## Keyboard interaction
 
-- **Tab** and **Shift+Tab** move focus among focusable elements within the dialog.
-- Focus remains contained within the dialog while it is modal.
-- **Escape** closes the dialog when dismissal is supported.
-
-## Roles, states, and properties
-
-- The dialog container uses role `dialog`.
-- Use `aria-modal="true"` for a modal dialog.
-- Provide an accessible name using `aria-labelledby` or `aria-label`.
-- Use `aria-describedby` only when the referenced descriptive content is appropriate to announce as a single description.
-
-## Focus management
-
-- Move focus into the dialog when it opens.
-- Choose the initial focus target based on the dialog’s content and task, not simply the first focusable element in every case.
-- When the dialog closes, normally return focus to the element that opened it unless workflow context makes another destination more logical.
+- `Tab` and `Shift+Tab` move focus among focusable elements inside the dialog and wrap within it.
+- `Escape` closes the dialog where dismissal is permitted.
 
 ## Implementation guidance
 
-- Include a visible close control when users are expected to dismiss the dialog.
-- Prevent keyboard interaction with content outside the modal.
-- Do not mark a dialog modal unless interaction outside it is actually unavailable.
-- Keep destructive or irreversible actions clearly distinguished from ordinary dismissal.
+1. Include a visible close or cancel control when users need an explicit dismissal mechanism.
+2. Choose initial focus based on task context rather than always focusing the first interactive element.
+3. Avoid marking a dialog modal unless background content is both visually and programmatically unavailable.
+4. Keep the dialog in a logical DOM relationship and ensure its accessible name is concise and meaningful.
+5. Test focus placement, focus containment, dismissal, and focus restoration with keyboard and assistive technology.
 
 ## Verification
 
-Test opening, focus containment, reading order, accessible naming, dismissal, and focus restoration using keyboard-only interaction and a screen reader.
+Confirm that focus never escapes to inactive background content, the dialog has a meaningful accessible name, `aria-modal` reflects actual behavior, and closing the dialog restores focus predictably.
 
 ## Source
 
