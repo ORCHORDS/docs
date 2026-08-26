@@ -70,15 +70,21 @@ ROOT_FAMILIES = {
     "templates",
 }
 
-FORBIDDEN = {
+# Project/private identifiers are forbidden everywhere in public Markdown.
+PRIVATE_FORBIDDEN = {
     "mr.orchords",
     "mrorchords",
     "w.a.s.p",
     "thewam",
     "searabbit",
-    "retmo",
+    "retmo.app",
     "cutshit",
     "roomtoneoptimiser",
+}
+
+# These remain prohibited in controlled policy/assurance documents, but are
+# legitimate neutral technologies in reusable engineering articles.
+CONTROLLED_IMPLEMENTATION_FORBIDDEN = {
     "openfx",
     "directx",
     "ffmpeg",
@@ -89,11 +95,33 @@ FORBIDDEN = {
 FORBIDDEN_PATTERNS = {
     "private organization repository URL": re.compile(r"https?://github\.com/orchords/(?!docs(?:[/?#]|$))", re.I),
     "private repository API URL": re.compile(r"https?://api\.github\.com/repos/orchords/(?!docs(?:[/?#]|$))", re.I),
+    "private repository raw URL": re.compile(r"https?://raw\.githubusercontent\.com/orchords/(?!docs(?:[/?#]|$))", re.I),
     "private repository SSH URL": re.compile(r"git@github\.com:orchords/(?!docs(?:\.git)?(?:\s|$))", re.I),
+    "private secondary repository URL": re.compile(r"https?://github\.com/sapperskills/", re.I),
+    "private repository shorthand": re.compile(r"\b(?:ORCHORDS|sapperskills)/(?!docs\b)[A-Za-z0-9_.-]+\b", re.I),
     "private knowledge-base path": re.compile(r"(?:^|[\\/])knowledge_base[\\/]", re.I | re.M),
     "private fleet path": re.compile(r"(?:^|[\\/])\.fleet[\\/]", re.I | re.M),
     "absolute user-home path": re.compile(r"(?:/home/[^/\s]+/|/Users/[^/\s]+/|[A-Z]:\\Users\\[^\\\s]+\\)", re.I),
+    "conversation sandbox path": re.compile(r"/mnt/data/[^\s)]+", re.I),
 }
+
+SECRET_PATTERNS = {
+    "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
+    "GitHub token": re.compile(r"\bgh[pousr]_[A-Za-z0-9_]{20,}\b"),
+    "AWS access key": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
+    "OpenAI-style key": re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b"),
+    "Slack token": re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{20,}\b"),
+    "Stripe live key": re.compile(r"\b(?:sk|rk)_live_[A-Za-z0-9]{16,}\b"),
+    "JWT": re.compile(r"\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\b"),
+}
+
+SECRET_ASSIGNMENT_RE = re.compile(
+    r"(?i)\b(?:api[_-]?key|api[_-]?token|access[_-]?token|auth[_-]?token|secret|password|passwd|private[_-]?key|client[_-]?secret)"
+    r"\s*[:=]\s*[\"']?([^\s\"']{12,})"
+)
+SAFE_SECRET_VALUE_RE = re.compile(
+    r"(?i)(?:example|sample|dummy|placeholder|redacted|your[_-]|changeme|test|fake|xxxxx|\*\*\*|\.\.\.|^<|^\$|^process\.env|^env\.|^os\.getenv|^secrets\.)"
+)
 
 REQUIRED_FRONT_MATTER = {
     "title",
@@ -113,7 +141,9 @@ def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
     if len(rel.parts) > 2 and rel.parts[0] == "categories" and rel.parts[1] in CONTROLLED_DIRS:
         return True
-    if len(rel.parts) > 1 and rel.parts[0] in ROOT_FAMILIES:
+    # Family landing pages are controlled; imported articles beneath a family
+    # retain the reusable knowledge-base article style.
+    if len(rel.parts) == 2 and rel.parts[0] in ROOT_FAMILIES and rel.parts[1] == "README.md":
         return True
     return len(rel.parts) > 1 and rel.parts[0] in CONTROLLED_DIRS
 
@@ -155,6 +185,19 @@ def check_links(path: Path, text: str) -> list[str]:
     return errors
 
 
+def check_secret_like_material(rel: Path, text: str) -> list[str]:
+    errors: list[str] = []
+    for label, pattern in SECRET_PATTERNS.items():
+        if pattern.search(text):
+            errors.append(f"{rel}: secret-like material detected: {label}")
+    for match in SECRET_ASSIGNMENT_RE.finditer(text):
+        value = match.group(1)
+        if not SAFE_SECRET_VALUE_RE.search(value):
+            errors.append(f"{rel}: literal credential-like assignment")
+            break
+    return errors
+
+
 def main() -> int:
     errors: list[str] = []
     markdown = sorted(ROOT.rglob("*.md"))
@@ -176,23 +219,35 @@ def main() -> int:
         rel = path.relative_to(ROOT)
         text = path.read_text(encoding="utf-8")
         lower = text.lower()
+        controlled = is_controlled(path)
+
         if "\t" in text:
             errors.append(f"{rel}: tab character found")
         for no, line in enumerate(text.splitlines(), 1):
             if line.rstrip() != line:
                 errors.append(f"{rel}:{no}: trailing whitespace")
-        for term in FORBIDDEN:
+
+        for term in PRIVATE_FORBIDDEN:
             if term in lower:
-                errors.append(f"{rel}: forbidden project/implementation term: {term}")
+                errors.append(f"{rel}: forbidden project/private term: {term}")
         for label, pattern in FORBIDDEN_PATTERNS.items():
             if pattern.search(text):
                 errors.append(f"{rel}: forbidden sensitive/private reference: {label}")
+        errors.extend(check_secret_like_material(rel, text))
+
+        if controlled:
+            for term in CONTROLLED_IMPLEMENTATION_FORBIDDEN:
+                if term in lower:
+                    errors.append(f"{rel}: forbidden project/implementation term: {term}")
+
         if "$title" in lower or "lorem ipsum" in lower:
             errors.append(f"{rel}: unresolved template placeholder")
-        for token in ("todo", "tbd"):
-            if re.search(rf"\b{token}\b", lower):
-                errors.append(f"{rel}: unresolved placeholder token: {token}")
-        if is_controlled(path):
+        if controlled:
+            for token in ("todo", "tbd"):
+                if re.search(rf"\b{token}\b", lower):
+                    errors.append(f"{rel}: unresolved placeholder token: {token}")
+
+        if controlled:
             front_matter = parse_front_matter(text)
             if front_matter is None:
                 errors.append(f"{rel}: controlled document missing YAML front matter")
@@ -204,6 +259,7 @@ def main() -> int:
                     errors.append(f"{rel}: classification must be public")
                 if front_matter.get("status") not in {"approved", "review", "draft", "deprecated"}:
                     errors.append(f"{rel}: invalid status")
+
         errors.extend(check_links(path, text))
 
     if errors:
