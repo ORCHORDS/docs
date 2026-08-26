@@ -1,4 +1,8 @@
+![ORCHORDS](assets/orchords-logo.svg)
+
 # ORCHORDS Public Documentation
+
+**Independent software studio founded in 2025.**
 
 This repository is the public company-wide knowledge base for ORCHORDS governance, security, privacy, data, AI, engineering, operations, resilience, people, workplace safety, human rights/responsible business conduct, supplier risk, compliance/assurance, customer trust, legal governance, physical security, financial controls, tax governance, treasury/liquidity governance, ethics/integrity, public communications, marketing, partnerships, procurement, corporate records, quality management, internal audit, customer/support governance, commercial governance, project/delivery governance, knowledge management, strategy, research, customer success, sustainability/environmental governance, corporate development/transactions, releases, product, accessibility, standards, templates, and standard operating procedures (SOPs).
 
@@ -64,15 +68,21 @@ Statements about controls use these evidence levels:
 
 A document must never present a planned control as implemented or imply certification, audit results, service capability, transaction outcome, supply-chain condition, tax position, liquidity condition, or security guarantee without current evidence.
 
-## Contribution model
+## Documentation workflow
 
-Documentation is managed as code: branch, review, automated checks, accountable ownership, and evidence-based merge.
+For this repository, authorized documentation maintenance is performed **directly on `main`**. Feature branches and pull requests are not required for routine documentation growth and maintenance. Changes must still be evidence-based, narrowly scoped, checked for duplication, and reviewed for public-safety boundaries before they are committed.
+
+Fresh primary or authoritative sources should be used for current factual, standards, regulatory, security, and vendor claims. Existing related documents must be checked before adding a new page.
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) and [Document Control](./governance/DOCUMENT_CONTROL.md).
 
 ## Security reports
 
 Do not report security-sensitive findings in a public issue. Follow [SECURITY.md](./SECURITY.md).
+
+## Brand
+
+**ORCHORDS — Independent software studio founded in 2025.**
 
 ## License
 
