@@ -32,6 +32,7 @@ Company-wide governance for user, market, opinion, and exploratory research.
 - [Qualitative Coding Governance](./QUALITATIVE_CODING_GOVERNANCE.md)
 - [Research Analysis Reproducibility](./ANALYSIS_REPRODUCIBILITY.md)
 - [AI-Assisted Research Analysis](./RESEARCH_AI_ASSISTED_ANALYSIS.md)
+- [Generative AI Output Validation in Research](./RESEARCH_GENERATIVE_AI_OUTPUT_VALIDATION.md)
 - [Research Replication Review](./RESEARCH_REPLICATION_REVIEW.md)
 - [Research Bias and Quality Review](./RESEARCH_BIAS_QUALITY_REVIEW.md)
 - [Research Finding Strength](./RESEARCH_FINDING_STRENGTH.md)
