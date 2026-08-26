@@ -1,0 +1,13 @@
+---
+title: "Standards Documentation"
+owner: "Documentation Maintainer"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-26"
+review-cycle: "90 days"
+next-review: "2026-11-24"
+---
+
+# Standards Documentation
+
+This family contains internal documentation conventions and guidance mapped to external standards. External standards, versions, and dates MUST be verified from authoritative sources before statements are presented as current.
