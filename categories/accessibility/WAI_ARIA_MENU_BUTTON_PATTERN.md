@@ -1,46 +1,57 @@
-# WAI-ARIA APG — Menu Button Pattern
+---
+title: "WAI-ARIA Menu Button Pattern"
+owner: "Accessibility Lead"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-26"
+review-cycle: "90 days"
+next-review: "2026-11-24"
+---
+
+# WAI-ARIA Menu Button Pattern
 
 ## Purpose
 
-Provide implementation guidance for menu buttons that expose a menu of actions or navigation choices while preserving keyboard and assistive-technology support.
+Provide implementation guidance for an accessible button that opens a menu of actions or choices, based on the W3C WAI-ARIA Authoring Practices Guide (APG).
 
-## Pattern summary
+## Pattern baseline
 
-A menu button is a button that opens a menu. W3C's ARIA Authoring Practices Guide (APG) describes keyboard behavior and ARIA relationships for the trigger and the menu it controls.
+A menu button is a button that opens a menu. The trigger remains a button, while the popup uses menu semantics and contains menu items.
 
 ## Keyboard interaction
 
-With focus on the menu button:
+For the menu button trigger:
 
-- `Enter` opens the menu and places focus on the first menu item.
-- `Space` opens the menu and places focus on the first menu item.
-- `Down Arrow` may open the menu and move focus to the first menu item.
-- `Up Arrow` may open the menu and move focus to the last menu item.
+- **Enter** opens the menu and places focus on the first menu item.
+- **Space** opens the menu and places focus on the first menu item.
+- **Down Arrow** may open the menu and place focus on the first item.
+- **Up Arrow** may open the menu and place focus on the last item.
 
-Once the menu is open, use the keyboard interaction defined by the Menu and Menubar pattern.
+Once the menu is open, keyboard behavior should follow the applicable menu or menubar pattern, including arrow-key navigation, activation, and Escape behavior.
 
 ## Roles, states, and properties
 
-The trigger should expose button semantics. It should indicate that it opens a menu using `aria-haspopup="menu"` or `aria-haspopup="true"`.
+The trigger should:
 
-Use `aria-expanded="true"` while the menu is displayed and `aria-expanded="false"` while it is hidden. `aria-controls` may be used to reference the controlled menu.
+- have role `button`, usually by using a native `button` element;
+- expose `aria-haspopup="menu"` or `aria-haspopup="true"`;
+- expose `aria-expanded="true"` while the menu is open and `false` when closed;
+- use `aria-controls` when useful to identify the popup menu relationship.
 
-The popup container uses the `menu` role, with menu items using appropriate menu item roles.
+The popup should use role `menu`, and its actionable descendants should use the appropriate `menuitem`, `menuitemcheckbox`, or `menuitemradio` role.
 
 ## Implementation guidance
 
-1. Prefer semantic HTML buttons for the trigger where possible.
-2. Keep focus movement deterministic when opening and closing the menu.
-3. Return focus to the invoking control when dismissal requires it.
-4. Keep visible state and `aria-expanded` synchronized.
-5. Test keyboard behavior, high-contrast rendering, screen-reader announcements, and mobile/touch combinations.
-6. Do not treat APG examples as production-ready without compatibility testing.
+- Prefer a native button for the trigger.
+- Move focus intentionally when the menu opens; do not leave keyboard users guessing where focus went.
+- Return focus to the trigger when the menu closes when that matches the interaction flow.
+- Ensure pointer, keyboard, and assistive-technology users receive equivalent menu state changes.
+- Do not use menu semantics for ordinary site navigation unless the interaction genuinely behaves like an application-style menu.
 
 ## Verification
 
-Verify operation with keyboard only, at least one major screen reader, browser zoom, high-contrast or forced-colors settings where applicable, and pointer/touch interaction.
+Test opening, navigating, activating, and closing the menu using keyboard-only interaction and at least one screen reader. Confirm the expanded state and popup relationship are exposed correctly.
 
-## Sources
+## Source
 
-- W3C WAI, **Menu Button Pattern**: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
-- W3C WAI, **Menu and Menubar Pattern**: https://www.w3.org/WAI/ARIA/apg/patterns/menubar/
+- W3C WAI-ARIA Authoring Practices Guide, **Menu Button Pattern**: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
