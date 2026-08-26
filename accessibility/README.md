@@ -3,9 +3,9 @@ title: "Accessibility"
 owner: "Accessibility Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-08-26"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-11-24"
 ---
 
 # Accessibility
@@ -15,6 +15,7 @@ Public accessibility policy, design, testing, issue management, procurement, con
 ## Documents
 
 - [Accessibility Policy](./ACCESSIBILITY_POLICY.md)
+- [WCAG 2.2 Change Control](./WCAG_2_2_CHANGE_CONTROL.md)
 - [Accessibility Design Review](./ACCESSIBILITY_DESIGN_REVIEW.md)
 - [Keyboard Interaction Governance](./KEYBOARD_INTERACTION.md)
 - [Focus Management Governance](./FOCUS_MANAGEMENT.md)
