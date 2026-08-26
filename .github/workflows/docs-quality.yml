@@ -7,6 +7,8 @@ on:
       - ".github/**"
       - "scripts/check_docs.py"
       - "scripts/check_public_neutrality.py"
+      - ".github/scripts/check_docs.py"
+      - ".github/scripts/check_public_neutrality.py"
   push:
     branches: [main]
     paths:
@@ -14,6 +16,9 @@ on:
       - ".github/**"
       - "scripts/check_docs.py"
       - "scripts/check_public_neutrality.py"
+      - ".github/scripts/check_docs.py"
+      - ".github/scripts/check_public_neutrality.py"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -33,6 +38,13 @@ jobs:
           persist-credentials: false
 
       - name: Validate public documentation
+        shell: bash
         run: |
-          python scripts/check_docs.py
-          python scripts/check_public_neutrality.py
+          set -euo pipefail
+          if [[ -f .github/scripts/check_docs.py ]]; then
+            python .github/scripts/check_docs.py
+            python .github/scripts/check_public_neutrality.py
+          else
+            python scripts/check_docs.py
+            python scripts/check_public_neutrality.py
+          fi
