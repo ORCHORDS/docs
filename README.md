@@ -10,7 +10,7 @@
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
-1,664 Markdown files covering governance, security, privacy, engineering,
+1,810 Markdown files covering governance, security, privacy, engineering,
 compliance, standards, reusable technical knowledge, and related policy areas.
 It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
