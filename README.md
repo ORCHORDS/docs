@@ -10,7 +10,7 @@
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
-9,810 Markdown files covering governance, security, privacy, engineering,
+9,813 Markdown files covering governance, security, privacy, engineering,
 compliance, standards, reusable technical knowledge, and related policy areas.
 It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
@@ -20,12 +20,12 @@ small independent studio documents security and governance expectations.
 
 | If you need… | Start with |
 | --- | --- |
-| Security posture and reporting | [Security Policy](./categories/security/SECURITY_POLICY.md) |
-| Engineering expectations | [Engineering Standards](./categories/engineering/ENGINEERING_STANDARDS.md) |
-| How decisions and policies are structured | [Governance](./categories/governance/GOVERNANCE.md) · [Policy Hierarchy](./categories/governance/POLICY_HIERARCHY.md) |
-| Customer/due-diligence material | [Customer Trust](./categories/customer-trust/README.md) — assurance package, shared-responsibility guidance |
-| Which standards and versions are referenced | [Standards Register](./categories/standards/REFERENCES.md) |
-| How documents are controlled and reviewed | [Document Control](./categories/governance/DOCUMENT_CONTROL.md) |
+| Security posture and reporting | [Security Policy](docs/policies/security/SECURITY_POLICY.md) |
+| Engineering expectations | [Engineering Standards](docs/policies/engineering/ENGINEERING_STANDARDS.md) |
+| How decisions and policies are structured | [Governance](docs/policies/governance/GOVERNANCE.md) · [Policy Hierarchy](docs/policies/governance/POLICY_HIERARCHY.md) |
+| Customer/due-diligence material | [Customer Trust](docs/policies/customer-trust/README.md) — assurance package, shared-responsibility guidance |
+| Which standards and versions are referenced | [Standards Register](docs/policies/standards/REFERENCES.md) |
+| How documents are controlled and reviewed | [Document Control](docs/policies/governance/DOCUMENT_CONTROL.md) |
 
 ## How to read this repository
 
@@ -39,24 +39,24 @@ Every controlled document carries YAML front matter:
 - `last-reviewed` / `next-review` / `review-cycle` — when it was last checked
   and when it is due again (typically 90 days).
 
-Normative meaning follows [RFC-style normative language](./categories/standards/NORMATIVE_LANGUAGE.md)
+Normative meaning follows [RFC-style normative language](docs/policies/standards/NORMATIVE_LANGUAGE.md)
 and restricted assurance terms are governed by
-[Public Assurance Terminology](./categories/standards/PUBLIC_ASSURANCE_TERMINOLOGY.md).
+[Public Assurance Terminology](docs/policies/standards/PUBLIC_ASSURANCE_TERMINOLOGY.md).
 
 ## Evidence and sources
 
 Factual and standards-based content follows the
-[Citation Source Policy](./categories/standards/CITATION_SOURCE_POLICY.md):
+[Citation Source Policy](docs/policies/standards/CITATION_SOURCE_POLICY.md):
 primary authoritative sources are preferred, secondary sources are
 non-normative, drafts are labeled as drafts ([Framework Status
-Policy](./categories/standards/FRAMEWORK_STATUS_POLICY.md)), and the
-versioned [Standards Register](./categories/standards/REFERENCES.md) records
+Policy](docs/policies/standards/FRAMEWORK_STATUS_POLICY.md)), and the
+versioned [Standards Register](docs/policies/standards/REFERENCES.md) records
 which edition each claim tracks.
 
 ## Documentation map
 
 The established controlled-document collection remains under
-[`categories/`](./categories/README.md), with 42 subject categories spanning:
+[`docs/policies/`](docs/policies/README.md), with 42 subject categories spanning:
 
 - **Trust & assurance** — security, privacy, compliance, customer-trust, accessibility
 - **Governance & corporate** — governance, legal, ethics, finance, tax, treasury, internal-audit, records
@@ -65,10 +65,8 @@ The established controlled-document collection remains under
 - **Commercial & partners** — commercial, partnerships, procurement, third-party, customer-success, support, corporate-development
 - **Working artifacts** — standards, SOPs, templates
 
-Reusable project-neutral knowledge is also organized into top-level domain
-families including `business/`, `data-ai/`, `engineering/`, `operations/`,
-`platforms/`, `security/`, `playbooks/`, `lessons/`, `standards/`,
-`templates/`, `reference/`, and `archive/`.
+Reusable project-neutral knowledge is organized under
+[`docs/knowledge/`](./docs/knowledge/README.md), grouped into domain families.
 
 Tip: for a repository this size, use GitHub's file finder (`t`) or code
 search to jump directly to a document.
@@ -84,20 +82,20 @@ sanitization, sensitive-data screening, duplicate and collision checks,
 relative-link validation, manifest/file-count verification, and cryptographic
 checksum verification. The reusable-knowledge migration validated 8,006 source Markdown files before
 publication. Six previously reviewed articles remain the canonical public copies
-and replace their transfer duplicates; all other accepted files are published in
-the project-neutral top-level domain families.
+and replace their transfer duplicates; all other accepted files are published under
+`docs/knowledge/` in project-neutral domain families.
 
 ## Documentation workflow
 
-Authorized routine documentation maintenance is performed directly on **`main`**. Feature branches and pull requests are not required for routine documentation growth or maintenance; external contributions and larger changes use pull requests — see [CONTRIBUTING.md](./CONTRIBUTING.md).
+Authorized routine documentation maintenance is performed directly on **`main`**. Feature branches and pull requests are not required for routine documentation growth or maintenance; external contributions and larger changes use pull requests — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Changes must be evidence-based, duplicate-checked, narrowly scoped, and reviewed for public-safety and sensitive-data boundaries before commit. Use current primary or authoritative sources for standards, regulatory, security, and vendor claims.
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md), [SECURITY.md](./SECURITY.md), and [SUPPORT.md](./SUPPORT.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [SUPPORT.md](docs/reference/SUPPORT.md).
 
 ## Citing this documentation
 
-Content is MIT-licensed (see [LICENSE](./LICENSE)). When citing a document,
+Content is MIT-licensed (see [LICENSE](LICENSE)). When citing a document,
 reference its URL together with the document's `last-reviewed` date. Because
 `main` changes frequently, pin durable citations to a specific commit SHA
 until tagged releases exist.
@@ -108,4 +106,4 @@ until tagged releases exist.
 
 ## License
 
-See [LICENSE](./LICENSE).
+See [LICENSE](LICENSE).

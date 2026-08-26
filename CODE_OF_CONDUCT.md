@@ -37,9 +37,9 @@ Maintainers may edit or remove content, issue warnings, restrict
 participation, lock discussions, or take other proportionate action.
 
 Security-sensitive material may be removed immediately and redirected to the
-private reporting channel in [SECURITY.md](./SECURITY.md).
+private reporting channel in [SECURITY.md](SECURITY.md).
 
 ## Reporting
 
 For conduct concerns, contact `crm@orchords.com`. For security-sensitive
-concerns, use [SECURITY.md](./SECURITY.md).
+concerns, use [SECURITY.md](SECURITY.md).

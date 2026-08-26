@@ -294,7 +294,6 @@ def migrate(root: Path):
             destination.write_text(rewrite_markdown_text(text, old, new, file_map, dir_map))
 
     patch_validators(root)
-    patch_ci(root)
     patch_codeowners(root)
     write_indexes(root)
     patch_root_readme(root)
