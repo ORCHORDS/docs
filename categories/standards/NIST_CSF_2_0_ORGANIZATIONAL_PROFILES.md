@@ -1,43 +1,49 @@
+---
+title: "NIST CSF 2.0 Organizational Profiles"
+owner: "Governance Lead"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-08-26"
+review-cycle: "90 days"
+next-review: "2026-11-24"
+---
+
 # NIST CSF 2.0 — Organizational Profiles
 
 ## Purpose
 
-Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Organizational Profiles to describe current cybersecurity outcomes, define target outcomes, and identify gaps.
+Provide public guidance for using NIST Cybersecurity Framework (CSF) 2.0 Organizational Profiles to describe current and target cybersecurity outcomes.
 
 ## Standard context
 
-NIST describes an Organizational Profile as a mechanism for expressing an organization's current or target cybersecurity posture using CSF outcomes. NIST provides a customizable template for creating Current and Target Profiles and comparing them side by side.
+NIST CSF 2.0 defines Organizational Profiles as mechanisms for describing an organization’s current and target cybersecurity posture in terms of CSF Core outcomes. Profiles are intended to help organizations understand, tailor, assess, prioritize, and communicate cybersecurity outcomes based on mission, stakeholder expectations, threat environment, requirements, and available resources.
 
-Profiles are intended to support prioritization and communication. They do not create a certification or maturity score.
+## Profile types
 
-## Current and Target Profiles
+A practical profile program may maintain:
 
-A **Current Profile** documents cybersecurity outcomes that are currently being achieved.
-
-A **Target Profile** documents the cybersecurity outcomes an organization wants to achieve, taking into account mission, stakeholders, risk, legal and contractual requirements, resources, and priorities.
-
-Comparing the two can identify gaps that should be evaluated and prioritized rather than automatically treated as equally urgent.
+- a **Current Profile** describing cybersecurity outcomes presently being achieved;
+- a **Target Profile** describing prioritized outcomes the organization intends to achieve;
+- one or more specialized profiles for business units, technologies, suppliers, services, or risk contexts where useful.
 
 ## Implementation guidance
 
-1. Define the organizational scope before creating a Profile.
-2. Select relevant CSF outcomes based on context and risk rather than attempting to force every possible outcome into the same priority level.
-3. Describe the Current Profile using evidence of actual practices.
-4. Define the Target Profile using approved risk and business objectives.
-5. Compare Current and Target outcomes to identify gaps.
-6. Prioritize actions based on risk, dependencies, resources, and expected benefit.
-7. Review Profiles when major organizational, technology, regulatory, supplier, or threat conditions change.
+1. Define the scope and context of the profile before selecting outcomes.
+2. Use the CSF Core as a common vocabulary rather than inventing parallel control labels unnecessarily.
+3. Record the evidence used to determine whether a current outcome is achieved.
+4. Define target outcomes based on risk, legal and contractual obligations, stakeholder needs, and business priorities.
+5. Compare Current and Target Profiles to identify gaps and prioritize improvement work.
+6. Revisit profiles when material changes occur in mission, technology, threat exposure, regulation, suppliers, or business strategy.
 
 ## Evidence examples
 
-Evidence may include completed Profile templates, documented scope, supporting control evidence, risk assessments, gap analyses, prioritized improvement plans, ownership assignments, and review records.
+Evidence may include profile worksheets, mapped CSF outcomes, supporting control evidence, gap assessments, risk decisions, implementation plans, and records showing how target outcomes were prioritized.
 
 ## Verification
 
-Confirm that Current Profile statements reflect implemented outcomes and that Target Profile statements are clearly distinguished from current capabilities. Do not describe a Target Profile as evidence that a control is already operating.
+A profile should be traceable to its scope, source evidence, and decision owners. Avoid treating a profile as certification or as proof that all cybersecurity risks are controlled.
 
 ## Sources
 
-- NIST, **CSF 2.0 Profiles**: https://www.nist.gov/cyberframework/profiles
-- NIST, **CSF 2.0 Quick Start Guides**: https://www.nist.gov/cyberframework/quick-start-guides
-- NIST, **The NIST Cybersecurity Framework (CSF) 2.0**, NIST CSWP 29: https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20
+- NIST, **The NIST Cybersecurity Framework (CSF) 2.0**, NIST CSWP 29, February 26, 2024: https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20
+- NIST Cybersecurity Framework Resource Center: https://www.nist.gov/cyberframework
