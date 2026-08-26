@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/1080x360.jpg" width="1080" alt="ORCHORDS — BUILD DIFFERENT.">
+</p>
+
 # Contributing to ORCHORDS Public Documentation
 
 **Independent software studio founded in 2025.**
