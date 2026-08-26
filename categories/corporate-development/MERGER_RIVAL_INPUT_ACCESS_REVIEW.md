@@ -33,6 +33,6 @@ Confirm that the review addresses both ability and incentives, uses current mark
 
 ## Source
 
-- U.S. Department of Justice Antitrust Division, **2023 Merger Guidelines — Guideline 5**: https://www.justice.gov/atr/merger-guidelines/applying-merger-guiduidelines/guideline-5
+- U.S. Department of Justice Antitrust Division, **2023 Merger Guidelines — Guideline 5**: https://www.justice.gov/atr/merger-guidelines/applying-merger-guidelines/guideline-5
 
 This document is governance guidance, not legal advice.
