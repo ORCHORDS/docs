@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/orchords-banner.jpg" width="1080" alt="ORCHORDS — BUILD DIFFERENT.">
-</p>
-
 # Security Reporting
 
 **Independent software studio founded in 2025.**
