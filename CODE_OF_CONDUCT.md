@@ -3,9 +3,9 @@ title: "Code of Conduct"
 owner: "Community Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-22"
+last-reviewed: "2026-08-26"
 review-cycle: "180 days"
-next-review: "2027-02-18"
+next-review: "2027-02-22"
 ---
 
 # Code of Conduct
@@ -41,5 +41,5 @@ private reporting channel in [SECURITY.md](./SECURITY.md).
 
 ## Reporting
 
-For conduct concerns, use the public company contact channel when safe. For
-security-sensitive concerns, use [SECURITY.md](./SECURITY.md).
+For conduct concerns, contact `crm@orchords.com`. For security-sensitive
+concerns, use [SECURITY.md](./SECURITY.md).

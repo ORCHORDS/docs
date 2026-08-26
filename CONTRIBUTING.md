@@ -20,14 +20,19 @@
 Authorized routine maintenance is performed directly on **`main`**.
 
 - No feature branches or PRs are required for routine documentation growth or maintenance.
+- External contributions, larger structural changes, and automated dependency
+  updates (Dependabot) use pull requests. A maintainer reviews them against
+  this checklist before merge, and the documentation-quality workflow must pass.
 - Keep changes narrow and evidence-based.
 - Keep affected README/index files synchronized.
 - Recompute numeric inventory claims from repository contents.
 - Review every change for credentials, private identifiers, customer/internal data, and other sensitive material before commit.
 
-## Security reports
+## Reporting problems
 
-Do not open a public issue for security-sensitive findings. Follow [SECURITY.md](./SECURITY.md).
+Use the documentation-issue form for content problems (see
+[SUPPORT.md](./SUPPORT.md) for routing); security-sensitive findings go to
+[SECURITY.md](./SECURITY.md), never a public issue.
 
 ## Brand
 
