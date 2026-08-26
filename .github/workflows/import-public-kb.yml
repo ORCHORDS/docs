@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/import-public-kb.yml
+      - scripts/import_verified_kb.py
   workflow_dispatch:
 
 permissions:
@@ -35,6 +36,10 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
 
+      - name: Compile importer before execution
+        shell: bash
+        run: python -m py_compile scripts/import_verified_kb.py
+
       - name: Download verified sanitized transfer
         shell: bash
         run: |
@@ -47,258 +52,13 @@ jobs:
             "$TRANSFER_URL/public-docs-export.tar.gz" \
             --output .migration/public-docs-export.tar.gz
 
-      - name: Verify, deduplicate, and import sanitized Markdown
+      - name: Verify, neutralize, deduplicate, and import
         shell: bash
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          from __future__ import annotations
+        run: python scripts/import_verified_kb.py
 
-          import hashlib
-          import json
-          import os
-          import posixpath
-          import re
-          import shutil
-          import tarfile
-          from pathlib import Path, PurePosixPath
-
-          root = Path.cwd()
-          migration = root / '.migration'
-          manifest_path = migration / 'manifest.json'
-          archive = migration / 'public-docs-export.tar.gz'
-
-          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
-          expected_sha = os.environ['EXPECTED_ARCHIVE_SHA256']
-          expected_bytes = int(os.environ['EXPECTED_ARCHIVE_BYTES'])
-          expected_files = int(os.environ['EXPECTED_MARKDOWN_FILES'])
-
-          required = {
-              'markdown_files_exported', 'families', 'unresolved_public_safety_findings',
-              'broken_relative_links', 'archive_bytes', 'archive_sha256', 'part_count',
-          }
-          missing = sorted(required - set(manifest))
-          if missing:
-              raise SystemExit('transfer manifest missing fields: ' + ', '.join(missing))
-          if int(manifest['markdown_files_exported']) != expected_files:
-              raise SystemExit('transfer Markdown count does not match pinned expectation')
-          if int(manifest['unresolved_public_safety_findings']) != 0:
-              raise SystemExit('transfer reports unresolved public-safety findings')
-          if int(manifest['broken_relative_links']) != 0:
-              raise SystemExit('transfer reports broken relative links')
-          if int(manifest['archive_bytes']) != expected_bytes:
-              raise SystemExit('transfer archive byte count does not match pinned expectation')
-          if manifest['archive_sha256'] != expected_sha:
-              raise SystemExit('transfer manifest SHA-256 does not match pinned expectation')
-
-          payload = archive.read_bytes()
-          if len(payload) != expected_bytes:
-              raise SystemExit(f'downloaded archive byte count mismatch: expected {expected_bytes}, got {len(payload)}')
-          digest = hashlib.sha256(payload).hexdigest()
-          if digest != expected_sha:
-              raise SystemExit(f'downloaded archive SHA-256 mismatch: expected {expected_sha}, got {digest}')
-
-          staged = migration / 'public-docs-staged'
-          if staged.exists():
-              shutil.rmtree(staged)
-          staged.mkdir(parents=True)
-
-          with tarfile.open(archive, 'r:gz') as tf:
-              members = tf.getmembers()
-              for member in members:
-                  p = PurePosixPath(member.name)
-                  if member.issym() or member.islnk() or not member.isfile():
-                      raise SystemExit(f'archive contains non-regular file: {member.name}')
-                  if p.is_absolute() or '..' in p.parts:
-                      raise SystemExit(f'unsafe archive path: {member.name}')
-                  if p.suffix.lower() != '.md':
-                      raise SystemExit(f'archive contains non-Markdown file: {member.name}')
-              tf.extractall(staged, members=members)
-
-          staged_files = sorted(p for p in staged.rglob('*') if p.is_file())
-          if len(staged_files) != expected_files:
-              raise SystemExit(f'extracted Markdown count mismatch: expected {expected_files}, got {len(staged_files)}')
-
-          expected_families = set(manifest['families'])
-          actual_families = {p.relative_to(staged).parts[0] for p in staged_files}
-          if actual_families != expected_families:
-              raise SystemExit(f'family set mismatch: expected {sorted(expected_families)}, got {sorted(actual_families)}')
-
-          substitutions = {
-              PurePosixPath('data-ai/ai-ml/agent-architecture-patterns.md'):
-                  PurePosixPath('data-ai/agents/AGENT_ARCHITECTURE_PATTERNS.md'),
-              PurePosixPath('data-ai/ai-ml/agent-error-recovery.md'):
-                  PurePosixPath('data-ai/agents/AGENT_ERROR_RECOVERY.md'),
-              PurePosixPath('data-ai/ai-ml/agent-evaluation-patterns.md'):
-                  PurePosixPath('data-ai/agents/AGENT_EVALUATION_PATTERNS.md'),
-              PurePosixPath('data-ai/ai-ml/agent-human-in-the-loop.md'):
-                  PurePosixPath('data-ai/agents/HUMAN_APPROVAL_CHECKPOINTS.md'),
-              PurePosixPath('data-ai/ai-ml/agent-memory-short-term.md'):
-                  PurePosixPath('data-ai/agents/SHORT_TERM_MEMORY.md'),
-              PurePosixPath('data-ai/ai-ml/agent-memory-long-term.md'):
-                  PurePosixPath('data-ai/agents/LONG_TERM_MEMORY.md'),
-          }
-
-          staged_rel = {p.relative_to(staged).as_posix() for p in staged_files}
-          for source_rel, canonical_rel in substitutions.items():
-              if source_rel.as_posix() not in staged_rel:
-                  raise SystemExit(f'expected duplicate source is missing from transfer: {source_rel}')
-              canonical = root / canonical_rel
-              if not canonical.is_file():
-                  raise SystemExit(f'canonical reviewed article is missing: {canonical_rel}')
-
-          link_re = re.compile(r'(?<!!)\[([^\]]+)\]\(([^)]+)\)')
-          url_re = re.compile(r'^[a-z][a-z0-9+.-]*://', re.I)
-
-          def rewrite_link(match: re.Match[str], source_rel: PurePosixPath) -> str:
-              label, raw = match.group(1), match.group(2)
-              raw = raw.strip()
-              if not raw or raw.startswith('#') or raw.startswith('mailto:') or url_re.match(raw):
-                  return match.group(0)
-
-              pieces = raw.split(maxsplit=1)
-              first = pieces[0]
-              title_suffix = (' ' + pieces[1]) if len(pieces) == 2 else ''
-              bracketed = first.startswith('<') and first.endswith('>')
-              target = first.strip('<>')
-              path_match = re.match(r'([^?#]*)(.*)', target)
-              if path_match is None or not path_match.group(1):
-                  return match.group(0)
-              target_path, query_fragment = path_match.group(1), path_match.group(2)
-              if target_path.startswith('/'):
-                  return match.group(0)
-
-              normalized = PurePosixPath(posixpath.normpath(
-                  posixpath.join(source_rel.parent.as_posix(), target_path)
-              ))
-              canonical = substitutions.get(normalized)
-              if canonical is None:
-                  return match.group(0)
-
-              base_dir = source_rel.parent.as_posix() or '.'
-              replacement = posixpath.relpath(canonical.as_posix(), base_dir) + query_fragment
-              if bracketed:
-                  replacement = f'<{replacement}>'
-              return f'[{label}]({replacement}{title_suffix})'
-
-          rewritten_files = 0
-          for source in staged_files:
-              source_rel = PurePosixPath(source.relative_to(staged).as_posix())
-              if source_rel in substitutions:
-                  continue
-              text = source.read_text(encoding='utf-8')
-              rewritten = link_re.sub(lambda m: rewrite_link(m, source_rel), text)
-              if rewritten != text:
-                  source.write_text(rewritten, encoding='utf-8')
-                  rewritten_files += 1
-
-          for source_rel in substitutions:
-              (staged / source_rel).unlink()
-
-          publish_files = sorted(p for p in staged.rglob('*') if p.is_file())
-          if len(publish_files) != expected_files - len(substitutions):
-              raise SystemExit('deduplicated publication count mismatch')
-
-          collisions: list[str] = []
-          identical = 0
-          for source in publish_files:
-              rel = source.relative_to(staged)
-              target = root / rel
-              if target.exists():
-                  if target.is_file() and target.read_bytes() == source.read_bytes():
-                      identical += 1
-                      continue
-                  collisions.append(rel.as_posix())
-          if collisions:
-              print(f'Import collisions: {len(collisions)}')
-              for path in collisions[:100]:
-                  print(f' - {path}')
-              raise SystemExit('refusing to overwrite existing documentation')
-
-          copied = 0
-          for source in publish_files:
-              rel = source.relative_to(staged)
-              target = root / rel
-              if target.exists():
-                  continue
-              target.parent.mkdir(parents=True, exist_ok=True)
-              shutil.copyfile(source, target)
-              copied += 1
-
-          print(f'Verified transfer archive: {digest}')
-          print(f'Validated source Markdown files: {len(staged_files)}')
-          print(f'Canonical reviewed substitutions: {len(substitutions)}')
-          print(f'Publishable transferred files after deduplication: {len(publish_files)}')
-          print(f'Copied new files: {copied}')
-          print(f'Already-identical files: {identical}')
-          print(f'Files with canonical-link rewrites: {rewritten_files}')
-          print('Families: ' + ', '.join(sorted(actual_families)))
-          PY
-
-      - name: Remove staging and update repository status docs
+      - name: Remove transfer staging
         shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf .migration
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-
-          root = Path.cwd()
-          total = len(list(root.rglob('*.md')))
-
-          readme = root / 'README.md'
-          text = readme.read_text(encoding='utf-8')
-          text, count = re.subn(
-              r'currently\n[0-9][0-9,]* Markdown files',
-              f'currently\n{total:,} Markdown files',
-              text,
-              count=1,
-          )
-          if count != 1:
-              raise SystemExit('README Markdown inventory line was not found exactly once')
-          prepared = (
-              'A prepared migration snapshot containing 8,006\n'
-              'Markdown files has passed the public-safety and relative-link gates; it is not\n'
-              'part of the published corpus until the receiving import and repository checks\n'
-              'complete successfully.'
-          )
-          completed = (
-              'The reusable-knowledge migration validated 8,006 source Markdown files before\n'
-              'publication. Six previously reviewed articles remain the canonical public copies\n'
-              'and replace their transfer duplicates; all other accepted files are published in\n'
-              'the project-neutral top-level domain families.'
-          )
-          if prepared not in text:
-              raise SystemExit('README prepared-migration status block was not found')
-          text = text.replace(prepared, completed, 1)
-          readme.write_text(text, encoding='utf-8')
-
-          changelog = root / 'CHANGELOG.md'
-          text = changelog.read_text(encoding='utf-8')
-          old = (
-              '### Migration status\n\n'
-              '- A prepared public-safe knowledge snapshot contains 8,006 Markdown files.\n'
-              '- The snapshot passed the sanitization/public-safety gate with zero unresolved\n'
-              '  findings and the relative-link gate with zero broken links.\n'
-              '- The snapshot is not recorded as published until the receiving import,\n'
-              '  deduplication/collision checks, and repository quality checks complete.\n'
-          )
-          new = (
-              '### Migration status\n\n'
-              '- Imported the validated 8,006-file reusable-knowledge snapshot into the\n'
-              '  project-neutral top-level domain families.\n'
-              '- Six previously reviewed canonical articles replace their corresponding\n'
-              '  transfer duplicates; the importer refuses non-identical path collisions.\n'
-              '- The imported corpus passed the repository documentation-quality and public-\n'
-              '  neutrality gates before publication to `main`.\n'
-          )
-          if old not in text:
-              raise SystemExit('CHANGELOG prepared-migration status block was not found')
-          changelog.write_text(text.replace(old, new, 1), encoding='utf-8')
-
-          print(f'Post-import repository Markdown count: {total}')
-          PY
+        run: rm -rf .migration
 
       - name: Run public documentation quality gates
         shell: bash
@@ -307,11 +67,11 @@ jobs:
           python scripts/check_docs.py
           python scripts/check_public_neutrality.py
 
-      - name: Remove temporary importer
+      - name: Remove one-shot importer
         shell: bash
         run: |
           set -euo pipefail
-          git rm -f .github/workflows/import-public-kb.yml
+          git rm -f .github/workflows/import-public-kb.yml scripts/import_verified_kb.py
 
       - name: Commit imported knowledge
         shell: bash
