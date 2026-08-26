@@ -15,7 +15,6 @@ Public accessibility policy, design, testing, issue management, procurement, con
 ## Documents
 
 - [Accessibility Policy](./ACCESSIBILITY_POLICY.md)
-- [WCAG 2.2 Change Control](./WCAG_2_2_CHANGE_CONTROL.md)
 - [Accessibility Design Review](./ACCESSIBILITY_DESIGN_REVIEW.md)
 - [Keyboard Interaction Governance](./KEYBOARD_INTERACTION.md)
 - [Focus Management Governance](./FOCUS_MANAGEMENT.md)
@@ -34,5 +33,7 @@ Public accessibility policy, design, testing, issue management, procurement, con
 - [Accessible Content Guide](./ACCESSIBLE_CONTENT_GUIDE.md)
 - [Accessibility Procurement](./ACCESSIBILITY_PROCUREMENT.md)
 - [Accessibility Statement Governance](./ACCESSIBILITY_STATEMENT_GOVERNANCE.md)
+- [WCAG 2.2 Change Control](./WCAG_2_2_CHANGE_CONTROL.md)
+- [WCAG 2.2 Target Size Governance](./WCAG_2_2_TARGET_SIZE.md)
 
 Accessibility claims require evidence; automated scans alone do not prove conformance.
