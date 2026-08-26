@@ -1,0 +1,52 @@
+name: Check local sanitized transfer
+
+on:
+  push:
+    paths:
+      - .github/workflows/check-local-transfer.yml
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: self-hosted
+    timeout-minutes: 5
+    steps:
+      - name: Check for verified sanitized transfer on shared runner storage
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected='e2e69ffbc6ac32657c0fcf496ef4914751b654abd824586531cec2fe46e373fb'
+          found=''
+          for root in /_work /home/runner/_work /opt/actions-runner/_work; do
+            [ -d "$root" ] || continue
+            while IFS= read -r manifest; do
+              if python3 - "$manifest" "$expected" <<'PY'
+import json, sys
+from pathlib import Path
+p = Path(sys.argv[1])
+expected = sys.argv[2]
+try:
+    data = json.loads(p.read_text(encoding='utf-8'))
+except Exception:
+    raise SystemExit(1)
+if data.get('archive_sha256') != expected:
+    raise SystemExit(1)
+if data.get('markdown_files_exported') != 8006:
+    raise SystemExit(1)
+if data.get('unresolved_public_safety_findings') != 0 or data.get('broken_relative_links') != 0:
+    raise SystemExit(1)
+PY
+              then
+                found="$manifest"
+                break 2
+              fi
+            done < <(find "$root" -maxdepth 6 -type f -path '*/.migration/public-docs-transfer/manifest.json' 2>/dev/null)
+          done
+          if [ -n "$found" ]; then
+            echo 'verified-transfer-found=true'
+          else
+            echo 'verified-transfer-found=false'
+            exit 1
+          fi
