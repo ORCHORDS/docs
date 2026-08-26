@@ -3,7 +3,59 @@
 
 # Security-sensitive repository configuration.
 /.github/ @ORCHORDS
-/scripts/ @ORCHORDS
+/.github/scripts/ @ORCHORDS
 
 # Public documentation categories.
-/categories/ @ORCHORDS
+/docs/policies/ @ORCHORDS
+
+# Consolidated legacy ownership rules
+# Public documentation ownership
+* @ORCHORDS
+
+/docs/policies/governance/ @ORCHORDS
+/docs/policies/security/ @ORCHORDS
+/docs/policies/privacy/ @ORCHORDS
+/docs/policies/data/ @ORCHORDS
+/docs/policies/ai/ @ORCHORDS
+/docs/policies/engineering/ @ORCHORDS
+/docs/policies/operations/ @ORCHORDS
+/docs/policies/resilience/ @ORCHORDS
+/docs/policies/people/ @ORCHORDS
+/docs/policies/workplace-safety/ @ORCHORDS
+/docs/policies/human-rights/ @ORCHORDS
+/docs/policies/third-party/ @ORCHORDS
+/docs/policies/compliance/ @ORCHORDS
+/docs/policies/customer-trust/ @ORCHORDS
+/docs/policies/legal/ @ORCHORDS
+/docs/policies/physical-security/ @ORCHORDS
+/docs/policies/finance/ @ORCHORDS
+/docs/policies/tax/ @ORCHORDS
+/docs/policies/treasury/ @ORCHORDS
+/docs/policies/ethics/ @ORCHORDS
+/docs/policies/communications/ @ORCHORDS
+/docs/policies/marketing/ @ORCHORDS
+/docs/policies/partnerships/ @ORCHORDS
+/docs/policies/procurement/ @ORCHORDS
+/docs/policies/records/ @ORCHORDS
+/docs/policies/quality/ @ORCHORDS
+/docs/policies/internal-audit/ @ORCHORDS
+/docs/policies/support/ @ORCHORDS
+/docs/policies/commercial/ @ORCHORDS
+/docs/policies/project-delivery/ @ORCHORDS
+/docs/policies/knowledge/ @ORCHORDS
+/docs/policies/strategy/ @ORCHORDS
+/docs/policies/research/ @ORCHORDS
+/docs/policies/customer-success/ @ORCHORDS
+/docs/policies/sustainability/ @ORCHORDS
+/docs/policies/corporate-development/ @ORCHORDS
+/docs/policies/releases/ @ORCHORDS
+/docs/policies/product/ @ORCHORDS
+/docs/policies/accessibility/ @ORCHORDS
+/docs/policies/sop/ @ORCHORDS
+/docs/policies/standards/ @ORCHORDS
+/docs/policies/templates/ @ORCHORDS
+/.github/ @ORCHORDS
+/.github/scripts/ @ORCHORDS
+
+/docs/knowledge/ @ORCHORDS
+/docs/reference/ @ORCHORDS

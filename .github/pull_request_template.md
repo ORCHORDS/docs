@@ -18,5 +18,5 @@
 - [ ] Draft standards are clearly identified as draft
 - [ ] `last-reviewed` / `next-review` metadata is correct for controlled documents
 - [ ] Relative links resolve
-- [ ] `python scripts/check_docs.py` passes
+- [ ] `python .github/scripts/check_docs.py` passes
 - [ ] Relevant document owner reviewed the change

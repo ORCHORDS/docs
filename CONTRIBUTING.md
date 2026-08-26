@@ -47,8 +47,8 @@ Before a bulk import can be published:
 ## Reporting problems
 
 Use the documentation-issue form for content problems (see
-[SUPPORT.md](./SUPPORT.md) for routing); security-sensitive findings go to
-[SECURITY.md](./SECURITY.md), never a public issue.
+[SUPPORT.md](docs/reference/SUPPORT.md) for routing); security-sensitive findings go to
+[SECURITY.md](SECURITY.md), never a public issue.
 
 ## Brand
 
