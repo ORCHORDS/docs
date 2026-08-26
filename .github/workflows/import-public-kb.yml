@@ -141,11 +141,12 @@ jobs:
           print('Families: ' + ', '.join(sorted(actual_families)))
           PY
 
-      - name: Run public documentation quality gate
+      - name: Run public documentation quality gates
         shell: bash
         run: |
           set -euo pipefail
           python scripts/check_docs.py
+          python scripts/check_public_neutrality.py
 
       - name: Remove transfer and temporary importer
         shell: bash
@@ -173,6 +174,7 @@ jobs:
               git rebase origin/main
             fi
             python scripts/check_docs.py
+            python scripts/check_public_neutrality.py
             if git push origin HEAD:main; then
               exit 0
             fi
