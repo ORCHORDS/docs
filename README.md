@@ -10,7 +10,7 @@
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
-1,810 Markdown files covering governance, security, privacy, engineering,
+17,810 Markdown files covering governance, security, privacy, engineering,
 compliance, standards, reusable technical knowledge, and related policy areas.
 It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
@@ -82,10 +82,10 @@ Public documentation may describe principles, responsibilities, controls, decisi
 Bulk or externally sourced knowledge is accepted only after project-neutral
 sanitization, sensitive-data screening, duplicate and collision checks,
 relative-link validation, manifest/file-count verification, and cryptographic
-checksum verification. A prepared migration snapshot containing 8,006
-Markdown files has passed the public-safety and relative-link gates; it is not
-part of the published corpus until the receiving import and repository checks
-complete successfully.
+checksum verification. The reusable-knowledge migration validated 8,006 source Markdown files before
+publication. Six previously reviewed articles remain the canonical public copies
+and replace their transfer duplicates; all other accepted files are published in
+the project-neutral top-level domain families.
 
 ## Documentation workflow
 

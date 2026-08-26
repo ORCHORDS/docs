@@ -1,0 +1,32 @@
+# drag-and-drop-implementation
+
+**Issue:** Drag and drop looks trivial until it ships: the native HTML5 drag-and-drop API is inconsistent across browsers and essentially unusable on touch devices, pointer-event implementations leak listeners and fight scroll gestures, and reorder operations corrupt list state when drops happen mid-flight. On top of the mechanics, drag and drop is an accessibility minefield — screen readers cannot perceive what is being dragged or where it landed, and no library fully solves complex reorder plus assistive technology today (Atlassian tracks this as an open problem in Pragmatic Drag and Drop issue #<number>). Choosing an implementation strategy and engineering the fallback paths deliberately is the difference between a feature demo and a production reorderable list.
+
+**Date:** 2026-08-15
+**Repo:** example-org/example-repo
+**Author:** ORCHORDS
+**Status:** published
+
+## Choosing an implementation layer
+
+1. **Do not build on the raw HTML5 drag-and-drop API for app UI.** The `dragstart`/`dragover`/`drop` event API has inconsistent `dataTransfer` behavior across browsers, fires phantom events on some mobile browsers, does not work with touch input on iOS, and cannot render custom drag previews reliably. Reserve it for its one good use: file drops from the OS onto a page, where it remains the only mechanism.
+2. **Use pointer events if you hand-roll, and handle the touch-scroll conflict explicitly.** A custom implementation needs `setPointerCapture`, a movement threshold before treating a press as a drag (so taps and scroll still work), and `touch-action` manipulation on the handle so the browser does not steal the gesture for scrolling. Getting any one of these wrong produces a list that either cannot scroll on mobile or drags when the user meant to scroll.
+3. **Default to dnd-kit for React projects.** It is small, maintained, framework-agnostic at its core, and ships batteries-included accessibility: a keyboard sensor (arrow keys move items, space/enter to pick up and drop), an Accessibility plugin managing ARIA attributes, and live announcements of drag state via `aria-roledescription="draggable"` on draggable nodes. Its known weak spot is screen-reader interference during keyboard drags in some browser/AT combos (VoiceOver issue #<number>) — test with real AT before shipping.
+4. **Choose Pragmatic Drag and Drop when stack mix or scale dominates.** Atlassian's successor to react-beautiful-dnd is monorepo-friendly (React, Vue, vanilla), has negligible overhead for large trees, and powers Jira/Trello-scale boards. The trade is that accessibility is provided as separate packages (`@atlaskit/pragmatic-drag-and-drop-live-region` plus pattern docs) rather than defaults, so an a11y pass is on you. react-beautiful-dnd itself is deprecated — do not start new work on it.
+5. **Match the library to the interaction, not the hype cycle.** Vertical list reorder: dnd-kit sortable. Multi-directional kanban with many simultaneous drags: Pragmatic Drag and Drop. Tree with collapse-during-drag: either, but budget real time for the edge cases. File upload dropzones: native API wrapped in a small hook.
+
+## State integrity during reorders
+
+1. **Compute the reorder from indices at drop time, not incrementally during dragover.** Mutating the list on every dragover gives smooth live previews but makes the final operation ambiguous if the drag is cancelled or the component unmounts mid-drag. Keep the source index captured at pickup, apply preview transforms separately from committed state, and commit once on drop.
+2. **Use stable IDs as the primary key, never array index.** During a drag the array order is changing; keyed reconciliation against indices will reuse the wrong DOM nodes and destroy input focus and inner component state. Every sortable item needs an identity that survives reordering.
+3. **Treat the reorder as a server mutation, not just local state.** Send the new order (or the minimal move: entity ID + new position) to the API on drop, and reconcile with optimistic UI discipline — snapshot the previous order, roll back on failure, show an error toast. A drag that "works" visually but silently loses order on refresh is a data-loss bug.
+4. **Guard against concurrent reorders.** Two tabs or two rapid drags racing to the same endpoint produce interleaved orders. Either version the ordering (send a base revision the server rejects on conflict) or disable further drags while a reorder is in flight.
+5. **Batch high-frequency drag state out of the undo/history layer.** If the app has undo (see the undo-redo article), pointer-moved events must not create history entries — coalesce the entire drag into one undoable command committed at drop. The same applies to any temporal store middleware flooding with micro-snapshots.
+
+## Accessibility and non-drag alternatives
+
+1. **Always provide a non-drag path to the same operation.** Screen-reader users cannot perceive dragging; keyboards need a fallback. The standard pattern is a "move up / move down" button pair (or a grab-handle menu) per item, wired to the same reorder mutation as the drag. This is not optional polish — drag-only reordering is a WCAG 2.1.1 (Keyboard) failure.
+2. **Announce drag state through a live region.** On pickup: "Picked up item 3 of 8". On move: "Item 3 of 8, over position 5". On drop: "Dropped at position 5". dnd-kit's Accessibility plugin does this; with Pragmatic Drag and Drop you build it on their live-region package. Without announcements the drag is silent to AT users.
+3. **Give draggable items an explicit affordance and role description.** A visible drag handle (not the whole card — dragging whole cards makes text selection and inner button clicks ambiguous), `aria-roledescription="draggable"` on the handle, and instructions in an `aria-describedby` so first-time keyboard users learn the space-pickup, arrow-move, space-drop contract.
+4. **Keep focus on the handle, not the dragged ghost.** During a keyboard drag, focus stays on the item that initiated it; visual position indicators change, focus follows only on drop. Moving focus to the preview element breaks the interaction for AT and can trap focus in the wrong place on cancel.
+5. **Test with Escape-cancel.** Pressing Escape mid-drag must cancel the operation and restore the pre-drag order and focus. Both dnd-kit sensors and Pragmatic DnD support it, but custom drop handlers that mutate early turn Escape into a half-applied reorder.

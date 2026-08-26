@@ -1,0 +1,35 @@
+# vector-clocks-vs-version-vectors
+
+**Issue:** Distributed systems that allow concurrent updates (Dynamo-style stores, CRDT-based sync engines, multi-master replication) need to answer one question about any two pieces of data: did one cause the other, or did they happen concurrently? Scalar timestamps cannot answer this — wall clocks skew, and Lamport clocks totally order even concurrent events. Both vector clocks and version vectors answer it with a map of per-node counters, and the two terms are used interchangeably in most engineering conversations — including, confusingly, in Amazon's original Dynamo paper, which calls its per-key conflict detector a "vector clock." They are not the same mechanism. The HASlab article "Version Vectors are not Vector Clocks" (2011) remains the canonical correction: vector clocks order *events* to detect causality between processes' operations, while version vectors order *versions of a data item* to detect conflicts between writes. Picking the wrong one produces systems that either bloat memory with a clock entry per event participant or, worse, incorrectly conclude that independent writes are causally ordered — silently discarding a concurrent update instead of surfacing a conflict.
+
+**Date:** 2026-08-15
+**Repo:** example-org/example-repo
+**Author:** ORCHORDS
+**Status:** published
+
+## What Each One Actually Tracks
+
+1. **Vector clock: per-event causality over processes.** Each process keeps a counter for itself and the highest counter it has seen for every other process; every event (message send/receive, local step) increments the process's own entry, and sends carry the full clock. Comparing two event clocks yields happened-before, happened-after, or concurrent. The clock annotates *events* — there are as many clock instances as events, and the entry set covers every process that transitively influenced that event.
+2. **Version vector: per-version causality over replicas of one key.** Each replica increments *its own* entry only when it performs a new write to that specific data item; the resulting vector is stored with the written version. Comparing two versions' vectors yields dominates/dominated/concurrent — the answer is about the *writes*, not about arbitrary process events. There is exactly one vector per stored version, and its entries cover only replicas that ever wrote the key.
+3. **Why the difference matters mechanically.** A vector clock grows with every process that influenced the event's causal past; a version vector grows only with writers of one key. Using a vector clock as a stored version stamp imports causality from unrelated reads and chatter, inflating entries and — critically — can make a read-only observer's clock dominate a write, causing false "newer than" conclusions. Using a version vector as a general event clock under-detects concurrency because non-writing interactions never ratchet it.
+4. **The Dynamo terminology bug.** Dynamo's per-object conflict detection is a version vector (entries = replicas that wrote the key), but the paper says "vector clock," so a decade of blog posts copies the confusion. When reading system documentation, check what increments an entry: "every event on the process" means vector clock; "this replica's write to this item" means version vector.
+
+## Practical Uses of Each
+
+1. **Version vectors in replicated stores.** Dynamo, Riak (dotted version vectors), and modern sync engines store a version vector per object to detect sibling versions: if two writes' vectors are concurrent, the store keeps both as siblings and either asks the client to reconcile (Dynamo's semantic merge / sibling resolution) or feeds them to a CRDT merge. Dotted version vectors are the production refinement: a compact per-write dot plus a causal context set, keeping sibling explosion under control.
+2. **Vector clocks in middleware and snapshots.** Causal broadcast, causal consistency models (COPS/Chainreplication-adjacent literature), and consistent global snapshots use vector clocks over process events: a snapshot is consistent when no event is both "included by one process" and "causally after another process's included event" — a property only event-level causality can express.
+3. **Entry pruning and server-side aggregation.** Both structures grow with participants; production systems prune by collapsing removed/merged entries into a single summary counter (Riak's dotted version vectors prune merged dots) or by assigning clients short-lived ids with epoch numbers so stale client entries coalesce. A pruning policy is not optional at scale.
+4. **Sibling hygiene.** Concurrent siblings must eventually be resolved and coalesced back into one version, or reads return ever-growing sibling lists. Design the reconciliation path (client-provided merge, LWW with a hybrid clock as tiebreak — see hybrid-logical-clocks) and the pruning trigger explicitly.
+
+## Choosing Between Them
+
+1. **Choose version vectors when the unit of comparison is stored data.** Multi-master key-value replication, offline-first document sync, cache coherency for named entities: you are comparing *writes to the same item*, so version vectors (ideally dotted) are correct, smaller, and cannot be corrupted by observer noise.
+2. **Choose vector clocks when the unit of comparison is activity across processes.** Debugging distributed causality (why did this handler fire?), enforcing causal delivery, or computing consistent snapshots: events, not versions, are the compared entities, and only event-level clocks capture the needed relation.
+3. **Never mix duties.** The failure signature of mixing: writes that get shadowed by read-induced clock inflation (lost updates), or conflict detection that misses concurrency (silent overwrites). If a design stores a clock inside data but increments on non-write events, that is a vector clock being misused as a version vector — redesign it.
+4. **Budget for the space cost either way.** Both are O(participants) per annotated event/version. Bound participant counts (aggregating many ephemeral clients behind one logical replica id plus epoch), compress (small integer ids, run-length encoding), and prune aggressively in gossip dissemination.
+
+## Relation to Neighbors in This Knowledge Base
+
+1. **CRDTs.** Operation-based CRDTs use version-vector machinery to track causal delivery and to garbage-collect tombstones; state-based CRDTs sidestep clocks entirely via join-semilattice merge (crdt-conflict-free-data-types).
+2. **Quorum systems.** Read repair needs to know which replica version is "newest" — that comparison is a version-vector dominance check; quorum tuning (quorum-reads-writes-tuning) determines how often the question is even asked.
+3. **Hybrid logical clocks.** HLC answers "order these events totally, close to wall time" cheaply; version vectors answer "are these two specific writes concurrent?" precisely. Systems needing both (readable timestamps plus conflict detection) combine them — HLC for time-travel reads, version vectors for write reconciliation.

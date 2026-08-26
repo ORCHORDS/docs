@@ -37,11 +37,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Migration status
 
-- A prepared public-safe knowledge snapshot contains 8,006 Markdown files.
-- The snapshot passed the sanitization/public-safety gate with zero unresolved
-  findings and the relative-link gate with zero broken links.
-- The snapshot is not recorded as published until the receiving import,
-  deduplication/collision checks, and repository quality checks complete.
+- Imported the validated 8,006-file reusable-knowledge snapshot into the
+  project-neutral top-level domain families.
+- Six previously reviewed canonical articles replace their corresponding
+  transfer duplicates; non-identical path collisions remain refused.
+- Destination-side public checks caught and neutralized two remaining source
+  identifiers and validated the full imported corpus before publication.
 
 ### Fixed
 

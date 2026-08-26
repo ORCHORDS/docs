@@ -1,0 +1,37 @@
+# quorum-reads-writes-tuning
+
+**Issue:** Dynamo-style replication systems (Cassandra, Riak legacy, Voldemort heritage, and the consensus-free tier of modern stores) let you choose, per operation, how many replicas must acknowledge a write (W) and respond to a read (R) out of N replicas. These two knobs trade latency, availability, throughput cost, and consistency against each other, and misconfiguration produces silent staleness bugs: a team running W=1, R=1 on user-facing data gets intermittent read-your-write violations that look like "the app ate my edit," while a team reflexively running QUORUM/QUORUM in a multi-region cluster pays cross-datacenter latency on every keystroke. Cassandra 5.0's removal of per-read read_repair_chance in favor of "effective read repair" changed the reconciliation math, making deliberate quorum design more important, not less. The rule everyone half-remembers — W + R > N — is necessary but not the whole story, and applying it without understanding sloppy quorums, repair mechanisms, and multi-DC topology produces systems that are either slower or staler than intended.
+
+**Date:** 2026-08-15
+**Repo:** example-org/example-repo
+**Author:** ORCHORDS
+**Status:** published
+
+## The Core Arithmetic
+
+1. **W + R > N gives read-your-writes on quorum overlap.** With N=3, W=2, R=2, the write quorum and read quorum must intersect in at least one replica, so any read sees at least one replica that accepted the latest write. This is the baseline "strong-ish" configuration — it is not linearizable (concurrent writers can still interleave, and no ordering protocol runs), but it eliminates the common staleness anomalies.
+2. **W + R <= N accepts staleness for speed and availability.** W=1/R=1 touches a single replica: lowest latency, highest availability, weakest guarantees. Current practitioner guidance (Pythian's consistency guide, Reintech tuning notes) reserves ONE/LOCAL_ONE for data that tolerates staleness — analytics tables, idempotent logs, cache-backed reads — never for user-facing state machines.
+3. **Prefer asymmetric configurations.** Writes are usually the scarce, latency-sensitive resource in AP stores. A common production shape is W=1 (or LOCAL_ONE writes) with R=QUORUM, leaning on read repair to converge replicas — acceptable when writes are rare and reads must be fresh. The reverse (W=QUORUM, R=ONE) suits write-heavy feeds with tolerant readers.
+4. **QUORUM counts are calculated from live replicas and DC scope.** In Cassandra, QUORUM means a majority of *all* replicas across all DCs, while LOCAL_QUORUM means a majority of replicas in the *local* DC only — the coordinator blocks on cross-DC traffic for the former and never leaves the region for the latter. Most multi-region deployments standardize on LOCAL_QUORUM/LOCAL_QUORUM: strongly consistent within a region, asynchronously replicated across regions.
+
+## Reconciliation Mechanisms Behind the Knobs
+
+1. **Read repair on quorum reads.** When a QUORUM-family read observes digest mismatches, the coordinator pushes the newest version back to stale replicas involved in that read. Community clarification (r/cassandra, 2024-2025) matters here: ONE/LOCAL_ONE reads trigger no read repair, so a W=1/R=ONE system has no on-read convergence at all — stale replicas only heal via anti-entropy.
+2. **Effective read repair (Cassandra 5.0+).** The old probabilistic read_repair_chance knob is gone; modern Cassandra applies read repair deterministically based on how stale the table is estimated to be. This makes QUORUM-family reads the primary convergence path, so cheap-ONE configurations need a stronger anti-entropy story than they did on older versions.
+3. **Hinted handoff for write availability.** When a replica is down, the coordinator stores a hinted write and replays it when the node returns — this is what lets W=QUORUM survive a dead node without blocking. Hint windows are bounded (default ~3 hours); nodes down longer fall behind to full anti-entropy repair, so capacity plans must include repair scheduling for longer outages.
+4. **Anti-entropy as the backstop.** Periodic/incremental repairs (and in old Riak-style systems, Merkle-tree anti-entropy gossip — see anti-entropy-gossip-replication) reconcile whatever read repair and hints miss: deleted-then-resurrected data, clock skew, missed hints. Tuning quorums changes how much work falls to this backstop; W+R>N shrinks it, W=R=1 pushes nearly everything onto it.
+
+## Tuning Playbook
+
+1. **Classify data by staleness budget.** Per-table (and in Cassandra, per-statement) consistency is the whole point of tunable consistency. User session state, payments, inventory decrements: LOCAL_QUORUM or better. Feeds, counters, telemetry, caches: LOCAL_ONE. Encode the classification in schema review, not in ad-hoc query strings.
+2. **Mind the latency math.** Quorum latency is dominated by the slowest responding replica in the quorum, so W=2 of 3 is roughly "second-fastest of three" — but a straggler node turns every quorum operation into a timeout gamble. Tune cross-node latency monitoring and internode RPC timeouts together with consistency levels; a QUORUM cluster with one sick node degrades globally.
+3. **Strong reads for read-your-writes after writes.** The standard UX pattern: serve reads at ONE, but immediately after a user writes, issue one strong read (or route the user to the replica set that acknowledged the write via session stickiness/token) so they see their own change. This buys ONE-latency for the 99 percent case without the staleness complaint.
+4. **Serializable/LWT only where truly needed.** Cassandra's SERIAL consistency (lightweight transactions on Paxos) gives linearizability at 3-4x latency and heavy coordination cost. Reserve it for uniqueness checks and leader-ish decisions; everything else should ride quorum arithmetic plus idempotency.
+5. **DynamoDB's abstraction.** DynamoDB hides W/R entirely: EVENTUAL (default, cheaper, half the RCU of strong) vs strongly consistent per-read. The tuning decision is identical in spirit — choose strong reads for read-your-writes paths, eventual everywhere else — and per-request, not per-table.
+6. **Monitor staleness, not just throughput.** Track read repair counts, hint backlog, repair duration, and (if built in-app) version-vector or timestamp deltas between replicas. A W=1/R=1 cluster can look perfectly healthy on throughput dashboards while serving arbitrarily stale data.
+
+## Failure-Mode Interactions
+
+1. **Quorum loss during partitions.** If fewer than W replicas are reachable, writes fail; if fewer than R, reads fail. N=3/W=2/R=2 tolerates one node down; two nodes down makes the keyspace read-write unavailable. Availability calculations must be done per consistency level, not per cluster.
+2. **Sloppy quorums trade topology for availability.** Riak's sloppy quorum (write to any N reachable nodes, hinted for the true owners) keeps W=2 succeeding during rebalancing — at the cost of temporary ownership sprawl that must be reconciled later. Cassandra's hinted handoff achieves a similar effect more conservatively; either way, "the write succeeded" during a partition does not mean "the write is where reads will look."
+3. **Related articles.** cap-theorem-explained frames the fundamental trade; consistent-hashing covers placement; hybrid-logical-clocks and vector-clocks-vs-version-vectors cover the versioning that makes read repair's "newest version" comparison well-defined.
