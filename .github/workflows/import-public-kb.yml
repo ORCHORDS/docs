@@ -1,0 +1,181 @@
+name: Import sanitized knowledge transfer
+
+on:
+  push:
+    paths:
+      - .migration/public-docs-transfer/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-sanitized-knowledge-transfer
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Refresh latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Reconstruct, verify, and import sanitized Markdown
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import base64
+          import hashlib
+          import json
+          import shutil
+          import tarfile
+          from pathlib import Path, PurePosixPath
+
+          root = Path.cwd()
+          transfer = root / '.migration' / 'public-docs-transfer'
+          manifest_path = transfer / 'manifest.json'
+          if not manifest_path.is_file():
+              raise SystemExit('transfer manifest is missing')
+
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          required = {
+              'markdown_files_exported', 'families', 'unresolved_public_safety_findings',
+              'broken_relative_links', 'archive_bytes', 'archive_sha256', 'part_count',
+          }
+          missing = sorted(required - set(manifest))
+          if missing:
+              raise SystemExit('transfer manifest missing fields: ' + ', '.join(missing))
+          if manifest['unresolved_public_safety_findings'] != 0:
+              raise SystemExit('transfer reports unresolved public-safety findings')
+          if manifest['broken_relative_links'] != 0:
+              raise SystemExit('transfer reports broken relative links')
+
+          parts = sorted(transfer.glob('part-*.b64'))
+          if len(parts) != int(manifest['part_count']):
+              raise SystemExit(f"transfer part count mismatch: expected {manifest['part_count']}, got {len(parts)}")
+
+          encoded = ''.join(''.join(part.read_text(encoding='ascii').split()) for part in parts)
+          try:
+              payload = base64.b64decode(encoded, validate=True)
+          except Exception as exc:
+              raise SystemExit(f'invalid base64 transfer: {exc}') from exc
+
+          if len(payload) != int(manifest['archive_bytes']):
+              raise SystemExit('decoded archive byte count mismatch')
+          digest = hashlib.sha256(payload).hexdigest()
+          if digest != manifest['archive_sha256']:
+              raise SystemExit('decoded archive SHA-256 mismatch')
+
+          archive = root / '.migration' / 'public-docs-export.tar.gz'
+          archive.write_bytes(payload)
+          staged = root / '.migration' / 'public-docs-staged'
+          if staged.exists():
+              shutil.rmtree(staged)
+          staged.mkdir(parents=True)
+
+          with tarfile.open(archive, 'r:gz') as tf:
+              members = tf.getmembers()
+              for member in members:
+                  p = PurePosixPath(member.name)
+                  if member.issym() or member.islnk() or not member.isfile():
+                      raise SystemExit(f'archive contains non-regular file: {member.name}')
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit(f'unsafe archive path: {member.name}')
+                  if p.suffix.lower() != '.md':
+                      raise SystemExit(f'archive contains non-Markdown file: {member.name}')
+              tf.extractall(staged, members=members)
+
+          staged_files = sorted(p for p in staged.rglob('*') if p.is_file())
+          expected_files = int(manifest['markdown_files_exported'])
+          if len(staged_files) != expected_files:
+              raise SystemExit(f'extracted Markdown count mismatch: expected {expected_files}, got {len(staged_files)}')
+
+          expected_families = set(manifest['families'])
+          actual_families = {p.relative_to(staged).parts[0] for p in staged_files}
+          if actual_families != expected_families:
+              raise SystemExit(f'family set mismatch: expected {sorted(expected_families)}, got {sorted(actual_families)}')
+
+          collisions = []
+          identical = 0
+          for source in staged_files:
+              rel = source.relative_to(staged)
+              target = root / rel
+              if target.exists():
+                  if target.is_file() and target.read_bytes() == source.read_bytes():
+                      identical += 1
+                      continue
+                  collisions.append(rel.as_posix())
+          if collisions:
+              print(f'Import collisions: {len(collisions)}')
+              for path in collisions[:100]:
+                  print(f' - {path}')
+              raise SystemExit('refusing to overwrite existing documentation')
+
+          copied = 0
+          for source in staged_files:
+              rel = source.relative_to(staged)
+              target = root / rel
+              if target.exists():
+                  continue
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, target)
+              copied += 1
+
+          print(f'Verified transfer archive: {digest}')
+          print(f'Validated Markdown files: {len(staged_files)}')
+          print(f'Copied new files: {copied}')
+          print(f'Already-identical files: {identical}')
+          print('Families: ' + ', '.join(sorted(actual_families)))
+          PY
+
+      - name: Run public documentation quality gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/check_docs.py
+
+      - name: Remove transfer and temporary importer
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .migration
+          git rm -f .github/workflows/import-public-kb.yml
+
+      - name: Commit imported knowledge
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'ORCHORDS.COM'
+          git config user.email '72497645+ORCHORDS@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No import changes to commit.'
+            exit 0
+          fi
+          git commit -m 'docs: import sanitized reusable knowledge'
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git merge-base --is-ancestor origin/main HEAD; then
+              git rebase origin/main
+            fi
+            python scripts/check_docs.py
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          echo 'Failed to push import after three fast-forward attempts.' >&2
+          exit 1
