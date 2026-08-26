@@ -3,9 +3,9 @@ title: "Corporate Development and Transactions"
 owner: "Corporate Development Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-08-26"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-11-24"
 ---
 
 # Corporate Development and Transactions
@@ -36,6 +36,7 @@ Company-wide governance for strategic transactions, investments, acquisitions, d
 - [Negotiation and Term Sheet Governance](./NEGOTIATION_TERM_SHEET_GOVERNANCE.md)
 - [Definitive Agreement Readiness](./DEFINITIVE_AGREEMENT_READINESS.md)
 - [Regulatory Approval Coordination](./REGULATORY_APPROVAL_COORDINATION.md)
+- [Antitrust Merger Review Governance](./ANTITRUST_MERGER_REVIEW.md)
 - [Closing Readiness](./CLOSING_READINESS.md)
 - [Integration Planning](./INTEGRATION_PLANNING.md)
 - [Separation and Divestiture Planning](./SEPARATION_DIVESTITURE_PLANNING.md)
