@@ -12,45 +12,41 @@ next-review: "2026-11-24"
 
 ## Purpose
 
-Provide implementation guidance for an accessible button that opens a menu of actions or choices, based on the W3C WAI-ARIA Authoring Practices Guide (APG).
+Provide public implementation guidance for a button that opens a menu using the WAI-ARIA Authoring Practices Guide (APG) menu button pattern.
 
 ## Pattern baseline
 
-A menu button is a button that opens a menu. The trigger remains a button, while the popup uses menu semantics and contains menu items.
+A menu button is a button that opens a menu. The controlling element uses button semantics and communicates that it opens a menu.
+
+For an ARIA implementation:
+
+- the trigger has role `button` or equivalent native button semantics;
+- `aria-haspopup` is set to `menu` or `true`;
+- `aria-expanded` reflects whether the menu is open;
+- focus moves into the menu when it opens according to the chosen interaction model;
+- menu items use appropriate menu-item roles and keyboard behavior.
 
 ## Keyboard interaction
 
-For the menu button trigger:
+When focus is on the menu button:
 
-- **Enter** opens the menu and places focus on the first menu item.
-- **Space** opens the menu and places focus on the first menu item.
-- **Down Arrow** may open the menu and place focus on the first item.
-- **Up Arrow** may open the menu and place focus on the last item.
+- `Enter` and `Space` open the menu and place focus in it;
+- `Down Arrow` may open the menu and focus the first item;
+- `Up Arrow` may open the menu and focus the last item.
 
-Once the menu is open, keyboard behavior should follow the applicable menu or menubar pattern, including arrow-key navigation, activation, and Escape behavior.
-
-## Roles, states, and properties
-
-The trigger should:
-
-- have role `button`, usually by using a native `button` element;
-- expose `aria-haspopup="menu"` or `aria-haspopup="true"`;
-- expose `aria-expanded="true"` while the menu is open and `false` when closed;
-- use `aria-controls` when useful to identify the popup menu relationship.
-
-The popup should use role `menu`, and its actionable descendants should use the appropriate `menuitem`, `menuitemcheckbox`, or `menuitemradio` role.
+Once focus is inside the menu, menu keyboard interaction rules apply, including directional navigation and `Escape` for closing and returning focus where appropriate.
 
 ## Implementation guidance
 
-- Prefer a native button for the trigger.
-- Move focus intentionally when the menu opens; do not leave keyboard users guessing where focus went.
-- Return focus to the trigger when the menu closes when that matches the interaction flow.
-- Ensure pointer, keyboard, and assistive-technology users receive equivalent menu state changes.
-- Do not use menu semantics for ordinary site navigation unless the interaction genuinely behaves like an application-style menu.
+1. Prefer a native `<button>` for the trigger when possible.
+2. Keep `aria-expanded` synchronized with visible state.
+3. Do not expose menu roles for ordinary site navigation unless the interaction genuinely follows the menu pattern.
+4. Ensure focus is visible and restored predictably when the menu closes.
+5. Test with keyboard-only operation and representative assistive technologies.
 
 ## Verification
 
-Test opening, navigating, activating, and closing the menu using keyboard-only interaction and at least one screen reader. Confirm the expanded state and popup relationship are exposed correctly.
+Confirm that the trigger’s accessible name is meaningful, state changes are exposed, all menu items are keyboard reachable, `Escape` behavior is predictable, and focus does not become lost when the menu closes.
 
 ## Source
 
