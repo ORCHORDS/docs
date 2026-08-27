@@ -96,9 +96,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [SUPPORT
 ## Citing this documentation
 
 Content is MIT-licensed (see [LICENSE](LICENSE)). When citing a document,
-reference its URL together with the document's `last-reviewed` date. Because
-`main` changes frequently, pin durable citations to a specific commit SHA
-until tagged releases exist.
+reference its URL together with the document's `last-reviewed` date. For a
+stable repository-level citation, use the archived `v1.0.0` release and
+[concept DOI `10.5281/zenodo.22109314`](https://doi.org/10.5281/zenodo.22109314),
+as recorded in [CITATION.cff](CITATION.cff). For later untagged changes on
+`main`, pin the citation to a specific commit SHA.
 
 ## Brand
 
