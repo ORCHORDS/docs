@@ -39,17 +39,6 @@ jobs:
             rm CODEOWNERS
           fi
 
-      - name: Prevent generated commits from modifying workflows
-        shell: python
-        run: |
-          from pathlib import Path
-
-          path = Path('.github/scripts/restructure_docs.py')
-          text = path.read_text()
-          needle = '    patch_ci(root)\n'
-          assert text.count(needle) == 1, 'expected exactly one patch_ci(root) call'
-          path.write_text(text.replace(needle, ''))
-
       - name: Restructure repository
         run: python .github/scripts/restructure_docs.py
 
