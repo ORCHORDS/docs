@@ -5,92 +5,36 @@ from __future__ import annotations
 
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 
 CONTROLLED_DIRS = {
-    "accessibility",
-    "ai",
-    "commercial",
-    "communications",
-    "compliance",
-    "corporate-development",
-    "customer-success",
-    "customer-trust",
-    "data",
-    "engineering",
-    "ethics",
-    "finance",
-    "governance",
-    "human-rights",
-    "internal-audit",
-    "knowledge",
-    "legal",
-    "marketing",
-    "operations",
-    "partnerships",
-    "people",
-    "physical-security",
-    "privacy",
-    "procurement",
-    "product",
-    "project-delivery",
-    "quality",
-    "records",
-    "releases",
-    "research",
-    "resilience",
-    "security",
-    "sop",
-    "standards",
-    "strategy",
-    "support",
-    "sustainability",
-    "tax",
-    "templates",
-    "third-party",
-    "treasury",
-    "workplace-safety",
+    "accessibility", "ai", "commercial", "communications", "compliance",
+    "corporate-development", "customer-success", "customer-trust", "data",
+    "engineering", "ethics", "finance", "governance", "human-rights",
+    "internal-audit", "knowledge", "legal", "marketing", "operations",
+    "partnerships", "people", "physical-security", "privacy", "procurement",
+    "product", "project-delivery", "quality", "records", "releases",
+    "research", "resilience", "security", "sop", "standards", "strategy",
+    "support", "sustainability", "tax", "templates", "third-party",
+    "treasury", "workplace-safety",
 }
 
 ROOT_FAMILIES = {
-    "archive",
-    "business",
-    "data-ai",
-    "engineering",
-    "lessons",
-    "operations",
-    "platforms",
-    "playbooks",
-    "reference",
-    "security",
-    "standards",
-    "templates",
+    "archive", "business", "data-ai", "engineering", "lessons", "operations",
+    "platforms", "playbooks", "reference", "security", "standards", "templates",
 }
 
-# Project/private identifiers are forbidden everywhere in public Markdown.
 PRIVATE_FORBIDDEN = {
-    "mr.orchords",
-    "mrorchords",
-    "w.a.s.p",
-    "thewam",
-    "searabbit",
-    "retmo",
-    "cutshit",
-    "roomtoneoptimiser",
+    "mr.orchords", "mrorchords", "w.a.s.p", "thewam", "searabbit", "retmo",
+    "cutshit", "roomtoneoptimiser",
 }
 
-# These remain prohibited in controlled policy/assurance documents, but are
-# legitimate neutral technologies in reusable engineering articles.
 CONTROLLED_IMPLEMENTATION_FORBIDDEN = {
-    "openfx",
-    "directx",
-    "ffmpeg",
-    "firebase",
-    "forgejo",
+    "openfx", "directx", "ffmpeg", "firebase", "forgejo",
 }
 
 FORBIDDEN_PATTERNS = {
@@ -125,36 +69,32 @@ SAFE_SECRET_VALUE_RE = re.compile(
 )
 
 REQUIRED_FRONT_MATTER = {
-    "title",
-    "owner",
-    "status",
-    "classification",
-    "last-reviewed",
-    "review-cycle",
-    "next-review",
+    "title", "owner", "status", "classification", "last-reviewed",
+    "review-cycle", "next-review",
 }
 SUPPORTED_REVIEW_CYCLES = {"30 days", "60 days", "90 days", "180 days"}
+REVIEW_CYCLE_DAYS = {int(value.split()[0]): value for value in SUPPORTED_REVIEW_CYCLES}
 
-MARKDOWN_TARGET_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+MARKDOWN_INLINE_TARGET_RE = re.compile(r"(!?)\[[^\]]*\]\(([^)]+)\)")
 MARKDOWN_REFERENCE_TARGET_RE = re.compile(
-    r"^[ \t]{0,3}\[[^\]\n]+\]:[ \t]*(?:<([^>\n]+)>|(\S+))",
+    r"^[ \t]{0,3}\[([^\]\n]+)\]:[ \t]*(?:<([^>\n]+)>|(\S+))",
     re.M,
 )
-HTML_TARGET_RE = re.compile(r"\b(?:href|src)\s*=\s*[\"']([^\"']+)[\"']", re.I)
-FENCED_CODE_RE = re.compile(r"^(```|~~~).*?^\1\s*$", re.M | re.S)
+MARKDOWN_REFERENCE_IMAGE_USE_RE = re.compile(r"!\[([^\]]*)\]\[([^\]]*)\]")
+HTML_TARGET_RE = re.compile(
+    r"(?<![-\w])(?:href|src)\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s\"'=<>`]+))",
+    re.I,
+)
 URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
+DYNAMIC_TARGET_PREFIXES = ("${", "{{", "{%", "<%")
 
 
 def is_controlled(path: Path) -> bool:
     rel = path.relative_to(ROOT)
     if len(rel.parts) > 3 and rel.parts[0:2] == ("docs", "policies") and rel.parts[2] in CONTROLLED_DIRS:
         return True
-    # Root knowledge families intentionally contain ordinary reusable articles.
-    # Only each family's landing README is a controlled document.
     if len(rel.parts) >= 3 and rel.parts[0:2] == ("docs", "knowledge") and rel.parts[2] in ROOT_FAMILIES:
         return len(rel.parts) == 4 and rel.parts[3] == "README.md"
-    # Retain compatibility with any legacy controlled root directories that are
-    # not one of the reusable knowledge families.
     return False
 
 
@@ -169,7 +109,12 @@ def parse_front_matter(text: str) -> dict[str, str] | None:
         if ":" not in line:
             continue
         key, value = line.split(":", 1)
-        result[key.strip()] = value.strip().strip('"')
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in {'"', "'"}:
+            value = value[1:-1].strip()
+        if value.lower() in {"null", "~"}:
+            value = ""
+        result[key.strip()] = value
     return result
 
 
@@ -180,8 +125,7 @@ def check_front_matter(rel: Path, front_matter: dict[str, str]) -> list[str]:
         errors.append(f"{rel}: front matter missing: {', '.join(missing)}")
 
     blank = sorted(
-        key
-        for key in REQUIRED_FRONT_MATTER
+        key for key in REQUIRED_FRONT_MATTER
         if key in front_matter and not front_matter[key].strip()
     )
     for key in blank:
@@ -190,10 +134,7 @@ def check_front_matter(rel: Path, front_matter: dict[str, str]) -> list[str]:
     if front_matter.get("classification") and front_matter["classification"] != "public":
         errors.append(f"{rel}: classification must be public")
     if front_matter.get("status") and front_matter["status"] not in {
-        "approved",
-        "review",
-        "draft",
-        "deprecated",
+        "approved", "review", "draft", "deprecated",
     }:
         errors.append(f"{rel}: invalid status")
 
@@ -213,48 +154,110 @@ def check_front_matter(rel: Path, front_matter: dict[str, str]) -> list[str]:
         except ValueError:
             errors.append(f"{rel}: invalid {key} date: {value}")
 
-    if (
-        "last-reviewed" in parsed_dates
-        and "next-review" in parsed_dates
-        and parsed_dates["next-review"] < parsed_dates["last-reviewed"]
-    ):
+    last_reviewed = parsed_dates.get("last-reviewed")
+    next_review = parsed_dates.get("next-review")
+    if last_reviewed and last_reviewed > date.today():
+        errors.append(f"{rel}: last-reviewed must not be in the future")
+    if last_reviewed and next_review and next_review < last_reviewed:
         errors.append(f"{rel}: next-review must not precede last-reviewed")
+    if last_reviewed and next_review and cycle in SUPPORTED_REVIEW_CYCLES:
+        cycle_days = int(cycle.split()[0])
+        if next_review != last_reviewed + timedelta(days=cycle_days):
+            errors.append(f"{rel}: next-review must match review-cycle: {cycle}")
     return errors
+
+
+def strip_markdown_code(text: str) -> str:
+    """Mask fenced blocks and inline code before scanning rendered targets."""
+    output: list[str] = []
+    fence_char: str | None = None
+    fence_len = 0
+    for line in text.splitlines(keepends=True):
+        if fence_char is None:
+            opening = re.match(r"^[ ]{0,3}(`{3,}|~{3,})(?:[^\n]*)$", line.rstrip("\r\n"))
+            if opening:
+                marker = opening.group(1)
+                fence_char = marker[0]
+                fence_len = len(marker)
+                output.append("\n" if line.endswith(("\n", "\r")) else "")
+                continue
+            output.append(line)
+            continue
+
+        closing = re.match(
+            rf"^[ ]{{0,3}}{re.escape(fence_char)}{{{fence_len},}}[ \t]*$",
+            line.rstrip("\r\n"),
+        )
+        if closing:
+            fence_char = None
+            fence_len = 0
+        output.append("\n" if line.endswith(("\n", "\r")) else "")
+
+    rendered = "".join(output)
+    return re.sub(r"(`+)([^`\n]*?)\1", "", rendered)
+
+
+def is_dynamic_target(target: str) -> bool:
+    return target.lstrip().startswith(DYNAMIC_TARGET_PREFIXES)
+
+
+def normalize_markdown_destination(raw: str) -> str:
+    raw = raw.strip()
+    if raw.startswith("<"):
+        end = raw.find(">")
+        return raw[1:end] if end != -1 else raw[1:]
+    return raw.split()[0] if raw else ""
+
+
+def check_local_target(path: Path, raw: str, target: str, *, is_image: bool) -> list[str]:
+    if not target or target.startswith(("#", "/")) or is_dynamic_target(target):
+        return []
+    if target.startswith("mailto:") or URL_RE.match(target):
+        return []
+
+    decoded = unquote(target.split("#", 1)[0].split("?", 1)[0])
+    if not decoded:
+        return []
+    resolved = (path.parent / decoded).resolve()
+    try:
+        resolved.relative_to(ROOT)
+    except ValueError:
+        return [f"{path.relative_to(ROOT)}: link escapes repository: {raw}"]
+
+    if not resolved.exists() or (is_image and not resolved.is_file()):
+        return [f"{path.relative_to(ROOT)}: broken relative link: {raw}"]
+    return []
 
 
 def check_links(path: Path, text: str) -> list[str]:
     errors: list[str] = []
-    rendered_text = FENCED_CODE_RE.sub("", text)
-    reference_targets = [
-        angle_target or bare_target
-        for angle_target, bare_target in MARKDOWN_REFERENCE_TARGET_RE.findall(rendered_text)
-    ]
-    targets = (
-        MARKDOWN_TARGET_RE.findall(rendered_text)
-        + reference_targets
-        + HTML_TARGET_RE.findall(rendered_text)
-    )
-    for raw in targets:
-        target = raw.strip().split()[0].strip("<>")
-        if (
-            not target
-            or target.startswith(("#", "/", "${"))
-            or target.startswith("mailto:")
-        ):
-            continue
-        if URL_RE.match(target):
-            continue
-        target = unquote(target.split("#", 1)[0].split("?", 1)[0])
-        if not target:
-            continue
-        resolved = (path.parent / target).resolve()
-        try:
-            resolved.relative_to(ROOT)
-        except ValueError:
-            errors.append(f"{path.relative_to(ROOT)}: link escapes repository: {raw}")
-            continue
-        if not resolved.exists():
-            errors.append(f"{path.relative_to(ROOT)}: broken relative link: {raw}")
+    rendered_text = strip_markdown_code(text)
+
+    for bang, raw in MARKDOWN_INLINE_TARGET_RE.findall(rendered_text):
+        target = normalize_markdown_destination(raw)
+        errors.extend(check_local_target(path, raw, target, is_image=bool(bang)))
+
+    image_reference_labels: set[str] = set()
+    for alt, label in MARKDOWN_REFERENCE_IMAGE_USE_RE.findall(rendered_text):
+        image_reference_labels.add((label or alt).strip().casefold())
+
+    for label, angle_target, bare_target in MARKDOWN_REFERENCE_TARGET_RE.findall(rendered_text):
+        raw = angle_target or bare_target
+        target = raw.strip() if angle_target else normalize_markdown_destination(raw)
+        errors.extend(
+            check_local_target(
+                path,
+                raw,
+                target,
+                is_image=label.strip().casefold() in image_reference_labels,
+            )
+        )
+
+    for double_quoted, single_quoted, unquoted in HTML_TARGET_RE.findall(rendered_text):
+        raw = double_quoted or single_quoted or unquoted
+        target = raw.strip()
+        errors.extend(check_local_target(path, raw, target, is_image=False))
+
     return errors
 
 
@@ -276,13 +279,8 @@ def main() -> int:
     markdown = sorted(ROOT.rglob("*.md"))
     root_md = {p.name for p in ROOT.glob("*.md")}
     allowed_root_md = {
-        "README.md",
-        "CONTRIBUTING.md",
-        "SECURITY.md",
-        "CODE_OF_CONDUCT.md",
-        "SUPPORT.md",
-        "GOVERNANCE.md",
-        "CHANGELOG.md",
+        "README.md", "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md",
+        "SUPPORT.md", "GOVERNANCE.md", "CHANGELOG.md",
     }
     unexpected_root = sorted(root_md - allowed_root_md)
     if unexpected_root:
