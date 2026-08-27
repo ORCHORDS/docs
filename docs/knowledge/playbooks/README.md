@@ -24,3 +24,7 @@ This family contains repeatable procedures for development, deployment, incident
 - [Access Review](ACCESS_REVIEW.md)
 - [Contingency Exercise](CONTINGENCY_EXERCISE.md)
 - [Credential Compromise Response](CREDENTIAL_COMPROMISE_RESPONSE.md)
+- [Supplier Due-Diligence Assessment](SUPPLIER_DUE_DILIGENCE_ASSESSMENT.md)
+- [Security and Privacy Training Program Review](SECURITY_PRIVACY_TRAINING_PROGRAM_REVIEW.md)
+- [Data Breach Response](DATA_BREACH_RESPONSE.md)
+- [Vendor Remote-Access Review](VENDOR_REMOTE_ACCESS_REVIEW.md)
