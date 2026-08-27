@@ -1,5 +1,9 @@
 # Employee Review Disclosure
 
-If employees review the business or its products, require clear disclosure of the employment relationship and any solicitation or incentive.
+Address reviews or endorsements from employees and other insiders.
 
-Source basis: FTC review and endorsement guidance.
+- Identify material employment relationships.
+- Require clear disclosure where the relationship matters.
+- Avoid undisclosed promotional reviews.
+
+Primary source: FTC endorsement and review guidance.
