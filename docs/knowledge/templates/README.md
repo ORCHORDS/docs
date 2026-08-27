@@ -24,3 +24,7 @@ This family contains reusable templates for engineering, governance, operations,
 - [Access Review Record](knowledge-base/ACCESS_REVIEW_RECORD_TEMPLATE.md)
 - [Contingency Exercise Record](knowledge-base/CONTINGENCY_EXERCISE_RECORD_TEMPLATE.md)
 - [Credential Compromise Response Record](knowledge-base/CREDENTIAL_COMPROMISE_RESPONSE_RECORD_TEMPLATE.md)
+- [Supplier Due-Diligence Assessment](knowledge-base/SUPPLIER_DUE_DILIGENCE_ASSESSMENT_TEMPLATE.md)
+- [Security and Privacy Training Record](knowledge-base/SECURITY_PRIVACY_TRAINING_RECORD_TEMPLATE.md)
+- [Data Breach Response Record](knowledge-base/DATA_BREACH_RESPONSE_RECORD_TEMPLATE.md)
+- [Vendor Remote-Access Review](knowledge-base/VENDOR_REMOTE_ACCESS_REVIEW_TEMPLATE.md)
