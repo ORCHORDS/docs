@@ -5,3 +5,4 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 ## Articles
 
 - [Total Price and Mandatory Fee Disclosure](TOTAL_PRICE_MANDATORY_FEE_DISCLOSURE.md)
+- [B2C Electronic-Commerce Transaction Quality](B2C_ECOMMERCE_TRANSACTION_QUALITY.md)
