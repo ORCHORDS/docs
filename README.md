@@ -66,7 +66,7 @@ The established controlled-document collection remains under
 - **Working artifacts** — standards, SOPs, templates
 
 Reusable project-neutral knowledge is organized under
-[`docs/knowledge/`](./docs/knowledge/README.md), grouped into domain families.
+[`docs/knowledge/`](docs/knowledge/README.md), grouped into domain families.
 
 Tip: for a repository this size, use GitHub's file finder (`t`) or code
 search to jump directly to a document.
