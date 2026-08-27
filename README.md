@@ -14,7 +14,7 @@
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
-9,839 Markdown files covering governance, security, privacy, engineering,
+9,841 Markdown files covering governance, security, privacy, engineering,
 compliance, standards, reusable technical knowledge, and related policy areas.
 It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
@@ -100,11 +100,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [SUPPORT
 ## Citing this documentation
 
 Content is MIT-licensed (see [LICENSE](LICENSE)). When citing a document,
-reference its URL together with the document's `last-reviewed` date. For a
-stable repository-level citation, use the archived `v1.0.0` release and
-[concept DOI `10.5281/zenodo.22109314`](https://doi.org/10.5281/zenodo.22109314),
-as recorded in [CITATION.cff](docs/reference/CITATION.cff). For later untagged changes on
-`main`, pin the citation to a specific commit SHA.
+reference its URL together with the document's `last-reviewed` date. The
+[concept DOI `10.5281/zenodo.22109314`](https://doi.org/10.5281/zenodo.22109314)
+identifies the documentation series across archived versions, as recorded in
+[the citation metadata](docs/reference/CITATION.cff). Do not treat the concept DOI as a
+version-specific identifier. For a reproducible citation to `v1.0.0`, a later
+release, or an untagged state of `main`, pin the Git tag or exact commit SHA and
+use a version-specific archive DOI only when that DOI has been independently verified.
 
 ## Brand
 
