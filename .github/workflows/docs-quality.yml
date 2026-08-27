@@ -19,6 +19,9 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Test documentation validator
+        run: python .github/scripts/test_check_docs.py
+
       - name: Validate public documentation
         run: |
           python .github/scripts/check_docs.py
