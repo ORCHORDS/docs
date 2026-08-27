@@ -1,12 +1,13 @@
 cff-version: 1.2.0
-message: "If you reference this documentation, please cite it as below. Documents describe public policy expectations, not certified or implemented controls."
+message: "If you reference this documentation, cite the project DOI for the documentation series and pin a Git commit or tagged release when reproducibility requires a specific repository state."
 title: ORCHORDS Public Documentation
 type: dataset
 authors:
   - name: ORCHORDS.COM
     website: https://orchords.com/
 repository-code: https://github.com/ORCHORDS/docs
-url: https://orchords.com/
+url: https://doi.org/10.5281/zenodo.22109314
+doi: 10.5281/zenodo.22109314
 abstract: >-
   Public company-wide documentation for ORCHORDS: governance, security,
   privacy, engineering, compliance, standards, and related policy areas,
