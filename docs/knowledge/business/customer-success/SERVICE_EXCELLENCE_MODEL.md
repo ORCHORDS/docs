@@ -22,7 +22,6 @@ ISO lists ISO 23592:2021 as published and under systematic review. A review stat
 ## Sources
 
 - ISO — ISO 23592:2021, Service excellence — Principles and model: https://www.iso.org/standard/76358.html
-- ISO/TC 312 — published service-excellence standards and specifications: https://committee.iso.org/sites/tc312/home/projects/published/iso-23592.html
 
 ## Scope note
 
