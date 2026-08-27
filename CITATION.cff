@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this documentation, please cite the archived release below."
+title: "ORCHORDS Public Documentation"
+type: software
+authors:
+  - name: "ORCHORDS.COM"
+version: "v1.0.0"
+date-released: 2026-08-26
+repository-code: "https://github.com/ORCHORDS/docs"
+url: "https://doi.org/10.5281/zenodo.22109314"
+doi: "10.5281/zenodo.22109314"
+license: MIT
