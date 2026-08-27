@@ -129,6 +129,12 @@ class CheckLinksTests(unittest.TestCase):
         image.touch()
         self.assertEqual(self.check("![Banner](../assets/banner.jpg)"), [])
 
+    def test_accepts_balanced_parentheses_in_markdown_destination(self) -> None:
+        image = self.root / "docs" / "assets" / "plot(1).png"
+        image.parent.mkdir()
+        image.touch()
+        self.assertEqual(self.check("![Plot](assets/plot(1).png)"), [])
+
     def test_rejects_missing_markdown_image(self) -> None:
         self.assertEqual(
             self.check("![Banner](missing.jpg)"),
@@ -153,6 +159,13 @@ class CheckLinksTests(unittest.TestCase):
                     self.check(markup),
                     [f"{Path('docs/page.md')}: broken relative link: missing.jpg"],
                 )
+
+    def test_rejects_html_src_target_that_is_directory(self) -> None:
+        (self.root / "docs" / "assets").mkdir()
+        self.assertEqual(
+            self.check('<img src="assets">'),
+            [f"{Path('docs/page.md')}: broken relative link: assets"],
+        )
 
     def test_accepts_quoted_html_target_with_spaces(self) -> None:
         (self.root / "docs" / "hero banner.jpg").touch()
