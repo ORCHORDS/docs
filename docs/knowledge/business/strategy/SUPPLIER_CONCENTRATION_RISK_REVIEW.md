@@ -1,11 +1,5 @@
 # Supplier Concentration Risk Review
 
-Measure dependency on key suppliers and plan alternatives before disruption occurs.
+Measure dependency on critical suppliers, geographic or platform concentration, substitution lead time, and contingency options.
 
-## Checks
-- Identify single-source and high-dependency suppliers.
-- Model lead-time, price, quality, and outage scenarios.
-- Define diversification and contingency actions.
-
-## Source
-SBA Business Guide: https://www.sba.gov/business-guide
+Source basis: SBA resilience planning and NIST supply-chain risk principles.
