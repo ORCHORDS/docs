@@ -133,8 +133,10 @@ REQUIRED_FRONT_MATTER = {
     "next-review",
 }
 
-LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
-URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.I)
+MARKDOWN_TARGET_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+HTML_TARGET_RE = re.compile(r"\b(?:href|src)\s*=\s*[\"']([^\"']+)[\"']", re.I)
+FENCED_CODE_RE = re.compile(r"^(```|~~~).*?^\1\s*$", re.M | re.S)
+URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
 
 def is_controlled(path: Path) -> bool:
@@ -167,9 +169,15 @@ def parse_front_matter(text: str) -> dict[str, str] | None:
 
 def check_links(path: Path, text: str) -> list[str]:
     errors: list[str] = []
-    for raw in LINK_RE.findall(text):
+    rendered_text = FENCED_CODE_RE.sub("", text)
+    targets = MARKDOWN_TARGET_RE.findall(rendered_text) + HTML_TARGET_RE.findall(rendered_text)
+    for raw in targets:
         target = raw.strip().split()[0].strip("<>")
-        if not target or target.startswith("#") or target.startswith("mailto:"):
+        if (
+            not target
+            or target.startswith(("#", "/", "${"))
+            or target.startswith("mailto:")
+        ):
             continue
         if URL_RE.match(target):
             continue
