@@ -136,6 +136,10 @@ REQUIRED_FRONT_MATTER = {
 SUPPORTED_REVIEW_CYCLES = {"30 days", "60 days", "90 days", "180 days"}
 
 MARKDOWN_TARGET_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+MARKDOWN_REFERENCE_TARGET_RE = re.compile(
+    r"^[ \t]{0,3}\[[^\]\n]+\]:[ \t]*(?:<([^>\n]+)>|(\S+))",
+    re.M,
+)
 HTML_TARGET_RE = re.compile(r"\b(?:href|src)\s*=\s*[\"']([^\"']+)[\"']", re.I)
 FENCED_CODE_RE = re.compile(r"^(```|~~~).*?^\1\s*$", re.M | re.S)
 URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
@@ -221,7 +225,15 @@ def check_front_matter(rel: Path, front_matter: dict[str, str]) -> list[str]:
 def check_links(path: Path, text: str) -> list[str]:
     errors: list[str] = []
     rendered_text = FENCED_CODE_RE.sub("", text)
-    targets = MARKDOWN_TARGET_RE.findall(rendered_text) + HTML_TARGET_RE.findall(rendered_text)
+    reference_targets = [
+        angle_target or bare_target
+        for angle_target, bare_target in MARKDOWN_REFERENCE_TARGET_RE.findall(rendered_text)
+    ]
+    targets = (
+        MARKDOWN_TARGET_RE.findall(rendered_text)
+        + reference_targets
+        + HTML_TARGET_RE.findall(rendered_text)
+    )
     for raw in targets:
         target = raw.strip().split()[0].strip("<>")
         if (
