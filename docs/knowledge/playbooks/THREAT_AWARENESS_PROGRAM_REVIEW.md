@@ -1,6 +1,10 @@
 # Threat Awareness Program Review
 
-Review how relevant threat information is collected, assessed, shared with appropriate personnel, and translated into control or operational changes.
+1. Inventory threat-information sources.
+2. Check relevance and timeliness.
+3. Verify distribution to affected teams.
+4. Confirm intelligence feeds decisions and controls.
+5. Fix blind spots.
+6. Record improvements.
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Source: NIST SP 800-53 Rev. 5 PM family.

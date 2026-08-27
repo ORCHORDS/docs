@@ -1,6 +1,10 @@
 # Rules of Behavior Review
 
-Review acceptable-use and security/privacy behavior expectations for relevance, clarity, coverage, and consistency with current systems and risk.
+1. Review current system-use expectations.
+2. Map rules to user groups and privileges.
+3. Update for technology or policy changes.
+4. Verify user acknowledgment.
+5. Escalate missing acknowledgment.
+6. Record effective date.
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Source: NIST SP 800-53 Rev. 5 PL-4.

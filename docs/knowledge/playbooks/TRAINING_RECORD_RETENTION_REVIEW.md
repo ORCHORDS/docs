@@ -1,6 +1,10 @@
 # Training Record Retention Review
 
-Verify training completion, dates, role coverage, and retained evidence are sufficient to demonstrate current awareness and role-based training obligations.
+1. Identify required training records.
+2. Confirm retention and protection requirements.
+3. Sample stored records for completeness.
+4. Check disposal after retention expires.
+5. Remediate gaps.
+6. Record evidence.
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Source: NIST SP 800-53 Rev. 5 AT-4.

@@ -1,6 +1,10 @@
-# Rules of Behavior Review Record
+# Rules of Behavior Review Record Template
 
-Record current rules, covered systems/users, review evidence, changes, approvals, and closure.
+- Rule set/version:
+- Covered users:
+- Key restrictions:
+- Acknowledgment status:
+- Changes/actions:
+- Review date:
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Basis: NIST SP 800-53 Rev. 5 PL-4.

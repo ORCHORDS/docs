@@ -1,6 +1,10 @@
 # Insider Threat Program Review
 
-Review insider-threat governance, reporting, monitoring, privacy safeguards, cross-functional responsibilities, response, and improvement actions.
+1. Review program authority and roles.
+2. Check reporting and escalation channels.
+3. Validate security, HR, privacy, and legal interfaces.
+4. Assess awareness and response metrics.
+5. Correct gaps.
+6. Record governance decisions.
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Source: NIST SP 800-53 Rev. 5 PM controls.

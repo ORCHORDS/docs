@@ -1,6 +1,10 @@
 # Enterprise Architecture Security Alignment Review
 
-Review whether enterprise architecture decisions incorporate security/privacy principles, shared services, trust boundaries, risk, and control dependencies.
+1. Review current enterprise architecture principles.
+2. Map security/privacy requirements.
+3. Identify exceptions and inconsistent patterns.
+4. Prioritize remediation and reference architectures.
+5. Track technical debt.
+6. Record governance decisions.
 
-## Source
-NIST SP 800-53 Rev. 5 / Release 5.2.0: https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+Source: NIST SP 800-53 Rev. 5.
