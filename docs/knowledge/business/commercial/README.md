@@ -10,3 +10,5 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Telemarketing Sales Governance](TELEMARKETING_SALES_GOVERNANCE.md)
 - [Online Marketplace Seller Verification](ONLINE_MARKETPLACE_SELLER_VERIFICATION.md)
 - [Consumer Warranty Governance](CONSUMER_WARRANTY_GOVERNANCE.md)
+- [Cooling-Off Rule Sales Cancellation](COOLING_OFF_RULE_SALES_CANCELLATION.md)
+- [Returns, Refunds, and Resolution Operations](RETURNS_REFUNDS_RESOLUTION_OPERATIONS.md)
