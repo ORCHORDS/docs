@@ -19,3 +19,4 @@ This family contains reusable templates for engineering, governance, operations,
 - [Vulnerability Risk Exception](knowledge-base/VULNERABILITY_RISK_EXCEPTION_TEMPLATE.md)
 - [Software Release Verification Record](knowledge-base/SOFTWARE_RELEASE_VERIFICATION_RECORD_TEMPLATE.md)
 - [Backup Restore Test Record](knowledge-base/BACKUP_RESTORE_TEST_RECORD_TEMPLATE.md)
+- [Corrective Action Record](knowledge-base/CORRECTIVE_ACTION_RECORD_TEMPLATE.md)
