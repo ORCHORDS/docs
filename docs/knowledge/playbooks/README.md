@@ -32,3 +32,7 @@ This family contains repeatable procedures for development, deployment, incident
 - [Security Metrics Review](SECURITY_METRICS_REVIEW.md)
 - [Privacy Risk Assessment](PRIVACY_RISK_ASSESSMENT.md)
 - [Third-Party Offboarding](THIRD_PARTY_OFFBOARDING.md)
+- [Configuration Baseline Review](CONFIGURATION_BASELINE_REVIEW.md)
+- [Incident Communications Review](INCIDENT_COMMUNICATIONS_REVIEW.md)
+- [Dependency Inventory Review](DEPENDENCY_INVENTORY_REVIEW.md)
+- [Access Termination Review](ACCESS_TERMINATION_REVIEW.md)
