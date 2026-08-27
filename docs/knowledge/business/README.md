@@ -14,5 +14,6 @@ This family contains reusable guidance for commercial operations, communications
 
 ## Collections
 
-- [Strategy](strategy/README.md) — market research, competitive analysis, and business planning.
+- [Strategy](strategy/README.md) — market research, competitive analysis, business planning, startup costs, break-even analysis, and funding preparation.
 - [Marketing](marketing/README.md) — advertising substantiation, endorsements, and disclosure practices.
+- [Customer Success](customer-success/README.md) — complaint handling, customer feedback, and satisfaction monitoring.
