@@ -174,6 +174,10 @@ class CheckLinksTests(unittest.TestCase):
     def test_does_not_treat_data_href_as_href(self) -> None:
         self.assertEqual(self.check('<div data-href="missing.html">Example</div>'), [])
 
+    def test_ignores_attribute_like_prose_outside_html_tags(self) -> None:
+        text = "Use img src=missing.jpg as fallback; preload href=hero.webp for the real tag."
+        self.assertEqual(self.check(text), [])
+
     def test_accepts_external_html_source(self) -> None:
         self.assertEqual(self.check('<img src="https://example.com/banner.jpg">'), [])
 
