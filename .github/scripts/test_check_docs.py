@@ -144,6 +144,36 @@ class CheckLinksTests(unittest.TestCase):
 
         self.assertEqual(errors, [f"{Path('docs/page.md')}: link escapes repository: ../../private.md"])
 
+    def test_rejects_missing_reference_link_and_image_targets(self) -> None:
+        text = "[Guide][guide]\n![Banner][banner]\n\n[guide]: missing.md\n[banner]: missing.jpg"
+
+        self.assertEqual(
+            self.check(text),
+            [
+                f"{Path('docs/page.md')}: broken relative link: missing.md",
+                f"{Path('docs/page.md')}: broken relative link: missing.jpg",
+            ],
+        )
+
+    def test_accepts_existing_reference_target(self) -> None:
+        (self.root / "docs" / "guide.md").touch()
+
+        self.assertEqual(self.check("[Guide][guide]\n\n[guide]: guide.md"), [])
+
+    def test_accepts_external_reference_target(self) -> None:
+        self.assertEqual(
+            self.check("[Project][project]\n\n[project]: https://example.com/project"),
+            [],
+        )
+
+    def test_ignores_reference_definition_inside_fenced_code(self) -> None:
+        self.assertEqual(self.check("```markdown\n[guide]: missing.md\n```"), [])
+
+    def test_rejects_reference_target_escaping_repository(self) -> None:
+        errors = self.check("[Private][private]\n\n[private]: ../../private.md")
+
+        self.assertEqual(errors, [f"{Path('docs/page.md')}: link escapes repository: ../../private.md"])
+
 
 if __name__ == "__main__":
     unittest.main()
