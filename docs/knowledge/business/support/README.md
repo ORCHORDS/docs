@@ -11,3 +11,5 @@ Reusable, evidence-based guidance for support operations, contact-centre service
 - [Measuring Service Excellence Performance](MEASURING_SERVICE_EXCELLENCE_PERFORMANCE.md)
 - [Service Excellence Practice Catalogue](SERVICE_EXCELLENCE_PRACTICE_CATALOGUE.md)
 - [Customer-Service Impersonation Defense](CUSTOMER_SERVICE_IMPERSONATION_DEFENSE.md)
+- [Tech-Support Scam Defense](TECH_SUPPORT_SCAM_DEFENSE.md)
+- [Secure Remote Support Access](SECURE_REMOTE_SUPPORT_ACCESS.md)
