@@ -73,16 +73,15 @@ REQUIRED_FRONT_MATTER = {
     "review-cycle", "next-review",
 }
 SUPPORTED_REVIEW_CYCLES = {"30 days", "60 days", "90 days", "180 days"}
-REVIEW_CYCLE_DAYS = {int(value.split()[0]): value for value in SUPPORTED_REVIEW_CYCLES}
 
-MARKDOWN_INLINE_TARGET_RE = re.compile(r"(!?)\[[^\]]*\]\(([^)]+)\)")
+MARKDOWN_INLINE_START_RE = re.compile(r"(!?)\[[^\]\n]*\]\(")
 MARKDOWN_REFERENCE_TARGET_RE = re.compile(
     r"^[ \t]{0,3}\[([^\]\n]+)\]:[ \t]*(?:<([^>\n]+)>|(\S+))",
     re.M,
 )
 MARKDOWN_REFERENCE_IMAGE_USE_RE = re.compile(r"!\[([^\]]*)\]\[([^\]]*)\]")
 HTML_TARGET_RE = re.compile(
-    r"(?<![-\w])(?:href|src)\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s\"'=<>`]+))",
+    r"(?<![-\w])(href|src)\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s\"'=<>`]+))",
     re.I,
 )
 URL_RE = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
@@ -197,6 +196,30 @@ def strip_markdown_code(text: str) -> str:
     return re.sub(r"(`+)([^`\n]*?)\1", "", rendered)
 
 
+def iter_markdown_inline_targets(text: str):
+    """Yield (is_image, raw_destination) with balanced parentheses preserved."""
+    for match in MARKDOWN_INLINE_START_RE.finditer(text):
+        is_image = bool(match.group(1))
+        start = match.end()
+        depth = 1
+        escaped = False
+        i = start
+        while i < len(text):
+            char = text[i]
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == "(":
+                depth += 1
+            elif char == ")":
+                depth -= 1
+                if depth == 0:
+                    yield is_image, text[start:i]
+                    break
+            i += 1
+
+
 def is_dynamic_target(target: str) -> bool:
     return target.lstrip().startswith(DYNAMIC_TARGET_PREFIXES)
 
@@ -233,9 +256,9 @@ def check_links(path: Path, text: str) -> list[str]:
     errors: list[str] = []
     rendered_text = strip_markdown_code(text)
 
-    for bang, raw in MARKDOWN_INLINE_TARGET_RE.findall(rendered_text):
+    for is_image, raw in iter_markdown_inline_targets(rendered_text):
         target = normalize_markdown_destination(raw)
-        errors.extend(check_local_target(path, raw, target, is_image=bool(bang)))
+        errors.extend(check_local_target(path, raw, target, is_image=is_image))
 
     image_reference_labels: set[str] = set()
     for alt, label in MARKDOWN_REFERENCE_IMAGE_USE_RE.findall(rendered_text):
@@ -253,10 +276,10 @@ def check_links(path: Path, text: str) -> list[str]:
             )
         )
 
-    for double_quoted, single_quoted, unquoted in HTML_TARGET_RE.findall(rendered_text):
+    for attribute, double_quoted, single_quoted, unquoted in HTML_TARGET_RE.findall(rendered_text):
         raw = double_quoted or single_quoted or unquoted
         target = raw.strip()
-        errors.extend(check_local_target(path, raw, target, is_image=False))
+        errors.extend(check_local_target(path, raw, target, is_image=attribute.casefold() == "src"))
 
     return errors
 
