@@ -44,4 +44,4 @@ currently owned by the maintaining account.
 Controlled documents carry YAML front matter (`status`, `last-reviewed`,
 `next-review`, `review-cycle`) defined in
 [Document Control](../policies/governance/DOCUMENT_CONTROL.md), and
-`.github/scripts/check_docs.py` enforces it on every change.
+`.github/.github/scripts/check_docs.py` enforces it on every change.

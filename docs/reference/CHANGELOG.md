@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
-- Documentation-quality gate (`.github/scripts/check_docs.py`) again enforces
+- Documentation-quality gate (`.github/.github/scripts/check_docs.py`) again enforces
   controlled-document front matter after the `docs/policies/` reorganization;
   CODEOWNERS paths and the documentation-issue template were updated to the
   new layout.

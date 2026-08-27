@@ -3,7 +3,7 @@
 
 # Security-sensitive repository configuration.
 /.github/ @ORCHORDS
-/.github/scripts/ @ORCHORDS
+/.github/.github/scripts/ @ORCHORDS
 
 # Public documentation categories.
 /docs/policies/ @ORCHORDS
@@ -55,7 +55,7 @@
 /docs/policies/standards/ @ORCHORDS
 /docs/policies/templates/ @ORCHORDS
 /.github/ @ORCHORDS
-/.github/scripts/ @ORCHORDS
+/.github/.github/scripts/ @ORCHORDS
 
 /docs/knowledge/ @ORCHORDS
 /docs/reference/ @ORCHORDS

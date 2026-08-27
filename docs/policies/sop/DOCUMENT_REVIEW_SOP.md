@@ -31,7 +31,7 @@ Use for scheduled review, standards changes, ownership changes, audit/incident f
 6. Remove obsolete implementation detail and duplicate policy.
 7. Check the public-safety boundary in [Document Control](../governance/DOCUMENT_CONTROL.md).
 8. Validate relative links.
-9. Run `python .github/scripts/check_docs.py`.
+9. Run `python .github/.github/scripts/check_docs.py`.
 10. Open a pull request describing sources checked and material changes.
 11. Obtain required review.
 12. Set review metadata to the approval date and computed next review.
