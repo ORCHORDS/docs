@@ -9,3 +9,4 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Startup Cost Estimation](STARTUP_COST_ESTIMATION.md)
 - [Break-Even Analysis](BREAK_EVEN_ANALYSIS.md)
 - [Funding Needs Preparation](FUNDING_NEEDS_PREPARATION.md)
+- [Strategic Business Location Selection](STRATEGIC_BUSINESS_LOCATION_SELECTION.md)

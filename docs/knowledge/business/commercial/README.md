@@ -9,3 +9,4 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Mail, Internet, and Telephone Order Fulfilment](MAIL_INTERNET_TELEPHONE_ORDER_FULFILMENT.md)
 - [Telemarketing Sales Governance](TELEMARKETING_SALES_GOVERNANCE.md)
 - [Online Marketplace Seller Verification](ONLINE_MARKETPLACE_SELLER_VERIFICATION.md)
+- [Consumer Warranty Governance](CONSUMER_WARRANTY_GOVERNANCE.md)
