@@ -80,6 +80,7 @@ MARKDOWN_REFERENCE_TARGET_RE = re.compile(
     re.M,
 )
 MARKDOWN_REFERENCE_IMAGE_USE_RE = re.compile(r"!\[([^\]]*)\]\[([^\]]*)\]")
+HTML_TAG_RE = re.compile(r"<[^>\n]+>")
 HTML_TARGET_RE = re.compile(
     r"(?<![-\w])(href|src)\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s\"'=<>`]+))",
     re.I,
@@ -276,10 +277,18 @@ def check_links(path: Path, text: str) -> list[str]:
             )
         )
 
-    for attribute, double_quoted, single_quoted, unquoted in HTML_TARGET_RE.findall(rendered_text):
-        raw = double_quoted or single_quoted or unquoted
-        target = raw.strip()
-        errors.extend(check_local_target(path, raw, target, is_image=attribute.casefold() == "src"))
+    for tag in HTML_TAG_RE.findall(rendered_text):
+        for attribute, double_quoted, single_quoted, unquoted in HTML_TARGET_RE.findall(tag):
+            raw = double_quoted or single_quoted or unquoted
+            target = raw.strip()
+            errors.extend(
+                check_local_target(
+                    path,
+                    raw,
+                    target,
+                    is_image=attribute.casefold() == "src",
+                )
+            )
 
     return errors
 
