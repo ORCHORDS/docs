@@ -10,3 +10,4 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Native Advertising Disclosures](NATIVE_ADVERTISING_DISCLOSURES.md)
 - [Consumer Reviews and Testimonials Rule](CONSUMER_REVIEWS_TESTIMONIALS_RULE.md)
 - [Environmental Marketing Claims](ENVIRONMENTAL_MARKETING_CLAIMS.md)
+- [Health-Product Marketing Claims](HEALTH_PRODUCT_MARKETING_CLAIMS.md)
