@@ -9,3 +9,4 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Made in USA Origin Claims](MADE_IN_USA_ORIGIN_CLAIMS.md)
 - [Native Advertising Disclosures](NATIVE_ADVERTISING_DISCLOSURES.md)
 - [Consumer Reviews and Testimonials Rule](CONSUMER_REVIEWS_TESTIMONIALS_RULE.md)
+- [Environmental Marketing Claims](ENVIRONMENTAL_MARKETING_CLAIMS.md)
