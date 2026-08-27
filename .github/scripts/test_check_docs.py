@@ -15,6 +15,85 @@ check_docs = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(check_docs)
 
 
+class CheckFrontMatterTests(unittest.TestCase):
+    def valid_metadata(self) -> dict[str, str]:
+        return {
+            "title": "Example policy",
+            "owner": "Documentation",
+            "status": "approved",
+            "classification": "public",
+            "last-reviewed": "2026-08-27",
+            "review-cycle": "90 days",
+            "next-review": "2026-11-25",
+        }
+
+    def check(self, **changes: str) -> list[str]:
+        metadata = self.valid_metadata()
+        metadata.update(changes)
+        return check_docs.check_front_matter(Path("docs/policy.md"), metadata)
+
+    @property
+    def rel(self) -> Path:
+        return Path("docs/policy.md")
+
+    def test_accepts_valid_metadata_and_supported_review_cycles(self) -> None:
+        for cycle in ("30 days", "60 days", "90 days", "180 days"):
+            with self.subTest(cycle=cycle):
+                self.assertEqual(self.check(**{"review-cycle": cycle}), [])
+
+    def test_rejects_blank_required_fields(self) -> None:
+        for field in check_docs.REQUIRED_FRONT_MATTER:
+            with self.subTest(field=field):
+                errors = self.check(**{field: ""})
+                self.assertIn(f"{self.rel}: front matter blank: {field}", errors)
+
+    def test_rejects_missing_required_field(self) -> None:
+        metadata = self.valid_metadata()
+        del metadata["owner"]
+
+        self.assertEqual(
+            check_docs.check_front_matter(Path("docs/policy.md"), metadata),
+            [f"{self.rel}: front matter missing: owner"],
+        )
+
+    def test_rejects_unsupported_review_cycle(self) -> None:
+        self.assertEqual(
+            self.check(**{"review-cycle": "365 days"}),
+            [f"{self.rel}: invalid review-cycle: 365 days"],
+        )
+
+    def test_accepts_valid_leap_date(self) -> None:
+        self.assertEqual(
+            self.check(**{"last-reviewed": "2028-02-29", "next-review": "2028-02-29"}),
+            [],
+        )
+
+    def test_rejects_invalid_and_noncanonical_dates(self) -> None:
+        for field, value in (
+            ("last-reviewed", "2026-02-30"),
+            ("next-review", "2026-02-30"),
+            ("last-reviewed", "2026-8-02"),
+            ("next-review", "2026-08-02T00:00:00"),
+        ):
+            with self.subTest(field=field, value=value):
+                self.assertIn(
+                    f"{self.rel}: invalid {field} date: {value}",
+                    self.check(**{field: value}),
+                )
+
+    def test_rejects_next_review_before_last_review(self) -> None:
+        self.assertEqual(
+            self.check(**{"last-reviewed": "2026-08-27", "next-review": "2026-08-26"}),
+            [f"{self.rel}: next-review must not precede last-reviewed"],
+        )
+
+    def test_accepts_equal_review_dates(self) -> None:
+        self.assertEqual(
+            self.check(**{"last-reviewed": "2026-08-27", "next-review": "2026-08-27"}),
+            [],
+        )
+
+
 class CheckLinksTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temp_dir = tempfile.TemporaryDirectory()

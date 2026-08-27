@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import re
 import sys
+from datetime import date
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -132,6 +133,7 @@ REQUIRED_FRONT_MATTER = {
     "review-cycle",
     "next-review",
 }
+SUPPORTED_REVIEW_CYCLES = {"30 days", "60 days", "90 days", "180 days"}
 
 MARKDOWN_TARGET_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 HTML_TARGET_RE = re.compile(r"\b(?:href|src)\s*=\s*[\"']([^\"']+)[\"']", re.I)
@@ -165,6 +167,55 @@ def parse_front_matter(text: str) -> dict[str, str] | None:
         key, value = line.split(":", 1)
         result[key.strip()] = value.strip().strip('"')
     return result
+
+
+def check_front_matter(rel: Path, front_matter: dict[str, str]) -> list[str]:
+    errors: list[str] = []
+    missing = sorted(REQUIRED_FRONT_MATTER - set(front_matter))
+    if missing:
+        errors.append(f"{rel}: front matter missing: {', '.join(missing)}")
+
+    blank = sorted(
+        key
+        for key in REQUIRED_FRONT_MATTER
+        if key in front_matter and not front_matter[key].strip()
+    )
+    for key in blank:
+        errors.append(f"{rel}: front matter blank: {key}")
+
+    if front_matter.get("classification") and front_matter["classification"] != "public":
+        errors.append(f"{rel}: classification must be public")
+    if front_matter.get("status") and front_matter["status"] not in {
+        "approved",
+        "review",
+        "draft",
+        "deprecated",
+    }:
+        errors.append(f"{rel}: invalid status")
+
+    cycle = front_matter.get("review-cycle")
+    if cycle and cycle not in SUPPORTED_REVIEW_CYCLES:
+        errors.append(f"{rel}: invalid review-cycle: {cycle}")
+
+    parsed_dates: dict[str, date] = {}
+    for key in ("last-reviewed", "next-review"):
+        value = front_matter.get(key)
+        if not value:
+            continue
+        try:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+                raise ValueError
+            parsed_dates[key] = date.fromisoformat(value)
+        except ValueError:
+            errors.append(f"{rel}: invalid {key} date: {value}")
+
+    if (
+        "last-reviewed" in parsed_dates
+        and "next-review" in parsed_dates
+        and parsed_dates["next-review"] < parsed_dates["last-reviewed"]
+    ):
+        errors.append(f"{rel}: next-review must not precede last-reviewed")
+    return errors
 
 
 def check_links(path: Path, text: str) -> list[str]:
@@ -262,13 +313,7 @@ def main() -> int:
             if front_matter is None:
                 errors.append(f"{rel}: controlled document missing YAML front matter")
             else:
-                missing = sorted(REQUIRED_FRONT_MATTER - set(front_matter))
-                if missing:
-                    errors.append(f"{rel}: front matter missing: {', '.join(missing)}")
-                if front_matter.get("classification") != "public":
-                    errors.append(f"{rel}: classification must be public")
-                if front_matter.get("status") not in {"approved", "review", "draft", "deprecated"}:
-                    errors.append(f"{rel}: invalid status")
+                errors.extend(check_front_matter(rel, front_matter))
 
         errors.extend(check_links(path, text))
 
