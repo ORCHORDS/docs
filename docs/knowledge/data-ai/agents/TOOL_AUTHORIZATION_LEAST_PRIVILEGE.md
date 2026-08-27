@@ -20,7 +20,7 @@ Agentic systems can call tools that read data, modify state, send messages, or i
 
 Where a tool uses OAuth, the authorization server remains responsible for authenticating the resource owner and issuing scoped access tokens. An agent should not infer or expand scopes on its own. Resource servers should validate tokens for the intended audience and requested operation.
 
-The Model Context Protocol authorization specification defines OAuth-based authorization for HTTP transports and requires protected MCP servers to validate access tokens. It also warns against token passthrough: a server should not simply accept a token intended for another downstream service and forward it unchanged.
+The current Model Context Protocol specification, released 2026-07-28, further hardens authorization. Among its changes, MCP clients validate the authorization-server issuer in authorization responses, and the protocol continues moving toward explicit, resource-scoped authorization rather than reusable bearer credentials crossing service boundaries.
 
 ## Execution boundary
 
@@ -43,9 +43,10 @@ Human approval is especially useful when an action is costly, destructive, legal
 
 ## References
 
-- Model Context Protocol — Authorization specification: https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization
-- IETF RFC 6749 — The OAuth 2.0 Authorization Framework: https://www.rfc-editor.org/rfc/rfc6749
+- Model Context Protocol — 2026-07-28 specification release: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+- IETF RFC 9700 — Best Current Practice for OAuth 2.0 Security: https://www.rfc-editor.org/rfc/rfc9700
 - IETF RFC 8707 — Resource Indicators for OAuth 2.0: https://www.rfc-editor.org/rfc/rfc8707
+- IETF RFC 6749 — The OAuth 2.0 Authorization Framework: https://www.rfc-editor.org/rfc/rfc6749
 
 ## Scope note
 
