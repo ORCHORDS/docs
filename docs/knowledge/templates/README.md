@@ -36,3 +36,5 @@ This family contains reusable templates for engineering, governance, operations,
 - [Incident Communications Review Record](knowledge-base/INCIDENT_COMMUNICATIONS_REVIEW_RECORD_TEMPLATE.md)
 - [Dependency Inventory Review Record](knowledge-base/DEPENDENCY_INVENTORY_REVIEW_RECORD_TEMPLATE.md)
 - [Access Termination Review Record](knowledge-base/ACCESS_TERMINATION_REVIEW_RECORD_TEMPLATE.md)
+- [Security Categorization Review Record](knowledge-base/SECURITY_CATEGORIZATION_REVIEW_RECORD_TEMPLATE.md)
+- [Data-Flow Inventory Review Record](knowledge-base/DATA_FLOW_INVENTORY_REVIEW_RECORD_TEMPLATE.md)
