@@ -10,3 +10,5 @@ Reusable, evidence-based guidance for customer promises, feedback, complaints, s
 - [Inclusive Service for Consumer Vulnerability](INCLUSIVE_SERVICE_FOR_CONSUMER_VULNERABILITY.md)
 - [Service Excellence Model](SERVICE_EXCELLENCE_MODEL.md)
 - [Service Excellence Maturity Assessment](SERVICE_EXCELLENCE_MATURITY_ASSESSMENT.md)
+- [Accessible Customer Communication](ACCESSIBLE_CUSTOMER_COMMUNICATION.md)
+- [Reasonable Service Policy Modifications](REASONABLE_SERVICE_POLICY_MODIFICATIONS.md)

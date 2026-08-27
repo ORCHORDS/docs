@@ -10,3 +10,5 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Break-Even Analysis](BREAK_EVEN_ANALYSIS.md)
 - [Funding Needs Preparation](FUNDING_NEEDS_PREPARATION.md)
 - [Strategic Business Location Selection](STRATEGIC_BUSINESS_LOCATION_SELECTION.md)
+- [Cash Flow Forecasting](CASH_FLOW_FORECASTING.md)
+- [Cost-Benefit Decision Analysis](COST_BENEFIT_DECISION_ANALYSIS.md)

@@ -10,3 +10,5 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Implementing Collaborative Relationship Management](IMPLEMENTING_COLLABORATIVE_RELATIONSHIP_MANAGEMENT.md)
 - [Collaborative Working for MSMEs](COLLABORATIVE_WORKING_FOR_MSMES.md)
 - [MSME Collaborative Capability](MSME_COLLABORATIVE_CAPABILITY.md)
+- [Partner Incident Notification and Coordination](PARTNER_INCIDENT_NOTIFICATION_COORDINATION.md)
+- [Partner Data-Sharing Governance](PARTNER_DATA_SHARING_GOVERNANCE.md)
