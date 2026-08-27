@@ -7,3 +7,5 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Collaborative Relationship Management](COLLABORATIVE_RELATIONSHIP_MANAGEMENT.md)
 - [Partnership Lifecycle and Exit Planning](PARTNERSHIP_LIFECYCLE_EXIT_PLANNING.md)
 - [Leadership for Collaborative Working](LEADERSHIP_FOR_COLLABORATIVE_WORKING.md)
+- [Implementing Collaborative Relationship Management](IMPLEMENTING_COLLABORATIVE_RELATIONSHIP_MANAGEMENT.md)
+- [Collaborative Working for MSMEs](COLLABORATIVE_WORKING_FOR_MSMES.md)
