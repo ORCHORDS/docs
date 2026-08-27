@@ -28,3 +28,7 @@ This family contains repeatable procedures for development, deployment, incident
 - [Security and Privacy Training Program Review](SECURITY_PRIVACY_TRAINING_PROGRAM_REVIEW.md)
 - [Data Breach Response](DATA_BREACH_RESPONSE.md)
 - [Vendor Remote-Access Review](VENDOR_REMOTE_ACCESS_REVIEW.md)
+- [Asset Inventory Review](ASSET_INVENTORY_REVIEW.md)
+- [Security Metrics Review](SECURITY_METRICS_REVIEW.md)
+- [Privacy Risk Assessment](PRIVACY_RISK_ASSESSMENT.md)
+- [Third-Party Offboarding](THIRD_PARTY_OFFBOARDING.md)

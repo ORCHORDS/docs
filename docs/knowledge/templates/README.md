@@ -28,3 +28,7 @@ This family contains reusable templates for engineering, governance, operations,
 - [Security and Privacy Training Record](knowledge-base/SECURITY_PRIVACY_TRAINING_RECORD_TEMPLATE.md)
 - [Data Breach Response Record](knowledge-base/DATA_BREACH_RESPONSE_RECORD_TEMPLATE.md)
 - [Vendor Remote-Access Review](knowledge-base/VENDOR_REMOTE_ACCESS_REVIEW_TEMPLATE.md)
+- [Asset Inventory Review Record](knowledge-base/ASSET_INVENTORY_REVIEW_RECORD_TEMPLATE.md)
+- [Security Metrics Review Record](knowledge-base/SECURITY_METRICS_REVIEW_RECORD_TEMPLATE.md)
+- [Privacy Risk Assessment Record](knowledge-base/PRIVACY_RISK_ASSESSMENT_RECORD_TEMPLATE.md)
+- [Third-Party Offboarding Record](knowledge-base/THIRD_PARTY_OFFBOARDING_RECORD_TEMPLATE.md)
