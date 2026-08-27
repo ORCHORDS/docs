@@ -36,3 +36,5 @@ This family contains repeatable procedures for development, deployment, incident
 - [Incident Communications Review](INCIDENT_COMMUNICATIONS_REVIEW.md)
 - [Dependency Inventory Review](DEPENDENCY_INVENTORY_REVIEW.md)
 - [Access Termination Review](ACCESS_TERMINATION_REVIEW.md)
+- [Security Categorization Review](SECURITY_CATEGORIZATION_REVIEW.md)
+- [Data-Flow Inventory Review](DATA_FLOW_INVENTORY_REVIEW.md)
