@@ -32,3 +32,7 @@ This family contains reusable templates for engineering, governance, operations,
 - [Security Metrics Review Record](knowledge-base/SECURITY_METRICS_REVIEW_RECORD_TEMPLATE.md)
 - [Privacy Risk Assessment Record](knowledge-base/PRIVACY_RISK_ASSESSMENT_RECORD_TEMPLATE.md)
 - [Third-Party Offboarding Record](knowledge-base/THIRD_PARTY_OFFBOARDING_RECORD_TEMPLATE.md)
+- [Configuration Baseline Review Record](knowledge-base/CONFIGURATION_BASELINE_REVIEW_RECORD_TEMPLATE.md)
+- [Incident Communications Review Record](knowledge-base/INCIDENT_COMMUNICATIONS_REVIEW_RECORD_TEMPLATE.md)
+- [Dependency Inventory Review Record](knowledge-base/DEPENDENCY_INVENTORY_REVIEW_RECORD_TEMPLATE.md)
+- [Access Termination Review Record](knowledge-base/ACCESS_TERMINATION_REVIEW_RECORD_TEMPLATE.md)
