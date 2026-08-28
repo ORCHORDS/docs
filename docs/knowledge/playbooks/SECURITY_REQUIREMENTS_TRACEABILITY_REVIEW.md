@@ -1,5 +1,11 @@
 # Security Requirements Traceability Review
 
-Trace security and privacy requirements from source to design, implementation, test evidence, deployment, and ongoing ownership. Flag requirements without verifiable coverage.
+## Procedure
+1. Collect applicable security/privacy requirements.
+2. Map each to design, implementation, and verification evidence.
+3. Identify requirements with no owner or implementation.
+4. Resolve stale mappings after system changes.
+5. Track gaps and approved exceptions.
 
-Sources: NIST SP 800-53 Rev. 5 SA family; SP 800-53A Rev. 5.
+## Source basis
+- NIST SP 800-53 Rev. 5 — PL and SA families.
