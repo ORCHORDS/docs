@@ -20,3 +20,4 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Exit Customer Continuity](PARTNER_EXIT_CUSTOMER_CONTINUITY.md)
 - [Partner Performance Review](PARTNER_PERFORMANCE_REVIEW.md)
 - [Partner Change Notification Governance](PARTNER_CHANGE_NOTIFICATION_GOVERNANCE.md)
+- [Collaborative Relationship Management Principles](COLLABORATIVE_RELATIONSHIP_MANAGEMENT_PRINCIPLES.md)

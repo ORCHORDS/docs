@@ -20,3 +20,4 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Buy vs Lease Equipment Analysis](BUY_VS_LEASE_EQUIPMENT_ANALYSIS.md)
 - [Disaster Financial Preparedness](DISASTER_FINANCIAL_PREPAREDNESS.md)
 - [Business Exit Readiness](BUSINESS_EXIT_READINESS.md)
+- [Business Insurance Risk Planning](BUSINESS_INSURANCE_RISK_PLANNING.md)
