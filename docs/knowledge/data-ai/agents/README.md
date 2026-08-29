@@ -18,7 +18,11 @@ Reusable project-neutral guidance for agentic systems.
 
 - [A2A Agent Card Discovery and Trust](A2A_AGENT_CARD_DISCOVERY_TRUST.md)
 - [A2A Version Negotiation and Protocol Bindings](A2A_VERSION_NEGOTIATION_BINDINGS.md)
+- [A2A Extension Negotiation](A2A_EXTENSION_NEGOTIATION.md)
 - [MCP Tool Boundaries](MCP_TOOL_BOUNDARIES.md)
 - [MCP 2026 Client Metadata and Authorization Hardening](MCP_2026_CLIENT_METADATA_AUTHORIZATION.md)
+- [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)
+- [MCP Stateless Header Routing](MCP_STATELESS_HEADER_ROUTING.md)
+- [MCP Cacheable List Results](MCP_CACHEABLE_LIST_RESULTS.md)
 
 Articles in this folder distinguish reusable design principles from protocol- or provider-specific behavior. Current protocol claims should be checked against the cited primary source before implementation.
