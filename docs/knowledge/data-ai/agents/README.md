@@ -44,5 +44,8 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Subscription Streams for Change Notifications](MCP_SUBSCRIPTION_STREAMS.md)
 - [MCP Tool Schemas with JSON Schema 2020-12](MCP_TOOL_JSON_SCHEMA_2020_12.md)
 - [MCP Per-Request Logging Controls](MCP_PER_REQUEST_LOGGING.md)
+- [MCP Protected Resource Metadata Discovery](MCP_PROTECTED_RESOURCE_METADATA_DISCOVERY.md)
+- [MCP OAuth Resource Indicators](MCP_OAUTH_RESOURCE_INDICATORS.md)
+- [MCP Self-Reported Client Information Trust Boundary](MCP_SELF_REPORTED_CLIENT_INFO_BOUNDARY.md)
 
 Articles in this folder distinguish reusable design principles from protocol- or provider-specific behavior. Current protocol claims should be checked against the cited primary source before implementation.
