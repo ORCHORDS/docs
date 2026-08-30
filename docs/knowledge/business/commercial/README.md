@@ -21,3 +21,5 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Marketplace Suspicious Conduct Reporting](MARKETPLACE_SUSPICIOUS_CONDUCT_REPORTING.md)
 - [Telemarketing Payment Restriction Review](TELEMARKETING_PAYMENT_RESTRICTION_REVIEW.md)
 - [Telemarketing Call Recordkeeping](TELEMARKETING_CALL_RECORDKEEPING.md)
+- [Funeral Price List Governance](FUNERAL_PRICE_LIST_GOVERNANCE.md)
+- [Franchise Disclosure Document Governance](FRANCHISE_DISCLOSURE_DOCUMENT_GOVERNANCE.md)

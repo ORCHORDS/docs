@@ -21,3 +21,4 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Performance Review](PARTNER_PERFORMANCE_REVIEW.md)
 - [Partner Change Notification Governance](PARTNER_CHANGE_NOTIFICATION_GOVERNANCE.md)
 - [Collaborative Relationship Management Principles](COLLABORATIVE_RELATIONSHIP_MANAGEMENT_PRINCIPLES.md)
+- [Ecosystem Collaboration Governance](ECOSYSTEM_COLLABORATION_GOVERNANCE.md)

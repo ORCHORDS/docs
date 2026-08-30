@@ -21,3 +21,7 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Disaster Financial Preparedness](DISASTER_FINANCIAL_PREPAREDNESS.md)
 - [Business Exit Readiness](BUSINESS_EXIT_READINESS.md)
 - [Business Insurance Risk Planning](BUSINESS_INSURANCE_RISK_PLANNING.md)
+- [Expand to New Business Locations](EXPAND_TO_NEW_BUSINESS_LOCATIONS.md)
+- [Buying an Existing Business or Franchise](BUYING_EXISTING_BUSINESS_OR_FRANCHISE.md)
+- [Federal Contracting Market Entry](FEDERAL_CONTRACTING_MARKET_ENTRY.md)
+- [Export Market Entry Planning](EXPORT_MARKET_ENTRY_PLANNING.md)
