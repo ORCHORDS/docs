@@ -47,5 +47,8 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Protected Resource Metadata Discovery](MCP_PROTECTED_RESOURCE_METADATA_DISCOVERY.md)
 - [MCP OAuth Resource Indicators](MCP_OAUTH_RESOURCE_INDICATORS.md)
 - [MCP Self-Reported Client Information Trust Boundary](MCP_SELF_REPORTED_CLIENT_INFO_BOUNDARY.md)
+- [MCP Enterprise-Managed Authorization](MCP_ENTERPRISE_MANAGED_AUTHORIZATION.md)
+- [MCP Tasks Extension Lifecycle](MCP_TASKS_EXTENSION_LIFECYCLE.md)
+- [MCP Extensions Framework](MCP_EXTENSIONS_FRAMEWORK.md)
 
 Articles in this folder distinguish reusable design principles from protocol- or provider-specific behavior. Current protocol claims should be checked against the cited primary source before implementation.
