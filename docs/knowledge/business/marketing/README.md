@@ -21,3 +21,8 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Warranty Advertising Disclosures](WARRANTY_ADVERTISING_DISCLOSURES.md)
 - [Comparative Advertising Substantiation](COMPARATIVE_ADVERTISING_SUBSTANTIATION.md)
 - [Digital Disclosure Proximity and Prominence](DIGITAL_DISCLOSURE_PROXIMITY_PROMINENCE.md)
+- [Carbon Offset Marketing Claims](CARBON_OFFSET_MARKETING_CLAIMS.md)
+- [Environmental Certification and Seal Claims](ENVIRONMENTAL_CERTIFICATION_SEAL_CLAIMS.md)
+- [Compostable and Degradable Marketing Claims](COMPOSTABLE_DEGRADABLE_MARKETING_CLAIMS.md)
+- [Recyclable and Recycled-Content Claims](RECYCLABLE_RECYCLED_CONTENT_CLAIMS.md)
+- [Renewable Energy and Renewable Materials Claims](RENEWABLE_ENERGY_MATERIALS_CLAIMS.md)
