@@ -33,6 +33,9 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Task History Length Semantics](A2A_TASK_HISTORY_LENGTH_SEMANTICS.md)
 - [A2A Artifact Streaming and Chunk Assembly](A2A_ARTIFACT_STREAMING_CHUNK_ASSEMBLY.md)
 - [A2A Messages and Artifacts Separation](A2A_MESSAGES_ARTIFACTS_SEPARATION.md)
+- [A2A Skill Security Requirements](A2A_SKILL_SECURITY_REQUIREMENTS.md)
+- [A2A Message Role Semantics](A2A_MESSAGE_ROLE_SEMANTICS.md)
+- [A2A Context and Task Identifier Semantics](A2A_CONTEXT_TASK_IDENTIFIER_SEMANTICS.md)
 - [MCP Tool Boundaries](MCP_TOOL_BOUNDARIES.md)
 - [MCP 2026 Client Metadata and Authorization Hardening](MCP_2026_CLIENT_METADATA_AUTHORIZATION.md)
 - [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)
@@ -50,5 +53,7 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Enterprise-Managed Authorization](MCP_ENTERPRISE_MANAGED_AUTHORIZATION.md)
 - [MCP Tasks Extension Lifecycle](MCP_TASKS_EXTENSION_LIFECYCLE.md)
 - [MCP Extensions Framework](MCP_EXTENSIONS_FRAMEWORK.md)
+- [MCP Apps Sandboxed UI Security](MCP_APPS_SANDBOXED_UI_SECURITY.md)
+- [MCP Issuer-Bound Client Credentials](MCP_ISSUER_BOUND_CLIENT_CREDENTIALS.md)
 
 Articles in this folder distinguish reusable design principles from protocol- or provider-specific behavior. Current protocol claims should be checked against the cited primary source before implementation.
