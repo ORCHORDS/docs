@@ -21,3 +21,4 @@ This family contains reusable security engineering and assurance guidance. It co
 - [Trusted Referee Identity-Proofing Exceptions](TRUSTED_REFEREE_IDENTITY_PROOFING_EXCEPTIONS.md)
 - [Applicant Reference Identity-Proofing Governance](APPLICANT_REFERENCE_IDENTITY_PROOFING_GOVERNANCE.md)
 - [Federation Attribute-Bundle Lifecycle](FEDERATION_ATTRIBUTE_BUNDLE_LIFECYCLE.md)
+- [Identity-Proofing Fraud Management](IDENTITY_PROOFING_FRAUD_MANAGEMENT.md)
