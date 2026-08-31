@@ -13,6 +13,7 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Incident Notification and Coordination](PARTNER_INCIDENT_NOTIFICATION_COORDINATION.md)
 - [Partner Data-Sharing Governance](PARTNER_DATA_SHARING_GOVERNANCE.md)
 - [Partner Due Diligence Scope](PARTNER_DUE_DILIGENCE_SCOPE.md)
+- [Supplier Due Diligence Evidence Record](SUPPLIER_DUE_DILIGENCE_EVIDENCE_RECORD.md)
 - [Partner Roles and Responsibilities Charter](PARTNER_ROLES_RESPONSIBILITIES_CHARTER.md)
 - [Partner Data Minimization](PARTNER_DATA_MINIMIZATION.md)
 - [Partner Customer Complaint Handoff](PARTNER_CUSTOMER_COMPLAINT_HANDOFF.md)
