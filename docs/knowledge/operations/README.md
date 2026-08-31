@@ -11,3 +11,7 @@ next-review: "2026-11-24"
 # Operations Documentation
 
 This family contains reusable operational guidance for infrastructure, deployment, monitoring, observability, incident response, resilience, release management, continuous integration and delivery, runners, and troubleshooting.
+
+## Selected current guidance
+
+- [GitHub Artifact Attestation Verification](GITHUB_ARTIFACT_ATTESTATION_VERIFICATION.md)
