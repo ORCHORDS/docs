@@ -29,3 +29,4 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [County Business Patterns for Competitive Density](COUNTY_BUSINESS_PATTERNS_COMPETITIVE_DENSITY.md)
 - [NAICS Industry Classification for Planning](NAICS_INDUSTRY_CLASSIFICATION_PLANNING.md)
 - [SBA Size-Standard Qualification Planning](SBA_SIZE_STANDARD_QUALIFICATION_PLANNING.md)
+- [Business Valuation Approaches](BUSINESS_VALUATION_APPROACHES.md)
