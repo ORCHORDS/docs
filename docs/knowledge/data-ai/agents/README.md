@@ -22,6 +22,8 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Execution Mode Control](A2A_EXECUTION_MODE_CONTROL.md)
 - [A2A Standardized Error Handling](A2A_STANDARDIZED_ERROR_HANDLING.md)
 - [A2A Cursor Pagination for Task Listings](A2A_CURSOR_PAGINATION.md)
+- [A2A ListTasks Filtering and Visibility](A2A_LIST_TASKS_FILTERING_VISIBILITY.md)
+- [A2A Direct Message and Task Response Semantics](A2A_DIRECT_MESSAGE_TASK_RESPONSE_SEMANTICS.md)
 - [A2A Multi-Tenancy and Routing](A2A_MULTI_TENANCY_ROUTING.md)
 - [A2A OAuth, PKCE, and Device Authorization](A2A_OAUTH_PKCE_DEVICE_AUTHORIZATION.md)
 - [A2A Push Notification Webhook Security](A2A_PUSH_NOTIFICATION_WEBHOOK_SECURITY.md)
