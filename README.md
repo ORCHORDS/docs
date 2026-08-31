@@ -11,6 +11,8 @@
 [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22109314.svg)](https://doi.org/10.5281/zenodo.22109314)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
+> ⭐ If you like this documentation or find it useful, please consider starring this repository. It helps more people discover the project.
+
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
