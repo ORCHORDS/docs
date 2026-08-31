@@ -24,3 +24,8 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Funeral Price List Governance](FUNERAL_PRICE_LIST_GOVERNANCE.md)
 - [Franchise Disclosure Document Governance](FRANCHISE_DISCLOSURE_DOCUMENT_GOVERNANCE.md)
 - [Consumer Lease Advertising Disclosures](CONSUMER_LEASE_ADVERTISING_DISCLOSURES.md)
+- [EXIM Export-Credit Insurance Readiness](EXIM_EXPORT_CREDIT_INSURANCE_READINESS.md)
+- [Letter-of-Credit Export Payment Readiness](LETTER_OF_CREDIT_EXPORT_PAYMENT_READINESS.md)
+- [Documentary-Collection Export Payment Readiness](DOCUMENTARY_COLLECTION_EXPORT_PAYMENT_READINESS.md)
+- [Open-Account Export Payment Risk](OPEN_ACCOUNT_EXPORT_PAYMENT_RISK.md)
+- [Cash-in-Advance Export Payment Readiness](CASH_IN_ADVANCE_EXPORT_PAYMENT_READINESS.md)
