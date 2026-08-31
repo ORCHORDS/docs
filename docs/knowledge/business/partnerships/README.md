@@ -22,3 +22,4 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Change Notification Governance](PARTNER_CHANGE_NOTIFICATION_GOVERNANCE.md)
 - [Collaborative Relationship Management Principles](COLLABORATIVE_RELATIONSHIP_MANAGEMENT_PRINCIPLES.md)
 - [Ecosystem Collaboration Governance](ECOSYSTEM_COLLABORATION_GOVERNANCE.md)
+- [Competitor Collaboration Antitrust Boundary](COMPETITOR_COLLABORATION_ANTITRUST_BOUNDARY.md)
