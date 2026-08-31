@@ -29,3 +29,8 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Documentary-Collection Export Payment Readiness](DOCUMENTARY_COLLECTION_EXPORT_PAYMENT_READINESS.md)
 - [Open-Account Export Payment Risk](OPEN_ACCOUNT_EXPORT_PAYMENT_RISK.md)
 - [Cash-in-Advance Export Payment Readiness](CASH_IN_ADVANCE_EXPORT_PAYMENT_READINESS.md)
+- [Export Factoring Readiness](EXPORT_FACTORING_READINESS.md)
+- [Export Forfaiting Readiness](EXPORT_FORFAITING_READINESS.md)
+- [Export Consignment Risk Governance](EXPORT_CONSIGNMENT_RISK_GOVERNANCE.md)
+- [Standby Letter of Credit for Open-Account Risk Mitigation](STANDBY_LETTER_OF_CREDIT_OPEN_ACCOUNT_MITIGATION.md)
+- [Export Foreign-Exchange Risk Management](EXPORT_FOREIGN_EXCHANGE_RISK_MANAGEMENT.md)
