@@ -11,3 +11,7 @@ next-review: "2026-11-24"
 # Platform Documentation
 
 This family contains provider and platform guidance that is useful across projects, including cloud platforms, source-control hosting, payments, email delivery, DNS, content delivery, storage, and hosting. Vendor-specific facts SHOULD be verified against current primary documentation before publication.
+
+## Selected current guidance
+
+- [Cloudflare Workers Logging Mode Selection](CLOUDFLARE_WORKERS_LOGGING_MODE_SELECTION.md)
