@@ -12,6 +12,7 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [MSME Collaborative Capability](MSME_COLLABORATIVE_CAPABILITY.md)
 - [Large-Organization Collaboration with MSMEs](LARGE_ORGANIZATION_MSME_COLLABORATION.md)
 - [University-Business Collaboration Governance](UNIVERSITY_BUSINESS_COLLABORATION_GOVERNANCE.md)
+- [SDG Collaboration Draft Readiness](SDG_COLLABORATION_DRAFT_READINESS.md)
 - [Collaborative Value Creation Governance](COLLABORATIVE_VALUE_CREATION_GOVERNANCE.md)
 - [Collaborative Knowledge Governance](COLLABORATIVE_KNOWLEDGE_GOVERNANCE.md)
 - [Partner Incident Notification and Coordination](PARTNER_INCIDENT_NOTIFICATION_COORDINATION.md)
