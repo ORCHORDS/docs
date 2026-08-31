@@ -17,3 +17,4 @@ This family contains reusable security engineering and assurance guidance. It co
 - [Coordinating System Security, Privacy, and C-SCRM Plans](SYSTEM_PLAN_SECURITY_PRIVACY_C_SCRM_COORDINATION.md)
 - [Syncable Authenticator Governance](SYNCABLE_AUTHENTICATOR_GOVERNANCE.md)
 - [Subscriber-Controlled Wallet Federation](SUBSCRIBER_CONTROLLED_WALLET_FEDERATION.md)
+- [Remote Identity Proofing: Digital Injection and Forged-Media Defenses](REMOTE_IDENTITY_PROOFING_FORGED_MEDIA_DEFENSES.md)
