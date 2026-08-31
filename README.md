@@ -30,7 +30,7 @@ small independent studio documents security and governance expectations.
 | --- | --- |
 | Security posture and reporting | [Security Policy](docs/policies/security/SECURITY_POLICY.md) |
 | Engineering expectations | [Engineering Standards](docs/policies/engineering/ENGINEERING_STANDARDS.md) |
-| How decisions and policies are structured | [Governance](docs/policies/governance/GOVERNANCE.md) · [Policy Hierarchy](docs/policies/governance/POLERNANCE.md) |
+| How decisions and policies are structured | [Governance](docs/policies/governance/GOVERNANCE.md) · [Policy Hierarchy](docs/policies/governance/POLICY_HIERARCHY.md) |
 | Customer/due-diligence material | [Customer Trust](docs/policies/customer-trust/README.md) — assurance package, shared-responsibility guidance |
 | Which standards and versions are referenced | [Standards Register](docs/policies/standards/REFERENCES.md) |
 | How documents are controlled and reviewed | [Document Control](docs/policies/governance/DOCUMENT_CONTROL.md) |
