@@ -24,6 +24,8 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Commercial Email CAN-SPAM Governance](COMMERCIAL_EMAIL_CAN_SPAM_GOVERNANCE.md)
 - [EnergyGuide Advertising Disclosures](ENERGYGUIDE_ADVERTISING_DISCLOSURES.md)
 - [Home Insulation R-Value Advertising Disclosures](HOME_INSULATION_R_VALUE_ADVERTISING_DISCLOSURES.md)
+- [Jewelry and Gemstone Marketing Claims](JEWELRY_GEMSTONE_MARKETING_CLAIMS.md)
+- [Textile Fiber Advertising Disclosures](TEXTILE_FIBER_ADVERTISING_DISCLOSURES.md)
 - [Carbon Offset Marketing Claims](CARBON_OFFSET_MARKETING_CLAIMS.md)
 - [Environmental Certification and Seal Claims](ENVIRONMENTAL_CERTIFICATION_SEAL_CLAIMS.md)
 - [Compostable and Degradable Marketing Claims](COMPOSTABLE_DEGRADABLE_MARKETING_CLAIMS.md)
