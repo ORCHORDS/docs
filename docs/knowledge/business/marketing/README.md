@@ -27,6 +27,7 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Jewelry and Gemstone Marketing Claims](JEWELRY_GEMSTONE_MARKETING_CLAIMS.md)
 - [Textile Fiber Advertising Disclosures](TEXTILE_FIBER_ADVERTISING_DISCLOSURES.md)
 - [Fur Product Advertising Disclosures](FUR_PRODUCT_ADVERTISING_DISCLOSURES.md)
+- [Leather and Imitation-Leather Marketing Claims](LEATHER_IMITATION_LEATHER_MARKETING_CLAIMS.md)
 - [Carbon Offset Marketing Claims](CARBON_OFFSET_MARKETING_CLAIMS.md)
 - [Environmental Certification and Seal Claims](ENVIRONMENTAL_CERTIFICATION_SEAL_CLAIMS.md)
 - [Compostable and Degradable Marketing Claims](COMPOSTABLE_DEGRADABLE_MARKETING_CLAIMS.md)
