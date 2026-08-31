@@ -24,6 +24,7 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Cursor Pagination for Task Listings](A2A_CURSOR_PAGINATION.md)
 - [A2A ListTasks Filtering and Visibility](A2A_LIST_TASKS_FILTERING_VISIBILITY.md)
 - [A2A Direct Message and Task Response Semantics](A2A_DIRECT_MESSAGE_TASK_RESPONSE_SEMANTICS.md)
+- [A2A Service Parameter Transport Boundary](A2A_SERVICE_PARAMETER_TRANSPORT_BOUNDARY.md)
 - [A2A Multi-Tenancy and Routing](A2A_MULTI_TENANCY_ROUTING.md)
 - [A2A OAuth, PKCE, and Device Authorization](A2A_OAUTH_PKCE_DEVICE_AUTHORIZATION.md)
 - [A2A AUTH_REQUIRED State Handling](A2A_AUTH_REQUIRED_STATE_HANDLING.md)
