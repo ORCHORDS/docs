@@ -18,7 +18,7 @@
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
-9,970 Markdown files covering governance, security, privacy, engineering,
+9,976 Markdown files covering governance, security, privacy, engineering,
 compliance, standards, reusable technical knowledge, and related policy areas.
 It is useful for customers and partners conducting due diligence, engineers and
 researchers comparing public policy practices, and anyone evaluating how a
@@ -30,7 +30,7 @@ small independent studio documents security and governance expectations.
 | --- | --- |
 | Security posture and reporting | [Security Policy](docs/policies/security/SECURITY_POLICY.md) |
 | Engineering expectations | [Engineering Standards](docs/policies/engineering/ENGINEERING_STANDARDS.md) |
-| How decisions and policies are structured | [Governance](docs/policies/governance/GOVERNANCE.md) · [Policy Hierarchy](docs/policies/governance/POLICY_HIERARCHY.md) |
+| How decisions and policies are structured | [Governance](docs/policies/governance/GOVERNANCE.md) · [Policy Hierarchy](docs/policies/governance/POLERNANCE.md) |
 | Customer/due-diligence material | [Customer Trust](docs/policies/customer-trust/README.md) — assurance package, shared-responsibility guidance |
 | Which standards and versions are referenced | [Standards Register](docs/policies/standards/REFERENCES.md) |
 | How documents are controlled and reviewed | [Document Control](docs/policies/governance/DOCUMENT_CONTROL.md) |
