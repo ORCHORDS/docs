@@ -25,6 +25,7 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Buying an Existing Business or Franchise](BUYING_EXISTING_BUSINESS_OR_FRANCHISE.md)
 - [Federal Contracting Market Entry](FEDERAL_CONTRACTING_MARKET_ENTRY.md)
 - [Export Market Entry Planning](EXPORT_MARKET_ENTRY_PLANNING.md)
+- [Export Finance Readiness](EXPORT_FINANCE_READINESS.md)
 - [Census Business Builder for Market Planning](CENSUS_BUSINESS_BUILDER_MARKET_PLANNING.md)
 - [County Business Patterns for Competitive Density](COUNTY_BUSINESS_PATTERNS_COMPETITIVE_DENSITY.md)
 - [NAICS Industry Classification for Planning](NAICS_INDUSTRY_CLASSIFICATION_PLANNING.md)
