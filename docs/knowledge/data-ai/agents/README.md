@@ -50,6 +50,7 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Tool Boundaries](MCP_TOOL_BOUNDARIES.md)
 - [MCP 2026 Client Metadata and Authorization Hardening](MCP_2026_CLIENT_METADATA_AUTHORIZATION.md)
 - [MCP Step-Up Authorization](MCP_STEP_UP_AUTHORIZATION.md)
+- [MCP URL-Mode Elicitation Security](MCP_URL_MODE_ELICITATION_SECURITY.md)
 - [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)
 - [MCP Stateless Header Routing](MCP_STATELESS_HEADER_ROUTING.md)
 - [MCP Cacheable List Results](MCP_CACHEABLE_LIST_RESULTS.md)
