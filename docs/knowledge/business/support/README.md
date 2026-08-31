@@ -15,6 +15,7 @@ Reusable, evidence-based guidance for support operations, contact-centre service
 - [Secure Remote Support Access](SECURE_REMOTE_SUPPORT_ACCESS.md)
 - [Support Identity Verification](SUPPORT_IDENTITY_VERIFICATION.md)
 - [Support-Assisted Account Recovery](SUPPORT_ASSISTED_ACCOUNT_RECOVERY.md)
+- [Support Remote-Proofing Forged-Media Escalation](SUPPORT_REMOTE_PROOFING_FORGED_MEDIA_ESCALATION.md)
 - [Support Payment Request Safeguards](SUPPORT_PAYMENT_REQUEST_SAFEGUARDS.md)
 - [Support Remote-Control Consent](SUPPORT_REMOTE_CONTROL_CONSENT.md)
 - [Support Scam Reporting Intake](SUPPORT_SCAM_REPORTING_INTAKE.md)
