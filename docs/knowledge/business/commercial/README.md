@@ -25,6 +25,7 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Franchise Disclosure Document Governance](FRANCHISE_DISCLOSURE_DOCUMENT_GOVERNANCE.md)
 - [Consumer Lease Advertising Disclosures](CONSUMER_LEASE_ADVERTISING_DISCLOSURES.md)
 - [Used Car Buyers Guide Governance](USED_CAR_BUYERS_GUIDE_GOVERNANCE.md)
+- [Automotive Fuel Rating Governance](AUTOMOTIVE_FUEL_RATING_GOVERNANCE.md)
 - [Eyeglass Prescription Release Governance](EYEGLASS_PRESCRIPTION_RELEASE_GOVERNANCE.md)
 - [Contact Lens Prescription Verification Governance](CONTACT_LENS_PRESCRIPTION_VERIFICATION_GOVERNANCE.md)
 - [EXIM Export-Credit Insurance Readiness](EXIM_EXPORT_CREDIT_INSURANCE_READINESS.md)
