@@ -31,3 +31,4 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [SBA Size-Standard Qualification Planning](SBA_SIZE_STANDARD_QUALIFICATION_PLANNING.md)
 - [Business Valuation Approaches](BUSINESS_VALUATION_APPROACHES.md)
 - [Ownership Transfer Options](OWNERSHIP_TRANSFER_OPTIONS.md)
+- [Asset Liquidation Planning](ASSET_LIQUIDATION_PLANNING.md)

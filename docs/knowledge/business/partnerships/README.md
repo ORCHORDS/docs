@@ -24,3 +24,4 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Ecosystem Collaboration Governance](ECOSYSTEM_COLLABORATION_GOVERNANCE.md)
 - [Competitor Collaboration Antitrust Boundary](COMPETITOR_COLLABORATION_ANTITRUST_BOUNDARY.md)
 - [Collaborative Intellectual Property Ownership and Licensing](COLLABORATIVE_IP_OWNERSHIP_LICENSING.md)
+- [Collaboration Agreement Scope Selection](COLLABORATION_AGREEMENT_SCOPE_SELECTION.md)
