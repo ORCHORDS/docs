@@ -29,6 +29,7 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Eyeglass Prescription Release Governance](EYEGLASS_PRESCRIPTION_RELEASE_GOVERNANCE.md)
 - [Contact Lens Prescription Verification Governance](CONTACT_LENS_PRESCRIPTION_VERIFICATION_GOVERNANCE.md)
 - [Clothing Care Label Governance](CLOTHING_CARE_LABEL_GOVERNANCE.md)
+- [Fur Product Labeling Governance](FUR_PRODUCT_LABELING_GOVERNANCE.md)
 - [EXIM Export-Credit Insurance Readiness](EXIM_EXPORT_CREDIT_INSURANCE_READINESS.md)
 - [Letter-of-Credit Export Payment Readiness](LETTER_OF_CREDIT_EXPORT_PAYMENT_READINESS.md)
 - [Documentary-Collection Export Payment Readiness](DOCUMENTARY_COLLECTION_EXPORT_PAYMENT_READINESS.md)
