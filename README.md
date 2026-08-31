@@ -13,6 +13,8 @@
 
 > ⭐ If you like this documentation or find it useful, please consider starring this repository. It helps more people discover the project.
 
+> **Interested in sponsoring ORCHORDS?** Sponsorships start at **US$1,000**. Depending on the sponsorship level, sponsors may receive public recognition, logo and website placement, sponsor updates and early previews, roadmap-feedback briefings, priority issue triage, and engineering or integration discussions. Sponsorship does not buy control of the roadmap or guarantee feature implementation. Contact **[crm@orchords.com](mailto:crm@orchords.com)**.
+
 **Independent software studio founded in 2025.**
 
 This repository publishes ORCHORDS company-wide documentation — currently
