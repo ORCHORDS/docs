@@ -16,6 +16,7 @@ Reusable, evidence-based guidance for support operations, contact-centre service
 - [Support Identity Verification](SUPPORT_IDENTITY_VERIFICATION.md)
 - [Support-Assisted Account Recovery](SUPPORT_ASSISTED_ACCOUNT_RECOVERY.md)
 - [Authenticator Event Support Governance](AUTHENTICATOR_EVENT_SUPPORT_GOVERNANCE.md)
+- [Subscriber Notification Address Governance](SUBSCRIBER_NOTIFICATION_ADDRESS_GOVERNANCE.md)
 - [Support Remote-Proofing Forged-Media Escalation](SUPPORT_REMOTE_PROOFING_FORGED_MEDIA_ESCALATION.md)
 - [Identity Proofing Exception Handling](IDENTITY_PROOFING_EXCEPTION_HANDLING.md)
 - [Support Payment Request Safeguards](SUPPORT_PAYMENT_REQUEST_SAFEGUARDS.md)
