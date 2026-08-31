@@ -27,6 +27,7 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [SBA Express Revolving-Credit Readiness](SBA_EXPRESS_REVOLVING_CREDIT_READINESS.md)
 - [SBA 504 Fixed-Asset Financing Readiness](SBA_504_FIXED_ASSET_FINANCING_READINESS.md)
 - [Funding Source Comparison](FUNDING_SOURCE_COMPARISON.md)
+- [SBIC Investment Readiness](SBIC_INVESTMENT_READINESS.md)
 - [SBA 7(a) and 504 Cumulative Financing Coordination](SBA_7A_504_CUMULATIVE_FINANCING_COORDINATION.md)
 - [Business Credit Readiness](BUSINESS_CREDIT_READINESS.md)
 - [Buy vs Lease Equipment Analysis](BUY_VS_LEASE_EQUIPMENT_ANALYSIS.md)
