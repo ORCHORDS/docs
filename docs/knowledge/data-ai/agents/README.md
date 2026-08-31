@@ -49,6 +49,7 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Task Subscription Lifecycle](A2A_TASK_SUBSCRIPTION_LIFECYCLE.md)
 - [MCP Tool Boundaries](MCP_TOOL_BOUNDARIES.md)
 - [MCP 2026 Client Metadata and Authorization Hardening](MCP_2026_CLIENT_METADATA_AUTHORIZATION.md)
+- [MCP Step-Up Authorization](MCP_STEP_UP_AUTHORIZATION.md)
 - [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)
 - [MCP Stateless Header Routing](MCP_STATELESS_HEADER_ROUTING.md)
 - [MCP Cacheable List Results](MCP_CACHEABLE_LIST_RESULTS.md)
