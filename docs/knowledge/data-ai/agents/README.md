@@ -25,6 +25,7 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Multi-Tenancy and Routing](A2A_MULTI_TENANCY_ROUTING.md)
 - [A2A OAuth, PKCE, and Device Authorization](A2A_OAUTH_PKCE_DEVICE_AUTHORIZATION.md)
 - [A2A Push Notification Webhook Security](A2A_PUSH_NOTIFICATION_WEBHOOK_SECURITY.md)
+- [A2A Push Notification Configuration Lifecycle](A2A_PUSH_NOTIFICATION_CONFIG_LIFECYCLE.md)
 - [A2A Authorization Before Resource Lookup](A2A_AUTHORIZATION_BEFORE_RESOURCE_LOOKUP.md)
 - [A2A Agent Card Signature Verification](A2A_AGENT_CARD_SIGNATURE_VERIFICATION.md)
 - [A2A Authenticated Extended Agent Cards](A2A_AUTHENTICATED_EXTENDED_AGENT_CARDS.md)

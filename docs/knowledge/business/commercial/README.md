@@ -23,3 +23,4 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Telemarketing Call Recordkeeping](TELEMARKETING_CALL_RECORDKEEPING.md)
 - [Funeral Price List Governance](FUNERAL_PRICE_LIST_GOVERNANCE.md)
 - [Franchise Disclosure Document Governance](FRANCHISE_DISCLOSURE_DOCUMENT_GOVERNANCE.md)
+- [Consumer Lease Advertising Disclosures](CONSUMER_LEASE_ADVERTISING_DISCLOSURES.md)
