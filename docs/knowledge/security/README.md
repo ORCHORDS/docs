@@ -20,3 +20,4 @@ This family contains reusable security engineering and assurance guidance. It co
 - [Remote Identity Proofing: Digital Injection and Forged-Media Defenses](REMOTE_IDENTITY_PROOFING_FORGED_MEDIA_DEFENSES.md)
 - [Trusted Referee Identity-Proofing Exceptions](TRUSTED_REFEREE_IDENTITY_PROOFING_EXCEPTIONS.md)
 - [Applicant Reference Identity-Proofing Governance](APPLICANT_REFERENCE_IDENTITY_PROOFING_GOVERNANCE.md)
+- [Federation Attribute-Bundle Lifecycle](FEDERATION_ATTRIBUTE_BUNDLE_LIFECYCLE.md)
