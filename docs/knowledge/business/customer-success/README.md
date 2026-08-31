@@ -5,6 +5,7 @@ Reusable, evidence-based guidance for customer promises, feedback, complaints, s
 ## Articles
 
 - [Customer Complaint Handling](CUSTOMER_COMPLAINT_HANDLING.md)
+- [Authorized Representative Complaint Handling](AUTHORIZED_REPRESENTATIVE_COMPLAINT_HANDLING.md)
 - [Customer Satisfaction Monitoring](CUSTOMER_SATISFACTION_MONITORING.md)
 - [Customer Promise Codes of Conduct](CUSTOMER_PROMISE_CODES_OF_CONDUCT.md)
 - [Inclusive Service for Consumer Vulnerability](INCLUSIVE_SERVICE_FOR_CONSUMER_VULNERABILITY.md)
