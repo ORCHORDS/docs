@@ -18,3 +18,4 @@ This family contains reusable security engineering and assurance guidance. It co
 - [Syncable Authenticator Governance](SYNCABLE_AUTHENTICATOR_GOVERNANCE.md)
 - [Subscriber-Controlled Wallet Federation](SUBSCRIBER_CONTROLLED_WALLET_FEDERATION.md)
 - [Remote Identity Proofing: Digital Injection and Forged-Media Defenses](REMOTE_IDENTITY_PROOFING_FORGED_MEDIA_DEFENSES.md)
+- [Trusted Referee Identity-Proofing Exceptions](TRUSTED_REFEREE_IDENTITY_PROOFING_EXCEPTIONS.md)
