@@ -22,6 +22,8 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Comparative Advertising Substantiation](COMPARATIVE_ADVERTISING_SUBSTANTIATION.md)
 - [Digital Disclosure Proximity and Prominence](DIGITAL_DISCLOSURE_PROXIMITY_PROMINENCE.md)
 - [Commercial Email CAN-SPAM Governance](COMMERCIAL_EMAIL_CAN_SPAM_GOVERNANCE.md)
+- [EnergyGuide Advertising Disclosures](ENERGYGUIDE_ADVERTISING_DISCLOSURES.md)
+- [Home Insulation R-Value Advertising Disclosures](HOME_INSULATION_R_VALUE_ADVERTISING_DISCLOSURES.md)
 - [Carbon Offset Marketing Claims](CARBON_OFFSET_MARKETING_CLAIMS.md)
 - [Environmental Certification and Seal Claims](ENVIRONMENTAL_CERTIFICATION_SEAL_CLAIMS.md)
 - [Compostable and Degradable Marketing Claims](COMPOSTABLE_DEGRADABLE_MARKETING_CLAIMS.md)
