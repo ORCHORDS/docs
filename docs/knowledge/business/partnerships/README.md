@@ -11,6 +11,7 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Collaborative Working for MSMEs](COLLABORATIVE_WORKING_FOR_MSMES.md)
 - [MSME Collaborative Capability](MSME_COLLABORATIVE_CAPABILITY.md)
 - [Collaborative Value Creation Governance](COLLABORATIVE_VALUE_CREATION_GOVERNANCE.md)
+- [Collaborative Knowledge Governance](COLLABORATIVE_KNOWLEDGE_GOVERNANCE.md)
 - [Partner Incident Notification and Coordination](PARTNER_INCIDENT_NOTIFICATION_COORDINATION.md)
 - [Partner Data-Sharing Governance](PARTNER_DATA_SHARING_GOVERNANCE.md)
 - [Partner Due Diligence Scope](PARTNER_DUE_DILIGENCE_SCOPE.md)
