@@ -33,3 +33,4 @@ Reusable, evidence-based guidance for support operations, contact-centre service
 - [Contact Centre Standard Revision Readiness](CONTACT_CENTRE_STANDARD_REVISION_READINESS.md)
 - [Client Contact Centre Revision Readiness](CLIENT_CONTACT_CENTRE_REVISION_READINESS.md)
 - [Service Excellence Measurement Revision Readiness](SERVICE_EXCELLENCE_MEASUREMENT_REVISION_READINESS.md)
+- [Knowledge-Centered Success Operating Model](KNOWLEDGE_CENTERED_SERVICE_OPERATING_MODEL.md)

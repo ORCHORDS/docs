@@ -54,6 +54,8 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Step-Up Authorization](MCP_STEP_UP_AUTHORIZATION.md)
 - [MCP URL-Mode Elicitation Security](MCP_URL_MODE_ELICITATION_SECURITY.md)
 - [MCP Form Enum Elicitation Governance](MCP_FORM_ENUM_ELICITATION_GOVERNANCE.md)
+- [MCP Tool Annotation Hints and Trust Boundaries](MCP_TOOL_ANNOTATION_HINTS_TRUST.md)
+- [MCP Completion Argument Autocomplete Governance](MCP_COMPLETION_ARGUMENT_AUTOCOMPLETE_GOVERNANCE.md)
 - [MCP Sampling with Tools](MCP_SAMPLING_WITH_TOOLS.md)
 - [MCP SSE Polling and Disconnect Semantics](MCP_SSE_POLLING_DISCONNECT.md)
 - [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)

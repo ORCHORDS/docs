@@ -19,3 +19,4 @@ This family contains internal documentation conventions and guidance mapped to e
 - [SLSA Verified Properties](SLSA_VERIFIED_PROPERTIES.md)
 - [OWASP ASVS 5 Version Governance](OWASP_ASVS_5_VERSION_GOVERNANCE.md)
 - [OWASP Top 10:2025 Version Governance](OWASP_TOP_10_2025_VERSION_GOVERNANCE.md)
+- [WebAuthn Level 3 Version Governance](WEBAUTHN_LEVEL_3_VERSION_GOVERNANCE.md)

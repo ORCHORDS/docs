@@ -41,3 +41,4 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Standby Letter of Credit for Open-Account Risk Mitigation](STANDBY_LETTER_OF_CREDIT_OPEN_ACCOUNT_MITIGATION.md)
 - [Export Foreign-Exchange Risk Management](EXPORT_FOREIGN_EXCHANGE_RISK_MANAGEMENT.md)
 - [Wool Product Labeling Governance](WOOL_PRODUCT_LABELING_GOVERNANCE.md)
+- [Electronic Fund Transfer Error-Resolution Governance](EFT_ERROR_RESOLUTION_GOVERNANCE.md)
