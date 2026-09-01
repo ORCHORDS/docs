@@ -14,6 +14,9 @@ This family contains internal documentation conventions and guidance mapped to e
 
 ## Selected current guidance
 
+- [EU Product Liability Directive Software and AI Evidence](compliance/eu-product-liability-directive-software-ai-evidence.md)
+- [EU Consumer Credit Directive Digital Journey Controls](compliance/eu-consumer-credit-directive-digital-journey-controls.md)
+- [European Media Freedom Act Platform and Media Controls](compliance/eu-media-freedom-act-platform-media-controls.md)
 - [W3C Recommendation-Track Transition Governance](W3C_RECOMMENDATION_TRACK_TRANSITION_GOVERNANCE.md)
 - [IETF Internet-Draft to RFC Transition Governance](IETF_INTERNET_DRAFT_TO_RFC_TRANSITION_GOVERNANCE.md)
 - [SLSA Provenance Consumer Verification](SLSA_PROVENANCE_CONSUMER_VERIFICATION.md)
