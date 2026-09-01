@@ -16,3 +16,4 @@ This family contains provider and platform guidance that is useful across projec
 
 - [Cloudflare Workers Logging Mode Selection](CLOUDFLARE_WORKERS_LOGGING_MODE_SELECTION.md)
 - [Cloudflare Tail Workers Observability](CLOUDFLARE_TAIL_WORKERS_OBSERVABILITY.md)
+- [Cloudflare Worker Placement Governance](CLOUDFLARE_WORKER_PLACEMENT_GOVERNANCE.md)
