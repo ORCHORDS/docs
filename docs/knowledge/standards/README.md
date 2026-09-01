@@ -14,6 +14,9 @@ This family contains internal documentation conventions and guidance mapped to e
 
 ## Selected current guidance
 
+- [IANA Registry Policy Governance with RFC 8126](IANA_REGISTRY_POLICY_RFC_8126_GOVERNANCE.md)
+- [Normative Keyword Governance with RFC 8174](NORMATIVE_KEYWORDS_RFC_8174_GOVERNANCE.md)
+- [IETF Implementation Status Governance with RFC 7942](IETF_IMPLEMENTATION_STATUS_RFC_7942_GOVERNANCE.md)
 - [EU Gigabit Infrastructure Act Permit and Data Governance](compliance/eu-gigabit-infrastructure-act-permit-data-governance.md)
 - [OSCAL Artifact Version Governance](compliance/oscal-artifact-version-governance.md)
 - [EU Packaging Regulation Data, Reuse, and Evidence Governance](compliance/eu-ppwr-packaging-data-reuse-evidence.md)
