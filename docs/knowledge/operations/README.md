@@ -23,3 +23,16 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [GitHub Dependency Review and Submission Ordering](GITHUB_DEPENDENCY_REVIEW_SUBMISSION_ORDERING.md)
 - [GitHub Actions Cache Trust Boundaries](GITHUB_ACTIONS_CACHE_TRUST_BOUNDARIES.md)
 - [BGP Roles and RFC 9234 Route-Leak Prevention](infra/bgp-roles-rfc-9234-route-leak-prevention.md)
+
+## 2026-09-01 standards and implementation guidance
+
+- [Admission Controller Chain Design](infra/kubernetes-admission-controller-chain-design.md)
+- [API Data Encryption and Key Rotation](infra/kubernetes-api-data-encryption-key-rotation.md)
+- [API Priority and Fairness Tuning](infra/kubernetes-api-priority-and-fairness-tuning.md)
+- [Audit Policy and Evidence Pipeline](infra/kubernetes-audit-policy-evidence-pipeline.md)
+- [PodDisruptionBudget Availability Governance](infra/kubernetes-pod-disruption-budget-availability.md)
+- [Pod Security Admission Rollout](infra/kubernetes-pod-security-admission-rollout.md)
+- [Pod Security Standards Profile Governance](infra/kubernetes-pod-security-standards-profile-governance.md)
+- [RBAC Least-Privilege Review](infra/kubernetes-rbac-least-privilege-review.md)
+- [ResourceQuota and LimitRange Governance](infra/kubernetes-resourcequota-limitrange-governance.md)
+- [ValidatingAdmissionPolicy Governance](infra/kubernetes-validating-admission-policy-governance.md)
