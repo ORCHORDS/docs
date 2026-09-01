@@ -19,3 +19,4 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [GitHub Reusable Workflow OIDC Trust](GITHUB_REUSABLE_WORKFLOW_OIDC_TRUST.md)
 - [GitHub Reusable Workflow Secret Boundaries](GITHUB_REUSABLE_WORKFLOW_SECRET_BOUNDARIES.md)
 - [GitHub Dependency Review and Submission Ordering](GITHUB_DEPENDENCY_REVIEW_SUBMISSION_ORDERING.md)
+- [GitHub Actions Cache Trust Boundaries](GITHUB_ACTIONS_CACHE_TRUST_BOUNDARIES.md)
