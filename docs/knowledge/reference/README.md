@@ -14,6 +14,10 @@ This family contains shared glossaries, checklists, command references, configur
 
 ## Selected current guidance
 
+- [AsyncAPI 3.1 Version Governance](ASYNCAPI_3_1_VERSION_GOVERNANCE.md)
+- [JSON Schema Draft 2020-12 Version Governance](JSON_SCHEMA_2020_12_VERSION_GOVERNANCE.md)
+- [GraphQL September 2025 Version Governance](GRAPHQL_SEPTEMBER_2025_VERSION_GOVERNANCE.md)
+- [CBOR RFC 8949 Version Governance](CBOR_RFC_8949_VERSION_GOVERNANCE.md)
 - [SPDX 3.0.1 BOM Version Governance](SPDX_3_0_1_BOM_VERSION_GOVERNANCE.md)
 - [CycloneDX 1.7 BOM Version Governance](CYCLONEDX_1_7_BOM_VERSION_GOVERNANCE.md)
 - [OpenAPI 3.2 Version Governance](OPENAPI_3_2_VERSION_GOVERNANCE.md)
