@@ -88,3 +88,20 @@ Reusable, evidence-based guidance for support operations, contact-centre service
 - [Support Ticket Sentiment Triage Minimum Data](SUPPORT_TICKET_SENTIMENT_TRIAGE_MINIMUM_DATA.md)
 - [Support Ticket Tag Normalization Taxonomy Governance](SUPPORT_TICKET_TAG_NORMALIZATION_TAXONOMY_GOVERNANCE.md)
 - [Support Voicemail Callback Sla Review](SUPPORT_VOICEMAIL_CALLBACK_SLA_REVIEW.md)
+
+## Added 2026-09-02 batch 7
+
+- [Support Ticket Deflection Quality Measurement](SUPPORT_TICKET_DEFLECTION_QUALITY.md)
+- [Support Macro Response Governance](SUPPORT_MACRO_RESPONSE_GOVERNANCE.md)
+- [Support Ticket to Article Mining](SUPPORT_TICKET_TO_ARTICLE_MINING.md)
+- [Support First Contact Resolution Definition Integrity](SUPPORT_FIRST_CONTACT_RESOLUTION_DEFINITION.md)
+- [Support SLA Credit Calculation Evidence](SUPPORT_SLA_CREDIT_CALCULATION_EVIDENCE.md)
+- [Support Escalation Tier Boundary Criteria](SUPPORT_ESCALATION_TIER_BOUNDARY_CRITERIA.md)
+- [Support Priority Queue Fairness](SUPPORT_PRIORITY_QUEUE_FAIRNESS.md)
+- [Support Interval Staffing Forecast](SUPPORT_INTERVAL_STAFFING_FORECAST.md)
+- [Support Channel Cost Attribution](SUPPORT_CHANNEL_COST_ATTRIBUTION.md)
+- [Support Cancellation Save-Offer Compliance](SUPPORT_CANCELLATION_SAVE_OFFER_COMPLIANCE.md)
+- [Support Channel Accessibility](SUPPORT_CHANNEL_ACCESSIBILITY_WCAG.md)
+- [Support Translated Knowledge Base Parity](SUPPORT_TRANSLATED_KB_PARITY_CONTROL.md)
+- [Support Abandoned Chat Callback Consent](SUPPORT_ABANDONED_CHAT_CALLBACK_CONSENT.md)
+- [Support Incident Customer Timeline Accuracy](SUPPORT_INCIDENT_CUSTOMER_TIMELINE_ACCURACY.md)

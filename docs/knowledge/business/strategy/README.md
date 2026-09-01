@@ -90,3 +90,20 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Strategic Portfolio Bcg Growth Share Matrix Register](STRATEGIC_PORTFOLIO_BCG_GROWTH_SHARE_MATRIX_REGISTER.md)
 - [Strategic Venture Fit Howard Stevenson Heuristics](STRATEGIC_VENTURE_FIT_HOWARD_STEVENSON_HEURISTICS.md)
 - [Strategic Venture Gravity Definition Vint Brown](STRATEGIC_VENTURE_GRAVITY_DEFINITION_VINT_BROWN.md)
+
+## Added 2026-09-02 batch 7
+
+- [Strategy Scenario Planning Discipline](STRATEGY_SCENARIO_PLANNING_DISCIPLINE.md)
+- [Strategy Real Options Staged Investment](STRATEGY_REAL_OPTIONS_STAGED_INVESTMENT.md)
+- [Strategy Environmental Scan Cadence](STRATEGY_ENVIRONMENTAL_SCAN_CADENCE.md)
+- [Strategy Resource Reallocation Triggers](STRATEGY_RESOURCE_REALLOCATION_TRIGGERS.md)
+- [Strategy Core Capability Identification Test](STRATEGY_CORE_CAPABILITY_IDENTIFICATION_TEST.md)
+- [Strategy Value Proposition Assumption Evidence](STRATEGY_VALUE_PROPOSITION_ASSUMPTION_EVIDENCE.md)
+- [Strategy Culture Due Diligence Review](STRATEGY_CULTURE_DUE_DILIGENCE_REVIEW.md)
+- [Strategy Divestiture Readiness Criteria](STRATEGY_DIVESTITURE_READINESS_CRITERIA.md)
+- [Strategy Pricing Power Indicators](STRATEGY_PRICING_POWER_INDICATORS.md)
+- [Strategy Regulatory Horizon Scanning](STRATEGY_REGULATORY_HORIZON_SCANNING.md)
+- [Strategy Platform versus Product Decision](STRATEGY_PLATFORM_VERSUS_PRODUCT_DECISION.md)
+- [Strategy Build Partner Buy Decision](STRATEGY_BUILD_PARTNER_BUY_DECISION.md)
+- [Strategy Employee Value Proposition Evidence](STRATEGY_EMPLOYEE_VALUE_PROPOSITION_EVIDENCE.md)
+- [Strategy Integrated Reporting Capitals Linkage](STRATEGY_INTEGRATED_REPORTING_CAPITALS.md)

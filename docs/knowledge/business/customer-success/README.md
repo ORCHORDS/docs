@@ -83,3 +83,20 @@ Reusable, evidence-based guidance for customer promises, feedback, complaints, s
 - [Customer Success Stakeholder Influence Map Refresh](CUSTOMER_SUCCESS_STAKEHOLDER_INFLUENCE_MAP_REFRESH.md)
 - [Customer Success Value Achievement Evidence Archive](CUSTOMER_SUCCESS_VALUE_ACHIEVEMENT_EVIDENCE_ARCHIVE.md)
 - [Customer Success Value Realization Lead Lag Indicators](CUSTOMER_SUCCESS_VALUE_REALIZATION_LEAD_LAG_INDICATORS.md)
+
+## Added 2026-09-02 batch 7
+
+- [Customer Success Onboarding to Renewal Handoff](CUSTOMER_SUCCESS_ONBOARDING_RENEWAL_HANDOFF.md)
+- [Customer Success Telemetry Source Authority](CUSTOMER_SUCCESS_TELEMETRY_SOURCE_AUTHORITY.md)
+- [Customer Success Churn-Model Feature Governance](CUSTOMER_SUCCESS_CHURN_MODEL_FEATURE_GOVERNANCE.md)
+- [Customer Success Information Bank CRM Deduplication](CUSTOMER_SUCCESS_INFORMATION_BANK_CRM_DEDUPLICATION.md)
+- [Customer Success Renewal SMART Goal Discipline](CUSTOMER_SUCCESS_RENEWAL_SMART_GOAL_DISCIPLINE.md)
+- [Customer Success Survey Question Bank Governance](CUSTOMER_SUCCESS_SURVEY_QUESTION_BANK_GOVERNANCE.md)
+- [Voice-of-Customer Archive Search and Privacy](CUSTOMER_SUCCESS_VOC_ARCHIVE_SEARCH_PRIVACY.md)
+- [Customer Success Joined-Up Data Entity Model](CUSTOMER_SUCCESS_JOINED_UP_DATA_ENTITY_MODEL.md)
+- [Customer Success Improvement Loop Routing](CUSTOMER_SUCCESS_IMPROVEMENT_LOOP_ROUTING.md)
+- [Customer Success Health Score Weighting Review](CUSTOMER_SUCCESS_HEALTH_SCORE_WEIGHTING_REVIEW.md)
+- [Customer Success Executive Sponsor Escalation Rules](CUSTOMER_SUCCESS_EXECUTIVE_SPONSOR_ESCALATION_RULES.md)
+- [Customer Success Renewal Price Change Notice](CUSTOMER_SUCCESS_RENEWAL_PRICE_CHANGE_NOTICE.md)
+- [Customer Success Training Outcome Linkage](CUSTOMER_SUCCESS_TRAINING_OUTCOME_LINKAGE.md)
+- [Customer Success Cross-Tenant Baseline Comparison](CUSTOMER_SUCCESS_CROSS_TENANT_BASELINE_COMPARISON.md)

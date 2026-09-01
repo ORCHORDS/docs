@@ -83,3 +83,20 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Store Credit Expiry Communication](COMMERCIAL_STORE_CREDIT_EXPIRY_COMMUNICATION.md)
 - [Subscription Proration and Refund Basis](COMMERCIAL_SUBSCRIPTION_PRORATION_REFUND_BASIS.md)
 - [Tip and Prompt Screen Disclosure](COMMERCIAL_TIP_PROMPT_SCREEN_DISCLOSURE.md)
+
+## Added 2026-09-02 batch 7
+
+- [Commercial Secure Development Lifecycle Contracting](COMMERCIAL_SECURE_DEVELOPMENT_LIFECYCLE_CONTRACTS.md)
+- [Commercial SSDF Requirements Traceability](COMMERCIAL_SSDF_REQUIREMENTS_TRACEABILITY.md)
+- [CMMI Maturity Level Interpretation](CMMI_MATURITY_LEVEL_INTERPRETATION.md)
+- [CMMI Appraisal Evidence File](CMMI_APPRAISAL_EVIDENCE_FILE.md)
+- [Commercial Bid Configuration Management](COMMERCIAL_BID_CONFIGURATION_MANAGEMENT.md)
+- [Commercial Support Configuration Context](COMMERCIAL_SUPPORT_CONFIGURATION_CONTEXT.md)
+- [Commercial Clean-Vehicle Mileage Traceability](COMMERCIAL_CLEAN_VEHICLE_MILEAGE_TRACEABILITY.md)
+- [Commercial Clean-Vehicle Mileage Evidence](COMMERCIAL_CLEAN_VEHICLE_MILEAGE_EVIDENCE.md)
+- [Commercial Environmental Manager Delegation](COMMERCIAL_ENVIRONMENTAL_MANAGER_DELEGATION.md)
+- [Commercial Environmental Contractor Conditions](COMMERCIAL_ENVIRONMENTAL_CONTRACTOR_CONDITIONS.md)
+- [Commercial Environmental Contract Schedules](COMMERCIAL_ENVIRONMENTAL_CONTRACT_SCHEDULES.md)
+- [Commercial Contract Term Clarity Review](COMMERCIAL_CONTRACT_TERM_CLARITY_REVIEW.md)
+- [Commercial Contract Support Boundaries](COMMERCIAL_CONTRACT_SUPPORT_BOUNDARIES.md)
+- [Commercial Acceptance Verification Matrix](COMMERCIAL_ACCEPTANCE_VERIFICATION_MATRIX.md)

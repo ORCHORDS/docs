@@ -86,3 +86,21 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Revenue Recognition Split Review](PARTNER_REVENUE_RECOGNIZATION_SPLIT_REVIEW.md)
 - [Partner Tier Privilege Review Cadence](PARTNER_TIER_PRIVILEGE_REVIEW_CADENCE.md)
 - [Partner Training Certificate Reciprocity](PARTNER_TRAINING_CERTIFICATE_RECIPROCITY.md)
+
+## Added 2026-09-02 batch 7
+
+- [Partner Escrow Agreement Security Terms](PARTNER_ESCROW_AGREEMENT_SECURITY_TERMS.md)
+- [Partner Escrow Agreement Release Conditions Evidence](PARTNER_ESCROW_RELEASE_CONDITIONS_EVIDENCE.md)
+- [Partner NDA Residuals Clause Assessment](PARTNER_NDA_RESIDUALS_CLAUSE_ASSESSMENT.md)
+- [Partner Confidential Marking and Return Rules](PARTNER_CONFIDENTIAL_MARKING_AND_RETURN_RULES.md)
+- [Partner Inbound License Screening](PARTNER_INBOUND_LICENSE_SCREENING.md)
+- [Partner Outbound License Restriction Check](PARTNER_OUTBOUND_LICENSE_RESTRICTION_ASSESSMENT.md)
+- [Partner Consortium IP Framework Terms](PARTNER_CONSORTIUM_IP_FRAMEWORK_TERMS.md)
+- [Partner Standard-Essential Patent Disclosure Governance](PARTNER_SEP_DISCLOSURE_GOVERNANCE.md)
+- [Partner FRAND Commitment Scope Assessment](PARTNER_FRAND_COMMITMENT_SCOPE_ASSESSMENT.md)
+- [Partner Joint-Defense Common-Interest Discipline](PARTNER_JOINT_DEFENSE_COMMON_INTEREST.md)
+- [Partner Technology Transfer Export Control](PARTNER_TECHNOLOGY_TRANSFER_EXPORT_CONTROL.md)
+- [Partner Open-Source Diffusion Decision](PARTNER_OPEN_SOURCE_DIFFUSION_DECISION.md)
+- [Partner Licensee Cure-Window Analysis](PARTNER_LICENSEE_CURE_WINDOW_ANALYSIS.md)
+- [Partner License Dispute Forum Selection](PARTNER_LICENSE_DISPUTE_FORUM_SELECTION.md)
+- [Partner Freedom-to-Operate Clearance](PARTNER_FTO_GEOGRAPHIC_CLEARANCE.md)

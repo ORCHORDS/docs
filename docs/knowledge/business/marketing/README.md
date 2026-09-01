@@ -87,3 +87,20 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Search Keyword Brand Bidding Governance](MARKETING_SEARCH_KEYWORD_BRAND_BIDDING_GOVERNANCE.md)
 - [Social Contest Random Draw Auditability](MARKETING_SOCIAL_CONTEST_RANDOM_DRAW_AUDITABILITY.md)
 - [Voice Search Schema Governance](MARKETING_VOICE_SEARCH_SCHEMA_GOVERNANCE.md)
+
+## Added 2026-09-02 batch 7
+
+- [Marketing Campaign Event Schema Governance](MARKETING_CAMPAIGN_EVENT_SCHEMA_GOVERNANCE.md)
+- [Marketing Email List Hygiene and Bounce Classification](MARKETING_EMAIL_LIST_HYGIENE_BOUNCE.md)
+- [Marketing One-Time Offer Clock Enforcement](MARKETING_ONE_TIME_OFFER_CLOCK_ENFORCEMENT.md)
+- [Marketing Disclosure Placement Design](MARKETING_DISCLOSURE_PLACEMENT_DESIGN.md)
+- [Marketing Reference Price Evidence](MARKETING_REFERENCE_PRICE_EVIDENCE.md)
+- [Marketing Negative Option Renewal Consent](MARKETING_NEGATIVE_OPTION_RENEWAL_CONSENT.md)
+- [Marketing Testimonial Typicality Evidence](MARKETING_TESTIMONIAL_TYPICALITY_EVIDENCE.md)
+- [Marketing Green Claim Substantiation](MARKETING_GREEN_CLAIM_SUBSTANTIATION.md)
+- [Marketing Origin Claim Evidence](MARKETING_ORIGIN_CLAIM_EVIDENCE.md)
+- [Marketing Localized Price Display](MARKETING_LOCALIZED_PRICE_DISPLAY.md)
+- [Marketing Search Placement Disclosure](MARKETING_SEARCH_PLACEMENT_DISCLOSURE.md)
+- [Marketing Influencer Gift Disclosure Threshold](MARKETING_INFLUENCER_GIFT_DISCLOSURE_THRESHOLD.md)
+- [Marketing Campaign Asset Rights Manifest](MARKETING_CAMPAIGN_ASSET_RIGHTS_MANIFEST.md)
+- [Marketing Sweepstake Practice Boundary](MARKETING_SWEEPSTAKE_PRACTICE_BOUNDARY.md)

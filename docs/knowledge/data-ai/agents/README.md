@@ -125,3 +125,21 @@ Articles in this folder distinguish reusable design principles from protocol- or
 - [System Prompt Integrity at Rest Using Web Cryptography Primitives](AGENT_SYSTEM_PROMPT_INTEGRITY_AT_REST.md)
 - [Tool Call Audit Log Correlation Identifiers Using OpenTelemetry GenAI Conventions](AGENT_TOOL_CALL_AUDIT_LOG_CORRELATION_ID.md)
 - [Tool Registry Schema Evolution Under JSON Schema 2020-12](AGENT_TOOL_REGISTRY_SCHEMA_EVOLUTION.md)
+
+## Added 2026-09-02 batch 7
+
+- [Agent MCP Tool Result Filtering](AGENT_MCP_TOOL_RESULT_FILTERING.md)
+- [Agent MCP Elicitation Consent Boundary](AGENT_MCP_ELICITATION_CONSENT_BOUNDARY.md)
+- [Agent MCP Sampling Approval Gate](AGENT_MCP_SAMPLING_APPROVAL_GATE.md)
+- [Agent MCP Roots Capability Enforcement](AGENT_MCP_ROOTS_ENFORCEMENT.md)
+- [Agent A2A Card JWKS Rotation](AGENT_A2A_CARD_JWKS_ROTATION.md)
+- [Agent A2A Task ID Unguessability](AGENT_A2A_TASK_ID_UNGUESSABILITY.md)
+- [Agent DPoP Token Binding](AGENT_DPOP_TOKEN_BINDING.md)
+- [Agent LLM-as-Judge Calibration](AGENT_LLM_AS_JUDGE_CALIBRATION.md)
+- [Agent Trajectory Scoring Rubrics](AGENT_TRAJECTORY_SCORING_RUBRICS.md)
+- [Agent Canary Task Regression Suite](AGENT_CANARY_TASK_REGRESSION_SUITE.md)
+- [Agent Memory Poisoning Detection](AGENT_MEMORY_POISONING_DETECTION.md)
+- [Agent Tool Denial Safe Degradation](AGENT_TOOL_DENIAL_SAFE_DEGRADATION.md)
+- [Agent Structured Output Schema Enforcement](AGENT_STRUCTURED_OUTPUT_SCHEMA_ENFORCEMENT.md)
+- [Agent Trace PII Minimization](AGENT_TRACE_PII_MINIMIZATION.md)
+- [Agent Identity Propagation Across Hops](AGENT_ID_PROPAGATION_ACROSS_HOPS.md)
