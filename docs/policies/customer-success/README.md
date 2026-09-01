@@ -3,9 +3,9 @@ title: "Customer Success Governance"
 owner: "Customer Success Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Customer Success Governance
@@ -48,5 +48,22 @@ Company-wide governance for onboarding, adoption, customer health, outcomes, suc
 - [Customer Advocacy and Reference Governance](CUSTOMER_ADVOCACY_REFERENCE.md)
 - [Customer Offboarding and Transition](CUSTOMER_OFFBOARDING_TRANSITION.md)
 - [Customer Offboarding Verification](CUSTOMER_OFFBOARDING_VERIFICATION.md)
+## Batch 10 additions (Customer Success)
+
+- [Adoption Segmentation Bias](ADOPTION_SEGMENTATION_BIAS.md)
+- [Adoption Signal Validation](ADOPTION_SIGNAL_VALIDATION.md)
+- [Business Case Evidence Trace](BUSINESS_CASE_EVIDENCE_TRACE.md)
+- [Churn Early Warning Composite](CHURN_EARLY_WARNING_COMPOSITE.md)
+- [Customer Cohort Analysis](CUSTOMER_COHORT_ANALYSIS.md)
+- [Customer Community of Practice](CUSTOMER_COMMUNITY_OF_PRACTICE.md)
+- [Customer Data Tenant Isolation](CUSTOMER_DATA_TENANT_ISOLATION.md)
+- [Customer Outcome Regression](CUSTOMER_OUTCOME_REGRESSION.md)
+- [Customer Sponsor Change](CUSTOMER_SPONSOR_CHANGE.md)
+- [Expansion Readiness Governance](EXPANSION_READINESS_GOVERNANCE.md)
+- [Feedback Loop Into Product](FEEDBACK_LOOP_INTO_PRODUCT.md)
+- [QBR Agenda Governance](QBR_AGENDA_GOVERNANCE.md)
+- [Renewal Pipeline Integrity](RENEWAL_PIPELINE_INTEGRITY.md)
+- [Success Plan Baseline Drift](SUCCESS_PLAN_BASELINE_DRIFT.md)
+- [Technical Health Scorecard](TECHNICAL_HEALTH_SCORECARD.md)
 
 Success measures should reflect genuine customer outcomes rather than activity volume alone.

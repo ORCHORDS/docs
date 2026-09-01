@@ -3,9 +3,9 @@ title: "Commercial Governance"
 owner: "Commercial Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Commercial Governance
@@ -48,5 +48,22 @@ Company-wide rules for qualification, proposals, customer commitments, pilots, p
 - [Commercial Risk Register](COMMERCIAL_RISK_REGISTER.md)
 - [Commercial Obligation Tracking](COMMERCIAL_OBLIGATION_TRACKING.md)
 - [Commercial Handover](COMMERCIAL_HANDOVER.md)
+## Batch 10 additions (Commercial)
+
+- [Contract Template Version Control](CONTRACT_TEMPLATE_VERSION_CONTROL.md)
+- [Customer Budget Cycle Awareness](CUSTOMER_BUDGET_CYCLE_AWARENESS.md)
+- [Customer Financial Health Check](CUSTOMER_FINANCIAL_HEALTH_CHECK.md)
+- [Deal Desk Evidence](DEAL_DESK_EVIDENCE.md)
+- [Deal Stage Definition](DEAL_STAGE_DEFINITION.md)
+- [Discount Approval Matrix](DISCOUNT_APPROVAL_MATRIX.md)
+- [Enterprise Renewal Pricing](ENTERPRISE_RENEWAL_PRICING.md)
+- [Industry Vertical Pricing](INDUSTRY_VERTICAL_PRICING.md)
+- [Loss-Reason Capture](LOSS_REASON_CAPTURE.md)
+- [MSA vs Order Form Hierarchy](MSA_VS_ORDER_FORM_HIERARCHY.md)
+- [Partner-of-Record Change](PARTNER_OF_RECORD_CHANGE.md)
+- [Pricebook Change Control](PRICEBOOK_CHANGE_CONTROL.md)
+- [Pricelist Escalation](PRICELIST_ESCALATION.md)
+- [Procurement Portal Submission](PROCUREMENT_PORTAL_SUBMISSION.md)
+- [Renewal Termination Trigger](RENEWAL_TERMINATION_TRIGGER.md)
 
 Commercial material must distinguish current capability from roadmap, aspiration, estimate, or dependency.

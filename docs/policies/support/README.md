@@ -3,9 +3,9 @@ title: "Customer Support Governance"
 owner: "Support Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Customer Support Governance
@@ -50,3 +50,18 @@ Company-wide rules for safe, consistent, reviewable customer support.
 - [Support Quality Assurance](SUPPORT_QUALITY_ASSURANCE.md)
 - [Complaint Handling](COMPLAINT_HANDLING.md)
 - [Complaint Action Aging](COMPLAINT_ACTION_AGING.md)
+## Batch 10 additions (Support)
+
+- [Agent-Assist Disclosure](AGENT_ASSIST_DISCLOSURE.md)
+- [Case Priority Override](CASE_PRIORITY_OVERRIDE.md)
+- [Chatbot Handoff Governance](CHATBOT_HANDOFF_GOVERNANCE.md)
+- [Customer Sentiment Trend](CUSTOMER_SENTIMENT_TREND.md)
+- [Incident Communication Timing](INCIDENT_COMMUNICATION_TIMING.md)
+- [Integration Ticket With Engineering](INTEGRATION_TICKET_WITH_ENGINEERING.md)
+- [Language Interpreter Governance](LANGUAGE_INTERPRETER_GOVERNANCE.md)
+- [Refund Authority Limits](REFUND_AUTHORITY_LIMITS.md)
+- [Remote Session Governance](REMOTE_SESSION_GOVERNANCE.md)
+- [Repeat Contact Pattern](REPEAT_CONTACT_PATTERN.md)
+- [Support Macro Libraries](SUPPORT_MACRO_LIBRARIES.md)
+- [Support Outage Cross-Team Coordination](SUPPORT_OUTAGE_CROSS_TEAM.md)
+- [Support Survey Design](SUPPORT_SURVEY_DESIGN.md)

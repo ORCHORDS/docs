@@ -3,9 +3,9 @@ title: "Marketing Governance"
 owner: "Marketing Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Marketing Governance
@@ -49,3 +49,19 @@ Company-wide governance for truthful, privacy-aware, accessible, measurable, and
 - [Marketing Incident Response](MARKETING_INCIDENT_RESPONSE.md)
 - [Marketing Exception Governance](MARKETING_EXCEPTION_GOVERNANCE.md)
 - [Campaign Exception Aging](CAMPAIGN_EXCEPTION_AGING.md)
+## Batch 10 additions (Marketing)
+
+- [Campaign Fatigue Detection](CAMPAIGN_FATIGUE_DETECTION.md)
+- [Campaign Privacy By Design](CAMPAIGN_PRIVACY_BY_DESIGN.md)
+- [Comparative Claim Substantiation](COMPARATIVE_CLAIM_SUBSTANTIATION.md)
+- [Competitive Intelligence Ethics](COMPETITIVE_INTELLIGENCE_ETHICS.md)
+- [Content Refresh Governance](CONTENT_REFRESH_GOVERNANCE.md)
+- [Copywriting Brand Voice](COPYWRITING_BRAND_VOICE.md)
+- [Customer Case Study Consent](CUSTOMER_CASE_STUDY_CONSENT.md)
+- [Data-Driven Personalization Limits](DATA_DRIVEN_PERSONALIZATION_LIMITS.md)
+- [Event Sponsorship Due Diligence](EVENT_SPONSORSHIP_DUE_DILIGENCE.md)
+- [Marketing Data Retention](MARKETING_DATA_RETENTION.md)
+- [Marketing Sustainability Claims](MARKETING_SUSTAINABILITY_CLAIMS.md)
+- [Partner Brand License Scope](PARTNER_BRAND_LICENSE_SCOPE.md)
+- [Press Release Approval](PRESS_RELEASE_APPROVAL.md)
+- [Website Accessibility Claims](WEBSITE_ACCESSIBILITY_CLAIMS.md)

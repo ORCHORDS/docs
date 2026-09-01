@@ -3,9 +3,9 @@ title: "Strategy Governance"
 owner: "Executive Leadership"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Strategy Governance
@@ -47,5 +47,23 @@ Company-wide governance for strategic principles, objectives, assumptions, scena
 - [Strategy Action Aging](STRATEGY_ACTION_AGING.md)
 - [Strategy Communication and Alignment](STRATEGY_COMMUNICATION_ALIGNMENT.md)
 - [Strategy Review Cadence](STRATEGY_REVIEW_CADENCE.md)
+## Batch 10 additions (Strategy)
+
+- [Competitive Position Review](COMPETITIVE_POSITION_REVIEW.md)
+- [Emerging Tech Due Diligence](EMERGING_TECH_DUE_DILIGENCE.md)
+- [Executive Narrative Cadence](EXEC_NARRATIVE_CADENCE.md)
+- [Geographic Expansion Governance](GEOGRAPHIC_EXPANSION_GOVERNANCE.md)
+- [Innovation Portfolio Balance](INNOVATION_PORTFOLIO_BALANCE.md)
+- [Market Segmentation Review](MARKET_SEGMENTATION_REVIEW.md)
+- [Partnership vs Build Analysis](PARTNERSHIP_VS_BUILD_ANALYSIS.md)
+- [Platform Roadmap Alignment](PLATFORM_ROADMAP_ALIGNMENT.md)
+- [Product Strategy Document](PRODUCT_STRATEGY_DOCUMENT.md)
+- [Regulatory Horizon Scanning](REGULATORY_HORIZON_SCANNING.md)
+- [Scenario Planning Disclosure](SCENARIO_PLANNING_DISCLOSURE.md)
+- [Strategic Anchor Metrics](STRATEGIC_ANCHOR_METRICS.md)
+- [Strategic Narrative Dissent](STRATEGIC_NARRATIVE_DISSENT.md)
+- [Strategic Vendor Dependency](STRATEGIC_VENDOR_DEPENDENCY.md)
+- [Technology Vendor Selection](TECHNOLOGY_VENDOR_SELECTION.md)
+- [Vision Statement Governance](VISION_STATEMENT_GOVERNANCE.md)
 
 Strategy should remain evidence-driven, explicit about uncertainty, and revisable when assumptions change.

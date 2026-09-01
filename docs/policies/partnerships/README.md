@@ -3,9 +3,9 @@ title: "Partnership Governance"
 owner: "Partnerships Lead"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-23"
+last-reviewed: "2026-09-02"
 review-cycle: "90 days"
-next-review: "2026-11-21"
+next-review: "2026-12-01"
 ---
 
 # Partnership Governance
@@ -48,3 +48,20 @@ Company-wide governance for strategic, reciprocal, ecosystem, referral, co-sell,
 - [Partner Exit Governance](PARTNER_EXIT_GOVERNANCE.md)
 - [Partner Exit Readiness Recertification](PARTNER_EXIT_READINESS_RECERTIFICATION.md)
 - [Partner Knowledge Transfer](PARTNER_KNOWLEDGE_TRANSFER.md)
+## Batch 10 additions (Partnerships)
+
+- [Partner Boundary Responsibility](PARTNER_BOUNDARY_RESPONSIBILITY.md)
+- [Partner Brand Co-Branding](PARTNER_BRAND_CO_BRANDING.md)
+- [Partner Compliance Recertification](PARTNER_COMPLIANCE_RECERTIFICATION.md)
+- [Partner Conflict of Interest](PARTNER_CONFLICT_OF_INTEREST.md)
+- [Partner Data Residency](PARTNER_DATA_RESIDENCY.md)
+- [Partner Earned Revenue Review](PARTNER_EARNED_REVENUE_REVIEW.md)
+- [Partner Go-To-Market Alignment](PARTNER_GO_TO_MARKET_ALIGNMENT.md)
+- [Partner Integration Retirement](PARTNER_INTEGRATION_RETIREMENT.md)
+- [Partner Insurance Review](PARTNER_INSURANCE_REVIEW.md)
+- [Partner Marketing Fund Claims](PARTNER_MARKETING_FUND_CLAIMS.md)
+- [Partner Pricing Alignment](PARTNER_PRICING_ALIGNMENT.md)
+- [Partner Subcontractor Disclosure](PARTNER_SUBCONTRACTOR_DISCLOSURE.md)
+- [Partner Training Currency](PARTNER_TRAINING_CURRENCY.md)
+- [Partner Vendor-of-Record Decision](PARTNER_VENDOR_OF_RECORD.md)
+- [Technical Partner API Governance](TECHNICAL_PARTNER_API_GOVERNANCE.md)
