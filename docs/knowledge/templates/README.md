@@ -88,3 +88,19 @@ This family contains reusable templates for engineering, governance, operations,
 - [Physical Access Review Record](knowledge-base/PHYSICAL_ACCESS_REVIEW_RECORD_TEMPLATE.md)
 - [Personnel Screening Review Record](knowledge-base/PERSONNEL_SCREENING_REVIEW_RECORD_TEMPLATE.md)
 - [Supply Chain Risk Plan Review Record](knowledge-base/SUPPLY_CHAIN_RISK_PLAN_REVIEW_RECORD_TEMPLATE.md)
+
+## 2026-09-01 cross-family standards and governance guidance
+
+- [Dublin Core Metadata Template Governance](DUBLIN_CORE_METADATA_TEMPLATE_GOVERNANCE.md)
+- [Ietf Rfc 7997 Unicode Template Governance](IETF_RFC_7997_UNICODE_TEMPLATE_GOVERNANCE.md)
+- [Iso 15289 Lifecycle Documentation Template Governance](ISO_15289_LIFECYCLE_DOCUMENTATION_TEMPLATE_GOVERNANCE.md)
+- [Iso 15489 Records Management Governance](ISO_15489_RECORDS_MANAGEMENT_GOVERNANCE.md)
+- [Iso 19005 Pdfa Archival Template Governance](ISO_19005_PDFA_ARCHIVAL_TEMPLATE_GOVERNANCE.md)
+- [Iso 30301 Records Management System Governance](ISO_30301_RECORDS_MANAGEMENT_SYSTEM_GOVERNANCE.md)
+- [Iso 9001 Documented Information Template Governance](ISO_9001_DOCUMENTED_INFORMATION_TEMPLATE_GOVERNANCE.md)
+- [Nist Sp 800 53 Documentation Controls Governance](NIST_SP_800_53_DOCUMENTATION_CONTROLS_GOVERNANCE.md)
+- [Oasis Cmis Template Governance](OASIS_CMIS_TEMPLATE_GOVERNANCE.md)
+- [Oasis Tosca Template Governance](OASIS_TOSCA_TEMPLATE_GOVERNANCE.md)
+- [Rfc 7991 Xml V3 Document Template Governance](RFC_7991_XML_V3_DOCUMENT_TEMPLATE_GOVERNANCE.md)
+- [W3C Prov Provenance Template Governance](W3C_PROV_PROVENANCE_TEMPLATE_GOVERNANCE.md)
+- [W3C Technical Report Template Governance](W3C_TECHNICAL_REPORT_TEMPLATE_GOVERNANCE.md)

@@ -36,3 +36,19 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [RBAC Least-Privilege Review](infra/kubernetes-rbac-least-privilege-review.md)
 - [ResourceQuota and LimitRange Governance](infra/kubernetes-resourcequota-limitrange-governance.md)
 - [ValidatingAdmissionPolicy Governance](infra/kubernetes-validating-admission-policy-governance.md)
+
+## 2026-09-01 cross-family standards and governance guidance
+
+- [Ietf-Bgp-4-Operational-Stability-Rfc4271](ietf-bgp-4-operational-stability-rfc4271.md)
+- [Ietf-Snmpv3-Usm-Key-Rotation-Rfc3414](ietf-snmpv3-usm-key-rotation-rfc3414.md)
+- [Iso-20000-1-Service-Management-Requirements](iso-20000-1-service-management-requirements.md)
+- [Iso-27001-2022-Annex-A-Control-Themes](iso-27001-2022-annex-a-control-themes.md)
+- [Itil-4-Change-Enablement-Practice](itil-4-change-enablement-practice.md)
+- [Itil-4-Incident-And-Problem-Management-Practice](itil-4-incident-and-problem-management-practice.md)
+- [Itil-4-Service-Management-Practices-Summary](itil-4-service-management-practices-summary.md)
+- [Nist-Sp-800-34-Contingency-Plan-Types-And-Exercise](nist-sp-800-34-contingency-plan-types-and-exercise.md)
+- [Nist-Sp-800-53-Control-Baseline-Selection](nist-sp-800-53-control-baseline-selection.md)
+- [Nist-Sp-800-61-Incident-Response-Roles-And-Artifacts](nist-sp-800-61-incident-response-roles-and-artifacts.md)
+- [Owasp-Asvs-Secure-Development-Control-Derivation](owasp-asvs-secure-development-control-derivation.md)
+- [Owasp-Devsecops-Maturity-Model-Application](owasp-devsecops-maturity-model-application.md)
+- [Sre-Service-Level-Objectives-Error-Budget-Policy](sre-service-level-objectives-error-budget-policy.md)

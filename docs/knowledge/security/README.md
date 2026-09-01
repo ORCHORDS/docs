@@ -91,3 +91,18 @@ This family contains reusable security engineering and assurance guidance. It co
 - [Transport Layer Security (TLS) Application-Layer Protocol Negotiation Extension: Engineering and Governance](engineering/tls-alpn-negotiation-rfc7301.md)
 - [X.509v3 Transport Layer Security (TLS) Feature Extension: Engineering and Governance](engineering/tls-feature-extension-rfc7633.md)
 - [Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile: Engineering and Governance](engineering/x509-certificate-crl-profile-rfc5280.md)
+
+## 2026-09-01 cross-family standards and governance guidance
+
+- [Fips 140 3 Cryptographic Module Validation Governance](FIPS_140_3_CRYPTOGRAPHIC_MODULE_VALIDATION_GOVERNANCE.md)
+- [Fips 197 Aes Governance](FIPS_197_AES_GOVERNANCE.md)
+- [Iso Iec 29134 Privacy Impact Assessment Governance](ISO_IEC_29134_PRIVACY_IMPACT_ASSESSMENT_GOVERNANCE.md)
+- [Mitre Attck Detection And Engineering Governance](MITRE_ATTCK_DETECTION_AND_ENGINEERING_GOVERNANCE.md)
+- [Nist Sp 800 123 General Server Security Governance](NIST_SP_800_123_GENERAL_SERVER_SECURITY_GOVERNANCE.md)
+- [Nist Sp 800 160 Trustworthy Secure Systems Engineering](NIST_SP_800_160_TRUSTWORTHY_SECURE_SYSTEMS_ENGINEERING.md)
+- [Nist Sp 800 161 R1 C Scrm Program Governance](NIST_SP_800_161_R1_C_SCRM_PROGRAM_GOVERNANCE.md)
+- [Nist Sp 800 172 Cui Enhanced Protection Governance](NIST_SP_800_172_CUI_ENHANCED_PROTECTION_GOVERNANCE.md)
+- [Nist Sp 800 190 Application Container Security Governance](NIST_SP_800_190_APPLICATION_CONTAINER_SECURITY_GOVERNANCE.md)
+- [Nist Sp 800 207 Zero Trust Architecture Governance](NIST_SP_800_207_ZERO_TRUST_ARCHITECTURE_GOVERNANCE.md)
+- [Rfc 3552 Security Considerations Governance](RFC_3552_SECURITY_CONSIDERATIONS_GOVERNANCE.md)
+- [Rfc 8446 Tls 1 3 Deployment Governance](RFC_8446_TLS_1_3_DEPLOYMENT_GOVERNANCE.md)

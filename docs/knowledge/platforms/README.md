@@ -20,3 +20,19 @@ This family contains provider and platform guidance that is useful across projec
 - [Cloudflare Workers OpenTelemetry Export](CLOUDFLARE_WORKERS_OPENTELEMETRY_EXPORT.md)
 - [Cloudflare Workers Automatic Tracing](CLOUDFLARE_WORKERS_AUTOMATIC_TRACING.md)
 - [Cloudflare Ruleset Phase-Order Governance](CLOUDFLARE_RULESET_PHASE_ORDER_GOVERNANCE.md)
+
+## 2026-09-01 cross-family standards and governance guidance
+
+- [Cncf Tech Radar Governance](CNCF_TECH_RADAR_GOVERNANCE.md)
+- [Etsi Nfv Managed Service Governance](ETSI_NFV_MANAGED_SERVICE_GOVERNANCE.md)
+- [Ieee 23026 Service Lifecycle](IEEE_23026_SERVICE_LIFECYCLE.md)
+- [Ietf Rfc 7426 Soa Architecture](IETF_RFC_7426_SOA_ARCHITECTURE.md)
+- [Ietf Rfc 8255 Manifests Governance](IETF_RFC_8255_MANIFESTS_GOVERNANCE.md)
+- [Iso Iec 22123 Cloud Reference Architecture](ISO_IEC_22123_CLOUD_REFERENCE_ARCHITECTURE.md)
+- [Iso Iec 27017 Cloud Service Controls](ISO_IEC_27017_CLOUD_SERVICE_CONTROLS.md)
+- [Iso Iec 27018 Pii Public Cloud](ISO_IEC_27018_PII_PUBLIC_CLOUD.md)
+- [Iso Iec 27035 Incident Management](ISO_IEC_27035_INCIDENT_MANAGEMENT.md)
+- [Nist Sp 800 145 Cloud Computing Definition](NIST_SP_800_145_CLOUD_COMPUTING_DEFINITION.md)
+- [Nist Sp 800 204 Cloud Native Security](NIST_SP_800_204_CLOUD_NATIVE_SECURITY.md)
+- [Nist Sp 800 53 Managed Service Control Mapping](NIST_SP_800_53_MANAGED_SERVICE_CONTROL_MAPPING.md)
+- [Owasp Cloud Native Top 10 Governance](OWASP_CLOUD_NATIVE_TOP_10_GOVERNANCE.md)
