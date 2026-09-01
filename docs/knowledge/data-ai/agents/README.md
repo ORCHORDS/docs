@@ -52,6 +52,7 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Step-Up Authorization](MCP_STEP_UP_AUTHORIZATION.md)
 - [MCP URL-Mode Elicitation Security](MCP_URL_MODE_ELICITATION_SECURITY.md)
 - [MCP Sampling with Tools](MCP_SAMPLING_WITH_TOOLS.md)
+- [MCP SSE Polling and Disconnect Semantics](MCP_SSE_POLLING_DISCONNECT.md)
 - [MCP Multi Round-Trip Requests](MCP_MULTI_ROUND_TRIP_REQUESTS.md)
 - [MCP Stateless Header Routing](MCP_STATELESS_HEADER_ROUTING.md)
 - [MCP Cacheable List Results](MCP_CACHEABLE_LIST_RESULTS.md)
