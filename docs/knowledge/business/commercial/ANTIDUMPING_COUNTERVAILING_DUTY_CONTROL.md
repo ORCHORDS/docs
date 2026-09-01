@@ -1,52 +1,57 @@
 # Antidumping and Countervailing Duty Control
 
-## Purpose and boundary
+## Scope
 
-This antidumping and countervailing duty control procedure governs order scope, producer and exporter pairing, case numbers, deposits, and liquidation. It converts authoritative requirements into a commercial workflow without treating a checklist as a legal determination. The owner must identify the responsible legal entity, actual goods, jurisdiction, event date, and effective rule version. A filing receipt, identifier, certificate, or database result proves only what the issuing system says it proves; it does not automatically establish admissibility, safety, tax treatment, origin, or contractual performance.
+Antidumping (AD) and countervailing duty (CVD) orders raise the landed cost of specific goods from specific countries and producers long before any duty is finally assessed. This article covers the operating discipline a trading or importing organization needs when order scope, producer and exporter pairing, case numbers, deposit rates, and liquidation outcomes sit inside its commercial flow: which facts must be established per shipment, how deposits are calculated and reconciled, and what evidence survives a Customs audit or an administrative review.
 
-Applicability for antidumping and countervailing duty control must be documented for each transaction or defensible product family. New suppliers, factories, designs, routes, parties, software mappings, and rule changes reopen the assessment. Adjacent controls should be linked but not conflated. Material uncertainty goes to a qualified specialist before release.
+Out of scope are the economics of dumping margins, petition strategy, and litigation before trade authorities. Those belong to counsel. The scope here ends at the commercial record: the durable case file, the controls around it, and the correction path when a shipment turns out to be covered when it was assumed not to be.
 
-## Controlled workflow
+A single import can attract several stacked orders — an AD order and a CVD order may both apply to the same product, each with its own case number, deposit rate, and review history. Treating "antidumping" as one undifferentiated tax block is the most common failure this control prevents.
 
-1. Open one durable case record and capture parties, product identity, quantities and units, locations, dates, transport or sales channel, and source documents.
-2. Compare the facts with current primary authority. Record inclusions, exclusions, exemptions, assumptions, and unresolved questions. Do not decide from a product name, tariff code, or supplier assertion alone.
-3. Gather and normalize the data needed for order scope, producer and exporter pairing, case numbers, deposits, and liquidation. Map every critical field to an accountable source and resolve contradictions.
-4. Have an independent reviewer verify identity, product match, dates, calculations, required statements, and authority. Apply enhanced review to novel, high-value, manual, or previously failed cases.
-5. Submit, certify, mark, validate, inspect, or record through the authorized channel. Capture the exact payload and authoritative acknowledgement, rejection, grant, or reference.
-6. Release the transaction only when required evidence is valid for the actual goods and event. Exceptions need a named approver, factual rationale, compensating control, and expiry.
-7. Reconcile the approved record against shipment, inventory, invoice, accounting, reporting, and physical outcomes. Close differences explicitly.
+## Workflow or implementation guidance
 
-## Preventive controls
+1. **Determine order coverage before booking.** Match the product against the scope language of each potentially applicable order, not against the product's tariff heading. Scope is defined by the authority's order text, which describes physical characteristics and uses in ordinary commerce; the harmonized code is only a screening aid. Record the specific order, case number, and scope rationale in the purchase or sales record at booking time.
+2. **Pair producer and exporter correctly.** Deposit rates differ by producer and exporter combination. A rate quoted for one producer does not travel with the goods when they are routed through a different exporter or reseller. Capture the actual manufacturer identity — not the trading company on the invoice — and match it to the rate table in force on the entry date.
+3. **Apply the rate in force on the date of entry.** Rates move after administrative reviews. The deposit owed is determined by the rate effective at entry summary filing, not the rate when the order was placed. Freeze the applicable rate table version alongside each entry so a later recalculation can be reproduced.
+4. **Calculate, deposit, and record.** Compute expected deposits at booking for cash planning; compute actual deposits at entry from entered value and the applicable rates. Store both, with their inputs, under the case number.
+5. **Track liquidation.** Deposits are provisional. Final liability crystallizes when entries liquidate, which can occur years after entry and at rates different from the deposited ones. Keep entries open in the ledger until liquidation notice arrives, and reconcile the final assessment against deposits paid, booking accruals, and any retroactive exposure.
+6. **Route changes through reassessment.** New factory, redesign, new country of manufacture, new middleman, or a scope ruling request — each reopens step 1. The case record should show why coverage was re-examined and with what result.
 
-Controlled master data should govern legal names, identifiers, country codes, units, descriptions, and effective dates. Automated checks should reject missing fields, malformed identifiers, duplicates, impossible dates, expired approvals, and incompatible quantities. Preparation, approval, and master-data administration should be separated where practical. Overrides must log operator, time, reason, approver, and evidence.
+## Controls
 
-Supplier data remains an assertion until corroborated. Contracts should require accurate support and change notification, but cannot transfer a statutory responsibility imposed on the business. Release gates must fail closed when mandatory evidence is absent. Offline procedures must specify what may continue during an outage and what must wait.
+- **Order-scope gate at booking.** No purchase order is accepted for goods in AD/CVD-sensitive categories without a recorded scope determination (covered, not covered, or pending ruling) linked to the order.
+- **Rate-table versioning.** The deposit-rate tables used for each entry are snapshotted, dated, and retained; recalculations cite the snapshot rather than a live source.
+- **Producer identity corroboration.** Manufacturer identity from the supplier is cross-checked against shipping documents and, where feasible, physical or facility evidence. Reseller invoices are never sufficient alone.
+- **Separation of booking and entry calculation.** The person who books the sale does not solely determine the duty treatment; a second role verifies producer-exporter pairing and rate application for every entry.
+- **Open-entry ledger with aging.** Unliquidated entries are visible in a ledger aged by entry date, with review-estimate postings when review outcomes are announced, so retroactive liability is never a surprise.
+- **Exception log with owner and expiry.** Any shipment released on an assumption (for example, scope "not covered" pending a ruling) carries a named approver, rationale, and expiry date after which it must be resolved.
 
-## Validation and evidence
+## Validation evidence
 
-Antidumping and Countervailing Duty Control validation tests the regulated facts, not merely document presence. Confirm that each record concerns the right entity, product version, lot or period, jurisdiction, and transaction. Reproduce calculations from source values. Compare electronic data with physical and financial records. Sampling should emphasize first shipments, changed suppliers, unusual routing, high values, manual entries, repeated exceptions, and deadline-sensitive activity.
+Validation asks whether the duty record can be defended later, not whether documents merely exist:
 
-Retain the applicability analysis, primary-source version, contracts or specifications, source data, calculations, tests or inspections, submitted payload, authority response, approvals, amendments, release proof, reconciliation, and incident correspondence. Evidence should be immutable or versioned, searchable by case and product, protected by least privilege, and retained for the applicable legal and business period. A reviewer must be able to reconstruct what was known when the decision was made.
+- Trace a sample of entries from purchase order to liquidation: does each show a booking-time scope determination, an entry-time rate snapshot, a producer identification, and a liquidation reconciliation?
+- Recompute deposits from source values (entered value × applicable rate) for a sample and compare against amounts deposited; differences indicate rate-table drift or manual override.
+- Reconcile the open-entry ledger against the authority's public liquidation notices; entries liquidated at higher rates than deposited must show accrual postings dated before the liquidation notice, not after.
+- Review the exception log for entries past expiry and scope determinations that relied on a supplier's assertion alone.
 
-Metrics should separate timely accepted cases from rejected, corrected, late, overridden, and unresolved cases. Counting only final successes conceals process weakness. Periodic assurance should trace samples forward from intake and backward from completed commercial records, including system logs and physical evidence.
+The evidence file per case should retain: order texts and scope language relied on, rate-table snapshots, entry summaries, deposit proofs, liquidation notices, reconciliations, and any scope-ruling correspondence. A reviewer must be able to reconstruct the rate applied to any entry and why that rate was believed applicable on the entry date.
 
-## Failure and correction
+## Failure modes and correction
 
-For antidumping and countervailing duty control, a rejection, timeout, stale identifier, or unavailable official system is not approval. Hold affected goods or transactions, preserve the original payload and response, diagnose data, scope, timing, authorization, and connectivity, then correct through the official procedure. Never backdate, borrow another transaction’s identifier, overwrite failure evidence, or alter a physical mark without authority.
+- **Scope surprise.** A shipment assumed outside an order is later found inside it. Response: freeze further releases of the affected product-party combination, quantify deposit shortfall from entry date, file or amend through the official procedure, and re-run the scope gate for all open orders of the same family.
+- **Wrong producer pairing.** Deposits were paid at the wrong rate because a reseller was treated as the producer. Response: correct subsequent entries immediately, estimate retroactive exposure for unliquidated entries, and require facility-level manufacturer evidence going forward.
+- **Review shock.** An administrative review resets rates sharply upward and applies to unliquidated entries. Response: post the exposure to the ledger on the preliminary result, notify affected commercial owners, and re-price open quotations that assume the old rate.
+- **Stale determination reuse.** Coverage decided once is silently reused for years. Response: age-scan the scope-determination register; determinations older than the order's review cycle or predating a scope clarification are re-performed, not grandfathered.
+- **Evidence loss at liquidation.** Records needed to defend deposited rates are purged under ordinary retention before entries liquidate. Response: extend retention for AD/CVD case files to cover the statutory liquidation plus protest window, and tag such files at entry.
 
-For a post-release discovery, define the affected population by product, party, date, location, and system version. Stop recurrence, preserve records, quantify duties, tax, fees, inventory, and customer effects, and obtain specialist review of correction, disclosure, recall, repayment, re-export, or authority-contact duties. Keep original and corrected records linked. Supplier recovery and customer communication do not replace correction of the official record.
-
-Root-cause analysis should test source incentives, training, interfaces, permissions, and review design—not merely operator conduct. Remediation requires an owner, due date, verification sample, and closure approval. Repeated exceptions trigger suspension or redesign of the route, supplier, product, or process.
-
-## Governance cadence
-
-Review the control after legal changes, enforcement notices, system releases, new markets, acquisitions, supplier changes, and incidents. Periodically confirm that the canonical link resolves, roles and permissions remain current, retention and backup work, and outage procedures have been exercised. Training should use realistic failures and require staff to distinguish assumptions from evidence. Management should review aged holds, override concentration, rejection causes, correction timeliness, and unresolved exposure.
-
-## Canonical sources
-
-- https://access.trade.gov/
-- https://www.trade.gov/us-antidumping-and-countervailing-duties
+In every failure path, the original mis-deposited or mis-scoped record stays intact; corrections file through the official channel, and the case file links original and corrected states.
 
 ## Limitations
 
-This is operational governance, not legal advice or a conclusion for a specific transaction. Other national, subnational, customs, tax, safety, transport, and contractual requirements may apply. Verify current primary materials and obtain qualified advice for disputed coverage or significant exposure.
+Rates, scope, and producer-specific outcomes are set by trade authorities and change through reviews and rulings; no operational control can freeze them. This article is operational governance for the commercial record, not legal advice on any transaction, and it does not substitute for counsel where coverage or exposure is disputed. Other regimes — Section 301, safeguards, absolute quotas — interact with AD/CVD and are outside this article's boundary.
+
+## Canonical sources
+
+- U.S. International Trade Administration, Antidumping and Countervailing Duty operations: https://access.trade.gov/
+- U.S. International Trade Administration, Antidumping and countervailing duties overview: https://www.trade.gov/us-antidumping-and-countervailing-duties
