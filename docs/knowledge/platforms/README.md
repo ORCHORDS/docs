@@ -18,3 +18,4 @@ This family contains provider and platform guidance that is useful across projec
 - [Cloudflare Tail Workers Observability](CLOUDFLARE_TAIL_WORKERS_OBSERVABILITY.md)
 - [Cloudflare Worker Placement Governance](CLOUDFLARE_WORKER_PLACEMENT_GOVERNANCE.md)
 - [Cloudflare Workers OpenTelemetry Export](CLOUDFLARE_WORKERS_OPENTELEMETRY_EXPORT.md)
+- [Cloudflare Workers Automatic Tracing](CLOUDFLARE_WORKERS_AUTOMATIC_TRACING.md)
