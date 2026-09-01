@@ -15,3 +15,4 @@ This family contains reusable software-engineering knowledge, including architec
 ## Selected current guidance
 
 - [Generative AI SSDF Community Profile](GENAI_SSDF_COMMUNITY_PROFILE.md)
+- [A2A TCK Conformance Governance](A2A_TCK_CONFORMANCE_GOVERNANCE.md)
