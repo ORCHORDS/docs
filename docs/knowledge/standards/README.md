@@ -14,6 +14,8 @@ This family contains internal documentation conventions and guidance mapped to e
 
 ## Selected current guidance
 
+- [W3C Recommendation-Track Transition Governance](W3C_RECOMMENDATION_TRACK_TRANSITION_GOVERNANCE.md)
+- [IETF Internet-Draft to RFC Transition Governance](IETF_INTERNET_DRAFT_TO_RFC_TRANSITION_GOVERNANCE.md)
 - [SLSA Provenance Consumer Verification](SLSA_PROVENANCE_CONSUMER_VERIFICATION.md)
 - [SLSA Source Provenance Verification](SLSA_SOURCE_PROVENANCE_VERIFICATION.md)
 - [SLSA Verified Properties](SLSA_VERIFIED_PROPERTIES.md)
