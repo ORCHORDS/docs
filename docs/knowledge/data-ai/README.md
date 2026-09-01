@@ -15,3 +15,4 @@ This family contains reusable guidance for data systems, artificial intelligence
 ## Navigation
 
 - [Agent Knowledge](agents/README.md) — architecture, evaluation, memory, authorization, delegated credentials, and task lifecycle patterns.
+- [AI/ML Knowledge](ai-ml/README.md) — LLM serving, retrieval-augmented generation, quantization, batching, routing, embeddings, and tokenizer governance.

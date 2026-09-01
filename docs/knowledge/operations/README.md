@@ -52,3 +52,8 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [Owasp-Asvs-Secure-Development-Control-Derivation](owasp-asvs-secure-development-control-derivation.md)
 - [Owasp-Devsecops-Maturity-Model-Application](owasp-devsecops-maturity-model-application.md)
 - [Sre-Service-Level-Objectives-Error-Budget-Policy](sre-service-level-objectives-error-budget-policy.md)
+
+## Operations leaf indexes
+
+- [Deploy](deploy/README.md) — Helm, Argo CD/Rollouts, Flux, Sealed Secrets, Terraform/OpenTofu, Pulumi, Bicep, Kustomize, Syft SBOM, and Cosign attestations.
+- [Monitoring](monitoring/README.md) — OpenTelemetry, Prometheus, Mimir, Loki, Tempo, Pyroscope, Alertmanager, OTLP, Grafana, synthetic probes, and SLO burn-rate alerting.

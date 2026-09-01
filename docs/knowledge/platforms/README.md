@@ -36,3 +36,9 @@ This family contains provider and platform guidance that is useful across projec
 - [Nist Sp 800 204 Cloud Native Security](NIST_SP_800_204_CLOUD_NATIVE_SECURITY.md)
 - [Nist Sp 800 53 Managed Service Control Mapping](NIST_SP_800_53_MANAGED_SERVICE_CONTROL_MAPPING.md)
 - [Owasp Cloud Native Top 10 Governance](OWASP_CLOUD_NATIVE_TOP_10_GOVERNANCE.md)
+
+## Provider leaf indexes
+
+- [Cloudflare](cloudflare/README.md) — Workers, Durable Objects, D1, R2, Hyperdrive, Queues, Analytics Engine, Cache, WAF, and Turnstile.
+- [Email](email/README.md) — SMTP, DANE, MTA-STS, TLSRPT, BIMI, ARC, RFC 8058 one-click unsubscribe, and feedback loops.
+- [Payments](payments/README.md) — 3-D Secure, tokenization, chargebacks, interchange qualification, ACH/SEPA rails, PCI DSS v4, and reconciliation.
