@@ -17,3 +17,4 @@ This family contains internal documentation conventions and guidance mapped to e
 - [SLSA Provenance Consumer Verification](SLSA_PROVENANCE_CONSUMER_VERIFICATION.md)
 - [SLSA Source Provenance Verification](SLSA_SOURCE_PROVENANCE_VERIFICATION.md)
 - [SLSA Verified Properties](SLSA_VERIFIED_PROPERTIES.md)
+- [OWASP ASVS 5 Version Governance](OWASP_ASVS_5_VERSION_GOVERNANCE.md)
