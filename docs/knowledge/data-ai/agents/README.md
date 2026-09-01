@@ -48,6 +48,7 @@ Reusable project-neutral guidance for agentic systems.
 - [A2A Stream Event Ordering](A2A_STREAM_EVENT_ORDERING.md)
 - [A2A Task Subscription Lifecycle](A2A_TASK_SUBSCRIPTION_LIFECYCLE.md)
 - [MCP Tool Boundaries](MCP_TOOL_BOUNDARIES.md)
+- [MCP Tool Name Governance](MCP_TOOL_NAME_GOVERNANCE.md)
 - [MCP 2026 Client Metadata and Authorization Hardening](MCP_2026_CLIENT_METADATA_AUTHORIZATION.md)
 - [MCP Step-Up Authorization](MCP_STEP_UP_AUTHORIZATION.md)
 - [MCP URL-Mode Elicitation Security](MCP_URL_MODE_ELICITATION_SECURITY.md)
