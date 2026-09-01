@@ -14,6 +14,8 @@ This family contains reusable operational guidance for infrastructure, deploymen
 
 ## Selected current guidance
 
+- [Network Ingress Filtering with BCP 38](infra/network-ingress-filtering-bcp38-governance.md)
+- [NTP Operational Baseline from RFC 8633](infra/ntp-bcp-operational-baseline-rfc-8633.md)
 - [GitHub Artifact Attestation Verification](GITHUB_ARTIFACT_ATTESTATION_VERIFICATION.md)
 - [GitHub Actions Immutable OIDC Subject Governance](GITHUB_ACTIONS_IMMUTABLE_OIDC_SUBJECTS.md)
 - [GitHub Reusable Workflow OIDC Trust](GITHUB_REUSABLE_WORKFLOW_OIDC_TRUST.md)

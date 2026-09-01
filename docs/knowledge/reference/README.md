@@ -14,6 +14,7 @@ This family contains shared glossaries, checklists, command references, configur
 
 ## Selected current guidance
 
+- [JSON Canonicalization Scheme RFC 8785 Version Governance](JSON_CANONICALIZATION_RFC_8785_VERSION_GOVERNANCE.md)
 - [TCP RFC 9293 Version Governance](TCP_RFC_9293_VERSION_GOVERNANCE.md)
 - [AsyncAPI 3.1 Version Governance](ASYNCAPI_3_1_VERSION_GOVERNANCE.md)
 - [JSON Schema Draft 2020-12 Version Governance](JSON_SCHEMA_2020_12_VERSION_GOVERNANCE.md)
