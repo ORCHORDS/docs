@@ -1,0 +1,43 @@
+# Dns Prefetch Tradeoffs Resolver Warmup
+
+## Scope
+This article addresses the engineering decisions around DNS prefetching and resolver warm-up for first-party and third-party origins, the trade-offs between earlier connection setup and battery / privacy / cache cost, and the measurable impact on Largest Contentful Paint and Time to First Byte. The scope covers the W3C Resource Hints specification (`dns-prefetch`, `preconnect`), the `Connection: keep-alive` header, the platform-specific resolver caches (browser, OS, recursive resolver), and the failure modes that arise when prefetching is over-applied. The article is restricted to client-side DNS behaviour; it does not cover server-side DNS, authoritative DNS performance, or DNS-based load balancing. It is concerned with the question: given a list of origins the page will contact, which should be prefetched, and which should be left for the parser to discover on its own.
+
+## Workflow or implementation guidance
+Begin by enumerating the origins the page will contact during its critical rendering path. The origins include the first-party origin (already resolved from the document URL), the CDN origin serving images, the analytics origin, the font origin, and any third-party script origins. Each origin requires a DNS lookup before the first connection, and each lookup costs 20–200 ms depending on cache state and resolver location. The cumulative cost of resolving all origins serially can dominate the connection-setup phase of the page load.
+
+For first-party origins where the connection is critical to first paint (the HTML origin, the CSS origin), use `<link rel="preconnect" href="https://example.com" crossorigin>`. Preconnect performs the DNS lookup, TCP handshake, and TLS handshake in advance, so the first request to the origin is ready when the parser reaches it. Use preconnect sparingly: each preconnect consumes CPU and battery on the client, and there is a browser-imposed limit (typically 6 concurrent connections per origin).
+
+For third-party origins where the connection is not critical to first paint (analytics, ads), use `<link rel="dns-prefetch" href="//analytics.example.com">`. DNS prefetch performs only the DNS lookup, not the TCP or TLS handshake; it is much cheaper than preconnect and is appropriate for origins that may be contacted later in the page lifecycle but where the connection setup is not on the critical path. Most browsers automatically apply DNS prefetch to origins discovered in the HTML parser; explicit `<link rel="dns-prefetch">` is for origins that are not in the HTML (a script that fetches from a different origin, a redirect).
+
+Avoid preconnect for origins that may not be used. A preconnect that turns out to be unused wastes the connection setup; the browser will eventually close the unused connection after a timeout, but the cost is paid. Use preconnect only when the origin is contacted on the critical path of every page view; use `dns-prefetch` for origins that are contacted on a subset of page views.
+
+Configure the browser to honour the preconnect hints. The `crossorigin` attribute is required for origins that will be contacted with CORS (fonts, fetch with credentials); without it, the preconnect does not perform CORS handshake and the actual request opens a new connection. For first-party origins without CORS, omit `crossorigin`.
+
+Consider the resolver cache state. A DNS lookup that is already cached in the OS or browser resolver costs essentially nothing; a lookup that misses the cache costs the full recursive resolution path. Preconnect and DNS prefetch are most valuable for origins whose DNS records have a short TTL (under 5 minutes) and may have expired between visits. For origins with long TTLs (hours or days), the resolver cache is hot and the preconnect provides minimal benefit.
+
+For HTTP/2 and HTTP/3, the connection-setup overhead is amortised across many requests on the same connection. A preconnect to an HTTP/2 origin enables connection coalescing (multiple origins sharing one connection if they share a certificate and IP) and reduces the per-request cost. For HTTP/1.1 origins, the connection pool is per-origin and a preconnect establishes a dedicated connection.
+
+On mobile, preconnect and DNS prefetch consume radio energy and may delay other network activity. Tune the hints carefully: a mobile page that preconnects to 10 origins will keep the radio active longer than a desktop page. Use `dns-prefetch` instead of `preconnect` where the connection is not on the critical path; reserve preconnect for the 2–3 most critical origins.
+
+For privacy-conscious users (e.g., visitors using DNS-over-HTTPS or a VPN), the resolver location may be distant from the user and the DNS lookup may cost more than the visible RTT suggests. Prefetching is still useful, but the cost is higher; balance the cost against the latency saved.
+
+## Controls
+Define three categories of control. The first is a **preconnect audit**: for representative page templates, verify that the preconnect hints are present, the `crossorigin` attribute is set where required, and the hinted origins are actually used in the critical path. The second is a **resolver-cache hit rate**: track the DNS cache hit rate via synthetic monitoring; a low hit rate indicates the resolver is being invalidated too often. The third is a **connection-reuse rate**: track the fraction of origin connections that reuse a previously established connection; a low rate indicates preconnect hints are not effectively establishing connections.
+
+A useful guardrail metric is the **DNS lookup time per origin** in WebPageTest or Chrome DevTools. A lookup time above 50 ms indicates the resolver is cold and preconnect is valuable; a lookup time below 5 ms indicates the resolver is hot and preconnect is not worth the cost.
+
+## Validation evidence
+The validation evidence is a controlled comparison of page-load timing with and without preconnect hints, captured under a slow-3G throttling profile. The expected outcome is that preconnect pulls forward the connection-setup time by 100–300 ms, and the document's first paint occurs once the preconnected connection is ready. Verify via the network waterfall that the hinted origins are connected before the first request is issued. Confirm that the `crossorigin` attribute is correctly applied and that the connection is reused. Document the per-origin lookup time, the preconnect timing, the connection-reuse rate, and the impact on LCP.
+
+## Failure modes and correction
+**Preconnect to unused origin**: the hint suggests an origin that is not contacted, wasting connection setup. Correction: audit the page for the origins actually used and remove unused preconnects. **Missing `crossorigin` attribute**: the preconnect does not perform CORS handshake, and the actual request opens a new connection. Correction: add `crossorigin` to the preconnect tag for origins contacted with CORS. **Connection limit exceeded**: the browser caps concurrent preconnects (typically 6); hints beyond the cap are queued. Correction: reduce the number of preconnect hints, or use `dns-prefetch` for less critical origins. **Resolver cache invalidated by preconnect**: a preconnect on a low-TTL record triggers a fresh DNS lookup that displaces other cached entries. Correction: use preconnect only on high-traffic origins with stable DNS; use `dns-prefetch` for low-traffic origins. **Battery drain on mobile**: the radio is kept active by too many preconnect hints. Correction: switch to `dns-prefetch` for non-critical origins, and reduce the number of preconnect hints to the 2–3 most critical.
+
+## Limitations
+The article assumes modern browsers (Chrome, Firefox, Safari, Edge). Older browsers may ignore preconnect or DNS prefetch entirely; the patterns are progressively enhanced. The article does not cover the platform-specific resolver caches (systemd-resolved, dnsmasq, glibc's nscd) and their cache-invalidation behaviour. The article does not cover DNS-over-HTTPS (DoH) or DNS-over-TLS (DoT), where the resolver handshake adds latency and the cost-benefit of prefetching changes. The article assumes the resolver is honest and not intercepting DNS queries for advertising or tracking; a malicious resolver could observe the prefetch hints and infer the page's structure.
+
+## Canonical sources
+- IETF — DNS Implementation and Specification (RFC 1035): https://www.rfc-editor.org/rfc/rfc1035
+- W3C — Resource Hints: https://www.w3.org/TR/resource-hints/
+- IETF — HTTP semantics (RFC 9110): https://www.rfc-editor.org/rfc/rfc9110
+- MDN — rel attribute: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel
