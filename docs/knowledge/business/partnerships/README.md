@@ -71,3 +71,18 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Time Synchronization Handoff](PARTNER_TIME_SYNCHRONIZATION_HANDOFF.md)
 - [Partner Trace Context Handoff](PARTNER_TRACE_CONTEXT_HANDOFF.md)
 - [Partner Webhook Replay Handoff](PARTNER_WEBHOOK_REPLAY_HANDOFF.md)
+
+## Added 2026-09-01 batch 4
+- [Partner Compliance Attestation Reciprocity](PARTNER_COMPLIANCE_ATTESTATION_RECIPROCITY.md)
+- [Partner Co-Marketing Budget Reconciliation Rules](PARTNER_CO_MARKETING_BUDGET_RECONCILIATION_RULES.md)
+- [Partner Cyber Insurance Certificate Tracking](PARTNER_CYBER_INSURANCE_CERTIFICATE_TRACKING.md)
+- [Partner Data Processing Addendum Language Register](PARTNER_DATA_PROCESSING_ADDENDUM_LANGUAGE_REGISTER.md)
+- [Partner Eyewitness Incident Notification Qualification](PARTNER_EYEWITNESS_INCIDENT_NOTIFICATION_QUALIFICATION.md)
+- [Partner GDPR Article 28 Processor Obligations Register](PARTNER_GDPR_ARTICLE_28_PROCESSOR_OBLIGATIONS_REGISTER.md)
+- [Partner Human-Rights Modern Slavery Statement Harmonization](PARTNER_HUMAN_RIGHTS_MODERN_SLAVERY_STATEMENT_HARMONIZATION.md)
+- [Partner Integration Security Architecture Review](PARTNER_INTEGRATION_SECURITY_ARCHITECTURE_REVIEW.md)
+- [Partner Joint Technical Roadmap Cadence Governance](PARTNER_JOINT_TECHNICAL_ROADMAP_CADENCE_GOVERNANCE.md)
+- [Partner Marketing Lead-Sharing Consent Registry](PARTNER_MARKETING_LEAD_SHARING_CONSENT_REGISTRY.md)
+- [Partner Revenue Recognition Split Review](PARTNER_REVENUE_RECOGNIZATION_SPLIT_REVIEW.md)
+- [Partner Tier Privilege Review Cadence](PARTNER_TIER_PRIVILEGE_REVIEW_CADENCE.md)
+- [Partner Training Certificate Reciprocity](PARTNER_TRAINING_CERTIFICATE_RECIPROCITY.md)
