@@ -50,3 +50,21 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Export Restricted-Party Screening Operations](EXPORT_RESTRICTED_PARTY_SCREENING_OPERATIONS.md)
 - [Incoterms Rule Selection Governance](INCOTERMS_RULE_SELECTION_GOVERNANCE.md)
 - [Preferential Origin Claim Governance](PREFERENTIAL_ORIGIN_CLAIM_GOVERNANCE.md)
+
+## Added 2026-09-01
+
+- [Antidumping and Countervailing Duty Control](ANTIDUMPING_COUNTERVAILING_DUTY_CONTROL.md)
+- [Bonded Warehouse Inventory Governance](BONDED_WAREHOUSE_INVENTORY_GOVERNANCE.md)
+- [Country-of-Origin Marking Control](COUNTRY_OF_ORIGIN_MARKING_CONTROL.md)
+- [CPSC General Certificate of Conformity Control](CPSC_GENERAL_CERTIFICATE_CONTROL.md)
+- [Customs Bond Sufficiency Governance](CUSTOMS_BOND_SUFFICIENCY_GOVERNANCE.md)
+- [Customs Drawback Claim Governance](CUSTOMS_DRAWBACK_CLAIM_GOVERNANCE.md)
+- [Customs Related-Party Valuation Control](CUSTOMS_RELATED_PARTY_VALUATION_CONTROL.md)
+- [EU VAT Number Validation Control](EU_VAT_NUMBER_VALIDATION_CONTROL.md)
+- [FCC Equipment Authorization Control](FCC_EQUIPMENT_AUTHORIZATION_CONTROL.md)
+- [FDA Prior Notice Import Control](FDA_PRIOR_NOTICE_IMPORT_CONTROL.md)
+- [Foreign-Trade Zone Inventory Control](FOREIGN_TRADE_ZONE_INVENTORY_CONTROL.md)
+- [GS1 GTIN Allocation and Change Control](GS1_GTIN_ALLOCATION_CHANGE_CONTROL.md)
+- [Importer Security Filing Control](IMPORTER_SECURITY_FILING_CONTROL.md)
+- [Retail Weights and Measures Price Control](RETAIL_WEIGHTS_MEASURES_PRICE_CONTROL.md)
+- [Wood Packaging ISPM 15 Control](WOOD_PACKAGING_ISPM15_CONTROL.md)

@@ -53,3 +53,20 @@ Reusable, evidence-based guidance for truthful advertising, endorsements, review
 - [Prescreened Credit Offer Marketing](PRESCREENED_CREDIT_OFFER_MARKETING.md)
 - [Prescription Drug Advertising Balance Review](PRESCRIPTION_DRUG_ADVERTISING_BALANCE_REVIEW.md)
 - [UK Non-broadcast Advertising Compliance Review](UK_NONBROADCAST_ADVERTISING_COMPLIANCE_REVIEW.md)
+
+## Added 2026-09-01
+
+- [Authorized Digital Sellers (ads.txt) Governance](ADS_TXT_AUTHORIZED_DIGITAL_SELLER_GOVERNANCE.md)
+- [Mobile Inventory Authorization with app-ads.txt](APP_ADS_TXT_MOBILE_INVENTORY_GOVERNANCE.md)
+- [Brand Indicators for Message Identification Deployment](BIMI_BRAND_INDICATOR_DEPLOYMENT_GOVERNANCE.md)
+- [California Cross-Context Behavioral Advertising Opt-Out Controls](CALIFORNIA_CROSS_CONTEXT_AD_OPT_OUT.md)
+- [Canada CASL Commercial Electronic Message Governance](CANADA_CASL_COMMERCIAL_MESSAGE_GOVERNANCE.md)
+- [Colorado Universal Opt-Out Mechanism Controls](COLORADO_UNIVERSAL_OPT_OUT_MECHANISM_CONTROLS.md)
+- [DMARC Governance for Marketing Domains](EMAIL_DMARC_BRAND_DOMAIN_GOVERNANCE.md)
+- [One-Click Email Unsubscribe Technical Controls](EMAIL_ONE_CLICK_UNSUBSCRIBE_TECHNICAL_CONTROLS.md)
+- [EU Digital Services Act Advertisement Transparency Controls](EU_DSA_ADVERTISEMENT_TRANSPARENCY_CONTROLS.md)
+- [GDPR Direct-Marketing Objection Governance](GDPR_DIRECT_MARKETING_OBJECTION_GOVERNANCE.md)
+- [OpenRTB SupplyChain Object Validation](OPENRTB_SUPPLYCHAIN_OBJECT_VALIDATION.md)
+- [robots.txt Governance for Marketing Content](ROBOTSTXT_MARKETING_CRAWLER_ACCESS_GOVERNANCE.md)
+- [Advertising Supply-Chain Identity in sellers.json](SELLERS_JSON_SUPPLY_CHAIN_IDENTITY_GOVERNANCE.md)
+- [Accessible Digital Advertising Creative QA](W3C_ACCESSIBLE_DIGITAL_AD_CREATIVE_QA.md)

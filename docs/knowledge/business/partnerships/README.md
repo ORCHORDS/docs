@@ -53,3 +53,20 @@ Reusable, evidence-based guidance for collaborative business relationships and p
 - [Partner Segregation-of-Duties Control](PARTNER_SEGREGATION_OF_DUTIES_CONTROL.md)
 - [Partner Tax-Document Handoff](PARTNER_TAX_DOCUMENT_HANDOFF.md)
 - [Partner Whistleblowing Intake Handoff](PARTNER_WHISTLEBLOWING_INTAKE_HANDOFF.md)
+
+## Added 2026-09-01
+
+- [Partner Card-Payment Responsibility](PARTNER_CARD_PAYMENT_RESPONSIBILITY.md)
+- [Partner Chain of Custody for Electronic Evidence](PARTNER_CHAIN_OF_CUSTODY_FOR_ELECTRONIC_EVIDENCE.md)
+- [Partner Clinical-Trial Safety Information Exchange](PARTNER_CLINICAL_TRIAL_SAFETY_INFORMATION_EXCHANGE.md)
+- [Partner Consumer-Product Safety Reporting](PARTNER_CONSUMER_PRODUCT_SAFETY_REPORTING.md)
+- [Partner Cross-Border Personal-Data Transfer Governance](PARTNER_CROSS_BORDER_PERSONAL_DATA_TRANSFER.md)
+- [Partner Digital-Identity Federation Governance](PARTNER_DIGITAL_IDENTITY_FEDERATION.md)
+- [Partner Electronic-Signature Trust Governance](PARTNER_ELECTRONIC_SIGNATURE_TRUST.md)
+- [Partner E-Discovery and Legal-Hold Coordination](PARTNER_E_DISCOVERY_LEGAL_HOLD_COORDINATION.md)
+- [Partner Food Traceability Data Exchange](PARTNER_FOOD_TRACEABILITY_DATA_EXCHANGE.md)
+- [Partner Government-Subcontracting Flowdown Governance](PARTNER_GOVERNMENT_SUBCONTRACTING_FLOWDOWNS.md)
+- [Partner Hazardous-Materials Shipping Handoff](PARTNER_HAZARDOUS_MATERIALS_SHIPPING_HANDOFF.md)
+- [Partner Secure-Software Development Attestation](PARTNER_SECURE_SOFTWARE_DEVELOPMENT_ATTESTATION.md)
+- [Partner Software Bill of Materials Exchange](PARTNER_SOFTWARE_BILL_OF_MATERIALS_EXCHANGE.md)
+- [Partner Vulnerability Disclosure Coordination](PARTNER_VULNERABILITY_DISCLOSURE_COORDINATION.md)

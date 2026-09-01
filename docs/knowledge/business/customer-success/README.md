@@ -50,3 +50,21 @@ Reusable, evidence-based guidance for customer promises, feedback, complaints, s
 - [Support Records Retention and Disposition](SUPPORT_RECORDS_RETENTION_DISPOSITION.md)
 - [Vulnerability Report Customer Liaison](VULNERABILITY_REPORT_CUSTOMER_LIAISON.md)
 - [Webhook Delivery Reconciliation](WEBHOOK_DELIVERY_RECONCILIATION.md)
+
+## Added 2026-09-01
+
+- [Customer Consent and Preference Lifecycle](CUSTOMER_CONSENT_PREFERENCE_LIFECYCLE.md)
+- [Customer Journey Service Blueprint Control](CUSTOMER_JOURNEY_SERVICE_BLUEPRINT_CONTROL.md)
+- [Accessible Customer-Success Technology Procurement Review](CUSTOMER_SUCCESS_ACCESSIBLE_PROCUREMENT_REVIEW.md)
+- [Customer Success Capacity and Demand Review](CUSTOMER_SUCCESS_CAPACITY_AND_DEMAND_REVIEW.md)
+- [Customer Success Change Enablement Readiness](CUSTOMER_SUCCESS_CHANGE_ENABLEMENT_READINESS.md)
+- [Customer Success Communication Authenticity Control](CUSTOMER_SUCCESS_COMMUNICATION_AUTHENTICITY.md)
+- [Customer Success Continuity Exercise](CUSTOMER_SUCCESS_CONTINUITY_EXERCISE.md)
+- [Customer Success Data Minimization Review](CUSTOMER_SUCCESS_DATA_MINIMIZATION_REVIEW.md)
+- [Customer Success Knowledge Article Lifecycle](CUSTOMER_SUCCESS_KNOWLEDGE_ARTICLE_LIFECYCLE.md)
+- [Customer Success Metric Quality Review](CUSTOMER_SUCCESS_METRIC_QUALITY_REVIEW.md)
+- [Customer Success Record Integrity and Audit Trail](CUSTOMER_SUCCESS_RECORD_INTEGRITY.md)
+- [Customer Success Risk Acceptance Governance](CUSTOMER_SUCCESS_RISK_ACCEPTANCE_GOVERNANCE.md)
+- [Customer Success Service Catalog Governance](CUSTOMER_SUCCESS_SERVICE_CATALOG_GOVERNANCE.md)
+- [Customer Success Supplier Dependency Review](CUSTOMER_SUCCESS_SUPPLIER_DEPENDENCY_REVIEW.md)
+- [Customer Service Request Priority Model](SERVICE_REQUEST_PRIORITY_MODEL.md)

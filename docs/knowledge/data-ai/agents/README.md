@@ -91,3 +91,20 @@ Articles in this folder distinguish reusable design principles from protocol- or
 - [Security Testing Agent Applications with OWASP LLM Guidance](AGENT_SECURITY_TESTING_OWASP_LLM_GUIDANCE.md)
 - [Statistical Uncertainty in Agent Evaluation](AGENT_EVALUATION_STATISTICAL_UNCERTAINTY.md)
 - [Threat Modeling Agent Systems with MITRE ATLAS](AGENT_THREAT_MODELING_MITRE_ATLAS.md)
+
+## Added 2026-09-01
+
+- [Adversarial Evaluation of Agents with NIST AI 100-2](AGENT_ADVERSARIAL_EVALUATION_NIST_AI_100_2.md)
+- [Evaluation Data Provenance for Agent Systems](AGENT_EVALUATION_DATA_PROVENANCE_NIST.md)
+- [Secure File Ingestion for Agent Workflows](AGENT_FILE_UPLOAD_SECURITY_OWASP.md)
+- [Integrity-Protecting Agent Tool Calls with HTTP Message Signatures](AGENT_HTTP_MESSAGE_SIGNATURES_TOOL_CALLS.md)
+- [Privacy-Preserving Security Logging for Agent Systems](AGENT_LOGGING_PRIVACY_OWASP.md)
+- [Model and Configuration Change Control for Agents](AGENT_MODEL_CHANGE_CONTROL_NIST_AI_RMF.md)
+- [Sender-Constrained Agent Access Tokens with OAuth DPoP](AGENT_OAUTH_DPOP_SENDER_CONSTRAINED_TOKENS.md)
+- [Protecting Agent Authorization Requests with OAuth JAR](AGENT_OAUTH_JAR_REQUEST_OBJECT_INTEGRITY.md)
+- [Fine-Grained Agent Authorization Requests with OAuth RAR](AGENT_OAUTH_RAR_FINE_GRAINED_AUTHORIZATION.md)
+- [Privacy Threat Modeling for Agent Systems with the NIST Privacy Framework](AGENT_PRIVACY_THREAT_MODELING_NIST_PRIVACY_FRAMEWORK.md)
+- [SSRF Defense for Agents That Fetch URLs](AGENT_SSRF_DEFENSE_OWASP.md)
+- [Governing W3C Baggage in Agent Telemetry](AGENT_TELEMETRY_BAGGAGE_GOVERNANCE_W3C.md)
+- [Secure Trace Context Propagation Across Agent Boundaries](AGENT_TRACE_CONTEXT_SECURITY_W3C.md)
+- [Replay-Resistant Webhooks for Agent Events](AGENT_WEBHOOK_REPLAY_PROTECTION.md)

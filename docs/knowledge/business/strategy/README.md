@@ -56,3 +56,20 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Risk Appetite and Strategic Limits](RISK_APPETITE_AND_STRATEGIC_LIMITS.md)
 - [Strategic Decision Records](STRATEGIC_DECISION_RECORDS.md)
 - [Strategic Portfolio Stage Gates](STRATEGIC_PORTFOLIO_STAGE_GATES.md)
+
+## Added 2026-09-01
+
+- [Business Dynamics Cohort Benchmarking](BUSINESS_DYNAMICS_COHORT_BENCHMARKING.md)
+- [Business Impact Analysis For Continuity Strategy](BUSINESS_IMPACT_ANALYSIS_FOR_CONTINUITY_STRATEGY.md)
+- [Compliance Obligations Register Strategy](COMPLIANCE_OBLIGATIONS_REGISTER_STRATEGY.md)
+- [Cyber Supply Chain Risk Strategy](CYBER_SUPPLY_CHAIN_RISK_STRATEGY.md)
+- [Enterprise Risk Treatment Selection](ENTERPRISE_RISK_TREATMENT_SELECTION.md)
+- [Ghg Inventory Reduction Strategy](GHG_INVENTORY_REDUCTION_STRATEGY.md)
+- [Hazard Risk Assessment For Strategic Resilience](HAZARD_RISK_ASSESSMENT_FOR_STRATEGIC_RESILIENCE.md)
+- [Innovation Management System Strategy](INNOVATION_MANAGEMENT_SYSTEM_STRATEGY.md)
+- [Labor Productivity Benchmark Strategy](LABOR_PRODUCTIVITY_BENCHMARK_STRATEGY.md)
+- [Nist Csf Organizational Profile Strategy](NIST_CSF_ORGANIZATIONAL_PROFILE_STRATEGY.md)
+- [Privacy Risk Profile Strategy](PRIVACY_RISK_PROFILE_STRATEGY.md)
+- [Quality Objectives Deployment Strategy](QUALITY_OBJECTIVES_DEPLOYMENT_STRATEGY.md)
+- [Responsible Business Due Diligence Strategy](RESPONSIBLE_BUSINESS_DUE_DILIGENCE_STRATEGY.md)
+- [Sustainable Procurement Category Strategy](SUSTAINABLE_PROCUREMENT_CATEGORY_STRATEGY.md)
