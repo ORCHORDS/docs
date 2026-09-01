@@ -40,3 +40,4 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Export Consignment Risk Governance](EXPORT_CONSIGNMENT_RISK_GOVERNANCE.md)
 - [Standby Letter of Credit for Open-Account Risk Mitigation](STANDBY_LETTER_OF_CREDIT_OPEN_ACCOUNT_MITIGATION.md)
 - [Export Foreign-Exchange Risk Management](EXPORT_FOREIGN_EXCHANGE_RISK_MANAGEMENT.md)
+- [Wool Product Labeling Governance](WOOL_PRODUCT_LABELING_GOVERNANCE.md)

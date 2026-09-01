@@ -16,3 +16,4 @@ This family contains shared glossaries, checklists, command references, configur
 
 - [SPDX 3.0.1 BOM Version Governance](SPDX_3_0_1_BOM_VERSION_GOVERNANCE.md)
 - [CycloneDX 1.7 BOM Version Governance](CYCLONEDX_1_7_BOM_VERSION_GOVERNANCE.md)
+- [OpenAPI 3.2 Version Governance](OPENAPI_3_2_VERSION_GOVERNANCE.md)
