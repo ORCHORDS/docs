@@ -50,3 +50,9 @@ Reusable, evidence-based guidance for market analysis and business planning.
 - [Business Valuation Approaches](BUSINESS_VALUATION_APPROACHES.md)
 - [Ownership Transfer Options](OWNERSHIP_TRANSFER_OPTIONS.md)
 - [Asset Liquidation Planning](ASSET_LIQUIDATION_PLANNING.md)
+## 2026-09-01 strategic governance and portfolio controls
+
+- [Partnership Governance and Exit Rules](PARTNERSHIP_GOVERNANCE_AND_EXIT_RULES.md)
+- [Risk Appetite and Strategic Limits](RISK_APPETITE_AND_STRATEGIC_LIMITS.md)
+- [Strategic Decision Records](STRATEGIC_DECISION_RECORDS.md)
+- [Strategic Portfolio Stage Gates](STRATEGIC_PORTFOLIO_STAGE_GATES.md)

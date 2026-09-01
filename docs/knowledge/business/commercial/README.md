@@ -42,3 +42,11 @@ Reusable, evidence-based guidance for pricing, commercial disclosures, transacti
 - [Export Foreign-Exchange Risk Management](EXPORT_FOREIGN_EXCHANGE_RISK_MANAGEMENT.md)
 - [Wool Product Labeling Governance](WOOL_PRODUCT_LABELING_GOVERNANCE.md)
 - [Electronic Fund Transfer Error-Resolution Governance](EFT_ERROR_RESOLUTION_GOVERNANCE.md)
+## 2026-09-01 commercial and trade operations
+
+- [Commercial Invoice Data Quality Control](COMMERCIAL_INVOICE_DATA_QUALITY_CONTROL.md)
+- [Customs Broker Instruction Governance](CUSTOMS_BROKER_INSTRUCTION_GOVERNANCE.md)
+- [Export License Determination Release Control](EXPORT_LICENSE_DETERMINATION_RELEASE_CONTROL.md)
+- [Export Restricted-Party Screening Operations](EXPORT_RESTRICTED_PARTY_SCREENING_OPERATIONS.md)
+- [Incoterms Rule Selection Governance](INCOTERMS_RULE_SELECTION_GOVERNANCE.md)
+- [Preferential Origin Claim Governance](PREFERENTIAL_ORIGIN_CLAIM_GOVERNANCE.md)

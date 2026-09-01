@@ -78,3 +78,16 @@ Reusable project-neutral guidance for agentic systems.
 - [MCP Issuer-Bound Client Credentials](MCP_ISSUER_BOUND_CLIENT_CREDENTIALS.md)
 
 Articles in this folder distinguish reusable design principles from protocol- or provider-specific behavior. Current protocol claims should be checked against the cited primary source before implementation.
+## 2026-09-01 standards-aligned agent implementation guidance
+
+- [Agent Identity with SPIFFE Workload Attestation](AGENT_IDENTITY_SPIFFE_WORKLOAD_ATTESTATION.md)
+- [Agent Policy Decisions with OpenID AuthZEN](AGENT_POLICY_DECISIONS_WITH_OPENID_AUTHZEN.md)
+- [Agent Risk Governance with the NIST AI Risk Management Framework](AGENT_RISK_GOVERNANCE_NIST_AI_RMF.md)
+- [Agent Software Supply Chain Evidence with SLSA Provenance](AGENT_SOFTWARE_SUPPLY_CHAIN_SLSA_PROVENANCE.md)
+- [Agent Telemetry with OpenTelemetry GenAI Semantic Conventions](AGENT_TELEMETRY_OPENTELEMETRY_GENAI_SEMANTIC_CONVENTIONS.md)
+- [Incident Response for Agent Systems](AGENT_INCIDENT_RESPONSE_NIST_AI_PROFILE.md)
+- [Key Management for Agent Services from the OWASP Cryptography Cheatsheet](AGENT_KEY_MANAGEMENT_OWASP_CRYPTOGRAPHY_CHEATSHEET.md)
+- [Normalizing Agent Audit Events with OCSF](AGENT_AUDIT_EVENTS_OCSF_NORMALIZATION.md)
+- [Security Testing Agent Applications with OWASP LLM Guidance](AGENT_SECURITY_TESTING_OWASP_LLM_GUIDANCE.md)
+- [Statistical Uncertainty in Agent Evaluation](AGENT_EVALUATION_STATISTICAL_UNCERTAINTY.md)
+- [Threat Modeling Agent Systems with MITRE ATLAS](AGENT_THREAT_MODELING_MITRE_ATLAS.md)
