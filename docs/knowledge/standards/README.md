@@ -15,6 +15,7 @@ This family contains internal documentation conventions and guidance mapped to e
 ## Selected current guidance
 
 - [EU Gigabit Infrastructure Act Permit and Data Governance](compliance/eu-gigabit-infrastructure-act-permit-data-governance.md)
+- [OSCAL Artifact Version Governance](compliance/oscal-artifact-version-governance.md)
 - [EU Packaging Regulation Data, Reuse, and Evidence Governance](compliance/eu-ppwr-packaging-data-reuse-evidence.md)
 - [EU Product Liability Directive Software and AI Evidence](compliance/eu-product-liability-directive-software-ai-evidence.md)
 - [EU Consumer Credit Directive Digital Journey Controls](compliance/eu-consumer-credit-directive-digital-journey-controls.md)

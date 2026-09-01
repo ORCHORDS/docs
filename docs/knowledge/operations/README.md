@@ -20,3 +20,4 @@ This family contains reusable operational guidance for infrastructure, deploymen
 - [GitHub Reusable Workflow Secret Boundaries](GITHUB_REUSABLE_WORKFLOW_SECRET_BOUNDARIES.md)
 - [GitHub Dependency Review and Submission Ordering](GITHUB_DEPENDENCY_REVIEW_SUBMISSION_ORDERING.md)
 - [GitHub Actions Cache Trust Boundaries](GITHUB_ACTIONS_CACHE_TRUST_BOUNDARIES.md)
+- [BGP Roles and RFC 9234 Route-Leak Prevention](infra/bgp-roles-rfc-9234-route-leak-prevention.md)
