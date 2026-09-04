@@ -117,3 +117,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Archive Extraction Safety Validation](ARCHIVE_EXTRACTION_SAFETY_VALIDATION.md)
 - [Production Debug and Source-Metadata Exposure Validation](PRODUCTION_DEBUG_METADATA_EXPOSURE_VALIDATION.md)
 - [OAuth Transaction Binding Validation](OAUTH_TRANSACTION_BINDING_VALIDATION.md)
+- [Browser Security Header Validation](BROWSER_SECURITY_HEADER_VALIDATION.md)
+- [Cookie Security Attribute Review](COOKIE_SECURITY_ATTRIBUTE_REVIEW.md)
+- [External Asset Subresource Integrity Review](EXTERNAL_ASSET_SUBRESOURCE_INTEGRITY_REVIEW.md)
