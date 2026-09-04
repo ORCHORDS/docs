@@ -123,3 +123,7 @@ This family contains repeatable procedures for development, deployment, incident
 - [Business Logic Sequence and Step-Order Review](BUSINESS_LOGIC_SEQUENCE_STEP_ORDER_REVIEW.md)
 - [Limited-Resource Concurrency and Locking Review](LIMITED_RESOURCE_CONCURRENCY_LOCKING_REVIEW.md)
 - [Anti-Automation Business Logic Abuse Review](ANTI_AUTOMATION_BUSINESS_LOGIC_ABUSE_REVIEW.md)
+- [API Response Content-Type Validation Review](API_RESPONSE_CONTENT_TYPE_VALIDATION_REVIEW.md)
+- [Trusted Intermediary Header Override Review](INTERMEDIARY_HEADER_TRUST_OVERRIDE_REVIEW.md)
+- [GraphQL Query Complexity and Denial-of-Service Review](GRAPHQL_QUERY_COMPLEXITY_DENIAL_OF_SERVICE_REVIEW.md)
+- [GraphQL Production Introspection Review](GRAPHQL_PRODUCTION_INTROSPECTION_REVIEW.md)
