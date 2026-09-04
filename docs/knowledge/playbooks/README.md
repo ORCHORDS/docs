@@ -111,3 +111,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Software Supply Chain Failure Review](SOFTWARE_SUPPLY_CHAIN_FAILURE_REVIEW.md)
 - [Exceptional Condition Fail-Secure Exercise](EXCEPTIONAL_CONDITION_FAIL_SECURE_EXERCISE.md)
 - [Application Security Portfolio Assurance Review](APPLICATION_SECURITY_PORTFOLIO_ASSURANCE_REVIEW.md)
+- [Secure Development Environment Validation](SECURE_DEVELOPMENT_ENVIRONMENT_VALIDATION.md)
+- [Release Provenance Reconciliation](RELEASE_PROVENANCE_RECONCILIATION.md)
+- [Security Decision Traceability Review](SECURITY_DECISION_TRACEABILITY_REVIEW.md)
