@@ -88,3 +88,8 @@ This family contains repeatable procedures for development, deployment, incident
 - [Physical Access Review](PHYSICAL_ACCESS_REVIEW.md)
 - [Personnel Screening Review](PERSONNEL_SCREENING_REVIEW.md)
 - [Supply Chain Risk Plan Review](SUPPLY_CHAIN_RISK_PLAN_REVIEW.md)
+- [API Function Authorization Review](API_FUNCTION_AUTHORIZATION_REVIEW.md)
+- [Sensitive Business Flow Abuse Test](SENSITIVE_BUSINESS_FLOW_ABUSE_TEST.md)
+- [API Stack Hardening Review](API_STACK_HARDENING_REVIEW.md)
+- [API Host and Version Inventory Reconciliation](API_HOST_VERSION_INVENTORY_RECONCILIATION.md)
+- [Third-Party API Consumption Review](THIRD_PARTY_API_CONSUMPTION_REVIEW.md)
