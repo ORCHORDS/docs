@@ -102,3 +102,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Internet Exposure Reconciliation](INTERNET_EXPOSURE_RECONCILIATION.md)
 - [Internet Exposure Reduction Change](INTERNET_EXPOSURE_REDUCTION_CHANGE.md)
 - [Retained Internet Exposure Hardening Review](RETAINED_INTERNET_EXPOSURE_HARDENING_REVIEW.md)
+- [Network Management Plane Isolation Validation](NETWORK_MANAGEMENT_PLANE_ISOLATION_VALIDATION.md)
+- [Network Device Configuration Drift Response](NETWORK_DEVICE_CONFIGURATION_DRIFT_RESPONSE.md)
+- [Secure Network Management Protocol Review](SECURE_NETWORK_MANAGEMENT_PROTOCOL_REVIEW.md)
