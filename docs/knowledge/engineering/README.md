@@ -16,6 +16,7 @@ This family contains reusable software-engineering knowledge, including architec
 
 - [Generative AI SSDF Community Profile](GENAI_SSDF_COMMUNITY_PROFILE.md)
 - [A2A TCK Conformance Governance](A2A_TCK_CONFORMANCE_GOVERNANCE.md)
+- [A2A gRPC Protocol Binding Governance](A2A_GRPC_PROTOCOL_BINDING_GOVERNANCE.md)
 
 ## 2026-09-01 standards and implementation guidance
 
