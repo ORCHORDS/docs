@@ -99,3 +99,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Secure-Default Credential Validation](SECURE_DEFAULT_CREDENTIAL_VALIDATION.md)
 - [Privileged MFA Default Validation](PRIVILEGED_MFA_DEFAULT_VALIDATION.md)
 - [Security Logging Baseline Validation](SECURITY_LOGGING_BASELINE_VALIDATION.md)
+- [Internet Exposure Reconciliation](INTERNET_EXPOSURE_RECONCILIATION.md)
+- [Internet Exposure Reduction Change](INTERNET_EXPOSURE_REDUCTION_CHANGE.md)
+- [Retained Internet Exposure Hardening Review](RETAINED_INTERNET_EXPOSURE_HARDENING_REVIEW.md)
