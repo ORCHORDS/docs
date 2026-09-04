@@ -127,3 +127,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [Trusted Intermediary Header Override Review](INTERMEDIARY_HEADER_TRUST_OVERRIDE_REVIEW.md)
 - [GraphQL Query Complexity and Denial-of-Service Review](GRAPHQL_QUERY_COMPLEXITY_DENIAL_OF_SERVICE_REVIEW.md)
 - [GraphQL Production Introspection Review](GRAPHQL_PRODUCTION_INTROSPECTION_REVIEW.md)
+
+## 2026-09-04 cross-family playbook expansion (Batch 54)
+
+- [Container Image Build Hardening Response](CONTAINER_IMAGE_BUILD_HARDENING_RESPONSE.md)
+- [Public Key Infrastructure Operations Response](PUBLIC_KEY_INFRASTRUCTURE_OPERATIONS_RESPONSE.md)
+- [Data Loss Prevention Response](DATA_LOSS_PREVENTION_RESPONSE.md)
+- [Site Reliability Engineering On-Call Response](SITE_RELIABILITY_ENGINEERING_ON_CALL_RESPONSE.md)
+- [Cloud Resource Naming and Tagging Response](CLOUD_NAMING_AND_TAGGING_RESPONSE.md)
+- [Secure Software Release Verification Response](SECURE_SOFTWARE_RELEASE_VERIFICATION_RESPONSE.md)
+- [OAuth 2.1 Client Integration Response](OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)
+- [Secure Boot and Measured Boot Response](SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)
