@@ -103,3 +103,14 @@ This family contains shared glossaries, checklists, command references, configur
 - [ISO 4217:2015 Currency Codes Version Guide](ISO_4217_2015_CURRENCY_CODES_VERSION_GUIDE.md)
 - [ISO 639-3:2007 Language Codes Version Guide](ISO_639_3_2007_LANGUAGE_CODES_VERSION_GUIDE.md)
 - [IANA Time Zone Database (tzdb) 2026a Version Guide](IANA_TIME_ZONE_DATABASE_2026A_VERSION_GUIDE.md)
+
+## 2026-09-04 AI risk and governance reference cards (Batch 55)
+
+- [NIST AI 100-1 AI RMF 1.0 Version Guide](NIST_AI_100_1_AI_RMF_1_0_VERSION_GUIDE.md)
+- [NIST AI 600-1 Generative AI Profile Version Guide](NIST_AI_600_1_GENAI_PROFILE_VERSION_GUIDE.md)
+- [NIST AI 100-2 Adversarial ML Taxonomy Version Guide](NIST_AI_100_2_ADVERSARIAL_ML_VERSION_GUIDE.md)
+- [ISO/IEC 42001:2023 AIMS Version Guide](ISO_IEC_42001_2023_AIMS_VERSION_GUIDE.md)
+- [ISO/IEC 23894:2023 AI Risk Management Version Guide](ISO_IEC_23894_2023_AI_RISK_VERSION_GUIDE.md)
+- [OECD AI Principles Version Guide](OECD_AI_PRINCIPLES_2024_VERSION_GUIDE.md)
+- [EU AI Act — Regulation 2024/1689 Version Guide](EU_AI_ACT_2024_1689_VERSION_GUIDE.md)
+- [ISO/IEC 42005 AI Impact Assessment Version Guide](ISO_IEC_42005_AI_IMPACT_ASSESSMENT_VERSION_GUIDE.md)
