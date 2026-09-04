@@ -114,3 +114,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Secure Development Environment Validation](SECURE_DEVELOPMENT_ENVIRONMENT_VALIDATION.md)
 - [Release Provenance Reconciliation](RELEASE_PROVENANCE_RECONCILIATION.md)
 - [Security Decision Traceability Review](SECURITY_DECISION_TRACEABILITY_REVIEW.md)
+- [Archive Extraction Safety Validation](ARCHIVE_EXTRACTION_SAFETY_VALIDATION.md)
+- [Production Debug and Source-Metadata Exposure Validation](PRODUCTION_DEBUG_METADATA_EXPOSURE_VALIDATION.md)
+- [OAuth Transaction Binding Validation](OAUTH_TRANSACTION_BINDING_VALIDATION.md)
