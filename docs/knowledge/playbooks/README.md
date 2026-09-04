@@ -93,3 +93,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [API Stack Hardening Review](API_STACK_HARDENING_REVIEW.md)
 - [API Host and Version Inventory Reconciliation](API_HOST_VERSION_INVENTORY_RECONCILIATION.md)
 - [Third-Party API Consumption Review](THIRD_PARTY_API_CONSUMPTION_REVIEW.md)
+- [NIST AAL2 Phishing-Resistant Option Review](NIST_AAL2_PHISHING_RESISTANT_OPTION_REVIEW.md)
+- [Syncable Authenticator Assurance Review](SYNCABLE_AUTHENTICATOR_ASSURANCE_REVIEW.md)
+- [NIST AAL3 Authenticator and Session Validation](NIST_AAL3_AUTHENTICATOR_AND_SESSION_VALIDATION.md)
