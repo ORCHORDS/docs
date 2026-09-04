@@ -3,9 +3,9 @@ title: "Reference Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-09-04"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2026-12-03"
 ---
 
 # Reference Documentation
@@ -92,3 +92,14 @@ This family contains shared glossaries, checklists, command references, configur
 ## 2026-09-04 cross-family standards and governance guidance (Batch 53)
 
 - [IETF RFC 9562 UUID v7 Governance](IETF_RFC_9562_UUID_V7_GOVERNANCE.md)
+
+## 2026-09-04 foundational format and code-set reference cards (Batch 54)
+
+- [ISO 8601:2019 Date and Time Format Version Guide](ISO_8601_2019_DATE_TIME_FORMAT_VERSION_GUIDE.md)
+- [IETF RFC 3339 Date and Time on the Internet Version Guide](IETF_RFC_3339_DATE_TIME_FORMAT_VERSION_GUIDE.md)
+- [IETF BCP 47 Language Tags Version Guide](IETF_BCP_47_LANGUAGE_TAGS_VERSION_GUIDE.md)
+- [IETF RFC 3986 URI Generic Syntax Version Guide](IETF_RFC_3986_URI_GENERIC_SYNTAX_VERSION_GUIDE.md)
+- [ISO 3166-1:2020 Country Codes Version Guide](ISO_3166_1_2020_COUNTRY_CODES_VERSION_GUIDE.md)
+- [ISO 4217:2015 Currency Codes Version Guide](ISO_4217_2015_CURRENCY_CODES_VERSION_GUIDE.md)
+- [ISO 639-3:2007 Language Codes Version Guide](ISO_639_3_2007_LANGUAGE_CODES_VERSION_GUIDE.md)
+- [IANA Time Zone Database (tzdb) 2026a Version Guide](IANA_TIME_ZONE_DATABASE_2026A_VERSION_GUIDE.md)
