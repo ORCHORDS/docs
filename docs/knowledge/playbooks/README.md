@@ -120,3 +120,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Browser Security Header Validation](BROWSER_SECURITY_HEADER_VALIDATION.md)
 - [Cookie Security Attribute Review](COOKIE_SECURITY_ATTRIBUTE_REVIEW.md)
 - [External Asset Subresource Integrity Review](EXTERNAL_ASSET_SUBRESOURCE_INTEGRITY_REVIEW.md)
+- [Business Logic Sequence and Step-Order Review](BUSINESS_LOGIC_SEQUENCE_STEP_ORDER_REVIEW.md)
+- [Limited-Resource Concurrency and Locking Review](LIMITED_RESOURCE_CONCURRENCY_LOCKING_REVIEW.md)
+- [Anti-Automation Business Logic Abuse Review](ANTI_AUTOMATION_BUSINESS_LOGIC_ABUSE_REVIEW.md)
