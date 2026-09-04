@@ -105,3 +105,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Network Management Plane Isolation Validation](NETWORK_MANAGEMENT_PLANE_ISOLATION_VALIDATION.md)
 - [Network Device Configuration Drift Response](NETWORK_DEVICE_CONFIGURATION_DRIFT_RESPONSE.md)
 - [Secure Network Management Protocol Review](SECURE_NETWORK_MANAGEMENT_PROTOCOL_REVIEW.md)
+- [Memory Safety Roadmap Review](MEMORY_SAFETY_ROADMAP_REVIEW.md)
+- [Vulnerability Class Elimination Review](VULNERABILITY_CLASS_ELIMINATION_REVIEW.md)
+- [Secure Query Construction Review](SECURE_QUERY_CONSTRUCTION_REVIEW.md)
