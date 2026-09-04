@@ -83,3 +83,7 @@ This family contains reusable guidance for commercial operations, communications
 - [PCI DSS PAYMENT CARD GOVERNANCE](PCI_DSS_PAYMENT_CARD_GOVERNANCE.md)
 - [SOX SARBANES OXLEY GOVERNANCE](SOX_SARBANES_OXLEY_GOVERNANCE.md)
 - [TBL TRIPLE BOTTOM LINE GOVERNANCE](TBL_TRIPLE_BOTTOM_LINE_GOVERNANCE.md)
+
+## 2026-09-04 cross-family standards and governance guidance (Batch 53)
+
+- [ISO 22322 2022 Public Warning Governance](ISO_22322_2022_PUBLIC_WARNING_GOVERNANCE.md)

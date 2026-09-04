@@ -88,3 +88,7 @@ This family contains shared glossaries, checklists, command references, configur
 - [OGC API FEATURES PART 1 GOVERNANCE](OGC_API_FEATURES_PART_1_GOVERNANCE.md)
 - [W3C DCAT 3 METADATA GOVERNANCE](W3C_DCAT_3_METADATA_GOVERNANCE.md)
 - [W3C VC DATA MODEL 2 GOVERNANCE](W3C_VC_DATA_MODEL_2_GOVERNANCE.md)
+
+## 2026-09-04 cross-family standards and governance guidance (Batch 53)
+
+- [IETF RFC 9562 UUID v7 Governance](IETF_RFC_9562_UUID_V7_GOVERNANCE.md)
