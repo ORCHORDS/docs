@@ -96,3 +96,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [NIST AAL2 Phishing-Resistant Option Review](NIST_AAL2_PHISHING_RESISTANT_OPTION_REVIEW.md)
 - [Syncable Authenticator Assurance Review](SYNCABLE_AUTHENTICATOR_ASSURANCE_REVIEW.md)
 - [NIST AAL3 Authenticator and Session Validation](NIST_AAL3_AUTHENTICATOR_AND_SESSION_VALIDATION.md)
+- [Secure-Default Credential Validation](SECURE_DEFAULT_CREDENTIAL_VALIDATION.md)
+- [Privileged MFA Default Validation](PRIVILEGED_MFA_DEFAULT_VALIDATION.md)
+- [Security Logging Baseline Validation](SECURITY_LOGGING_BASELINE_VALIDATION.md)
