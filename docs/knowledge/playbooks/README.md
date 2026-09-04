@@ -138,3 +138,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [Secure Software Release Verification Response](SECURE_SOFTWARE_RELEASE_VERIFICATION_RESPONSE.md)
 - [OAuth 2.1 Client Integration Response](OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)
 - [Secure Boot and Measured Boot Response](SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)
+
+## 2026-09-04 cross-family playbook expansion (Batch 56)
+
+- [Secret Rotation Response](SECRET_ROTATION_RESPONSE.md)
+- [Certificate Lifecycle Management Response](CERTIFICATE_LIFECYCLE_RESPONSE.md)
+- [DNS Resilience and Mitigation Response](DNS_RESILIENCE_RESPONSE.md)
+- [Software Supply Chain Compromise Response](SUPPLY_CHAIN_COMPROMISE_RESPONSE.md)
+- [Tabletop Exercise Response](TABLETOP_EXERCISE_RESPONSE.md)
+- [Chaos Engineering Response](CHAOS_ENGINEERING_RESPONSE.md)
+- [Disaster Recovery Failover Response](DISASTER_RECOVERY_FAILOVER_RESPONSE.md)
+- [Zero Trust Access Implementation Response](ZERO_TRUST_ACCESS_RESPONSE.md)
