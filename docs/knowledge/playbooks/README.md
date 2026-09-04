@@ -108,3 +108,6 @@ This family contains repeatable procedures for development, deployment, incident
 - [Memory Safety Roadmap Review](MEMORY_SAFETY_ROADMAP_REVIEW.md)
 - [Vulnerability Class Elimination Review](VULNERABILITY_CLASS_ELIMINATION_REVIEW.md)
 - [Secure Query Construction Review](SECURE_QUERY_CONSTRUCTION_REVIEW.md)
+- [Software Supply Chain Failure Review](SOFTWARE_SUPPLY_CHAIN_FAILURE_REVIEW.md)
+- [Exceptional Condition Fail-Secure Exercise](EXCEPTIONAL_CONDITION_FAIL_SECURE_EXERCISE.md)
+- [Application Security Portfolio Assurance Review](APPLICATION_SECURITY_PORTFOLIO_ASSURANCE_REVIEW.md)
