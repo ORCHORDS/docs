@@ -69,7 +69,7 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- Principles of Chaos Engineering
+- [Principles of Chaos Engineering](../reference/PRINCIPLES_OF_CHAOS_ENGINEERING.md)
 - [NIST SP 800-84 Test, Training, and Exercise Programs](../reference/NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
-- Google SRE Book — Release Engineering
+- [Google SRE Book — Release Engineering](../reference/GOOGLE_SRE_RELEASE_ENGINEERING.md)
 - [Site Reliability Engineering On-Call Response](SITE_RELIABILITY_ENGINEERING_ON_CALL_RESPONSE.md)

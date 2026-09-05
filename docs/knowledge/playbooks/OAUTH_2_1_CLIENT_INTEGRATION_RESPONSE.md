@@ -71,8 +71,8 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- IETF OAuth 2.1 Authorization Framework
-- IETF RFC 9700 OAuth 2.0 Security Best Current Practice
-- OpenID Connect Core 1.0
-- FAPI 2.0 Security Profile
-- Token Storage Best Practices
+- [IETF OAuth 2.1 Authorization Framework](../reference/IETF_OAUTH_2_1_AUTHORIZATION_FRAMEWORK.md)
+- [IETF RFC 9700 OAuth 2.0 Security Best Current Practice](../reference/IETF_RFC_9700_OAUTH_2_0_SECURITY_BCP.md)
+- [OpenID Connect Core 1.0](../reference/OPENID_CONNECT_CORE_1_0.md)
+- [FAPI 2.0 Security Profile](../reference/FAPI_2_0_SECURITY_PROFILE.md)
+- [Token Storage Best Practices](../reference/TOKEN_STORAGE_BEST_PRACTICES.md)

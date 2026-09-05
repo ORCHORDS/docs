@@ -71,6 +71,6 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 - [NIST SP 800-155 BIOS Integrity Measurement](../reference/NIST_SP_800_155_BIOS_INTEGRITY_MEASUREMENT.md)
 - [UEFI Specification 2.10](../reference/UEFI_SPECIFICATION_2_10.md)
-- TPM Library Specification 2.0
-- Trusted Computing Group Reference
-- Endpoint Detection and Response Integration
+- [TPM Library Specification 2.0](../reference/TPM_LIBRARY_SPECIFICATION_2_0.md)
+- [Trusted Computing Group Reference](../reference/TCG_REFERENCE.md)
+- [Endpoint Detection and Response Integration](../reference/ENDPOINT_DETECTION_RESPONSE_INTEGRATION.md)
