@@ -189,3 +189,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [CoAP Version Governance (RFC 7252, RFC 7641, RFC 7959, RFC 8323, RFC 8613, RFC 8974)](COAP_RFC_7252_VERSION_GOVERNANCE.md)
 - [CBOR Version Governance (RFC 8949, RFC 9052, RFC 9053, RFC 9165)](CBOR_RFC_8949_VERSION_GOVERNANCE.md)
 - [LwM2M Version Governance (OASIS, OMA SpecWorks)](LWM2M_RFC_9195_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 RPKI, BGPsec and MANRS reference cards (Batch 84)
+
+- [RPKI Version Governance (RFC 6480, RFC 6482, RFC 8210, RFC 9319)](RPKI_RFC_8210_VERSION_GOVERNANCE.md)
+- [BGPsec Version Governance (RFC 8205, RFC 8209, RFC 8211)](BGPSEC_RFC_8209_VERSION_GOVERNANCE.md)
+- [MANRS (Mutually Agreed Norms for Routing Security) Governance](MANRS_GOVERNANCE.md)

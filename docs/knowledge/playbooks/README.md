@@ -235,3 +235,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [CoAP Fleet Operations Playbook](COAP_FLEET_OPERATIONS_PLAYBOOK.md)
 - [IoT Device Decommissioning Playbook](IOT_DEVICE_DECOMMISSION_PLAYBOOK.md)
 - [OT/ICS Network Segmentation Playbook](OT_SEGMENTATION_PLAYBOOK.md)
+
+## 2026-09-05 RPKI deployment, PeeringDB maintenance and DDoS mitigation playbooks (Batch 84)
+
+- [RPKI Deployment and ROV Activation Playbook](RPKI_DEPLOYMENT_PLAYBOOK.md)
+- [PeeringDB and IRR Database Update Playbook](PEERING_DB_UPDATE_PLAYBOOK.md)
+- [DDoS Mitigation Playbook](DDOS_MITIGATION_PLAYBOOK.md)
