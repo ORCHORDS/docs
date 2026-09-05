@@ -236,3 +236,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27005:2022 Information Security Risk Management Governance](ISO_IEC_27005_2022_RISK_GOVERNANCE.md)
 - [NIST SP 800-207 Zero Trust Architecture Governance](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
 - [NIST SP 800-53A Rev. 5 Assessment Procedures Governance](NIST_SP_800_53A_REV5_ASSESSMENT_GOVERNANCE.md)
+
+## 2026-09-05 ISO/IEC 27035 incident, NIST SP 800-63B authentication, and ISO/IEC 38500 IT governance cards (Batch 91)
+
+- [ISO/IEC 27035:2022 Incident Management Governance](ISO_IEC_27035_INCIDENT_GOVERNANCE.md)
+- [NIST SP 800-63B Digital Identity Guidelines — Authentication and Lifecycle Governance](NIST_SP_800_63B_IA_GOVERNANCE.md)
+- [ISO/IEC 38500:2015 IT Governance Governance](ISO_IEC_38500_IT_GOVERNANCE.md)
