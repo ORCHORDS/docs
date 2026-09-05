@@ -69,8 +69,8 @@ Document deviations from runbook steps, response time SLOs, or severity classifi
 
 ## Related Documents
 
-- Google SRE Book — Incident Management
-- ITIL 4 Incident Management Practice
-- Service Level Objective Definition
-- Error Budget Policy
-- Blameless Post-Incident Review
+- [Google SRE Book — Incident Management](../reference/GOOGLE_SRE_INCIDENT_MANAGEMENT.md)
+- [ITIL 4 Incident Management Practice](../reference/ITIL_4_INCIDENT_MANAGEMENT_PRACTICE.md)
+- [Service Level Objective Definition](../reference/SERVICE_LEVEL_OBJECTIVE_DEFINITION.md)
+- [Error Budget Policy](../reference/ERROR_BUDGET_POLICY.md)
+- [Blameless Post-Incident Review](../reference/BLAMELESS_POST_INCIDENT_REVIEW.md)
