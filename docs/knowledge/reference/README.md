@@ -165,3 +165,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [BGP v4 Version Governance (RFC 4271, RFC 8205, RFC 9234)](BGP_RFC_4271_VERSION_GOVERNANCE.md)
 - [DNSSEC Version Governance (RFC 4033, RFC 4034, RFC 4035, RFC 5155, RFC 6781, RFC 9276)](DNSSEC_RFC_4033_VERSION_GOVERNANCE.md)
 - [Network Time Security Version Governance (RFC 8915, RFC 9337)](NTS_RFC_8915_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Event-streaming and message-broker reference cards (Batch 80)
+
+- [Apache Kafka Version Governance (KIP-driven protocol)](KAFKA_KIP_VERSION_GOVERNANCE.md)
+- [AMQP 0-9-1 Version Governance (RabbitMQ wire protocol baseline)](AMQP_0_9_1_VERSION_GOVERNANCE.md)
+- [AMQP 1.0 Version Governance](AMQP_1_0_VERSION_GOVERNANCE.md)
