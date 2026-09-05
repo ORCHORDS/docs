@@ -125,3 +125,14 @@ This family contains shared glossaries, checklists, command references, configur
 - [NIST AI RMF Playbook Version Guide](NIST_AI_RMF_PLAYBOOK_VERSION_GUIDE.md)
 - [NIST AI RMF Govern Function Version Guide](NIST_AI_RMF_GOVERN_FUNCTION_VERSION_GUIDE.md)
 - [NIST AI RMF Map/Measure/Manage Functions Version Guide](NIST_AI_RMF_MAP_MEASURE_MANAGE_FUNCTIONS_VERSION_GUIDE.md)
+
+## 2026-09-05 Network protocol and security reference cards (Batch 69)
+
+- [BGP-4 Protocol Version Guide (RFC 4271)](BGP_RFC_4271_VERSION_GUIDE.md)
+- [OSPF Version 2 Protocol Version Guide (RFC 2328)](OSPF_RFC_2328_VERSION_GUIDE.md)
+- [IS-IS for IP Networks Version Guide (RFC 1195, RFC 5308)](IS_IS_RFC_1195_VERSION_GUIDE.md)
+- [Extensible Authentication Protocol (EAP) Version Guide (RFC 3748)](EAP_RFC_3748_VERSION_GUIDE.md)
+- [DNS Security Extensions (DNSSEC) Version Guide (RFC 4033, RFC 4034, RFC 4035)](DNS_DNSSEC_RFC_4033_VERSION_GUIDE.md)
+- [Network Time Protocol Version 4 Version Guide (RFC 5905)](NTP_RFC_5905_VERSION_GUIDE.md)
+- [HTTP Semantics Version Guide (RFC 9110)](HTTP_SEMANTICS_RFC_9110_VERSION_GUIDE.md)
+- [TLS 1.3 Protocol Version Guide (RFC 8446)](TLS_1_3_RFC_8446_VERSION_GUIDE.md)
