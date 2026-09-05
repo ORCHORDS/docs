@@ -242,3 +242,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27035:2022 Incident Management Governance](ISO_IEC_27035_INCIDENT_GOVERNANCE.md)
 - [NIST SP 800-63B Digital Identity Guidelines — Authentication and Lifecycle Governance](NIST_SP_800_63B_IA_GOVERNANCE.md)
 - [ISO/IEC 38500:2015 IT Governance Governance](ISO_IEC_38500_IT_GOVERNANCE.md)
+
+## 2026-09-05 NIST SP 800-57 key management, ISO 22301 BCMS, and NIST SP 800-63C federation governance cards (Batch 92)
+
+- [NIST SP 800-57 Key Management Governance](NIST_SP_800_57_KEY_MANAGEMENT_GOVERNANCE.md)
+- [ISO/IEC 22301:2019 Business Continuity Management System Governance](ISO_IEC_22301_BUSINESS_CONTINUITY_GOVERNANCE.md)
+- [NIST SP 800-63C Federation and Assertions Governance](NIST_SP_800_63C_FEDERATION_GOVERNANCE.md)

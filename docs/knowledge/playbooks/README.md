@@ -283,3 +283,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Prometheus High-Availability Playbook](PROMETHEUS_HIGH_AVAILABILITY_PLAYBOOK.md)
 - [Grafana Dashboard Provisioning Playbook](GRAFANA_DASHBOARD_PROVISIONING_PLAYBOOK.md)
 - [Kong Plugin Upgrade Playbook](KONG_PLUGIN_UPGRADE_PLAYBOOK.md)
+
+## 2026-09-05 Consul ACL rotation, Argo Rollouts canary, and Flux Helm release upgrade playbooks (Batch 92)
+
+- [Consul ACL Token Rotation Playbook](CONSUL_TOKEN_ROTATION_PLAYBOOK.md)
+- [Argo Rollouts Progressive Delivery Playbook](ARGO_ROLLOUTS_PROGRESSIVE_DELIVERY_PLAYBOOK.md)
+- [Flux Helm Release Upgrade Playbook](FLUX_HELM_RELEASE_UPGRADE_PLAYBOOK.md)
