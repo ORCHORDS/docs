@@ -171,6 +171,12 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST CSWP 23 (2024) — SBOM and Software Supply Chain Governance](NIST_CSWP_23_2024_SSB_GOVERNANCE.md)
 - [NIST IR 8259B IoT Device Cybersecurity Capability Governance](NIST_IR_8259B_IOT_GOVERNANCE.md)
 
+## 2026-09-05 NIST 800-53 Rev. 5, 800-161 Rev. 2, and ISO/IEC 25010 standards governance cards (Batch 88)
+
+- [NIST SP 800-53 Rev. 5 Security and Privacy Controls Governance](NIST_SP_800_53_R5_SECURITY_GOVERNANCE.md)
+- [NIST SP 800-161 Rev. 2 Cybersecurity Supply Chain Risk Management Governance](NIST_SP_800_161_C_SCRM_GOVERNANCE.md)
+- [ISO/IEC 25010:2011 Systems and Software Quality Governance](ISO_IEC_25010_2011_QUALITY_GOVERNANCE.md)
+
 ## 2026-09-05 ISO/IEC 27017, 27701, 30111 and NIST SSDF standards governance cards (Batch 80)
 
 - [ISO/IEC 27017:2015 Cloud-Specific Information Security Controls Governance](ISO_IEC_27017_2015_CLOUD_GOVERNANCE.md)

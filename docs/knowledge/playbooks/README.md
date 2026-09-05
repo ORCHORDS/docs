@@ -212,6 +212,12 @@ This family contains repeatable procedures for development, deployment, incident
 - [DNSSEC Key Rollover Playbook](DNSSEC_ROLLOVER_PLAYBOOK.md)
 - [Incident Postmortem Architectural Review Playbook](INCIDENT_POSTMORTEM_REVIEW_PLAYBOOK.md)
 
+## 2026-09-05 Terraform module promotion, GitOps sync recovery, and Istio mTLS rollout playbooks (Batch 88)
+
+- [Terraform Module Promotion Playbook](TERRAFORM_MODULE_PROMOTION_PLAYBOOK.md)
+- [GitOps Sync Failure Recovery Playbook](GITOPS_SYNC_FAILURE_RECOVERY_PLAYBOOK.md)
+- [Istio mTLS Rollout Playbook](ISTIO_MTLS_ROLLOUT_PLAYBOOK.md)
+
 ## 2026-09-05 Message-broker upgrade, failover, and privacy-incident playbooks (Batch 80)
 
 - [Kafka Cluster Version Bump Playbook](KAFKA_VERSION_BUMP_PLAYBOOK.md)
