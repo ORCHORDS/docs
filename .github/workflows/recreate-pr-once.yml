@@ -1,44 +1,10 @@
-name: one-shot protected PR recreation
+name: obsolete temporary workflow
 
 on:
-  push:
-    branches:
-      - automation/recreate-pr-111
-
-permissions:
-  contents: read
-  pull-requests: write
+  workflow_dispatch:
 
 jobs:
-  create:
+  noop:
     runs-on: ubuntu-latest
     steps:
-      - name: Recreate protected PR under automation identity
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          cat > /tmp/pr-body.md <<'EOF'
-          ## Summary
-
-          Replaces #111 without changing its validated source branch. This PR exists so the repository's required non-author review rule can be satisfied while preserving the exact reviewed content.
-
-          Includes:
-          - Batch 70 agent safety/robustness/context articles and follow-up reference cards;
-          - repository-wide broken relative-link repair;
-          - Scorecard PR execution and required-check name alignment.
-
-          Validation on the source head before recreation:
-          - docs-quality: success;
-          - CodeQL: success;
-          - Scorecard supply-chain security: success;
-          - validator tests: 28/28 passed;
-          - documentation quality and public neutrality: passed for 13,374 Markdown files.
-          EOF
-
-          gh pr create \
-            --repo "$GITHUB_REPOSITORY" \
-            --base main \
-            --head batch-70-agents-safety \
-            --title "fix(docs): repair documentation CI and merge Batch 70" \
-            --body-file /tmp/pr-body.md
+      - run: echo "Temporary PR recreation workflow retired; no action required."
