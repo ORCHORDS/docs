@@ -241,3 +241,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [RPKI Deployment and ROV Activation Playbook](RPKI_DEPLOYMENT_PLAYBOOK.md)
 - [PeeringDB and IRR Database Update Playbook](PEERING_DB_UPDATE_PLAYBOOK.md)
 - [DDoS Mitigation Playbook](DDOS_MITIGATION_PLAYBOOK.md)
+
+## 2026-09-05 Detection engineering, threat-intel and SOAR-authoring playbooks (Batch 85)
+
+- [Detection Engineering Playbook](DETECTION_ENGINEERING_PLAYBOOK.md)
+- [Threat Intelligence Consumption Playbook](THREAT_INTEL_CONSUMPTION_PLAYBOOK.md)
+- [SOAR Playbook Authoring Playbook](SOAR_PLAYBOOK_AUTHORING_PLAYBOOK.md)

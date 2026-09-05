@@ -201,3 +201,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27035:2016 Information Security Incident Management Governance](ISO_IEC_27035_2016_INCIDENT_GOVERNANCE.md)
 - [ISO/IEC 27033 Network Security Governance](ISO_IEC_27033_2022_NETWORK_GOVERNANCE.md)
 - [ISO/IEC 27005:2022 Information Security Risk Management Governance](ISO_IEC_27005_2022_RISK_GOVERNANCE.md)
+
+## 2026-09-05 NIST SP 800-61, SP 800-92 and CSF 2.0 governance cards (Batch 85)
+
+- [NIST SP 800-61 Rev. 2 Computer Security Incident Handling Guide Governance](NIST_SP_800_61_INCIDENT_GOVERNANCE.md)
+- [NIST SP 800-92 Guide to Computer Security Log Management Governance](NIST_SP_800_92_LOG_GOVERNANCE.md)
+- [NIST Cybersecurity Framework 2.0 Governance](NIST_CSF_2_2024_GOVERNANCE.md)
