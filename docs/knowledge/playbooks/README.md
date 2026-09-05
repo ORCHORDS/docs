@@ -277,3 +277,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [NATS Cluster Failover Playbook](NATS_CLUSTER_FAILOVER_PLAYBOOK.md)
 - [NGINX TLS Certificate Renewal Playbook](NGINX_TLS_CERT_RENEWAL_PLAYBOOK.md)
 - [Envoy Listener Hot Reload Playbook](ENVOY_LISTENER_HOT_RELOAD_PLAYBOOK.md)
+
+## 2026-09-05 Prometheus HA, Grafana provisioning, and Kong plugin upgrade playbooks (Batch 91)
+
+- [Prometheus High-Availability Playbook](PROMETHEUS_HIGH_AVAILABILITY_PLAYBOOK.md)
+- [Grafana Dashboard Provisioning Playbook](GRAFANA_DASHBOARD_PROVISIONING_PLAYBOOK.md)
+- [Kong Plugin Upgrade Playbook](KONG_PLUGIN_UPGRADE_PLAYBOOK.md)

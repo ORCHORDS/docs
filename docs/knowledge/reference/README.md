@@ -231,3 +231,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [NATS Messaging Version Governance](NATS_VERSION_GOVERNANCE.md)
 - [NGINX / NGINX Ingress Controller Version Governance](NGINX_VERSION_GOVERNANCE.md)
 - [Envoy Proxy Version Governance](ENVOY_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Observability and API gateway reference cards (Batch 91)
+
+- [Prometheus and OpenMetrics Version Governance](PROMETHEUS_VERSION_GOVERNANCE.md)
+- [Grafana Version Governance](GRAFANA_VERSION_GOVERNANCE.md)
+- [Kong API Gateway Version Governance](KONG_VERSION_GOVERNANCE.md)
