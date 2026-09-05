@@ -182,3 +182,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [Public Key Infrastructure Review](PUBLIC_KEY_INFRASTRUCTURE_REVIEW.md)
 - [TLS Certificate Revocation Response](TLS_CERTIFICATE_REVOCATION_RESPONSE.md)
 - [Software Bill of Materials Publishing](SOFTWARE_BILL_OF_MATERIALS_PUBLISHING.md)
+
+## 2026-09-05 API, container, identity, and incident playbooks (Batch 68)
+
+- [API Gateway Threat Model Review](API_GATEWAY_THREAT_MODEL_REVIEW.md)
+- [Container Escape Response Review](CONTAINER_ESCAPE_RESPONSE_REVIEW.md)
+- [CloudTrail Investigation Playbook](CLOUDTRAIL_INVESTIGATION_PLAYBOOK.md)
+- [Incident Timeline Reconstruction](INCIDENT_TIMELINE_RECONSTRUCTION.md)
+- [Reviewer Review Record Retention](REVIEWER_REVIEW_RECORD_RETENTION.md)
+- [Zero Trust Decision Audit](ZERO_TRUST_DECISION_AUDIT.md)
+- [Build Time Secret Detection Response](BUILD_TIME_SECRET_DETECTION_RESPOND.md)
+- [Workload Identity Attestation Verification](WORKLOAD_IDENTITY_ATTESTATION_VERIFY.md)
