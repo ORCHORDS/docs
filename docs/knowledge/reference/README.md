@@ -207,3 +207,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [PostgreSQL Version Governance (Community, Major Versions 16/17/18)](POSTGRES_VERSION_GOVERNANCE.md)
 - [Redis Version Governance (Community, Open Source, Stack 7.x, Stack 8.x)](REDIS_VERSION_GOVERNANCE.md)
 - [etcd Version Governance (CNCF, distributed KV store)](ETCD_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Cloud-native runtime and supply-chain reference cards (Batch 87)
+
+- [Kubernetes Version Governance (CNCF Kubernetes Releases)](KUBERNETES_VERSION_GOVERNANCE.md)
+- [Container Runtime, Image Format and Registry Version Governance (OCI)](OCI_RUNTIME_VERSION_GOVERNANCE.md)
+- [SLSA (Supply-chain Levels for Software Artifacts) Version Governance](SLSA_VERSION_GOVERNANCE.md)

@@ -213,3 +213,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 22123:2023 Cloud Computing Reference Architecture Governance](ISO_IEC_22123_2023_CLOUD_GOVERNANCE.md)
 - [NIST SP 800-207 Zero Trust Architecture Governance](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
 - [NIST SP 800-204D Microservices Security Governance](NIST_SP_800_204_CMS_GOVERNANCE.md)
+
+## 2026-09-05 CNCF CKS, CIS CSC v8 and NIST SP 800-190 governance cards (Batch 87)
+
+- [CNCF CKS Kubernetes Security Governance](CNCF_CKS_KUBERNETES_GOVERNANCE.md)
+- [CIS Critical Security Controls v8 Governance](CIS_CONTROLS_V8_GOVERNANCE.md)
+- [NIST SP 800-190 Application Container Security Guide Governance](NIST_SP_800_190_DOCKER_GOVERNANCE.md)
