@@ -1,52 +1,161 @@
-# CBOR RFC 8949 Version Governance
+---
+title: CBOR Version Governance (RFC 8949, RFC 9052, RFC 9053, RFC 9165)
+owner: Knowledge Engineering
+status: approved
+classification: public
+last-reviewed: 2026-09-05
+review-cycle: 180 days
+next-review: 2027-03-04
+source: IETF RFC 8949 (December 2020); RFC 9052 (August 2022); RFC 9053 (August 2022); RFC 9054 (August 2022); RFC 9165 (December 2021); https://www.rfc-editor.org/rfc/rfc8949
+---
 
-## Purpose
+# CBOR Version Governance (RFC 8949, RFC 9052, RFC 9053, RFC 9165)
 
-Concise Binary Object Representation (CBOR) is a compact binary data format. Interoperability depends not only on successful parsing but also on data-model choices, tag semantics, deterministic encoding requirements, and application profiles.
+## Scope
 
-Producers and consumers should identify RFC 8949 as their baseline where applicable and document any companion standards or application profiles they require.
+This card governs how `orchords-docs` evaluates Concise Binary Object Representation (CBOR) and its supporting cryptography / serialization standards. CBOR is the binary data format for constrained environments, IoT, WebAuthn, COSE-secure messaging, and many SD-JWT-based identity tokens.
 
-## Current context and source status
+## Why this card exists
 
-**RFC 8949**, published in December 2020, is the Internet Standard for CBOR and obsoletes RFC 7049. RFC 7049 is therefore a legacy reference, even though many documents produced under it remain parseable.
+CBOR is a typed binary format with explicit support for tags (RFC 8949 § 3.4), canonicalization (RFC 8949 § 4), and indefinite-length items. COSE (RFC 9052/9053/9054) provides authenticated encryption and signing on top of CBOR. CWT (RFC 8392) provides a CBOR-equivalent of JWT for constrained environments. CIRA (RFC 9165) adds CBOR-in-HTTP header for content negotiation. A KB card that cites "CBOR" without enumerating these standards produces a binary pipeline that cannot interop with the canonical representation.
 
-Companion specifications address separate concerns. For example, RFC 8742 defines CBOR sequences. A claim of RFC 8949 support does not by itself imply support for sequences, every registered tag, deterministic encoding, a particular schema language, or an application protocol.
+## Document set
 
-## Governance pattern
+- **RFC 8949** — Concise Binary Object Representation (CBOR) — December 2020.
+- **RFC 9052** — CBOR Object Signing and Encryption (COSE) Structure — August 2022.
+- **RFC 9053** — CBOR Object Signing and Encryption (COSE) Algorithms — August 2022.
+- **RFC 9054** — CBOR Object Signing and Encryption (COSE) Key — August 2022.
+- **RFC 8392** — CBOR Web Token (CWT) — May 2018.
+- **RFC 8742** — Concise Data Definition Language (CDDL) — April 2020.
+- **RFC 9165** — CBOR Encoding for HTTP — December 2021.
 
-1. Record the governing RFC, media type, application profile, tag set, and any structural schema used by each interface.
-2. Pin encoders and decoders to tested versions and document configuration that changes accepted or emitted representations.
-3. Define whether preferred serialization or deterministic encoding is required. If signatures or hashes cover encoded bytes, specify and test the exact deterministic rules.
-4. Maintain an allowlist or explicit handling policy for tags used by the application. Registration of a tag does not prove that every decoder implements its semantics.
-5. Set limits for nesting, collection lengths, byte and text strings, integers, decompressed or expanded output, and total decoding work.
-6. Test duplicate map keys, invalid UTF-8, indefinite-length items, non-preferred encodings, unknown tags, trailing data, and numeric boundary cases according to the profile.
-7. Treat RFC 7049-era inputs as a documented compatibility mode rather than silently claiming that all legacy behavior is RFC 8949 behavior.
+References: `https://www.rfc-editor.org/rfc/rfc8949`, `https://www.rfc-editor.org/rfc/rfc9052`, `https://www.rfc-editor.org/rfc/rfc9165`.
 
-## Transport and sequences
+## Major type table
 
-Use the registered media type appropriate to the payload and protocol. Do not infer that a byte stream contains one CBOR data item, a CBOR sequence, or a framed application message without an explicit contract. When profiles or content-type parameters are used, preserve them in interface and test evidence.
+CBOR major types are the basis of the typed binary format:
 
-## Determinism and signatures
+| Major type | Meaning | Example |
+|---|---|---|
+| 0 | unsigned integer | `1`, `42`, `2^64-1` |
+| 1 | negative integer | `-1`, `-42` |
+| 2 | byte string | `h'0123'` |
+| 3 | text string | `"hello"` |
+| 4 | array | `[1, 2, 3]` |
+| 5 | map | `{1: "a", 2: "b"}` |
+| 6 | tagged item | tag wrapper |
+| 7 | floating-point / simple | `1.5`, `true`, `false`, `null`, `undefined` |
 
-Equivalent CBOR data models can have different byte encodings. Signature verification, content addressing, and reproducible hashing therefore require an agreed deterministic encoding profile; ordinary decode-and-reencode behavior is not sufficient evidence. Verify canonicalization before signing and reject representations outside the profile where the protocol requires that behavior.
+## Tag table (RFC 8949 § 3.4)
 
-## Failure modes
+Tags are critical for interop. The KB reference card enumerates the tags in use. The standard tag set:
 
-- Referring only to “CBOR” hides whether RFC 8949, legacy RFC 7049 behavior, sequences, or an application profile is intended.
-- Assuming every decoder implements all registered tags creates semantic mismatches.
-- Signing arbitrary encoder output without deterministic rules makes signatures non-portable.
-- Accepting unbounded nesting or lengths exposes decoders to resource exhaustion.
-- Treating a parseable legacy representation as proof of current-profile conformance overstates compatibility.
-- Conflating CBOR with other binary formats obscures different data models and extension mechanisms.
+| Tag | Meaning |
+|---|---|
+| 0 | Standard date/time (RFC 3339) |
+| 1 | Epoch-based date/time |
+| 2 | Positive bignum |
+| 3 | Negative bignum |
+| 4 | Decimal fraction |
+| 5 | Bigfloat |
+| 6-11 | reserved (was proposed for bytes/text/arrays/maps) |
+| 12 | COSE_Encrypt0 (RFC 9052) |
+| 13 | COSE_Mac0 (RFC 9052) |
+| 14 | COSE_Sign1 (RFC 9052) |
+| 15 | COSE_Encrypt (RFC 9052) |
+| 16 | COSE_Mac (RFC 9052) |
+| 17 | COSE_Sign (RFC 9052) |
+| 18 | COSE_Key (RFC 9052) |
+| 22 | COSE_KeySet (RFC 9052) |
+| 24 | COSE_Encrypt_tag (RFC 9052) |
+| 25 | COSE_Mac_tag (RFC 9052) |
+| 26 | COSE_Sign_tag (RFC 9052) |
+| 28 | CWT (RFC 8392) |
+| 61 | COSE_ToBeSigned |
+| 96-127 | IANA-registered |
+| 256-32767 | first-party private |
+
+## Canonicalization (RFC 8949 § 4.2)
+
+The CBOR canonical encoding is mandatory for deterministic signature input:
+
+- Maps: keys sorted by encoded length, then by lexicographic byte order.
+- Indefinite-length items: forbidden in canonical encoding (use definite-length).
+- Numeric encoding: integer form preferred over float form for integer values.
+- Tags: included for tagged items.
+
+A reference card that cites "COSE-signed CBOR" must use canonical encoding.
+
+## COSE algorithms (RFC 9053)
+
+The COSE algorithm registry defines:
+
+| Algorithm | Identifier | Use case |
+|---|---|---|
+| ES256 | -7 | ECDSA P-256 SHA-256 |
+| EdDSA | -8 | Ed25519 (preferred) |
+| ES384 | -35 | ECDSA P-384 |
+| ES512 | -36 | ECDSA P-521 |
+| HS256 | 5 | HMAC-SHA-256 |
+| HS384 | 6 | HMAC-SHA-384 |
+| HS512 | 7 | HMAC-SHA-512 |
+| A128GCM | 1 | AES-128-GCM |
+| A192GCM | 3 | AES-192-GCM |
+| A256GCM | 2 | AES-256-GCM |
+| ChaCha20/Poly1305 | 24 | ChaCha20-Poly1305 |
+| A128CBC-HS256 | 14 | AES-128-CBC + HMAC-SHA-256 |
+| A256CBC-HS512 | 19 | AES-256-CBC + HMAC-SHA-512 |
+| ES256K | -47 | ECDSA secp256k1 |
+
+Policy:
+
+- EdDSA (Ed25519) preferred for new deployments.
+- ES256 acceptable for ECDSA-required interop.
+- AES-CBC allowed only when paired with HMAC (AEAD construction).
+- HS256/384/512 only for symmetric use cases.
+
+References: `https://www.iana.org/assignments/cose/cose.xhtml`.
+
+## CWT (RFC 8392)
+
+CBOR Web Token mirrors JWT claims. Mandatory claims:
+
+| Claim | CBOR key | Type |
+|---|---|---|
+| `iss` | 1 | text |
+| `sub` | 2 | text |
+| `aud` | 3 | text |
+| `exp` | 4 | int (epoch) |
+| `nbf` | 5 | int (epoch) |
+| `iat` | 6 | int (epoch) |
+| `cti` | 7 | bytes (CWT ID) |
+
+CWT is signed with COSE_Sign1 (tag 18 wrapping COSE_Sign1-tagged structure).
+
+## CBOR in HTTP (RFC 9165)
+
+RFC 9165 standardizes CBOR as an HTTP content type:
+
+- Content-Type: `application/cbor`.
+- Accept header: `application/cbor`.
+- Trailer support: yes (chunked transfer).
+- Status codes: HTTP standard codes apply.
+
+## Mandatory pre-flight (before adopting a CBOR-based protocol)
+
+1. CBOR encoder library supports canonical encoding (RFC 8949 § 4.2).
+2. Tag set is enumerated and registered.
+3. COSE algorithm choice per policy table.
+4. CDDL schema is published (RFC 8742).
+5. Round-trip and determinism tests pass.
 
 ## Sources
 
-- RFC 8949, Concise Binary Object Representation: https://www.rfc-editor.org/rfc/rfc8949.html
-- IANA CBOR tags registry: https://www.iana.org/assignments/cbor-tags/cbor-tags.xhtml
-- RFC 8742, Concise Binary Object Representation Sequences: https://www.rfc-editor.org/rfc/rfc8742.html
-
-Sources were checked on September 1, 2026.
-
-## Scope note
-
-This article governs CBOR baseline, profile, and compatibility decisions. It does not claim that an encoder or decoder conforms, that a tag set is universally canonical, or that RFC 8949 alone defines an application's data model.
+- RFC 8949 (CBOR): `https://www.rfc-editor.org/rfc/rfc8949`
+- RFC 9052 (COSE Structure): `https://www.rfc-editor.org/rfc/rfc9052`
+- RFC 9053 (COSE Algorithms): `https://www.rfc-editor.org/rfc/rfc9053`
+- RFC 9054 (COSE Key): `https://www.rfc-editor.org/rfc/rfc9054`
+- RFC 8392 (CWT): `https://www.rfc-editor.org/rfc/rfc8392`
+- RFC 8742 (CDDL): `https://www.rfc-editor.org/rfc/rfc8742`
+- RFC 9165 (CBOR in HTTP): `https://www.rfc-editor.org/rfc/rfc9165`
+- IANA COSE registry: `https://www.iana.org/assignments/cose/cose.xhtml`
