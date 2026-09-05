@@ -3,9 +3,9 @@ title: "Reference Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-09-04"
+last-reviewed: "2026-09-05"
 review-cycle: "90 days"
-next-review: "2026-12-03"
+next-review: "2026-12-04"
 ---
 
 # Reference Documentation
@@ -147,3 +147,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Network Time Protocol Version 4 Version Guide (RFC 5905)](NTP_RFC_5905_VERSION_GUIDE.md)
 - [HTTP Semantics Version Guide (RFC 9110)](HTTP_SEMANTICS_RFC_9110_VERSION_GUIDE.md)
 - [TLS 1.3 Protocol Version Guide (RFC 8446)](TLS_1_3_RFC_8446_VERSION_GUIDE.md)
+
+## 2026-09-05 Datagram Transport and JSON interchange reference cards (Batch 77)
+
+- [DTLS 1.3 Version Governance (RFC 9147)](DTLS_RFC_9147_VERSION_GOVERNANCE.md)
+- [HTTP/2 Version Governance (RFC 7540, RFC 9113)](HTTP_2_RFC_7540_VERSION_GOVERNANCE.md)
+- [JSON Version Governance (RFC 8259)](JSON_RFC_8259_VERSION_GOVERNANCE.md)

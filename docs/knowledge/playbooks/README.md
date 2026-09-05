@@ -3,9 +3,9 @@ title: "Playbooks"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-27"
+last-reviewed: "2026-09-05"
 review-cycle: "90 days"
-next-review: "2026-11-25"
+next-review: "2026-12-04"
 ---
 
 # Playbooks
@@ -193,3 +193,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Zero Trust Decision Audit](ZERO_TRUST_DECISION_AUDIT.md)
 - [Build Time Secret Detection Response](BUILD_TIME_SECRET_DETECTION_RESPOND.md)
 - [Workload Identity Attestation Verification](WORKLOAD_IDENTITY_ATTESTATION_VERIFY.md)
+
+## 2026-09-05 security-operations playbooks (Batch 77)
+
+- [Cryptographic Agility Playbook](CRYPTOGRAPHIC_AGILITY_PLAYBOOK.md)
+- [Interval Budget Review Playbook](INTERVAL_BUDGET_REVIEW_PLAYBOOK.md)
+- [Threat Hunting Hypothesis Playbook](THREAT_HUNTING_HYPOTHESIS_PLAYBOOK.md)
