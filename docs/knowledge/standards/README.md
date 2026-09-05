@@ -115,3 +115,29 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO IEC 38500 2015 IT GOVERNANCE GOVERNANCE](ISO_IEC_38500_2015_IT_GOVERNANCE_GOVERNANCE.md)
 - [ISO IEC 42010 2011 ARCHITECTURE DESCRIPTION GOVERNANCE](ISO_IEC_42010_2011_ARCHITECTURE_DESCRIPTION_GOVERNANCE.md)
 - [NIST SP 800 53B CONTROL BASELINES GOVERNANCE](NIST_SP_800_53B_CONTROL_BASELINES_GOVERNANCE.md)
+
+## 2026-09-04 cross-family standards and governance guidance (Batch 53)
+
+- [NIST IR 8259A IoT Device Cybersecurity Baseline Governance](NIST_IR_8259A_IOT_DEVICE_CYBERSECURITY_BASELINE_GOVERNANCE.md)
+
+## 2026-09-04 post-quantum cryptography and incident-response standards governance (Batch 57)
+
+- [NIST FIPS 203 ML-KEM Version Transition Governance](NIST_FIPS_203_ML_KEM_VERSION_TRANSITION_GOVERNANCE.md)
+- [NIST FIPS 204 ML-DSA Version Transition Governance](NIST_FIPS_204_ML_DSA_VERSION_TRANSITION_GOVERNANCE.md)
+- [NIST FIPS 205 SLH-DSA Version Transition Governance](NIST_FIPS_205_SLH_DSA_VERSION_TRANSITION_GOVERNANCE.md)
+- [NIST SP 800-208 LMS/XMSS Stateful Hash-Based Signature Version Transition Governance](NIST_SP_800_208_QUANTUM_RESISTANT_VERSION_TRANSITION_GOVERNANCE.md)
+- [ISO/IEC 27035-2:2023 Incident Response Guidelines Version Transition Governance](ISO_IEC_27035_2_INCIDENT_RESPONSE_VERSION_TRANSITION_GOVERNANCE.md)
+- [ISO/IEC 27033-1:2015 Network Security Overview Version Transition Governance](ISO_IEC_27033_1_NETWORK_SECURITY_VERSION_TRANSITION_GOVERNANCE.md)
+- [ISO/IEC 27037:2012 Digital Evidence Identification, Collection, Acquisition and Preservation Version Transition Governance](ISO_IEC_27037_DIGITAL_EVIDENCE_VERSION_TRANSITION_GOVERNANCE.md)
+- [ISO/IEC 24760-1:2022 Identity Framework Version Transition Governance](ISO_IEC_24760_1_IDENTITY_FRAMEWORK_VERSION_TRANSITION_GOVERNANCE.md)
+
+## 2026-09-05 NIST SP 800 and ISO/IEC risk/identity/audit governance (Batch 66)
+
+- [NIST SP 800-218 Secure Software Development Framework Governance](NIST_SP_800_218_SSDF_GOVERNANCE.md)
+- [ISO/IEC 27035-1:2023 Incident Management Governance](ISO_IEC_27035_1_2023_INCIDENT_MANAGEMENT_GOVERNANCE.md)
+- [ISO/IEC 31000:2018 Risk Management Governance](ISO_IEC_31000_2018_RISK_MANAGEMENT_GOVERNANCE.md)
+- [NIST SP 800-161 Rev. 2 Cyber Supply Chain Risk Management Governance](NIST_SP_800_161_R2_CYBER_SCRM_GOVERNANCE.md)
+- [ISO/IEC 19011:2018 Audit Management Systems Guidance Governance](ISO_IEC_19011_2018_AUDIT_MANAGEMENT_GOVERNANCE.md)
+- [NIST SP 800-37 Rev. 3 Risk Management Framework Governance](NIST_SP_800_37_R3_RMF_GOVERNANCE.md)
+- [NIST SP 800-30 Rev. 1 Risk Assessment Governance](NIST_SP_800_30_R1_RISK_ASSESSMENT_GOVERNANCE.md)
+- [NIST SP 800-63-3 Digital Identity Guidelines Governance](NIST_SP_800_63_3_DIGITAL_IDENTITY_GOVERNANCE.md)

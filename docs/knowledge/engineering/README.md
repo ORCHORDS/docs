@@ -16,6 +16,7 @@ This family contains reusable software-engineering knowledge, including architec
 
 - [Generative AI SSDF Community Profile](GENAI_SSDF_COMMUNITY_PROFILE.md)
 - [A2A TCK Conformance Governance](A2A_TCK_CONFORMANCE_GOVERNANCE.md)
+- [A2A gRPC Protocol Binding Governance](A2A_GRPC_PROTOCOL_BINDING_GOVERNANCE.md)
 
 ## 2026-09-01 standards and implementation guidance
 
@@ -326,3 +327,7 @@ This family contains reusable software-engineering knowledge, including architec
 - [ISO IEC 14721 REFERENCE MODEL GOVERNANCE](ISO_IEC_14721_REFERENCE_MODEL_GOVERNANCE.md)
 - [ISO IEC 32674 FUNCTIONAL SIZE GOVERNANCE](ISO_IEC_32674_FUNCTIONAL_SIZE_GOVERNANCE.md)
 - [ISO IEC IEEE 15288 2015 SYSTEM LIFECYCLE GOVERNANCE](ISO_IEC_IEEE_15288_2015_SYSTEM_LIFECYCLE_GOVERNANCE.md)
+
+## 2026-09-04 cross-family standards and governance guidance (Batch 53)
+
+- [W3C WebAssembly Core 2 Governance](W3C_WEBASSEMBLY_CORE_2_GOVERNANCE.md)

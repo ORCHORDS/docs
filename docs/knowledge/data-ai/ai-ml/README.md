@@ -36,3 +36,25 @@ Reusable guidance for large language model serving, retrieval-augmented generati
 - [RAG Contextual Retrieval and Pseudo-Parents](rag-contextual-retrieval-pseudo-parents.md)
 - [RAG Ingestion Pipeline Idempotency](rag-ingestion-pipeline-idempotency.md)
 - [RAG Grounding Citation Alignment](rag-grounding-citation-alignment.md)
+
+### ML lifecycle governance (Batch 63 additions — 2026-09-05)
+
+- [ML Model Card Completeness](ml-model-card-completeness.md)
+- [ML Dataset Card Provenance](ml-dataset-card-provenance.md)
+- [ML Feature Store Schema Drift](ml-feature-store-schema-drift.md)
+- [ML Training Run Reproducibility](ml-training-run-reproducibility.md)
+- [ML Experiment Tracking Contract](ml-experiment-tracking-contract.md)
+- [ML Registry Promotion Gates](ml-registry-promotion-gates.md)
+- [ML Model Decommission Runbook](ml-model-decommission-runbook.md)
+- [ML Fine-Tune Data Governance](ml-fine-tune-data-governance.md)
+
+### MLOps deployment and operations (Batch 67 additions �� 2026-09-05)
+
+- [ML Shadow Deployment Strategy](ml-shadow-deployment-strategy.md)
+- [ML Canary Rollback Criteria](ml-canary-rollback-criteria.md)
+- [ML Online Evaluation on Shadow Traffic](ml-online-evaluation-shadow-traffic.md)
+- [ML Feature Freshness SLA](ml-feature-freshness-sla.md)
+- [ML Inference Budget Quota](ml-inference-budget-quota.md)
+- [ML Model Card CI Validation](ml-model-card-ci-validation.md)
+- [ML Input Distribution Skew Monitor](ml-input-distribution-skew-monitor.md)
+- [ML Cold Start Traffic Ramp](ml-cold-start-traffic-ramp.md)

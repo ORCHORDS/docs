@@ -1,0 +1,48 @@
+---
+title: "Cloud Region Failover Review"
+owner: "Reliability Engineering"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-09-05"
+review-cycle: "90 days"
+next-review: "2026-12-04"
+trigger: "Quarterly review, or any new multi-region architecture, change in active/passive topology, provider regional incident, or RTO/RPO update."
+scope: "All production services deployed across more than one cloud region or availability zone with documented failover obligations."
+inputs:
+  - "Architecture diagrams with region and zone placement"
+  - "Current active/passive and active/active topology per service"
+  - "Documented RTO and RPO per service"
+  - "Provider region health status (service health feeds)"
+  - "Last failover exercise report and residual action items"
+plan:
+  - "Step 1: Confirm scope — list every service whose recovery depends on region or zone failover."
+  - "Step 2: Confirm topology — annotate each service as active/passive, active/active, or warm-standby, with last verified failover date."
+  - "Step 3: Cross-check RTO and RPO against the business impact analysis; reject any service without a current RTO/RPO."
+  - "Step 4: Validate data replication lag dashboards and warn thresholds for the chosen replication mode (sync, async, semi-sync)."
+  - "Step 5: Validate DNS, load balancer, and traffic-manager failover configuration; confirm TTLs are short enough to meet RTO but not so short as to amplify client-side failure modes."
+  - "Step 6: Validate IAM, KMS, and network reachability in the standby region (subnet routes, peering, NAT, transit gateway)."
+  - "Step 7: Run a tabletop exercise: simulate region loss and walk the failover runbook end-to-end with on-call."
+  - "Step 8: Trigger at least one partial live failover per quarter for the top criticality service; record start time, time to first successful response in standby, and time to full parity."
+  - "Step 9: Capture evidence, residual actions, and required RTO/RPO changes."
+evidence:
+  - "Annotated architecture and topology tables"
+  - "RTO/RPO compliance statement per service"
+  - "Replication lag dashboard snapshots"
+  - "DNS and traffic-manager config exports"
+  - "Tabletow exercise attendees, decisions, and follow-up"
+  - "Live failover telemetry (start, partial-restoration, full-restoration timestamps)"
+escalation:
+  - "Any service with RTO or RPO exceeding business requirement — escalate to service owner and AIMS governance."
+  - "Any region pair with no successful failover in the last 12 months — escalate to Reliability Engineering leadership."
+  - "Any replication lag trending above warn threshold for 7 consecutive days — escalate to Data Platform."
+completion:
+  - "Every in-scope service has a current RTO/RPO recorded."
+  - "Tabletop exercise signed off by on-call lead."
+  - "At least one live failover executed for the top criticality service, or compensating control documented."
+exceptions:
+  - "Single-region services explicitly waived by Architecture Review Board; recorded in the residual risk register."
+related:
+  - "BACKUP_RESTORE_VALIDATION.md"
+  - "CONTINGENCY_EXERCISE.md"
+  - "DATA_FLOW_INVENTORY_REVIEW.md"
+  - "INCIDENT_COMMUNICATIONS_REVIEW.md"

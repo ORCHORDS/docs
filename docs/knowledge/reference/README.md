@@ -3,9 +3,9 @@ title: "Reference Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-09-04"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2026-12-03"
 ---
 
 # Reference Documentation
@@ -88,3 +88,51 @@ This family contains shared glossaries, checklists, command references, configur
 - [OGC API FEATURES PART 1 GOVERNANCE](OGC_API_FEATURES_PART_1_GOVERNANCE.md)
 - [W3C DCAT 3 METADATA GOVERNANCE](W3C_DCAT_3_METADATA_GOVERNANCE.md)
 - [W3C VC DATA MODEL 2 GOVERNANCE](W3C_VC_DATA_MODEL_2_GOVERNANCE.md)
+
+## 2026-09-04 cross-family standards and governance guidance (Batch 53)
+
+- [IETF RFC 9562 UUID v7 Governance](IETF_RFC_9562_UUID_V7_GOVERNANCE.md)
+
+## 2026-09-04 foundational format and code-set reference cards (Batch 54)
+
+- [ISO 8601:2019 Date and Time Format Version Guide](ISO_8601_2019_DATE_TIME_FORMAT_VERSION_GUIDE.md)
+- [IETF RFC 3339 Date and Time on the Internet Version Guide](IETF_RFC_3339_DATE_TIME_FORMAT_VERSION_GUIDE.md)
+- [IETF BCP 47 Language Tags Version Guide](IETF_BCP_47_LANGUAGE_TAGS_VERSION_GUIDE.md)
+- [IETF RFC 3986 URI Generic Syntax Version Guide](IETF_RFC_3986_URI_GENERIC_SYNTAX_VERSION_GUIDE.md)
+- [ISO 3166-1:2020 Country Codes Version Guide](ISO_3166_1_2020_COUNTRY_CODES_VERSION_GUIDE.md)
+- [ISO 4217:2015 Currency Codes Version Guide](ISO_4217_2015_CURRENCY_CODES_VERSION_GUIDE.md)
+- [ISO 639-3:2007 Language Codes Version Guide](ISO_639_3_2007_LANGUAGE_CODES_VERSION_GUIDE.md)
+- [IANA Time Zone Database (tzdb) 2026a Version Guide](IANA_TIME_ZONE_DATABASE_2026A_VERSION_GUIDE.md)
+
+## 2026-09-04 AI risk and governance reference cards (Batch 55)
+
+- [NIST AI 100-1 AI RMF 1.0 Version Guide](NIST_AI_100_1_AI_RMF_1_0_VERSION_GUIDE.md)
+- [NIST AI 600-1 Generative AI Profile Version Guide](NIST_AI_600_1_GENAI_PROFILE_VERSION_GUIDE.md)
+- [NIST AI 100-2 Adversarial ML Taxonomy Version Guide](NIST_AI_100_2_ADVERSARIAL_ML_VERSION_GUIDE.md)
+- [ISO/IEC 42001:2023 AIMS Version Guide](ISO_IEC_42001_2023_AIMS_VERSION_GUIDE.md)
+- [ISO/IEC 23894:2023 AI Risk Management Version Guide](ISO_IEC_23894_2023_AI_RISK_VERSION_GUIDE.md)
+- [OECD AI Principles Version Guide](OECD_AI_PRINCIPLES_2024_VERSION_GUIDE.md)
+- [EU AI Act — Regulation 2024/1689 Version Guide](EU_AI_ACT_2024_1689_VERSION_GUIDE.md)
+- [ISO/IEC 42005 AI Impact Assessment Version Guide](ISO_IEC_42005_AI_IMPACT_ASSESSMENT_VERSION_GUIDE.md)
+
+## 2026-09-05 AI governance and risk reference cards (Batch 60)
+
+- [ISO/IEC 42006:2023 Auditor Competence Version Guide](ISO_IEC_42006_2023_AUDITOR_COMPETENCE_VERSION_GUIDE.md)
+- [ISO/IEC 42007 AI Controls Framework Version Guide](ISO_IEC_42007_AI_CONTROLS_FRAMEWORK_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 High-Risk Annex III Version Guide](EU_AI_ACT_2024_1689_HIGHRISK_ANNEX_III_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 Article 5 Prohibited Version Guide](EU_AI_ACT_2024_1689_ARTICLE_5_PROHIBITED_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 GPAI Obligations Version Guide](EU_AI_ACT_2024_1689_GPAI_OBLIGATIONS_VERSION_GUIDE.md)
+- [NIST AI RMF Playbook Version Guide](NIST_AI_RMF_PLAYBOOK_VERSION_GUIDE.md)
+- [NIST AI RMF Govern Function Version Guide](NIST_AI_RMF_GOVERN_FUNCTION_VERSION_GUIDE.md)
+- [NIST AI RMF Map/Measure/Manage Functions Version Guide](NIST_AI_RMF_MAP_MEASURE_MANAGE_FUNCTIONS_VERSION_GUIDE.md)
+
+## 2026-09-05 Network protocol and security reference cards (Batch 69)
+
+- [BGP-4 Protocol Version Guide (RFC 4271)](BGP_RFC_4271_VERSION_GUIDE.md)
+- [OSPF Version 2 Protocol Version Guide (RFC 2328)](OSPF_RFC_2328_VERSION_GUIDE.md)
+- [IS-IS for IP Networks Version Guide (RFC 1195, RFC 5308)](IS_IS_RFC_1195_VERSION_GUIDE.md)
+- [Extensible Authentication Protocol (EAP) Version Guide (RFC 3748)](EAP_RFC_3748_VERSION_GUIDE.md)
+- [DNS Security Extensions (DNSSEC) Version Guide (RFC 4033, RFC 4034, RFC 4035)](DNS_DNSSEC_RFC_4033_VERSION_GUIDE.md)
+- [Network Time Protocol Version 4 Version Guide (RFC 5905)](NTP_RFC_5905_VERSION_GUIDE.md)
+- [HTTP Semantics Version Guide (RFC 9110)](HTTP_SEMANTICS_RFC_9110_VERSION_GUIDE.md)
+- [TLS 1.3 Protocol Version Guide (RFC 8446)](TLS_1_3_RFC_8446_VERSION_GUIDE.md)
