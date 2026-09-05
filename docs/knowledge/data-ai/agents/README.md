@@ -157,3 +157,14 @@ Articles in this folder distinguish reusable design principles from protocol- or
 - [Agent Streaming Backpressure](AGENT_STREAMING_BACKPRESSURE.md)
 - [Agent Tool Result Trust Levels](AGENT_TOOL_RESULT_TRUST_LEVELS.md)
 - [MCP Async Task Replay](MCP_ASYNC_TASK_REPLAY.md)
+
+## Batch 62 additions (Agents) — 2026-09-05
+
+- [Agent Cost Budget Enforcement](AGENT_COST_BUDGET_ENFORCEMENT.md)
+- [Agent Tokens Usage Telemetry](AGENT_TOKENS_USAGE_TELEMETRY.md)
+- [Agent Semantic Cache Invalidation](AGENT_SEMANTIC_CACHE_INVALIDATION.md)
+- [Agent Few-Shot Prompt Hygiene](AGENT_FEW_SHOT_PROMPT_HYGIENE.md)
+- [Agent Eval Leakage Prevention](AGENT_EVAL_LEAKAGE_PREVENTION.md)
+- [Agent Content Moderation Gateway](AGENT_CONTENT_MODERATION_GATEWAY.md)
+- [Agent Red Team Finding Triage](AGENT_RED_TEAM_FINDING_TRIAGE.md)
+- [Agent Bias Fairness Probing](AGENT_BIAS_FAIRNESS_PROBING.md)
