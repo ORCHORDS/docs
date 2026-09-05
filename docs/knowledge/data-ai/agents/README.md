@@ -168,3 +168,14 @@ Articles in this folder distinguish reusable design principles from protocol- or
 - [Agent Content Moderation Gateway](AGENT_CONTENT_MODERATION_GATEWAY.md)
 - [Agent Red Team Finding Triage](AGENT_RED_TEAM_FINDING_TRIAGE.md)
 - [Agent Bias Fairness Probing](AGENT_BIAS_FAIRNESS_PROBING.md)
+
+## Batch 65 additions (Agents) — 2026-09-05
+
+- [Agent Retrieval Grounding Verification](AGENT_RETRIEVAL_GROUNDING_VERIFICATION.md)
+- [Agent Hallucination Detection and Citation Faithfulness](AGENT_HALLUCINATION_DETECTION_CITATION_FAITHFULNESS.md)
+- [Agent Tool Use Audit Trail](AGENT_TOOL_USE_AUDIT_TRAIL.md)
+- [Agent Distributed Tracing with OpenTelemetry](AGENT_DISTRIBUTED_TRACING_OTEL.md)
+- [Agent Circuit Breaker and Dead Letter Handling](AGENT_CIRCUIT_BREAKER_DEAD_LETTER.md)
+- [Agent Human Handoff Procedure](AGENT_HUMAN_HANDOFF_PROCEDURE.md)
+- [Agent Observability Dashboard and Agent Health](AGENT_OBSERVABILITY_DASHBOARD_AGENT_HEALTH.md)
+- [Agent Prompt Injection Red Team Probes](AGENT_PROMPT_INJECTION_RED_TEAM_PROBES.md)
