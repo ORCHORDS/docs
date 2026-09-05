@@ -47,7 +47,7 @@ Common defects include exercises that are not realistic, lack observer notes, or
 
 - [ISO/IEC 27035-1:2023 Incident Management Governance](ISO_IEC_27035_1_INCIDENT_MANAGEMENT_GOVERNANCE.md)
 - [ISO/IEC 27035-2:2023 Incident Response Version Transition Governance](ISO_IEC_27035_2_INCIDENT_RESPONSE_VERSION_TRANSITION_GOVERNANCE.md)
-- [NIST SP 800-84 Test, Training, and Exercise Program](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
-- [HSEEP — Homeland Security Exercise and Evaluation Program](HSEEP.md)
-- [ISO 22398 Exercises](ISO_22398_EXERCISES.md)
+- [NIST SP 800-84 Test, Training, and Exercise Program](../reference/NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
+- [HSEEP — Homeland Security Exercise and Evaluation Program](../reference/HSEEP.md)
+- [ISO 22398 Exercises](../reference/ISO_22398_EXERCISES.md)
 - [Tabletop Exercise Response Playbook](../playbooks/TABLETOP_EXERCISE_RESPONSE.md)

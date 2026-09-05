@@ -58,7 +58,7 @@ A profile that references "access control" without binding to a recognized frame
 
 ## Companion Documents
 
-- [NIST SP 800-207 Zero Trust Architecture](../standards/NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
+- [NIST SP 800-207 Zero Trust Architecture](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
 - [NIST SP 800-63 Digital Identity Guidelines Governance](../standards/NIST_SP_800_63_DIGITAL_IDENTITY_GOVERNANCE.md)
 - [ISO/IEC 24760-1 Identity Framework Version Transition Governance](../standards/ISO_IEC_24760_1_IDENTITY_FRAMEWORK_VERSION_TRANSITION_GOVERNANCE.md)
 - [ISO/IEC 27001:2022 ISMS Version Transition Governance](../standards/ISO_IEC_27001_2022_ISMS_VERSION_TRANSITION_GOVERNANCE.md)

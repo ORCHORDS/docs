@@ -69,8 +69,8 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- [AWS Tagging Best Practices](AWS_TAGGING_BEST_PRACTICES.md)
-- [Azure Resource Naming Conventions](AZURE_RESOURCE_NAMING_CONVENTIONS.md)
-- [GCP Resource Naming Conventions](GCP_RESOURCE_NAMING_CONVENTIONS.md)
-- [FinOps Cost Allocation Framework](FINOPS_COST_ALLOCATION_FRAMEWORK.md)
-- [Cloud Asset Inventory Review](CLOUD_ASSET_INVENTORY_REVIEW.md)
+- AWS Tagging Best Practices
+- Azure Resource Naming Conventions
+- GCP Resource Naming Conventions
+- FinOps Cost Allocation Framework
+- Cloud Asset Inventory Review

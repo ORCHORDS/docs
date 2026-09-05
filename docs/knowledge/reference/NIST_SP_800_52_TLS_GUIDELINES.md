@@ -55,7 +55,7 @@ A profile that references "TLS" without binding to a recognized standard (SP 800
 
 ## Companion Documents
 
-- [NIST SP 800-131A Algorithm Assurance Reference](NIST_SP_800_131A_ALGORITHM_ASSURANCE.md)
+- NIST SP 800-131A Algorithm Assurance Reference
 - [NIST SP 800-57 Key Management](NIST_SP_800_57_KEY_MANAGEMENT.md)
 - [RFC 5280 X.509 PKI Profile](RFC_5280_X509_PKI_PROFILE.md)
 - [RFC 8555 ACME Profile](RFC_8555_ACME_PROFILE.md)

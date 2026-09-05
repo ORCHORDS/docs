@@ -60,7 +60,7 @@ A profile that references "firmware integrity" without binding to a recognized r
 
 - [NIST SP 800-155 BIOS Integrity Measurement](NIST_SP_800_155_BIOS_INTEGRITY_MEASUREMENT.md)
 - [UEFI Specification 2.10](UEFI_SPECIFICATION_2_10.md)
-- [TPM Library Specification 2.0](TPM_LIBRARY_SPECIFICATION_2_0.md)
-- [TCG Reference](TCG_REFERENCE.md)
+- TPM Library Specification 2.0
+- TCG Reference
 - [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
 - [Secure Boot and Measured Boot Response](../playbooks/SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)

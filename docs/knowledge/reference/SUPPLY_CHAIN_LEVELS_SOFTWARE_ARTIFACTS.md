@@ -62,6 +62,6 @@ A profile that claims "SLSA compliance" without a level and track is non-conform
 - [NIST SSDF SP 800-218 Secure Software Development Framework](NIST_SSDF_SP_800_218.md)
 - [CNCF Supply Chain Best Practices](CNCF_SUPPLY_CHAIN_BEST_PRACTICES.md)
 - [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
-- [NIST SP 800-218A GenAI Profile Version Guide](NIST_SP_800_218A_GENAI_PROFILE_VERSION_GUIDE.md)
+- NIST SP 800-218A GenAI Profile Version Guide
 - [Container Image Build Hardening Response](../playbooks/CONTAINER_IMAGE_BUILD_HARDENING_RESPONSE.md)
 - [Supply Chain Compromise Response](../playbooks/SUPPLY_CHAIN_COMPROMISE_RESPONSE.md)

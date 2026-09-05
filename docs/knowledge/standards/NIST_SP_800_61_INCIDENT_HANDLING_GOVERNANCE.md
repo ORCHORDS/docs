@@ -47,7 +47,7 @@ Common defects include missing escalation thresholds, ad-hoc containment decisio
 
 - [ISO/IEC 27035-1:2023 Incident Management Governance](ISO_IEC_27035_1_INCIDENT_MANAGEMENT_GOVERNANCE.md)
 - [NIST SP 800-86 Forensic Techniques Governance](NIST_SP_800_86_FORENSIC_TECHNIQUES_GOVERNANCE.md)
-- [NIST SP 800-84 Test, Training, and Exercise Program](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
+- [NIST SP 800-84 Test, Training, and Exercise Program](../reference/NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
 - [Cybersecurity Incident Response Playbook](../playbooks/CYBERSECURITY_INCIDENT_RESPONSE.md)
 - [Incident Timeline Reconstruction Playbook](../playbooks/INCIDENT_TIMELINE_RECONSTRUCTION.md)
-- [MITRE ATT&CK Version Guide](../reference/MITRE_ATLAS_VERSION_GUIDE.md)
+- MITRE ATT&CK Version Guide

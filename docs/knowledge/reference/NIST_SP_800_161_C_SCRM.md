@@ -62,6 +62,6 @@ A profile that references "supply chain risk management" without binding to a re
 - [Supply Chain Levels for Software Artifacts (SLSA)](SUPPLY_CHAIN_LEVELS_SOFTWARE_ARTIFACTS.md)
 - [SLSA Build Level 3 Governance](SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
 - [CNCF Supply Chain Best Practices](CNCF_SUPPLY_CHAIN_BEST_PRACTICES.md)
-- [NIST SP 800-218A GenAI Profile Version Guide](NIST_SP_800_218A_GENAI_PROFILE_VERSION_GUIDE.md)
+- NIST SP 800-218A GenAI Profile Version Guide
 - [Container Image Build Hardening Response](../playbooks/CONTAINER_IMAGE_BUILD_HARDENING_RESPONSE.md)
 - [Supply Chain Compromise Response](../playbooks/SUPPLY_CHAIN_COMPROMISE_RESPONSE.md)

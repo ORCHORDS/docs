@@ -69,7 +69,7 @@ Document deviations from CP/CPS with the approver identity, scope, expiration, c
 
 ## Related Documents
 
-- [CA/Browser Forum Baseline Requirements](CA_BROWSER_FORUM_BASELINE_REQUIREMENTS.md)
+- [CA/Browser Forum Baseline Requirements](../reference/CA_BROWSER_FORUM_BASELINE_REQUIREMENTS.md)
 - [NIST SP 800-57 Key Management](../reference/NIST_SP_800_57_KEY_MANAGEMENT.md)
 - [RFC 5280 X.509 PKI Profile](../reference/RFC_5280_X509_PKI_PROFILE.md)
 - [RFC 6960 OCSP Profile](../reference/RFC_6960_OCSP_PROFILE.md)
