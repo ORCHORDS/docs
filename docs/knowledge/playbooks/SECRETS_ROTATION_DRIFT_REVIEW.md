@@ -1,0 +1,45 @@
+---
+title: "Secrets Rotation Drift Review"
+owner: "Identity and Access Management"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-09-05"
+review-cycle: "30 days"
+next-review: "2026-10-05"
+trigger: "Monthly secrets drift report, new secret class with rotation policy, or incident involving exposed or stale credential."
+scope: "All secrets stored in managed vaults, including database credentials, cloud provider keys, API tokens, signing keys, and SSH keys for automation."
+inputs:
+  - "Vault inventory by secret class with creation date, last rotation, next rotation, and owner"
+  - "Rotation policy per secret class"
+  - "Consumer list per secret — services, applications, and humans"
+  - "Inactive secrets report — no read or usage in the rotation window"
+plan:
+  - "Step 1: Generate inventory of every managed secret with class, age, owner, and rotation status."
+  - "Step 2: Identify overdue rotations — secret age exceeds the documented rotation policy for its class."
+  - "Step 3: Identify inactive secrets — no consumer reads in the rotation window; candidate for revocation."
+  - "Step 4: Identify orphaned consumers — service accounts or humans that have left or moved but still have valid credentials."
+  - "Step 5: Identify wide-scope secrets — credentials with privileges exceeding the documented baseline for the consumer."
+  - "Step 6: Notify owners with the drift packet and a 14-day remediation window."
+  - "Step 7: Auto-revoke secrets with no consumer or owner response after the window."
+  - "Step 8: Validate rotation worked end-to-end by confirming consumer health checks after the rotation."
+  - "Step 9: Capture metrics and report to governance."
+evidence:
+  - "Vault inventory and rotation status report"
+  - "Inactive and orphaned secret lists"
+  - "Owner notification log"
+  - "Auto-revocation log"
+  - "Post-rotation consumer health snapshot"
+  - "Metrics dashboard export"
+escalation:
+  - "Any stale secret in a high-blast-radius class (root, break-glass, production database admin) — escalate to Security on-call."
+  - "Owner not responsive within 7 days — escalate to their manager and IAM leadership."
+completion:
+  - "All in-scope secrets have current rotation status."
+  - "All inactive or orphaned secrets revoked or risk-accepted with compensating control and expiry."
+exceptions:
+  - "Long-lived signing keys with documented rotation exempt from the standard cycle."
+related:
+  - "ACCESS_REVIEW.md"
+  - "CLOUD_IAM_PERIODIC_ACCESS_REVIEW.md"
+  - "CREDENTIAL_COMPROMISE_RESPONSE.md"
+  - "AUTHENTICATOR_LIFECYCLE_REVIEW.md"

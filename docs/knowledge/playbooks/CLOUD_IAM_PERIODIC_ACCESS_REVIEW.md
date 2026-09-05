@@ -1,0 +1,47 @@
+---
+title: "Cloud IAM Periodic Access Review"
+owner: "Identity and Access Management"
+status: "approved"
+classification: "public"
+last-reviewed: "2026-09-05"
+review-cycle: "90 days"
+next-review: "2026-12-04"
+trigger: "Quarterly access review cycle, new account onboarding, new high-blast-radius role definition, or staff role change."
+scope: "All human and service identities in every cloud account, including break-glass accounts, federated roles, and cross-account trust."
+inputs:
+  - "Authoritative inventory of identities and last sign-in"
+  - "Role definitions, trust policies, and permission boundaries"
+  - "Membership of federated groups from the identity provider"
+  - "Previous review attestation and outstanding revocations"
+  - "Critical role register and named break-glass custodians"
+plan:
+  - "Step 1: Pull identity inventory across all cloud accounts, including root, break-glass, service accounts, and federated roles."
+  - "Step 2: Cross-reference with HR authoritative source and federated group membership."
+  - "Step 3: Identify stale identities — no sign-in > 90 days for humans, no invocation > 30 days for service identities."
+  - "Step 4: Identify excessive permissions — roles granting actions outside the documented least-privilege baseline."
+  - "Step 5: Identify unrotated credentials — access keys older than the rotation policy, unused console passwords, inactive MFA devices."
+  - "Step 6: Notify each resource owner with their reviewer packet: identities to keep, justify, revoke, or modify."
+  - "Step 7: Enforce a response window of 14 days; auto-revoke any identity not affirmed by the deadline."
+  - "Step 8: Reconcile revocations against the actual cloud state and confirm removal of credentials."
+  - "Step 9: Report metrics — identities reviewed, revoked, modified, and outstanding exceptions."
+evidence:
+  - "Signed reviewer attestations"
+  - "Identity inventory snapshots before and after"
+  - "Revocation log with timestamps"
+  - "Exception register with compensating controls and expiry"
+  - "Metrics dashboard export"
+escalation:
+  - "Any break-glass account in unknown state — escalate to Security on-call and Information Security Officer."
+  - "Any owner who fails to respond within 7 days — escalate to their manager and Security leadership."
+  - "Any role with privileges exceeding the documented baseline — escalate to AIMS governance for risk acceptance."
+completion:
+  - "100 percent of in-scope identities have a current attestation."
+  - "All stale identities revoked or risk-accepted with compensating control and expiry."
+  - "Metrics report distributed to governance."
+exceptions:
+  - "Documented break-glass accounts with controlled two-person activation and audit-log review."
+related:
+  - "ACCESS_REVIEW.md"
+  - "ACCESS_RECERTIFICATION_CAMPAIGN.md"
+  - "ACCESS_TERMINATION_REVIEW.md"
+  - "PRIVILEGED_MFA_DEFAULT_VALIDATION.md"

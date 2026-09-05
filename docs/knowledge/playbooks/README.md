@@ -160,3 +160,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [AI Model Drift Detection](AI_MODEL_DRIFT_DETECTION.md)
 - [AI Output Content Validation](AI_OUTPUT_CONTENT_VALIDATION.md)
 - [AI Provider Outage Response](AI_PROVIDER_OUTAGE_RESPONSE.md)
+
+## 2026-09-05 cloud, endpoint, and identity operations playbooks (Batch 61)
+
+- [Cloud Region Failover Review](CLOUD_REGION_FAILOVER_REVIEW.md)
+- [Cloud Billing Anomaly Review](CLOUD_BILLING_ANOMALY_REVIEW.md)
+- [Cloud IAM Periodic Access Review](CLOUD_IAM_PERIODIC_ACCESS_REVIEW.md)
+- [Multi-AZ Capacity Test](MULTI_AZ_CAPACITY_TEST.md)
+- [Secure Boot Integrity Verification](SECURE_BOOT_INTEGRITY_VERIFICATION.md)
+- [Kernel Live Patch Review](KERNEL_LIVE_PATCH_REVIEW.md)
+- [Wireless Intrusion Assessment](WIRELESS_INTRUSION_ASSESSMENT.md)
+- [Secrets Rotation Drift Review](SECRETS_ROTATION_DRIFT_REVIEW.md)
