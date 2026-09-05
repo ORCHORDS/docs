@@ -189,3 +189,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/TS 22600:2014 Health Informatics Privilege Management and Access Control Governance](ISO_IEC_22600_2014_PRIVACY_GOVERNANCE.md)
 - [ISO/IEC 23053:2022 AI Framework Using ML Technologies Governance](ISO_IEC_23053_2022_AI_FRAMEWORK_GOVERNANCE.md)
 - [ISO/IEC 27402:2024 AI Security Governance](ISO_IEC_27402_2024_AI_SECURITY_GOVERNANCE.md)
+
+## 2026-09-05 IoT/OT and consumer-IoT standards governance cards (Batch 83)
+
+- [ISO/IEC 30141:2018 IoT Reference Architecture Governance](ISO_IEC_30141_2018_IOT_GOVERNANCE.md)
+- [IEC 62443 Industrial Automation and Control Systems Security Governance](IEC_62443_2024_IACS_GOVERNANCE.md)
+- [ETSI EN 303 645 Consumer IoT Cybersecurity Governance](ETSI_EN_303_645_CYBER_GOVERNANCE.md)

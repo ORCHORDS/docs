@@ -183,3 +183,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [SAML 2.0 Version Governance (OASIS Security Assertion Markup Language)](SAML_2_0_VERSION_GOVERNANCE.md)
 - [OpenID Connect (OIDC) Version Governance (OASIS, FAPI, FAPI 2.0)](OIDC_VERSION_GOVERNANCE.md)
 - [OAuth 2.1 Authorization Framework Version Governance](OAUTH_2_1_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Constrained-IoT reference cards (Batch 83)
+
+- [CoAP Version Governance (RFC 7252, RFC 7641, RFC 7959, RFC 8323, RFC 8613, RFC 8974)](COAP_RFC_7252_VERSION_GOVERNANCE.md)
+- [CBOR Version Governance (RFC 8949, RFC 9052, RFC 9053, RFC 9165)](CBOR_RFC_8949_VERSION_GOVERNANCE.md)
+- [LwM2M Version Governance (OASIS, OMA SpecWorks)](LWM2M_RFC_9195_VERSION_GOVERNANCE.md)

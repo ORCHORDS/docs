@@ -229,3 +229,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [OAuth 2.0/2.1 Integration Playbook](OAUTH_INTEGRATION_PLAYBOOK.md)
 - [AI Model Lifecycle Management Playbook](AI_MODEL_LIFECYCLE_PLAYBOOK.md)
 - [SAML 2.0 SSO Integration Playbook](SAML_INTEGRATION_PLAYBOOK.md)
+
+## 2026-09-05 Constrained-IoT operations and OT segmentation playbooks (Batch 83)
+
+- [CoAP Fleet Operations Playbook](COAP_FLEET_OPERATIONS_PLAYBOOK.md)
+- [IoT Device Decommissioning Playbook](IOT_DEVICE_DECOMMISSION_PLAYBOOK.md)
+- [OT/ICS Network Segmentation Playbook](OT_SEGMENTATION_PLAYBOOK.md)
