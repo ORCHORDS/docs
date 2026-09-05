@@ -63,4 +63,4 @@ ISO/IEC 27037 is often treated as the forerunner of the ISO/IEC 27037 series (27
 - [ISO/IEC 27042:2015 Digital Evidence Interpretation](ISO_IEC_27042_DIGITAL_EVIDENCE_INTERPRETATION_GOVERNANCE.md)
 - [ISO/IEC 27043:2015 Incident Investigation Principles](ISO_IEC_27043_INCIDENT_INVESTIGATION_GOVERNANCE.md)
 - [NIST SP 800-86 Guide to Integrating Forensic Techniques](NIST_SP_800_86_FORENSIC_TECHNIQUES_GOVERNANCE.md)
-- [Cybersecurity Incident Response Playbook](CYBERSECURITY_INCIDENT_RESPONSE.md)
+- [Cybersecurity Incident Response Playbook](../playbooks/CYBERSECURITY_INCIDENT_RESPONSE.md)

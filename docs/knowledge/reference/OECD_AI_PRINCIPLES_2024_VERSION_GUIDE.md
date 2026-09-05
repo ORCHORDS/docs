@@ -73,4 +73,4 @@ The OECD AI Principles (originally adopted May 22, 2019; updated May 3, 2024 to 
 - [NIST AI 100-1 AI RMF 1.0 Version Guide](NIST_AI_100_1_AI_RMF_1_0_VERSION_GUIDE.md)
 - [ISO/IEC 42001:2023 AIMS Version Guide](ISO_IEC_42001_2023_AIMS_VERSION_GUIDE.md)
 - [EU AI Act Version Guide](EU_AI_ACT_2024_1689_VERSION_GUIDE.md)
-- [UNESCO Recommendation on the Ethics of AI (2021) Version Guide](UNESCO_AI_ETHICS_2021_VERSION_GUIDE.md)
+- UNESCO Recommendation on the Ethics of AI (2021) Version Guide

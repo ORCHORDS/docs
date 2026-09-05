@@ -64,4 +64,4 @@ The 2023 edition updates ISO/IEC 27035-2:2016 to align with evolving threats (ra
 - [ISO/IEC 27035-3:2020 Incident Response Exercises](ISO_IEC_27035_3_INCIDENT_RESPONSE_EXERCISES_GOVERNANCE.md)
 - [NIST SP 800-61 Incident Handling](NIST_SP_800_61_INCIDENT_HANDLING_GOVERNANCE.md)
 - [ISO/IEC 27001:2022 Information Security Management](ISO_IEC_27001_2022_ISMS_VERSION_TRANSITION_GOVERNANCE.md)
-- [Cybersecurity Incident Response Playbook](CYBERSECURITY_INCIDENT_RESPONSE.md)
+- [Cybersecurity Incident Response Playbook](../playbooks/CYBERSECURITY_INCIDENT_RESPONSE.md)

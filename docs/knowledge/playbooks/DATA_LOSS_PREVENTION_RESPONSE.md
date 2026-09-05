@@ -69,8 +69,8 @@ Document deviations with the approver, scope, expiration, compensating controls,
 
 ## Related Documents
 
-- [NIST SP 800-53 Rev. 5 Access Control Family](NIST_SP_800_53_REV_5_ACCESS_CONTROL_FAMILY.md)
-- [ISO 27701 Privacy Information Management](ISO_27701_PRIVACY_INFORMATION_MANAGEMENT.md)
-- [GDPR Article 33 Breach Notification](GDPR_ARTICLE_33_BREACH_NOTIFICATION.md)
-- [Data Classification Review](DATA_CLASSIFICATION_REVIEW.md)
-- [Sensitive Data Discovery Review](SENSITIVE_DATA_DISCOVERY_REVIEW.md)
+- [NIST SP 800-53 Rev. 5 Access Control Family](../reference/NIST_SP_800_53_REV_5_ACCESS_CONTROL_FAMILY.md)
+- ISO 27701 Privacy Information Management
+- [GDPR Article 33 Breach Notification](../reference/GDPR_ARTICLE_33_BREACH_NOTIFICATION.md)
+- Data Classification Review
+- Sensitive Data Discovery Review

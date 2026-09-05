@@ -73,5 +73,5 @@ NIST AI 100-2 (January 4, 2024) is the Adversarial Machine Learning (AML) taxono
 
 - [NIST AI 100-1 AI RMF 1.0 Version Guide](NIST_AI_100_1_AI_RMF_1_0_VERSION_GUIDE.md)
 - [NIST AI 600-1 Generative AI Profile Version Guide](NIST_AI_600_1_GENAI_PROFILE_VERSION_GUIDE.md)
-- [MITRE ATLAS — Adversarial Threat Landscape for AI Systems](MITRE_ATLAS_VERSION_GUIDE.md)
-- [NIST SP 800-218A GenAI Profile](NIST_SP_800_218A_GENAI_PROFILE_VERSION_GUIDE.md)
+- MITRE ATLAS — Adversarial Threat Landscape for AI Systems
+- NIST SP 800-218A GenAI Profile
