@@ -12,6 +12,17 @@ next-review: "2026-11-24"
 
 This family contains internal documentation conventions and guidance mapped to external standards. External standards, versions, and dates MUST be verified from authoritative sources before statements are presented as current.
 
+## 2026-09-05 global regulatory and compliance framework governance (Batch 75)
+
+- [NIST Cybersecurity Framework 2.0 Governance](NIST_CSF_2_0_GOVERNANCE.md)
+- [NIST SP 800-171 Rev 3 CUI Governance](NIST_SP_800_171_R3_CUI_GOVERNANCE.md)
+- [FedRAMP Rev 5 Moderate Governance](FEDRAMP_REV_5_MOD_GOVERNANCE.md)
+- [PCI DSS v4.0 Governance](PCI_DSS_V4_0_GOVERNANCE.md)
+- [HIPAA Security Rule Governance](HIPAA_SECURITY_RULE_GOVERNANCE.md)
+- [GLBA Safeguards Rule Governance](GLBA_SAFEGUARDS_RULE_GOVERNANCE.md)
+- [AICPA SOC 2 Trust Services Criteria Governance](AICPA_TSC_2017_2022_GOVERNANCE.md)
+- [EU NIS2 Directive Governance](EU_NIS2_DIRECTIVE_GOVERNANCE.md)
+
 ## Selected current guidance
 
 - [IANA Registry Policy Governance with RFC 8126](IANA_REGISTRY_POLICY_RFC_8126_GOVERNANCE.md)
