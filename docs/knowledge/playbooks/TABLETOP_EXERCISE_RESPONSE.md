@@ -69,7 +69,7 @@ Document deviations from the planned exercise with the justification, scope, and
 
 ## Related Documents
 
-- [NIST SP 800-84 Guide to Test, Training, and Exercise Programs](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
-- [Homeland Security Exercise and Evaluation Program](HSEEP.md)
-- [ISO 22398 Societal Security — Exercises](ISO_22398_EXERCISES.md)
+- [NIST SP 800-84 Guide to Test, Training, and Exercise Programs](../reference/NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
+- [Homeland Security Exercise and Evaluation Program](../reference/HSEEP.md)
+- [ISO 22398 Societal Security — Exercises](../reference/ISO_22398_EXERCISES.md)
 - [Cybersecurity Incident Response](CYBERSECURITY_INCIDENT_RESPONSE.md)

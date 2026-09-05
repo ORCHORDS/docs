@@ -74,4 +74,4 @@ The 24760 series forms the conceptual basis for several ISO identity-related sta
 - [ISO/IEC 29003 Identity Proofing](ISO_IEC_29003_IDENTITY_PROOFING_GOVERNANCE.md)
 - [ISO/IEC 29115 Entity Authentication Assurance](ISO_IEC_29115_ENTITY_AUTH_ASSURANCE_GOVERNANCE.md)
 - [NIST SP 800-63 Digital Identity Guidelines](NIST_SP_800_63_DIGITAL_IDENTITY_GOVERNANCE.md)
-- [OAuth 2.1 Client Integration Response](OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)
+- [OAuth 2.1 Client Integration Response](../playbooks/OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)

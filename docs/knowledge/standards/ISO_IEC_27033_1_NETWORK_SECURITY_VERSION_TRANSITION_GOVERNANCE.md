@@ -62,5 +62,5 @@ The series is intended for architects, designers, implementers, and operators of
 
 - [ISO/IEC 27001:2022 ISMS Version Guide](ISO_IEC_27001_2022_ISMS_VERSION_TRANSITION_GOVERNANCE.md)
 - [NIST SP 800-12 Introduction to Information Security](NIST_SP_800_12_INFO_SEC_INTRODUCTION_GOVERNANCE.md)
-- [NIST SP 800-207 Zero Trust Architecture](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
-- [Zero Trust Access Implementation Response](ZERO_TRUST_ACCESS_RESPONSE.md)
+- [NIST SP 800-207 Zero Trust Architecture](../reference/NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
+- [Zero Trust Access Implementation Response](../playbooks/ZERO_TRUST_ACCESS_RESPONSE.md)
