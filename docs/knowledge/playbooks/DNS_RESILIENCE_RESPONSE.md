@@ -71,6 +71,6 @@ Document deviations with the approver, scope, expiration, compensating control, 
 ## Related Documents
 
 - [RFC 4033 DNSSEC Introduction](../reference/RFC_4033_DNSSEC_INTRODUCTION.md)
-- [RFC 8461 MTA-STS](RFC_8461_MTA_STS.md)
-- [RFC 8460 SMTP TLS Reporting](RFC_8460_SMTP_TLS_REPORTING.md)
-- [NIST SP 800-81 Secure DNS Deployment](NIST_SP_800_81_SECURE_DNS.md)
+- [RFC 8461 MTA-STS](../reference/RFC_8461_MTA_STS.md)
+- [RFC 8460 SMTP TLS Reporting](../reference/RFC_8460_SMTP_TLS_REPORTING.md)
+- [NIST SP 800-81 Secure DNS Deployment](../reference/NIST_SP_800_81_SECURE_DNS.md)

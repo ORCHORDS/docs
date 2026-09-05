@@ -60,5 +60,7 @@ A profile that references "firmware" or "BIOS" without binding to UEFI 2.10 (or 
 
 - [Firmware Integrity Verification Best Practices](FIRMWARE_INTEGRITY_VERIFICATION_BEST_PRACTICES.md)
 - [NIST SP 800-155 BIOS Integrity Measurement](NIST_SP_800_155_BIOS_INTEGRITY_MEASUREMENT.md)
-- [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
+- TPM Library Specification 2.0
+- TCG Reference
+- [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
 - [Secure Boot and Measured Boot Response Playbook](../playbooks/SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)

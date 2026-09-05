@@ -71,7 +71,7 @@ Document any deviation from the baseline with the technical justification, scope
 
 ## Related Documents
 
-- [NIST SP 800-190 Application Container Security Guide](NIST_SP_800_190_APPLICATION_CONTAINER_SECURITY_GUIDE.md)
+- NIST SP 800-190 Application Container Security Guide
 - [SLSA Build Level 3 Governance](../reference/SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
-- [CIS Docker Benchmark Review](CIS_DOCKER_BENCHMARK_REVIEW.md)
-- [Supply Chain Levels for Software Artifacts](SUPPLY_CHAIN_LEVELS_SOFTWARE_ARTIFACTS.md)
+- CIS Docker Benchmark Review
+- [Supply Chain Levels for Software Artifacts](../reference/SUPPLY_CHAIN_LEVELS_SOFTWARE_ARTIFACTS.md)

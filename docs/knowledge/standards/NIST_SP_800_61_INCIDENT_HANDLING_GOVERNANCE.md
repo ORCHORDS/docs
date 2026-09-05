@@ -50,4 +50,4 @@ Common defects include missing escalation thresholds, ad-hoc containment decisio
 - [NIST SP 800-84 Test, Training, and Exercise Program](../reference/NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
 - [Cybersecurity Incident Response Playbook](../playbooks/CYBERSECURITY_INCIDENT_RESPONSE.md)
 - [Incident Timeline Reconstruction Playbook](../playbooks/INCIDENT_TIMELINE_RECONSTRUCTION.md)
-- [MITRE ATT&CK Version Guide](../reference/MITRE_ATLAS_VERSION_GUIDE.md)
+- MITRE ATT&CK Version Guide

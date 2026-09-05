@@ -49,6 +49,6 @@ Common defects include missing IAL/AAL/FAL mapping, ad-hoc federation trust, and
 - [ISO/IEC 29003 Identity Proofing Governance](ISO_IEC_29003_IDENTITY_PROOFING_GOVERNANCE.md)
 - [ISO/IEC 29115 Entity Authentication Assurance Governance](ISO_IEC_29115_ENTITY_AUTH_ASSURANCE_GOVERNANCE.md)
 - [NIST SP 800-63-3 Digital Identity Governance](NIST_SP_800_63_3_DIGITAL_IDENTITY_GOVERNANCE.md)
-- [IETF OAuth 2.1 Authorization Framework](../reference/IETF_OAUTH_2_1_AUTHORIZATION_FRAMEWORK.md)
-- [OpenID Connect Core 1.0](../reference/OPENID_CONNECT_CORE_1_0.md)
+- IETF OAuth 2.1 Authorization Framework
+- OpenID Connect Core 1.0
 - [OAuth 2.1 Client Integration Response](../playbooks/OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)

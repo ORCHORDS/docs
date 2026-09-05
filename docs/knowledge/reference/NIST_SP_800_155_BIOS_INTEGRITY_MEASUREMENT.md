@@ -58,4 +58,5 @@ A profile that references "BIOS integrity" without binding to a recognized frame
 
 - [Firmware Integrity Verification Best Practices](FIRMWARE_INTEGRITY_VERIFICATION_BEST_PRACTICES.md)
 - [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
-- [Secure Boot and Measured Boot Response Playbook](../playbooks/SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)
+- NIST SP 800-190 Application Container Security Guide
+- [Secure Boot and Measured Boot Response Playbook](../playbooks/SECURE_BOOT_AND_MEASURED_BOOT_RESPONSE.md)

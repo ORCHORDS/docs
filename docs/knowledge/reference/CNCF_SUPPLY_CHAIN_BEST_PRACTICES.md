@@ -61,5 +61,6 @@ A profile that references "supply chain security" without binding to a recognize
 - [SLSA Build Level 3 Governance](SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
 - [NIST SSDF SP 800-218 Secure Software Development Framework](NIST_SSDF_SP_800_218.md)
 - [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
-- [Container Image Build Hardening Response](../playbooks/CONTAINER_IMAGE_BUILD_HARDENING_RESPONSE.md)
+- NIST SP 800-218A GenAI Profile Version Guide
+- [Container Image Build Hardening Response](../playbooks/CONTAINER_IMAGE_BUILD_HARDENING_RESPONSE.md)
 - [Supply Chain Compromise Response](../playbooks/SUPPLY_CHAIN_COMPROMISE_RESPONSE.md)

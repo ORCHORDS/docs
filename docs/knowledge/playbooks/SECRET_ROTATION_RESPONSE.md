@@ -69,6 +69,6 @@ Document deviations with the technical justification, scope, expiration, compens
 ## Related Documents
 
 - [NIST SP 800-57 Key Management](../reference/NIST_SP_800_57_KEY_MANAGEMENT.md)
-- [OWASP Secrets Management Cheat Sheet](OWASP_SECRETS_MANAGEMENT_CHEAT_SHEET.md)
-- [HashiCorp Vault Rotation Best Practices](HASHICORP_VAULT_ROTATION_BEST_PRACTICES.md)
+- OWASP Secrets Management Cheat Sheet
+- HashiCorp Vault Rotation Best Practices
 - [OAuth 2.1 Client Integration Response](OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)

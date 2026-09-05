@@ -57,8 +57,8 @@ Where a profile extends SSDF with a GenAI overlay, that overlay is governed by S
 
 ## Companion Documents
 
-- [NIST SP 800-218A GenAI Profile Version Guide](NIST_SP_800_218A_GENAI_PROFILE_VERSION_GUIDE.md)
-- [NIST SP 800-218A GenAI Profile Version Governance](../standards/NIST_SP_800_218A_GENAI_PROFILE_VERSION_GOVERNANCE.md)
+- NIST SP 800-218A GenAI Profile Version Guide
+- NIST SP 800-218A GenAI Profile Version Governance
 - [Supply Chain Levels for Software Artifacts (SLSA)](SUPPLY_CHAIN_LEVELS_SOFTWARE_ARTIFACTS.md)
 - [CNCF Supply Chain Best Practices](CNCF_SUPPLY_CHAIN_BEST_PRACTICES.md)
 - [NIST SP 800-161 C-SCRM](NIST_SP_800_161_C_SCRM.md)
