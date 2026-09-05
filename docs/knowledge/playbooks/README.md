@@ -171,3 +171,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [Kernel Live Patch Review](KERNEL_LIVE_PATCH_REVIEW.md)
 - [Wireless Intrusion Assessment](WIRELESS_INTRUSION_ASSESSMENT.md)
 - [Secrets Rotation Drift Review](SECRETS_ROTATION_DRIFT_REVIEW.md)
+
+## 2026-09-05 infrastructure supply chain and PKI playbooks (Batch 64)
+
+- [Container Image Vulnerability Response](CONTAINER_IMAGE_VULNERABILITY_RESPONSE.md)
+- [Kubernetes RBAC Audit](KUBERNETES_RBAC_AUDIT.md)
+- [Cloud Storage Bucket Policy Review](CLOUD_STORAGE_BUCKET_POLICY_REVIEW.md)
+- [DNS Provider Health Check](DNS_PROVIDER_HEALTH_CHECK.md)
+- [Email Outage Response and Time Security](EMAIL_OUTAGE_RESPONSE_TIME_SECURITY.md)
+- [Public Key Infrastructure Review](PUBLIC_KEY_INFRASTRUCTURE_REVIEW.md)
+- [TLS Certificate Revocation Response](TLS_CERTIFICATE_REVOCATION_RESPONSE.md)
+- [Software Bill of Materials Publishing](SOFTWARE_BILL_OF_MATERIALS_PUBLISHING.md)
