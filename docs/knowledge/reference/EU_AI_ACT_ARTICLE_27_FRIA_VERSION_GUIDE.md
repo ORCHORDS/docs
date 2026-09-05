@@ -64,7 +64,7 @@ Profiles that govern AI deployments outside the EU should still bind to ISO/IEC 
 - [ISO/IEC 42005 AI Impact Assessment Version Guide](ISO_IEC_42005_AI_IMPACT_ASSESSMENT_VERSION_GUIDE.md)
 - [NIST AI 600-1 GenAI Profile Version Guide](NIST_AI_600_1_GENAI_PROFILE_VERSION_GUIDE.md)
 - [NIST AI 100-2 Adversarial ML Version Guide](NIST_AI_100_2_ADVERSARIAL_ML_VERSION_GUIDE.md)
-- MITRE ATLAS Version Guide
+- [MITRE ATLAS Version Guide](MITRE_ATLAS_VERSION_GUIDE.md)
 - [OECD AI Principles 2024 Version Guide](OECD_AI_PRINCIPLES_2024_VERSION_GUIDE.md)
-- UNESCO AI Ethics 2021 Version Guide
-- C2PA Content Credentials Version Guide
+- [UNESCO AI Ethics 2021 Version Guide](UNESCO_AI_ETHICS_2021_VERSION_GUIDE.md)
+- [C2PA Content Credentials Version Guide](C2PA_CONTENT_CREDENTIALS_VERSION_GUIDE.md)
