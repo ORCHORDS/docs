@@ -159,3 +159,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [WebSocket Protocol Version Governance (RFC 6455, RFC 9220, RFC 8441)](WEBSOCKET_RFC_6455_VERSION_GOVERNANCE.md)
 - [IPsec / IKEv2 Version Governance (RFC 7296)](IPSEC_IKEV2_RFC_7296_VERSION_GOVERNANCE.md)
 - [OpenPGP Version Governance (RFC 9580)](OPENPGP_RFC_9580_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Inter-domain routing and authenticated-time reference cards (Batch 79)
+
+- [BGP v4 Version Governance (RFC 4271, RFC 8205, RFC 9234)](BGP_RFC_4271_VERSION_GOVERNANCE.md)
+- [DNSSEC Version Governance (RFC 4033, RFC 4034, RFC 4035, RFC 5155, RFC 6781, RFC 9276)](DNSSEC_RFC_4033_VERSION_GOVERNANCE.md)
+- [Network Time Security Version Governance (RFC 8915, RFC 9337)](NTS_RFC_8915_VERSION_GOVERNANCE.md)

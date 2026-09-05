@@ -205,3 +205,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Workload Identity Rotation Playbook](WORKLOAD_IDENTITY_ROTATION_PLAYBOOK.md)
 - [Service Mesh mTLS Rollout Playbook](SERVICE_MESH_MTLS_ROLLOUT_PLAYBOOK.md)
 - [Post-Incident Security Architecture Review Playbook](POST_INCIDENT_SECURITY_ARCHITECTURE_REVIEW_PLAYBOOK.md)
+
+## 2026-09-05 network-operations and post-incident review playbooks (Batch 79)
+
+- [BGP Peering Change Playbook](BGP_PEERING_CHANGE_PLAYBOOK.md)
+- [DNSSEC Key Rollover Playbook](DNSSEC_ROLLOVER_PLAYBOOK.md)
+- [Incident Postmortem Architectural Review Playbook](INCIDENT_POSTMORTEM_REVIEW_PLAYBOOK.md)

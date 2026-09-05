@@ -164,3 +164,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27040:2015 Storage Security Governance](ISO_IEC_27040_2015_STORAGE_SECURITY_GOVERNANCE.md)
 - [ISO/IEC 27400:2022 IoT Security and Privacy Guidelines Governance](ISO_IEC_27400_2022_IOT_SECURITY_PRIVACY_GOVERNANCE.md)
 - [NIST SP 800-207A Zero Trust Architecture Cloud-Native Model Governance](NIST_SP_800_207A_2023_ZERO_TRUST_ARCHITECTURE_GOVERNANCE.md)
+
+## 2026-09-05 NIST assessment, supply chain, and IoT standards governance cards (Batch 79)
+
+- [NIST SP 800-53A Rev. 5 Assessment Procedure Governance](NIST_SP_800_53A_REV5_ASSESSMENT_GOVERNANCE.md)
+- [NIST CSWP 23 (2024) — SBOM and Software Supply Chain Governance](NIST_CSWP_23_2024_SSB_GOVERNANCE.md)
+- [NIST IR 8259B IoT Device Cybersecurity Capability Governance](NIST_IR_8259B_IOT_GOVERNANCE.md)
