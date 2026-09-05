@@ -265,3 +265,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Kubernetes Cluster Minor Upgrade Playbook](KUBERNETES_UPGRADE_PLAYBOOK.md)
 - [Container Image Hardening Playbook](CONTAINER_IMAGE_HARDENING_PLAYBOOK.md)
 - [Supply Chain Incident Response Playbook](SUPPLY_CHAIN_INCIDENT_PLAYBOOK.md)
+
+## 2026-09-05 Protobuf schema deprecation, OPA bundle rotation, and Vault audit log shipping playbooks (Batch 89)
+
+- [Protobuf Schema Deprecation Playbook](PROTOBUF_SCHEMA_DEPRECATION_PLAYBOOK.md)
+- [OPA Bundle Rotation Playbook](OPA_BUNDLE_ROTATION_PLAYBOOK.md)
+- [Vault Audit Log Shipping Playbook](VAULT_AUDIT_LOG_SHIPPING_PLAYBOOK.md)
