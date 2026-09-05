@@ -158,3 +158,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST FIPS 180-5 Secure Hash Standard Governance](NIST_FIPS_180_5_SECURE_HASH_STANDARD_GOVERNANCE.md)
 - [NIST FIPS 202 SHA-3 Permutation Governance](NIST_FIPS_202_SHA3_PERMUTATION_GOVERNANCE.md)
 - [NIST SP 800-131A Rev. 2 Algorithm Transition Governance](NIST_SP_800_131A_2024_TRANSITION_GOVERNANCE.md)
+
+## 2026-09-05 Storage, IoT, and Zero Trust architecture governance cards (Batch 78)
+
+- [ISO/IEC 27040:2015 Storage Security Governance](ISO_IEC_27040_2015_STORAGE_SECURITY_GOVERNANCE.md)
+- [ISO/IEC 27400:2022 IoT Security and Privacy Guidelines Governance](ISO_IEC_27400_2022_IOT_SECURITY_PRIVACY_GOVERNANCE.md)
+- [NIST SP 800-207A Zero Trust Architecture Cloud-Native Model Governance](NIST_SP_800_207A_2023_ZERO_TRUST_ARCHITECTURE_GOVERNANCE.md)
