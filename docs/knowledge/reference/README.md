@@ -225,3 +225,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Protocol Buffers (Protobuf) Version Governance](PROTOBUF_VERSION_GOVERNANCE.md)
 - [Open Policy Agent (OPA / Rego) Version Governance](OPA_VERSION_GOVERNANCE.md)
 - [HashiCorp Vault Version Governance](VAULT_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Messaging, ingress, and proxy reference cards (Batch 90)
+
+- [NATS Messaging Version Governance](NATS_VERSION_GOVERNANCE.md)
+- [NGINX / NGINX Ingress Controller Version Governance](NGINX_VERSION_GOVERNANCE.md)
+- [Envoy Proxy Version Governance](ENVOY_VERSION_GOVERNANCE.md)
