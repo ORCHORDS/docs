@@ -93,6 +93,17 @@ This family contains shared glossaries, checklists, command references, configur
 
 - [IETF RFC 9562 UUID v7 Governance](IETF_RFC_9562_UUID_V7_GOVERNANCE.md)
 
+## 2026-09-05 IETF foundational protocol reference cards (Batch 74)
+
+- [IETF RFC 1035 DNS Messages Version Guide](IETF_RFC_1035_DNS_MESSAGES_VERSION_GUIDE.md)
+- [IETF RFC 2865 RADIUS Version Governance](IETF_RFC_2865_RADIUS_VERSION_GOVERNANCE.md)
+- [IETF RFC 5321 SMTP Version Governance](IETF_RFC_5321_SMTP_VERSION_GOVERNANCE.md)
+- [IETF RFC 6480 RPKI Architecture Version Guide](IETF_RPKI_ARCHITECTURE_RFC_6480_VERSION_GUIDE.md)
+- [IETF RFC 8484 DNS-over-HTTPS Version Governance](IETF_RFC_8484_DNS_OVER_HTTPS_VERSION_GOVERNANCE.md)
+- [IETF RFC 9114 HTTP/3 Version Governance](IETF_RFC_9114_HTTP_3_VERSION_GOVERNANCE.md)
+- [IETF RFC 9396 Rich Authorization Requests Version Governance](IETF_RFC_9396_RAR_VERSION_GOVERNANCE.md)
+- [IETF OpenID Connect Core 1.0 Version Governance](IETF_OIDC_CORE_1_0_VERSION_GOVERNANCE.md)
+
 ## 2026-09-04 foundational format and code-set reference cards (Batch 54)
 
 - [ISO 8601:2019 Date and Time Format Version Guide](ISO_8601_2019_DATE_TIME_FORMAT_VERSION_GUIDE.md)
