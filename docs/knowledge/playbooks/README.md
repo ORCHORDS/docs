@@ -211,3 +211,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [BGP Peering Change Playbook](BGP_PEERING_CHANGE_PLAYBOOK.md)
 - [DNSSEC Key Rollover Playbook](DNSSEC_ROLLOVER_PLAYBOOK.md)
 - [Incident Postmortem Architectural Review Playbook](INCIDENT_POSTMORTEM_REVIEW_PLAYBOOK.md)
+
+## 2026-09-05 Message-broker upgrade, failover, and privacy-incident playbooks (Batch 80)
+
+- [Kafka Cluster Version Bump Playbook](KAFKA_VERSION_BUMP_PLAYBOOK.md)
+- [AMQP Broker Failover and Client Reconnect Playbook](AMQP_BROKER_FAILOVER_PLAYBOOK.md)
+- [Privacy Incident Response Playbook](PRIVACY_INCIDENT_RESPONSE_PLAYBOOK.md)

@@ -170,3 +170,10 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-53A Rev. 5 Assessment Procedure Governance](NIST_SP_800_53A_REV5_ASSESSMENT_GOVERNANCE.md)
 - [NIST CSWP 23 (2024) — SBOM and Software Supply Chain Governance](NIST_CSWP_23_2024_SSB_GOVERNANCE.md)
 - [NIST IR 8259B IoT Device Cybersecurity Capability Governance](NIST_IR_8259B_IOT_GOVERNANCE.md)
+
+## 2026-09-05 ISO/IEC 27017, 27701, 30111 and NIST SSDF standards governance cards (Batch 80)
+
+- [ISO/IEC 27017:2015 Cloud-Specific Information Security Controls Governance](ISO_IEC_27017_2015_CLOUD_GOVERNANCE.md)
+- [ISO/IEC 27701:2019 Privacy Information Management System (PIMS) Governance](ISO_IEC_27701_2019_PIMS_GOVERNANCE.md)
+- [NIST SP 800-218 Rev. 1 (SSDF v1.1) Secure Software Development Framework Governance](NIST_SP_800_218_SSDF_GOVERNANCE.md)
+- [ISO/IEC 29147:2018 / ISO/IEC 30111:2019 Vulnerability Disclosure and Handling Governance](ISO_IEC_30111_2019_VDP_GOVERNANCE.md)
