@@ -72,4 +72,4 @@ Document deviations from policy with the technical justification, scope, expirat
 - [Public Key Infrastructure Operations Response](PUBLIC_KEY_INFRASTRUCTURE_OPERATIONS_RESPONSE.md)
 - [RFC 5280 X.509 PKI Profile](../reference/RFC_5280_X509_PKI_PROFILE.md)
 - [RFC 8555 ACME Profile](../reference/RFC_8555_ACME_PROFILE.md)
-- [NIST SP 800-52 Guidelines for TLS Implementations](../reference/NIST_SP_800_52_TLS_GUIDELINES.md)
+- [NIST SP 800-52 Guidelines for TLS Implementations](NIST_SP_800_52_TLS_GUIDELINES.md)

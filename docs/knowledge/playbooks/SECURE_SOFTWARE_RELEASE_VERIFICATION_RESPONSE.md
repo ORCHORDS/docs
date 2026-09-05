@@ -71,6 +71,6 @@ Document any waiver of a mandatory gate with the technical justification, busine
 
 - [SLSA Build Level 3 Governance](../reference/SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
 - [NIST SSDF SP 800-218](../reference/NIST_SSDF_SP_800_218.md)
-- OWASP Top 10 Verification Review
+- [OWASP Top 10 Verification Review](OWASP_TOP_10_VERIFICATION_REVIEW.md)
 - [Secure Software Release Verification](SECURE_SOFTWARE_RELEASE_VERIFICATION.md)
 - [Change Control](CHANGE_CONTROL.md)

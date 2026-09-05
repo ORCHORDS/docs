@@ -67,4 +67,4 @@ SLH-DSA is the conservative fallback when lattice-based signatures (ML-DSA) are 
 - [NIST FIPS 204 ML-DSA Version Guide](NIST_FIPS_204_ML_DSA_VERSION_TRANSITION_GOVERNANCE.md)
 - [NIST SP 800-208 LMS/XMSS Version Guide](NIST_SP_800_208_QUANTUM_RESISTANT_VERSION_TRANSITION_GOVERNANCE.md)
 - [NIST SSDF SP 800-218](../reference/NIST_SSDF_SP_800_218.md)
-- [Firmware Integrity Verification Best Practices](../reference/FIRMWARE_INTEGRITY_VERIFICATION_BEST_PRACTICES.md)
+- [Firmware Integrity Verification Best Practices](FIRMWARE_INTEGRITY_VERIFICATION_BEST_PRACTICES.md)
