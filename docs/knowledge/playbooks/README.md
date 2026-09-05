@@ -149,3 +149,14 @@ This family contains repeatable procedures for development, deployment, incident
 - [Chaos Engineering Response](CHAOS_ENGINEERING_RESPONSE.md)
 - [Disaster Recovery Failover Response](DISASTER_RECOVERY_FAILOVER_RESPONSE.md)
 - [Zero Trust Access Implementation Response](ZERO_TRUST_ACCESS_RESPONSE.md)
+
+## 2026-09-05 cross-family playbook expansion (Batch 59)
+
+- [Agent Prompt Injection Response](AGENT_PROMPT_INJECTION_RESPONSE.md)
+- [Agent Tool Invocation Validation](AGENT_TOOL_INVOCATION_VALIDATION.md)
+- [Agent Memory Poisoning Review](AGENT_MEMORY_POISONING_REVIEW.md)
+- [Agent Delegated Authority Response](AGENT_DELEGATED_AUTHORITY_RESPONSE.md)
+- [Agent Credential Leakage Response](AGENT_CREDENTIAL_LEAKAGE_RESPONSE.md)
+- [AI Model Drift Detection](AI_MODEL_DRIFT_DETECTION.md)
+- [AI Output Content Validation](AI_OUTPUT_CONTENT_VALIDATION.md)
+- [AI Provider Outage Response](AI_PROVIDER_OUTAGE_RESPONSE.md)
