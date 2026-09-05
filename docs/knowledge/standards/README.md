@@ -225,3 +225,8 @@ This family contains internal documentation conventions and guidance mapped to e
 - [CNCF CKS Kubernetes Security Governance](CNCF_CKS_KUBERNETES_GOVERNANCE.md)
 - [CIS Critical Security Controls v8 Governance](CIS_CONTROLS_V8_GOVERNANCE.md)
 - [NIST SP 800-190 Application Container Security Guide Governance](NIST_SP_800_190_DOCKER_GOVERNANCE.md)
+
+## 2026-09-05 NIST CSF 2.0 and ISO/IEC 27001:2022 ISMS standards governance cards (Batch 89)
+
+- [NIST Cybersecurity Framework 2.0 Governance](NIST_CSF_2_2024_GOVERNANCE.md)
+- [ISO/IEC 27001:2022 Information Security Management System Governance](ISO_IEC_27001_2022_ISMS_GOVERNANCE.md)

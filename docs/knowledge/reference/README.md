@@ -219,3 +219,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Kubernetes Version Governance (CNCF Kubernetes Releases)](KUBERNETES_VERSION_GOVERNANCE.md)
 - [Container Runtime, Image Format and Registry Version Governance (OCI)](OCI_RUNTIME_VERSION_GOVERNANCE.md)
 - [SLSA (Supply-chain Levels for Software Artifacts) Version Governance](SLSA_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Schema, policy, and secrets-management reference cards (Batch 89)
+
+- [Protocol Buffers (Protobuf) Version Governance](PROTOBUF_VERSION_GOVERNANCE.md)
+- [Open Policy Agent (OPA / Rego) Version Governance](OPA_VERSION_GOVERNANCE.md)
+- [HashiCorp Vault Version Governance](VAULT_VERSION_GOVERNANCE.md)
