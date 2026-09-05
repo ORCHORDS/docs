@@ -177,3 +177,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [HTTP/3 Version Governance (RFC 9114, RFC 9204, RFC 9220, RFC 9298)](HTTP_3_RFC_9114_VERSION_GOVERNANCE.md)
 - [gRPC Version Governance (Core, Connect, .NET, Java, Go)](GRPC_VERSION_GOVERNANCE.md)
 - [MQTT v5 Version Governance (OASIS, ISO/IEC 20922)](MQTT_5_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Identity federation and OAuth reference cards (Batch 82)
+
+- [SAML 2.0 Version Governance (OASIS Security Assertion Markup Language)](SAML_2_0_VERSION_GOVERNANCE.md)
+- [OpenID Connect (OIDC) Version Governance (OASIS, FAPI, FAPI 2.0)](OIDC_VERSION_GOVERNANCE.md)
+- [OAuth 2.1 Authorization Framework Version Governance](OAUTH_2_1_VERSION_GOVERNANCE.md)
