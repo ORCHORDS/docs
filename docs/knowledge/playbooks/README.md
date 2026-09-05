@@ -253,3 +253,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [PostgreSQL Major Version Upgrade Playbook](POSTGRES_MAJOR_UPGRADE_PLAYBOOK.md)
 - [Redis Cluster Failover and Recovery Playbook](REDIS_FAILOVER_PLAYBOOK.md)
 - [etcd Disaster Recovery Playbook](ETCD_DR_PLAYBOOK.md)
+
+## 2026-09-05 Kubernetes upgrade, container image hardening and supply-chain incident playbooks (Batch 87)
+
+- [Kubernetes Cluster Minor Upgrade Playbook](KUBERNETES_UPGRADE_PLAYBOOK.md)
+- [Container Image Hardening Playbook](CONTAINER_IMAGE_HARDENING_PLAYBOOK.md)
+- [Supply Chain Incident Response Playbook](SUPPLY_CHAIN_INCIDENT_PLAYBOOK.md)
