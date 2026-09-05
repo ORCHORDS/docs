@@ -70,7 +70,7 @@ jobs:
                       continue
 
                   def replace(match: re.Match[str]) -> str:
-                      nonlocal changed, redirected, delinked
+                      global changed, redirected, delinked
                       label = match.group(1)
                       raw = match.group(2).strip()
                       if not raw:
