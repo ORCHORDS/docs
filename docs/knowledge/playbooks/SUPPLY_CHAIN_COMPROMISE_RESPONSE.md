@@ -69,7 +69,7 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- [SLSA Build Level 3 Governance](SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
+- [SLSA Build Level 3 Governance](../reference/SLSA_BUILD_LEVEL_3_GOVERNANCE.md)
 - [NIST SP 800-218A SSDF Profile](NIST_SP_800_218A_GENAI_PROFILE_VERSION_GUIDE.md)
 - [NIST SP 800-161 Cybersecurity Supply Chain Risk Management](NIST_SP_800_161_C_SCRM.md)
 - [CNCF Software Supply Chain Best Practices](CNCF_SUPPLY_CHAIN_BEST_PRACTICES.md)

@@ -69,7 +69,7 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- [NIST SP 800-207 Zero Trust Architecture](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
+- [NIST SP 800-207 Zero Trust Architecture](../reference/NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
 - [NIST SP 800-207A Zero Trust Architecture for Multi-Cloud](NIST_SP_800_207A_MULTI_CLOUD.md)
 - [OAuth 2.1 Client Integration Response](OAUTH_2_1_CLIENT_INTEGRATION_RESPONSE.md)
 - [Public Key Infrastructure Operations Response](PUBLIC_KEY_INFRASTRUCTURE_OPERATIONS_RESPONSE.md)

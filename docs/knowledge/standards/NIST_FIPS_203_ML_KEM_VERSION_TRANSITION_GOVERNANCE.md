@@ -69,4 +69,4 @@ This standard is part of NIST's post-quantum cryptographic standardization. It p
 - [NIST FIPS 205 SLH-DSA Version Guide](NIST_FIPS_205_SLH_DSA_VERSION_TRANSITION_GOVERNANCE.md)
 - [NIST SP 800-208 Quantum-Resistant Hash Signature Version Guide](NIST_SP_800_208_QUANTUM_RESISTANT_VERSION_TRANSITION_GOVERNANCE.md)
 - [IETF TLS Hybrid PQ Profile (where published)](IETF_TLS_HYBRID_PQ_PROFILE_VERSION_GUIDE.md)
-- [NIST SP 800-57 Key Management](NIST_SP_800_57_KEY_MANAGEMENT.md)
+- [NIST SP 800-57 Key Management](../reference/NIST_SP_800_57_KEY_MANAGEMENT.md)
