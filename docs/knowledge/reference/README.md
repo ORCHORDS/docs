@@ -153,3 +153,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [DTLS 1.3 Version Governance (RFC 9147)](DTLS_RFC_9147_VERSION_GOVERNANCE.md)
 - [HTTP/2 Version Governance (RFC 7540, RFC 9113)](HTTP_2_RFC_7540_VERSION_GOVERNANCE.md)
 - [JSON Version Governance (RFC 8259)](JSON_RFC_8259_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Application-layer and end-to-end security protocol reference cards (Batch 78)
+
+- [WebSocket Protocol Version Governance (RFC 6455, RFC 9220, RFC 8441)](WEBSOCKET_RFC_6455_VERSION_GOVERNANCE.md)
+- [IPsec / IKEv2 Version Governance (RFC 7296)](IPSEC_IKEV2_RFC_7296_VERSION_GOVERNANCE.md)
+- [OpenPGP Version Governance (RFC 9580)](OPENPGP_RFC_9580_VERSION_GOVERNANCE.md)

@@ -199,3 +199,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Cryptographic Agility Playbook](CRYPTOGRAPHIC_AGILITY_PLAYBOOK.md)
 - [Interval Budget Review Playbook](INTERVAL_BUDGET_REVIEW_PLAYBOOK.md)
 - [Threat Hunting Hypothesis Playbook](THREAT_HUNTING_HYPOTHESIS_PLAYBOOK.md)
+
+## 2026-09-05 cloud-native identity and service-mesh playbooks (Batch 78)
+
+- [Workload Identity Rotation Playbook](WORKLOAD_IDENTITY_ROTATION_PLAYBOOK.md)
+- [Service Mesh mTLS Rollout Playbook](SERVICE_MESH_MTLS_ROLLOUT_PLAYBOOK.md)
+- [Post-Incident Security Architecture Review Playbook](POST_INCIDENT_SECURITY_ARCHITECTURE_REVIEW_PLAYBOOK.md)
