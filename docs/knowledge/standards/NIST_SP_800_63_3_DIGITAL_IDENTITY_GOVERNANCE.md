@@ -52,5 +52,5 @@ Common defects include misassigned assurance levels, weak authenticators at high
 ## Companion documents
 
 - NIST_SP_800_53B_CONTROL_BASELINES_GOVERNANCE.md
-- NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md
+- ../reference/NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md
 - ISO_IEC_27001_2022_VERSION_TRANSITION_GOVERNANCE.md

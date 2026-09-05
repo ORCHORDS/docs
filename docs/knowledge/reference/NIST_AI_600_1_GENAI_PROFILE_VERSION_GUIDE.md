@@ -67,6 +67,6 @@ The profile is intended for use alongside AI RMF 1.0; it does not replace it. Th
 
 - [NIST AI 100-1 AI RMF 1.0 Version Guide](NIST_AI_100_1_AI_RMF_1_0_VERSION_GUIDE.md)
 - [NIST AI 100-2 Adversarial Machine Learning Taxonomy](NIST_AI_100_2_ADVERSARIAL_ML_VERSION_GUIDE.md)
-- [C2PA Content Credentials Version Guide](C2PA_CONTENT_CREDENTIALS_VERSION_GUIDE.md)
+- C2PA Content Credentials Version Guide
 - [OECD AI Principles Version Guide](OECD_AI_PRINCIPLES_2024_VERSION_GUIDE.md)
 - [EU AI Act Version Guide](EU_AI_ACT_2024_1689_VERSION_GUIDE.md)

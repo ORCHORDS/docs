@@ -70,7 +70,7 @@ Document deviations with the approver, scope, expiration, compensating control, 
 
 ## Related Documents
 
-- [NIST SP 800-34 Contingency Planning](NIST_SP_800_34_CONTINGENCY_PLANNING.md)
-- [ISO 22301 Business Continuity Management](ISO_22301_BUSINESS_CONTINUITY_MANAGEMENT.md)
+- [NIST SP 800-34 Contingency Planning](../reference/NIST_SP_800_34_CONTINGENCY_PLANNING.md)
+- ISO 22301 Business Continuity Management
 - [Site Reliability Engineering On-Call Response](SITE_RELIABILITY_ENGINEERING_ON_CALL_RESPONSE.md)
 - [Backup and Restore Validation](BACKUP_RESTORE_VALIDATION.md)

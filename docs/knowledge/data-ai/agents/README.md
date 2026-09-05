@@ -179,3 +179,14 @@ Articles in this folder distinguish reusable design principles from protocol- or
 - [Agent Human Handoff Procedure](AGENT_HUMAN_HANDOFF_PROCEDURE.md)
 - [Agent Observability Dashboard and Agent Health](AGENT_OBSERVABILITY_DASHBOARD_AGENT_HEALTH.md)
 - [Agent Prompt Injection Red Team Probes](AGENT_PROMPT_INJECTION_RED_TEAM_PROBES.md)
+
+## Batch 70 additions (Agents) — 2026-09-05
+
+- [Agent Runtime Sandbox Evaluation](AGENT_RUNTIME_SANDBOX_EVAL.md)
+- [Agent Adversarial Robustness Probes](AGENT_ADVERSARIAL_ROBUSTNESS_PROBE.md)
+- [Agent Model Card Authoring](AGENT_MODEL_CARD_AUTHORING.md)
+- [Agent Prompt Leakage Defense](AGENT_PROMPT_LEAKAGE_DEFENSE.md)
+- [Agent Guardrail Bypass Testing](AGENT_GUARDRAIL_BYPASS_TESTING.md)
+- [Agent Multi-Turn Context Integrity](AGENT_MULTI_TURN_CONTEXT_INTEGRITY.md)
+- [Agent Human-in-the-Loop Gating](AGENT_HUMAN_IN_THE_LOOP_GATING.md)
+- [Agent Safety Incident Triage](AGENT_SAFETY_INCIDENT_TRIAGE.md)
