@@ -3,9 +3,9 @@ title: "Standards Documentation"
 owner: "Documentation Maintainer"
 status: "approved"
 classification: "public"
-last-reviewed: "2026-08-26"
+last-reviewed: "2026-09-05"
 review-cycle: "90 days"
-next-review: "2026-11-24"
+next-review: "2026-12-04"
 ---
 
 # Standards Documentation
@@ -152,3 +152,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-37 Rev. 3 Risk Management Framework Governance](NIST_SP_800_37_R3_RMF_GOVERNANCE.md)
 - [NIST SP 800-30 Rev. 1 Risk Assessment Governance](NIST_SP_800_30_R1_RISK_ASSESSMENT_GOVERNANCE.md)
 - [NIST SP 800-63-3 Digital Identity Guidelines Governance](NIST_SP_800_63_3_DIGITAL_IDENTITY_GOVERNANCE.md)
+
+## 2026-09-05 NIST SHA-3, FIPS 202, and SP 800-131A Rev. 2 governance cards (Batch 77)
+
+- [NIST FIPS 180-5 Secure Hash Standard Governance](NIST_FIPS_180_5_SECURE_HASH_STANDARD_GOVERNANCE.md)
+- [NIST FIPS 202 SHA-3 Permutation Governance](NIST_FIPS_202_SHA3_PERMUTATION_GOVERNANCE.md)
+- [NIST SP 800-131A Rev. 2 Algorithm Transition Governance](NIST_SP_800_131A_2024_TRANSITION_GOVERNANCE.md)
