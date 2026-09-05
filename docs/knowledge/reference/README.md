@@ -171,3 +171,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Apache Kafka Version Governance (KIP-driven protocol)](KAFKA_KIP_VERSION_GOVERNANCE.md)
 - [AMQP 0-9-1 Version Governance (RabbitMQ wire protocol baseline)](AMQP_0_9_1_VERSION_GOVERNANCE.md)
 - [AMQP 1.0 Version Governance](AMQP_1_0_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Modern wire-protocol reference cards (Batch 81)
+
+- [HTTP/3 Version Governance (RFC 9114, RFC 9204, RFC 9220, RFC 9298)](HTTP_3_RFC_9114_VERSION_GOVERNANCE.md)
+- [gRPC Version Governance (Core, Connect, .NET, Java, Go)](GRPC_VERSION_GOVERNANCE.md)
+- [MQTT v5 Version Governance (OASIS, ISO/IEC 20922)](MQTT_5_VERSION_GOVERNANCE.md)
