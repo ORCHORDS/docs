@@ -271,3 +271,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Protobuf Schema Deprecation Playbook](PROTOBUF_SCHEMA_DEPRECATION_PLAYBOOK.md)
 - [OPA Bundle Rotation Playbook](OPA_BUNDLE_ROTATION_PLAYBOOK.md)
 - [Vault Audit Log Shipping Playbook](VAULT_AUDIT_LOG_SHIPPING_PLAYBOOK.md)
+
+## 2026-09-05 NATS failover, NGINX TLS renewal, and Envoy hot-reload playbooks (Batch 90)
+
+- [NATS Cluster Failover Playbook](NATS_CLUSTER_FAILOVER_PLAYBOOK.md)
+- [NGINX TLS Certificate Renewal Playbook](NGINX_TLS_CERT_RENEWAL_PLAYBOOK.md)
+- [Envoy Listener Hot Reload Playbook](ENVOY_LISTENER_HOT_RELOAD_PLAYBOOK.md)

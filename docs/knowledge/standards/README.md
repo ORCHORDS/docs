@@ -230,3 +230,9 @@ This family contains internal documentation conventions and guidance mapped to e
 
 - [NIST Cybersecurity Framework 2.0 Governance](NIST_CSF_2_2024_GOVERNANCE.md)
 - [ISO/IEC 27001:2022 Information Security Management System Governance](ISO_IEC_27001_2022_ISMS_GOVERNANCE.md)
+
+## 2026-09-05 ISO/IEC 27005 risk, NIST SP 800-207 Zero Trust, and NIST SP 800-53A assessment governance cards (Batch 90)
+
+- [ISO/IEC 27005:2022 Information Security Risk Management Governance](ISO_IEC_27005_2022_RISK_GOVERNANCE.md)
+- [NIST SP 800-207 Zero Trust Architecture Governance](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
+- [NIST SP 800-53A Rev. 5 Assessment Procedures Governance](NIST_SP_800_53A_REV5_ASSESSMENT_GOVERNANCE.md)
