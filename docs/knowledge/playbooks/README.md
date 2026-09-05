@@ -247,3 +247,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Detection Engineering Playbook](DETECTION_ENGINEERING_PLAYBOOK.md)
 - [Threat Intelligence Consumption Playbook](THREAT_INTEL_CONSUMPTION_PLAYBOOK.md)
 - [SOAR Playbook Authoring Playbook](SOAR_PLAYBOOK_AUTHORING_PLAYBOOK.md)
+
+## 2026-09-05 Database and state-store upgrade/failover/DR playbooks (Batch 86)
+
+- [PostgreSQL Major Version Upgrade Playbook](POSTGRES_MAJOR_UPGRADE_PLAYBOOK.md)
+- [Redis Cluster Failover and Recovery Playbook](REDIS_FAILOVER_PLAYBOOK.md)
+- [etcd Disaster Recovery Playbook](ETCD_DR_PLAYBOOK.md)

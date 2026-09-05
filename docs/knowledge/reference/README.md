@@ -201,3 +201,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Cyber Threat Intelligence and STIX/TAXII Version Governance](RAVENSWORN_INDICATORS_GOVERNANCE.md)
 - [SIEM Architecture and Detection Engineering Version Governance](SIEM_ARCHITECTURE_GOVERNANCE.md)
 - [SOAR and Detection-as-Code Version Governance](SOAR_AUTOMATION_GOVERNANCE.md)
+
+## 2026-09-05 Database and state-store reference cards (Batch 86)
+
+- [PostgreSQL Version Governance (Community, Major Versions 16/17/18)](POSTGRES_VERSION_GOVERNANCE.md)
+- [Redis Version Governance (Community, Open Source, Stack 7.x, Stack 8.x)](REDIS_VERSION_GOVERNANCE.md)
+- [etcd Version Governance (CNCF, distributed KV store)](ETCD_VERSION_GOVERNANCE.md)
