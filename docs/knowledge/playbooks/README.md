@@ -223,3 +223,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [gRPC Service Launch Playbook](GRPC_SERVICE_LAUNCH_PLAYBOOK.md)
 - [MQTT v5 Fleet Provisioning and Decommissioning Playbook](MQTT_FLEET_PROVISIONING_PLAYBOOK.md)
 - [Secret Rotation Playbook](SECRET_ROTATION_PLAYBOOK.md)
+
+## 2026-09-05 OAuth, AI lifecycle and SAML playbooks (Batch 82)
+
+- [OAuth 2.0/2.1 Integration Playbook](OAUTH_INTEGRATION_PLAYBOOK.md)
+- [AI Model Lifecycle Management Playbook](AI_MODEL_LIFECYCLE_PLAYBOOK.md)
+- [SAML 2.0 SSO Integration Playbook](SAML_INTEGRATION_PLAYBOOK.md)

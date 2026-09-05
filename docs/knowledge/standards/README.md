@@ -183,3 +183,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27018:2019 PII Protection in Public Cloud Services Governance](ISO_IEC_27018_2019_PII_GOVERNANCE.md)
 - [COBIT 2019 Governance and Management Objectives Governance](COBIT_2019_GOVERNANCE_GOVERNANCE.md)
 - [ISO/IEC 42001:2023 AI Management System (AIMS) Governance](ISO_IEC_42001_2023_AIMS_GOVERNANCE.md)
+
+## 2026-09-05 ISO 22600, 23053 and 27402 governance cards (Batch 82)
+
+- [ISO/TS 22600:2014 Health Informatics Privilege Management and Access Control Governance](ISO_IEC_22600_2014_PRIVACY_GOVERNANCE.md)
+- [ISO/IEC 23053:2022 AI Framework Using ML Technologies Governance](ISO_IEC_23053_2022_AI_FRAMEWORK_GOVERNANCE.md)
+- [ISO/IEC 27402:2024 AI Security Governance](ISO_IEC_27402_2024_AI_SECURITY_GOVERNANCE.md)
