@@ -195,3 +195,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [RPKI Version Governance (RFC 6480, RFC 6482, RFC 8210, RFC 9319)](RPKI_RFC_8210_VERSION_GOVERNANCE.md)
 - [BGPsec Version Governance (RFC 8205, RFC 8209, RFC 8211)](BGPSEC_RFC_8209_VERSION_GOVERNANCE.md)
 - [MANRS (Mutually Agreed Norms for Routing Security) Governance](MANRS_GOVERNANCE.md)
+
+## 2026-09-05 CTI, SIEM and SOAR reference cards (Batch 85)
+
+- [Cyber Threat Intelligence and STIX/TAXII Version Governance](RAVENSWORN_INDICATORS_GOVERNANCE.md)
+- [SIEM Architecture and Detection Engineering Version Governance](SIEM_ARCHITECTURE_GOVERNANCE.md)
+- [SOAR and Detection-as-Code Version Governance](SOAR_AUTOMATION_GOVERNANCE.md)
