@@ -207,3 +207,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-61 Rev. 2 Computer Security Incident Handling Guide Governance](NIST_SP_800_61_INCIDENT_GOVERNANCE.md)
 - [NIST SP 800-92 Guide to Computer Security Log Management Governance](NIST_SP_800_92_LOG_GOVERNANCE.md)
 - [NIST Cybersecurity Framework 2.0 Governance](NIST_CSF_2_2024_GOVERNANCE.md)
+
+## 2026-09-05 ISO/IEC 22123 cloud, NIST Zero Trust and NIST microservices governance cards (Batch 86)
+
+- [ISO/IEC 22123:2023 Cloud Computing Reference Architecture Governance](ISO_IEC_22123_2023_CLOUD_GOVERNANCE.md)
+- [NIST SP 800-207 Zero Trust Architecture Governance](NIST_SP_800_207_ZERO_TRUST_GOVERNANCE.md)
+- [NIST SP 800-204D Microservices Security Governance](NIST_SP_800_204_CMS_GOVERNANCE.md)
