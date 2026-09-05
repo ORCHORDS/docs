@@ -56,7 +56,6 @@ A profile that references "contingency planning" without binding to a recognized
 
 ## Companion Documents
 
-- ISO 22301 Business Continuity Management
-- [NIST SP 800-84 Test, Training, and Exercise Program](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
+- [NIST SP 800-84 Test, Training, and Exercise Program](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
 - [Disaster Recovery and Failover Response Playbook](../playbooks/DISASTER_RECOVERY_FAILOVER_RESPONSE.md)
 - [NIST SP 800-61 Incident Handling Governance](../standards/NIST_SP_800_61_INCIDENT_HANDLING_GOVERNANCE.md)

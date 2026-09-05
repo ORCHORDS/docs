@@ -60,5 +60,4 @@ A profile that references "exercises" without binding to a recognized methodolog
 - [ISO/IEC 27035-3:2020 Incident Response Exercises Governance](../standards/ISO_IEC_27035_3_INCIDENT_RESPONSE_EXERCISES_GOVERNANCE.md)
 - [ISO 22398 Exercises](ISO_22398_EXERCISES.md)
 - [NIST SP 800-84 Test, Training, and Exercise Program](NIST_SP_800_84_TEST_TRAINING_EXERCISE.md)
-- ISO 22301 Business Continuity Management
-- [Tabletop Exercise Response Playbook](../playbooks/TABLETOP_EXERCISE_RESPONSE.md)
+- [Tabletop Exercise Response Playbook](../playbooks/TABLETOP_EXERCISE_RESPONSE.md)
