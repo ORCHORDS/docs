@@ -237,3 +237,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Prometheus and OpenMetrics Version Governance](PROMETHEUS_VERSION_GOVERNANCE.md)
 - [Grafana Version Governance](GRAFANA_VERSION_GOVERNANCE.md)
 - [Kong API Gateway Version Governance](KONG_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Service mesh and GitOps toolkit reference cards (Batch 92)
+
+- [HashiCorp Consul Service Mesh / Service Discovery Version Governance](CONSUL_VERSION_GOVERNANCE.md)
+- [Argo Workflows / Argo CD / Argo Events / Argo Rollouts Version Governance](ARGO_VERSION_GOVERNANCE.md)
+- [Flux CD GitOps Toolkit Version Governance](FLUX_VERSION_GOVERNANCE.md)
