@@ -114,3 +114,14 @@ This family contains shared glossaries, checklists, command references, configur
 - [OECD AI Principles Version Guide](OECD_AI_PRINCIPLES_2024_VERSION_GUIDE.md)
 - [EU AI Act — Regulation 2024/1689 Version Guide](EU_AI_ACT_2024_1689_VERSION_GUIDE.md)
 - [ISO/IEC 42005 AI Impact Assessment Version Guide](ISO_IEC_42005_AI_IMPACT_ASSESSMENT_VERSION_GUIDE.md)
+
+## 2026-09-05 AI governance and risk reference cards (Batch 60)
+
+- [ISO/IEC 42006:2023 Auditor Competence Version Guide](ISO_IEC_42006_2023_AUDITOR_COMPETENCE_VERSION_GUIDE.md)
+- [ISO/IEC 42007 AI Controls Framework Version Guide](ISO_IEC_42007_AI_CONTROLS_FRAMEWORK_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 High-Risk Annex III Version Guide](EU_AI_ACT_2024_1689_HIGHRISK_ANNEX_III_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 Article 5 Prohibited Version Guide](EU_AI_ACT_2024_1689_ARTICLE_5_PROHIBITED_VERSION_GUIDE.md)
+- [EU AI Act 2024/1689 GPAI Obligations Version Guide](EU_AI_ACT_2024_1689_GPAI_OBLIGATIONS_VERSION_GUIDE.md)
+- [NIST AI RMF Playbook Version Guide](NIST_AI_RMF_PLAYBOOK_VERSION_GUIDE.md)
+- [NIST AI RMF Govern Function Version Guide](NIST_AI_RMF_GOVERN_FUNCTION_VERSION_GUIDE.md)
+- [NIST AI RMF Map/Measure/Manage Functions Version Guide](NIST_AI_RMF_MAP_MEASURE_MANAGE_FUNCTIONS_VERSION_GUIDE.md)
