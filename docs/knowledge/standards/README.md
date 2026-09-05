@@ -177,3 +177,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27701:2019 Privacy Information Management System (PIMS) Governance](ISO_IEC_27701_2019_PIMS_GOVERNANCE.md)
 - [NIST SP 800-218 Rev. 1 (SSDF v1.1) Secure Software Development Framework Governance](NIST_SP_800_218_SSDF_GOVERNANCE.md)
 - [ISO/IEC 29147:2018 / ISO/IEC 30111:2019 Vulnerability Disclosure and Handling Governance](ISO_IEC_30111_2019_VDP_GOVERNANCE.md)
+
+## 2026-09-05 ISO 27018, COBIT 2019 and ISO 42001 governance cards (Batch 81)
+
+- [ISO/IEC 27018:2019 PII Protection in Public Cloud Services Governance](ISO_IEC_27018_2019_PII_GOVERNANCE.md)
+- [COBIT 2019 Governance and Management Objectives Governance](COBIT_2019_GOVERNANCE_GOVERNANCE.md)
+- [ISO/IEC 42001:2023 AI Management System (AIMS) Governance](ISO_IEC_42001_2023_AIMS_GOVERNANCE.md)

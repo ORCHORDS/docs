@@ -217,3 +217,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Kafka Cluster Version Bump Playbook](KAFKA_VERSION_BUMP_PLAYBOOK.md)
 - [AMQP Broker Failover and Client Reconnect Playbook](AMQP_BROKER_FAILOVER_PLAYBOOK.md)
 - [Privacy Incident Response Playbook](PRIVACY_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-05 gRPC, MQTT and secret-rotation playbooks (Batch 81)
+
+- [gRPC Service Launch Playbook](GRPC_SERVICE_LAUNCH_PLAYBOOK.md)
+- [MQTT v5 Fleet Provisioning and Decommissioning Playbook](MQTT_FLEET_PROVISIONING_PLAYBOOK.md)
+- [Secret Rotation Playbook](SECRET_ROTATION_PLAYBOOK.md)
