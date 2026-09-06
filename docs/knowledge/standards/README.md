@@ -248,3 +248,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-57 Key Management Governance](NIST_SP_800_57_KEY_MANAGEMENT_GOVERNANCE.md)
 - [ISO/IEC 22301:2019 Business Continuity Management System Governance](ISO_IEC_22301_BUSINESS_CONTINUITY_GOVERNANCE.md)
 - [NIST SP 800-63C Federation and Assertions Governance](NIST_SP_800_63C_FEDERATION_GOVERNANCE.md)
+
+## 2026-09-05 NIST SP 800-82 OT/ICS, ISO/IEC TS 25054 AI quality, and NIST SP 800-204D microservices governance cards (Batch 95)
+
+- [NIST SP 800-82 Rev. 3 ICS/OT Cybersecurity Governance](NIST_SP_800_82_R3_ICS_OT_GOVERNANCE.md)
+- [ISO/IEC TS 25054:2023 AI Quality Requirements Governance](ISO_IEC_TS_25054_2023_AI_QUALITY_REQUIREMENTS_GOVERNANCE.md)
+- [NIST SP 800-204D Microservices Security Strategies Governance](NIST_SP_800_204D_MICROSERVICES_GOVERNANCE.md)
