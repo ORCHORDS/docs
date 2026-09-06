@@ -243,3 +243,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [HashiCorp Consul Service Mesh / Service Discovery Version Governance](CONSUL_VERSION_GOVERNANCE.md)
 - [Argo Workflows / Argo CD / Argo Events / Argo Rollouts Version Governance](ARGO_VERSION_GOVERNANCE.md)
 - [Flux CD GitOps Toolkit Version Governance](FLUX_VERSION_GOVERNANCE.md)
+
+## 2026-09-05 Runtime detection, IDP, and observability reference cards (Batch 95)
+
+- [Falco Runtime Security Version Governance](FALCO_VERSION_GOVERNANCE.md)
+- [Backstage Internal Developer Portal Version Governance](BACKSTAGE_VERSION_GOVERNANCE.md)
+- [OpenTelemetry Collector Version Governance](OPENTELEMETRY_VERSION_GOVERNANCE.md)

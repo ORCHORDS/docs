@@ -289,3 +289,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Consul ACL Token Rotation Playbook](CONSUL_TOKEN_ROTATION_PLAYBOOK.md)
 - [Argo Rollouts Progressive Delivery Playbook](ARGO_ROLLOUTS_PROGRESSIVE_DELIVERY_PLAYBOOK.md)
 - [Flux Helm Release Upgrade Playbook](FLUX_HELM_RELEASE_UPGRADE_PLAYBOOK.md)
+
+## 2026-09-05 Falco rollout, Backstage catalog onboarding, and OpenTelemetry Collector deployment playbooks (Batch 95)
+
+- [Falco Runtime Detection Rollout Playbook](FALCO_RUNTIME_DETECTION_ROLLOUT_PLAYBOOK.md)
+- [Backstage Catalog Onboarding Playbook](BACKSTAGE_CATALOG_ONBOARDING_PLAYBOOK.md)
+- [OpenTelemetry Collector Deployment Playbook](OPENTELEMETRY_COLLECTOR_DEPLOYMENT_PLAYBOOK.md)
