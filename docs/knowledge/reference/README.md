@@ -261,3 +261,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Cilium Tetragon Runtime Enforcement Version Governance](TETRAGON_VERSION_GOVERNANCE.md)
 - [Sigstore Cosign Image and Signature Version Governance](COSIGN_VERSION_GOVERNANCE.md)
 - [CNCF Notary v2 Artifact Attestation Version Governance](NOTARY_V2_VERSION_GOVERNANCE.md)
+
+## 2026-09-07 Sigstore transparency log, certificate authority, and commit-signing reference cards (Batch 97)
+
+- [Sigstore Rekor Transparency Log Version Governance](REKOR_VERSION_GOVERNANCE.md)
+- [Sigstore Fulcio Certificate Authority Version Governance](FULCIO_VERSION_GOVERNANCE.md)
+- [Sigstore gitsign Commit Signing Version Governance](GITSIGN_VERSION_GOVERNANCE.md)

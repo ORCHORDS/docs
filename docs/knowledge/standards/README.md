@@ -266,3 +266,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [OWASP Top 10 CI/CD Security Risks (2024) Governance](OWASP_CICD_TOP_10_2024_GOVERNANCE.md)
 - [NIST SP 800-53 Rev 5 SCRM Control Overlay Governance](NIST_SP_800_53_R5_SCRM_OVERLAY_GOVERNANCE.md)
 - [ISO/IEC 18974:2024 Open Source License Compliance Governance](ISO_IEC_18974_2024_OSPO_LICENSE_COMPLIANCE_GOVERNANCE.md)
+
+## 2026-09-07 NIST SP 800-218 SSDF v1.1, EU Cyber Resilience Act (2024/2847), and ISO/IEC 27036-2:2022 supplier relationships governance cards (Batch 97)
+
+- [NIST SP 800-218 Rev. 1.1 Secure Software Development Framework (SSDF) Governance](NIST_SP_800_218_SSDF_V1_1_GOVERNANCE.md)
+- [EU Cyber Resilience Act (Regulation 2024/2847) Governance](EU_CYBER_RESILIENCE_ACT_2024_GOVERNANCE.md)
+- [ISO/IEC 27036-2:2022 Supplier Relationships Cybersecurity Governance](ISO_IEC_27036_2_2022_SUPPLIER_RELATIONSHIPS_GOVERNANCE.md)

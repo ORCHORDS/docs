@@ -307,3 +307,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Tetragon Runtime Enforcement Rollout Playbook](TETRAGON_RUNTIME_ENFORCEMENT_PLAYBOOK.md)
 - [Cosign Image Signing and Verification Rollout Playbook](COSIGN_IMAGE_SIGNING_PLAYBOOK.md)
 - [Notary v2 Artifact Attestation Rollout Playbook](NOTARY_V2_ARTIFACT_ATTESTATION_PLAYBOOK.md)
+
+## 2026-09-07 Rekor inclusion, Fulcio keyless compromise, and SSDF attestation review playbooks (Batch 97)
+
+- [Rekor Transparency Log Inclusion Rollout Playbook](REKOR_TRANSPARENCY_LOG_INCLUSION_PLAYBOOK.md)
+- [Fulcio Keyless Signing Compromise Response Playbook](FULCIO_KEYLESS_SIGNING_COMPROMISE_PLAYBOOK.md)
+- [SSDF Attestation Review Playbook](SSDF_ATTESTATION_REVIEW_PLAYBOOK.md)

@@ -1,117 +1,69 @@
----
-title: ISO/IEC 42001:2023 AI Management System (AIMS) Governance
-owner: Knowledge Engineering
-status: approved
-classification: public
-last-reviewed: 2026-09-05
-review-cycle: 180 days
-next-review: 2027-03-04
-source: ISO/IEC 42001:2023 (first edition, 2023-12-18) — "Information technology — Artificial intelligence — Management system"; https://www.iso.org/standard/81230.html
----
-
 # ISO/IEC 42001:2023 AI Management System (AIMS) Governance
 
-## Scope
+## Purpose
 
-This card governs how `orchords-docs` evaluates AI components referenced from KB cards against ISO/IEC 42001:2023 — the first globally recognized AI management system standard. It binds KB expansion that touches model providers, embedding pipelines, or AI-assisted tooling.
+ISO/IEC 42001:2023 (first edition, 2023-12-18) specifies the requirements for establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS). It is the first globally recognised AI management-system standard and aligns with ISO/IEC 27001 (ISMS) and ISO/IEC 9001 (QMS). Governance ensures that ORCHORDS sites that develop, integrate, or operate AI systems apply a documented AIMS that produces a statement of applicability, demonstrates responsible AI practices, and aligns with EU AI Act (Regulation 2024/1689) harmonised-standard expectations.
 
-## Why this card exists
+## Current context and source status
 
-ISO/IEC 42001 (AIMS) prescribes a Plan-Do-Check-Act cycle for AI governance: policy, impact assessment, lifecycle management, third-party assurance, data quality, transparency, and continual improvement. A KB that cites AI systems without binding to 42001 risk-treatments produces a reference architecture that does not survive an AI-specific audit.
+ISO/IEC 42001:2023 was published on 2023-12-18 and is the candidate harmonised standard for the EU AI Act conformity-assessment regime. The standard uses the ISO high-level structure (HLS) shared with ISO/IEC 27001:2022. Treat the standard text as the canonical reference; this card is a governance overlay.
 
-## Document structure (Clauses 4 — 10)
+## Document structure (Clauses 4–10)
 
 | Clause | Title | Project interpretation |
 |---|---|---|
 | 4 | Context of the organization | KB is published as a public artifact; "interested parties" = readers, auditors, contributors |
-| 5 | Leadership | `ORCHORDS.COM` token owner is top management |
-| 6 | Planning | AI impact assessment is mandatory before adopting a new AI system in a reference card |
+| 5 | Leadership | `ORCHORDS` token owner is top management; AIMS leadership accountability documented in role description |
+| 6 | Planning | AIMS objectives, AI risk assessment, AI impact assessment documented per release |
 | 7 | Support | resources, competence, awareness, communication, documented information |
 | 8 | Operation | operational planning and control, AI impact assessment, AI system lifecycle, data for AI, third-party assurance |
 | 9 | Performance evaluation | monitoring, measurement, analysis, internal audit, management review |
 | 10 | Improvement | nonconformity, corrective action, continual improvement |
 
-References: `https://www.iso.org/standard/81230.html`.
+## Governance workflow and controls
 
-## Annex A — Control objectives and controls (subset)
+### 1. AIMS scope and leadership
 
-ISO/IEC 42001 Annex A lists AI-specific controls. The KB expansion pipeline binds a subset:
+- Define the AIMS scope (which AI systems, which business units, which jurisdictions); publish the scope statement.
+- Assign top-management accountability for the AIMS; record accountability in a named role.
+- Integrate AIMS objectives with the ISMS (ISO/IEC 27001) and QMS (ISO/IEC 9001) where overlap exists.
 
-| Control | Title | Project obligation |
-|---|---|---|
-| A.5.1 | AI policy | reference architecture cards that cite AI must reference the AIMS policy |
-| A.5.2 | AI roles and responsibilities | RACI for AI lifecycle stages |
-| A.6.1.2 | AI system life cycle | documented in `AI_LIFECYCLE_GOVERNANCE.md` (if present) |
-| A.6.2.1 | AI impact assessment | mandatory before adopting a new model in a reference card |
-| A.6.2.2 | AI risk treatment | risks mapped to controls A.6.3.x through A.7.x |
-| A.6.2.3 | AI system acceptance | PR review + staging evaluation |
-| A.6.2.4 | AI system operation and monitoring | observability on every AI reference architecture |
-| A.6.2.5 | AI system retirement | decommission plan before adoption |
-| A.6.3.1 | Data quality for AI | data lineage, bias testing |
-| A.6.3.2 | Data acquisition | lawful basis, provenance, consent |
-| A.6.3.3 | Data preparation | pipeline audit logs |
-| A.6.4.1 | AI explainability | transparency card per model family |
-| A.6.4.2 | AI transparency | disclosure in reference architecture cards |
-| A.7.1 | AI third-party assurance | supplier due diligence |
-| A.7.2 | AI supplier relationship | DPA + AIMS attestation |
-| A.8.1 | AI system responsibility | named accountable owner |
-| A.8.2 | AI documentation | KB card frontmatter must include model name, version, vendor |
-| A.8.3 | AI knowledge and skill | reader-facing prerequisites |
-| A.8.4 | AI toolchain security | supply-chain hardening per SSDF |
-| A.9.1 | Bias, fairness, and ethics | bias testing before adoption |
-| A.9.2 | AI reliability | reproducibility check |
-| A.9.3 | AI safety | safety risk assessment |
-| A.9.4 | AI security | security threat model |
+### 2. AI policy (Clause 5.2 + Annex A.5.1)
 
-References: ISO/IEC 42001:2023 Annex A control titles.
+- Publish an AI policy that states the organisation's commitment to responsible AI, transparency, fairness, accountability, and human oversight.
+- Communicate the policy to all staff and to relevant external stakeholders; review the policy at least annually.
+- Align the policy with documented ethical principles (OECD AI Principles, UNESCO Recommendation on the Ethics of AI, EU AI Act Article 4a principles).
 
-## AI impact assessment (mandatory)
+### 3. AI risk assessment and impact assessment (Clause 6 + Annex A.6.2.1, A.6.2.2)
 
-Before adopting a new AI system in a reference card, the project must produce an AI Impact Assessment (AIIA) that covers:
+- Conduct an AI risk assessment for every in-scope AI system at design, deployment, and material-change milestones.
+- Conduct an AI impact assessment before adopting a new AI system in a reference card; record the assessment outcome in the release ticket.
+- Use a documented risk methodology that addresses: bias, explainability, robustness, privacy, safety, security, environmental impact, and societal impact.
+- Document the risk treatment plan and the residual risk; align with the ISO/IEC 27005 risk methodology to avoid duplicated risk registers.
 
-1. Intended purpose and affected stakeholders.
-2. Data classes used (PII, sensitive, public).
-3. Model class (LLM, embedding, classification, regression, generative).
-4. Output constraints (deterministic, bounded stochasticity).
-5. Failure modes (hallucination, bias, data leakage, jailbreak).
-6. Risk treatment plan (controls A.6.3.x → A.9.x applied).
-7. Acceptance criteria (factual accuracy, refusal rate, latency).
+### 4. AI system lifecycle and acceptance (Annex A.6.1.2, A.6.2.3, A.6.2.4, A.6.2.5)
 
-The AIIA is filed with the change ticket and referenced from the KB card.
+- Document data quality for AI (Annex A.6.3.1): data lineage, consent basis, bias testing, data-quality criteria.
+- Document AI system acceptance: PR review plus staging evaluation before production rollout.
+- Document AI system operation and monitoring: observability on every AI reference architecture.
+- Document AI system retirement: decommission plan before adoption.
 
-## Transparency obligations
+### 5. Transparency, human oversight, and data quality (Annex A.6.2.2, A.6.4)
 
-Every reference card that cites an AI system must include:
+- Document user-facing AI disclosure; ensure the disclosure is meaningful and not buried in terms of service.
+- Implement human-oversight controls appropriate to the AI system risk class (low, limited, high, prohibited).
+- For high-risk AI systems under the EU AI Act, implement Article 14 human-oversight controls: explainability, reversibility, intervention.
 
-- The model name, version, and vendor.
-- The license terms for the model and the output.
-- Any data classes the model is fed in the reference architecture.
-- The data classes the model can produce in its output.
-- Any non-deterministic behavior and its bounds.
-- Any rate limits or quotas imposed by the provider.
+### 6. Third-party assurance (Annex A.6.6)
 
-## Mandatory pre-flight (before adopting a new AI system in a reference card)
+- Assess third-party AI components and model providers against documented AIMS criteria before integration.
+- Document the assessment outcome in a third-party AI register; re-assess on every material change.
 
-1. AI Impact Assessment is filed.
-2. Risk-treatment plan is filed.
-3. The provider has a current 42001 attestation or equivalent (e.g., NIST AI RMF profile, EU AI Act Article 9 conformity assessment).
-4. The model version is pinned in the reference card.
-5. Bias testing is documented with a measurable outcome.
-6. Observability is wired into the reference architecture (latency, token usage, refusal rate, factual accuracy).
+### 7. Statement of applicability and audit
 
-## Self-attestation cycle
+- Produce and maintain an AIMS statement of applicability that maps each Annex A control to its applicability, implementation status, and justification.
+- Conduct internal AIMS audits at least annually; align audit cadence with the ISMS internal audit cadence.
+- Conduct management review at least annually; record the review outcome and the actions assigned.
+- Pursue certification when the business case supports it; align the certification scope with the published AIMS scope.
 
-Every 180 days, the project must:
-
-1. Walk every reference card that cites an AI system.
-2. Confirm the AI Impact Assessment is current.
-3. Confirm the model version is still the pinned version (not drifted).
-4. Confirm observability is still wired.
-5. Update the next-review date.
-
-## Sources
-
-- ISO/IEC 42001:2023: `https://www.iso.org/standard/81230.html`
-- ISO/IEC 42001:2023 Annex A (controls): see ISO/IEC 42001:2023 PDF
-- NIST AI Risk Management Framework (AI RMF 1.0): `https://www.nist.gov/itl/ai-risk-management-framework`
-- EU AI Act (Regulation (EU) 2024/1689): `https://eur-lex.europa.eu/eli/reg/2024/1689/oj`
+References: ISO/IEC 42001:2023; ISO/IEC 27001:2022; ISO/IEC 27005:2022; ISO/IEC 9001:2015; EU AI Act (Regulation 2024/1689); OECD AI Principles; UNESCO Recommendation on the Ethics of AI; `https://www.iso.org/standard/81230.html`.
