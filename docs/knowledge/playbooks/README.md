@@ -391,3 +391,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [SCIM 2.0 User Provisioning Playbook](SCIM_PROVISIONING_PLAYBOOK.md)
 - [Mobile Device Management (MDM) and UEM Rollout Playbook](MOBILE_DEVICE_MGMT_ROLLOUT_PLAYBOOK.md)
 - [SAML 2.0 Service Provider Integration Playbook](SAML_2_0_SP_INTEGRATION_PLAYBOOK.md)
+
+## 2026-09-08 YARA rule authoring, MISP threat intelligence sharing, and Zeek NSM deployment playbooks (Batch 111)
+
+- [YARA Rule Authoring and Triage Playbook](YARA_RULE_AUTHORING_PLAYBOOK.md)
+- [MISP Threat Intelligence Sharing Playbook](MISP_THREAT_INTEL_PLAYBOOK.md)
+- [Zeek Network Security Monitor Deployment Playbook](ZEEK_NSM_DEPLOYMENT_PLAYBOOK.md)

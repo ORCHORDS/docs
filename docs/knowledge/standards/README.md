@@ -350,3 +350,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-124 Rev. 2 (2023) Mobile Device Security Governance](NIST_SP_800_124_R2_MOBILE_GOVERNANCE.md)
 - [NIST SP 800-137 (2020) Information Security Continuous Monitoring Governance](NIST_SP_800_137_ISCM_GOVERNANCE.md)
 - [NIST SP 800-66 Rev. 3 (2024) HIPAA Security Rule Implementation Governance](NIST_SP_800_66_R3_HIPAA_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-83 malware handling, NIST SP 800-94 IDPS, and NIST SP 800-40 patch management governance cards (Batch 111)
+
+- [NIST SP 800-83 Rev. 1 (2013) Guide to Malware Incident Prevention and Handling Governance](NIST_SP_800_83_MALWARE_GOVERNANCE.md)
+- [NIST SP 800-94 (2007) Guide to Intrusion Detection and Prevention Systems Governance](NIST_SP_800_94_IDS_GOVERNANCE.md)
+- [NIST SP 800-40 Rev. 4 (2022) Guide to Enterprise Patch Management Governance](NIST_SP_800_40_PATCH_GOVERNANCE.md)
