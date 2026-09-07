@@ -315,3 +315,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Velero Backup and Disaster Recovery Version Governance](VELERO_VERSION_GOVERNANCE.md)
 - [External Secrets Operator Version Governance](EXTERNAL_SECRETS_OPERATOR_VERSION_GOVERNANCE.md)
 - [Mozilla SOPS Encrypted YAML Secrets Version Governance](SOPS_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Helm, Kustomize, and Crossplane reference cards (Batch 106)
+
+- [Helm Chart Packaging and Release Manager Version Governance](HELM_VERSION_GOVERNANCE.md)
+- [Kustomize Declarative Configuration Transformation Version Governance](KUSTOMIZE_VERSION_GOVERNANCE.md)
+- [Crossplane Cloud Control Plane Version Governance](CROSSPLANE_VERSION_GOVERNANCE.md)

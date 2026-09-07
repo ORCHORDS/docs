@@ -320,3 +320,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-128 — System Security Configuration Management Governance](NIST_SP_800_128_SYSTEM_SECURITY_CONFIGURATION_GOVERNANCE.md)
 - [NIST SP 800-184 — Cybersecurity Event Recovery Guide Governance](NIST_SP_800_184_CYBER_EVENT_RECOVERY_GOVERNANCE.md)
 - [ITIL 4 Foundation (2019) — IT Service Management Governance](ITIL_4_FOUNDATION_2019_GOVERNANCE.md)
+
+## 2026-09-08 ISO/IEC 27045:2024 big data security and privacy, ISO/IEC 27050-1:2019 e-Discovery, and NIST SP 800-167 application whitelisting governance cards (Batch 106)
+
+- [ISO/IEC 27045:2024 — Big Data Security and Privacy Governance](ISO_IEC_27045_2024_BIG_DATA_SECURITY_GOVERNANCE.md)
+- [ISO/IEC 27050-1:2019 — Electronic Discovery (e-Discovery) Governance](ISO_IEC_27050_1_2019_EDISCOVERY_GOVERNANCE.md)
+- [NIST SP 800-167 — Guide to Application Whitelisting Governance](NIST_SP_800_167_2015_APPLICATION_WHITELISTING_GOVERNANCE.md)

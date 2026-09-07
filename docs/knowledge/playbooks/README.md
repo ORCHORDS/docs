@@ -361,3 +361,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Velero Backup Adoption Playbook](VELERO_BACKUP_ADOPTION_PLAYBOOK.md)
 - [External Secrets Operator Rollout Playbook](EXTERNAL_SECRETS_OPERATOR_ROLLOUT_PLAYBOOK.md)
 - [Mozilla SOPS GitOps Secret Encryption Playbook](SOPS_GITOPS_SECRET_ENCRYPTION_PLAYBOOK.md)
+
+## 2026-09-08 Helm chart adoption, Kustomize overlay promotion, and Crossplane provider onboarding playbooks (Batch 106)
+
+- [Helm Chart Adoption Playbook](HELM_CHART_ADOPTION_PLAYBOOK.md)
+- [Kustomize Overlay Promotion Playbook](KUSTOMIZE_OVERLAY_PROMOTION_PLAYBOOK.md)
+- [Crossplane Provider Onboarding Playbook](CROSSPLANE_PROVIDER_ONBOARDING_PLAYBOOK.md)
