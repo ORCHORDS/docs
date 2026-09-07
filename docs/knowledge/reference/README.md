@@ -405,3 +405,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [TimescaleDB Time-Series Database Version Governance](TIMESCALEDB_VERSION_GOVERNANCE.md)
 - [InfluxDB Time-Series Platform Version Governance](INFLUXDB_VERSION_GOVERNANCE.md)
 - [QuestDB Time-Series Database Version Governance](QUESTDB_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Confluent Platform, Redpanda, and Apache Pulsar event-streaming reference cards (Batch 121)
+
+- [Confluent Platform Version Governance](CONFLUENT_PLATFORM_VERSION_GOVERNANCE.md)
+- [Redpanda Streaming Platform Version Governance](REDPANDA_VERSION_GOVERNANCE.md)
+- [Apache Pulsar Messaging Platform Version Governance](APACHE_PULSAR_VERSION_GOVERNANCE.md)

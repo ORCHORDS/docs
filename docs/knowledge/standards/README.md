@@ -410,3 +410,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Time-Series Database Architecture Governance](TIME_SERIES_DATABASE_ARCHITECTURE_GOVERNANCE.md)
 - [Time-Series Retention & Compression Governance](TIME_SERIES_RETENTION_COMPRESSION_GOVERNANCE.md)
 - [Time-Series Query Performance Governance](TIME_SERIES_QUERY_PERFORMANCE_GOVERNANCE.md)
+
+## 2026-09-08 Event-streaming platform architecture, event schema, and access control governance cards (Batch 121)
+
+- [Event-Streaming Platform Architecture Governance](EVENT_STREAMING_PLATFORM_ARCHITECTURE_GOVERNANCE.md)
+- [Event Schema Governance](EVENT_SCHEMA_GOVERNANCE.md)
+- [Event-Streaming Access Control Governance](EVENT_STREAMING_ACCESS_CONTROL_GOVERNANCE.md)

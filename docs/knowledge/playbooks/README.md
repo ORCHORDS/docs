@@ -451,3 +451,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Time-Series Database Adoption Playbook](TIME_SERIES_DATABASE_ADOPTION_PLAYBOOK.md)
 - [Time-Series Retention Policy Migration Playbook](TIME_SERIES_RETENTION_POLICY_MIGRATION_PLAYBOOK.md)
 - [Time-Series Database Incident Response Playbook](TIME_SERIES_DATABASE_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-08 Event-streaming platform adoption, schema evolution, and incident response playbooks (Batch 121)
+
+- [Event-Streaming Platform Adoption Playbook](EVENT_STREAMING_PLATFORM_ADOPTION_PLAYBOOK.md)
+- [Event Schema Evolution Playbook](EVENT_SCHEMA_EVOLUTION_PLAYBOOK.md)
+- [Event-Streaming Incident Response Playbook](EVENT_STREAMING_INCIDENT_RESPONSE_PLAYBOOK.md)
