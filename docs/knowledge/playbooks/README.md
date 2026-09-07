@@ -421,3 +421,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Vector Store Adoption Playbook](VECTOR_STORE_ADOPTION_PLAYBOOK.md)
 - [Vector Re-embedding Migration Playbook](VECTOR_RE_EMBEDDING_PLAYBOOK.md)
 - [Vector Incident Response Playbook](VECTOR_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-08 Feature store adoption, backfill migration, and incident response playbooks (Batch 116)
+
+- [Feature Store Adoption Playbook](FEATURE_STORE_ADOPTION_PLAYBOOK.md)
+- [Feature Backfill Migration Playbook](FEATURE_BACKFILL_PLAYBOOK.md)
+- [Feature Store Incident Response Playbook](FEATURE_STORE_INCIDENT_RESPONSE_PLAYBOOK.md)

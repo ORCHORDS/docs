@@ -375,3 +375,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Milvus Vector Database Version Governance](MILVUS_VERSION_GOVERNANCE.md)
 - [Qdrant Vector Search Version Governance](QDRANT_VERSION_GOVERNANCE.md)
 - [pgvector Version Governance](PGVECTOR_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Feast, Tecton, and Hopsworks Feature Store reference cards (Batch 116)
+
+- [Feast Open Source Feature Store Version Governance](FEAST_VERSION_GOVERNANCE.md)
+- [Tecton Feature Platform Version Governance](TECTON_VERSION_GOVERNANCE.md)
+- [Hopsworks Feature Store Version Governance](HOPSWORKS_FEATURE_STORE_VERSION_GOVERNANCE.md)

@@ -380,3 +380,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Vector Retrieval Governance](VECTOR_RETRIEVAL_GOVERNANCE.md)
 - [Vector Embedding Lineage Governance](VECTOR_EMBEDDING_LINEAGE_GOVERNANCE.md)
 - [Vector Security Governance](VECTOR_SECURITY_GOVERNANCE.md)
+
+## 2026-09-08 Feature store architecture, pipeline lineage, and access control governance cards (Batch 116)
+
+- [Feature Store Architecture Governance](FEATURE_STORE_ARCHITECTURE_GOVERNANCE.md)
+- [Feature Pipeline Lineage Governance](FEATURE_PIPELINE_LINEAGE_GOVERNANCE.md)
+- [Feature Store Access Control Governance](FEATURE_STORE_ACCESS_CONTROL_GOVERNANCE.md)
