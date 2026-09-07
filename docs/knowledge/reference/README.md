@@ -273,3 +273,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Linux eBPF for XDP and TC Kernel Hooks Version Governance](EBPF_XDP_TC_GOVERNANCE.md)
 - [Cloud Native Buildpacks (Paketo) Version Governance](PAKETO_BUILDPACKS_GOVERNANCE.md)
 - [KubeArmor Container-Aware eBPF Policy Engine Version Governance](KUBEARMOR_GOVERNANCE.md)
+
+## 2026-09-07 SPIFFE/SPIRE, Ceph, and Kafka tiered storage reference cards (Batch 99)
+
+- [SPIFFE and SPIRE Workload Identity Version Governance](SPIFFE_SPIRE_VERSION_GOVERNANCE.md)
+- [Ceph Distributed Storage Version Governance](CEPH_VERSION_GOVERNANCE.md)
+- [Apache Kafka Tiered Storage Version Governance](KAFKA_TIERED_STORAGE_GOVERNANCE.md)

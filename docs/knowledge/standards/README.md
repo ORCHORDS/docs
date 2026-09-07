@@ -278,3 +278,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-204C Implementation of DevSecOps for a System-of-Systems Governance](NIST_SP_800_204C_DEVSECOPS_GOVERNANCE.md)
 - [CIS Kubernetes Benchmark v1.9 Governance](CIS_KUBERNETES_BENCHMARK_V1_9_GOVERNANCE.md)
 - [ISO/IEC 27035-1:2023 Information Security Incident Management Governance](ISO_IEC_27035_1_2023_INCIDENT_GOVERNANCE.md)
+
+## 2026-09-07 NIST SP 800-215 DPA hardening, DORA Regulation (EU) 2022/2554, and ISO/IEC 27033-7:2023 wireless IP network security governance cards (Batch 99)
+
+- [NIST SP 800-215 Guide to DPA Hardening Governance](NIST_SP_800_215_DPA_HARDENING_GOVERNANCE.md)
+- [Digital Operational Resilience Act (DORA) Regulation (EU) 2022/2554 Governance](DORA_2022_2554_GOVERNANCE.md)
+- [ISO/IEC 27033-7:2023 Network Security — Wireless IP Network Security Governance](ISO_IEC_27033_7_2023_WIRELESS_IP_GOVERNANCE.md)

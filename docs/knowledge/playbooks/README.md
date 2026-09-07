@@ -319,3 +319,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [KubeArmor Hard Policy Rollout Playbook](KUBEARMOR_HARD_POLICY_PLAYBOOK.md)
 - [Paketo Buildpack Adoption Playbook](PAKETO_BUILDPACK_ADOPTION_PLAYBOOK.md)
 - [eBPF XDP DDoS Mitigation Playbook](EBPF_XDP_DDOS_MITIGATION_PLAYBOOK.md)
+
+## 2026-09-07 Ceph RGW multi-site DR, Kafka tiered storage migration, and SPIRE federation setup playbooks (Batch 99)
+
+- [Ceph RGW Multi-site Disaster Recovery Playbook](CEPH_RGW_MULTISITE_DR_PLAYBOOK.md)
+- [Kafka Tiered Storage Migration Playbook](KAFKA_TIERED_STORAGE_MIGRATION_PLAYBOOK.md)
+- [SPIRE Federation Setup Playbook](SPIRE_FEDERATION_SETUP_PLAYBOOK.md)
