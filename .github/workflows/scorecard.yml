@@ -1,10 +1,20 @@
 name: Scorecard supply-chain security
 
+# Scorecard evaluates repository/supply-chain posture rather than Markdown
+# content. Re-run immediately when workflow/dependency automation changes and
+# keep the weekly full sweep; ordinary docs commits stay on docs-quality only.
 on:
   branch_protection_rule:
   pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - '.github/dependabot.yml'
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - '.github/dependabot.yml'
   schedule:
     - cron: "45 1 * * 6"
   workflow_dispatch:
