@@ -386,3 +386,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Feature Store Architecture Governance](FEATURE_STORE_ARCHITECTURE_GOVERNANCE.md)
 - [Feature Pipeline Lineage Governance](FEATURE_PIPELINE_LINEAGE_GOVERNANCE.md)
 - [Feature Store Access Control Governance](FEATURE_STORE_ACCESS_CONTROL_GOVERNANCE.md)
+
+## 2026-09-08 Workflow orchestrator architecture, lineage and reproducibility, and access control governance cards (Batch 117)
+
+- [Workflow Orchestrator Architecture Governance](WORKFLOW_ORCHESTRATOR_ARCHITECTURE_GOVERNANCE.md)
+- [Workflow Lineage & Reproducibility Governance](WORKFLOW_LINEAGE_REPRODUCIBILITY_GOVERNANCE.md)
+- [Workflow Orchestrator Access Control Governance](WORKFLOW_ORCHESTRATOR_ACCESS_CONTROL_GOVERNANCE.md)

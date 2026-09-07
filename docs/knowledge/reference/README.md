@@ -381,3 +381,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Feast Open Source Feature Store Version Governance](FEAST_VERSION_GOVERNANCE.md)
 - [Tecton Feature Platform Version Governance](TECTON_VERSION_GOVERNANCE.md)
 - [Hopsworks Feature Store Version Governance](HOPSWORKS_FEATURE_STORE_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Dagster, Prefect, and Apache Airflow workflow orchestrator reference cards (Batch 117)
+
+- [Dagster Data Orchestrator Version Governance](DAGSTER_VERSION_GOVERNANCE.md)
+- [Prefect Workflow Orchestrator Version Governance](PREFECT_VERSION_GOVERNANCE.md)
+- [Apache Airflow Workflow Orchestrator Version Governance](AIRFLOW_VERSION_GOVERNANCE.md)

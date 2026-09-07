@@ -427,3 +427,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Feature Store Adoption Playbook](FEATURE_STORE_ADOPTION_PLAYBOOK.md)
 - [Feature Backfill Migration Playbook](FEATURE_BACKFILL_PLAYBOOK.md)
 - [Feature Store Incident Response Playbook](FEATURE_STORE_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-08 Workflow orchestrator adoption, migration, and incident response playbooks (Batch 117)
+
+- [Workflow Orchestrator Adoption Playbook](WORKFLOW_ORCHESTRATOR_ADOPTION_PLAYBOOK.md)
+- [Workflow Migration Playbook](WORKFLOW_MIGRATION_PLAYBOOK.md)
+- [Workflow Orchestrator Incident Response Playbook](WORKFLOW_ORCHESTRATOR_INCIDENT_RESPONSE_PLAYBOOK.md)
