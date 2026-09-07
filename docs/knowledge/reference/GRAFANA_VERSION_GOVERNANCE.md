@@ -1,115 +1,108 @@
 ---
-title: Grafana Version Governance
+title: Grafana Observability Platform Version Governance
 owner: Knowledge Engineering
 status: approved
 classification: public
-last-reviewed: 2026-09-05
+last-reviewed: 2026-09-08
 review-cycle: 180 days
-next-review: 2027-03-04
-source: Grafana documentation; Grafana Labs; Grafana OSS / Enterprise / Cloud
+next-review: 2027-03-07
+source: https://github.com/grafana/grafana
 ---
 
-# Grafana Version Governance
+# Grafana Observability Platform Version Governance
+
+## Purpose
+Define how teams select, upgrade, and operate Grafana deployments so
+dashboards, alerting, and data source integrations remain supported,
+secure, and aligned with downstream observability backends.
 
 ## Scope
+Applies to Grafana OSS, Grafana Enterprise, and managed Grafana
+offerings used for visualization, alerting, and incident response
+across development, staging, and production environments.
 
-This card governs how `orchords-docs` evaluates Grafana across versions, data sources, and dashboard provisioning.
+## Version Line Policy
+- Track the latest stable major release for at least 90 days before
+  declaring it production-ready.
+- Hold one previous major release available for rollback for at least
+  30 days after promotion.
+- Skip releases that ship breaking data source, plugin, or
+  provisioning API changes without an internal exception record.
+- Align Grafana version with the version of the Grafana Agent or
+  OpenTelemetry Collector shipping telemetry into the platform.
 
-## Why this card exists
+## Component Lifecycle
+- Core data sources progress through `beta` to `GA` per the upstream
+  maturity model.
+- Plugins from the Grafana plugin marketplace follow the published
+  compatibility matrix; unsupported plugins are not approved for
+  production dashboards.
+- Alerting and unified alerting features are governed by the Grafana
+  alerting maturity track; legacy alerting is deprecated per upstream
+  notice.
+- Provisioning APIs and dashboard JSON schemas evolve per major
+  release and require coordinated migration.
 
-Grafana is the canonical observability dashboard. Without an explicit card, the KB cites Grafana practices that ignore the data-source model (Prometheus, Loki, Tempo, Pyroscope, Elasticsearch), provisioning via files, and OSS / Enterprise / Cloud tiers.
+## Compatibility Considerations
+- Data source backends (Prometheus, Loki, Tempo, Mimir,
+  Elasticsearch, CloudWatch, and others) must be on versions supported
+  by the chosen Grafana line.
+- Authentication providers must support the configured OAuth, OIDC,
+  SAML, or LDAP flows.
+- Dashboard and alert provisioning must remain compatible with the
+  configuration management tooling in use across environments.
+- TLS, mTLS, and header-based integrations must interoperate with the
+  platform identity provider and ingress layer.
 
-## Versions
+## Upgrade Procedure
+1. Read upstream release notes and identify breaking changes affecting
+   data sources, alerting, provisioning, or authentication.
+2. Validate the new release in a staging environment with a snapshot
+   of production dashboards, alert rules, and provisioning
+   configuration.
+3. Run a canary upgrade for a single Grafana instance behind the load
+   balancer and verify dashboards render, alerts evaluate, and data
+   source queries succeed.
+4. Promote the upgrade across remaining instances with pre-staged
+   rollback artifacts and on-call coverage.
+5. Record the upgrade window, observed deltas, and any compensating
+   configuration changes in the change log.
 
-| Version | Status |
-|---|---|
-| 8.x | legacy LTS |
-| 9.x | legacy |
-| 10.x | current |
-| 11.x | current (latest) |
+## Rollback Procedure
+- Re-deploy the previous Grafana image and configuration from the
+  versioned artifact store.
+- Restore the prior provisioning bundle so dashboards, data sources,
+  and alert rules match the pre-upgrade state.
+- Re-validate authentication, alert evaluation, and data source
+  connectivity against the synthetic probes.
+- Open a regression ticket capturing the cause of the rollback and
+  link it to the originating upgrade record.
 
-References: `https://github.com/grafana/grafana/releases`.
+## Security Considerations
+- Pin Grafana images by digest and verify signatures using the
+  container trust store.
+- Restrict admin API access to break-glass operators and require
+  approval before privilege escalation.
+- Use external auth providers and disable local admin accounts outside
+  break-glass scenarios.
+- Scrub sensitive data from dashboard variables, annotations, and
+  alert message templates before publishing.
 
-## Editions
+## Operational Impact Points
+- Upgrades restart the Grafana process and may drop in-flight
+  alerting evaluations; alertmanager handles retry.
+- Dashboard-heavy instances benefit from provisioned data sources and
+  alert rules to reduce boot time.
+- Shared SQLite or metadata databases require migration planning per
+  major release.
+- High availability deployments must keep provisioning in version
+  control to avoid drift between instances.
 
-| Edition | Use |
-|---|---|
-| OSS | free |
-| Enterprise | self-hosted paid |
-| Cloud | managed by Grafana Labs |
+## Cross-References
+- See [Prometheus version governance](PROMETHEUS_VERSION_GOVERNANCE.md).
+- See [OpenTelemetry Collector Contrib governance](OTEL_COLLECTOR_CONTRIB_VERSION_GOVERNANCE.md).
+- See [Google SRE release engineering](GOOGLE_SRE_RELEASE_ENGINEERING.md).
 
-## Data sources
+---
 
-| Source | Use |
-|---|---|
-| Prometheus | metrics |
-| Loki | logs |
-| Tempo | traces |
-| Pyroscope | profiles |
-| Elasticsearch | metrics / logs |
-| InfluxDB | metrics |
-| MySQL / Postgres | SQL |
-| CloudWatch | AWS |
-| BigQuery | GCP |
-
-References: `https://grafana.com/docs/grafana/latest/datasources/`.
-
-## Provisioning
-
-| Type | Use |
-|---|---|
-| Dashboard | YAML / JSON files |
-| Data source | YAML |
-| Alerting | YAML |
-| Plugins | YAML |
-
-Provisioning via file: `provisioning/<type>/<name>.yaml`.
-
-References: `https://grafana.com/docs/grafana/latest/administration/provisioning/`.
-
-## Dashboards
-
-| Concept | Description |
-|---|---|
-| Panel | visualization |
-| Row | grouping |
-| Variable | templated input |
-| Query | data source query |
-| Transform | data manipulation |
-
-## Alerting
-
-Grafana 9+ uses Unified Alerting:
-
-- `Alert rules` — query + condition.
-- `Contact points` — email, Slack, PagerDuty, webhook.
-- `Notification policies` — grouping / routing.
-- `Silences` — temporary mute.
-
-References: `https://grafana.com/docs/grafana/latest/alerting/`.
-
-## Authentication
-
-| Provider | Use |
-|---|---|
-| Local | user/pass |
-| LDAP | directory |
-| OAuth2 | generic |
-| SAML | federation |
-| Google / GitHub / Azure AD | social / enterprise |
-
-References: `https://grafana.com/docs/grafana/latest/auth/`.
-
-## Cross-reference
-
-| Domain | Card |
-|---|---|
-| Prometheus | `PROMETHEUS_VERSION_GOVERNANCE.md` |
-| Loki | `LOKI_VERSION_GOVERNANCE.md` (deferred) |
-| Tempo | (deferred) |
-
-## Sources
-
-- Grafana documentation: `https://grafana.com/docs/grafana/latest/`
-- Grafana GitHub: `https://github.com/grafana/grafana`
-- Grafana provisioning: `https://grafana.com/docs/grafana/latest/administration/provisioning/`
+This card is reviewed every 180 days. The next scheduled review is 2027-03-07.

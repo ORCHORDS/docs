@@ -362,3 +362,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-45 Version 2 (2007) Email Security Governance](NIST_SP_800_45_EMAIL_GOVERNANCE.md)
 - [NIST SP 800-46 Rev. 2 (2016) Guide to Enterprise Telework, Remote Access, and BYOD Governance](NIST_SP_800_46_TELEWORK_GOVERNANCE.md)
 - [ISO/IEC 27040:2015 Storage Security Governance](ISO_IEC_27040_2015_STORAGE_GOVERNANCE.md)
+
+## 2026-09-08 Google SRE SLI/SLO practice, observability data handling, and alerting principles governance cards (Batch 113)
+
+- [Google SRE SLI/SLO Practice Governance](GOOGLE_SRE_SLI_SLO_PRACTICE_GOVERNANCE.md)
+- [Observability Data Handling Governance](OBSERVABILITY_DATA_HANDLING_GOVERNANCE.md)
+- [Alerting Principles Governance](ALERTING_PRINCIPLES_GOVERNANCE.md)

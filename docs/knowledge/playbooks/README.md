@@ -403,3 +403,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [HashiCorp Vault Transit Encryption Playbook](VAULT_TRANSIT_ENCRYPTION_PLAYBOOK.md)
 - [HashiCorp Boundary Zero-Trust Access Playbook](BOUNDARY_ZERO_TRUST_ACCESS_PLAYBOOK.md)
 - [HashiCorp Consul Service Mesh (Connect) Adoption Playbook](CONSUL_SERVICE_MESH_PLAYBOOK.md)
+
+## 2026-09-08 Grafana dashboard, Prometheus alerting, and Jaeger tracing adoption playbooks (Batch 113)
+
+- [Grafana Dashboard Adoption Playbook](GRAFANA_DASHBOARD_ADOPTION_PLAYBOOK.md)
+- [Prometheus Alerting Adoption Playbook](PROMETHEUS_ALERTING_ADOPTION_PLAYBOOK.md)
+- [Jaeger Tracing Adoption Playbook](JAEGER_TRACING_ADOPTION_PLAYBOOK.md)

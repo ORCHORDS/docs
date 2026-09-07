@@ -357,3 +357,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [HashiCorp Vault Transit Secret Engine Version Governance](VAULT_TRANSIT_VERSION_GOVERNANCE.md)
 - [HashiCorp Boundary Secure Access Version Governance](BOUNDARY_VERSION_GOVERNANCE.md)
 - [HashiCorp Consul Service Mesh Version Governance](CONSUL_SERVICE_MESH_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Grafana, Prometheus, and OpenTelemetry Collector Contrib reference cards (Batch 113)
+
+- [Grafana Observability Platform Version Governance](GRAFANA_VERSION_GOVERNANCE.md)
+- [Prometheus Monitoring System Version Governance](PROMETHEUS_VERSION_GOVERNANCE.md)
+- [OpenTelemetry Collector Contrib Version Governance](OTEL_COLLECTOR_CONTRIB_VERSION_GOVERNANCE.md)
