@@ -332,3 +332,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-88 Rev. 1 — Guidelines for Media Sanitization Governance](NIST_SP_800_88_R1_MEDIA_SANITIZATION_GOVERNANCE.md)
 - [ISO/IEC 27046:2016 — Big Data Security and Privacy Implementation Guidelines Governance](ISO_IEC_27046_2016_BIG_DATA_SECURITY_IMPLEMENTATION_GOVERNANCE.md)
 - [NIST SP 800-181 Rev. 1 — NICE Workforce Framework for Cybersecurity Governance](NIST_SP_800_181_R1_NICE_FRAMEWORK_GOVERNANCE.md)
+
+## 2026-09-08 ISO/IEC 27011:2016 telecom ISMS, ISO/IEC 27019:2017 energy utility ISMS, and ISO/IEC 27026 IoT and 5G network security governance cards (Batch 108)
+
+- [ISO/IEC 27011:2016 — Information Security Controls for Telecommunications Governance](ISO_IEC_27011_2016_TELECOM_ISMS_GOVERNANCE.md)
+- [ISO/IEC 27019:2017 — Information Security Controls for the Energy Utility Industry Governance](ISO_IEC_27019_2017_ENERGY_ISMS_GOVERNANCE.md)
+- [ISO/IEC 27026 — IoT and 5G Network Security Guideline Governance](ISO_IEC_27026_IOT_5G_SECURITY_GOVERNANCE.md)

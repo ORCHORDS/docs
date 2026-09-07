@@ -327,3 +327,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Grafana Loki Log Aggregation System Version Governance](LOKI_VERSION_GOVERNANCE.md)
 - [Thanos Long-Term Prometheus Storage and HA Version Governance](THANOS_VERSION_GOVERNANCE.md)
 - [Pomerium Identity-Aware Reverse Proxy Version Governance](POMERIUM_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 NGINX Ingress Controller, Argo CD Image Updater, and external-dns reference cards (Batch 108)
+
+- [NGINX Ingress Controller for Kubernetes Version Governance](NGINX_INGRESS_CONTROLLER_VERSION_GOVERNANCE.md)
+- [Argo CD Image Updater Version Governance](ARGOCD_IMAGE_UPDATER_VERSION_GOVERNANCE.md)
+- [ExternalDNS Kubernetes DNS Sync Version Governance](EXTERNAL_DNS_VERSION_GOVERNANCE.md)

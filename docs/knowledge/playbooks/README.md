@@ -373,3 +373,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Loki Log Pipeline Rollout Playbook](LOKI_LOG_PIPELINE_ROLLOUT_PLAYBOOK.md)
 - [Thanos Prometheus HA Adoption Playbook](THANOS_PROMETHEUS_HA_ADOPTION_PLAYBOOK.md)
 - [Pomerium Identity-Aware Proxy Adoption Playbook](POMERIUM_IDENTITY_AWARE_PROXY_ADOPTION_PLAYBOOK.md)
+
+## 2026-09-08 NGINX Ingress Controller, Argo CD Image Updater, and external-dns adoption playbooks (Batch 108)
+
+- [NGINX Ingress Controller Adoption Playbook](NGINX_INGRESS_CONTROLLER_ADOPTION_PLAYBOOK.md)
+- [Argo CD Image Updater Rollout Playbook](ARGOCD_IMAGE_UPDATER_ROLLOUT_PLAYBOOK.md)
+- [external-dns Adoption Playbook](EXTERNAL_DNS_ADOPTION_PLAYBOOK.md)
