@@ -339,3 +339,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Keycloak Identity and Access Management Version Governance](KEYCLOAK_VERSION_GOVERNANCE.md)
 - [OAuth 2.1 Authorization Framework Version Governance](OAUTH_2_1_VERSION_GOVERNANCE.md)
 - [OIDC FAPI 2.0 Profile Version Governance](OIDC_FAPI_2_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 SCIM 2.0, SAML 2.0 token profile, and WS-Federation 1.2 reference cards (Batch 110)
+
+- [SCIM 2.0 Identity Provisioning Protocol Version Governance](SCIM_2_0_VERSION_GOVERNANCE.md)
+- [SAML 2.0 Token Profile and Metadata Version Governance](SAML_2_0_TOKEN_PROFILE_VERSION_GOVERNANCE.md)
+- [WS-Federation 1.2 and WS-Security 1.2 Version Governance](WS_FEDERATION_1_2_VERSION_GOVERNANCE.md)

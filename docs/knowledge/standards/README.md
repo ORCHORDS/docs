@@ -344,3 +344,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-188 (2019) Trustworthy Email Governance](NIST_SP_800_188_TRUSTWORTHY_EMAIL_GOVERNANCE.md)
 - [NIST SP 800-189 (2023) Immutable Data Storage Governance](NIST_SP_800_189_IMMUTABLE_STORAGE_GOVERNANCE.md)
 - [NIST SP 800-53 Revision 5.2 Control Catalog Governance](NIST_SP_800_53_R5_2_CONTROL_CATALOG_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-124 Rev. 2 mobile device security, NIST SP 800-137 ISCM, and NIST SP 800-66 Rev. 3 HIPAA governance cards (Batch 110)
+
+- [NIST SP 800-124 Rev. 2 (2023) Mobile Device Security Governance](NIST_SP_800_124_R2_MOBILE_GOVERNANCE.md)
+- [NIST SP 800-137 (2020) Information Security Continuous Monitoring Governance](NIST_SP_800_137_ISCM_GOVERNANCE.md)
+- [NIST SP 800-66 Rev. 3 (2024) HIPAA Security Rule Implementation Governance](NIST_SP_800_66_R3_HIPAA_GOVERNANCE.md)

@@ -385,3 +385,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Keycloak Identity Federation Onboarding Playbook](KEYCLOAK_FEDERATION_ONBOARDING_PLAYBOOK.md)
 - [OAuth 2.1 Client Registration Playbook](OAUTH_CLIENT_REGISTRATION_PLAYBOOK.md)
 - [OIDC FAPI 2.0 Integration Playbook](OIDC_FAPI_INTEGRATION_PLAYBOOK.md)
+
+## 2026-09-08 SCIM 2.0 user provisioning, mobile device management rollout, and SAML 2.0 SP integration playbooks (Batch 110)
+
+- [SCIM 2.0 User Provisioning Playbook](SCIM_PROVISIONING_PLAYBOOK.md)
+- [Mobile Device Management (MDM) and UEM Rollout Playbook](MOBILE_DEVICE_MGMT_ROLLOUT_PLAYBOOK.md)
+- [SAML 2.0 Service Provider Integration Playbook](SAML_2_0_SP_INTEGRATION_PLAYBOOK.md)
