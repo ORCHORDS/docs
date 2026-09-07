@@ -302,3 +302,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST IR 8286 Integrating Cybersecurity & Enterprise Risk Management Governance](NIST_IR_8286_ERM_CYBER_GOVERNANCE.md)
 - [ISO/IEC 27031:2023 ICT Readiness for Business Continuity Governance](ISO_IEC_27031_2023_ICT_READINESS_GOVERNANCE.md)
 - [CIS Critical Security Controls v8 Governance](CIS_CSC_V8_GOVERNANCE.md)
+
+## 2026-09-08 ISO/IEC 27035-3 incident response operations, NIST IR 8259A IoT device baseline, and ISO 22301:2019 BCMS governance cards (Batch 103)
+
+- [ISO/IEC 27035-3 Incident Response Operations Governance](ISO_IEC_27035_3_2023_INCIDENT_RESPONSE_GOVERNANCE.md)
+- [NIST IR 8259A IoT Device Cybersecurity Capability Core Baseline Governance](NIST_IR_8259A_IOT_CORE_BASELINE_GOVERNANCE.md)
+- [ISO 22301:2019 Business Continuity Management Systems Governance](ISO_22301_2019_BCMS_GOVERNANCE.md)

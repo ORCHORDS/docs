@@ -297,3 +297,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [The Update Framework (TUF) Version Governance](TUF_VERSION_GOVERNANCE.md)
 - [in-toto Attestation Framework Version Governance](IN_TOTO_VERSION_GOVERNANCE.md)
 - [OpenSSF Scorecard and SLSA Verification Tooling Version Governance](OPENSSF_SCORECARD_GOVERNANCE.md)
+
+## 2026-09-08 OPA Gatekeeper, Kubewarden, and Aqua Trivy reference cards (Batch 103)
+
+- [OPA Gatekeeper Admission Policy Engine Version Governance](GATEKEEPER_VERSION_GOVERNANCE.md)
+- [Kubewarden Wasm Policy Engine Version Governance](KUBEWARDEN_VERSION_GOVERNANCE.md)
+- [Aqua Trivy Multi-Scanner Version Governance](TRIVY_VERSION_GOVERNANCE.md)

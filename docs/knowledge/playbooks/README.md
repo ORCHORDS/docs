@@ -343,3 +343,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [TUF Repository Onboarding Playbook](TUF_REPOSITORY_ONBOARDING_PLAYBOOK.md)
 - [in-toto Attestation Pipeline Adoption Playbook](IN_TOTO_ATTESTATION_PIPELINE_PLAYBOOK.md)
 - [CIS Critical Security Controls v8 Mapping Adoption Playbook](CIS_CSC_V8_MAPPING_PLAYBOOK.md)
+
+## 2026-09-08 Gatekeeper constraint rollout, Kubewarden policy adoption, and Trivy scan pipeline playbooks (Batch 103)
+
+- [Gatekeeper ConstraintTemplate + Constraint Rollout Playbook](GATEKEEPER_CONSTRAINT_ROLLOUT_PLAYBOOK.md)
+- [Kubewarden Policy Server Adoption Playbook](KUBEWARDEN_POLICY_ADOPTION_PLAYBOOK.md)
+- [Trivy Scan Pipeline Adoption Playbook](TRIVY_SCAN_PIPELINE_PLAYBOOK.md)
