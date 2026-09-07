@@ -1,12 +1,25 @@
 name: CodeQL
 
+# Markdown-only changes are covered by docs-quality. Run CodeQL immediately
+# only when executable Python/CodeQL inputs change, plus the weekly sweep.
 on:
   push:
     branches: [main]
+    paths:
+      - '**/*.py'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/codeql.yml'
   pull_request:
     branches: [main]
+    paths:
+      - '**/*.py'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/codeql.yml'
   schedule:
     - cron: "30 1 * * 6"
+  workflow_dispatch:
 
 permissions:
   contents: read
