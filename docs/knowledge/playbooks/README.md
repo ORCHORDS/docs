@@ -337,3 +337,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Cluster API Bootstrap Playbook](CAPI_BOOTSTRAP_PLAYBOOK.md)
 - [ApplicationSet Multi-Tenant Rollout Playbook](APPLICATIONSET_MULTITENANT_PLAYBOOK.md)
 - [OpenTelemetry Collector Migration Playbook](OTEL_COLLECTOR_MIGRATION_PLAYBOOK.md)
+
+## 2026-09-07 TUF repository onboarding, in-toto attestation pipeline, and CIS CSC v8 mapping adoption playbooks (Batch 102)
+
+- [TUF Repository Onboarding Playbook](TUF_REPOSITORY_ONBOARDING_PLAYBOOK.md)
+- [in-toto Attestation Pipeline Adoption Playbook](IN_TOTO_ATTESTATION_PIPELINE_PLAYBOOK.md)
+- [CIS Critical Security Controls v8 Mapping Adoption Playbook](CIS_CSC_V8_MAPPING_PLAYBOOK.md)

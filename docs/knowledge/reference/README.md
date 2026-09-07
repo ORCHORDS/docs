@@ -291,3 +291,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Argo CD ApplicationSet Controller Version Governance](ARGOCD_APPLICATIONSET_GOVERNANCE.md)
 - [OpenTelemetry Collector Version Governance](OPENTELEMETRY_COLLECTOR_VERSION_GOVERNANCE.md)
 - [Kubernetes Cluster API (CAPI) Version Governance](CLUSTER_API_GOVERNANCE.md)
+
+## 2026-09-07 TUF, in-toto, and OpenSSF Scorecard reference cards (Batch 102)
+
+- [The Update Framework (TUF) Version Governance](TUF_VERSION_GOVERNANCE.md)
+- [in-toto Attestation Framework Version Governance](IN_TOTO_VERSION_GOVERNANCE.md)
+- [OpenSSF Scorecard and SLSA Verification Tooling Version Governance](OPENSSF_SCORECARD_GOVERNANCE.md)

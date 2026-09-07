@@ -296,3 +296,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-210 General Access Control Guidance for Cloud Systems Governance](NIST_SP_800_210_GENERAL_ACCESS_CONTROL_GOVERNANCE.md)
 - [ISO/IEC 27032:2023 Cybersecurity — Internet Security Guidelines Governance](ISO_IEC_27032_2023_CYBER_GUIDANCE_GOVERNANCE.md)
 - [ISO/IEC 27034-1:2024 Application Security Governance](ISO_IEC_27034_1_2024_APP_SECURITY_GOVERNANCE.md)
+
+## 2026-09-07 NIST IR 8286 cyber-ERM, ISO/IEC 27031:2023 ICT readiness, and CIS Critical Security Controls v8 governance cards (Batch 102)
+
+- [NIST IR 8286 Integrating Cybersecurity & Enterprise Risk Management Governance](NIST_IR_8286_ERM_CYBER_GOVERNANCE.md)
+- [ISO/IEC 27031:2023 ICT Readiness for Business Continuity Governance](ISO_IEC_27031_2023_ICT_READINESS_GOVERNANCE.md)
+- [CIS Critical Security Controls v8 Governance](CIS_CSC_V8_GOVERNANCE.md)
