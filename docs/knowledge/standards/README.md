@@ -404,3 +404,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Graph Database Architecture Governance](GRAPH_DATABASE_ARCHITECTURE_GOVERNANCE.md)
 - [Graph Query Safety & Performance Governance](GRAPH_QUERY_SAFETY_PERFORMANCE_GOVERNANCE.md)
 - [Graph Data Lineage Governance](GRAPH_DATA_LINEAGE_GOVERNANCE.md)
+
+## 2026-09-08 Time-series database architecture, retention and compression, and query performance governance cards (Batch 120)
+
+- [Time-Series Database Architecture Governance](TIME_SERIES_DATABASE_ARCHITECTURE_GOVERNANCE.md)
+- [Time-Series Retention & Compression Governance](TIME_SERIES_RETENTION_COMPRESSION_GOVERNANCE.md)
+- [Time-Series Query Performance Governance](TIME_SERIES_QUERY_PERFORMANCE_GOVERNANCE.md)

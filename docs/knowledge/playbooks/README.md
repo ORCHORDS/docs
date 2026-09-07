@@ -445,3 +445,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Graph Database Adoption Playbook](GRAPH_DATABASE_ADOPTION_PLAYBOOK.md)
 - [Graph Schema Migration Playbook](GRAPH_SCHEMA_MIGRATION_PLAYBOOK.md)
 - [Graph Database Incident Response Playbook](GRAPH_DATABASE_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-08 Time-series database adoption, retention policy migration, and incident response playbooks (Batch 120)
+
+- [Time-Series Database Adoption Playbook](TIME_SERIES_DATABASE_ADOPTION_PLAYBOOK.md)
+- [Time-Series Retention Policy Migration Playbook](TIME_SERIES_RETENTION_POLICY_MIGRATION_PLAYBOOK.md)
+- [Time-Series Database Incident Response Playbook](TIME_SERIES_DATABASE_INCIDENT_RESPONSE_PLAYBOOK.md)

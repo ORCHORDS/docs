@@ -399,3 +399,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Neo4j Graph Database Version Governance](NEO4J_VERSION_GOVERNANCE.md)
 - [Amazon Neptune Graph Database Version Governance](NEPTUNE_VERSION_GOVERNANCE.md)
 - [Memgraph In-Memory Graph Database Version Governance](MEMGRAPH_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 TimescaleDB, InfluxDB, and QuestDB time-series database reference cards (Batch 120)
+
+- [TimescaleDB Time-Series Database Version Governance](TIMESCALEDB_VERSION_GOVERNANCE.md)
+- [InfluxDB Time-Series Platform Version Governance](INFLUXDB_VERSION_GOVERNANCE.md)
+- [QuestDB Time-Series Database Version Governance](QUESTDB_VERSION_GOVERNANCE.md)
