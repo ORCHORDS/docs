@@ -244,6 +244,12 @@ This family contains shared glossaries, checklists, command references, configur
 - [Argo Workflows / Argo CD / Argo Events / Argo Rollouts Version Governance](ARGO_VERSION_GOVERNANCE.md)
 - [Flux CD GitOps Toolkit Version Governance](FLUX_VERSION_GOVERNANCE.md)
 
+## 2026-09-05 eBPF networking, policy engine, and service mesh reference cards (Batch 93)
+
+- [Cilium eBPF Networking, Security, and Observability Version Governance](CILIUM_VERSION_GOVERNANCE.md)
+- [Kyverno Policy Engine Version Governance](KYVERNO_VERSION_GOVERNANCE.md)
+- [Linkerd Service Mesh Version Governance](LINKERD_VERSION_GOVERNANCE.md)
+
 ## 2026-09-05 Runtime detection, IDP, and observability reference cards (Batch 95)
 
 - [Falco Runtime Security Version Governance](FALCO_VERSION_GOVERNANCE.md)

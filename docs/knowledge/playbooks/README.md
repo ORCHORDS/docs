@@ -290,6 +290,12 @@ This family contains repeatable procedures for development, deployment, incident
 - [Argo Rollouts Progressive Delivery Playbook](ARGO_ROLLOUTS_PROGRESSIVE_DELIVERY_PLAYBOOK.md)
 - [Flux Helm Release Upgrade Playbook](FLUX_HELM_RELEASE_UPGRADE_PLAYBOOK.md)
 
+## 2026-09-05 Cilium network policy, Kyverno policy, and Linkerd control plane upgrade playbooks (Batch 93)
+
+- [Cilium Network Policy Rollout Playbook](CILIUM_NETWORK_POLICY_ROLLOUT_PLAYBOOK.md)
+- [Kyverno Policy Rollout Playbook](KYVERNO_POLICY_ROLLOUT_PLAYBOOK.md)
+- [Linkerd Control Plane Upgrade Playbook](LINKERD_CONTROL_PLANE_UPGRADE_PLAYBOOK.md)
+
 ## 2026-09-05 Falco rollout, Backstage catalog onboarding, and OpenTelemetry Collector deployment playbooks (Batch 95)
 
 - [Falco Runtime Detection Rollout Playbook](FALCO_RUNTIME_DETECTION_ROLLOUT_PLAYBOOK.md)

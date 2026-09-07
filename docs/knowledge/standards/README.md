@@ -249,6 +249,12 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 22301:2019 Business Continuity Management System Governance](ISO_IEC_22301_BUSINESS_CONTINUITY_GOVERNANCE.md)
 - [NIST SP 800-63C Federation and Assertions Governance](NIST_SP_800_63C_FEDERATION_GOVERNANCE.md)
 
+## 2026-09-05 ISO/IEC 27017:2026 cloud security, ISO/IEC 27018:2025 PII in cloud, and NIST SP 800-92 log management governance cards (Batch 93)
+
+- [ISO/IEC 27017:2026 Cloud Security Controls Governance](ISO_IEC_27017_2026_CLOUD_SECURITY_GOVERNANCE.md)
+- [ISO/IEC 27018:2025 Public Cloud PII Governance](ISO_IEC_27018_2025_PII_CLOUD_GOVERNANCE.md)
+- [NIST SP 800-92 Cybersecurity Log Management Governance](NIST_SP_800_92_LOG_MANAGEMENT_GOVERNANCE.md)
+
 ## 2026-09-05 NIST SP 800-82 OT/ICS, ISO/IEC TS 25054 AI quality, and NIST SP 800-204D microservices governance cards (Batch 95)
 
 - [NIST SP 800-82 Rev. 3 ICS/OT Cybersecurity Governance](NIST_SP_800_82_R3_ICS_OT_GOVERNANCE.md)
