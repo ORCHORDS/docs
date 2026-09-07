@@ -409,3 +409,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Grafana Dashboard Adoption Playbook](GRAFANA_DASHBOARD_ADOPTION_PLAYBOOK.md)
 - [Prometheus Alerting Adoption Playbook](PROMETHEUS_ALERTING_ADOPTION_PLAYBOOK.md)
 - [Jaeger Tracing Adoption Playbook](JAEGER_TRACING_ADOPTION_PLAYBOOK.md)
+
+## 2026-09-08 LLM provider onboarding, model card authoring, and inference platform rollout playbooks (Batch 114)
+
+- [LLM Provider Onboarding Playbook](LLM_PROVIDER_ONBOARDING_PLAYBOOK.md)
+- [Model Card Authoring Playbook](MODEL_CARD_AUTHORING_PLAYBOOK.md)
+- [Inference Platform Rollout Playbook](INFERENCE_PLATFORM_ROLLOUT_PLAYBOOK.md)

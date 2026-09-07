@@ -368,3 +368,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Google SRE SLI/SLO Practice Governance](GOOGLE_SRE_SLI_SLO_PRACTICE_GOVERNANCE.md)
 - [Observability Data Handling Governance](OBSERVABILITY_DATA_HANDLING_GOVERNANCE.md)
 - [Alerting Principles Governance](ALERTING_PRINCIPLES_GOVERNANCE.md)
+
+## 2026-09-08 AI risk tiering, prompt engineering discipline, and AI content provenance governance cards (Batch 114)
+
+- [AI Risk Tiering Practice Governance](AI_RISK_TIERING_PRACTICE_GOVERNANCE.md)
+- [Prompt Engineering Discipline Governance](PROMPT_ENGINEERING_DISCIPLINE_GOVERNANCE.md)
+- [AI Content Provenance Governance](AI_CONTENT_PROVENANCE_GOVERNANCE.md)
