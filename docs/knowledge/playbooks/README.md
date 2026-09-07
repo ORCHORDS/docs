@@ -331,3 +331,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Temporal HA Rollout Playbook](TEMPORAL_HA_ROLLOUT_PLAYBOOK.md)
 - [Envoy AI Gateway LLM Proxy Adoption Playbook](ENVOY_AI_GATEWAY_ADOPTION_PLAYBOOK.md)
 - [Istio Wasm Plugin Rollout Playbook](ISTIO_WASM_ROLLOUT_PLAYBOOK.md)
+
+## 2026-09-07 Cluster API bootstrap, ApplicationSet multi-tenant, and OpenTelemetry Collector migration playbooks (Batch 101)
+
+- [Cluster API Bootstrap Playbook](CAPI_BOOTSTRAP_PLAYBOOK.md)
+- [ApplicationSet Multi-Tenant Rollout Playbook](APPLICATIONSET_MULTITENANT_PLAYBOOK.md)
+- [OpenTelemetry Collector Migration Playbook](OTEL_COLLECTOR_MIGRATION_PLAYBOOK.md)

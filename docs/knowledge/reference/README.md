@@ -285,3 +285,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Temporal Durable Execution Version Governance](TEMPORAL_VERSION_GOVERNANCE.md)
 - [Istio Wasm Plugin Framework Version Governance](ISTIO_WASM_VERSION_GOVERNANCE.md)
 - [Envoy AI Gateway LLM Proxy Version Governance](ENVOY_AI_GATEWAY_GOVERNANCE.md)
+
+## 2026-09-07 Argo CD ApplicationSet, OpenTelemetry Collector, and Cluster API reference cards (Batch 101)
+
+- [Argo CD ApplicationSet Controller Version Governance](ARGOCD_APPLICATIONSET_GOVERNANCE.md)
+- [OpenTelemetry Collector Version Governance](OPENTELEMETRY_COLLECTOR_VERSION_GOVERNANCE.md)
+- [Kubernetes Cluster API (CAPI) Version Governance](CLUSTER_API_GOVERNANCE.md)
