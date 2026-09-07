@@ -267,3 +267,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Sigstore Rekor Transparency Log Version Governance](REKOR_VERSION_GOVERNANCE.md)
 - [Sigstore Fulcio Certificate Authority Version Governance](FULCIO_VERSION_GOVERNANCE.md)
 - [Sigstore gitsign Commit Signing Version Governance](GITSIGN_VERSION_GOVERNANCE.md)
+
+## 2026-09-07 eBPF, buildpacks, and KubeArmor reference cards (Batch 98)
+
+- [Linux eBPF for XDP and TC Kernel Hooks Version Governance](EBPF_XDP_TC_GOVERNANCE.md)
+- [Cloud Native Buildpacks (Paketo) Version Governance](PAKETO_BUILDPACKS_GOVERNANCE.md)
+- [KubeArmor Container-Aware eBPF Policy Engine Version Governance](KUBEARMOR_GOVERNANCE.md)

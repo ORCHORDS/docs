@@ -313,3 +313,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Rekor Transparency Log Inclusion Rollout Playbook](REKOR_TRANSPARENCY_LOG_INCLUSION_PLAYBOOK.md)
 - [Fulcio Keyless Signing Compromise Response Playbook](FULCIO_KEYLESS_SIGNING_COMPROMISE_PLAYBOOK.md)
 - [SSDF Attestation Review Playbook](SSDF_ATTESTATION_REVIEW_PLAYBOOK.md)
+
+## 2026-09-07 KubeArmor hard policy, Paketo buildpack adoption, and eBPF XDP DDoS mitigation playbooks (Batch 98)
+
+- [KubeArmor Hard Policy Rollout Playbook](KUBEARMOR_HARD_POLICY_PLAYBOOK.md)
+- [Paketo Buildpack Adoption Playbook](PAKETO_BUILDPACK_ADOPTION_PLAYBOOK.md)
+- [eBPF XDP DDoS Mitigation Playbook](EBPF_XDP_DDOS_MITIGATION_PLAYBOOK.md)

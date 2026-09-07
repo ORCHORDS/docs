@@ -272,3 +272,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-218 Rev. 1.1 Secure Software Development Framework (SSDF) Governance](NIST_SP_800_218_SSDF_V1_1_GOVERNANCE.md)
 - [EU Cyber Resilience Act (Regulation 2024/2847) Governance](EU_CYBER_RESILIENCE_ACT_2024_GOVERNANCE.md)
 - [ISO/IEC 27036-2:2022 Supplier Relationships Cybersecurity Governance](ISO_IEC_27036_2_2022_SUPPLIER_RELATIONSHIPS_GOVERNANCE.md)
+
+## 2026-09-07 NIST SP 800-204C DevSecOps, CIS Kubernetes Benchmark v1.9, and ISO/IEC 27035-1:2023 incident management governance cards (Batch 98)
+
+- [NIST SP 800-204C Implementation of DevSecOps for a System-of-Systems Governance](NIST_SP_800_204C_DEVSECOPS_GOVERNANCE.md)
+- [CIS Kubernetes Benchmark v1.9 Governance](CIS_KUBERNETES_BENCHMARK_V1_9_GOVERNANCE.md)
+- [ISO/IEC 27035-1:2023 Information Security Incident Management Governance](ISO_IEC_27035_1_2023_INCIDENT_GOVERNANCE.md)
