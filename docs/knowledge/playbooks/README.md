@@ -301,3 +301,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Falco Runtime Detection Rollout Playbook](FALCO_RUNTIME_DETECTION_ROLLOUT_PLAYBOOK.md)
 - [Backstage Catalog Onboarding Playbook](BACKSTAGE_CATALOG_ONBOARDING_PLAYBOOK.md)
 - [OpenTelemetry Collector Deployment Playbook](OPENTELEMETRY_COLLECTOR_DEPLOYMENT_PLAYBOOK.md)
+
+## 2026-09-07 Tetragon rollout, cosign image signing, and Notary v2 artifact attestation playbooks (Batch 96)
+
+- [Tetragon Runtime Enforcement Rollout Playbook](TETRAGON_RUNTIME_ENFORCEMENT_PLAYBOOK.md)
+- [Cosign Image Signing and Verification Rollout Playbook](COSIGN_IMAGE_SIGNING_PLAYBOOK.md)
+- [Notary v2 Artifact Attestation Rollout Playbook](NOTARY_V2_ARTIFACT_ATTESTATION_PLAYBOOK.md)

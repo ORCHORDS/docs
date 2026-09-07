@@ -260,3 +260,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-82 Rev. 3 ICS/OT Cybersecurity Governance](NIST_SP_800_82_R3_ICS_OT_GOVERNANCE.md)
 - [ISO/IEC TS 25054:2023 AI Quality Requirements Governance](ISO_IEC_TS_25054_2023_AI_QUALITY_REQUIREMENTS_GOVERNANCE.md)
 - [NIST SP 800-204D Microservices Security Strategies Governance](NIST_SP_800_204D_MICROSERVICES_GOVERNANCE.md)
+
+## 2026-09-07 OWASP CI/CD Top 10 (2024), NIST SP 800-53 Rev 5 SCRM overlay, and ISO/IEC 18974:2024 OSPO license compliance governance cards (Batch 96)
+
+- [OWASP Top 10 CI/CD Security Risks (2024) Governance](OWASP_CICD_TOP_10_2024_GOVERNANCE.md)
+- [NIST SP 800-53 Rev 5 SCRM Control Overlay Governance](NIST_SP_800_53_R5_SCRM_OVERLAY_GOVERNANCE.md)
+- [ISO/IEC 18974:2024 Open Source License Compliance Governance](ISO_IEC_18974_2024_OSPO_LICENSE_COMPLIANCE_GOVERNANCE.md)

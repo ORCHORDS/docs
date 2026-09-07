@@ -255,3 +255,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Falco Runtime Security Version Governance](FALCO_VERSION_GOVERNANCE.md)
 - [Backstage Internal Developer Portal Version Governance](BACKSTAGE_VERSION_GOVERNANCE.md)
 - [OpenTelemetry Collector Version Governance](OPENTELEMETRY_VERSION_GOVERNANCE.md)
+
+## 2026-09-07 Runtime enforcement, image signing, and artifact attestation reference cards (Batch 96)
+
+- [Cilium Tetragon Runtime Enforcement Version Governance](TETRAGON_VERSION_GOVERNANCE.md)
+- [Sigstore Cosign Image and Signature Version Governance](COSIGN_VERSION_GOVERNANCE.md)
+- [CNCF Notary v2 Artifact Attestation Version Governance](NOTARY_V2_VERSION_GOVERNANCE.md)
