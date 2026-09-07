@@ -351,3 +351,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [MISP Threat Intelligence Platform Version Governance](MISP_VERSION_GOVERNANCE.md)
 - [YARA Pattern Matching Engine Version Governance](YARA_VERSION_GOVERNANCE.md)
 - [Zeek Network Security Monitor Version Governance](ZEEK_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 HashiCorp Vault Transit, Boundary, and Consul Service Mesh reference cards (Batch 112)
+
+- [HashiCorp Vault Transit Secret Engine Version Governance](VAULT_TRANSIT_VERSION_GOVERNANCE.md)
+- [HashiCorp Boundary Secure Access Version Governance](BOUNDARY_VERSION_GOVERNANCE.md)
+- [HashiCorp Consul Service Mesh Version Governance](CONSUL_SERVICE_MESH_VERSION_GOVERNANCE.md)

@@ -356,3 +356,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-83 Rev. 1 (2013) Guide to Malware Incident Prevention and Handling Governance](NIST_SP_800_83_MALWARE_GOVERNANCE.md)
 - [NIST SP 800-94 (2007) Guide to Intrusion Detection and Prevention Systems Governance](NIST_SP_800_94_IDS_GOVERNANCE.md)
 - [NIST SP 800-40 Rev. 4 (2022) Guide to Enterprise Patch Management Governance](NIST_SP_800_40_PATCH_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-45 email security, NIST SP 800-46 telework, and ISO/IEC 27040:2015 storage security governance cards (Batch 112)
+
+- [NIST SP 800-45 Version 2 (2007) Email Security Governance](NIST_SP_800_45_EMAIL_GOVERNANCE.md)
+- [NIST SP 800-46 Rev. 2 (2016) Guide to Enterprise Telework, Remote Access, and BYOD Governance](NIST_SP_800_46_TELEWORK_GOVERNANCE.md)
+- [ISO/IEC 27040:2015 Storage Security Governance](ISO_IEC_27040_2015_STORAGE_GOVERNANCE.md)

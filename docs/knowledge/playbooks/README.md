@@ -397,3 +397,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [YARA Rule Authoring and Triage Playbook](YARA_RULE_AUTHORING_PLAYBOOK.md)
 - [MISP Threat Intelligence Sharing Playbook](MISP_THREAT_INTEL_PLAYBOOK.md)
 - [Zeek Network Security Monitor Deployment Playbook](ZEEK_NSM_DEPLOYMENT_PLAYBOOK.md)
+
+## 2026-09-08 Vault Transit encryption, Boundary zero-trust access, and Consul service mesh adoption playbooks (Batch 112)
+
+- [HashiCorp Vault Transit Encryption Playbook](VAULT_TRANSIT_ENCRYPTION_PLAYBOOK.md)
+- [HashiCorp Boundary Zero-Trust Access Playbook](BOUNDARY_ZERO_TRUST_ACCESS_PLAYBOOK.md)
+- [HashiCorp Consul Service Mesh (Connect) Adoption Playbook](CONSUL_SERVICE_MESH_PLAYBOOK.md)
