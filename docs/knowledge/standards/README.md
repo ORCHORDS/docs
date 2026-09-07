@@ -398,3 +398,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [API Gateway Architecture Governance](API_GATEWAY_ARCHITECTURE_GOVERNANCE.md)
 - [API Gateway Authentication & Authorization Governance](API_GATEWAY_AUTHN_AUTHZ_GOVERNANCE.md)
 - [API Gateway Observability Governance](API_GATEWAY_OBSERVABILITY_GOVERNANCE.md)
+
+## 2026-09-08 Graph database architecture, query safety and performance, and data lineage governance cards (Batch 119)
+
+- [Graph Database Architecture Governance](GRAPH_DATABASE_ARCHITECTURE_GOVERNANCE.md)
+- [Graph Query Safety & Performance Governance](GRAPH_QUERY_SAFETY_PERFORMANCE_GOVERNANCE.md)
+- [Graph Data Lineage Governance](GRAPH_DATA_LINEAGE_GOVERNANCE.md)
