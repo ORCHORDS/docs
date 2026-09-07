@@ -379,3 +379,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [NGINX Ingress Controller Adoption Playbook](NGINX_INGRESS_CONTROLLER_ADOPTION_PLAYBOOK.md)
 - [Argo CD Image Updater Rollout Playbook](ARGOCD_IMAGE_UPDATER_ROLLOUT_PLAYBOOK.md)
 - [external-dns Adoption Playbook](EXTERNAL_DNS_ADOPTION_PLAYBOOK.md)
+
+## 2026-09-08 Keycloak federation, OAuth 2.1 client registration, and OIDC FAPI 2.0 integration playbooks (Batch 109)
+
+- [Keycloak Identity Federation Onboarding Playbook](KEYCLOAK_FEDERATION_ONBOARDING_PLAYBOOK.md)
+- [OAuth 2.1 Client Registration Playbook](OAUTH_CLIENT_REGISTRATION_PLAYBOOK.md)
+- [OIDC FAPI 2.0 Integration Playbook](OIDC_FAPI_INTEGRATION_PLAYBOOK.md)

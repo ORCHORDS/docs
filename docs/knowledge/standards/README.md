@@ -338,3 +338,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27011:2016 — Information Security Controls for Telecommunications Governance](ISO_IEC_27011_2016_TELECOM_ISMS_GOVERNANCE.md)
 - [ISO/IEC 27019:2017 — Information Security Controls for the Energy Utility Industry Governance](ISO_IEC_27019_2017_ENERGY_ISMS_GOVERNANCE.md)
 - [ISO/IEC 27026 — IoT and 5G Network Security Guideline Governance](ISO_IEC_27026_IOT_5G_SECURITY_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-188 trustworthy email, NIST SP 800-189 immutable storage, and NIST SP 800-53 Rev. 5.2 control catalog governance cards (Batch 109)
+
+- [NIST SP 800-188 (2019) Trustworthy Email Governance](NIST_SP_800_188_TRUSTWORTHY_EMAIL_GOVERNANCE.md)
+- [NIST SP 800-189 (2023) Immutable Data Storage Governance](NIST_SP_800_189_IMMUTABLE_STORAGE_GOVERNANCE.md)
+- [NIST SP 800-53 Revision 5.2 Control Catalog Governance](NIST_SP_800_53_R5_2_CONTROL_CATALOG_GOVERNANCE.md)

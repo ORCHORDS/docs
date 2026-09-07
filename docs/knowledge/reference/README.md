@@ -333,3 +333,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [NGINX Ingress Controller for Kubernetes Version Governance](NGINX_INGRESS_CONTROLLER_VERSION_GOVERNANCE.md)
 - [Argo CD Image Updater Version Governance](ARGOCD_IMAGE_UPDATER_VERSION_GOVERNANCE.md)
 - [ExternalDNS Kubernetes DNS Sync Version Governance](EXTERNAL_DNS_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Keycloak, OAuth 2.1, and OIDC FAPI 2.0 reference cards (Batch 109)
+
+- [Keycloak Identity and Access Management Version Governance](KEYCLOAK_VERSION_GOVERNANCE.md)
+- [OAuth 2.1 Authorization Framework Version Governance](OAUTH_2_1_VERSION_GOVERNANCE.md)
+- [OIDC FAPI 2.0 Profile Version Governance](OIDC_FAPI_2_VERSION_GOVERNANCE.md)
