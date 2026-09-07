@@ -321,3 +321,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Helm Chart Packaging and Release Manager Version Governance](HELM_VERSION_GOVERNANCE.md)
 - [Kustomize Declarative Configuration Transformation Version Governance](KUSTOMIZE_VERSION_GOVERNANCE.md)
 - [Crossplane Cloud Control Plane Version Governance](CROSSPLANE_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Grafana Loki, Thanos, and Pomerium reference cards (Batch 107)
+
+- [Grafana Loki Log Aggregation System Version Governance](LOKI_VERSION_GOVERNANCE.md)
+- [Thanos Long-Term Prometheus Storage and HA Version Governance](THANOS_VERSION_GOVERNANCE.md)
+- [Pomerium Identity-Aware Reverse Proxy Version Governance](POMERIUM_VERSION_GOVERNANCE.md)

@@ -367,3 +367,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Helm Chart Adoption Playbook](HELM_CHART_ADOPTION_PLAYBOOK.md)
 - [Kustomize Overlay Promotion Playbook](KUSTOMIZE_OVERLAY_PROMOTION_PLAYBOOK.md)
 - [Crossplane Provider Onboarding Playbook](CROSSPLANE_PROVIDER_ONBOARDING_PLAYBOOK.md)
+
+## 2026-09-08 Loki log pipeline rollout, Thanos Prometheus HA adoption, and Pomerium identity-aware proxy adoption playbooks (Batch 107)
+
+- [Loki Log Pipeline Rollout Playbook](LOKI_LOG_PIPELINE_ROLLOUT_PLAYBOOK.md)
+- [Thanos Prometheus HA Adoption Playbook](THANOS_PROMETHEUS_HA_ADOPTION_PLAYBOOK.md)
+- [Pomerium Identity-Aware Proxy Adoption Playbook](POMERIUM_IDENTITY_AWARE_PROXY_ADOPTION_PLAYBOOK.md)
