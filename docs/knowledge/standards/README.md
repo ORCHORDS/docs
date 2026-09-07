@@ -374,3 +374,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [AI Risk Tiering Practice Governance](AI_RISK_TIERING_PRACTICE_GOVERNANCE.md)
 - [Prompt Engineering Discipline Governance](PROMPT_ENGINEERING_DISCIPLINE_GOVERNANCE.md)
 - [AI Content Provenance Governance](AI_CONTENT_PROVENANCE_GOVERNANCE.md)
+
+## 2026-09-08 Vector retrieval, embedding lineage, and vector security governance cards (Batch 115)
+
+- [Vector Retrieval Governance](VECTOR_RETRIEVAL_GOVERNANCE.md)
+- [Vector Embedding Lineage Governance](VECTOR_EMBEDDING_LINEAGE_GOVERNANCE.md)
+- [Vector Security Governance](VECTOR_SECURITY_GOVERNANCE.md)

@@ -415,3 +415,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [LLM Provider Onboarding Playbook](LLM_PROVIDER_ONBOARDING_PLAYBOOK.md)
 - [Model Card Authoring Playbook](MODEL_CARD_AUTHORING_PLAYBOOK.md)
 - [Inference Platform Rollout Playbook](INFERENCE_PLATFORM_ROLLOUT_PLAYBOOK.md)
+
+## 2026-09-08 Vector store adoption, re-embedding migration, and vector incident response playbooks (Batch 115)
+
+- [Vector Store Adoption Playbook](VECTOR_STORE_ADOPTION_PLAYBOOK.md)
+- [Vector Re-embedding Migration Playbook](VECTOR_RE_EMBEDDING_PLAYBOOK.md)
+- [Vector Incident Response Playbook](VECTOR_INCIDENT_RESPONSE_PLAYBOOK.md)

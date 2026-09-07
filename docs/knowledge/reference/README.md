@@ -369,3 +369,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [MLflow Model Registry Version Governance](MLFLOW_VERSION_GOVERNANCE.md)
 - [KServe Model Serving Version Governance](KSERVE_VERSION_GOVERNANCE.md)
 - [Triton Inference Server Version Governance](TRITON_INFERENCE_SERVER_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Milvus, Qdrant, and pgvector reference cards (Batch 115)
+
+- [Milvus Vector Database Version Governance](MILVUS_VERSION_GOVERNANCE.md)
+- [Qdrant Vector Search Version Governance](QDRANT_VERSION_GOVERNANCE.md)
+- [pgvector Version Governance](PGVECTOR_VERSION_GOVERNANCE.md)
