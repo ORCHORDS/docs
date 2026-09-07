@@ -325,3 +325,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Ceph RGW Multi-site Disaster Recovery Playbook](CEPH_RGW_MULTISITE_DR_PLAYBOOK.md)
 - [Kafka Tiered Storage Migration Playbook](KAFKA_TIERED_STORAGE_MIGRATION_PLAYBOOK.md)
 - [SPIRE Federation Setup Playbook](SPIRE_FEDERATION_SETUP_PLAYBOOK.md)
+
+## 2026-09-07 Temporal HA rollout, Envoy AI Gateway adoption, and Istio Wasm plugin rollout playbooks (Batch 100)
+
+- [Temporal HA Rollout Playbook](TEMPORAL_HA_ROLLOUT_PLAYBOOK.md)
+- [Envoy AI Gateway LLM Proxy Adoption Playbook](ENVOY_AI_GATEWAY_ADOPTION_PLAYBOOK.md)
+- [Istio Wasm Plugin Rollout Playbook](ISTIO_WASM_ROLLOUT_PLAYBOOK.md)

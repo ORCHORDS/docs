@@ -279,3 +279,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [SPIFFE and SPIRE Workload Identity Version Governance](SPIFFE_SPIRE_VERSION_GOVERNANCE.md)
 - [Ceph Distributed Storage Version Governance](CEPH_VERSION_GOVERNANCE.md)
 - [Apache Kafka Tiered Storage Version Governance](KAFKA_TIERED_STORAGE_GOVERNANCE.md)
+
+## 2026-09-07 Temporal, Istio Wasm, and Envoy AI Gateway reference cards (Batch 100)
+
+- [Temporal Durable Execution Version Governance](TEMPORAL_VERSION_GOVERNANCE.md)
+- [Istio Wasm Plugin Framework Version Governance](ISTIO_WASM_VERSION_GOVERNANCE.md)
+- [Envoy AI Gateway LLM Proxy Version Governance](ENVOY_AI_GATEWAY_GOVERNANCE.md)

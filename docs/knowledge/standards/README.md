@@ -284,3 +284,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-215 Guide to DPA Hardening Governance](NIST_SP_800_215_DPA_HARDENING_GOVERNANCE.md)
 - [Digital Operational Resilience Act (DORA) Regulation (EU) 2022/2554 Governance](DORA_2022_2554_GOVERNANCE.md)
 - [ISO/IEC 27033-7:2023 Network Security — Wireless IP Network Security Governance](ISO_IEC_27033_7_2023_WIRELESS_IP_GOVERNANCE.md)
+
+## 2026-09-07 ISO/IEC 38507:2022 AI governance, ISO/IEC TS 27007:2020 auditor guidelines, and ISO/IEC 38500:2024 corporate IT governance cards (Batch 100)
+
+- [ISO/IEC 38507:2022 AI Governance Implications for IT Governance Governance](ISO_IEC_38507_2022_GOVERNANCE.md)
+- [ISO/IEC TS 27007:2020 Cybersecurity Controls Auditor Guidelines Governance](ISO_IEC_TS_27007_2020_GOVERNANCE.md)
+- [ISO/IEC 38500:2024 Corporate Governance of IT Governance](ISO_IEC_38500_2024_GOVERNANCE.md)
