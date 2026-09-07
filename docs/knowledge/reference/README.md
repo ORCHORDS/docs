@@ -387,3 +387,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Dagster Data Orchestrator Version Governance](DAGSTER_VERSION_GOVERNANCE.md)
 - [Prefect Workflow Orchestrator Version Governance](PREFECT_VERSION_GOVERNANCE.md)
 - [Apache Airflow Workflow Orchestrator Version Governance](AIRFLOW_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Traefik, Apache APISIX, and HAProxy API gateway reference cards (Batch 118)
+
+- [Traefik Proxy Version Governance](TRAEFIK_PROXY_VERSION_GOVERNANCE.md)
+- [Apache APISIX API Gateway Version Governance](APISIX_VERSION_GOVERNANCE.md)
+- [HAProxy Load Balancer Version Governance](HAPROXY_VERSION_GOVERNANCE.md)

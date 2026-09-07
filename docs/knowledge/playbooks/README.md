@@ -433,3 +433,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Workflow Orchestrator Adoption Playbook](WORKFLOW_ORCHESTRATOR_ADOPTION_PLAYBOOK.md)
 - [Workflow Migration Playbook](WORKFLOW_MIGRATION_PLAYBOOK.md)
 - [Workflow Orchestrator Incident Response Playbook](WORKFLOW_ORCHESTRATOR_INCIDENT_RESPONSE_PLAYBOOK.md)
+
+## 2026-09-08 API gateway adoption, plugin migration, and incident response playbooks (Batch 118)
+
+- [API Gateway Adoption Playbook](API_GATEWAY_ADOPTION_PLAYBOOK.md)
+- [API Gateway Plugin Migration Playbook](API_GATEWAY_PLUGIN_MIGRATION_PLAYBOOK.md)
+- [API Gateway Incident Response Playbook](API_GATEWAY_INCIDENT_RESPONSE_PLAYBOOK.md)

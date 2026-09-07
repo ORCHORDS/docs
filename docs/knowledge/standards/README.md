@@ -392,3 +392,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [Workflow Orchestrator Architecture Governance](WORKFLOW_ORCHESTRATOR_ARCHITECTURE_GOVERNANCE.md)
 - [Workflow Lineage & Reproducibility Governance](WORKFLOW_LINEAGE_REPRODUCIBILITY_GOVERNANCE.md)
 - [Workflow Orchestrator Access Control Governance](WORKFLOW_ORCHESTRATOR_ACCESS_CONTROL_GOVERNANCE.md)
+
+## 2026-09-08 API gateway architecture, authentication and authorization, and observability governance cards (Batch 118)
+
+- [API Gateway Architecture Governance](API_GATEWAY_ARCHITECTURE_GOVERNANCE.md)
+- [API Gateway Authentication & Authorization Governance](API_GATEWAY_AUTHN_AUTHZ_GOVERNANCE.md)
+- [API Gateway Observability Governance](API_GATEWAY_OBSERVABILITY_GOVERNANCE.md)
