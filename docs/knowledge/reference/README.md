@@ -303,3 +303,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [OPA Gatekeeper Admission Policy Engine Version Governance](GATEKEEPER_VERSION_GOVERNANCE.md)
 - [Kubewarden Wasm Policy Engine Version Governance](KUBEWARDEN_VERSION_GOVERNANCE.md)
 - [Aqua Trivy Multi-Scanner Version Governance](TRIVY_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Calico, cert-manager, and Harbor reference cards (Batch 104)
+
+- [Calico Networking and Network Policy Version Governance](CALICO_VERSION_GOVERNANCE.md)
+- [cert-manager X.509 Certificate Controller Version Governance](CERT_MANAGER_VERSION_GOVERNANCE.md)
+- [Harbor Container Registry Version Governance](HARBOR_VERSION_GOVERNANCE.md)

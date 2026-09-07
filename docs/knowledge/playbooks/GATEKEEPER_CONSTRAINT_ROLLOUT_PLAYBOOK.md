@@ -12,39 +12,17 @@ Platform engineers operating the Gatekeeper controller, security engineers ownin
 
 - Gatekeeper version is pinned per `docs/knowledge/reference/GATEKEEPER_VERSION_GOVERNANCE.md` and the controller is healthy.
 - The `ConstraintTemplate` Rego is unit-tested with `opa test` against representative fixtures.
-- The matching `Constraint` YAML is stored in the GitOps repo and references the template via `kind` and `apiVersion` (typically `constraints.gatekeeper.sh/v1beta1`).
+- The matching `Constraint` YAML is stored in GitOps and references the template via `kind` and `apiVersion` (`constraints.gatekeeper.sh/v1beta1`).
 - A baseline inventory of in-cluster audit violations exists so regressions are detectable.
 - Change ticket approved and a maintenance window scheduled for the `enforcementAction: deny` flip.
 
 ## Procedure
 
-### Step 1 - Install or refresh the ConstraintTemplate
-
-1. Apply the `ConstraintTemplate` CRD first; verify with `kubectl get crd constrainttemplates.templates.gatekeeper.sh`.
-2. Confirm the template reports `Status: Created` and the generated CRD exists.
-
-### Step 2 - Stage the Constraint in dry-run
-
-3. Apply the `Constraint` with `enforcementAction: dryrun`.
-4. Watch the audit log: `kubectl get events --field-selector reason=AuditViolation -A`.
-5. Compare current violations against the pre-rollout baseline; record deltas per namespace and `kind`.
-6. Do not advance until the violation trend is understood and triaged.
-
-### Step 3 - Move to warn mode
-
-7. Edit the `Constraint` to `enforcementAction: warn` (Gatekeeper 3.13+).
-8. Re-run a synthetic workload that previously violated; confirm a warning is returned but the object is admitted.
-
-### Step 4 - Promote to deny
-
-9. Begin with `match.scope: Namespaced` and an `excludedNamespaces` allow-list for known exceptions.
-10. Flip to `enforcementAction: deny` only after the warn window shows no critical regressions.
-11. Capture admission latency from Gatekeeper metrics before and after the flip; abort if p99 regresses beyond the agreed SLO.
-
-### Step 5 - Verify and expand
-
-12. Run a representative workload suite; deny on bad input, admit on good input.
-13. Remove the namespace allow-list only after telemetry is green.
+1. Apply the `ConstraintTemplate` CRD first; verify with `kubectl get crd constrainttemplates.templates.gatekeeper.sh`. Confirm `Status: Created` and the generated CRD exists.
+2. Apply the `Constraint` with `enforcementAction: dryrun`. Watch `kubectl get events --field-selector reason=AuditViolation -A`. Compare violations against the pre-rollout baseline; record deltas per namespace and `kind`. Do not advance until the trend is triaged.
+3. Edit the `Constraint` to `enforcementAction: warn` (Gatekeeper 3.13+). Re-run a previously violating synthetic workload; confirm a warning is returned but the object is admitted.
+4. Begin with `match.scope: Namespaced` and an `excludedNamespaces` allow-list. Flip to `enforcementAction: deny` only after the warn window shows no critical regressions. Capture admission latency before and after; abort if p99 exceeds the SLO.
+5. Run a representative workload suite; deny on bad input, admit on good input. Remove the namespace allow-list only after telemetry is green.
 
 ## Rollback
 

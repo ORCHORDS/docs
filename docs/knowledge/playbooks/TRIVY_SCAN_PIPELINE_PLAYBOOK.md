@@ -17,38 +17,11 @@ Security engineers, DevOps / platform engineers integrating Trivy into CI, and S
 
 ## Procedure
 
-### Step 1 — Pick the scan type
-
-1. Use `image` scanning in container image build pipelines.
-2. Use `fs` scanning for source repositories (IaC, app source, dependency trees).
-3. Use `k8s` scanning for cluster manifests and live manifests (`trivy k8s`).
-4. Use `sbom` scanning to gate previously generated SBOMs.
-
-### Step 2 — Configure severity gates
-
-5. Define the policy gates: for example `CRITICAL` blocks, `HIGH` requires owner approval via PR check, `MEDIUM` warns.
-6. Express them as `--severity` plus exit code (`--exit-code 1`) and as a SARIF post-process pass.
-7. Exclude false positives via the Trivy ignore file (`trivy.yaml`) or via the VEX document; never by mutating upstream SBOMs.
-8. Re-baseline the gate list whenever a new package family is introduced.
-
-### Step 3 — Wire the pipeline
-
-9. Invoke trivy in CI with `--format sarif --output trivy.sarif` plus a human-readable table artifact.
-10. Cache the Trivy DB between runs (key off Trivy DB timestamp) to keep CI fast.
-11. Sign the scan image as well as the build image where supply-chain attestation is in scope.
-
-### Step 4 — Upload and route findings
-
-12. Upload SARIF to the security dashboard; use `trivy convert sarif` only when the upstream format is non-SARIF.
-13. Tag findings with repository, pipeline run ID, and SBOM hash so they remain traceable.
-14. Fan out alert routing by severity; route CRITICAL findings to on-call within one business hour.
-15. Attach the matching VEX statement to each waived finding so auditors can trace the suppression.
-
-### Step 5 — Tune and verify
-
-16. Compare pre- and post-adoption finding counts; alert on a sudden drop, which usually signals a misconfigured gate.
-17. Periodically reverify that `--exit-code` and SARIF upload still occur on the same run.
-18. Audit the VEX file quarterly and remove entries no longer present in fresh scans.
+1. Pick the scan type: `image` for container builds, `fs` for source and IaC trees, `k8s` for cluster and live manifests (`trivy k8s`), and `sbom` to gate previously generated SBOMs. Run multiple scanners in the same job when the asset warrants it.
+2. Define severity gates: for example `CRITICAL` blocks, `HIGH` requires owner approval via PR check, `MEDIUM` warns. Express them as `--severity` plus `--exit-code 1` and as a SARIF post-process pass. Exclude false positives via `trivy.yaml` or the VEX document; never by mutating upstream SBOMs.
+3. Invoke Trivy in CI with `--format sarif --output trivy.sarif` plus a human-readable table artifact. Cache the Trivy DB between runs (key off DB timestamp). Sign the scan image as well as the build image where supply-chain attestation is in scope.
+4. Upload SARIF to the security dashboard; use `trivy convert sarif` only when the upstream format is non-SARIF. Tag findings with repository, pipeline run ID, and SBOM hash. Route CRITICAL findings to on-call within one business hour. Attach the matching VEX statement to each waived finding.
+5. Compare pre- and post-adoption finding counts; alert on a sudden drop, which usually signals a misconfigured gate. Periodically reverify that `--exit-code` and SARIF upload still occur on the same run. Audit the VEX file quarterly and remove stale entries.
 
 ## Rollback
 

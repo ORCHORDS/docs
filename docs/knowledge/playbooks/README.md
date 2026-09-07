@@ -349,3 +349,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Gatekeeper ConstraintTemplate + Constraint Rollout Playbook](GATEKEEPER_CONSTRAINT_ROLLOUT_PLAYBOOK.md)
 - [Kubewarden Policy Server Adoption Playbook](KUBEWARDEN_POLICY_ADOPTION_PLAYBOOK.md)
 - [Trivy Scan Pipeline Adoption Playbook](TRIVY_SCAN_PIPELINE_PLAYBOOK.md)
+
+## 2026-09-08 Calico network policy rollout, cert-manager adoption, and Harbor registry migration playbooks (Batch 104)
+
+- [Calico Network Policy Rollout Playbook](CALICO_NETWORK_POLICY_ROLLOUT_PLAYBOOK.md)
+- [cert-manager Adoption Playbook](CERT_MANAGER_ADOPTION_PLAYBOOK.md)
+- [Harbor Container Registry Migration Playbook](HARBOR_REGISTRY_MIGRATION_PLAYBOOK.md)

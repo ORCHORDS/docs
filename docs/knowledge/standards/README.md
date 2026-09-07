@@ -308,3 +308,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [ISO/IEC 27035-3 Incident Response Operations Governance](ISO_IEC_27035_3_2023_INCIDENT_RESPONSE_GOVERNANCE.md)
 - [NIST IR 8259A IoT Device Cybersecurity Capability Core Baseline Governance](NIST_IR_8259A_IOT_CORE_BASELINE_GOVERNANCE.md)
 - [ISO 22301:2019 Business Continuity Management Systems Governance](ISO_22301_2019_BCMS_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-57 Part 3 Rev. 1 cryptographic key management, ISO/IEC 27038:2014 digital redaction, and NIST SP 800-172 enhanced SCRM governance cards (Batch 104)
+
+- [NIST SP 800-57 Part 3 Rev. 1 (2015) Cryptographic Key Management — Application-Specific Requirements Governance](NIST_SP_800_57_PART_3_R1_2015_KEY_MANAGEMENT_APPLICATION_GOVERNANCE.md)
+- [ISO/IEC 27038:2014 Digital Redaction of Digital Records Governance](ISO_IEC_27038_2014_DIGITAL_REDACTION_GOVERNANCE.md)
+- [NIST SP 800-172 Enhanced Security Requirements for Controlled Unclassified Information Governance](NIST_SP_800_172_2021_ENHANCED_SCRM_GOVERNANCE.md)
