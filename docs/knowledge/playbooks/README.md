@@ -355,3 +355,9 @@ This family contains repeatable procedures for development, deployment, incident
 - [Calico Network Policy Rollout Playbook](CALICO_NETWORK_POLICY_ROLLOUT_PLAYBOOK.md)
 - [cert-manager Adoption Playbook](CERT_MANAGER_ADOPTION_PLAYBOOK.md)
 - [Harbor Container Registry Migration Playbook](HARBOR_REGISTRY_MIGRATION_PLAYBOOK.md)
+
+## 2026-09-08 Velero backup adoption, External Secrets Operator rollout, and Mozilla SOPS GitOps secret encryption playbooks (Batch 105)
+
+- [Velero Backup Adoption Playbook](VELERO_BACKUP_ADOPTION_PLAYBOOK.md)
+- [External Secrets Operator Rollout Playbook](EXTERNAL_SECRETS_OPERATOR_ROLLOUT_PLAYBOOK.md)
+- [Mozilla SOPS GitOps Secret Encryption Playbook](SOPS_GITOPS_SECRET_ENCRYPTION_PLAYBOOK.md)

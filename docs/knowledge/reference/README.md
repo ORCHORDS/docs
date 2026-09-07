@@ -309,3 +309,9 @@ This family contains shared glossaries, checklists, command references, configur
 - [Calico Networking and Network Policy Version Governance](CALICO_VERSION_GOVERNANCE.md)
 - [cert-manager X.509 Certificate Controller Version Governance](CERT_MANAGER_VERSION_GOVERNANCE.md)
 - [Harbor Container Registry Version Governance](HARBOR_VERSION_GOVERNANCE.md)
+
+## 2026-09-08 Velero, External Secrets Operator, and Mozilla SOPS reference cards (Batch 105)
+
+- [Velero Backup and Disaster Recovery Version Governance](VELERO_VERSION_GOVERNANCE.md)
+- [External Secrets Operator Version Governance](EXTERNAL_SECRETS_OPERATOR_VERSION_GOVERNANCE.md)
+- [Mozilla SOPS Encrypted YAML Secrets Version Governance](SOPS_VERSION_GOVERNANCE.md)

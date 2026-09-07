@@ -314,3 +314,9 @@ This family contains internal documentation conventions and guidance mapped to e
 - [NIST SP 800-57 Part 3 Rev. 1 (2015) Cryptographic Key Management — Application-Specific Requirements Governance](NIST_SP_800_57_PART_3_R1_2015_KEY_MANAGEMENT_APPLICATION_GOVERNANCE.md)
 - [ISO/IEC 27038:2014 Digital Redaction of Digital Records Governance](ISO_IEC_27038_2014_DIGITAL_REDACTION_GOVERNANCE.md)
 - [NIST SP 800-172 Enhanced Security Requirements for Controlled Unclassified Information Governance](NIST_SP_800_172_2021_ENHANCED_SCRM_GOVERNANCE.md)
+
+## 2026-09-08 NIST SP 800-128 configuration management, NIST SP 800-184 cyber event recovery, and ITIL 4 Foundation (2019) governance cards (Batch 105)
+
+- [NIST SP 800-128 — System Security Configuration Management Governance](NIST_SP_800_128_SYSTEM_SECURITY_CONFIGURATION_GOVERNANCE.md)
+- [NIST SP 800-184 — Cybersecurity Event Recovery Guide Governance](NIST_SP_800_184_CYBER_EVENT_RECOVERY_GOVERNANCE.md)
+- [ITIL 4 Foundation (2019) — IT Service Management Governance](ITIL_4_FOUNDATION_2019_GOVERNANCE.md)
