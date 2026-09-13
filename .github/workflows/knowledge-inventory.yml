@@ -1,0 +1,65 @@
+name: Knowledge inventory
+
+# Read-only evidence for documentation expansion. Never writes back to main.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'README.md'
+      - '.github/workflows/knowledge-inventory.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Count tracked Markdown and prepare reproducible audit snapshot
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import collections
+          import hashlib
+          import json
+          import os
+          import pathlib
+          import subprocess
+          root = pathlib.Path.cwd()
+          output = pathlib.Path(os.environ['RUNNER_TEMP']) / 'knowledge-inventory'
+          output.mkdir()
+          paths = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          markdown = sorted(p for p in paths if p.lower().endswith('.md'))
+          knowledge = [p for p in markdown if p.startswith('docs/knowledge/')]
+          domains = collections.Counter(p.split('/')[2] for p in knowledge if len(p.split('/')) > 3)
+          entries = collections.Counter(p.split('/')[2] for p in knowledge if len(p.split('/')) > 3 and pathlib.PurePosixPath(p).name.lower() not in ('readme.md', 'index.md'))
+          data = {
+              'commit': subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode().strip(),
+              'scope': 'Git-tracked case-insensitive .md files; domain totals include README/INDEX; entry totals exclude README/INDEX',
+              'repository_markdown': len(markdown),
+              'knowledge_markdown': len(knowledge),
+              'domain_markdown': dict(sorted(domains.items(), key=lambda item: (item[1], item[0]))),
+              'domain_entries': dict(sorted(entries.items(), key=lambda item: (item[1], item[0]))),
+              'paths_sha256': hashlib.sha256(('\n'.join(markdown) + '\n').encode()).hexdigest(),
+          }
+          (output / 'inventory.json').write_text(json.dumps(data, indent=2) + '\n')
+          (output / 'markdown-paths.txt').write_text('\n'.join(markdown) + '\n')
+          subprocess.run(['git', 'archive', '--format=zip', 'HEAD', '-o', str(output / 'tracked-snapshot.zip')], check=True)
+          print(json.dumps(data, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('# Tracked knowledge inventory\n\n```json\n' + json.dumps(data, indent=2) + '\n```\n')
+          PY
+      - name: Retain audit evidence
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: knowledge-inventory-${{ github.sha }}
+          path: ${{ runner.temp }}/knowledge-inventory/
+          retention-days: 3
+          if-no-files-found: error
