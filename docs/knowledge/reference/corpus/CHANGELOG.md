@@ -253,6 +253,18 @@ All three mds use the corpus-standard TEMPLATE.md format (Symptom / Root cause /
 
 Local verification: `check_docs.py` reports **18,302** Markdown files passing (was 18,299, +3); `check_public_neutrality.py` also reports **18,302** files passing. Both linters also re-scanned the three new mds and confirmed zero hits against the banned-name and banned-repo regexes.
 
+## 2026-10-03 — Gap-fill (Cloudflare Workers tail CI assertion, current flags)
+
+Following the three earlier gap-fills on the same day, a single commit added one corrective md that codifies the **current** `wrangler tail` CI assertion pattern against the live Cloudflare docs (verified 2026-10-03 via subagent dispatch against `developers.cloudflare.com/workers/wrangler/commands/general/` and `developers.cloudflare.com/workers/observability/logs/*`):
+
+- **`docs/knowledge/platforms/cloudflare/wrangler-tail-ci-assertion-pattern-current-flags.md`** — codifies the current `wrangler tail` flag set (no `--once`); the correct exit semantics (`timeout` + `jq -e` + `set -o pipefail`); the current binding key (`tail_consumers`, not `tail_workers`); structured `console.log({...})` first-object-argument parsing; Logpush delivery as a separate concern from `logpush = true` opt-in; OpenTelemetry export as the preferred path for new integrations. Explicitly supersedes the `--once` reference and the `commands/#tail` URL in the existing `docs/knowledge/platforms/github/github-actions-wrangler-tail-log-streaming-ci.md` (line 31-32 and line 369 of that file).
+
+The md does **not** delete or modify the older in-corpus guidance — the older md remains valid for the `tail_consumers` binding shape, JSON event shape, and TypeScript `tail()` handler; this new md adds the verified-current flag set and the CI assertion shape that the older md lacks.
+
+Subagent evidence was gathered by `bg_acf2d2ea-9b34-446c-ad23-d0d3fcb48738` (explore-only, no corpus writes); the parent session quoted the verbatim evidence into the md body and noted the explicit softening points (e.g., `--once` does not exist in current docs; `tail_consumers` is current key, `tail_workers` is legacy; `console.log` JSON-serialization rules are not fully documented; `TailEvent<T>` TS type lives in `@cloudflare/workers-types`, not on docs pages).
+
+Local verification: `check_docs.py` reports **18,303** Markdown files passing (was 18,302, +1); `check_public_neutrality.py` also reports **18,303** files passing. Self-verify of banned-name and banned-repo regexes against the new md returns zero hits.
+
 ## Spelling discipline
 
 - `example.com` (8 letters, no A) — the brand, always
