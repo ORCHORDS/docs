@@ -220,12 +220,26 @@ The two negative deltas (`patterns` −9, `payments` −20) are bookkeeping reco
 Outside the 22 INDEX-tracked categories, the tree also contains:
 
 - **10,872 family-root Markdown files** under `docs/knowledge/<family>/<file>.md` that are not part of the 22 INDEX categories. These accumulate alongside the per-category sub-folders and are not currently surfaced through `CATEGORIES.md`. Surfacing them through a future expansion of `CATEGORIES.md` is tracked as a follow-up.
-- **130 `batch-update-N.md` stub files** and **5 `PAIRED_*.md` stub files** at `docs/knowledge/` root. These are pure stub content (no knowledge payload, average size below 200 bytes) and are scheduled for removal in a separate dedupe commit on `main`.
-- **3 `pair-extra-*` / `extra-pair-*` stub files** at `docs/` root, of the same stub character; also scheduled for removal in the same dedupe pass.
 
-Including all of the above, the live tree contains **16,548 Markdown files under `docs/knowledge/`** and **3 additional stub files under `docs/`**, for a combined **16,551 Markdown files** in the knowledge portion of the repository.
+The **130 `batch-update-N.md` stub files** and **5 `PAIRED_*.md` stub files** that were previously noted at `docs/knowledge/` root, plus the **3 `pair-extra-*` / `extra-pair-*` stub files** at `docs/` root, were all removed in the 2026-10-03 dedupe pass described below. They were pure stub content (no knowledge payload, average size below 200 bytes) and no INDEX/README/CATEGORIES cross-reference pointed to any of them.
+
+Including all of the above, the live tree now contains **16,413 Markdown files under `docs/knowledge/`** and **0 additional stub files under `docs/`**, for a combined **16,413 Markdown files** in the knowledge portion of the repository (16,551 − 138 stubs removed by this pass).
 
 The recompute is project-neutral, marked `verified-live`, and follows the standing policy of deriving numeric inventory claims directly from repository contents.
+
+## 2026-10-03 — Dedupe stub files (post-inventory recompute)
+
+Following the inventory recompute on the same day, a single commit removed **138 pure stub files** that contributed zero knowledge payload:
+
+- **130 `docs/knowledge/batch-update-N.md`** files — uniform 67-109 byte stubs whose entire content was `# Batch update N\n\nRoutine docs clarity improvements for ...`.
+- **5 `docs/knowledge/PAIRED_*.md`** files (`PAIRED_AUTHORS.md`, `PAIRED_AUTHORS_X2.md`, `PAIRED_NOTES_3.md`, `PAIRED_NOTES_4.md`, `PAIRED_NOTES_5.md`) — 132-167 byte co-author trailer stubs that existed solely to manufacture "Pair Extraordinaire" achievement signals.
+- **3 `docs/{pair-extra-*.md, extra-pair-*.md}`** files at the repo root — 143-215 byte stubs of the same character.
+
+None of the 138 stubs were linked from `INDEX.md`, `CATEGORIES.md`, `README.md`, or any other documentation file in the repo (verified via cross-reference scan before removal). Removing them does not break any link, does not change the 22 INDEX-tracked category counts, and does not affect `knowledge-inventory.yml` row totals.
+
+Local verification: `check_docs.py` reports **18,299** Markdown files passing (was 18,437, −138); `check_public_neutrality.py` also reports **18,299** files passing.
+
+Remote CI status: the GitHub Actions workflows on the prior inventory commit `5f3a21f5` returned the annotation `account is locked due to a billing issue` for both `docs-quality.yml` and `knowledge-inventory.yml`, indicating an org-level GitHub Actions billing lock rather than a docs-quality failure. Pre-lock runs (most recent success: `0c98038a` from 2026-09-26 for Scorecard + CodeQL; `ed4659e` / `0c98038a` from 2026-09-22 for docs-quality + inventory) were all green. The dedupe commit is locally linter-green and is being pushed despite the billing lock; the remote workflow annotations are expected to be billing-locked until org billing is restored. When billing is restored, a re-run of `docs-quality.yml` on the dedupe commit will confirm the green baseline end-to-end.
 
 ## Spelling discipline
 
