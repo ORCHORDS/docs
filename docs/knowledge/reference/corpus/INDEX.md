@@ -6,7 +6,7 @@
 
 **Independent software studio founded in 2025.**
 
-Date: 2026-08-26 / Status: maintained
+Date: 2026-10-03 / Status: maintained
 
 ## Counting method
 
@@ -18,29 +18,29 @@ This index must remain project-neutral and public-safe.
 
 | Category | Count |
 |----------|------:|
-| ai-ml | 347 |
-| architecture | 358 |
-| cloudflare | 353 |
-| compliance | 362 |
-| database | 335 |
-| deploy | 375 |
-| devtools | 347 |
-| email | 324 |
-| frontend | 331 |
-| github | 333 |
-| i18n | 370 |
-| infra | 345 |
-| issues | 349 |
-| lessons | 330 |
-| mobile | 314 |
-| monitoring | 371 |
-| patterns | 389 |
-| payments | 400 |
-| performance | 338 |
-| security | 345 |
-| testing | 331 |
-| worktree | 340 |
-| **TOTAL** | **7,687** |
+| ai-ml | 394 |
+| architecture | 384 |
+| cloudflare | 378 |
+| compliance | 389 |
+| database | 383 |
+| deploy | 380 |
+| devtools | 385 |
+| email | 380 |
+| frontend | 393 |
+| github | 368 |
+| i18n | 384 |
+| infra | 376 |
+| issues | 367 |
+| lessons | 479 |
+| mobile | 391 |
+| monitoring | 380 |
+| patterns | 380 |
+| payments | 380 |
+| performance | 381 |
+| security | 474 |
+| testing | 381 |
+| worktree | 384 |
+| **TOTAL** | **8,591** |
 
 ## Brand
 

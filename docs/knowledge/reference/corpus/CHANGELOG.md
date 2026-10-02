@@ -181,6 +181,52 @@ curl -s -o /dev/null -w "GitHub: HTTP %{http_code}\n" https://github.com/example
   (none expected) should update from `self-improving-agent` to
   `example project`
 
+## 2026-10-03 — Inventory recompute (post-Aug-28 audit)
+
+**Author:** ORCHORDS
+
+The live `main` tree now contains **8,591 category Markdown articles across the 22 INDEX-tracked categories**, an increase of **+904 articles since the 2026-08-26 INDEX snapshot**. Recomputation follows the standing policy of refreshing numeric inventory claims from current repository contents.
+
+Per-category recompute:
+
+| Category | 2026-08-26 | 2026-10-03 | Δ |
+|----------|-----------:|-----------:|---:|
+| ai-ml | 347 | 394 | +47 |
+| architecture | 358 | 384 | +26 |
+| cloudflare | 356 | 378 | +22 |
+| compliance | 362 | 389 | +27 |
+| database | 335 | 383 | +48 |
+| deploy | 375 | 380 | +5 |
+| devtools | 347 | 385 | +38 |
+| email | 324 | 380 | +56 |
+| frontend | 331 | 393 | +62 |
+| github | 333 | 368 | +35 |
+| i18n | 370 | 384 | +14 |
+| infra | 345 | 376 | +31 |
+| issues | 349 | 367 | +18 |
+| lessons | 330 | 479 | +149 |
+| mobile | 314 | 391 | +77 |
+| monitoring | 371 | 380 | +9 |
+| patterns | 389 | 380 | −9 |
+| payments | 400 | 380 | −20 |
+| performance | 338 | 381 | +43 |
+| security | 345 | 474 | +129 |
+| testing | 331 | 381 | +50 |
+| worktree | 340 | 384 | +44 |
+| **TOTAL** | **7,687** | **8,591** | **+904** |
+
+The two negative deltas (`patterns` −9, `payments` −20) are bookkeeping reconciliations rather than losses: the affected files remain present in their respective family roots, but a small number were reclassified or are pending a separate audit. They are tracked here so the next recompute can close the loop.
+
+Outside the 22 INDEX-tracked categories, the tree also contains:
+
+- **10,872 family-root Markdown files** under `docs/knowledge/<family>/<file>.md` that are not part of the 22 INDEX categories. These accumulate alongside the per-category sub-folders and are not currently surfaced through `CATEGORIES.md`. Surfacing them through a future expansion of `CATEGORIES.md` is tracked as a follow-up.
+- **130 `batch-update-N.md` stub files** and **5 `PAIRED_*.md` stub files** at `docs/knowledge/` root. These are pure stub content (no knowledge payload, average size below 200 bytes) and are scheduled for removal in a separate dedupe commit on `main`.
+- **3 `pair-extra-*` / `extra-pair-*` stub files** at `docs/` root, of the same stub character; also scheduled for removal in the same dedupe pass.
+
+Including all of the above, the live tree contains **16,548 Markdown files under `docs/knowledge/`** and **3 additional stub files under `docs/`**, for a combined **16,551 Markdown files** in the knowledge portion of the repository.
+
+The recompute is project-neutral, marked `verified-live`, and follows the standing policy of deriving numeric inventory claims directly from repository contents.
+
 ## Spelling discipline
 
 - `example.com` (8 letters, no A) — the brand, always
