@@ -241,6 +241,18 @@ Local verification: `check_docs.py` reports **18,299** Markdown files passing (w
 
 Remote CI status: the GitHub Actions workflows on the prior inventory commit `5f3a21f5` returned the annotation `account is locked due to a billing issue` for both `docs-quality.yml` and `knowledge-inventory.yml`, indicating an org-level GitHub Actions billing lock rather than a docs-quality failure. Pre-lock runs (most recent success: `0c98038a` from 2026-09-26 for Scorecard + CodeQL; `ed4659e` / `0c98038a` from 2026-09-22 for docs-quality + inventory) were all green. The dedupe commit is locally linter-green and is being pushed despite the billing lock; the remote workflow annotations are expected to be billing-locked until org billing is restored. When billing is restored, a re-run of `docs-quality.yml` on the dedupe commit will confirm the green baseline end-to-end.
 
+## 2026-10-03 — Gap-fill (deploy, monitoring, cloudflare)
+
+Following the inventory recompute and the dedupe pass, a single commit added three project-neutral knowledge mds that fill genuine gaps identified by cross-referencing earlier-session audit findings against the live corpus:
+
+- **`docs/knowledge/operations/deploy/android-release-pipeline-signing-and-verification-gates.md`** — covers the Android release pipeline pattern (release.yml / signingConfigs.release reading only from local.properties; apksigner verify gate; SIGNING-CERT-SHA256 artifact; `applicationIdSuffix = ".debug"` restricted to debug build type). Pre-existing corpus has Android mobile-side content (`docs/knowledge/engineering/mobile/`) and a GitHub-Actions-side md (`github-actions-android-keystore-signing-play-store-deploy.md`) but no operations-side md describing the pipeline as a deploy + verification-gate workflow.
+- **`docs/knowledge/operations/monitoring/chat-completions-sse-terminal-signal-and-disconnect-recovery.md`** — covers the SSE streaming chat-completions pattern (OkHttp `EventSource`; separating `providerTerminalObserved` flag from transport close; cancellation propagation; per-provider terminal signal matching). Pre-existing `docs/knowledge/operations/monitoring/ai-llm-monitoring.md` covers LLM monitoring metrics but does not address the transport-level vs provider-level terminal signal separation.
+- **`docs/knowledge/platforms/cloudflare/cloudflare-pages-workers-r2-durable-objects-coordinated-deployment.md`** — covers the Pages + Workers D1 + R2 + Durable Objects coordinated-binding pattern (binding-name alignment across multiple wrangler.toml files; per-project D1 migration prefixes to avoid version collisions; R2 lifecycle rules bound to the destination account; DO class export gating; Pages preview URL binding sandbox). Pre-existing mds cover each component individually but no md covers the multi-binding coordination contract.
+
+All three mds use the corpus-standard TEMPLATE.md format (Symptom / Root cause / Fix / Verification / Gotchas / Related), cite official upstream docs (developer.android.com, platform.openai.com, developers.cloudflare.com), reference related mds already in the corpus, and use only generic placeholders (`<your-org>/<your-repo>`, `<commit-hash>`, `<public-or-stage-URL>`) for any field that would otherwise identify a specific project.
+
+Local verification: `check_docs.py` reports **18,302** Markdown files passing (was 18,299, +3); `check_public_neutrality.py` also reports **18,302** files passing. Both linters also re-scanned the three new mds and confirmed zero hits against the banned-name and banned-repo regexes.
+
 ## Spelling discipline
 
 - `example.com` (8 letters, no A) — the brand, always
