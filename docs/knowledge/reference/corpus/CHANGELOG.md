@@ -265,6 +265,23 @@ Subagent evidence was gathered by `bg_acf2d2ea-9b34-446c-ad23-d0d3fcb48738` (exp
 
 Local verification: `check_docs.py` reports **18,303** Markdown files passing (was 18,302, +1); `check_public_neutrality.py` also reports **18,303** files passing. Self-verify of banned-name and banned-repo regexes against the new md returns zero hits.
 
+## 2026-10-03 — Gap-fill (Cloudflare AI Gateway current URL + rate-limit API)
+
+Following the four earlier gap-fills on the same day, a single commit added one corrective md that codifies the **current** Cloudflare AI Gateway URL surface and rate-limit API field set, verified against the live Cloudflare docs (verified 2026-10-03 via subagent dispatch):
+
+- **`docs/knowledge/data-ai/ai-ml/cloudflare-ai-gateway-current-features-paths-and-rate-limit-api.md`** — codifies:
+  1. The URL migration from `/ai-gateway/configuration/*` to `/ai-gateway/features/*` paths (the docs site migrated; 19+ in-corpus mds still reference the stale `/configuration/*` URLs).
+  2. The current rate-limit API field set: `rate_limiting_interval`, `rate_limiting_limit`, `rate_limiting_technique` (fixed/sliding window) — per-gateway scope, 429 response with `Retry-After`. Older blog posts and tutorials that use `requests_per_minute` / `key_pattern` are wrong.
+  3. The verbatim caching restriction phrase (dateModified 2026-09-30): *"Currently caching is supported only for text and image responses, and it applies only to identical requests."* Cache key is SHA-256 over `provider + endpoint + model + provider auth header + full request body` (exact match only).
+  4. The streaming caveat — the current caching page does **not** explicitly address SSE/streaming. Two existing in-corpus mds state streaming is not cached; the new md explicitly marks that statement as inference, not verified-from-current-page, and recommends the documented safe path of sending `cf-aig-cache-ttl: 0` on streaming requests when a hard guarantee is required.
+  5. The `custom-metadata` URL is flagged as "re-verify before quoting" — subagent confirmed rate-limiting, caching, and fallbacks paths but did not lock down the metadata path during this session.
+
+The md does **not** delete or modify the 19+ existing AI Gateway mds; it sits alongside them and explicitly lists them in the "Related / supersedes" section with the line number of the stale URL in each.
+
+Subagent evidence was gathered by `bg_35482f9d-b26f-4399-ac77-ed944ba9fa43` (rate-limit + URL migration, succeeded) and `bg_774abebc-0519-44f4-a52e-e17f333c7431` (verbatim caching phrase, succeeded). Both were explore-only, no corpus writes.
+
+Local verification: `check_docs.py` reports **18,304** Markdown files passing (was 18,303, +1); `check_public_neutrality.py` also reports **18,304** files passing. Self-verify of banned-name and banned-repo regexes against the new md returns zero hits.
+
 ## Spelling discipline
 
 - `example.com` (8 letters, no A) — the brand, always
