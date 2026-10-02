@@ -6,7 +6,7 @@
 
 **Independent software studio founded in 2025.**
 
-Date: 2026-10-03 / Status: maintained
+Date: 2026-10-03 / Status: maintained (post-Commit 6 inventory refresh; see CHANGELOG)
 
 ## Counting method
 
@@ -18,12 +18,12 @@ This index must remain project-neutral and public-safe.
 
 | Category | Count |
 |----------|------:|
-| ai-ml | 394 |
+| ai-ml | 395 |
 | architecture | 384 |
-| cloudflare | 378 |
+| cloudflare | 383 |
 | compliance | 389 |
 | database | 383 |
-| deploy | 380 |
+| deploy | 381 |
 | devtools | 385 |
 | email | 380 |
 | frontend | 393 |
@@ -33,14 +33,14 @@ This index must remain project-neutral and public-safe.
 | issues | 367 |
 | lessons | 479 |
 | mobile | 391 |
-| monitoring | 380 |
+| monitoring | 381 |
 | patterns | 380 |
 | payments | 380 |
 | performance | 381 |
-| security | 474 |
+| security | 475 |
 | testing | 381 |
 | worktree | 384 |
-| **TOTAL** | **8,591** |
+| **TOTAL** | **8,600** |
 
 ## Brand
 
